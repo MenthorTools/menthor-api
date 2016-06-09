@@ -1,0 +1,2 @@
+rootProject.name = 'menthor-api'
+include 'core', 'ontouml', 'ontouml2emf', 'ontouml2owl', 'ea2ontouml'

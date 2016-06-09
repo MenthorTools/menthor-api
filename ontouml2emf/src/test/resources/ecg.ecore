@@ -1,0 +1,461 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ecore:EPackage xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="Electrocardiogram" nsURI="http://menthor.net/electrocardiogram/" nsPrefix="electrocardiogram">
+  <eSubpackages name="Biolectric">
+    <eClassifiers xsi:type="ecore:EClass" name="AV Electrical Impulse">
+      <eStructuralFeatures xsi:type="ecore:EReference" name="sa_electrical_impulse_generator" lowerBound="-1" upperBound="-1" eType="//Biolectric/SA%20Electrical%20Impulse%20Generator" eOpposite="//Biolectric/SA%20Electrical%20Impulse%20Generator/av_electrical_impulse"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="la_contraction" lowerBound="1" eType="//Biolectric/LA%20Contraction" eOpposite="//Biolectric/LA%20Contraction/av_electrical_impulse"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="his_purkinje_electrical_impulse" lowerBound="1" eType="//Biolectric/His%20Purkinje%20Electrical%20Impulse" eOpposite="//Biolectric/His%20Purkinje%20Electrical%20Impulse/av_electrical_impulse"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="AV Electrical Impulse Generator">
+      <eStructuralFeatures xsi:type="ecore:EReference" name="sa_node_cells" lowerBound="1" eType="//Biolectric/SA%20Node%20Cells" eOpposite="//Biolectric/SA%20Node%20Cells/av_electrical_impulse_generator"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="sa_electrical_impulse" lowerBound="1" eType="//Biolectric/SA%20Electrical%20Impulse" eOpposite="//Biolectric/SA%20Electrical%20Impulse/av_electrical_impulse_generator"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="AV Node Cells" eSuperTypes="//Biolectric/Pacemaker%20Cells">
+      <eStructuralFeatures xsi:type="ecore:EReference" name="sa_electrical_impulse_generator" lowerBound="-1" upperBound="-1" eType="//Biolectric/SA%20Electrical%20Impulse%20Generator" eOpposite="//Biolectric/SA%20Electrical%20Impulse%20Generator/av_node_cells"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="Heart As A Pump" eSuperTypes="//Human%20Heart/Human%20Heart">
+      <eStructuralFeatures xsi:type="ecore:EReference" name="right_atrium_as_a_pump" eType="//Biolectric/Right%20Atrium%20As%20A%20Pump" eOpposite="//Biolectric/Right%20Atrium%20As%20A%20Pump/heart_as_a_pump"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="left_atrium_as_a_pump" eType="//Biolectric/Left%20Atrium%20As%20A%20Pump" eOpposite="//Biolectric/Left%20Atrium%20As%20A%20Pump/heart_as_a_pump"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="right_ventricle_as_a_pump" lowerBound="1" eType="//Biolectric/Right%20Ventricle%20As%20A%20Pump" eOpposite="//Biolectric/Right%20Ventricle%20As%20A%20Pump/heart_as_a_pump"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="left_ventricle_as_a_pump" lowerBound="1" eType="//Biolectric/Left%20Ventricle%20As%20A%20Pump" eOpposite="//Biolectric/Left%20Ventricle%20As%20A%20Pump/heart_as_a_pump"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="blood_pumping" lowerBound="-1" upperBound="-1" eType="//Blood%20Pumping/Blood%20Pumping" eOpposite="//Blood%20Pumping/Blood%20Pumping/heart_as_a_pump"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="Heart Cells">
+      <eStructuralFeatures xsi:type="ecore:EReference" name="human_heart" lowerBound="1" eType="//Human%20Heart/Human%20Heart" eOpposite="//Human%20Heart/Human%20Heart/heart_cells"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="His Electrical Impulse" eSuperTypes="//Biolectric/His%20Purkinje%20Electrical%20Impulse"/>
+    <eClassifiers xsi:type="ecore:EClass" name="His Purkinje Electrical Impulse">
+      <eStructuralFeatures xsi:type="ecore:EReference" name="av_electrical_impulse" lowerBound="1" eType="//Biolectric/AV%20Electrical%20Impulse" eOpposite="//Biolectric/AV%20Electrical%20Impulse/his_purkinje_electrical_impulse"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="sa_electrical_impulse" lowerBound="1" eType="//Biolectric/SA%20Electrical%20Impulse" eOpposite="//Biolectric/SA%20Electrical%20Impulse/his_purkinje_electrical_impulse"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="qrscomplex" lowerBound="1" eType="//Electrocardiography/QRSComplex" eOpposite="//Electrocardiography/QRSComplex/his_purkinje_electrical_impulse"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="LA Contraction">
+      <eStructuralFeatures xsi:type="ecore:EReference" name="av_electrical_impulse" lowerBound="1" eType="//Biolectric/AV%20Electrical%20Impulse" eOpposite="//Biolectric/AV%20Electrical%20Impulse/la_contraction"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="left_atrium_as_a_pump" lowerBound="1" eType="//Biolectric/Left%20Atrium%20As%20A%20Pump" eOpposite="//Biolectric/Left%20Atrium%20As%20A%20Pump/la_contraction"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="LV Contraction">
+      <eStructuralFeatures xsi:type="ecore:EReference" name="left_ventricle_as_a_pump" lowerBound="1" eType="//Biolectric/Left%20Ventricle%20As%20A%20Pump" eOpposite="//Biolectric/Left%20Ventricle%20As%20A%20Pump/lv_contraction"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="pukinje_electrical_impulse" lowerBound="1" eType="//Biolectric/Pukinje%20Electrical%20Impulse" eOpposite="//Biolectric/Pukinje%20Electrical%20Impulse/lv_contraction"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="Left Atrium As A Pump" eSuperTypes="//Human%20Heart/Left%20Atrium">
+      <eStructuralFeatures xsi:type="ecore:EReference" name="heart_as_a_pump" lowerBound="1" eType="//Biolectric/Heart%20As%20A%20Pump" eOpposite="//Biolectric/Heart%20As%20A%20Pump/left_atrium_as_a_pump"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="la_contraction" lowerBound="1" upperBound="-1" eType="//Biolectric/LA%20Contraction" eOpposite="//Biolectric/LA%20Contraction/left_atrium_as_a_pump"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="Left Ventricle As A Pump" eSuperTypes="//Human%20Heart/Left%20Ventricle">
+      <eStructuralFeatures xsi:type="ecore:EReference" name="heart_as_a_pump" lowerBound="1" eType="//Biolectric/Heart%20As%20A%20Pump" eOpposite="//Biolectric/Heart%20As%20A%20Pump/left_ventricle_as_a_pump"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="lv_contraction" lowerBound="1" upperBound="-1" eType="//Biolectric/LV%20Contraction" eOpposite="//Biolectric/LV%20Contraction/left_ventricle_as_a_pump"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="pukinje_electrical_impulse" lowerBound="1" upperBound="-1" eType="//Biolectric/Pukinje%20Electrical%20Impulse" eOpposite="//Biolectric/Pukinje%20Electrical%20Impulse/left_ventricle_as_a_pump"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="Non Pacemaker Cells" eSuperTypes="//Biolectric/Heart%20Cells"/>
+    <eClassifiers xsi:type="ecore:EClass" name="Pacemaker Cells" eSuperTypes="//Biolectric/Heart%20Cells"/>
+    <eClassifiers xsi:type="ecore:EClass" name="Pukinje Electrical Impulse" eSuperTypes="//Biolectric/His%20Purkinje%20Electrical%20Impulse">
+      <eStructuralFeatures xsi:type="ecore:EReference" name="lv_contraction" lowerBound="1" eType="//Biolectric/LV%20Contraction" eOpposite="//Biolectric/LV%20Contraction/pukinje_electrical_impulse"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="left_ventricle_as_a_pump" lowerBound="1" eType="//Biolectric/Left%20Ventricle%20As%20A%20Pump" eOpposite="//Biolectric/Left%20Ventricle%20As%20A%20Pump/pukinje_electrical_impulse"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="rv_contraction" lowerBound="1" eType="//Biolectric/RV%20Contraction" eOpposite="//Biolectric/RV%20Contraction/pukinje_electrical_impulse"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="right_ventricle_as_a_pump" lowerBound="1" eType="//Biolectric/Right%20Ventricle%20As%20A%20Pump" eOpposite="//Biolectric/Right%20Ventricle%20As%20A%20Pump/pukinje_electrical_impulse"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="RA Contraction">
+      <eStructuralFeatures xsi:type="ecore:EReference" name="sa_electrical_impulse" lowerBound="1" eType="//Biolectric/SA%20Electrical%20Impulse" eOpposite="//Biolectric/SA%20Electrical%20Impulse/ra_contraction"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="right_atrium_as_a_pump" lowerBound="1" eType="//Biolectric/Right%20Atrium%20As%20A%20Pump" eOpposite="//Biolectric/Right%20Atrium%20As%20A%20Pump/ra_contraction"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="RV Contraction">
+      <eStructuralFeatures xsi:type="ecore:EReference" name="pukinje_electrical_impulse" lowerBound="1" eType="//Biolectric/Pukinje%20Electrical%20Impulse" eOpposite="//Biolectric/Pukinje%20Electrical%20Impulse/rv_contraction"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="right_ventricle_as_a_pump" lowerBound="1" eType="//Biolectric/Right%20Ventricle%20As%20A%20Pump" eOpposite="//Biolectric/Right%20Ventricle%20As%20A%20Pump/rv_contraction"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="Right Atrium As A Pump" eSuperTypes="//Human%20Heart/Right%20Atrium">
+      <eStructuralFeatures xsi:type="ecore:EReference" name="heart_as_a_pump" lowerBound="1" eType="//Biolectric/Heart%20As%20A%20Pump" eOpposite="//Biolectric/Heart%20As%20A%20Pump/right_atrium_as_a_pump"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="ra_contraction" lowerBound="1" upperBound="-1" eType="//Biolectric/RA%20Contraction" eOpposite="//Biolectric/RA%20Contraction/right_atrium_as_a_pump"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="Right Ventricle As A Pump" eSuperTypes="//Human%20Heart/Right%20Ventricle">
+      <eStructuralFeatures xsi:type="ecore:EReference" name="heart_as_a_pump" lowerBound="1" eType="//Biolectric/Heart%20As%20A%20Pump" eOpposite="//Biolectric/Heart%20As%20A%20Pump/right_ventricle_as_a_pump"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="pukinje_electrical_impulse" lowerBound="1" upperBound="-1" eType="//Biolectric/Pukinje%20Electrical%20Impulse" eOpposite="//Biolectric/Pukinje%20Electrical%20Impulse/right_ventricle_as_a_pump"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="rv_contraction" lowerBound="1" upperBound="-1" eType="//Biolectric/RV%20Contraction" eOpposite="//Biolectric/RV%20Contraction/right_ventricle_as_a_pump"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="SA Electrical Impulse">
+      <eStructuralFeatures xsi:type="ecore:EReference" name="av_electrical_impulse_generator" lowerBound="-1" upperBound="-1" eType="//Biolectric/AV%20Electrical%20Impulse%20Generator" eOpposite="//Biolectric/AV%20Electrical%20Impulse%20Generator/sa_electrical_impulse"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="his_purkinje_electrical_impulse" lowerBound="1" eType="//Biolectric/His%20Purkinje%20Electrical%20Impulse" eOpposite="//Biolectric/His%20Purkinje%20Electrical%20Impulse/sa_electrical_impulse"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="ra_contraction" lowerBound="1" eType="//Biolectric/RA%20Contraction" eOpposite="//Biolectric/RA%20Contraction/sa_electrical_impulse"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="pwave" lowerBound="1" eType="//Electrocardiography/PWave" eOpposite="//Electrocardiography/PWave/sa_electrical_impulse"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="SA Electrical Impulse Generator">
+      <eStructuralFeatures xsi:type="ecore:EReference" name="av_electrical_impulse" lowerBound="1" eType="//Biolectric/AV%20Electrical%20Impulse" eOpposite="//Biolectric/AV%20Electrical%20Impulse/sa_electrical_impulse_generator"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="av_node_cells" lowerBound="1" eType="//Biolectric/AV%20Node%20Cells" eOpposite="//Biolectric/AV%20Node%20Cells/sa_electrical_impulse_generator"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="SA Node Cells" eSuperTypes="//Biolectric/Pacemaker%20Cells">
+      <eStructuralFeatures xsi:type="ecore:EReference" name="av_electrical_impulse_generator" lowerBound="-1" upperBound="-1" eType="//Biolectric/AV%20Electrical%20Impulse%20Generator" eOpposite="//Biolectric/AV%20Electrical%20Impulse%20Generator/sa_node_cells"/>
+    </eClassifiers>
+  </eSubpackages>
+  <eSubpackages name="Blood Pumping">
+    <eClassifiers xsi:type="ecore:EClass" name="Blood Movement from LA to LV Container">
+      <eStructuralFeatures xsi:type="ecore:EReference" name="blood_in_left_atrium" lowerBound="1" eType="//Circulatory/Blood%20in%20Left%20Atrium" eOpposite="//Circulatory/Blood%20in%20Left%20Atrium/blood_movement_from_la_to_lv_container"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="left_ventricle_as_a_blood_container" lowerBound="1" eType="//Circulatory/Left%20Ventricle%20As%20A%20Blood%20Container" eOpposite="//Circulatory/Left%20Ventricle%20As%20A%20Blood%20Container/blood_movement_from_la_to_lv_container"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="Blood Movement from Lungs to LA">
+      <eStructuralFeatures xsi:type="ecore:EReference" name="blood_in_left_atrium" lowerBound="1" eType="//Circulatory/Blood%20in%20Left%20Atrium" eOpposite="//Circulatory/Blood%20in%20Left%20Atrium/blood_movement_from_lungs_to_la"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="blood_in_lungs" lowerBound="1" eType="//Circulatory/Blood%20In%20Lungs" eOpposite="//Circulatory/Blood%20In%20Lungs/blood_movement_from_lungs_to_la"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="Blood Movement from Peripheral Container to LV">
+      <eStructuralFeatures xsi:type="ecore:EReference" name="peripherals_as_a_blood_container" lowerBound="1" eType="//Circulatory/Peripherals%20As%20A%20Blood%20Container" eOpposite="//Circulatory/Peripherals%20As%20A%20Blood%20Container/blood_movement_from_peripheral_container_to_lv"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="blood_in_left_ventricle" lowerBound="1" eType="//Circulatory/Blood%20in%20Left%20Ventricle" eOpposite="//Circulatory/Blood%20in%20Left%20Ventricle/blood_movement_from_peripheral_container_to_lv"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="Blood Movement from Peripheral to RA">
+      <eStructuralFeatures xsi:type="ecore:EReference" name="blood_in_right_atrium" lowerBound="1" eType="//Circulatory/Blood%20In%20RIght%20Atrium" eOpposite="//Circulatory/Blood%20In%20RIght%20Atrium/blood_movement_from_peripheral_to_ra"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="blood_in_peripherals" lowerBound="1" eType="//Circulatory/Blood%20in%20Peripherals" eOpposite="//Circulatory/Blood%20in%20Peripherals/blood_movement_from_peripheral_to_ra"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="Blood Movement from RA to RV Container">
+      <eStructuralFeatures xsi:type="ecore:EReference" name="blood_in_right_atrium" lowerBound="1" eType="//Circulatory/Blood%20In%20RIght%20Atrium" eOpposite="//Circulatory/Blood%20In%20RIght%20Atrium/blood_movement_from_ra_to_rv_container"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="righ_ventricle_as_a_blood_container" lowerBound="1" eType="//Circulatory/Righ%20Ventricle%20As%20A%20Blood%20Container" eOpposite="//Circulatory/Righ%20Ventricle%20As%20A%20Blood%20Container/blood_movement_from_ra_to_rv_container"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="Blood Movement from RV to Lungs as Container">
+      <eStructuralFeatures xsi:type="ecore:EReference" name="lungs_as_a_blood_container" lowerBound="1" eType="//Circulatory/Lungs%20As%20A%20Blood%20Container" eOpposite="//Circulatory/Lungs%20As%20A%20Blood%20Container/blood_movement_from_rv_to_lungs_as_container"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="blood_in_right_ventricle" lowerBound="1" eType="//Circulatory/Blood%20in%20Right%20Ventricle" eOpposite="//Circulatory/Blood%20in%20Right%20Ventricle/blood_movement_from_rv_to_lungs_as_container"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="Blood Pumping">
+      <eStructuralFeatures xsi:type="ecore:EReference" name="heart_as_a_pump" lowerBound="1" eType="//Biolectric/Heart%20As%20A%20Pump" eOpposite="//Biolectric/Heart%20As%20A%20Pump/blood_pumping"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="bloodinhumanbody" lowerBound="1" eType="//Circulatory/BloodInHumanBody" eOpposite="//Circulatory/BloodInHumanBody/blood_pumping"/>
+    </eClassifiers>
+  </eSubpackages>
+  <eSubpackages name="Circulatory">
+    <eClassifiers xsi:type="ecore:EClass" name="Blood In Lungs">
+      <eStructuralFeatures xsi:type="ecore:EReference" name="blood_movement_from_lungs_to_la" lowerBound="-1" upperBound="-1" eType="//Blood%20Pumping/Blood%20Movement%20from%20Lungs%20to%20LA" eOpposite="//Blood%20Pumping/Blood%20Movement%20from%20Lungs%20to%20LA/blood_in_lungs"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="bloodinhumanbody" lowerBound="1" eType="//Circulatory/BloodInHumanBody" eOpposite="//Circulatory/BloodInHumanBody/blood_in_lungs"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="lungs_blood_storing" lowerBound="1" eType="//Circulatory/Lungs%20Blood%20Storing" eOpposite="//Circulatory/Lungs%20Blood%20Storing/blood_in_lungs"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="Blood In RIght Atrium">
+      <eStructuralFeatures xsi:type="ecore:EReference" name="blood_movement_from_peripheral_to_ra" lowerBound="-1" upperBound="-1" eType="//Blood%20Pumping/Blood%20Movement%20from%20Peripheral%20to%20RA" eOpposite="//Blood%20Pumping/Blood%20Movement%20from%20Peripheral%20to%20RA/blood_in_right_atrium"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="blood_movement_from_ra_to_rv_container" lowerBound="-1" upperBound="-1" eType="//Blood%20Pumping/Blood%20Movement%20from%20RA%20to%20RV%20Container" eOpposite="//Blood%20Pumping/Blood%20Movement%20from%20RA%20to%20RV%20Container/blood_in_right_atrium"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="ra_blood_storing" lowerBound="1" eType="//Circulatory/RA%20Blood%20Storing" eOpposite="//Circulatory/RA%20Blood%20Storing/blood_in_right_atrium"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="bloodinhumanbody" lowerBound="1" eType="//Circulatory/BloodInHumanBody" eOpposite="//Circulatory/BloodInHumanBody/blood_in_right_atrium"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="Blood in Left Atrium">
+      <eStructuralFeatures xsi:type="ecore:EReference" name="blood_movement_from_la_to_lv_container" lowerBound="-1" upperBound="-1" eType="//Blood%20Pumping/Blood%20Movement%20from%20LA%20to%20LV%20Container" eOpposite="//Blood%20Pumping/Blood%20Movement%20from%20LA%20to%20LV%20Container/blood_in_left_atrium"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="blood_movement_from_lungs_to_la" lowerBound="-1" upperBound="-1" eType="//Blood%20Pumping/Blood%20Movement%20from%20Lungs%20to%20LA" eOpposite="//Blood%20Pumping/Blood%20Movement%20from%20Lungs%20to%20LA/blood_in_left_atrium"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="la_blood_storing" lowerBound="1" eType="//Circulatory/LA%20Blood%20Storing" eOpposite="//Circulatory/LA%20Blood%20Storing/blood_in_left_atrium"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="bloodinhumanbody" lowerBound="1" eType="//Circulatory/BloodInHumanBody" eOpposite="//Circulatory/BloodInHumanBody/blood_in_left_atrium"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="Blood in Left Ventricle">
+      <eStructuralFeatures xsi:type="ecore:EReference" name="blood_movement_from_peripheral_container_to_lv" lowerBound="-1" upperBound="-1" eType="//Blood%20Pumping/Blood%20Movement%20from%20Peripheral%20Container%20to%20LV" eOpposite="//Blood%20Pumping/Blood%20Movement%20from%20Peripheral%20Container%20to%20LV/blood_in_left_ventricle"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="bloodinhumanbody" lowerBound="1" eType="//Circulatory/BloodInHumanBody" eOpposite="//Circulatory/BloodInHumanBody/blood_in_left_ventricle"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="lv_blood_storing" lowerBound="1" eType="//Circulatory/LV%20Blood%20Storing" eOpposite="//Circulatory/LV%20Blood%20Storing/blood_in_left_ventricle"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="Blood in Peripherals">
+      <eStructuralFeatures xsi:type="ecore:EReference" name="blood_movement_from_peripheral_to_ra" lowerBound="-1" upperBound="-1" eType="//Blood%20Pumping/Blood%20Movement%20from%20Peripheral%20to%20RA" eOpposite="//Blood%20Pumping/Blood%20Movement%20from%20Peripheral%20to%20RA/blood_in_peripherals"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="peripherals_blood_storing" lowerBound="1" eType="//Circulatory/Peripherals%20Blood%20Storing" eOpposite="//Circulatory/Peripherals%20Blood%20Storing/blood_in_peripherals"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="bloodinhumanbody" lowerBound="1" eType="//Circulatory/BloodInHumanBody" eOpposite="//Circulatory/BloodInHumanBody/blood_in_peripherals"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="Blood in Right Ventricle">
+      <eStructuralFeatures xsi:type="ecore:EReference" name="blood_movement_from_rv_to_lungs_as_container" lowerBound="-1" upperBound="-1" eType="//Blood%20Pumping/Blood%20Movement%20from%20RV%20to%20Lungs%20as%20Container" eOpposite="//Blood%20Pumping/Blood%20Movement%20from%20RV%20to%20Lungs%20as%20Container/blood_in_right_ventricle"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="rv_blood_storing" lowerBound="1" eType="//Circulatory/RV%20Blood%20Storing" eOpposite="//Circulatory/RV%20Blood%20Storing/blood_in_right_ventricle"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="bloodinhumanbody" lowerBound="1" eType="//Circulatory/BloodInHumanBody" eOpposite="//Circulatory/BloodInHumanBody/blood_in_right_ventricle"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="BloodInHumanBody">
+      <eStructuralFeatures xsi:type="ecore:EReference" name="blood_pumping" lowerBound="-1" upperBound="-1" eType="//Blood%20Pumping/Blood%20Pumping" eOpposite="//Blood%20Pumping/Blood%20Pumping/bloodinhumanbody"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="blood_in_lungs" eType="//Circulatory/Blood%20In%20Lungs" eOpposite="//Circulatory/Blood%20In%20Lungs/bloodinhumanbody"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="blood_in_right_atrium" eType="//Circulatory/Blood%20In%20RIght%20Atrium" eOpposite="//Circulatory/Blood%20In%20RIght%20Atrium/bloodinhumanbody"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="blood_in_left_atrium" eType="//Circulatory/Blood%20in%20Left%20Atrium" eOpposite="//Circulatory/Blood%20in%20Left%20Atrium/bloodinhumanbody"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="blood_in_left_ventricle" eType="//Circulatory/Blood%20in%20Left%20Ventricle" eOpposite="//Circulatory/Blood%20in%20Left%20Ventricle/bloodinhumanbody"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="blood_in_peripherals" eType="//Circulatory/Blood%20in%20Peripherals" eOpposite="//Circulatory/Blood%20in%20Peripherals/bloodinhumanbody"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="blood_in_right_ventricle" eType="//Circulatory/Blood%20in%20Right%20Ventricle" eOpposite="//Circulatory/Blood%20in%20Right%20Ventricle/bloodinhumanbody"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="Heart As Blood Container">
+      <eStructuralFeatures xsi:type="ecore:EReference" name="left_atrium_as_a_blood_container" eType="//Circulatory/Left%20Atrium%20As%20A%20Blood%20Container" eOpposite="//Circulatory/Left%20Atrium%20As%20A%20Blood%20Container/heart_as_blood_container"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="left_ventricle_as_a_blood_container" eType="//Circulatory/Left%20Ventricle%20As%20A%20Blood%20Container" eOpposite="//Circulatory/Left%20Ventricle%20As%20A%20Blood%20Container/heart_as_blood_container"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="righ_ventricle_as_a_blood_container" eType="//Circulatory/Righ%20Ventricle%20As%20A%20Blood%20Container" eOpposite="//Circulatory/Righ%20Ventricle%20As%20A%20Blood%20Container/heart_as_blood_container"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="right_atrium_as_a_blood_container" eType="//Circulatory/Right%20Atrium%20As%20A%20Blood%20Container" eOpposite="//Circulatory/Right%20Atrium%20As%20A%20Blood%20Container/heart_as_blood_container"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="LA Blood Storing">
+      <eStructuralFeatures xsi:type="ecore:EReference" name="blood_in_left_atrium" lowerBound="1" eType="//Circulatory/Blood%20in%20Left%20Atrium" eOpposite="//Circulatory/Blood%20in%20Left%20Atrium/la_blood_storing"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="left_atrium_as_a_blood_container" lowerBound="1" eType="//Circulatory/Left%20Atrium%20As%20A%20Blood%20Container" eOpposite="//Circulatory/Left%20Atrium%20As%20A%20Blood%20Container/la_blood_storing"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="LV Blood Storing">
+      <eStructuralFeatures xsi:type="ecore:EReference" name="blood_in_left_ventricle" lowerBound="1" eType="//Circulatory/Blood%20in%20Left%20Ventricle" eOpposite="//Circulatory/Blood%20in%20Left%20Ventricle/lv_blood_storing"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="left_ventricle_as_a_blood_container" lowerBound="1" eType="//Circulatory/Left%20Ventricle%20As%20A%20Blood%20Container" eOpposite="//Circulatory/Left%20Ventricle%20As%20A%20Blood%20Container/lv_blood_storing"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="Left Atrium As A Blood Container" eSuperTypes="//Human%20Heart/Left%20Atrium">
+      <eStructuralFeatures xsi:type="ecore:EReference" name="heart_as_blood_container" lowerBound="1" eType="//Circulatory/Heart%20As%20Blood%20Container" eOpposite="//Circulatory/Heart%20As%20Blood%20Container/left_atrium_as_a_blood_container"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="la_blood_storing" lowerBound="1" eType="//Circulatory/LA%20Blood%20Storing" eOpposite="//Circulatory/LA%20Blood%20Storing/left_atrium_as_a_blood_container"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="Left Ventricle As A Blood Container" eSuperTypes="//Human%20Heart/Left%20Ventricle">
+      <eStructuralFeatures xsi:type="ecore:EReference" name="blood_movement_from_la_to_lv_container" lowerBound="-1" upperBound="-1" eType="//Blood%20Pumping/Blood%20Movement%20from%20LA%20to%20LV%20Container" eOpposite="//Blood%20Pumping/Blood%20Movement%20from%20LA%20to%20LV%20Container/left_ventricle_as_a_blood_container"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="heart_as_blood_container" lowerBound="1" eType="//Circulatory/Heart%20As%20Blood%20Container" eOpposite="//Circulatory/Heart%20As%20Blood%20Container/left_ventricle_as_a_blood_container"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="lv_blood_storing" lowerBound="1" eType="//Circulatory/LV%20Blood%20Storing" eOpposite="//Circulatory/LV%20Blood%20Storing/left_ventricle_as_a_blood_container"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="Lungs" eSuperTypes="//Human%20Heart/Chamber">
+      <eStructuralFeatures xsi:type="ecore:EReference" name="human_body" lowerBound="1" eType="//Human%20Heart/Human%20Body" eOpposite="//Human%20Heart/Human%20Body/lungs"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="Lungs As A Blood Container" eSuperTypes="//Circulatory/Lungs">
+      <eStructuralFeatures xsi:type="ecore:EReference" name="blood_movement_from_rv_to_lungs_as_container" lowerBound="-1" upperBound="-1" eType="//Blood%20Pumping/Blood%20Movement%20from%20RV%20to%20Lungs%20as%20Container" eOpposite="//Blood%20Pumping/Blood%20Movement%20from%20RV%20to%20Lungs%20as%20Container/lungs_as_a_blood_container"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="lungs_blood_storing" lowerBound="1" eType="//Circulatory/Lungs%20Blood%20Storing" eOpposite="//Circulatory/Lungs%20Blood%20Storing/lungs_as_a_blood_container"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="Lungs Blood Storing">
+      <eStructuralFeatures xsi:type="ecore:EReference" name="blood_in_lungs" lowerBound="1" eType="//Circulatory/Blood%20In%20Lungs" eOpposite="//Circulatory/Blood%20In%20Lungs/lungs_blood_storing"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="lungs_as_a_blood_container" lowerBound="1" eType="//Circulatory/Lungs%20As%20A%20Blood%20Container" eOpposite="//Circulatory/Lungs%20As%20A%20Blood%20Container/lungs_blood_storing"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="Peripherals" eSuperTypes="//Human%20Heart/Chamber">
+      <eStructuralFeatures xsi:type="ecore:EReference" name="human_body" lowerBound="1" eType="//Human%20Heart/Human%20Body" eOpposite="//Human%20Heart/Human%20Body/peripherals"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="Peripherals As A Blood Container" eSuperTypes="//Circulatory/Peripherals">
+      <eStructuralFeatures xsi:type="ecore:EReference" name="blood_movement_from_peripheral_container_to_lv" lowerBound="-1" upperBound="-1" eType="//Blood%20Pumping/Blood%20Movement%20from%20Peripheral%20Container%20to%20LV" eOpposite="//Blood%20Pumping/Blood%20Movement%20from%20Peripheral%20Container%20to%20LV/peripherals_as_a_blood_container"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="peripherals_blood_storing" lowerBound="1" eType="//Circulatory/Peripherals%20Blood%20Storing" eOpposite="//Circulatory/Peripherals%20Blood%20Storing/peripherals_as_a_blood_container"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="Peripherals Blood Storing">
+      <eStructuralFeatures xsi:type="ecore:EReference" name="blood_in_peripherals" lowerBound="1" eType="//Circulatory/Blood%20in%20Peripherals" eOpposite="//Circulatory/Blood%20in%20Peripherals/peripherals_blood_storing"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="peripherals_as_a_blood_container" lowerBound="1" eType="//Circulatory/Peripherals%20As%20A%20Blood%20Container" eOpposite="//Circulatory/Peripherals%20As%20A%20Blood%20Container/peripherals_blood_storing"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="RA Blood Storing">
+      <eStructuralFeatures xsi:type="ecore:EReference" name="blood_in_right_atrium" lowerBound="1" eType="//Circulatory/Blood%20In%20RIght%20Atrium" eOpposite="//Circulatory/Blood%20In%20RIght%20Atrium/ra_blood_storing"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="right_atrium_as_a_blood_container" lowerBound="1" eType="//Circulatory/Right%20Atrium%20As%20A%20Blood%20Container" eOpposite="//Circulatory/Right%20Atrium%20As%20A%20Blood%20Container/ra_blood_storing"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="RV Blood Storing">
+      <eStructuralFeatures xsi:type="ecore:EReference" name="blood_in_right_ventricle" lowerBound="1" eType="//Circulatory/Blood%20in%20Right%20Ventricle" eOpposite="//Circulatory/Blood%20in%20Right%20Ventricle/rv_blood_storing"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="righ_ventricle_as_a_blood_container" lowerBound="1" eType="//Circulatory/Righ%20Ventricle%20As%20A%20Blood%20Container" eOpposite="//Circulatory/Righ%20Ventricle%20As%20A%20Blood%20Container/rv_blood_storing"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="Righ Ventricle As A Blood Container" eSuperTypes="//Human%20Heart/Right%20Ventricle">
+      <eStructuralFeatures xsi:type="ecore:EReference" name="blood_movement_from_ra_to_rv_container" lowerBound="-1" upperBound="-1" eType="//Blood%20Pumping/Blood%20Movement%20from%20RA%20to%20RV%20Container" eOpposite="//Blood%20Pumping/Blood%20Movement%20from%20RA%20to%20RV%20Container/righ_ventricle_as_a_blood_container"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="heart_as_blood_container" lowerBound="1" eType="//Circulatory/Heart%20As%20Blood%20Container" eOpposite="//Circulatory/Heart%20As%20Blood%20Container/righ_ventricle_as_a_blood_container"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="rv_blood_storing" lowerBound="1" eType="//Circulatory/RV%20Blood%20Storing" eOpposite="//Circulatory/RV%20Blood%20Storing/righ_ventricle_as_a_blood_container"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="Right Atrium As A Blood Container" eSuperTypes="//Human%20Heart/Right%20Atrium">
+      <eStructuralFeatures xsi:type="ecore:EReference" name="heart_as_blood_container" lowerBound="1" eType="//Circulatory/Heart%20As%20Blood%20Container" eOpposite="//Circulatory/Heart%20As%20Blood%20Container/right_atrium_as_a_blood_container"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="ra_blood_storing" lowerBound="1" eType="//Circulatory/RA%20Blood%20Storing" eOpposite="//Circulatory/RA%20Blood%20Storing/right_atrium_as_a_blood_container"/>
+    </eClassifiers>
+  </eSubpackages>
+  <eSubpackages name="Session Qualities">
+    <eClassifiers xsi:type="ecore:EClass" name="Annotation">
+      <eStructuralFeatures xsi:type="ecore:EReference" name="annotation_domain" lowerBound="1" eType="//Session%20Qualities/Annotation%20Domain" eOpposite="//Session%20Qualities/Annotation%20Domain/annotation"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="elementary_form" lowerBound="1" eType="//Electrocardiography/Elementary%20Form" eOpposite="//Electrocardiography/Elementary%20Form/annotation"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="Cardiac Frequency">
+      <eStructuralFeatures xsi:type="ecore:EReference" name="cardiac_frequency_rate" lowerBound="1" eType="//Session%20Qualities/Cardiac%20Frequency%20Rate" eOpposite="//Session%20Qualities/Cardiac%20Frequency%20Rate/cardiac_frequency"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="cycle" lowerBound="1" eType="//Electrocardiography/Cycle" eOpposite="//Electrocardiography/Cycle/cardiac_frequency"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="Date">
+      <eStructuralFeatures xsi:type="ecore:EReference" name="date_domain" lowerBound="1" eType="//Session%20Qualities/Date%20Domain" eOpposite="//Session%20Qualities/Date%20Domain/date"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="ecg_recording_session" lowerBound="1" eType="//Electrocardiography/ECG%20Recording%20Session" eOpposite="//Electrocardiography/ECG%20Recording%20Session/date"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="Electrical Potential">
+      <eStructuralFeatures xsi:type="ecore:EReference" name="electrical_potential_rate" lowerBound="1" eType="//Session%20Qualities/Electrical%20Potential%20Rate" eOpposite="//Session%20Qualities/Electrical%20Potential%20Rate/electrical_potential"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="sample" lowerBound="1" eType="//Electrocardiography/Sample" eOpposite="//Electrocardiography/Sample/electrical_potential"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="Measurement">
+      <eStructuralFeatures xsi:type="ecore:EReference" name="elementary_form" lowerBound="1" eType="//Electrocardiography/Elementary%20Form" eOpposite="//Electrocardiography/Elementary%20Form/measurement"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="measurement_domain" lowerBound="1" eType="//Session%20Qualities/Measurement%20Domain" eOpposite="//Session%20Qualities/Measurement%20Domain/measurement"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="Sample">
+      <eStructuralFeatures xsi:type="ecore:EReference" name="sample_rate" lowerBound="1" eType="//Session%20Qualities/Sample%20Rate" eOpposite="//Session%20Qualities/Sample%20Rate/sample"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="observation_series" lowerBound="1" eType="//Electrocardiography/Observation%20Series" eOpposite="//Electrocardiography/Observation%20Series/sample"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="Time">
+      <eStructuralFeatures xsi:type="ecore:EReference" name="time_domain" lowerBound="1" eType="//Session%20Qualities/Time%20Domain" eOpposite="//Session%20Qualities/Time%20Domain/time"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="observation" lowerBound="1" eType="//Electrocardiography/Observation" eOpposite="//Electrocardiography/Observation/time"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="ecg_recording_session" lowerBound="1" eType="//Electrocardiography/ECG%20Recording%20Session" eOpposite="//Electrocardiography/ECG%20Recording%20Session/time"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="cycle" lowerBound="1" eType="//Electrocardiography/Cycle" eOpposite="//Electrocardiography/Cycle/time"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="ecg_recording_session" lowerBound="1" eType="//Electrocardiography/ECG%20Recording%20Session" eOpposite="//Electrocardiography/ECG%20Recording%20Session/time.1"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="Annotation Domain">
+      <eStructuralFeatures xsi:type="ecore:EReference" name="annotation" lowerBound="1" eType="//Session%20Qualities/Annotation" eOpposite="//Session%20Qualities/Annotation/annotation_domain"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="time_domain" lowerBound="1" eType="//Session%20Qualities/Time%20Domain" eOpposite="//Session%20Qualities/Time%20Domain/annotation_domain"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="time_domain" lowerBound="1" eType="//Session%20Qualities/Time%20Domain" eOpposite="//Session%20Qualities/Time%20Domain/annotation_domain.1"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="time_domain" lowerBound="1" eType="//Session%20Qualities/Time%20Domain" eOpposite="//Session%20Qualities/Time%20Domain/annotation_domain.2"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="Cardiac Frequency Rate">
+      <eStructuralFeatures xsi:type="ecore:EReference" name="cardiac_frequency" lowerBound="-1" upperBound="-1" eType="//Session%20Qualities/Cardiac%20Frequency" eOpposite="//Session%20Qualities/Cardiac%20Frequency/cardiac_frequency_rate"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="Date Domain">
+      <eStructuralFeatures xsi:type="ecore:EReference" name="date" lowerBound="1" eType="//Session%20Qualities/Date" eOpposite="//Session%20Qualities/Date/date_domain"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="day" lowerBound="1" eType="//Session%20Qualities/Day" eOpposite="//Session%20Qualities/Day/date_domain"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="month" lowerBound="1" eType="//Session%20Qualities/Month" eOpposite="//Session%20Qualities/Month/date_domain"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="year" lowerBound="1" eType="//Session%20Qualities/Year" eOpposite="//Session%20Qualities/Year/date_domain"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="Day">
+      <eStructuralFeatures xsi:type="ecore:EReference" name="date_domain" upperBound="-1" eType="//Session%20Qualities/Date%20Domain" eOpposite="//Session%20Qualities/Date%20Domain/day"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="Electrical Potential Rate">
+      <eStructuralFeatures xsi:type="ecore:EReference" name="electrical_potential" lowerBound="1" eType="//Session%20Qualities/Electrical%20Potential" eOpposite="//Session%20Qualities/Electrical%20Potential/electrical_potential_rate"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="measurement_domain" upperBound="-1" eType="//Session%20Qualities/Measurement%20Domain" eOpposite="//Session%20Qualities/Measurement%20Domain/electrical_potential_rate"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="Hour">
+      <eStructuralFeatures xsi:type="ecore:EReference" name="time_domain" upperBound="-1" eType="//Session%20Qualities/Time%20Domain" eOpposite="//Session%20Qualities/Time%20Domain/hour"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="Measurement Domain">
+      <eStructuralFeatures xsi:type="ecore:EReference" name="measurement" lowerBound="1" eType="//Session%20Qualities/Measurement" eOpposite="//Session%20Qualities/Measurement/measurement_domain"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="time_domain" lowerBound="1" eType="//Session%20Qualities/Time%20Domain" eOpposite="//Session%20Qualities/Time%20Domain/measurement_domain"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="electrical_potential_rate" lowerBound="1" eType="//Session%20Qualities/Electrical%20Potential%20Rate" eOpposite="//Session%20Qualities/Electrical%20Potential%20Rate/measurement_domain"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="Minute">
+      <eStructuralFeatures xsi:type="ecore:EReference" name="time_domain" upperBound="-1" eType="//Session%20Qualities/Time%20Domain" eOpposite="//Session%20Qualities/Time%20Domain/minute"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="Month">
+      <eStructuralFeatures xsi:type="ecore:EReference" name="date_domain" upperBound="-1" eType="//Session%20Qualities/Date%20Domain" eOpposite="//Session%20Qualities/Date%20Domain/month"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="Sample Rate">
+      <eStructuralFeatures xsi:type="ecore:EReference" name="sample" lowerBound="1" eType="//Session%20Qualities/Sample" eOpposite="//Session%20Qualities/Sample/sample_rate"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="Second">
+      <eStructuralFeatures xsi:type="ecore:EReference" name="time_domain" upperBound="-1" eType="//Session%20Qualities/Time%20Domain" eOpposite="//Session%20Qualities/Time%20Domain/second"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="Time Domain">
+      <eStructuralFeatures xsi:type="ecore:EReference" name="time" lowerBound="1" eType="//Session%20Qualities/Time" eOpposite="//Session%20Qualities/Time/time_domain"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="annotation_domain" upperBound="-1" eType="//Session%20Qualities/Annotation%20Domain" eOpposite="//Session%20Qualities/Annotation%20Domain/time_domain"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="annotation_domain" upperBound="-1" eType="//Session%20Qualities/Annotation%20Domain" eOpposite="//Session%20Qualities/Annotation%20Domain/time_domain.1"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="annotation_domain" upperBound="-1" eType="//Session%20Qualities/Annotation%20Domain" eOpposite="//Session%20Qualities/Annotation%20Domain/time_domain.2"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="measurement_domain" upperBound="-1" eType="//Session%20Qualities/Measurement%20Domain" eOpposite="//Session%20Qualities/Measurement%20Domain/time_domain"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="hour" lowerBound="1" eType="//Session%20Qualities/Hour" eOpposite="//Session%20Qualities/Hour/time_domain"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="minute" lowerBound="1" eType="//Session%20Qualities/Minute" eOpposite="//Session%20Qualities/Minute/time_domain"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="second" lowerBound="1" eType="//Session%20Qualities/Second" eOpposite="//Session%20Qualities/Second/time_domain"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="Year">
+      <eStructuralFeatures xsi:type="ecore:EReference" name="date_domain" upperBound="-1" eType="//Session%20Qualities/Date%20Domain" eOpposite="//Session%20Qualities/Date%20Domain/year"/>
+    </eClassifiers>
+  </eSubpackages>
+  <eSubpackages name="Electrocardiography">
+    <eClassifiers xsi:type="ecore:EClass" name="BandpassFilter" eSuperTypes="//Electrocardiography/Filtering%20Technique"/>
+    <eClassifiers xsi:type="ecore:EClass" name="Correlated Observation Series">
+      <eStructuralFeatures xsi:type="ecore:EReference" name="observation_series" lowerBound="2" upperBound="12" eType="//Electrocardiography/Observation%20Series" eOpposite="//Electrocardiography/Observation%20Series/correlated_observation_series"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="wave_form" lowerBound="2" upperBound="-1" eType="//Electrocardiography/Wave%20Form" eOpposite="//Electrocardiography/Wave%20Form/correlated_observation_series"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="ecg_recording_session" lowerBound="1" eType="//Electrocardiography/ECG%20Recording%20Session" eOpposite="//Electrocardiography/ECG%20Recording%20Session/correlated_observation_series"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="ecg_record" lowerBound="1" eType="//Human%20Protocol/ECG%20Record" eOpposite="//Human%20Protocol/ECG%20Record/correlated_observation_series"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="Cycle">
+      <eStructuralFeatures xsi:type="ecore:EReference" name="cardiac_frequency" lowerBound="1" eType="//Session%20Qualities/Cardiac%20Frequency" eOpposite="//Session%20Qualities/Cardiac%20Frequency/cycle"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="time" lowerBound="1" eType="//Session%20Qualities/Time" eOpposite="//Session%20Qualities/Time/cycle"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="elementary_form" upperBound="4" eType="//Electrocardiography/Elementary%20Form" eOpposite="//Electrocardiography/Elementary%20Form/cycle"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="segment" lowerBound="1" upperBound="-1" eType="//Electrocardiography/Segment" eOpposite="//Electrocardiography/Segment/cycle"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="wave_form" lowerBound="1" eType="//Electrocardiography/Wave%20Form" eOpposite="//Electrocardiography/Wave%20Form/cycle"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="ECG Lead">
+      <eStructuralFeatures xsi:type="ecore:EReference" name="human_body" upperBound="-1" eType="//Human%20Heart/Human%20Body" eOpposite="//Human%20Heart/Human%20Body/ecg_lead"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="electrode" lowerBound="1" upperBound="2" eType="//Electrocardiography/Electrode" eOpposite="//Electrocardiography/Electrode/ecg_lead"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="observation_series" upperBound="-1" eType="//Electrocardiography/Observation%20Series" eOpposite="//Electrocardiography/Observation%20Series/ecg_lead"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="ECG Recording Device">
+      <eStructuralFeatures xsi:type="ecore:EReference" name="filtering_technique" upperBound="-1" eType="//Electrocardiography/Filtering%20Technique" eOpposite="//Electrocardiography/Filtering%20Technique/ecg_recording_device"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="observation" upperBound="-1" eType="//Electrocardiography/Observation" eOpposite="//Electrocardiography/Observation/ecg_recording_device"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="electrode" lowerBound="1" upperBound="-1" eType="//Electrocardiography/Electrode" eOpposite="//Electrocardiography/Electrode/ecg_recording_device"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="ecg_recording_session" upperBound="-1" eType="//Electrocardiography/ECG%20Recording%20Session" eOpposite="//Electrocardiography/ECG%20Recording%20Session/ecg_recording_device"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="ecg_record" upperBound="-1" eType="//Human%20Protocol/ECG%20Record" eOpposite="//Human%20Protocol/ECG%20Record/ecg_recording_device"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="ECG Recording Session">
+      <eStructuralFeatures xsi:type="ecore:EReference" name="date" lowerBound="1" eType="//Session%20Qualities/Date" eOpposite="//Session%20Qualities/Date/ecg_recording_session"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="time" lowerBound="1" eType="//Session%20Qualities/Time" eOpposite="//Session%20Qualities/Time/ecg_recording_session"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="time" lowerBound="1" eType="//Session%20Qualities/Time" eOpposite="//Session%20Qualities/Time/ecg_recording_session.1"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="correlated_observation_series" lowerBound="1" eType="//Electrocardiography/Correlated%20Observation%20Series" eOpposite="//Electrocardiography/Correlated%20Observation%20Series/ecg_recording_session"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="ecg_recording_device" lowerBound="1" eType="//Electrocardiography/ECG%20Recording%20Device" eOpposite="//Electrocardiography/ECG%20Recording%20Device/ecg_recording_session"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="treatment" lowerBound="1" eType="//Human%20Protocol/Treatment" eOpposite="//Human%20Protocol/Treatment/ecg_recording_session"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="ecg_record" lowerBound="1" eType="//Human%20Protocol/ECG%20Record" eOpposite="//Human%20Protocol/ECG%20Record/ecg_recording_session"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="patient" lowerBound="1" eType="//Human%20Protocol/Patient" eOpposite="//Human%20Protocol/Patient/ecg_recording_session"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="physician" lowerBound="1" eType="//Human%20Protocol/Physician" eOpposite="//Human%20Protocol/Physician/ecg_recording_session"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="Electrode">
+      <eStructuralFeatures xsi:type="ecore:EReference" name="ecg_lead" lowerBound="1" upperBound="2" eType="//Electrocardiography/ECG%20Lead" eOpposite="//Electrocardiography/ECG%20Lead/electrode"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="ecg_recording_device" lowerBound="1" eType="//Electrocardiography/ECG%20Recording%20Device" eOpposite="//Electrocardiography/ECG%20Recording%20Device/electrode"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="observation" lowerBound="-1" upperBound="-1" eType="//Electrocardiography/Observation" eOpposite="//Electrocardiography/Observation/electrode"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="Elementary Form">
+      <eStructuralFeatures xsi:type="ecore:EReference" name="annotation" lowerBound="1" eType="//Session%20Qualities/Annotation" eOpposite="//Session%20Qualities/Annotation/elementary_form"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="measurement" lowerBound="1" eType="//Session%20Qualities/Measurement" eOpposite="//Session%20Qualities/Measurement/elementary_form"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="cycle" lowerBound="1" eType="//Electrocardiography/Cycle" eOpposite="//Electrocardiography/Cycle/elementary_form"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="Filtering Technique">
+      <eStructuralFeatures xsi:type="ecore:EReference" name="ecg_recording_device" upperBound="-1" eType="//Electrocardiography/ECG%20Recording%20Device" eOpposite="//Electrocardiography/ECG%20Recording%20Device/filtering_technique"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="LowpassFilter" eSuperTypes="//Electrocardiography/Filtering%20Technique"/>
+    <eClassifiers xsi:type="ecore:EClass" name="Observation">
+      <eStructuralFeatures xsi:type="ecore:EReference" name="time" lowerBound="1" eType="//Session%20Qualities/Time" eOpposite="//Session%20Qualities/Time/observation"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="ecg_recording_device" lowerBound="1" eType="//Electrocardiography/ECG%20Recording%20Device" eOpposite="//Electrocardiography/ECG%20Recording%20Device/observation"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="electrode" lowerBound="1" eType="//Electrocardiography/Electrode" eOpposite="//Electrocardiography/Electrode/observation"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="human_body" lowerBound="1" eType="//Human%20Heart/Human%20Body" eOpposite="//Human%20Heart/Human%20Body/observation"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="sample" lowerBound="1" eType="//Electrocardiography/Sample" eOpposite="//Electrocardiography/Sample/observation"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="observation_series" lowerBound="1" eType="//Electrocardiography/Observation%20Series" eOpposite="//Electrocardiography/Observation%20Series/observation"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="Observation Series">
+      <eStructuralFeatures xsi:type="ecore:EReference" name="sample" lowerBound="1" eType="//Session%20Qualities/Sample" eOpposite="//Session%20Qualities/Sample/observation_series"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="correlated_observation_series" lowerBound="1" eType="//Electrocardiography/Correlated%20Observation%20Series" eOpposite="//Electrocardiography/Correlated%20Observation%20Series/observation_series"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="ecg_lead" lowerBound="1" eType="//Electrocardiography/ECG%20Lead" eOpposite="//Electrocardiography/ECG%20Lead/observation_series"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="observation" lowerBound="2" upperBound="-1" eType="//Electrocardiography/Observation" eOpposite="//Electrocardiography/Observation/observation_series"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="wave_form" lowerBound="1" eType="//Electrocardiography/Wave%20Form" eOpposite="//Electrocardiography/Wave%20Form/observation_series"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="PWave" eSuperTypes="//Electrocardiography/Elementary%20Form">
+      <eStructuralFeatures xsi:type="ecore:EReference" name="sa_electrical_impulse" lowerBound="1" eType="//Biolectric/SA%20Electrical%20Impulse" eOpposite="//Biolectric/SA%20Electrical%20Impulse/pwave"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="QRSComplex" eSuperTypes="//Electrocardiography/Elementary%20Form">
+      <eStructuralFeatures xsi:type="ecore:EReference" name="his_purkinje_electrical_impulse" lowerBound="1" eType="//Biolectric/His%20Purkinje%20Electrical%20Impulse" eOpposite="//Biolectric/His%20Purkinje%20Electrical%20Impulse/qrscomplex"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="Sample">
+      <eStructuralFeatures xsi:type="ecore:EReference" name="electrical_potential" lowerBound="1" eType="//Session%20Qualities/Electrical%20Potential" eOpposite="//Session%20Qualities/Electrical%20Potential/sample"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="observation" lowerBound="1" eType="//Electrocardiography/Observation" eOpposite="//Electrocardiography/Observation/sample"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="wave_form" lowerBound="1" eType="//Electrocardiography/Wave%20Form" eOpposite="//Electrocardiography/Wave%20Form/sample"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="Segment">
+      <eStructuralFeatures xsi:type="ecore:EReference" name="cycle" lowerBound="1" eType="//Electrocardiography/Cycle" eOpposite="//Electrocardiography/Cycle/segment"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="TWave" eSuperTypes="//Electrocardiography/Elementary%20Form"/>
+    <eClassifiers xsi:type="ecore:EClass" name="UWave" eSuperTypes="//Electrocardiography/Elementary%20Form"/>
+    <eClassifiers xsi:type="ecore:EClass" name="Wave Form">
+      <eStructuralFeatures xsi:type="ecore:EReference" name="correlated_observation_series" lowerBound="1" eType="//Electrocardiography/Correlated%20Observation%20Series" eOpposite="//Electrocardiography/Correlated%20Observation%20Series/wave_form"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="cycle" lowerBound="1" upperBound="-1" eType="//Electrocardiography/Cycle" eOpposite="//Electrocardiography/Cycle/wave_form"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="observation_series" lowerBound="1" eType="//Electrocardiography/Observation%20Series" eOpposite="//Electrocardiography/Observation%20Series/wave_form"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="sample" lowerBound="2" upperBound="-1" eType="//Electrocardiography/Sample" eOpposite="//Electrocardiography/Sample/wave_form"/>
+    </eClassifiers>
+  </eSubpackages>
+  <eSubpackages name="Human Heart">
+    <eClassifiers xsi:type="ecore:EClass" name="Chamber"/>
+    <eClassifiers xsi:type="ecore:EClass" name="Human Body" eSuperTypes="//Human%20Heart/Chamber">
+      <eStructuralFeatures xsi:type="ecore:EReference" name="lungs" lowerBound="1" eType="//Circulatory/Lungs" eOpposite="//Circulatory/Lungs/human_body"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="peripherals" lowerBound="1" eType="//Circulatory/Peripherals" eOpposite="//Circulatory/Peripherals/human_body"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="ecg_lead" upperBound="-1" eType="//Electrocardiography/ECG%20Lead" eOpposite="//Electrocardiography/ECG%20Lead/human_body"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="observation" lowerBound="-1" upperBound="-1" eType="//Electrocardiography/Observation" eOpposite="//Electrocardiography/Observation/human_body"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="human_heart" lowerBound="1" eType="//Human%20Heart/Human%20Heart" eOpposite="//Human%20Heart/Human%20Heart/human_body"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="Human Heart" eSuperTypes="//Human%20Heart/Muscle //Human%20Heart/Chamber">
+      <eStructuralFeatures xsi:type="ecore:EReference" name="heart_cells" lowerBound="1" eType="//Biolectric/Heart%20Cells" eOpposite="//Biolectric/Heart%20Cells/human_heart"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="human_body" lowerBound="1" eType="//Human%20Heart/Human%20Body" eOpposite="//Human%20Heart/Human%20Body/human_heart"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="left_atrium" lowerBound="1" eType="//Human%20Heart/Left%20Atrium" eOpposite="//Human%20Heart/Left%20Atrium/human_heart"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="right_atrium" lowerBound="1" eType="//Human%20Heart/Right%20Atrium" eOpposite="//Human%20Heart/Right%20Atrium/human_heart"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="right_ventricle" lowerBound="1" eType="//Human%20Heart/Right%20Ventricle" eOpposite="//Human%20Heart/Right%20Ventricle/human_heart"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="left_ventricle" lowerBound="1" eType="//Human%20Heart/Left%20Ventricle" eOpposite="//Human%20Heart/Left%20Ventricle/human_heart"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="Left Atrium" eSuperTypes="//Human%20Heart/Muscle //Human%20Heart/Chamber">
+      <eStructuralFeatures xsi:type="ecore:EReference" name="human_heart" lowerBound="1" eType="//Human%20Heart/Human%20Heart" eOpposite="//Human%20Heart/Human%20Heart/left_atrium"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="Left Ventricle" eSuperTypes="//Human%20Heart/Chamber //Human%20Heart/Muscle">
+      <eStructuralFeatures xsi:type="ecore:EReference" name="human_heart" lowerBound="1" eType="//Human%20Heart/Human%20Heart" eOpposite="//Human%20Heart/Human%20Heart/left_ventricle"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="Muscle"/>
+    <eClassifiers xsi:type="ecore:EClass" name="Right Atrium" eSuperTypes="//Human%20Heart/Chamber //Human%20Heart/Muscle">
+      <eStructuralFeatures xsi:type="ecore:EReference" name="human_heart" lowerBound="1" eType="//Human%20Heart/Human%20Heart" eOpposite="//Human%20Heart/Human%20Heart/right_atrium"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="Right Ventricle" eSuperTypes="//Human%20Heart/Chamber //Human%20Heart/Muscle">
+      <eStructuralFeatures xsi:type="ecore:EReference" name="human_heart" lowerBound="1" eType="//Human%20Heart/Human%20Heart" eOpposite="//Human%20Heart/Human%20Heart/right_ventricle"/>
+    </eClassifiers>
+  </eSubpackages>
+  <eSubpackages name="Human Protocol">
+    <eClassifiers xsi:type="ecore:EClass" name="ECG Record">
+      <eStructuralFeatures xsi:type="ecore:EReference" name="correlated_observation_series" lowerBound="1" eType="//Electrocardiography/Correlated%20Observation%20Series" eOpposite="//Electrocardiography/Correlated%20Observation%20Series/ecg_record"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="ecg_recording_device" lowerBound="1" eType="//Electrocardiography/ECG%20Recording%20Device" eOpposite="//Electrocardiography/ECG%20Recording%20Device/ecg_record"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="ecg_recording_session" lowerBound="1" eType="//Electrocardiography/ECG%20Recording%20Session" eOpposite="//Electrocardiography/ECG%20Recording%20Session/ecg_record"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="patient" lowerBound="1" eType="//Human%20Protocol/Patient" eOpposite="//Human%20Protocol/Patient/ecg_record"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="epr" lowerBound="1" eType="//Human%20Protocol/EPR" eOpposite="//Human%20Protocol/EPR/ecg_record"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="EPR">
+      <eStructuralFeatures xsi:type="ecore:EReference" name="ecg_record" upperBound="-1" eType="//Human%20Protocol/ECG%20Record" eOpposite="//Human%20Protocol/ECG%20Record/epr"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="patient" lowerBound="1" eType="//Human%20Protocol/Patient" eOpposite="//Human%20Protocol/Patient/epr"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="Patient" eSuperTypes="//Human%20Protocol/Person">
+      <eStructuralFeatures xsi:type="ecore:EReference" name="ecg_recording_session" upperBound="-1" eType="//Electrocardiography/ECG%20Recording%20Session" eOpposite="//Electrocardiography/ECG%20Recording%20Session/patient"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="ecg_record" upperBound="-1" eType="//Human%20Protocol/ECG%20Record" eOpposite="//Human%20Protocol/ECG%20Record/patient"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="epr" lowerBound="1" eType="//Human%20Protocol/EPR" eOpposite="//Human%20Protocol/EPR/patient"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="treatment" lowerBound="1" upperBound="-1" eType="//Human%20Protocol/Treatment" eOpposite="//Human%20Protocol/Treatment/patient"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="Person"/>
+    <eClassifiers xsi:type="ecore:EClass" name="Physician" eSuperTypes="//Human%20Protocol/Person">
+      <eStructuralFeatures xsi:type="ecore:EReference" name="ecg_recording_session" upperBound="-1" eType="//Electrocardiography/ECG%20Recording%20Session" eOpposite="//Electrocardiography/ECG%20Recording%20Session/physician"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="treatment" upperBound="-1" eType="//Human%20Protocol/Treatment" eOpposite="//Human%20Protocol/Treatment/physician"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="Treatment">
+      <eStructuralFeatures xsi:type="ecore:EReference" name="ecg_recording_session" upperBound="-1" eType="//Electrocardiography/ECG%20Recording%20Session" eOpposite="//Electrocardiography/ECG%20Recording%20Session/treatment"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="patient" lowerBound="1" eType="//Human%20Protocol/Patient" eOpposite="//Human%20Protocol/Patient/treatment"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="physician" lowerBound="1" eType="//Human%20Protocol/Physician" eOpposite="//Human%20Protocol/Physician/treatment"/>
+    </eClassifiers>
+  </eSubpackages>
+</ecore:EPackage>

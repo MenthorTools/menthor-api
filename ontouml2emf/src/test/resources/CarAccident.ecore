@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ecore:EPackage xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="Car Accident" nsURI="http://menthor.net/car-accident/" nsPrefix="car-accident">
+  <eClassifiers xsi:type="ecore:EClass" name="Person"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Vehicle">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="travel" lowerBound="1" eType="//Travel" eOpposite="//Travel/vehicle"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Roadway">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="traffic accident" lowerBound="1" upperBound="-1" eType="//Traffic%20Accident" eOpposite="//Traffic%20Accident/roadway"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="victim" lowerBound="1" upperBound="-1" eType="//Victim" eOpposite="//Victim/roadway"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Man" eSuperTypes="//Person"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Woman" eSuperTypes="//Person"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Living" eSuperTypes="//Person"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Deceased" eSuperTypes="//Person"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Traveler" eSuperTypes="//Person">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="travel" lowerBound="1" eType="//Travel" eOpposite="//Travel/traveler"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Victim" eSuperTypes="//Person">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="traffic accident" lowerBound="1" eType="//Traffic%20Accident" eOpposite="//Traffic%20Accident/victim"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="roadway" lowerBound="1" eType="//Roadway" eOpposite="//Roadway/victim"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="CrashedVehicle" eSuperTypes="//Vehicle">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="traffic accident" lowerBound="1" eType="//Traffic%20Accident" eOpposite="//Traffic%20Accident/crashedvehicle"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Traffic Accident">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="roadway" lowerBound="1" eType="//Roadway" eOpposite="//Roadway/traffic%20accident"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="victim" lowerBound="1" upperBound="-1" eType="//Victim" eOpposite="//Victim/traffic%20accident"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="crashedvehicle" lowerBound="1" upperBound="-1" eType="//CrashedVehicle" eOpposite="//CrashedVehicle/traffic%20accident"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Rear End Collision" eSuperTypes="//Traffic%20Accident"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Travel">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="traveler" lowerBound="1" upperBound="-1" eType="//Traveler" eOpposite="//Traveler/travel"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="vehicle" lowerBound="1" eType="//Vehicle" eOpposite="//Vehicle/travel"/>
+  </eClassifiers>
+</ecore:EPackage>

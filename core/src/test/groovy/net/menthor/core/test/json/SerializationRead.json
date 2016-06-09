@@ -1,0 +1,349 @@
+{
+    "@class": "net.menthor.core.MPackage",
+    "@id": 1,
+    "name": "Car Accident",
+    "uniqueName": "CarAccident",
+    "elements": [
+        {
+            "@class": "net.menthor.core.MClass",
+            "@id": 2,
+            "name": "Person",
+            "uniqueName": "Person"
+        },
+        {
+            "@class": "net.menthor.core.MClass",
+            "@id": 3,
+            "name": "Vehicle",
+            "uniqueName": "Vehicle"
+        },
+        {
+            "@class": "net.menthor.core.MClass",
+            "@id": 4,
+            "name": "Roadway",
+            "uniqueName": "Roadway"
+        },
+        {
+            "@class": "net.menthor.core.MClass",
+            "@id": 5,
+            "name": "Man",
+            "uniqueName": "Man"
+        },
+        {
+            "@class": "net.menthor.core.MClass",
+            "@id": 6,
+            "name": "Woman",
+            "uniqueName": "Woman"
+        },
+        {
+            "@class": "net.menthor.core.MGeneralizationSet",
+            "@id": 7,
+            "covering": true,
+            "disjoint": true,
+            "generalizations": [
+                {
+                    "@class": "net.menthor.core.MGeneralization",
+                    "@id": 8,
+                    "general": 2,
+                    "specific": 5
+                },
+                {
+                    "@class": "net.menthor.core.MGeneralization",
+                    "@id": 9,
+                    "general": 2,
+                    "specific": 6
+                }
+            ]
+        },
+        8,
+        9,
+        {
+            "@class": "net.menthor.core.MClass",
+            "@id": 10,
+            "name": "Living",
+            "uniqueName": "Living"
+        },
+        {
+            "@class": "net.menthor.core.MClass",
+            "@id": 11,
+            "name": "Deceased",
+            "uniqueName": "Deceased"
+        },
+        {
+            "@class": "net.menthor.core.MGeneralizationSet",
+            "@id": 12,
+            "covering": true,
+            "disjoint": true,
+            "generalizations": [
+                {
+                    "@class": "net.menthor.core.MGeneralization",
+                    "@id": 13,
+                    "general": 2,
+                    "specific": 10
+                },
+                {
+                    "@class": "net.menthor.core.MGeneralization",
+                    "@id": 14,
+                    "general": 2,
+                    "specific": 11
+                }
+            ]
+        },
+        13,
+        14,
+        {
+            "@class": "net.menthor.core.MClass",
+            "@id": 15,
+            "name": "Traveler",
+            "uniqueName": "Traveler"
+        },
+        {
+            "@class": "net.menthor.core.MClass",
+            "@id": 16,
+            "name": "Victim",
+            "uniqueName": "Victim"
+        },
+        {
+            "@class": "net.menthor.core.MClass",
+            "@id": 17,
+            "name": "CrashedVehicle",
+            "uniqueName": "CrashedVehicle"
+        },
+        {
+            "@class": "net.menthor.core.MClass",
+            "@id": 18,
+            "name": "Traffic Accident",
+            "uniqueName": "TrafficAccident"
+        },
+        {
+            "@class": "net.menthor.core.MClass",
+            "@id": 19,
+            "name": "Rear End Collision",
+            "uniqueName": "RearEndCollision"
+        },
+        {
+            "@class": "net.menthor.core.MClass",
+            "@id": 20,
+            "name": "Travel",
+            "uniqueName": "Travel"
+        },
+        {
+            "@class": "net.menthor.core.MGeneralization",
+            "@id": 21,
+            "general": 2,
+            "specific": 15
+        },
+        {
+            "@class": "net.menthor.core.MGeneralization",
+            "@id": 22,
+            "general": 2,
+            "specific": 16
+        },
+        {
+            "@class": "net.menthor.core.MGeneralization",
+            "@id": 23,
+            "general": 3,
+            "specific": 17
+        },
+        {
+            "@class": "net.menthor.core.MGeneralization",
+            "@id": 24,
+            "general": 18,
+            "specific": 19
+        },
+        {
+            "@class": "net.menthor.core.MRelationship",
+            "@id": 25,
+            "endPoints": [
+                {
+                    "@class": "net.menthor.core.MEndPoint",
+                    "@id": 26,
+                    "classifier": 18,
+                    "lowerBound": 1,
+                    "derived": false,
+                    "dependency": false,
+                    "upperBound": -1,
+                    "ordered": false
+                },
+                {
+                    "@class": "net.menthor.core.MEndPoint",
+                    "@id": 27,
+                    "classifier": 4,
+                    "lowerBound": 1,
+                    "derived": false,
+                    "dependency": false,
+                    "upperBound": 1,
+                    "ordered": false
+                }
+            ],
+            "name": "occurs",
+            "uniqueName": "occurs"
+        },
+        {
+            "@class": "net.menthor.core.MRelationship",
+            "@id": 28,
+            "endPoints": [
+                {
+                    "@class": "net.menthor.core.MEndPoint",
+                    "@id": 29,
+                    "classifier": 18,
+                    "lowerBound": 1,
+                    "derived": false,
+                    "dependency": false,
+                    "upperBound": 1,
+                    "ordered": false
+                },
+                {
+                    "@class": "net.menthor.core.MEndPoint",
+                    "@id": 30,
+                    "classifier": 16,
+                    "lowerBound": 1,
+                    "derived": false,
+                    "dependency": false,
+                    "upperBound": -1,
+                    "ordered": false
+                }
+            ],
+            "name": "has",
+            "uniqueName": "has"
+        },
+        {
+            "@class": "net.menthor.core.MRelationship",
+            "@id": 31,
+            "endPoints": [
+                {
+                    "@class": "net.menthor.core.MEndPoint",
+                    "@id": 32,
+                    "classifier": 18,
+                    "lowerBound": 1,
+                    "derived": false,
+                    "dependency": false,
+                    "upperBound": 1,
+                    "ordered": false
+                },
+                {
+                    "@class": "net.menthor.core.MEndPoint",
+                    "@id": 33,
+                    "classifier": 17,
+                    "lowerBound": 1,
+                    "derived": false,
+                    "dependency": false,
+                    "upperBound": -1,
+                    "ordered": false
+                }
+            ],
+            "name": "involves",
+            "uniqueName": "involves"
+        },
+        {
+            "@class": "net.menthor.core.MRelationship",
+            "@id": 34,
+            "endPoints": [
+                {
+                    "@class": "net.menthor.core.MEndPoint",
+                    "@id": 35,
+                    "classifier": 20,
+                    "lowerBound": 1,
+                    "derived": false,
+                    "dependency": false,
+                    "upperBound": 1,
+                    "ordered": false
+                },
+                {
+                    "@class": "net.menthor.core.MEndPoint",
+                    "@id": 36,
+                    "classifier": 15,
+                    "lowerBound": 1,
+                    "derived": false,
+                    "dependency": false,
+                    "upperBound": -1,
+                    "ordered": false
+                }
+            ],
+            "name": "has",
+            "uniqueName": "has2"
+        },
+        {
+            "@class": "net.menthor.core.MRelationship",
+            "@id": 37,
+            "endPoints": [
+                {
+                    "@class": "net.menthor.core.MEndPoint",
+                    "@id": 38,
+                    "classifier": 20,
+                    "lowerBound": 1,
+                    "derived": false,
+                    "dependency": false,
+                    "upperBound": 1,
+                    "ordered": false
+                },
+                {
+                    "@class": "net.menthor.core.MEndPoint",
+                    "@id": 39,
+                    "classifier": 3,
+                    "lowerBound": 1,
+                    "derived": false,
+                    "dependency": false,
+                    "upperBound": 1,
+                    "ordered": false
+                }
+            ],
+            "name": "made by",
+            "uniqueName": "madeby"
+        },
+        {
+            "@class": "net.menthor.core.MRelationship",
+            "@id": 40,
+            "endPoints": [
+                {
+                    "@class": "net.menthor.core.MEndPoint",
+                    "@id": 41,
+                    "classifier": 16,
+                    "lowerBound": 1,
+                    "derived": false,
+                    "dependency": false,
+                    "upperBound": -1,
+                    "ordered": false
+                },
+                {
+                    "@class": "net.menthor.core.MEndPoint",
+                    "@id": 42,
+                    "classifier": 4,
+                    "lowerBound": 1,
+                    "derived": false,
+                    "dependency": false,
+                    "upperBound": 1,
+                    "ordered": false
+                }
+            ],
+            "name": "has been victim in",
+            "uniqueName": "hasbeenvictimin"
+        },
+        {
+            "@class": "net.menthor.core.MRelationship",
+            "@id": 43,
+            "endPoints": [
+                {
+                    "@class": "net.menthor.core.MEndPoint",
+                    "@id": 44,
+                    "classifier": 40,
+                    "lowerBound": 1,
+                    "derived": false,
+                    "dependency": false,
+                    "upperBound": 1,
+                    "ordered": false
+                },
+                {
+                    "@class": "net.menthor.core.MEndPoint",
+                    "@id": 45,
+                    "classifier": 18,
+                    "lowerBound": 1,
+                    "derived": false,
+                    "dependency": false,
+                    "upperBound": 1,
+                    "ordered": false
+                }
+            ],
+            "uniqueName": "MRelationship"
+        }
+    ]
+}

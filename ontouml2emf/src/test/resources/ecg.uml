@@ -1,0 +1,1527 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_NeS1gCLNEea2XJIRqDxx5A" name="Electrocardiogram">
+  <packagedElement xmi:type="uml:Package" xmi:id="_NeTckCLNEea2XJIRqDxx5A" name="Biolectric">
+    <packagedElement xmi:type="uml:Class" xmi:id="_NeTckSLNEea2XJIRqDxx5A" name="AV Electrical Impulse"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_NeTckiLNEea2XJIRqDxx5A" name="AV Electrical Impulse Generator"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_NeTckyLNEea2XJIRqDxx5A" name="AV Node Cells">
+      <generalization xmi:id="_NeTclCLNEea2XJIRqDxx5A" general="_NeTcoyLNEea2XJIRqDxx5A" generalizationSet="_NeV5LiLNEea2XJIRqDxx5A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_NeTclSLNEea2XJIRqDxx5A" name="Heart As A Pump">
+      <generalization xmi:id="_NeTcliLNEea2XJIRqDxx5A" general="_NeY8MSLNEea2XJIRqDxx5A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_NeTclyLNEea2XJIRqDxx5A" name="Heart Cells"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_NeTcmCLNEea2XJIRqDxx5A" name="His Electrical Impulse">
+      <generalization xmi:id="_NeTcmSLNEea2XJIRqDxx5A" general="_NeTcmiLNEea2XJIRqDxx5A" generalizationSet="_NeV5LyLNEea2XJIRqDxx5A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_NeTcmiLNEea2XJIRqDxx5A" name="His Purkinje Electrical Impulse"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_NeTcmyLNEea2XJIRqDxx5A" name="LA Contraction"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_NeTcnCLNEea2XJIRqDxx5A" name="LV Contraction"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_NeTcnSLNEea2XJIRqDxx5A" name="Left Atrium As A Pump">
+      <generalization xmi:id="_NeTcniLNEea2XJIRqDxx5A" general="_NeY8NCLNEea2XJIRqDxx5A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_NeTcnyLNEea2XJIRqDxx5A" name="Left Ventricle As A Pump">
+      <generalization xmi:id="_NeTcoCLNEea2XJIRqDxx5A" general="_NeY8NyLNEea2XJIRqDxx5A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_NeTcoSLNEea2XJIRqDxx5A" name="Non Pacemaker Cells">
+      <generalization xmi:id="_NeTcoiLNEea2XJIRqDxx5A" general="_NeTclyLNEea2XJIRqDxx5A" generalizationSet="_NeV5MCLNEea2XJIRqDxx5A _NeV5MSLNEea2XJIRqDxx5A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_NeTcoyLNEea2XJIRqDxx5A" name="Pacemaker Cells">
+      <generalization xmi:id="_NeTcpCLNEea2XJIRqDxx5A" general="_NeTclyLNEea2XJIRqDxx5A" generalizationSet="_NeV5MCLNEea2XJIRqDxx5A _NeV5MSLNEea2XJIRqDxx5A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_NeTcpSLNEea2XJIRqDxx5A" name="Pukinje Electrical Impulse">
+      <generalization xmi:id="_NeTcpiLNEea2XJIRqDxx5A" general="_NeTcmiLNEea2XJIRqDxx5A" generalizationSet="_NeV5LyLNEea2XJIRqDxx5A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_NeTcpyLNEea2XJIRqDxx5A" name="RA Contraction"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_NeTcqCLNEea2XJIRqDxx5A" name="RV Contraction"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_NeTcqSLNEea2XJIRqDxx5A" name="Right Atrium As A Pump">
+      <generalization xmi:id="_NeTcqiLNEea2XJIRqDxx5A" general="_NeY8OyLNEea2XJIRqDxx5A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_NeTcqyLNEea2XJIRqDxx5A" name="Right Ventricle As A Pump">
+      <generalization xmi:id="_NeTcrCLNEea2XJIRqDxx5A" general="_NeY8PiLNEea2XJIRqDxx5A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_NeTcrSLNEea2XJIRqDxx5A" name="SA Electrical Impulse"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_NeTcriLNEea2XJIRqDxx5A" name="SA Electrical Impulse Generator"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_NeTcryLNEea2XJIRqDxx5A" name="SA Node Cells">
+      <generalization xmi:id="_NeTcsCLNEea2XJIRqDxx5A" general="_NeTcoyLNEea2XJIRqDxx5A" generalizationSet="_NeV5LiLNEea2XJIRqDxx5A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_NeTcsSLNEea2XJIRqDxx5A" memberEnd="_NeTcsiLNEea2XJIRqDxx5A _NeTctSLNEea2XJIRqDxx5A" navigableOwnedEnd="_NeTcsiLNEea2XJIRqDxx5A _NeTctSLNEea2XJIRqDxx5A">
+      <name xsi:nil="true"/>
+      <ownedEnd xmi:id="_NeTcsiLNEea2XJIRqDxx5A" name="sa_electrical_impulse_generator" type="_NeTcriLNEea2XJIRqDxx5A" association="_NeTcsSLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeTcsyLNEea2XJIRqDxx5A" value="-1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeTctCLNEea2XJIRqDxx5A" value="*"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_NeTctSLNEea2XJIRqDxx5A" name="av_electrical_impulse" type="_NeTckSLNEea2XJIRqDxx5A" association="_NeTcsSLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeTctiLNEea2XJIRqDxx5A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeTctyLNEea2XJIRqDxx5A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_NeUDoCLNEea2XJIRqDxx5A" memberEnd="_NeUDoSLNEea2XJIRqDxx5A _NeUDpCLNEea2XJIRqDxx5A" navigableOwnedEnd="_NeUDoSLNEea2XJIRqDxx5A _NeUDpCLNEea2XJIRqDxx5A">
+      <name xsi:nil="true"/>
+      <ownedEnd xmi:id="_NeUDoSLNEea2XJIRqDxx5A" name="la_contraction" type="_NeTcmyLNEea2XJIRqDxx5A" association="_NeUDoCLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeUDoiLNEea2XJIRqDxx5A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeUDoyLNEea2XJIRqDxx5A" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_NeUDpCLNEea2XJIRqDxx5A" name="av_electrical_impulse" type="_NeTckSLNEea2XJIRqDxx5A" association="_NeUDoCLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeUDpSLNEea2XJIRqDxx5A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeUDpiLNEea2XJIRqDxx5A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_NeUDpyLNEea2XJIRqDxx5A" memberEnd="_NeUDqCLNEea2XJIRqDxx5A _NeUDqyLNEea2XJIRqDxx5A" navigableOwnedEnd="_NeUDqCLNEea2XJIRqDxx5A _NeUDqyLNEea2XJIRqDxx5A">
+      <name xsi:nil="true"/>
+      <ownedEnd xmi:id="_NeUDqCLNEea2XJIRqDxx5A" name="his_purkinje_electrical_impulse" type="_NeTcmiLNEea2XJIRqDxx5A" association="_NeUDpyLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeUDqSLNEea2XJIRqDxx5A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeUDqiLNEea2XJIRqDxx5A" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_NeUDqyLNEea2XJIRqDxx5A" name="av_electrical_impulse" type="_NeTckSLNEea2XJIRqDxx5A" association="_NeUDpyLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeUDrCLNEea2XJIRqDxx5A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeUDrSLNEea2XJIRqDxx5A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_NeUDriLNEea2XJIRqDxx5A" memberEnd="_NeUDryLNEea2XJIRqDxx5A _NeUDsiLNEea2XJIRqDxx5A" navigableOwnedEnd="_NeUDryLNEea2XJIRqDxx5A _NeUDsiLNEea2XJIRqDxx5A">
+      <name xsi:nil="true"/>
+      <ownedEnd xmi:id="_NeUDryLNEea2XJIRqDxx5A" name="av_electrical_impulse_generator" type="_NeTckiLNEea2XJIRqDxx5A" association="_NeUDriLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeUDsCLNEea2XJIRqDxx5A" value="-1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeUDsSLNEea2XJIRqDxx5A" value="*"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_NeUDsiLNEea2XJIRqDxx5A" name="sa_node_cells" type="_NeTcryLNEea2XJIRqDxx5A" association="_NeUDriLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeUDsyLNEea2XJIRqDxx5A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeUDtCLNEea2XJIRqDxx5A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_NeUDtSLNEea2XJIRqDxx5A" memberEnd="_NeUDtiLNEea2XJIRqDxx5A _NeUDuSLNEea2XJIRqDxx5A" navigableOwnedEnd="_NeUDtiLNEea2XJIRqDxx5A _NeUDuSLNEea2XJIRqDxx5A">
+      <name xsi:nil="true"/>
+      <ownedEnd xmi:id="_NeUDtiLNEea2XJIRqDxx5A" name="av_electrical_impulse_generator" type="_NeTckiLNEea2XJIRqDxx5A" association="_NeUDtSLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeUDtyLNEea2XJIRqDxx5A" value="-1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeUDuCLNEea2XJIRqDxx5A" value="*"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_NeUDuSLNEea2XJIRqDxx5A" name="sa_electrical_impulse" type="_NeTcrSLNEea2XJIRqDxx5A" association="_NeUDtSLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeUDuiLNEea2XJIRqDxx5A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeUDuyLNEea2XJIRqDxx5A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_NeUDvCLNEea2XJIRqDxx5A" memberEnd="_NeVRwCLNEea2XJIRqDxx5A _NeVRwyLNEea2XJIRqDxx5A" navigableOwnedEnd="_NeVRwCLNEea2XJIRqDxx5A _NeVRwyLNEea2XJIRqDxx5A">
+      <name xsi:nil="true"/>
+      <ownedEnd xmi:id="_NeVRwCLNEea2XJIRqDxx5A" name="sa_electrical_impulse_generator" type="_NeTcriLNEea2XJIRqDxx5A" association="_NeUDvCLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeVRwSLNEea2XJIRqDxx5A" value="-1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeVRwiLNEea2XJIRqDxx5A" value="*"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_NeVRwyLNEea2XJIRqDxx5A" name="av_node_cells" type="_NeTckyLNEea2XJIRqDxx5A" association="_NeUDvCLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeVRxCLNEea2XJIRqDxx5A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeVRxSLNEea2XJIRqDxx5A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_NeVRxiLNEea2XJIRqDxx5A" memberEnd="_NeVRxyLNEea2XJIRqDxx5A _NeVRyiLNEea2XJIRqDxx5A" navigableOwnedEnd="_NeVRxyLNEea2XJIRqDxx5A _NeVRyiLNEea2XJIRqDxx5A">
+      <name xsi:nil="true"/>
+      <ownedEnd xmi:id="_NeVRxyLNEea2XJIRqDxx5A" name="heart_as_a_pump" type="_NeTclSLNEea2XJIRqDxx5A" association="_NeVRxiLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeVRyCLNEea2XJIRqDxx5A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeVRySLNEea2XJIRqDxx5A" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_NeVRyiLNEea2XJIRqDxx5A" name="right_atrium_as_a_pump" type="_NeTcqSLNEea2XJIRqDxx5A" association="_NeVRxiLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeVRyyLNEea2XJIRqDxx5A"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeVRzCLNEea2XJIRqDxx5A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_NeVRzSLNEea2XJIRqDxx5A" memberEnd="_NeVRziLNEea2XJIRqDxx5A _NeVR0SLNEea2XJIRqDxx5A" navigableOwnedEnd="_NeVRziLNEea2XJIRqDxx5A _NeVR0SLNEea2XJIRqDxx5A">
+      <name xsi:nil="true"/>
+      <ownedEnd xmi:id="_NeVRziLNEea2XJIRqDxx5A" name="heart_as_a_pump" type="_NeTclSLNEea2XJIRqDxx5A" association="_NeVRzSLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeVRzyLNEea2XJIRqDxx5A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeVR0CLNEea2XJIRqDxx5A" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_NeVR0SLNEea2XJIRqDxx5A" name="left_atrium_as_a_pump" type="_NeTcnSLNEea2XJIRqDxx5A" association="_NeVRzSLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeVR0iLNEea2XJIRqDxx5A"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeVR0yLNEea2XJIRqDxx5A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_NeVR1CLNEea2XJIRqDxx5A" memberEnd="_NeVR1SLNEea2XJIRqDxx5A _NeVR2CLNEea2XJIRqDxx5A" navigableOwnedEnd="_NeVR1SLNEea2XJIRqDxx5A _NeVR2CLNEea2XJIRqDxx5A">
+      <name xsi:nil="true"/>
+      <ownedEnd xmi:id="_NeVR1SLNEea2XJIRqDxx5A" name="heart_as_a_pump" type="_NeTclSLNEea2XJIRqDxx5A" isReadOnly="true" association="_NeVR1CLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeVR1iLNEea2XJIRqDxx5A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeVR1yLNEea2XJIRqDxx5A" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_NeVR2CLNEea2XJIRqDxx5A" name="right_ventricle_as_a_pump" type="_NeTcqyLNEea2XJIRqDxx5A" isReadOnly="true" association="_NeVR1CLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeVR2SLNEea2XJIRqDxx5A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeVR2iLNEea2XJIRqDxx5A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_NeVR2yLNEea2XJIRqDxx5A" memberEnd="_NeVR3CLNEea2XJIRqDxx5A _NeVR3yLNEea2XJIRqDxx5A" navigableOwnedEnd="_NeVR3CLNEea2XJIRqDxx5A _NeVR3yLNEea2XJIRqDxx5A">
+      <name xsi:nil="true"/>
+      <ownedEnd xmi:id="_NeVR3CLNEea2XJIRqDxx5A" name="heart_as_a_pump" type="_NeTclSLNEea2XJIRqDxx5A" isReadOnly="true" association="_NeVR2yLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeVR3SLNEea2XJIRqDxx5A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeVR3iLNEea2XJIRqDxx5A" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_NeVR3yLNEea2XJIRqDxx5A" name="left_ventricle_as_a_pump" type="_NeTcnyLNEea2XJIRqDxx5A" isReadOnly="true" association="_NeVR2yLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeVR4CLNEea2XJIRqDxx5A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeVR4SLNEea2XJIRqDxx5A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_NeVR4iLNEea2XJIRqDxx5A" memberEnd="_NeVR4yLNEea2XJIRqDxx5A _NeV40CLNEea2XJIRqDxx5A" navigableOwnedEnd="_NeVR4yLNEea2XJIRqDxx5A _NeV40CLNEea2XJIRqDxx5A">
+      <name xsi:nil="true"/>
+      <ownedEnd xmi:id="_NeVR4yLNEea2XJIRqDxx5A" name="blood_pumping" type="_NeV5OSLNEea2XJIRqDxx5A" association="_NeVR4iLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeVR5CLNEea2XJIRqDxx5A" value="-1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeVR5SLNEea2XJIRqDxx5A" value="*"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_NeV40CLNEea2XJIRqDxx5A" name="heart_as_a_pump" type="_NeTclSLNEea2XJIRqDxx5A" association="_NeVR4iLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeV40SLNEea2XJIRqDxx5A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeV40iLNEea2XJIRqDxx5A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_NeV40yLNEea2XJIRqDxx5A" memberEnd="_NeV41CLNEea2XJIRqDxx5A _NeV41yLNEea2XJIRqDxx5A" navigableOwnedEnd="_NeV41CLNEea2XJIRqDxx5A _NeV41yLNEea2XJIRqDxx5A">
+      <name xsi:nil="true"/>
+      <ownedEnd xmi:id="_NeV41CLNEea2XJIRqDxx5A" name="human_heart" type="_NeY8MSLNEea2XJIRqDxx5A" association="_NeV40yLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeV41SLNEea2XJIRqDxx5A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeV41iLNEea2XJIRqDxx5A" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_NeV41yLNEea2XJIRqDxx5A" name="heart_cells" type="_NeTclyLNEea2XJIRqDxx5A" association="_NeV40yLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeV42CLNEea2XJIRqDxx5A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeV42SLNEea2XJIRqDxx5A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_NeV42iLNEea2XJIRqDxx5A" memberEnd="_NeV42yLNEea2XJIRqDxx5A _NeV43iLNEea2XJIRqDxx5A" navigableOwnedEnd="_NeV42yLNEea2XJIRqDxx5A _NeV43iLNEea2XJIRqDxx5A">
+      <name xsi:nil="true"/>
+      <ownedEnd xmi:id="_NeV42yLNEea2XJIRqDxx5A" name="his_purkinje_electrical_impulse" type="_NeTcmiLNEea2XJIRqDxx5A" association="_NeV42iLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeV43CLNEea2XJIRqDxx5A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeV43SLNEea2XJIRqDxx5A" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_NeV43iLNEea2XJIRqDxx5A" name="sa_electrical_impulse" type="_NeTcrSLNEea2XJIRqDxx5A" association="_NeV42iLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeV43yLNEea2XJIRqDxx5A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeV44CLNEea2XJIRqDxx5A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_NeV44SLNEea2XJIRqDxx5A" name="maps" memberEnd="_NeV44iLNEea2XJIRqDxx5A _NeV45SLNEea2XJIRqDxx5A" navigableOwnedEnd="_NeV44iLNEea2XJIRqDxx5A _NeV45SLNEea2XJIRqDxx5A">
+      <ownedEnd xmi:id="_NeV44iLNEea2XJIRqDxx5A" name="qrscomplex" type="_NeYVFyLNEea2XJIRqDxx5A" association="_NeV44SLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeV44yLNEea2XJIRqDxx5A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeV45CLNEea2XJIRqDxx5A" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_NeV45SLNEea2XJIRqDxx5A" name="his_purkinje_electrical_impulse" type="_NeTcmiLNEea2XJIRqDxx5A" association="_NeV44SLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeV45iLNEea2XJIRqDxx5A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeV45yLNEea2XJIRqDxx5A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_NeV46CLNEea2XJIRqDxx5A" memberEnd="_NeV46SLNEea2XJIRqDxx5A _NeV47CLNEea2XJIRqDxx5A" navigableOwnedEnd="_NeV46SLNEea2XJIRqDxx5A _NeV47CLNEea2XJIRqDxx5A">
+      <name xsi:nil="true"/>
+      <ownedEnd xmi:id="_NeV46SLNEea2XJIRqDxx5A" name="la_contraction" type="_NeTcmyLNEea2XJIRqDxx5A" association="_NeV46CLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeV46iLNEea2XJIRqDxx5A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeV46yLNEea2XJIRqDxx5A" value="*"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_NeV47CLNEea2XJIRqDxx5A" name="left_atrium_as_a_pump" type="_NeTcnSLNEea2XJIRqDxx5A" association="_NeV46CLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeV47SLNEea2XJIRqDxx5A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeV47iLNEea2XJIRqDxx5A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_NeV47yLNEea2XJIRqDxx5A" memberEnd="_NeV48CLNEea2XJIRqDxx5A _NeV48yLNEea2XJIRqDxx5A" navigableOwnedEnd="_NeV48CLNEea2XJIRqDxx5A _NeV48yLNEea2XJIRqDxx5A">
+      <name xsi:nil="true"/>
+      <ownedEnd xmi:id="_NeV48CLNEea2XJIRqDxx5A" name="lv_contraction" type="_NeTcnCLNEea2XJIRqDxx5A" association="_NeV47yLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeV48SLNEea2XJIRqDxx5A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeV48iLNEea2XJIRqDxx5A" value="*"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_NeV48yLNEea2XJIRqDxx5A" name="left_ventricle_as_a_pump" type="_NeTcnyLNEea2XJIRqDxx5A" association="_NeV47yLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeV49CLNEea2XJIRqDxx5A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeV49SLNEea2XJIRqDxx5A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_NeV49iLNEea2XJIRqDxx5A" memberEnd="_NeV49yLNEea2XJIRqDxx5A _NeV4-iLNEea2XJIRqDxx5A" navigableOwnedEnd="_NeV49yLNEea2XJIRqDxx5A _NeV4-iLNEea2XJIRqDxx5A">
+      <name xsi:nil="true"/>
+      <ownedEnd xmi:id="_NeV49yLNEea2XJIRqDxx5A" name="lv_contraction" type="_NeTcnCLNEea2XJIRqDxx5A" association="_NeV49iLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeV4-CLNEea2XJIRqDxx5A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeV4-SLNEea2XJIRqDxx5A" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_NeV4-iLNEea2XJIRqDxx5A" name="pukinje_electrical_impulse" type="_NeTcpSLNEea2XJIRqDxx5A" association="_NeV49iLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeV4-yLNEea2XJIRqDxx5A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeV4_CLNEea2XJIRqDxx5A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_NeV4_SLNEea2XJIRqDxx5A" name="contraction" memberEnd="_NeV4_iLNEea2XJIRqDxx5A _NeV5ASLNEea2XJIRqDxx5A" navigableOwnedEnd="_NeV4_iLNEea2XJIRqDxx5A _NeV5ASLNEea2XJIRqDxx5A">
+      <ownedEnd xmi:id="_NeV4_iLNEea2XJIRqDxx5A" name="left_ventricle_as_a_pump" type="_NeTcnyLNEea2XJIRqDxx5A" association="_NeV4_SLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeV4_yLNEea2XJIRqDxx5A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeV5ACLNEea2XJIRqDxx5A" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_NeV5ASLNEea2XJIRqDxx5A" name="pukinje_electrical_impulse" type="_NeTcpSLNEea2XJIRqDxx5A" association="_NeV4_SLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeV5AiLNEea2XJIRqDxx5A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeV5AyLNEea2XJIRqDxx5A" value="*"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_NeV5BCLNEea2XJIRqDxx5A" memberEnd="_NeV5BSLNEea2XJIRqDxx5A _NeV5CCLNEea2XJIRqDxx5A" navigableOwnedEnd="_NeV5BSLNEea2XJIRqDxx5A _NeV5CCLNEea2XJIRqDxx5A">
+      <name xsi:nil="true"/>
+      <ownedEnd xmi:id="_NeV5BSLNEea2XJIRqDxx5A" name="rv_contraction" type="_NeTcqCLNEea2XJIRqDxx5A" association="_NeV5BCLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeV5BiLNEea2XJIRqDxx5A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeV5ByLNEea2XJIRqDxx5A" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_NeV5CCLNEea2XJIRqDxx5A" name="pukinje_electrical_impulse" type="_NeTcpSLNEea2XJIRqDxx5A" association="_NeV5BCLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeV5CSLNEea2XJIRqDxx5A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeV5CiLNEea2XJIRqDxx5A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_NeV5CyLNEea2XJIRqDxx5A" name="contraction" memberEnd="_NeV5DCLNEea2XJIRqDxx5A _NeV5DyLNEea2XJIRqDxx5A" navigableOwnedEnd="_NeV5DCLNEea2XJIRqDxx5A _NeV5DyLNEea2XJIRqDxx5A">
+      <ownedEnd xmi:id="_NeV5DCLNEea2XJIRqDxx5A" name="right_ventricle_as_a_pump" type="_NeTcqyLNEea2XJIRqDxx5A" association="_NeV5CyLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeV5DSLNEea2XJIRqDxx5A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeV5DiLNEea2XJIRqDxx5A" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_NeV5DyLNEea2XJIRqDxx5A" name="pukinje_electrical_impulse" type="_NeTcpSLNEea2XJIRqDxx5A" association="_NeV5CyLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeV5ECLNEea2XJIRqDxx5A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeV5ESLNEea2XJIRqDxx5A" value="*"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_NeV5EiLNEea2XJIRqDxx5A" memberEnd="_NeV5EyLNEea2XJIRqDxx5A _NeV5FiLNEea2XJIRqDxx5A" navigableOwnedEnd="_NeV5EyLNEea2XJIRqDxx5A _NeV5FiLNEea2XJIRqDxx5A">
+      <name xsi:nil="true"/>
+      <ownedEnd xmi:id="_NeV5EyLNEea2XJIRqDxx5A" name="ra_contraction" type="_NeTcpyLNEea2XJIRqDxx5A" association="_NeV5EiLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeV5FCLNEea2XJIRqDxx5A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeV5FSLNEea2XJIRqDxx5A" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_NeV5FiLNEea2XJIRqDxx5A" name="sa_electrical_impulse" type="_NeTcrSLNEea2XJIRqDxx5A" association="_NeV5EiLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeV5FyLNEea2XJIRqDxx5A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeV5GCLNEea2XJIRqDxx5A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_NeV5GSLNEea2XJIRqDxx5A" memberEnd="_NeV5GiLNEea2XJIRqDxx5A _NeV5HSLNEea2XJIRqDxx5A" navigableOwnedEnd="_NeV5GiLNEea2XJIRqDxx5A _NeV5HSLNEea2XJIRqDxx5A">
+      <name xsi:nil="true"/>
+      <ownedEnd xmi:id="_NeV5GiLNEea2XJIRqDxx5A" name="ra_contraction" type="_NeTcpyLNEea2XJIRqDxx5A" association="_NeV5GSLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeV5GyLNEea2XJIRqDxx5A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeV5HCLNEea2XJIRqDxx5A" value="*"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_NeV5HSLNEea2XJIRqDxx5A" name="right_atrium_as_a_pump" type="_NeTcqSLNEea2XJIRqDxx5A" association="_NeV5GSLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeV5HiLNEea2XJIRqDxx5A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeV5HyLNEea2XJIRqDxx5A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_NeV5ICLNEea2XJIRqDxx5A" memberEnd="_NeV5ISLNEea2XJIRqDxx5A _NeV5JCLNEea2XJIRqDxx5A" navigableOwnedEnd="_NeV5ISLNEea2XJIRqDxx5A _NeV5JCLNEea2XJIRqDxx5A">
+      <name xsi:nil="true"/>
+      <ownedEnd xmi:id="_NeV5ISLNEea2XJIRqDxx5A" name="rv_contraction" type="_NeTcqCLNEea2XJIRqDxx5A" association="_NeV5ICLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeV5IiLNEea2XJIRqDxx5A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeV5IyLNEea2XJIRqDxx5A" value="*"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_NeV5JCLNEea2XJIRqDxx5A" name="right_ventricle_as_a_pump" type="_NeTcqyLNEea2XJIRqDxx5A" association="_NeV5ICLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeV5JSLNEea2XJIRqDxx5A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeV5JiLNEea2XJIRqDxx5A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_NeV5JyLNEea2XJIRqDxx5A" name="maps" memberEnd="_NeV5KCLNEea2XJIRqDxx5A _NeV5KyLNEea2XJIRqDxx5A" navigableOwnedEnd="_NeV5KCLNEea2XJIRqDxx5A _NeV5KyLNEea2XJIRqDxx5A">
+      <ownedEnd xmi:id="_NeV5KCLNEea2XJIRqDxx5A" name="pwave" type="_NeYVFSLNEea2XJIRqDxx5A" association="_NeV5JyLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeV5KSLNEea2XJIRqDxx5A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeV5KiLNEea2XJIRqDxx5A" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_NeV5KyLNEea2XJIRqDxx5A" name="sa_electrical_impulse" type="_NeTcrSLNEea2XJIRqDxx5A" association="_NeV5JyLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeV5LCLNEea2XJIRqDxx5A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeV5LSLNEea2XJIRqDxx5A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:GeneralizationSet" xmi:id="_NeV5LiLNEea2XJIRqDxx5A" name="" isDisjoint="true" generalization="_NeTclCLNEea2XJIRqDxx5A _NeTcsCLNEea2XJIRqDxx5A"/>
+    <packagedElement xmi:type="uml:GeneralizationSet" xmi:id="_NeV5LyLNEea2XJIRqDxx5A" name="" isDisjoint="true" generalization="_NeTcmSLNEea2XJIRqDxx5A _NeTcpiLNEea2XJIRqDxx5A"/>
+    <packagedElement xmi:type="uml:GeneralizationSet" xmi:id="_NeV5MCLNEea2XJIRqDxx5A" name="" generalization="_NeTcoiLNEea2XJIRqDxx5A _NeTcpCLNEea2XJIRqDxx5A"/>
+    <packagedElement xmi:type="uml:GeneralizationSet" xmi:id="_NeV5MSLNEea2XJIRqDxx5A" name="" isCovering="true" isDisjoint="true" generalization="_NeTcoiLNEea2XJIRqDxx5A _NeTcpCLNEea2XJIRqDxx5A"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_NeV5MiLNEea2XJIRqDxx5A" name="Blood Pumping">
+    <packagedElement xmi:type="uml:Class" xmi:id="_NeV5MyLNEea2XJIRqDxx5A" name="Blood Movement from LA to LV Container"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_NeV5NCLNEea2XJIRqDxx5A" name="Blood Movement from Lungs to LA"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_NeV5NSLNEea2XJIRqDxx5A" name="Blood Movement from Peripheral Container to LV"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_NeV5NiLNEea2XJIRqDxx5A" name="Blood Movement from Peripheral to RA"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_NeV5NyLNEea2XJIRqDxx5A" name="Blood Movement from RA to RV Container"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_NeV5OCLNEea2XJIRqDxx5A" name="Blood Movement from RV to Lungs as Container"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_NeV5OSLNEea2XJIRqDxx5A" name="Blood Pumping"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_NeV5OiLNEea2XJIRqDxx5A" memberEnd="_NeV5OyLNEea2XJIRqDxx5A _NeV5PiLNEea2XJIRqDxx5A" navigableOwnedEnd="_NeV5OyLNEea2XJIRqDxx5A _NeV5PiLNEea2XJIRqDxx5A">
+      <name xsi:nil="true"/>
+      <ownedEnd xmi:id="_NeV5OyLNEea2XJIRqDxx5A" name="blood_movement_from_la_to_lv_container" type="_NeV5MyLNEea2XJIRqDxx5A" association="_NeV5OiLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeV5PCLNEea2XJIRqDxx5A" value="-1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeV5PSLNEea2XJIRqDxx5A" value="*"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_NeV5PiLNEea2XJIRqDxx5A" name="blood_in_left_atrium" type="_NeWf8SLNEea2XJIRqDxx5A" association="_NeV5OiLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeV5PyLNEea2XJIRqDxx5A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeV5QCLNEea2XJIRqDxx5A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_NeV5QSLNEea2XJIRqDxx5A" memberEnd="_NeV5QiLNEea2XJIRqDxx5A _NeV5RSLNEea2XJIRqDxx5A" navigableOwnedEnd="_NeV5QiLNEea2XJIRqDxx5A _NeV5RSLNEea2XJIRqDxx5A">
+      <name xsi:nil="true"/>
+      <ownedEnd xmi:id="_NeV5QiLNEea2XJIRqDxx5A" name="blood_movement_from_la_to_lv_container" type="_NeV5MyLNEea2XJIRqDxx5A" association="_NeV5QSLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeV5QyLNEea2XJIRqDxx5A" value="-1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeV5RCLNEea2XJIRqDxx5A" value="*"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_NeV5RSLNEea2XJIRqDxx5A" name="left_ventricle_as_a_blood_container" type="_NeWf-yLNEea2XJIRqDxx5A" association="_NeV5QSLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeV5RiLNEea2XJIRqDxx5A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeV5RyLNEea2XJIRqDxx5A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_NeV5SCLNEea2XJIRqDxx5A" memberEnd="_NeV5SSLNEea2XJIRqDxx5A _NeV5TCLNEea2XJIRqDxx5A" navigableOwnedEnd="_NeV5SSLNEea2XJIRqDxx5A _NeV5TCLNEea2XJIRqDxx5A">
+      <name xsi:nil="true"/>
+      <ownedEnd xmi:id="_NeV5SSLNEea2XJIRqDxx5A" name="blood_movement_from_lungs_to_la" type="_NeV5NCLNEea2XJIRqDxx5A" association="_NeV5SCLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeV5SiLNEea2XJIRqDxx5A" value="-1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeV5SyLNEea2XJIRqDxx5A" value="*"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_NeV5TCLNEea2XJIRqDxx5A" name="blood_in_left_atrium" type="_NeWf8SLNEea2XJIRqDxx5A" association="_NeV5SCLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeV5TSLNEea2XJIRqDxx5A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeV5TiLNEea2XJIRqDxx5A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_NeV5TyLNEea2XJIRqDxx5A" memberEnd="_NeV5UCLNEea2XJIRqDxx5A _NeV5UyLNEea2XJIRqDxx5A" navigableOwnedEnd="_NeV5UCLNEea2XJIRqDxx5A _NeV5UyLNEea2XJIRqDxx5A">
+      <name xsi:nil="true"/>
+      <ownedEnd xmi:id="_NeV5UCLNEea2XJIRqDxx5A" name="blood_movement_from_lungs_to_la" type="_NeV5NCLNEea2XJIRqDxx5A" association="_NeV5TyLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeV5USLNEea2XJIRqDxx5A" value="-1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeV5UiLNEea2XJIRqDxx5A" value="*"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_NeV5UyLNEea2XJIRqDxx5A" name="blood_in_lungs" type="_NeWf7yLNEea2XJIRqDxx5A" association="_NeV5TyLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeV5VCLNEea2XJIRqDxx5A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeV5VSLNEea2XJIRqDxx5A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_NeV5ViLNEea2XJIRqDxx5A" memberEnd="_NeV5VyLNEea2XJIRqDxx5A _NeV5WiLNEea2XJIRqDxx5A" navigableOwnedEnd="_NeV5VyLNEea2XJIRqDxx5A _NeV5WiLNEea2XJIRqDxx5A">
+      <name xsi:nil="true"/>
+      <ownedEnd xmi:id="_NeV5VyLNEea2XJIRqDxx5A" name="blood_movement_from_peripheral_container_to_lv" type="_NeV5NSLNEea2XJIRqDxx5A" association="_NeV5ViLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeV5WCLNEea2XJIRqDxx5A" value="-1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeV5WSLNEea2XJIRqDxx5A" value="*"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_NeV5WiLNEea2XJIRqDxx5A" name="peripherals_as_a_blood_container" type="_NeWgBCLNEea2XJIRqDxx5A" association="_NeV5ViLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeV5WyLNEea2XJIRqDxx5A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeV5XCLNEea2XJIRqDxx5A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_NeV5XSLNEea2XJIRqDxx5A" memberEnd="_NeV5XiLNEea2XJIRqDxx5A _NeV5YSLNEea2XJIRqDxx5A" navigableOwnedEnd="_NeV5XiLNEea2XJIRqDxx5A _NeV5YSLNEea2XJIRqDxx5A">
+      <name xsi:nil="true"/>
+      <ownedEnd xmi:id="_NeV5XiLNEea2XJIRqDxx5A" name="blood_movement_from_peripheral_container_to_lv" type="_NeV5NSLNEea2XJIRqDxx5A" association="_NeV5XSLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeV5XyLNEea2XJIRqDxx5A" value="-1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeV5YCLNEea2XJIRqDxx5A" value="*"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_NeV5YSLNEea2XJIRqDxx5A" name="blood_in_left_ventricle" type="_NeWf8iLNEea2XJIRqDxx5A" association="_NeV5XSLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeV5YiLNEea2XJIRqDxx5A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeV5YyLNEea2XJIRqDxx5A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_NeV5ZCLNEea2XJIRqDxx5A" memberEnd="_NeV5ZSLNEea2XJIRqDxx5A _NeV5aCLNEea2XJIRqDxx5A" navigableOwnedEnd="_NeV5ZSLNEea2XJIRqDxx5A _NeV5aCLNEea2XJIRqDxx5A">
+      <name xsi:nil="true"/>
+      <ownedEnd xmi:id="_NeV5ZSLNEea2XJIRqDxx5A" name="blood_movement_from_peripheral_to_ra" type="_NeV5NiLNEea2XJIRqDxx5A" association="_NeV5ZCLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeV5ZiLNEea2XJIRqDxx5A" value="-1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeV5ZyLNEea2XJIRqDxx5A" value="*"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_NeV5aCLNEea2XJIRqDxx5A" name="blood_in_right_atrium" type="_NeWf8CLNEea2XJIRqDxx5A" association="_NeV5ZCLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeV5aSLNEea2XJIRqDxx5A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeV5aiLNEea2XJIRqDxx5A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_NeV5ayLNEea2XJIRqDxx5A" memberEnd="_NeV5bCLNEea2XJIRqDxx5A _NeV5byLNEea2XJIRqDxx5A" navigableOwnedEnd="_NeV5bCLNEea2XJIRqDxx5A _NeV5byLNEea2XJIRqDxx5A">
+      <name xsi:nil="true"/>
+      <ownedEnd xmi:id="_NeV5bCLNEea2XJIRqDxx5A" name="blood_movement_from_peripheral_to_ra" type="_NeV5NiLNEea2XJIRqDxx5A" association="_NeV5ayLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeV5bSLNEea2XJIRqDxx5A" value="-1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeV5biLNEea2XJIRqDxx5A" value="*"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_NeV5byLNEea2XJIRqDxx5A" name="blood_in_peripherals" type="_NeWf8yLNEea2XJIRqDxx5A" association="_NeV5ayLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeV5cCLNEea2XJIRqDxx5A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeV5cSLNEea2XJIRqDxx5A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_NeV5ciLNEea2XJIRqDxx5A" memberEnd="_NeV5cyLNEea2XJIRqDxx5A _NeV5diLNEea2XJIRqDxx5A" navigableOwnedEnd="_NeV5cyLNEea2XJIRqDxx5A _NeV5diLNEea2XJIRqDxx5A">
+      <name xsi:nil="true"/>
+      <ownedEnd xmi:id="_NeV5cyLNEea2XJIRqDxx5A" name="blood_movement_from_ra_to_rv_container" type="_NeV5NyLNEea2XJIRqDxx5A" association="_NeV5ciLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeV5dCLNEea2XJIRqDxx5A" value="-1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeV5dSLNEea2XJIRqDxx5A" value="*"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_NeV5diLNEea2XJIRqDxx5A" name="blood_in_right_atrium" type="_NeWf8CLNEea2XJIRqDxx5A" association="_NeV5ciLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeV5dyLNEea2XJIRqDxx5A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeV5eCLNEea2XJIRqDxx5A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_NeV5eSLNEea2XJIRqDxx5A" memberEnd="_NeV5eiLNEea2XJIRqDxx5A _NeV5fSLNEea2XJIRqDxx5A" navigableOwnedEnd="_NeV5eiLNEea2XJIRqDxx5A _NeV5fSLNEea2XJIRqDxx5A">
+      <name xsi:nil="true"/>
+      <ownedEnd xmi:id="_NeV5eiLNEea2XJIRqDxx5A" name="blood_movement_from_ra_to_rv_container" type="_NeV5NyLNEea2XJIRqDxx5A" association="_NeV5eSLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeV5eyLNEea2XJIRqDxx5A" value="-1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeV5fCLNEea2XJIRqDxx5A" value="*"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_NeV5fSLNEea2XJIRqDxx5A" name="righ_ventricle_as_a_blood_container" type="_NeWgCSLNEea2XJIRqDxx5A" association="_NeV5eSLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeV5fiLNEea2XJIRqDxx5A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeV5fyLNEea2XJIRqDxx5A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_NeV5gCLNEea2XJIRqDxx5A" memberEnd="_NeV5gSLNEea2XJIRqDxx5A _NeV5hCLNEea2XJIRqDxx5A" navigableOwnedEnd="_NeV5gSLNEea2XJIRqDxx5A _NeV5hCLNEea2XJIRqDxx5A">
+      <name xsi:nil="true"/>
+      <ownedEnd xmi:id="_NeV5gSLNEea2XJIRqDxx5A" name="blood_movement_from_rv_to_lungs_as_container" type="_NeV5OCLNEea2XJIRqDxx5A" association="_NeV5gCLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeV5giLNEea2XJIRqDxx5A" value="-1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeV5gyLNEea2XJIRqDxx5A" value="*"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_NeV5hCLNEea2XJIRqDxx5A" name="lungs_as_a_blood_container" type="_NeWf_yLNEea2XJIRqDxx5A" association="_NeV5gCLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeV5hSLNEea2XJIRqDxx5A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeV5hiLNEea2XJIRqDxx5A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_NeWf4CLNEea2XJIRqDxx5A" memberEnd="_NeWf4SLNEea2XJIRqDxx5A _NeWf5CLNEea2XJIRqDxx5A" navigableOwnedEnd="_NeWf4SLNEea2XJIRqDxx5A _NeWf5CLNEea2XJIRqDxx5A">
+      <name xsi:nil="true"/>
+      <ownedEnd xmi:id="_NeWf4SLNEea2XJIRqDxx5A" name="blood_movement_from_rv_to_lungs_as_container" type="_NeV5OCLNEea2XJIRqDxx5A" association="_NeWf4CLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeWf4iLNEea2XJIRqDxx5A" value="-1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeWf4yLNEea2XJIRqDxx5A" value="*"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_NeWf5CLNEea2XJIRqDxx5A" name="blood_in_right_ventricle" type="_NeWf9CLNEea2XJIRqDxx5A" association="_NeWf4CLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeWf5SLNEea2XJIRqDxx5A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeWf5iLNEea2XJIRqDxx5A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_NeWf5yLNEea2XJIRqDxx5A" memberEnd="_NeWf6CLNEea2XJIRqDxx5A _NeWf6yLNEea2XJIRqDxx5A" navigableOwnedEnd="_NeWf6CLNEea2XJIRqDxx5A _NeWf6yLNEea2XJIRqDxx5A">
+      <name xsi:nil="true"/>
+      <ownedEnd xmi:id="_NeWf6CLNEea2XJIRqDxx5A" name="blood_pumping" type="_NeV5OSLNEea2XJIRqDxx5A" association="_NeWf5yLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeWf6SLNEea2XJIRqDxx5A" value="-1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeWf6iLNEea2XJIRqDxx5A" value="*"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_NeWf6yLNEea2XJIRqDxx5A" name="bloodinhumanbody" type="_NeWf9SLNEea2XJIRqDxx5A" association="_NeWf5yLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeWf7CLNEea2XJIRqDxx5A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeWf7SLNEea2XJIRqDxx5A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_NeWf7iLNEea2XJIRqDxx5A" name="Circulatory">
+    <packagedElement xmi:type="uml:Class" xmi:id="_NeWf7yLNEea2XJIRqDxx5A" name="Blood In Lungs"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_NeWf8CLNEea2XJIRqDxx5A" name="Blood In RIght Atrium"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_NeWf8SLNEea2XJIRqDxx5A" name="Blood in Left Atrium"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_NeWf8iLNEea2XJIRqDxx5A" name="Blood in Left Ventricle"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_NeWf8yLNEea2XJIRqDxx5A" name="Blood in Peripherals"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_NeWf9CLNEea2XJIRqDxx5A" name="Blood in Right Ventricle"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_NeWf9SLNEea2XJIRqDxx5A" name="BloodInHumanBody"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_NeWf9iLNEea2XJIRqDxx5A" name="Heart As Blood Container"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_NeWf9yLNEea2XJIRqDxx5A" name="LA Blood Storing"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_NeWf-CLNEea2XJIRqDxx5A" name="LV Blood Storing"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_NeWf-SLNEea2XJIRqDxx5A" name="Left Atrium As A Blood Container">
+      <generalization xmi:id="_NeWf-iLNEea2XJIRqDxx5A" general="_NeY8NCLNEea2XJIRqDxx5A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_NeWf-yLNEea2XJIRqDxx5A" name="Left Ventricle As A Blood Container">
+      <generalization xmi:id="_NeWf_CLNEea2XJIRqDxx5A" general="_NeY8NyLNEea2XJIRqDxx5A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_NeWf_SLNEea2XJIRqDxx5A" name="Lungs">
+      <generalization xmi:id="_NeWf_iLNEea2XJIRqDxx5A" general="_NeY8LiLNEea2XJIRqDxx5A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_NeWf_yLNEea2XJIRqDxx5A" name="Lungs As A Blood Container">
+      <generalization xmi:id="_NeWgACLNEea2XJIRqDxx5A" general="_NeWf_SLNEea2XJIRqDxx5A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_NeWgASLNEea2XJIRqDxx5A" name="Lungs Blood Storing"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_NeWgAiLNEea2XJIRqDxx5A" name="Peripherals">
+      <generalization xmi:id="_NeWgAyLNEea2XJIRqDxx5A" general="_NeY8LiLNEea2XJIRqDxx5A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_NeWgBCLNEea2XJIRqDxx5A" name="Peripherals As A Blood Container">
+      <generalization xmi:id="_NeWgBSLNEea2XJIRqDxx5A" general="_NeWgAiLNEea2XJIRqDxx5A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_NeWgBiLNEea2XJIRqDxx5A" name="Peripherals Blood Storing"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_NeWgByLNEea2XJIRqDxx5A" name="RA Blood Storing"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_NeWgCCLNEea2XJIRqDxx5A" name="RV Blood Storing"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_NeWgCSLNEea2XJIRqDxx5A" name="Righ Ventricle As A Blood Container">
+      <generalization xmi:id="_NeWgCiLNEea2XJIRqDxx5A" general="_NeY8PiLNEea2XJIRqDxx5A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_NeWgCyLNEea2XJIRqDxx5A" name="Right Atrium As A Blood Container">
+      <generalization xmi:id="_NeWgDCLNEea2XJIRqDxx5A" general="_NeY8OyLNEea2XJIRqDxx5A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_NeWgDSLNEea2XJIRqDxx5A" memberEnd="_NeWgDiLNEea2XJIRqDxx5A _NeWgESLNEea2XJIRqDxx5A" navigableOwnedEnd="_NeWgDiLNEea2XJIRqDxx5A _NeWgESLNEea2XJIRqDxx5A">
+      <name xsi:nil="true"/>
+      <ownedEnd xmi:id="_NeWgDiLNEea2XJIRqDxx5A" name="bloodinhumanbody" type="_NeWf9SLNEea2XJIRqDxx5A" isReadOnly="true" association="_NeWgDSLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeWgDyLNEea2XJIRqDxx5A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeWgECLNEea2XJIRqDxx5A" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_NeWgESLNEea2XJIRqDxx5A" name="blood_in_lungs" type="_NeWf7yLNEea2XJIRqDxx5A" association="_NeWgDSLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeWgEiLNEea2XJIRqDxx5A"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeWgEyLNEea2XJIRqDxx5A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_NeWgFCLNEea2XJIRqDxx5A" memberEnd="_NeWgFSLNEea2XJIRqDxx5A _NeWgGCLNEea2XJIRqDxx5A" navigableOwnedEnd="_NeWgFSLNEea2XJIRqDxx5A _NeWgGCLNEea2XJIRqDxx5A">
+      <name xsi:nil="true"/>
+      <ownedEnd xmi:id="_NeWgFSLNEea2XJIRqDxx5A" name="lungs_blood_storing" type="_NeWgASLNEea2XJIRqDxx5A" association="_NeWgFCLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeWgFiLNEea2XJIRqDxx5A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeWgFyLNEea2XJIRqDxx5A" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_NeWgGCLNEea2XJIRqDxx5A" name="blood_in_lungs" type="_NeWf7yLNEea2XJIRqDxx5A" association="_NeWgFCLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeWgGSLNEea2XJIRqDxx5A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeWgGiLNEea2XJIRqDxx5A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_NeWgGyLNEea2XJIRqDxx5A" memberEnd="_NeWgHCLNEea2XJIRqDxx5A _NeWgHyLNEea2XJIRqDxx5A" navigableOwnedEnd="_NeWgHCLNEea2XJIRqDxx5A _NeWgHyLNEea2XJIRqDxx5A">
+      <name xsi:nil="true"/>
+      <ownedEnd xmi:id="_NeWgHCLNEea2XJIRqDxx5A" name="ra_blood_storing" type="_NeWgByLNEea2XJIRqDxx5A" association="_NeWgGyLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeWgHSLNEea2XJIRqDxx5A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeWgHiLNEea2XJIRqDxx5A" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_NeWgHyLNEea2XJIRqDxx5A" name="blood_in_right_atrium" type="_NeWf8CLNEea2XJIRqDxx5A" association="_NeWgGyLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeWgICLNEea2XJIRqDxx5A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeWgISLNEea2XJIRqDxx5A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_NeWgIiLNEea2XJIRqDxx5A" memberEnd="_NeWgIyLNEea2XJIRqDxx5A _NeWgJiLNEea2XJIRqDxx5A" navigableOwnedEnd="_NeWgIyLNEea2XJIRqDxx5A _NeWgJiLNEea2XJIRqDxx5A">
+      <name xsi:nil="true"/>
+      <ownedEnd xmi:id="_NeWgIyLNEea2XJIRqDxx5A" name="bloodinhumanbody" type="_NeWf9SLNEea2XJIRqDxx5A" isReadOnly="true" association="_NeWgIiLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeWgJCLNEea2XJIRqDxx5A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeWgJSLNEea2XJIRqDxx5A" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_NeWgJiLNEea2XJIRqDxx5A" name="blood_in_right_atrium" type="_NeWf8CLNEea2XJIRqDxx5A" association="_NeWgIiLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeWgJyLNEea2XJIRqDxx5A"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeWgKCLNEea2XJIRqDxx5A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_NeWgKSLNEea2XJIRqDxx5A" memberEnd="_NeWgKiLNEea2XJIRqDxx5A _NeWgLSLNEea2XJIRqDxx5A" navigableOwnedEnd="_NeWgKiLNEea2XJIRqDxx5A _NeWgLSLNEea2XJIRqDxx5A">
+      <name xsi:nil="true"/>
+      <ownedEnd xmi:id="_NeWgKiLNEea2XJIRqDxx5A" name="la_blood_storing" type="_NeWf9yLNEea2XJIRqDxx5A" association="_NeWgKSLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeWgKyLNEea2XJIRqDxx5A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeWgLCLNEea2XJIRqDxx5A" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_NeWgLSLNEea2XJIRqDxx5A" name="blood_in_left_atrium" type="_NeWf8SLNEea2XJIRqDxx5A" association="_NeWgKSLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeWgLiLNEea2XJIRqDxx5A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeWgLyLNEea2XJIRqDxx5A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_NeWgMCLNEea2XJIRqDxx5A" memberEnd="_NeWgMSLNEea2XJIRqDxx5A _NeWgNCLNEea2XJIRqDxx5A" navigableOwnedEnd="_NeWgMSLNEea2XJIRqDxx5A _NeWgNCLNEea2XJIRqDxx5A">
+      <name xsi:nil="true"/>
+      <ownedEnd xmi:id="_NeWgMSLNEea2XJIRqDxx5A" name="bloodinhumanbody" type="_NeWf9SLNEea2XJIRqDxx5A" isReadOnly="true" association="_NeWgMCLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeWgMiLNEea2XJIRqDxx5A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeWgMyLNEea2XJIRqDxx5A" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_NeWgNCLNEea2XJIRqDxx5A" name="blood_in_left_atrium" type="_NeWf8SLNEea2XJIRqDxx5A" association="_NeWgMCLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeWgNSLNEea2XJIRqDxx5A"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeWgNiLNEea2XJIRqDxx5A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_NeWgNyLNEea2XJIRqDxx5A" memberEnd="_NeWgOCLNEea2XJIRqDxx5A _NeWgOyLNEea2XJIRqDxx5A" navigableOwnedEnd="_NeWgOCLNEea2XJIRqDxx5A _NeWgOyLNEea2XJIRqDxx5A">
+      <name xsi:nil="true"/>
+      <ownedEnd xmi:id="_NeWgOCLNEea2XJIRqDxx5A" name="bloodinhumanbody" type="_NeWf9SLNEea2XJIRqDxx5A" isReadOnly="true" association="_NeWgNyLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeWgOSLNEea2XJIRqDxx5A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeWgOiLNEea2XJIRqDxx5A" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_NeWgOyLNEea2XJIRqDxx5A" name="blood_in_left_ventricle" type="_NeWf8iLNEea2XJIRqDxx5A" association="_NeWgNyLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeWgPCLNEea2XJIRqDxx5A"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeWgPSLNEea2XJIRqDxx5A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_NeWgPiLNEea2XJIRqDxx5A" memberEnd="_NeWgPyLNEea2XJIRqDxx5A _NeWgQiLNEea2XJIRqDxx5A" navigableOwnedEnd="_NeWgPyLNEea2XJIRqDxx5A _NeWgQiLNEea2XJIRqDxx5A">
+      <name xsi:nil="true"/>
+      <ownedEnd xmi:id="_NeWgPyLNEea2XJIRqDxx5A" name="lv_blood_storing" type="_NeWf-CLNEea2XJIRqDxx5A" association="_NeWgPiLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeWgQCLNEea2XJIRqDxx5A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeWgQSLNEea2XJIRqDxx5A" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_NeWgQiLNEea2XJIRqDxx5A" name="blood_in_left_ventricle" type="_NeWf8iLNEea2XJIRqDxx5A" association="_NeWgPiLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeWgQyLNEea2XJIRqDxx5A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeWgRCLNEea2XJIRqDxx5A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_NeWgRSLNEea2XJIRqDxx5A" memberEnd="_NeWgRiLNEea2XJIRqDxx5A _NeWgSSLNEea2XJIRqDxx5A" navigableOwnedEnd="_NeWgRiLNEea2XJIRqDxx5A _NeWgSSLNEea2XJIRqDxx5A">
+      <name xsi:nil="true"/>
+      <ownedEnd xmi:id="_NeWgRiLNEea2XJIRqDxx5A" name="peripherals_blood_storing" type="_NeWgBiLNEea2XJIRqDxx5A" association="_NeWgRSLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeWgRyLNEea2XJIRqDxx5A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeWgSCLNEea2XJIRqDxx5A" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_NeWgSSLNEea2XJIRqDxx5A" name="blood_in_peripherals" type="_NeWf8yLNEea2XJIRqDxx5A" association="_NeWgRSLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeWgSiLNEea2XJIRqDxx5A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeWgSyLNEea2XJIRqDxx5A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_NeWgTCLNEea2XJIRqDxx5A" memberEnd="_NeWgTSLNEea2XJIRqDxx5A _NeWgUCLNEea2XJIRqDxx5A" navigableOwnedEnd="_NeWgTSLNEea2XJIRqDxx5A _NeWgUCLNEea2XJIRqDxx5A">
+      <name xsi:nil="true"/>
+      <ownedEnd xmi:id="_NeWgTSLNEea2XJIRqDxx5A" name="bloodinhumanbody" type="_NeWf9SLNEea2XJIRqDxx5A" isReadOnly="true" association="_NeWgTCLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeWgTiLNEea2XJIRqDxx5A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeWgTyLNEea2XJIRqDxx5A" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_NeWgUCLNEea2XJIRqDxx5A" name="blood_in_peripherals" type="_NeWf8yLNEea2XJIRqDxx5A" association="_NeWgTCLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeWgUSLNEea2XJIRqDxx5A"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeWgUiLNEea2XJIRqDxx5A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_NeWgUyLNEea2XJIRqDxx5A" memberEnd="_NeWgVCLNEea2XJIRqDxx5A _NeWgVyLNEea2XJIRqDxx5A" navigableOwnedEnd="_NeWgVCLNEea2XJIRqDxx5A _NeWgVyLNEea2XJIRqDxx5A">
+      <name xsi:nil="true"/>
+      <ownedEnd xmi:id="_NeWgVCLNEea2XJIRqDxx5A" name="rv_blood_storing" type="_NeWgCCLNEea2XJIRqDxx5A" association="_NeWgUyLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeWgVSLNEea2XJIRqDxx5A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeWgViLNEea2XJIRqDxx5A" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_NeWgVyLNEea2XJIRqDxx5A" name="blood_in_right_ventricle" type="_NeWf9CLNEea2XJIRqDxx5A" association="_NeWgUyLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeWgWCLNEea2XJIRqDxx5A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeWgWSLNEea2XJIRqDxx5A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_NeWgWiLNEea2XJIRqDxx5A" memberEnd="_NeWgWyLNEea2XJIRqDxx5A _NeWgXiLNEea2XJIRqDxx5A" navigableOwnedEnd="_NeWgWyLNEea2XJIRqDxx5A _NeWgXiLNEea2XJIRqDxx5A">
+      <name xsi:nil="true"/>
+      <ownedEnd xmi:id="_NeWgWyLNEea2XJIRqDxx5A" name="bloodinhumanbody" type="_NeWf9SLNEea2XJIRqDxx5A" isReadOnly="true" association="_NeWgWiLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeWgXCLNEea2XJIRqDxx5A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeWgXSLNEea2XJIRqDxx5A" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_NeWgXiLNEea2XJIRqDxx5A" name="blood_in_right_ventricle" type="_NeWf9CLNEea2XJIRqDxx5A" association="_NeWgWiLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeWgXyLNEea2XJIRqDxx5A"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeWgYCLNEea2XJIRqDxx5A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_NeWgYSLNEea2XJIRqDxx5A" memberEnd="_NeWgYiLNEea2XJIRqDxx5A _NeWgZSLNEea2XJIRqDxx5A" navigableOwnedEnd="_NeWgYiLNEea2XJIRqDxx5A _NeWgZSLNEea2XJIRqDxx5A">
+      <name xsi:nil="true"/>
+      <ownedEnd xmi:id="_NeWgYiLNEea2XJIRqDxx5A" name="heart_as_blood_container" type="_NeWf9iLNEea2XJIRqDxx5A" isReadOnly="true" association="_NeWgYSLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeWgYyLNEea2XJIRqDxx5A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeWgZCLNEea2XJIRqDxx5A" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_NeWgZSLNEea2XJIRqDxx5A" name="left_atrium_as_a_blood_container" type="_NeWf-SLNEea2XJIRqDxx5A" isReadOnly="true" association="_NeWgYSLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeWgZiLNEea2XJIRqDxx5A"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeWgZyLNEea2XJIRqDxx5A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_NeXG8CLNEea2XJIRqDxx5A" memberEnd="_NeXG8SLNEea2XJIRqDxx5A _NeXG9CLNEea2XJIRqDxx5A" navigableOwnedEnd="_NeXG8SLNEea2XJIRqDxx5A _NeXG9CLNEea2XJIRqDxx5A">
+      <name xsi:nil="true"/>
+      <ownedEnd xmi:id="_NeXG8SLNEea2XJIRqDxx5A" name="heart_as_blood_container" type="_NeWf9iLNEea2XJIRqDxx5A" isReadOnly="true" association="_NeXG8CLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeXG8iLNEea2XJIRqDxx5A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeXG8yLNEea2XJIRqDxx5A" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_NeXG9CLNEea2XJIRqDxx5A" name="left_ventricle_as_a_blood_container" type="_NeWf-yLNEea2XJIRqDxx5A" isReadOnly="true" association="_NeXG8CLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeXG9SLNEea2XJIRqDxx5A"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeXG9iLNEea2XJIRqDxx5A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_NeXG9yLNEea2XJIRqDxx5A" memberEnd="_NeXG-CLNEea2XJIRqDxx5A _NeXG-yLNEea2XJIRqDxx5A" navigableOwnedEnd="_NeXG-CLNEea2XJIRqDxx5A _NeXG-yLNEea2XJIRqDxx5A">
+      <name xsi:nil="true"/>
+      <ownedEnd xmi:id="_NeXG-CLNEea2XJIRqDxx5A" name="heart_as_blood_container" type="_NeWf9iLNEea2XJIRqDxx5A" isReadOnly="true" association="_NeXG9yLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeXG-SLNEea2XJIRqDxx5A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeXG-iLNEea2XJIRqDxx5A" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_NeXG-yLNEea2XJIRqDxx5A" name="righ_ventricle_as_a_blood_container" type="_NeWgCSLNEea2XJIRqDxx5A" isReadOnly="true" association="_NeXG9yLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeXG_CLNEea2XJIRqDxx5A"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeXG_SLNEea2XJIRqDxx5A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_NeXG_iLNEea2XJIRqDxx5A" memberEnd="_NeXG_yLNEea2XJIRqDxx5A _NeXHAiLNEea2XJIRqDxx5A" navigableOwnedEnd="_NeXG_yLNEea2XJIRqDxx5A _NeXHAiLNEea2XJIRqDxx5A">
+      <name xsi:nil="true"/>
+      <ownedEnd xmi:id="_NeXG_yLNEea2XJIRqDxx5A" name="heart_as_blood_container" type="_NeWf9iLNEea2XJIRqDxx5A" isReadOnly="true" association="_NeXG_iLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeXHACLNEea2XJIRqDxx5A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeXHASLNEea2XJIRqDxx5A" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_NeXHAiLNEea2XJIRqDxx5A" name="right_atrium_as_a_blood_container" type="_NeWgCyLNEea2XJIRqDxx5A" isReadOnly="true" association="_NeXG_iLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeXHAyLNEea2XJIRqDxx5A"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeXHBCLNEea2XJIRqDxx5A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_NeXHBSLNEea2XJIRqDxx5A" memberEnd="_NeXHBiLNEea2XJIRqDxx5A _NeXHCSLNEea2XJIRqDxx5A" navigableOwnedEnd="_NeXHBiLNEea2XJIRqDxx5A _NeXHCSLNEea2XJIRqDxx5A">
+      <name xsi:nil="true"/>
+      <ownedEnd xmi:id="_NeXHBiLNEea2XJIRqDxx5A" name="la_blood_storing" type="_NeWf9yLNEea2XJIRqDxx5A" association="_NeXHBSLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeXHByLNEea2XJIRqDxx5A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeXHCCLNEea2XJIRqDxx5A" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_NeXHCSLNEea2XJIRqDxx5A" name="left_atrium_as_a_blood_container" type="_NeWf-SLNEea2XJIRqDxx5A" association="_NeXHBSLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeXHCiLNEea2XJIRqDxx5A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeXHCyLNEea2XJIRqDxx5A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_NeXHDCLNEea2XJIRqDxx5A" memberEnd="_NeXHDSLNEea2XJIRqDxx5A _NeXHECLNEea2XJIRqDxx5A" navigableOwnedEnd="_NeXHDSLNEea2XJIRqDxx5A _NeXHECLNEea2XJIRqDxx5A">
+      <name xsi:nil="true"/>
+      <ownedEnd xmi:id="_NeXHDSLNEea2XJIRqDxx5A" name="lv_blood_storing" type="_NeWf-CLNEea2XJIRqDxx5A" association="_NeXHDCLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeXHDiLNEea2XJIRqDxx5A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeXHDyLNEea2XJIRqDxx5A" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_NeXHECLNEea2XJIRqDxx5A" name="left_ventricle_as_a_blood_container" type="_NeWf-yLNEea2XJIRqDxx5A" association="_NeXHDCLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeXHESLNEea2XJIRqDxx5A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeXHEiLNEea2XJIRqDxx5A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_NeXHEyLNEea2XJIRqDxx5A" memberEnd="_NeXHFCLNEea2XJIRqDxx5A _NeXHFyLNEea2XJIRqDxx5A" navigableOwnedEnd="_NeXHFCLNEea2XJIRqDxx5A _NeXHFyLNEea2XJIRqDxx5A">
+      <name xsi:nil="true"/>
+      <ownedEnd xmi:id="_NeXHFCLNEea2XJIRqDxx5A" name="human_body" type="_NeY8LyLNEea2XJIRqDxx5A" association="_NeXHEyLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeXHFSLNEea2XJIRqDxx5A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeXHFiLNEea2XJIRqDxx5A" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_NeXHFyLNEea2XJIRqDxx5A" name="lungs" type="_NeWf_SLNEea2XJIRqDxx5A" association="_NeXHEyLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeXHGCLNEea2XJIRqDxx5A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeXHGSLNEea2XJIRqDxx5A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_NeXHGiLNEea2XJIRqDxx5A" memberEnd="_NeXHGyLNEea2XJIRqDxx5A _NeXHHiLNEea2XJIRqDxx5A" navigableOwnedEnd="_NeXHGyLNEea2XJIRqDxx5A _NeXHHiLNEea2XJIRqDxx5A">
+      <name xsi:nil="true"/>
+      <ownedEnd xmi:id="_NeXHGyLNEea2XJIRqDxx5A" name="lungs_blood_storing" type="_NeWgASLNEea2XJIRqDxx5A" association="_NeXHGiLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeXHHCLNEea2XJIRqDxx5A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeXHHSLNEea2XJIRqDxx5A" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_NeXHHiLNEea2XJIRqDxx5A" name="lungs_as_a_blood_container" type="_NeWf_yLNEea2XJIRqDxx5A" association="_NeXHGiLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeXHHyLNEea2XJIRqDxx5A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeXHICLNEea2XJIRqDxx5A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_NeXHISLNEea2XJIRqDxx5A" memberEnd="_NeXHIiLNEea2XJIRqDxx5A _NeXHJSLNEea2XJIRqDxx5A" navigableOwnedEnd="_NeXHIiLNEea2XJIRqDxx5A _NeXHJSLNEea2XJIRqDxx5A">
+      <name xsi:nil="true"/>
+      <ownedEnd xmi:id="_NeXHIiLNEea2XJIRqDxx5A" name="human_body" type="_NeY8LyLNEea2XJIRqDxx5A" association="_NeXHISLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeXHIyLNEea2XJIRqDxx5A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeXHJCLNEea2XJIRqDxx5A" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_NeXHJSLNEea2XJIRqDxx5A" name="peripherals" type="_NeWgAiLNEea2XJIRqDxx5A" association="_NeXHISLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeXHJiLNEea2XJIRqDxx5A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeXHJyLNEea2XJIRqDxx5A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_NeXHKCLNEea2XJIRqDxx5A" memberEnd="_NeXHKSLNEea2XJIRqDxx5A _NeXHLCLNEea2XJIRqDxx5A" navigableOwnedEnd="_NeXHKSLNEea2XJIRqDxx5A _NeXHLCLNEea2XJIRqDxx5A">
+      <name xsi:nil="true"/>
+      <ownedEnd xmi:id="_NeXHKSLNEea2XJIRqDxx5A" name="peripherals_blood_storing" type="_NeWgBiLNEea2XJIRqDxx5A" association="_NeXHKCLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeXHKiLNEea2XJIRqDxx5A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeXHKyLNEea2XJIRqDxx5A" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_NeXHLCLNEea2XJIRqDxx5A" name="peripherals_as_a_blood_container" type="_NeWgBCLNEea2XJIRqDxx5A" association="_NeXHKCLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeXHLSLNEea2XJIRqDxx5A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeXHLiLNEea2XJIRqDxx5A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_NeXHLyLNEea2XJIRqDxx5A" memberEnd="_NeXHMCLNEea2XJIRqDxx5A _NeXHMyLNEea2XJIRqDxx5A" navigableOwnedEnd="_NeXHMCLNEea2XJIRqDxx5A _NeXHMyLNEea2XJIRqDxx5A">
+      <name xsi:nil="true"/>
+      <ownedEnd xmi:id="_NeXHMCLNEea2XJIRqDxx5A" name="ra_blood_storing" type="_NeWgByLNEea2XJIRqDxx5A" association="_NeXHLyLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeXHMSLNEea2XJIRqDxx5A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeXHMiLNEea2XJIRqDxx5A" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_NeXHMyLNEea2XJIRqDxx5A" name="right_atrium_as_a_blood_container" type="_NeWgCyLNEea2XJIRqDxx5A" association="_NeXHLyLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeXHNCLNEea2XJIRqDxx5A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeXHNSLNEea2XJIRqDxx5A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_NeXHNiLNEea2XJIRqDxx5A" memberEnd="_NeXHNyLNEea2XJIRqDxx5A _NeXHOiLNEea2XJIRqDxx5A" navigableOwnedEnd="_NeXHNyLNEea2XJIRqDxx5A _NeXHOiLNEea2XJIRqDxx5A">
+      <name xsi:nil="true"/>
+      <ownedEnd xmi:id="_NeXHNyLNEea2XJIRqDxx5A" name="rv_blood_storing" type="_NeWgCCLNEea2XJIRqDxx5A" association="_NeXHNiLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeXHOCLNEea2XJIRqDxx5A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeXHOSLNEea2XJIRqDxx5A" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_NeXHOiLNEea2XJIRqDxx5A" name="righ_ventricle_as_a_blood_container" type="_NeWgCSLNEea2XJIRqDxx5A" association="_NeXHNiLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeXHOyLNEea2XJIRqDxx5A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeXHPCLNEea2XJIRqDxx5A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_NeXHPSLNEea2XJIRqDxx5A" name="Session Qualities">
+    <packagedElement xmi:type="uml:Class" xmi:id="_NeXHPiLNEea2XJIRqDxx5A" name="Annotation"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_NeXHPyLNEea2XJIRqDxx5A" name="Cardiac Frequency"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_NeXHQCLNEea2XJIRqDxx5A" name="Date"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_NeXHQSLNEea2XJIRqDxx5A" name="Electrical Potential"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_NeXHQiLNEea2XJIRqDxx5A" name="Measurement"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_NeXHQyLNEea2XJIRqDxx5A" name="Sample"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_NeXHRCLNEea2XJIRqDxx5A" name="Time"/>
+    <packagedElement xmi:type="uml:DataType" xmi:id="_NeXuACLNEea2XJIRqDxx5A" name="Annotation Domain"/>
+    <packagedElement xmi:type="uml:DataType" xmi:id="_NeXuASLNEea2XJIRqDxx5A" name="Cardiac Frequency Rate"/>
+    <packagedElement xmi:type="uml:DataType" xmi:id="_NeXuAiLNEea2XJIRqDxx5A" name="Date Domain"/>
+    <packagedElement xmi:type="uml:DataType" xmi:id="_NeXuAyLNEea2XJIRqDxx5A" name="Day"/>
+    <packagedElement xmi:type="uml:DataType" xmi:id="_NeXuBCLNEea2XJIRqDxx5A" name="Electrical Potential Rate"/>
+    <packagedElement xmi:type="uml:DataType" xmi:id="_NeXuBSLNEea2XJIRqDxx5A" name="Hour"/>
+    <packagedElement xmi:type="uml:DataType" xmi:id="_NeXuBiLNEea2XJIRqDxx5A" name="Measurement Domain"/>
+    <packagedElement xmi:type="uml:DataType" xmi:id="_NeXuByLNEea2XJIRqDxx5A" name="Minute"/>
+    <packagedElement xmi:type="uml:DataType" xmi:id="_NeXuCCLNEea2XJIRqDxx5A" name="Month"/>
+    <packagedElement xmi:type="uml:DataType" xmi:id="_NeXuCSLNEea2XJIRqDxx5A" name="Sample Rate"/>
+    <packagedElement xmi:type="uml:DataType" xmi:id="_NeXuCiLNEea2XJIRqDxx5A" name="Second"/>
+    <packagedElement xmi:type="uml:DataType" xmi:id="_NeXuCyLNEea2XJIRqDxx5A" name="Time Domain"/>
+    <packagedElement xmi:type="uml:DataType" xmi:id="_NeXuDCLNEea2XJIRqDxx5A" name="Year"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_NeXuDSLNEea2XJIRqDxx5A" memberEnd="_NeXuDiLNEea2XJIRqDxx5A _NeXuESLNEea2XJIRqDxx5A" navigableOwnedEnd="_NeXuDiLNEea2XJIRqDxx5A _NeXuESLNEea2XJIRqDxx5A">
+      <name xsi:nil="true"/>
+      <ownedEnd xmi:id="_NeXuDiLNEea2XJIRqDxx5A" name="annotation" type="_NeXHPiLNEea2XJIRqDxx5A" association="_NeXuDSLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeXuDyLNEea2XJIRqDxx5A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeXuECLNEea2XJIRqDxx5A" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_NeXuESLNEea2XJIRqDxx5A" name="annotation_domain" type="_NeXuACLNEea2XJIRqDxx5A" association="_NeXuDSLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeXuEiLNEea2XJIRqDxx5A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeXuEyLNEea2XJIRqDxx5A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_NeXuFCLNEea2XJIRqDxx5A" memberEnd="_NeXuFSLNEea2XJIRqDxx5A _NeXuGCLNEea2XJIRqDxx5A" navigableOwnedEnd="_NeXuFSLNEea2XJIRqDxx5A _NeXuGCLNEea2XJIRqDxx5A">
+      <name xsi:nil="true"/>
+      <ownedEnd xmi:id="_NeXuFSLNEea2XJIRqDxx5A" name="annotation" type="_NeXHPiLNEea2XJIRqDxx5A" association="_NeXuFCLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeXuFiLNEea2XJIRqDxx5A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeXuFyLNEea2XJIRqDxx5A" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_NeXuGCLNEea2XJIRqDxx5A" name="elementary_form" type="_NeXu2iLNEea2XJIRqDxx5A" association="_NeXuFCLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeXuGSLNEea2XJIRqDxx5A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeXuGiLNEea2XJIRqDxx5A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_NeXuGyLNEea2XJIRqDxx5A" memberEnd="_NeXuHCLNEea2XJIRqDxx5A _NeXuHyLNEea2XJIRqDxx5A" navigableOwnedEnd="_NeXuHCLNEea2XJIRqDxx5A _NeXuHyLNEea2XJIRqDxx5A">
+      <name xsi:nil="true"/>
+      <ownedEnd xmi:id="_NeXuHCLNEea2XJIRqDxx5A" name="cardiac_frequency" type="_NeXHPyLNEea2XJIRqDxx5A" association="_NeXuGyLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeXuHSLNEea2XJIRqDxx5A" value="-1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeXuHiLNEea2XJIRqDxx5A" value="*"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_NeXuHyLNEea2XJIRqDxx5A" name="cardiac_frequency_rate" type="_NeXuASLNEea2XJIRqDxx5A" association="_NeXuGyLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeXuICLNEea2XJIRqDxx5A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeXuISLNEea2XJIRqDxx5A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_NeXuIiLNEea2XJIRqDxx5A" name="cardiacFrequency" memberEnd="_NeXuIyLNEea2XJIRqDxx5A _NeXuJiLNEea2XJIRqDxx5A" navigableOwnedEnd="_NeXuIyLNEea2XJIRqDxx5A _NeXuJiLNEea2XJIRqDxx5A">
+      <ownedEnd xmi:id="_NeXuIyLNEea2XJIRqDxx5A" name="cardiac_frequency" type="_NeXHPyLNEea2XJIRqDxx5A" association="_NeXuIiLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeXuJCLNEea2XJIRqDxx5A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeXuJSLNEea2XJIRqDxx5A" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_NeXuJiLNEea2XJIRqDxx5A" name="cycle" type="_NeXu1SLNEea2XJIRqDxx5A" association="_NeXuIiLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeXuJyLNEea2XJIRqDxx5A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeXuKCLNEea2XJIRqDxx5A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_NeXuKSLNEea2XJIRqDxx5A" memberEnd="_NeXuKiLNEea2XJIRqDxx5A _NeXuLSLNEea2XJIRqDxx5A" navigableOwnedEnd="_NeXuKiLNEea2XJIRqDxx5A _NeXuLSLNEea2XJIRqDxx5A">
+      <name xsi:nil="true"/>
+      <ownedEnd xmi:id="_NeXuKiLNEea2XJIRqDxx5A" name="date" type="_NeXHQCLNEea2XJIRqDxx5A" association="_NeXuKSLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeXuKyLNEea2XJIRqDxx5A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeXuLCLNEea2XJIRqDxx5A" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_NeXuLSLNEea2XJIRqDxx5A" name="date_domain" type="_NeXuAiLNEea2XJIRqDxx5A" association="_NeXuKSLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeXuLiLNEea2XJIRqDxx5A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeXuLyLNEea2XJIRqDxx5A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_NeXuMCLNEea2XJIRqDxx5A" name="startDate" memberEnd="_NeXuMSLNEea2XJIRqDxx5A _NeXuNCLNEea2XJIRqDxx5A" navigableOwnedEnd="_NeXuMSLNEea2XJIRqDxx5A _NeXuNCLNEea2XJIRqDxx5A">
+      <ownedEnd xmi:id="_NeXuMSLNEea2XJIRqDxx5A" name="ecg_recording_session" type="_NeXu2CLNEea2XJIRqDxx5A" association="_NeXuMCLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeXuMiLNEea2XJIRqDxx5A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeXuMyLNEea2XJIRqDxx5A" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_NeXuNCLNEea2XJIRqDxx5A" name="date" type="_NeXHQCLNEea2XJIRqDxx5A" association="_NeXuMCLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeXuNSLNEea2XJIRqDxx5A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeXuNiLNEea2XJIRqDxx5A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_NeXuNyLNEea2XJIRqDxx5A" memberEnd="_NeXuOCLNEea2XJIRqDxx5A _NeXuOyLNEea2XJIRqDxx5A" navigableOwnedEnd="_NeXuOCLNEea2XJIRqDxx5A _NeXuOyLNEea2XJIRqDxx5A">
+      <name xsi:nil="true"/>
+      <ownedEnd xmi:id="_NeXuOCLNEea2XJIRqDxx5A" name="electrical_potential" type="_NeXHQSLNEea2XJIRqDxx5A" association="_NeXuNyLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeXuOSLNEea2XJIRqDxx5A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeXuOiLNEea2XJIRqDxx5A" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_NeXuOyLNEea2XJIRqDxx5A" name="electrical_potential_rate" type="_NeXuBCLNEea2XJIRqDxx5A" association="_NeXuNyLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeXuPCLNEea2XJIRqDxx5A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeXuPSLNEea2XJIRqDxx5A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_NeXuPiLNEea2XJIRqDxx5A" name="electricalPotential" memberEnd="_NeXuPyLNEea2XJIRqDxx5A _NeXuQiLNEea2XJIRqDxx5A" navigableOwnedEnd="_NeXuPyLNEea2XJIRqDxx5A _NeXuQiLNEea2XJIRqDxx5A">
+      <ownedEnd xmi:id="_NeXuPyLNEea2XJIRqDxx5A" name="electrical_potential" type="_NeXHQSLNEea2XJIRqDxx5A" association="_NeXuPiLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeXuQCLNEea2XJIRqDxx5A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeXuQSLNEea2XJIRqDxx5A" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_NeXuQiLNEea2XJIRqDxx5A" name="sample" type="_NeYVGSLNEea2XJIRqDxx5A" association="_NeXuPiLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeXuQyLNEea2XJIRqDxx5A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeXuRCLNEea2XJIRqDxx5A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_NeXuRSLNEea2XJIRqDxx5A" memberEnd="_NeXuRiLNEea2XJIRqDxx5A _NeXuSSLNEea2XJIRqDxx5A" navigableOwnedEnd="_NeXuRiLNEea2XJIRqDxx5A _NeXuSSLNEea2XJIRqDxx5A">
+      <name xsi:nil="true"/>
+      <ownedEnd xmi:id="_NeXuRiLNEea2XJIRqDxx5A" name="measurement" type="_NeXHQiLNEea2XJIRqDxx5A" association="_NeXuRSLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeXuRyLNEea2XJIRqDxx5A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeXuSCLNEea2XJIRqDxx5A" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_NeXuSSLNEea2XJIRqDxx5A" name="elementary_form" type="_NeXu2iLNEea2XJIRqDxx5A" association="_NeXuRSLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeXuSiLNEea2XJIRqDxx5A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeXuSyLNEea2XJIRqDxx5A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_NeXuTCLNEea2XJIRqDxx5A" memberEnd="_NeXuTSLNEea2XJIRqDxx5A _NeXuUCLNEea2XJIRqDxx5A" navigableOwnedEnd="_NeXuTSLNEea2XJIRqDxx5A _NeXuUCLNEea2XJIRqDxx5A">
+      <name xsi:nil="true"/>
+      <ownedEnd xmi:id="_NeXuTSLNEea2XJIRqDxx5A" name="measurement" type="_NeXHQiLNEea2XJIRqDxx5A" association="_NeXuTCLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeXuTiLNEea2XJIRqDxx5A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeXuTyLNEea2XJIRqDxx5A" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_NeXuUCLNEea2XJIRqDxx5A" name="measurement_domain" type="_NeXuBiLNEea2XJIRqDxx5A" association="_NeXuTCLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeXuUSLNEea2XJIRqDxx5A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeXuUiLNEea2XJIRqDxx5A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_NeXuUyLNEea2XJIRqDxx5A" memberEnd="_NeXuVCLNEea2XJIRqDxx5A _NeXuVyLNEea2XJIRqDxx5A" navigableOwnedEnd="_NeXuVCLNEea2XJIRqDxx5A _NeXuVyLNEea2XJIRqDxx5A">
+      <name xsi:nil="true"/>
+      <ownedEnd xmi:id="_NeXuVCLNEea2XJIRqDxx5A" name="sample" type="_NeXHQyLNEea2XJIRqDxx5A" association="_NeXuUyLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeXuVSLNEea2XJIRqDxx5A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeXuViLNEea2XJIRqDxx5A" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_NeXuVyLNEea2XJIRqDxx5A" name="sample_rate" type="_NeXuCSLNEea2XJIRqDxx5A" association="_NeXuUyLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeXuWCLNEea2XJIRqDxx5A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeXuWSLNEea2XJIRqDxx5A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_NeXuWiLNEea2XJIRqDxx5A" memberEnd="_NeXuWyLNEea2XJIRqDxx5A _NeXuXiLNEea2XJIRqDxx5A" navigableOwnedEnd="_NeXuWyLNEea2XJIRqDxx5A _NeXuXiLNEea2XJIRqDxx5A">
+      <name xsi:nil="true"/>
+      <ownedEnd xmi:id="_NeXuWyLNEea2XJIRqDxx5A" name="sample" type="_NeXHQyLNEea2XJIRqDxx5A" association="_NeXuWiLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeXuXCLNEea2XJIRqDxx5A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeXuXSLNEea2XJIRqDxx5A" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_NeXuXiLNEea2XJIRqDxx5A" name="observation_series" type="_NeYVFCLNEea2XJIRqDxx5A" association="_NeXuWiLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeXuXyLNEea2XJIRqDxx5A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeXuYCLNEea2XJIRqDxx5A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_NeXuYSLNEea2XJIRqDxx5A" memberEnd="_NeXuYiLNEea2XJIRqDxx5A _NeXuZSLNEea2XJIRqDxx5A" navigableOwnedEnd="_NeXuYiLNEea2XJIRqDxx5A _NeXuZSLNEea2XJIRqDxx5A">
+      <name xsi:nil="true"/>
+      <ownedEnd xmi:id="_NeXuYiLNEea2XJIRqDxx5A" name="time" type="_NeXHRCLNEea2XJIRqDxx5A" association="_NeXuYSLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeXuYyLNEea2XJIRqDxx5A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeXuZCLNEea2XJIRqDxx5A" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_NeXuZSLNEea2XJIRqDxx5A" name="time_domain" type="_NeXuCyLNEea2XJIRqDxx5A" association="_NeXuYSLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeXuZiLNEea2XJIRqDxx5A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeXuZyLNEea2XJIRqDxx5A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_NeXuaCLNEea2XJIRqDxx5A" name="time" memberEnd="_NeXuaSLNEea2XJIRqDxx5A _NeXubCLNEea2XJIRqDxx5A" navigableOwnedEnd="_NeXuaSLNEea2XJIRqDxx5A _NeXubCLNEea2XJIRqDxx5A">
+      <ownedEnd xmi:id="_NeXuaSLNEea2XJIRqDxx5A" name="observation" type="_NeYVEyLNEea2XJIRqDxx5A" association="_NeXuaCLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeXuaiLNEea2XJIRqDxx5A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeXuayLNEea2XJIRqDxx5A" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_NeXubCLNEea2XJIRqDxx5A" name="time" type="_NeXHRCLNEea2XJIRqDxx5A" association="_NeXuaCLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeXubSLNEea2XJIRqDxx5A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeXubiLNEea2XJIRqDxx5A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_NeXubyLNEea2XJIRqDxx5A" name="startTime" memberEnd="_NeXucCLNEea2XJIRqDxx5A _NeXucyLNEea2XJIRqDxx5A" navigableOwnedEnd="_NeXucCLNEea2XJIRqDxx5A _NeXucyLNEea2XJIRqDxx5A">
+      <ownedEnd xmi:id="_NeXucCLNEea2XJIRqDxx5A" name="ecg_recording_session" type="_NeXu2CLNEea2XJIRqDxx5A" association="_NeXubyLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeXucSLNEea2XJIRqDxx5A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeXuciLNEea2XJIRqDxx5A" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_NeXucyLNEea2XJIRqDxx5A" name="time" type="_NeXHRCLNEea2XJIRqDxx5A" association="_NeXubyLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeXudCLNEea2XJIRqDxx5A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeXudSLNEea2XJIRqDxx5A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_NeXudiLNEea2XJIRqDxx5A" name="duration" memberEnd="_NeXudyLNEea2XJIRqDxx5A _NeXueiLNEea2XJIRqDxx5A" navigableOwnedEnd="_NeXudyLNEea2XJIRqDxx5A _NeXueiLNEea2XJIRqDxx5A">
+      <ownedEnd xmi:id="_NeXudyLNEea2XJIRqDxx5A" name="cycle" type="_NeXu1SLNEea2XJIRqDxx5A" association="_NeXudiLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeXueCLNEea2XJIRqDxx5A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeXueSLNEea2XJIRqDxx5A" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_NeXueiLNEea2XJIRqDxx5A" name="time" type="_NeXHRCLNEea2XJIRqDxx5A" association="_NeXudiLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeXueyLNEea2XJIRqDxx5A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeXufCLNEea2XJIRqDxx5A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_NeXufSLNEea2XJIRqDxx5A" name="duration" memberEnd="_NeXufiLNEea2XJIRqDxx5A _NeXugSLNEea2XJIRqDxx5A" navigableOwnedEnd="_NeXufiLNEea2XJIRqDxx5A _NeXugSLNEea2XJIRqDxx5A">
+      <ownedEnd xmi:id="_NeXufiLNEea2XJIRqDxx5A" name="ecg_recording_session" type="_NeXu2CLNEea2XJIRqDxx5A" association="_NeXufSLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeXufyLNEea2XJIRqDxx5A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeXugCLNEea2XJIRqDxx5A" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_NeXugSLNEea2XJIRqDxx5A" name="time" type="_NeXHRCLNEea2XJIRqDxx5A" association="_NeXufSLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeXugiLNEea2XJIRqDxx5A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeXugyLNEea2XJIRqDxx5A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_NeXuhCLNEea2XJIRqDxx5A" name="onset" memberEnd="_NeXuhSLNEea2XJIRqDxx5A _NeXuiCLNEea2XJIRqDxx5A" navigableOwnedEnd="_NeXuhSLNEea2XJIRqDxx5A _NeXuiCLNEea2XJIRqDxx5A">
+      <ownedEnd xmi:id="_NeXuhSLNEea2XJIRqDxx5A" name="annotation_domain" type="_NeXuACLNEea2XJIRqDxx5A" association="_NeXuhCLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeXuhiLNEea2XJIRqDxx5A"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeXuhyLNEea2XJIRqDxx5A" value="*"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_NeXuiCLNEea2XJIRqDxx5A" name="time_domain" type="_NeXuCyLNEea2XJIRqDxx5A" association="_NeXuhCLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeXuiSLNEea2XJIRqDxx5A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeXuiiLNEea2XJIRqDxx5A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_NeXuiyLNEea2XJIRqDxx5A" name="offset" memberEnd="_NeXujCLNEea2XJIRqDxx5A _NeXujyLNEea2XJIRqDxx5A" navigableOwnedEnd="_NeXujCLNEea2XJIRqDxx5A _NeXujyLNEea2XJIRqDxx5A">
+      <ownedEnd xmi:id="_NeXujCLNEea2XJIRqDxx5A" name="annotation_domain" type="_NeXuACLNEea2XJIRqDxx5A" association="_NeXuiyLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeXujSLNEea2XJIRqDxx5A"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeXujiLNEea2XJIRqDxx5A" value="*"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_NeXujyLNEea2XJIRqDxx5A" name="time_domain" type="_NeXuCyLNEea2XJIRqDxx5A" association="_NeXuiyLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeXukCLNEea2XJIRqDxx5A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeXukSLNEea2XJIRqDxx5A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_NeXukiLNEea2XJIRqDxx5A" name="peak" memberEnd="_NeXukyLNEea2XJIRqDxx5A _NeXuliLNEea2XJIRqDxx5A" navigableOwnedEnd="_NeXukyLNEea2XJIRqDxx5A _NeXuliLNEea2XJIRqDxx5A">
+      <ownedEnd xmi:id="_NeXukyLNEea2XJIRqDxx5A" name="annotation_domain" type="_NeXuACLNEea2XJIRqDxx5A" association="_NeXukiLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeXulCLNEea2XJIRqDxx5A"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeXulSLNEea2XJIRqDxx5A" value="*"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_NeXuliLNEea2XJIRqDxx5A" name="time_domain" type="_NeXuCyLNEea2XJIRqDxx5A" association="_NeXukiLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeXulyLNEea2XJIRqDxx5A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeXumCLNEea2XJIRqDxx5A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_NeXumSLNEea2XJIRqDxx5A" name="day" memberEnd="_NeXumiLNEea2XJIRqDxx5A _NeXunSLNEea2XJIRqDxx5A" navigableOwnedEnd="_NeXumiLNEea2XJIRqDxx5A _NeXunSLNEea2XJIRqDxx5A">
+      <ownedEnd xmi:id="_NeXumiLNEea2XJIRqDxx5A" name="date_domain" type="_NeXuAiLNEea2XJIRqDxx5A" association="_NeXumSLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeXumyLNEea2XJIRqDxx5A"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeXunCLNEea2XJIRqDxx5A" value="*"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_NeXunSLNEea2XJIRqDxx5A" name="day" type="_NeXuAyLNEea2XJIRqDxx5A" association="_NeXumSLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeXuniLNEea2XJIRqDxx5A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeXunyLNEea2XJIRqDxx5A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_NeXuoCLNEea2XJIRqDxx5A" name="month" memberEnd="_NeXuoSLNEea2XJIRqDxx5A _NeXupCLNEea2XJIRqDxx5A" navigableOwnedEnd="_NeXuoSLNEea2XJIRqDxx5A _NeXupCLNEea2XJIRqDxx5A">
+      <ownedEnd xmi:id="_NeXuoSLNEea2XJIRqDxx5A" name="date_domain" type="_NeXuAiLNEea2XJIRqDxx5A" association="_NeXuoCLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeXuoiLNEea2XJIRqDxx5A"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeXuoyLNEea2XJIRqDxx5A" value="*"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_NeXupCLNEea2XJIRqDxx5A" name="month" type="_NeXuCCLNEea2XJIRqDxx5A" association="_NeXuoCLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeXupSLNEea2XJIRqDxx5A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeXupiLNEea2XJIRqDxx5A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_NeXupyLNEea2XJIRqDxx5A" name="year" memberEnd="_NeXuqCLNEea2XJIRqDxx5A _NeXuqyLNEea2XJIRqDxx5A" navigableOwnedEnd="_NeXuqCLNEea2XJIRqDxx5A _NeXuqyLNEea2XJIRqDxx5A">
+      <ownedEnd xmi:id="_NeXuqCLNEea2XJIRqDxx5A" name="date_domain" type="_NeXuAiLNEea2XJIRqDxx5A" association="_NeXupyLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeXuqSLNEea2XJIRqDxx5A"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeXuqiLNEea2XJIRqDxx5A" value="*"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_NeXuqyLNEea2XJIRqDxx5A" name="year" type="_NeXuDCLNEea2XJIRqDxx5A" association="_NeXupyLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeXurCLNEea2XJIRqDxx5A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeXurSLNEea2XJIRqDxx5A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_NeXuriLNEea2XJIRqDxx5A" name="duration" memberEnd="_NeXuryLNEea2XJIRqDxx5A _NeXusiLNEea2XJIRqDxx5A" navigableOwnedEnd="_NeXuryLNEea2XJIRqDxx5A _NeXusiLNEea2XJIRqDxx5A">
+      <ownedEnd xmi:id="_NeXuryLNEea2XJIRqDxx5A" name="measurement_domain" type="_NeXuBiLNEea2XJIRqDxx5A" association="_NeXuriLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeXusCLNEea2XJIRqDxx5A"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeXusSLNEea2XJIRqDxx5A" value="*"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_NeXusiLNEea2XJIRqDxx5A" name="time_domain" type="_NeXuCyLNEea2XJIRqDxx5A" association="_NeXuriLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeXusyLNEea2XJIRqDxx5A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeXutCLNEea2XJIRqDxx5A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_NeXutSLNEea2XJIRqDxx5A" name="amplitude" memberEnd="_NeXutiLNEea2XJIRqDxx5A _NeXuuSLNEea2XJIRqDxx5A" navigableOwnedEnd="_NeXutiLNEea2XJIRqDxx5A _NeXuuSLNEea2XJIRqDxx5A">
+      <ownedEnd xmi:id="_NeXutiLNEea2XJIRqDxx5A" name="measurement_domain" type="_NeXuBiLNEea2XJIRqDxx5A" association="_NeXutSLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeXutyLNEea2XJIRqDxx5A"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeXuuCLNEea2XJIRqDxx5A" value="*"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_NeXuuSLNEea2XJIRqDxx5A" name="electrical_potential_rate" type="_NeXuBCLNEea2XJIRqDxx5A" association="_NeXutSLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeXuuiLNEea2XJIRqDxx5A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeXuuyLNEea2XJIRqDxx5A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_NeXuvCLNEea2XJIRqDxx5A" name="hour" memberEnd="_NeXuvSLNEea2XJIRqDxx5A _NeXuwCLNEea2XJIRqDxx5A" navigableOwnedEnd="_NeXuvSLNEea2XJIRqDxx5A _NeXuwCLNEea2XJIRqDxx5A">
+      <ownedEnd xmi:id="_NeXuvSLNEea2XJIRqDxx5A" name="time_domain" type="_NeXuCyLNEea2XJIRqDxx5A" association="_NeXuvCLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeXuviLNEea2XJIRqDxx5A"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeXuvyLNEea2XJIRqDxx5A" value="*"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_NeXuwCLNEea2XJIRqDxx5A" name="hour" type="_NeXuBSLNEea2XJIRqDxx5A" association="_NeXuvCLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeXuwSLNEea2XJIRqDxx5A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeXuwiLNEea2XJIRqDxx5A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_NeXuwyLNEea2XJIRqDxx5A" name="minutes" memberEnd="_NeXuxCLNEea2XJIRqDxx5A _NeXuxyLNEea2XJIRqDxx5A" navigableOwnedEnd="_NeXuxCLNEea2XJIRqDxx5A _NeXuxyLNEea2XJIRqDxx5A">
+      <ownedEnd xmi:id="_NeXuxCLNEea2XJIRqDxx5A" name="time_domain" type="_NeXuCyLNEea2XJIRqDxx5A" association="_NeXuwyLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeXuxSLNEea2XJIRqDxx5A"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeXuxiLNEea2XJIRqDxx5A" value="*"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_NeXuxyLNEea2XJIRqDxx5A" name="minute" type="_NeXuByLNEea2XJIRqDxx5A" association="_NeXuwyLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeXuyCLNEea2XJIRqDxx5A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeXuySLNEea2XJIRqDxx5A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_NeXuyiLNEea2XJIRqDxx5A" name="seconds" memberEnd="_NeXuyyLNEea2XJIRqDxx5A _NeXuziLNEea2XJIRqDxx5A" navigableOwnedEnd="_NeXuyyLNEea2XJIRqDxx5A _NeXuziLNEea2XJIRqDxx5A">
+      <ownedEnd xmi:id="_NeXuyyLNEea2XJIRqDxx5A" name="time_domain" type="_NeXuCyLNEea2XJIRqDxx5A" association="_NeXuyiLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeXuzCLNEea2XJIRqDxx5A"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeXuzSLNEea2XJIRqDxx5A" value="*"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_NeXuziLNEea2XJIRqDxx5A" name="second" type="_NeXuCiLNEea2XJIRqDxx5A" association="_NeXuyiLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeXuzyLNEea2XJIRqDxx5A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeXu0CLNEea2XJIRqDxx5A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_NeXu0SLNEea2XJIRqDxx5A" name="Electrocardiography">
+    <packagedElement xmi:type="uml:Class" xmi:id="_NeXu0iLNEea2XJIRqDxx5A" name="BandpassFilter">
+      <generalization xmi:id="_NeXu0yLNEea2XJIRqDxx5A" general="_NeYVECLNEea2XJIRqDxx5A" generalizationSet="_NeY8KyLNEea2XJIRqDxx5A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_NeXu1CLNEea2XJIRqDxx5A" name="Correlated Observation Series"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_NeXu1SLNEea2XJIRqDxx5A" name="Cycle"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_NeXu1iLNEea2XJIRqDxx5A" name="ECG Lead"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_NeXu1yLNEea2XJIRqDxx5A" name="ECG Recording Device"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_NeXu2CLNEea2XJIRqDxx5A" name="ECG Recording Session"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_NeXu2SLNEea2XJIRqDxx5A" name="Electrode"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_NeXu2iLNEea2XJIRqDxx5A" name="Elementary Form"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_NeYVECLNEea2XJIRqDxx5A" name="Filtering Technique"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_NeYVESLNEea2XJIRqDxx5A" name="LowpassFilter">
+      <generalization xmi:id="_NeYVEiLNEea2XJIRqDxx5A" general="_NeYVECLNEea2XJIRqDxx5A" generalizationSet="_NeY8KyLNEea2XJIRqDxx5A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_NeYVEyLNEea2XJIRqDxx5A" name="Observation"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_NeYVFCLNEea2XJIRqDxx5A" name="Observation Series"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_NeYVFSLNEea2XJIRqDxx5A" name="PWave">
+      <generalization xmi:id="_NeYVFiLNEea2XJIRqDxx5A" general="_NeXu2iLNEea2XJIRqDxx5A" generalizationSet="_NeY8LCLNEea2XJIRqDxx5A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_NeYVFyLNEea2XJIRqDxx5A" name="QRSComplex">
+      <generalization xmi:id="_NeYVGCLNEea2XJIRqDxx5A" general="_NeXu2iLNEea2XJIRqDxx5A" generalizationSet="_NeY8LCLNEea2XJIRqDxx5A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_NeYVGSLNEea2XJIRqDxx5A" name="Sample"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_NeYVGiLNEea2XJIRqDxx5A" name="Segment"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_NeYVGyLNEea2XJIRqDxx5A" name="TWave">
+      <generalization xmi:id="_NeYVHCLNEea2XJIRqDxx5A" general="_NeXu2iLNEea2XJIRqDxx5A" generalizationSet="_NeY8LCLNEea2XJIRqDxx5A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_NeYVHSLNEea2XJIRqDxx5A" name="UWave">
+      <generalization xmi:id="_NeYVHiLNEea2XJIRqDxx5A" general="_NeXu2iLNEea2XJIRqDxx5A" generalizationSet="_NeY8LCLNEea2XJIRqDxx5A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_NeYVHyLNEea2XJIRqDxx5A" name="Wave Form"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_NeYVICLNEea2XJIRqDxx5A" memberEnd="_NeYVISLNEea2XJIRqDxx5A _NeYVJCLNEea2XJIRqDxx5A" navigableOwnedEnd="_NeYVISLNEea2XJIRqDxx5A _NeYVJCLNEea2XJIRqDxx5A">
+      <name xsi:nil="true"/>
+      <ownedEnd xmi:id="_NeYVISLNEea2XJIRqDxx5A" name="correlated_observation_series" type="_NeXu1CLNEea2XJIRqDxx5A" association="_NeYVICLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeYVIiLNEea2XJIRqDxx5A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeYVIyLNEea2XJIRqDxx5A" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_NeYVJCLNEea2XJIRqDxx5A" name="observation_series" type="_NeYVFCLNEea2XJIRqDxx5A" association="_NeYVICLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeYVJSLNEea2XJIRqDxx5A" value="2"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeYVJiLNEea2XJIRqDxx5A" value="12"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_NeYVJyLNEea2XJIRqDxx5A" name="represents" memberEnd="_NeYVKCLNEea2XJIRqDxx5A _NeYVKyLNEea2XJIRqDxx5A" navigableOwnedEnd="_NeYVKCLNEea2XJIRqDxx5A _NeYVKyLNEea2XJIRqDxx5A">
+      <ownedEnd xmi:id="_NeYVKCLNEea2XJIRqDxx5A" name="correlated_observation_series" type="_NeXu1CLNEea2XJIRqDxx5A" association="_NeYVJyLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeYVKSLNEea2XJIRqDxx5A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeYVKiLNEea2XJIRqDxx5A" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_NeYVKyLNEea2XJIRqDxx5A" name="wave_form" type="_NeYVHyLNEea2XJIRqDxx5A" association="_NeYVJyLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeYVLCLNEea2XJIRqDxx5A" value="2"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeYVLSLNEea2XJIRqDxx5A" value="*"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_NeYVLiLNEea2XJIRqDxx5A" memberEnd="_NeYVLyLNEea2XJIRqDxx5A _NeYVMiLNEea2XJIRqDxx5A" navigableOwnedEnd="_NeYVLyLNEea2XJIRqDxx5A _NeYVMiLNEea2XJIRqDxx5A">
+      <name xsi:nil="true"/>
+      <ownedEnd xmi:id="_NeYVLyLNEea2XJIRqDxx5A" name="ecg_recording_session" type="_NeXu2CLNEea2XJIRqDxx5A" association="_NeYVLiLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeYVMCLNEea2XJIRqDxx5A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeYVMSLNEea2XJIRqDxx5A" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_NeYVMiLNEea2XJIRqDxx5A" name="correlated_observation_series" type="_NeXu1CLNEea2XJIRqDxx5A" association="_NeYVLiLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeYVMyLNEea2XJIRqDxx5A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeYVNCLNEea2XJIRqDxx5A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_NeYVNSLNEea2XJIRqDxx5A" name="isAssociatedWith" memberEnd="_NeYVNiLNEea2XJIRqDxx5A _NeYVOSLNEea2XJIRqDxx5A" navigableOwnedEnd="_NeYVNiLNEea2XJIRqDxx5A _NeYVOSLNEea2XJIRqDxx5A">
+      <ownedEnd xmi:id="_NeYVNiLNEea2XJIRqDxx5A" name="ecg_record" type="_NeY8ZSLNEea2XJIRqDxx5A" association="_NeYVNSLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeYVNyLNEea2XJIRqDxx5A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeYVOCLNEea2XJIRqDxx5A" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_NeYVOSLNEea2XJIRqDxx5A" name="correlated_observation_series" type="_NeXu1CLNEea2XJIRqDxx5A" association="_NeYVNSLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeYVOiLNEea2XJIRqDxx5A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeYVOyLNEea2XJIRqDxx5A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_NeYVPCLNEea2XJIRqDxx5A" memberEnd="_NeYVPSLNEea2XJIRqDxx5A _NeYVQCLNEea2XJIRqDxx5A" navigableOwnedEnd="_NeYVPSLNEea2XJIRqDxx5A _NeYVQCLNEea2XJIRqDxx5A">
+      <name xsi:nil="true"/>
+      <ownedEnd xmi:id="_NeYVPSLNEea2XJIRqDxx5A" name="cycle" type="_NeXu1SLNEea2XJIRqDxx5A" association="_NeYVPCLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeYVPiLNEea2XJIRqDxx5A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeYVPyLNEea2XJIRqDxx5A" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_NeYVQCLNEea2XJIRqDxx5A" name="elementary_form" type="_NeXu2iLNEea2XJIRqDxx5A" association="_NeYVPCLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeYVQSLNEea2XJIRqDxx5A"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeYVQiLNEea2XJIRqDxx5A" value="4"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_NeYVQyLNEea2XJIRqDxx5A" memberEnd="_NeYVRCLNEea2XJIRqDxx5A _NeYVRyLNEea2XJIRqDxx5A" navigableOwnedEnd="_NeYVRCLNEea2XJIRqDxx5A _NeYVRyLNEea2XJIRqDxx5A">
+      <name xsi:nil="true"/>
+      <ownedEnd xmi:id="_NeYVRCLNEea2XJIRqDxx5A" name="cycle" type="_NeXu1SLNEea2XJIRqDxx5A" association="_NeYVQyLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeYVRSLNEea2XJIRqDxx5A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeYVRiLNEea2XJIRqDxx5A" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_NeYVRyLNEea2XJIRqDxx5A" name="segment" type="_NeYVGiLNEea2XJIRqDxx5A" association="_NeYVQyLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeYVSCLNEea2XJIRqDxx5A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeYVSSLNEea2XJIRqDxx5A" value="*"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_NeYVSiLNEea2XJIRqDxx5A" memberEnd="_NeYVSyLNEea2XJIRqDxx5A _NeYVTiLNEea2XJIRqDxx5A" navigableOwnedEnd="_NeYVSyLNEea2XJIRqDxx5A _NeYVTiLNEea2XJIRqDxx5A">
+      <name xsi:nil="true"/>
+      <ownedEnd xmi:id="_NeYVSyLNEea2XJIRqDxx5A" name="wave_form" type="_NeYVHyLNEea2XJIRqDxx5A" association="_NeYVSiLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeYVTCLNEea2XJIRqDxx5A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeYVTSLNEea2XJIRqDxx5A" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_NeYVTiLNEea2XJIRqDxx5A" name="cycle" type="_NeXu1SLNEea2XJIRqDxx5A" association="_NeYVSiLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeYVTyLNEea2XJIRqDxx5A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeYVUCLNEea2XJIRqDxx5A" value="*"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_NeYVUSLNEea2XJIRqDxx5A" memberEnd="_NeYVUiLNEea2XJIRqDxx5A _NeYVVSLNEea2XJIRqDxx5A" navigableOwnedEnd="_NeYVUiLNEea2XJIRqDxx5A _NeYVVSLNEea2XJIRqDxx5A">
+      <name xsi:nil="true"/>
+      <ownedEnd xmi:id="_NeYVUiLNEea2XJIRqDxx5A" name="ecg_lead" type="_NeXu1iLNEea2XJIRqDxx5A" association="_NeYVUSLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeYVUyLNEea2XJIRqDxx5A"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeYVVCLNEea2XJIRqDxx5A" value="*"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_NeYVVSLNEea2XJIRqDxx5A" name="human_body" type="_NeY8LyLNEea2XJIRqDxx5A" association="_NeYVUSLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeYVViLNEea2XJIRqDxx5A"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeYVVyLNEea2XJIRqDxx5A" value="*"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_NeYVWCLNEea2XJIRqDxx5A" memberEnd="_NeYVWSLNEea2XJIRqDxx5A _NeYVXCLNEea2XJIRqDxx5A" navigableOwnedEnd="_NeYVWSLNEea2XJIRqDxx5A _NeYVXCLNEea2XJIRqDxx5A">
+      <name xsi:nil="true"/>
+      <ownedEnd xmi:id="_NeYVWSLNEea2XJIRqDxx5A" name="ecg_lead" type="_NeXu1iLNEea2XJIRqDxx5A" association="_NeYVWCLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeYVWiLNEea2XJIRqDxx5A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeYVWyLNEea2XJIRqDxx5A" value="2"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_NeYVXCLNEea2XJIRqDxx5A" name="electrode" type="_NeXu2SLNEea2XJIRqDxx5A" association="_NeYVWCLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeYVXSLNEea2XJIRqDxx5A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeYVXiLNEea2XJIRqDxx5A" value="2"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_NeYVXyLNEea2XJIRqDxx5A" name="isDevelopedIn" memberEnd="_NeYVYCLNEea2XJIRqDxx5A _NeYVYyLNEea2XJIRqDxx5A" navigableOwnedEnd="_NeYVYCLNEea2XJIRqDxx5A _NeYVYyLNEea2XJIRqDxx5A">
+      <ownedEnd xmi:id="_NeYVYCLNEea2XJIRqDxx5A" name="observation_series" type="_NeYVFCLNEea2XJIRqDxx5A" association="_NeYVXyLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeYVYSLNEea2XJIRqDxx5A"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeYVYiLNEea2XJIRqDxx5A" value="*"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_NeYVYyLNEea2XJIRqDxx5A" name="ecg_lead" type="_NeXu1iLNEea2XJIRqDxx5A" association="_NeYVXyLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeYVZCLNEea2XJIRqDxx5A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeYVZSLNEea2XJIRqDxx5A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_NeYVZiLNEea2XJIRqDxx5A" name="performs" memberEnd="_NeYVZyLNEea2XJIRqDxx5A _NeYVaiLNEea2XJIRqDxx5A" navigableOwnedEnd="_NeYVZyLNEea2XJIRqDxx5A _NeYVaiLNEea2XJIRqDxx5A">
+      <ownedEnd xmi:id="_NeYVZyLNEea2XJIRqDxx5A" name="ecg_recording_device" type="_NeXu1yLNEea2XJIRqDxx5A" association="_NeYVZiLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeYVaCLNEea2XJIRqDxx5A"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeYVaSLNEea2XJIRqDxx5A" value="*"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_NeYVaiLNEea2XJIRqDxx5A" name="filtering_technique" type="_NeYVECLNEea2XJIRqDxx5A" association="_NeYVZiLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeYVayLNEea2XJIRqDxx5A"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeYVbCLNEea2XJIRqDxx5A" value="*"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_NeYVbSLNEea2XJIRqDxx5A" name="performs" memberEnd="_NeYVbiLNEea2XJIRqDxx5A _NeYVcSLNEea2XJIRqDxx5A" navigableOwnedEnd="_NeYVbiLNEea2XJIRqDxx5A _NeYVcSLNEea2XJIRqDxx5A">
+      <ownedEnd xmi:id="_NeYVbiLNEea2XJIRqDxx5A" name="ecg_recording_device" type="_NeXu1yLNEea2XJIRqDxx5A" association="_NeYVbSLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeYVbyLNEea2XJIRqDxx5A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeYVcCLNEea2XJIRqDxx5A" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_NeYVcSLNEea2XJIRqDxx5A" name="observation" type="_NeYVEyLNEea2XJIRqDxx5A" association="_NeYVbSLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeYVciLNEea2XJIRqDxx5A"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeYVcyLNEea2XJIRqDxx5A" value="*"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_NeYVdCLNEea2XJIRqDxx5A" memberEnd="_NeYVdSLNEea2XJIRqDxx5A _NeYVeCLNEea2XJIRqDxx5A" navigableOwnedEnd="_NeYVdSLNEea2XJIRqDxx5A _NeYVeCLNEea2XJIRqDxx5A">
+      <name xsi:nil="true"/>
+      <ownedEnd xmi:id="_NeYVdSLNEea2XJIRqDxx5A" name="ecg_recording_device" type="_NeXu1yLNEea2XJIRqDxx5A" association="_NeYVdCLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeYVdiLNEea2XJIRqDxx5A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeYVdyLNEea2XJIRqDxx5A" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_NeYVeCLNEea2XJIRqDxx5A" name="electrode" type="_NeXu2SLNEea2XJIRqDxx5A" association="_NeYVdCLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeYVeSLNEea2XJIRqDxx5A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeYVeiLNEea2XJIRqDxx5A" value="*"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_NeYVeyLNEea2XJIRqDxx5A" memberEnd="_NeYVfCLNEea2XJIRqDxx5A _NeYVfyLNEea2XJIRqDxx5A" navigableOwnedEnd="_NeYVfCLNEea2XJIRqDxx5A _NeYVfyLNEea2XJIRqDxx5A">
+      <name xsi:nil="true"/>
+      <ownedEnd xmi:id="_NeYVfCLNEea2XJIRqDxx5A" name="ecg_recording_session" type="_NeXu2CLNEea2XJIRqDxx5A" association="_NeYVeyLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeYVfSLNEea2XJIRqDxx5A"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeYVfiLNEea2XJIRqDxx5A" value="*"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_NeYVfyLNEea2XJIRqDxx5A" name="ecg_recording_device" type="_NeXu1yLNEea2XJIRqDxx5A" association="_NeYVeyLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeYVgCLNEea2XJIRqDxx5A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeYVgSLNEea2XJIRqDxx5A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_NeYVgiLNEea2XJIRqDxx5A" name="isAcquiredBy" memberEnd="_NeYVgyLNEea2XJIRqDxx5A _NeYVhiLNEea2XJIRqDxx5A" navigableOwnedEnd="_NeYVgyLNEea2XJIRqDxx5A _NeYVhiLNEea2XJIRqDxx5A">
+      <ownedEnd xmi:id="_NeYVgyLNEea2XJIRqDxx5A" name="ecg_record" type="_NeY8ZSLNEea2XJIRqDxx5A" association="_NeYVgiLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeYVhCLNEea2XJIRqDxx5A"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeYVhSLNEea2XJIRqDxx5A" value="*"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_NeYVhiLNEea2XJIRqDxx5A" name="ecg_recording_device" type="_NeXu1yLNEea2XJIRqDxx5A" association="_NeYVgiLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeYVhyLNEea2XJIRqDxx5A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeYViCLNEea2XJIRqDxx5A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_NeYViSLNEea2XJIRqDxx5A" name="isAssociatedWith" memberEnd="_NeYViiLNEea2XJIRqDxx5A _NeYVjSLNEea2XJIRqDxx5A" navigableOwnedEnd="_NeYViiLNEea2XJIRqDxx5A _NeYVjSLNEea2XJIRqDxx5A">
+      <ownedEnd xmi:id="_NeYViiLNEea2XJIRqDxx5A" name="ecg_recording_session" type="_NeXu2CLNEea2XJIRqDxx5A" association="_NeYViSLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeYViyLNEea2XJIRqDxx5A"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeYVjCLNEea2XJIRqDxx5A" value="*"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_NeYVjSLNEea2XJIRqDxx5A" name="treatment" type="_NeY8bCLNEea2XJIRqDxx5A" association="_NeYViSLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeYVjiLNEea2XJIRqDxx5A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeYVjyLNEea2XJIRqDxx5A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_NeYVkCLNEea2XJIRqDxx5A" memberEnd="_NeYVkSLNEea2XJIRqDxx5A _NeYVlCLNEea2XJIRqDxx5A" navigableOwnedEnd="_NeYVkSLNEea2XJIRqDxx5A _NeYVlCLNEea2XJIRqDxx5A">
+      <name xsi:nil="true"/>
+      <ownedEnd xmi:id="_NeYVkSLNEea2XJIRqDxx5A" name="ecg_recording_session" type="_NeXu2CLNEea2XJIRqDxx5A" association="_NeYVkCLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeYVkiLNEea2XJIRqDxx5A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeYVkyLNEea2XJIRqDxx5A" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_NeYVlCLNEea2XJIRqDxx5A" name="ecg_record" type="_NeY8ZSLNEea2XJIRqDxx5A" association="_NeYVkCLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeYVlSLNEea2XJIRqDxx5A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeYVliLNEea2XJIRqDxx5A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_NeYVlyLNEea2XJIRqDxx5A" memberEnd="_NeYVmCLNEea2XJIRqDxx5A _NeYVmyLNEea2XJIRqDxx5A" navigableOwnedEnd="_NeYVmCLNEea2XJIRqDxx5A _NeYVmyLNEea2XJIRqDxx5A">
+      <name xsi:nil="true"/>
+      <ownedEnd xmi:id="_NeYVmCLNEea2XJIRqDxx5A" name="patient" type="_NeY8ZyLNEea2XJIRqDxx5A" association="_NeYVlyLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeYVmSLNEea2XJIRqDxx5A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeYVmiLNEea2XJIRqDxx5A" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_NeYVmyLNEea2XJIRqDxx5A" name="ecg_recording_session" type="_NeXu2CLNEea2XJIRqDxx5A" association="_NeYVlyLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeYVnCLNEea2XJIRqDxx5A"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeYVnSLNEea2XJIRqDxx5A" value="*"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_NeYVniLNEea2XJIRqDxx5A" name="requests" memberEnd="_NeYVnyLNEea2XJIRqDxx5A _NeYVoiLNEea2XJIRqDxx5A" navigableOwnedEnd="_NeYVnyLNEea2XJIRqDxx5A _NeYVoiLNEea2XJIRqDxx5A">
+      <ownedEnd xmi:id="_NeYVnyLNEea2XJIRqDxx5A" name="physician" type="_NeY8aiLNEea2XJIRqDxx5A" association="_NeYVniLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeYVoCLNEea2XJIRqDxx5A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeYVoSLNEea2XJIRqDxx5A" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_NeYVoiLNEea2XJIRqDxx5A" name="ecg_recording_session" type="_NeXu2CLNEea2XJIRqDxx5A" association="_NeYVniLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeYVoyLNEea2XJIRqDxx5A"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeYVpCLNEea2XJIRqDxx5A" value="*"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_NeYVpSLNEea2XJIRqDxx5A" memberEnd="_NeYVpiLNEea2XJIRqDxx5A _NeYVqSLNEea2XJIRqDxx5A" navigableOwnedEnd="_NeYVpiLNEea2XJIRqDxx5A _NeYVqSLNEea2XJIRqDxx5A">
+      <name xsi:nil="true"/>
+      <ownedEnd xmi:id="_NeYVpiLNEea2XJIRqDxx5A" name="observation" type="_NeYVEyLNEea2XJIRqDxx5A" association="_NeYVpSLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeYVpyLNEea2XJIRqDxx5A" value="-1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeYVqCLNEea2XJIRqDxx5A" value="*"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_NeYVqSLNEea2XJIRqDxx5A" name="electrode" type="_NeXu2SLNEea2XJIRqDxx5A" association="_NeYVpSLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeYVqiLNEea2XJIRqDxx5A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeYVqyLNEea2XJIRqDxx5A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_NeYVrCLNEea2XJIRqDxx5A" memberEnd="_NeYVrSLNEea2XJIRqDxx5A _NeYVsCLNEea2XJIRqDxx5A" navigableOwnedEnd="_NeYVrSLNEea2XJIRqDxx5A _NeYVsCLNEea2XJIRqDxx5A">
+      <name xsi:nil="true"/>
+      <ownedEnd xmi:id="_NeYVrSLNEea2XJIRqDxx5A" name="observation" type="_NeYVEyLNEea2XJIRqDxx5A" association="_NeYVrCLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeYVriLNEea2XJIRqDxx5A" value="-1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeYVryLNEea2XJIRqDxx5A" value="*"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_NeYVsCLNEea2XJIRqDxx5A" name="human_body" type="_NeY8LyLNEea2XJIRqDxx5A" association="_NeYVrCLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeYVsSLNEea2XJIRqDxx5A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeYVsiLNEea2XJIRqDxx5A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_NeYVsyLNEea2XJIRqDxx5A" name="givesRiseTo" memberEnd="_NeYVtCLNEea2XJIRqDxx5A _NeYVtyLNEea2XJIRqDxx5A" navigableOwnedEnd="_NeYVtCLNEea2XJIRqDxx5A _NeYVtyLNEea2XJIRqDxx5A">
+      <ownedEnd xmi:id="_NeYVtCLNEea2XJIRqDxx5A" name="observation" type="_NeYVEyLNEea2XJIRqDxx5A" association="_NeYVsyLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeYVtSLNEea2XJIRqDxx5A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeYVtiLNEea2XJIRqDxx5A" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_NeYVtyLNEea2XJIRqDxx5A" name="sample" type="_NeYVGSLNEea2XJIRqDxx5A" association="_NeYVsyLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeYVuCLNEea2XJIRqDxx5A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeYVuSLNEea2XJIRqDxx5A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_NeYVuiLNEea2XJIRqDxx5A" memberEnd="_NeYVuyLNEea2XJIRqDxx5A _NeYVviLNEea2XJIRqDxx5A" navigableOwnedEnd="_NeYVuyLNEea2XJIRqDxx5A _NeYVviLNEea2XJIRqDxx5A">
+      <name xsi:nil="true"/>
+      <ownedEnd xmi:id="_NeYVuyLNEea2XJIRqDxx5A" name="observation_series" type="_NeYVFCLNEea2XJIRqDxx5A" association="_NeYVuiLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeYVvCLNEea2XJIRqDxx5A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeYVvSLNEea2XJIRqDxx5A" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_NeYVviLNEea2XJIRqDxx5A" name="observation" type="_NeYVEyLNEea2XJIRqDxx5A" association="_NeYVuiLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeYVvyLNEea2XJIRqDxx5A" value="2"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeYVwCLNEea2XJIRqDxx5A" value="*"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_NeYVwSLNEea2XJIRqDxx5A" name="constitutes" memberEnd="_NeYVwiLNEea2XJIRqDxx5A _NeY8ISLNEea2XJIRqDxx5A" navigableOwnedEnd="_NeYVwiLNEea2XJIRqDxx5A _NeY8ISLNEea2XJIRqDxx5A">
+      <ownedEnd xmi:id="_NeYVwiLNEea2XJIRqDxx5A" name="observation_series" type="_NeYVFCLNEea2XJIRqDxx5A" association="_NeYVwSLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeYVwyLNEea2XJIRqDxx5A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeY8ICLNEea2XJIRqDxx5A" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_NeY8ISLNEea2XJIRqDxx5A" name="wave_form" type="_NeYVHyLNEea2XJIRqDxx5A" association="_NeYVwSLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeY8IiLNEea2XJIRqDxx5A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeY8IyLNEea2XJIRqDxx5A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_NeY8JCLNEea2XJIRqDxx5A" memberEnd="_NeY8JSLNEea2XJIRqDxx5A _NeY8KCLNEea2XJIRqDxx5A" navigableOwnedEnd="_NeY8JSLNEea2XJIRqDxx5A _NeY8KCLNEea2XJIRqDxx5A">
+      <name xsi:nil="true"/>
+      <ownedEnd xmi:id="_NeY8JSLNEea2XJIRqDxx5A" name="wave_form" type="_NeYVHyLNEea2XJIRqDxx5A" association="_NeY8JCLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeY8JiLNEea2XJIRqDxx5A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeY8JyLNEea2XJIRqDxx5A" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_NeY8KCLNEea2XJIRqDxx5A" name="sample" type="_NeYVGSLNEea2XJIRqDxx5A" association="_NeY8JCLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeY8KSLNEea2XJIRqDxx5A" value="2"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeY8KiLNEea2XJIRqDxx5A" value="*"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:GeneralizationSet" xmi:id="_NeY8KyLNEea2XJIRqDxx5A" name="" isDisjoint="true" generalization="_NeXu0yLNEea2XJIRqDxx5A _NeYVEiLNEea2XJIRqDxx5A"/>
+    <packagedElement xmi:type="uml:GeneralizationSet" xmi:id="_NeY8LCLNEea2XJIRqDxx5A" name="" isDisjoint="true" generalization="_NeYVFiLNEea2XJIRqDxx5A _NeYVGCLNEea2XJIRqDxx5A _NeYVHCLNEea2XJIRqDxx5A _NeYVHiLNEea2XJIRqDxx5A"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_NeY8LSLNEea2XJIRqDxx5A" name="Human Heart">
+    <packagedElement xmi:type="uml:Class" xmi:id="_NeY8LiLNEea2XJIRqDxx5A" name="Chamber"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_NeY8LyLNEea2XJIRqDxx5A" name="Human Body">
+      <generalization xmi:id="_NeY8MCLNEea2XJIRqDxx5A" general="_NeY8LiLNEea2XJIRqDxx5A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_NeY8MSLNEea2XJIRqDxx5A" name="Human Heart">
+      <generalization xmi:id="_NeY8MiLNEea2XJIRqDxx5A" general="_NeY8OiLNEea2XJIRqDxx5A"/>
+      <generalization xmi:id="_NeY8MyLNEea2XJIRqDxx5A" general="_NeY8LiLNEea2XJIRqDxx5A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_NeY8NCLNEea2XJIRqDxx5A" name="Left Atrium">
+      <generalization xmi:id="_NeY8NSLNEea2XJIRqDxx5A" general="_NeY8OiLNEea2XJIRqDxx5A"/>
+      <generalization xmi:id="_NeY8NiLNEea2XJIRqDxx5A" general="_NeY8LiLNEea2XJIRqDxx5A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_NeY8NyLNEea2XJIRqDxx5A" name="Left Ventricle">
+      <generalization xmi:id="_NeY8OCLNEea2XJIRqDxx5A" general="_NeY8LiLNEea2XJIRqDxx5A"/>
+      <generalization xmi:id="_NeY8OSLNEea2XJIRqDxx5A" general="_NeY8OiLNEea2XJIRqDxx5A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_NeY8OiLNEea2XJIRqDxx5A" name="Muscle"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_NeY8OyLNEea2XJIRqDxx5A" name="Right Atrium">
+      <generalization xmi:id="_NeY8PCLNEea2XJIRqDxx5A" general="_NeY8LiLNEea2XJIRqDxx5A"/>
+      <generalization xmi:id="_NeY8PSLNEea2XJIRqDxx5A" general="_NeY8OiLNEea2XJIRqDxx5A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_NeY8PiLNEea2XJIRqDxx5A" name="Right Ventricle">
+      <generalization xmi:id="_NeY8PyLNEea2XJIRqDxx5A" general="_NeY8LiLNEea2XJIRqDxx5A"/>
+      <generalization xmi:id="_NeY8QCLNEea2XJIRqDxx5A" general="_NeY8OiLNEea2XJIRqDxx5A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_NeY8QSLNEea2XJIRqDxx5A" memberEnd="_NeY8QiLNEea2XJIRqDxx5A _NeY8RSLNEea2XJIRqDxx5A" navigableOwnedEnd="_NeY8QiLNEea2XJIRqDxx5A _NeY8RSLNEea2XJIRqDxx5A">
+      <name xsi:nil="true"/>
+      <ownedEnd xmi:id="_NeY8QiLNEea2XJIRqDxx5A" name="human_body" type="_NeY8LyLNEea2XJIRqDxx5A" association="_NeY8QSLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeY8QyLNEea2XJIRqDxx5A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeY8RCLNEea2XJIRqDxx5A" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_NeY8RSLNEea2XJIRqDxx5A" name="human_heart" type="_NeY8MSLNEea2XJIRqDxx5A" association="_NeY8QSLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeY8RiLNEea2XJIRqDxx5A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeY8RyLNEea2XJIRqDxx5A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_NeY8SCLNEea2XJIRqDxx5A" memberEnd="_NeY8SSLNEea2XJIRqDxx5A _NeY8TCLNEea2XJIRqDxx5A" navigableOwnedEnd="_NeY8SSLNEea2XJIRqDxx5A _NeY8TCLNEea2XJIRqDxx5A">
+      <name xsi:nil="true"/>
+      <ownedEnd xmi:id="_NeY8SSLNEea2XJIRqDxx5A" name="human_heart" type="_NeY8MSLNEea2XJIRqDxx5A" isReadOnly="true" association="_NeY8SCLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeY8SiLNEea2XJIRqDxx5A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeY8SyLNEea2XJIRqDxx5A" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_NeY8TCLNEea2XJIRqDxx5A" name="left_atrium" type="_NeY8NCLNEea2XJIRqDxx5A" isReadOnly="true" association="_NeY8SCLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeY8TSLNEea2XJIRqDxx5A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeY8TiLNEea2XJIRqDxx5A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_NeY8TyLNEea2XJIRqDxx5A" memberEnd="_NeY8UCLNEea2XJIRqDxx5A _NeY8UyLNEea2XJIRqDxx5A" navigableOwnedEnd="_NeY8UCLNEea2XJIRqDxx5A _NeY8UyLNEea2XJIRqDxx5A">
+      <name xsi:nil="true"/>
+      <ownedEnd xmi:id="_NeY8UCLNEea2XJIRqDxx5A" name="human_heart" type="_NeY8MSLNEea2XJIRqDxx5A" isReadOnly="true" association="_NeY8TyLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeY8USLNEea2XJIRqDxx5A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeY8UiLNEea2XJIRqDxx5A" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_NeY8UyLNEea2XJIRqDxx5A" name="right_atrium" type="_NeY8OyLNEea2XJIRqDxx5A" isReadOnly="true" association="_NeY8TyLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeY8VCLNEea2XJIRqDxx5A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeY8VSLNEea2XJIRqDxx5A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_NeY8ViLNEea2XJIRqDxx5A" memberEnd="_NeY8VyLNEea2XJIRqDxx5A _NeY8WiLNEea2XJIRqDxx5A" navigableOwnedEnd="_NeY8VyLNEea2XJIRqDxx5A _NeY8WiLNEea2XJIRqDxx5A">
+      <name xsi:nil="true"/>
+      <ownedEnd xmi:id="_NeY8VyLNEea2XJIRqDxx5A" name="human_heart" type="_NeY8MSLNEea2XJIRqDxx5A" isReadOnly="true" association="_NeY8ViLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeY8WCLNEea2XJIRqDxx5A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeY8WSLNEea2XJIRqDxx5A" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_NeY8WiLNEea2XJIRqDxx5A" name="right_ventricle" type="_NeY8PiLNEea2XJIRqDxx5A" isReadOnly="true" association="_NeY8ViLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeY8WyLNEea2XJIRqDxx5A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeY8XCLNEea2XJIRqDxx5A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_NeY8XSLNEea2XJIRqDxx5A" memberEnd="_NeY8XiLNEea2XJIRqDxx5A _NeY8YSLNEea2XJIRqDxx5A" navigableOwnedEnd="_NeY8XiLNEea2XJIRqDxx5A _NeY8YSLNEea2XJIRqDxx5A">
+      <name xsi:nil="true"/>
+      <ownedEnd xmi:id="_NeY8XiLNEea2XJIRqDxx5A" name="human_heart" type="_NeY8MSLNEea2XJIRqDxx5A" isReadOnly="true" association="_NeY8XSLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeY8XyLNEea2XJIRqDxx5A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeY8YCLNEea2XJIRqDxx5A" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_NeY8YSLNEea2XJIRqDxx5A" name="left_ventricle" type="_NeY8NyLNEea2XJIRqDxx5A" isReadOnly="true" association="_NeY8XSLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeY8YiLNEea2XJIRqDxx5A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeY8YyLNEea2XJIRqDxx5A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_NeY8ZCLNEea2XJIRqDxx5A" name="Human Protocol">
+    <packagedElement xmi:type="uml:Class" xmi:id="_NeY8ZSLNEea2XJIRqDxx5A" name="ECG Record"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_NeY8ZiLNEea2XJIRqDxx5A" name="EPR"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_NeY8ZyLNEea2XJIRqDxx5A" name="Patient">
+      <generalization xmi:id="_NeY8aCLNEea2XJIRqDxx5A" general="_NeY8aSLNEea2XJIRqDxx5A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_NeY8aSLNEea2XJIRqDxx5A" name="Person"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_NeY8aiLNEea2XJIRqDxx5A" name="Physician">
+      <generalization xmi:id="_NeY8ayLNEea2XJIRqDxx5A" general="_NeY8aSLNEea2XJIRqDxx5A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_NeY8bCLNEea2XJIRqDxx5A" name="Treatment"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_NeY8bSLNEea2XJIRqDxx5A" name="belongsTo" memberEnd="_NeY8biLNEea2XJIRqDxx5A _NeY8cSLNEea2XJIRqDxx5A" navigableOwnedEnd="_NeY8biLNEea2XJIRqDxx5A _NeY8cSLNEea2XJIRqDxx5A">
+      <ownedEnd xmi:id="_NeY8biLNEea2XJIRqDxx5A" name="ecg_record" type="_NeY8ZSLNEea2XJIRqDxx5A" association="_NeY8bSLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeY8byLNEea2XJIRqDxx5A"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeY8cCLNEea2XJIRqDxx5A" value="*"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_NeY8cSLNEea2XJIRqDxx5A" name="patient" type="_NeY8ZyLNEea2XJIRqDxx5A" association="_NeY8bSLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeY8ciLNEea2XJIRqDxx5A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeY8cyLNEea2XJIRqDxx5A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_NeY8dCLNEea2XJIRqDxx5A" memberEnd="_NeY8dSLNEea2XJIRqDxx5A _NeY8eCLNEea2XJIRqDxx5A" navigableOwnedEnd="_NeY8dSLNEea2XJIRqDxx5A _NeY8eCLNEea2XJIRqDxx5A">
+      <name xsi:nil="true"/>
+      <ownedEnd xmi:id="_NeY8dSLNEea2XJIRqDxx5A" name="epr" type="_NeY8ZiLNEea2XJIRqDxx5A" association="_NeY8dCLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeY8diLNEea2XJIRqDxx5A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeY8dyLNEea2XJIRqDxx5A" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_NeY8eCLNEea2XJIRqDxx5A" name="ecg_record" type="_NeY8ZSLNEea2XJIRqDxx5A" association="_NeY8dCLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeY8eSLNEea2XJIRqDxx5A"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeY8eiLNEea2XJIRqDxx5A" value="*"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_NeY8eyLNEea2XJIRqDxx5A" name="has" memberEnd="_NeY8fCLNEea2XJIRqDxx5A _NeY8fyLNEea2XJIRqDxx5A" navigableOwnedEnd="_NeY8fCLNEea2XJIRqDxx5A _NeY8fyLNEea2XJIRqDxx5A">
+      <ownedEnd xmi:id="_NeY8fCLNEea2XJIRqDxx5A" name="patient" type="_NeY8ZyLNEea2XJIRqDxx5A" association="_NeY8eyLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeY8fSLNEea2XJIRqDxx5A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeY8fiLNEea2XJIRqDxx5A" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_NeY8fyLNEea2XJIRqDxx5A" name="epr" type="_NeY8ZiLNEea2XJIRqDxx5A" association="_NeY8eyLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeY8gCLNEea2XJIRqDxx5A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeY8gSLNEea2XJIRqDxx5A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_NeY8giLNEea2XJIRqDxx5A" memberEnd="_NeY8gyLNEea2XJIRqDxx5A _NeY8hiLNEea2XJIRqDxx5A" navigableOwnedEnd="_NeY8gyLNEea2XJIRqDxx5A _NeY8hiLNEea2XJIRqDxx5A">
+      <name xsi:nil="true"/>
+      <ownedEnd xmi:id="_NeY8gyLNEea2XJIRqDxx5A" name="treatment" type="_NeY8bCLNEea2XJIRqDxx5A" association="_NeY8giLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeY8hCLNEea2XJIRqDxx5A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeY8hSLNEea2XJIRqDxx5A" value="*"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_NeY8hiLNEea2XJIRqDxx5A" name="patient" type="_NeY8ZyLNEea2XJIRqDxx5A" association="_NeY8giLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeY8hyLNEea2XJIRqDxx5A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeY8iCLNEea2XJIRqDxx5A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_NeY8iSLNEea2XJIRqDxx5A" memberEnd="_NeY8iiLNEea2XJIRqDxx5A _NeY8jSLNEea2XJIRqDxx5A" navigableOwnedEnd="_NeY8iiLNEea2XJIRqDxx5A _NeY8jSLNEea2XJIRqDxx5A">
+      <name xsi:nil="true"/>
+      <ownedEnd xmi:id="_NeY8iiLNEea2XJIRqDxx5A" name="treatment" type="_NeY8bCLNEea2XJIRqDxx5A" association="_NeY8iSLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeY8iyLNEea2XJIRqDxx5A"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeY8jCLNEea2XJIRqDxx5A" value="*"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_NeY8jSLNEea2XJIRqDxx5A" name="physician" type="_NeY8aiLNEea2XJIRqDxx5A" association="_NeY8iSLNEea2XJIRqDxx5A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NeY8jiLNEea2XJIRqDxx5A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeY8jyLNEea2XJIRqDxx5A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+  </packagedElement>
+</uml:Model>

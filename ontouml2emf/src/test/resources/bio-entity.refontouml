@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="ASCII"?>
+<RefOntoUML:Model xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:RefOntoUML="http://nemo.inf.ufes.br/ontouml/refontouml" name="Biological Entity">
+  <packagedElement xsi:type="RefOntoUML:Category" name="Biological Entity">
+    <generalization general="//@packagedElement.7"/>
+  </packagedElement>
+  <packagedElement xsi:type="RefOntoUML:Kind" name="Gallery">
+    <generalization general="//@packagedElement.2"/>
+  </packagedElement>
+  <packagedElement xsi:type="RefOntoUML:Category" name="Geographical Space">
+    <generalization general="//@packagedElement.11"/>
+  </packagedElement>
+  <packagedElement xsi:type="RefOntoUML:Kind" name="Human Heart">
+    <generalization general="//@packagedElement.4"/>
+  </packagedElement>
+  <packagedElement xsi:type="RefOntoUML:Category" name="Human Organ">
+    <generalization general="//@packagedElement.0"/>
+  </packagedElement>
+  <packagedElement xsi:type="RefOntoUML:Category" name="Inanimate Entity">
+    <generalization general="//@packagedElement.7"/>
+  </packagedElement>
+  <packagedElement xsi:type="RefOntoUML:Class" name="Location"/>
+  <packagedElement xsi:type="RefOntoUML:Category" name="Material Entity"/>
+  <packagedElement xsi:type="RefOntoUML:Kind" name="Museum">
+    <generalization general="//@packagedElement.2"/>
+  </packagedElement>
+  <packagedElement xsi:type="RefOntoUML:Kind" name="Person"/>
+  <packagedElement xsi:type="RefOntoUML:Quantity" name="Physical Object"/>
+  <packagedElement xsi:type="RefOntoUML:Category" name="Spatial Thing"/>
+  <packagedElement xsi:type="RefOntoUML:Kind" name="Statue">
+    <generalization general="//@packagedElement.5"/>
+  </packagedElement>
+  <packagedElement xsi:type="RefOntoUML:Kind" name="Surgery Room">
+    <generalization general="//@packagedElement.2"/>
+  </packagedElement>
+  <packagedElement xsi:type="RefOntoUML:IntegerIntervalDimension" name="Altitude"/>
+  <packagedElement xsi:type="RefOntoUML:IntegerIntervalDimension" name="Latitude"/>
+  <packagedElement xsi:type="RefOntoUML:MeasurementDomain" name="Location Coordinates"/>
+  <packagedElement xsi:type="RefOntoUML:IntegerIntervalDimension" name="Longitude"/>
+  <packagedElement xsi:type="RefOntoUML:Association" memberEnd="//@packagedElement.18/@ownedEnd.0 //@packagedElement.18/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.18/@ownedEnd.0 //@packagedElement.18/@ownedEnd.1">
+    <name xsi:nil="true"/>
+    <ownedEnd name="person" type="//@packagedElement.9" association="//@packagedElement.18">
+      <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="1"/>
+      <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
+    </ownedEnd>
+    <ownedEnd name="biological_entity" type="//@packagedElement.0" association="//@packagedElement.18">
+      <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="-1"/>
+      <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="2"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xsi:type="RefOntoUML:Association" name="spatiallySubsumes" memberEnd="//@packagedElement.19/@ownedEnd.0 //@packagedElement.19/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.19/@ownedEnd.0 //@packagedElement.19/@ownedEnd.1">
+    <ownedEnd name="geographical_space" type="//@packagedElement.2" association="//@packagedElement.19">
+      <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="-1"/>
+      <lowerValue xsi:type="RefOntoUML:LiteralInteger"/>
+    </ownedEnd>
+    <ownedEnd name="geographical_space" type="//@packagedElement.2" association="//@packagedElement.19">
+      <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="-1"/>
+      <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xsi:type="RefOntoUML:Association" memberEnd="//@packagedElement.20/@ownedEnd.0 //@packagedElement.20/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.20/@ownedEnd.0 //@packagedElement.20/@ownedEnd.1">
+    <name xsi:nil="true"/>
+    <ownedEnd name="person" type="//@packagedElement.9" association="//@packagedElement.20">
+      <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="1"/>
+      <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
+    </ownedEnd>
+    <ownedEnd name="human_heart" type="//@packagedElement.3" association="//@packagedElement.20">
+      <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="1"/>
+      <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xsi:type="RefOntoUML:Association" memberEnd="//@packagedElement.21/@ownedEnd.0 //@packagedElement.21/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.21/@ownedEnd.0 //@packagedElement.21/@ownedEnd.1">
+    <name xsi:nil="true"/>
+    <ownedEnd name="location" type="//@packagedElement.6" association="//@packagedElement.21">
+      <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="1"/>
+      <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
+    </ownedEnd>
+    <ownedEnd name="physical_object" type="//@packagedElement.10" association="//@packagedElement.21">
+      <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="1"/>
+      <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xsi:type="RefOntoUML:Association" memberEnd="//@packagedElement.22/@ownedEnd.0 //@packagedElement.22/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.22/@ownedEnd.0 //@packagedElement.22/@ownedEnd.1">
+    <name xsi:nil="true"/>
+    <ownedEnd name="location" type="//@packagedElement.6" association="//@packagedElement.22">
+      <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="1"/>
+      <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
+    </ownedEnd>
+    <ownedEnd name="location_coordinates" type="//@packagedElement.16" association="//@packagedElement.22">
+      <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="1"/>
+      <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xsi:type="RefOntoUML:Association" memberEnd="//@packagedElement.23/@ownedEnd.0 //@packagedElement.23/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.23/@ownedEnd.0 //@packagedElement.23/@ownedEnd.1">
+    <name xsi:nil="true"/>
+    <ownedEnd name="spatial_thing" type="//@packagedElement.11" association="//@packagedElement.23">
+      <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="1"/>
+      <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
+    </ownedEnd>
+    <ownedEnd name="location" type="//@packagedElement.6" association="//@packagedElement.23">
+      <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="1"/>
+      <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xsi:type="RefOntoUML:Association" name="isConstitutedBy" memberEnd="//@packagedElement.24/@ownedEnd.0 //@packagedElement.24/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.24/@ownedEnd.0 //@packagedElement.24/@ownedEnd.1">
+    <ownedEnd name="physical_object" type="//@packagedElement.10" association="//@packagedElement.24">
+      <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="1"/>
+      <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
+    </ownedEnd>
+    <ownedEnd name="material_entity" type="//@packagedElement.7" association="//@packagedElement.24">
+      <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="1"/>
+      <lowerValue xsi:type="RefOntoUML:LiteralInteger"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xsi:type="RefOntoUML:Association" name="locatedIn" memberEnd="//@packagedElement.25/@ownedEnd.0 //@packagedElement.25/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.25/@ownedEnd.0 //@packagedElement.25/@ownedEnd.1">
+    <ownedEnd name="spatial_thing" type="//@packagedElement.11" association="//@packagedElement.25">
+      <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="-1"/>
+      <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
+    </ownedEnd>
+    <ownedEnd name="physical_object" type="//@packagedElement.10" association="//@packagedElement.25">
+      <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="-1"/>
+      <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="-1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xsi:type="RefOntoUML:Structuration" name="latitude" memberEnd="//@packagedElement.26/@ownedEnd.0 //@packagedElement.26/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.26/@ownedEnd.0 //@packagedElement.26/@ownedEnd.1">
+    <ownedEnd name="location_coordinates" type="//@packagedElement.16" association="//@packagedElement.26">
+      <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="-1"/>
+      <lowerValue xsi:type="RefOntoUML:LiteralInteger"/>
+    </ownedEnd>
+    <ownedEnd name="latitude" type="//@packagedElement.15" association="//@packagedElement.26">
+      <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="1"/>
+      <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xsi:type="RefOntoUML:Structuration" name="longitude" memberEnd="//@packagedElement.27/@ownedEnd.0 //@packagedElement.27/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.27/@ownedEnd.0 //@packagedElement.27/@ownedEnd.1">
+    <ownedEnd name="location_coordinates" type="//@packagedElement.16" association="//@packagedElement.27">
+      <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="-1"/>
+      <lowerValue xsi:type="RefOntoUML:LiteralInteger"/>
+    </ownedEnd>
+    <ownedEnd name="longitude" type="//@packagedElement.17" association="//@packagedElement.27">
+      <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="1"/>
+      <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xsi:type="RefOntoUML:Structuration" name="altitude" memberEnd="//@packagedElement.28/@ownedEnd.0 //@packagedElement.28/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.28/@ownedEnd.0 //@packagedElement.28/@ownedEnd.1">
+    <ownedEnd name="location_coordinates" type="//@packagedElement.16" association="//@packagedElement.28">
+      <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="-1"/>
+      <lowerValue xsi:type="RefOntoUML:LiteralInteger"/>
+    </ownedEnd>
+    <ownedEnd name="altitude" type="//@packagedElement.14" association="//@packagedElement.28">
+      <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="1"/>
+      <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+</RefOntoUML:Model>

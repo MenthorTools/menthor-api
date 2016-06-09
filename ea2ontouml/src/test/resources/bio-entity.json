@@ -1,0 +1,595 @@
+{
+    "@class": "net.menthor.ontouml.OntoUMLModel",
+    "@id": 1,
+    "name": "Biological Entity",
+    "elements": [
+        {
+            "@class": "net.menthor.ontouml.OntoUMLClass",
+            "@id": 2,
+            "stereotype": "CATEGORY",
+            "abstract_": false,
+            "derived": false,
+            "extensional": false,
+            "name": "Biological Entity",
+            "uniqueName": "BiologicalEntity2"
+        },
+        {
+            "@class": "net.menthor.ontouml.OntoUMLRelationship",
+            "@id": 3,
+            "endPoints": [
+                {
+                    "@class": "net.menthor.ontouml.OntoUMLEndPoint",
+                    "@id": 4,
+                    "classifier": {
+                        "@class": "net.menthor.ontouml.OntoUMLClass",
+                        "@id": 5,
+                        "stereotype": "KIND",
+                        "abstract_": false,
+                        "derived": false,
+                        "extensional": false,
+                        "name": "Person",
+                        "uniqueName": "Person"
+                    },
+                    "name": "person",
+                    "lowerBound": 1,
+                    "uniqueName": "person",
+                    "upperBound": 1,
+                    "ordered": false,
+                    "derived": false,
+                    "dependency": false
+                },
+                {
+                    "@class": "net.menthor.ontouml.OntoUMLEndPoint",
+                    "@id": 6,
+                    "classifier": 2,
+                    "name": "biological_entity",
+                    "lowerBound": 2,
+                    "uniqueName": "biological_entity",
+                    "upperBound": -1,
+                    "ordered": false,
+                    "derived": false,
+                    "dependency": false
+                }
+            ],
+            "reflexivityValue": "IRREFLEXIVE",
+            "symmetryValue": "ASSYMETRIC",
+            "transitivityValue": "TRANSITIVE",
+            "ciclicityValue": "ACYCLIC",
+            "uniqueName": "OntoUMLRelationship"
+        },
+        {
+            "@class": "net.menthor.ontouml.OntoUMLClass",
+            "@id": 7,
+            "stereotype": "KIND",
+            "abstract_": false,
+            "derived": false,
+            "extensional": false,
+            "name": "Gallery",
+            "uniqueName": "Gallery"
+        },
+        {
+            "@class": "net.menthor.ontouml.OntoUMLClass",
+            "@id": 8,
+            "stereotype": "CATEGORY",
+            "abstract_": false,
+            "derived": false,
+            "extensional": false,
+            "name": "Geographical Space",
+            "uniqueName": "GeographicalSpace"
+        },
+        {
+            "@class": "net.menthor.ontouml.OntoUMLRelationship",
+            "@id": 9,
+            "endPoints": [
+                {
+                    "@class": "net.menthor.ontouml.OntoUMLEndPoint",
+                    "@id": 10,
+                    "classifier": 8,
+                    "name": "geographical_space",
+                    "uniqueName": "geographical_space2",
+                    "upperBound": -1,
+                    "ordered": false,
+                    "derived": false,
+                    "dependency": false
+                },
+                {
+                    "@class": "net.menthor.ontouml.OntoUMLEndPoint",
+                    "@id": 11,
+                    "classifier": 8,
+                    "name": "geographical_space",
+                    "lowerBound": 1,
+                    "uniqueName": "geographical_space",
+                    "upperBound": -1,
+                    "ordered": false,
+                    "derived": false,
+                    "dependency": false
+                }
+            ],
+            "name": "spatiallySubsumes",
+            "uniqueName": "spatiallySubsumes"
+        },
+        {
+            "@class": "net.menthor.ontouml.OntoUMLClass",
+            "@id": 12,
+            "stereotype": "KIND",
+            "abstract_": false,
+            "derived": false,
+            "extensional": false,
+            "name": "Human Heart",
+            "uniqueName": "HumanHeart"
+        },
+        {
+            "@class": "net.menthor.ontouml.OntoUMLRelationship",
+            "@id": 13,
+            "endPoints": [
+                {
+                    "@class": "net.menthor.ontouml.OntoUMLEndPoint",
+                    "@id": 14,
+                    "classifier": 5,
+                    "name": "person",
+                    "lowerBound": 1,
+                    "uniqueName": "person2",
+                    "upperBound": 1,
+                    "ordered": false,
+                    "derived": false,
+                    "dependency": false
+                },
+                {
+                    "@class": "net.menthor.ontouml.OntoUMLEndPoint",
+                    "@id": 15,
+                    "classifier": 12,
+                    "name": "human_heart",
+                    "lowerBound": 1,
+                    "uniqueName": "human_heart",
+                    "upperBound": 1,
+                    "ordered": false,
+                    "derived": false,
+                    "dependency": false
+                }
+            ],
+            "reflexivityValue": "IRREFLEXIVE",
+            "symmetryValue": "ASSYMETRIC",
+            "transitivityValue": "TRANSITIVE",
+            "ciclicityValue": "ACYCLIC",
+            "uniqueName": "OntoUMLRelationship2"
+        },
+        {
+            "@class": "net.menthor.ontouml.OntoUMLClass",
+            "@id": 16,
+            "stereotype": "CATEGORY",
+            "abstract_": false,
+            "derived": false,
+            "extensional": false,
+            "name": "Human Organ",
+            "uniqueName": "HumanOrgan"
+        },
+        {
+            "@class": "net.menthor.ontouml.OntoUMLClass",
+            "@id": 17,
+            "stereotype": "CATEGORY",
+            "abstract_": false,
+            "derived": false,
+            "extensional": false,
+            "name": "Inanimate Entity",
+            "uniqueName": "InanimateEntity"
+        },
+        {
+            "@class": "net.menthor.ontouml.OntoUMLClass",
+            "@id": 18,
+            "stereotype": "QUALITY",
+            "abstract_": false,
+            "derived": false,
+            "extensional": false,
+            "name": "Location",
+            "uniqueName": "Location"
+        },
+        {
+            "@class": "net.menthor.ontouml.OntoUMLRelationship",
+            "@id": 19,
+            "endPoints": [
+                {
+                    "@class": "net.menthor.ontouml.OntoUMLEndPoint",
+                    "@id": 20,
+                    "classifier": 18,
+                    "name": "location",
+                    "lowerBound": 1,
+                    "uniqueName": "location",
+                    "upperBound": 1,
+                    "ordered": false,
+                    "derived": false,
+                    "dependency": false
+                },
+                {
+                    "@class": "net.menthor.ontouml.OntoUMLEndPoint",
+                    "@id": 21,
+                    "classifier": {
+                        "@class": "net.menthor.ontouml.OntoUMLClass",
+                        "@id": 22,
+                        "stereotype": "QUANTITY",
+                        "abstract_": false,
+                        "derived": false,
+                        "extensional": false,
+                        "name": "Physical Object",
+                        "uniqueName": "PhysicalObject"
+                    },
+                    "name": "physical_object",
+                    "lowerBound": 1,
+                    "uniqueName": "physical_object",
+                    "upperBound": 1,
+                    "ordered": false,
+                    "derived": false,
+                    "dependency": false
+                }
+            ],
+            "reflexivityValue": "IRREFLEXIVE",
+            "symmetryValue": "ASSYMETRIC",
+            "ciclicityValue": "ACYCLIC",
+            "uniqueName": "OntoUMLRelationship3"
+        },
+        {
+            "@class": "net.menthor.ontouml.OntoUMLRelationship",
+            "@id": 23,
+            "endPoints": [
+                {
+                    "@class": "net.menthor.ontouml.OntoUMLEndPoint",
+                    "@id": 24,
+                    "classifier": 18,
+                    "name": "location",
+                    "lowerBound": 1,
+                    "uniqueName": "location2",
+                    "upperBound": 1,
+                    "ordered": false,
+                    "derived": false,
+                    "dependency": false
+                },
+                {
+                    "@class": "net.menthor.ontouml.OntoUMLEndPoint",
+                    "@id": 25,
+                    "classifier": {
+                        "@class": "net.menthor.ontouml.OntoUMLDataType",
+                        "@id": 26,
+                        "stereotype": "DOMAIN",
+                        "name": "Location Coordinates",
+                        "uniqueName": "LocationCoordinates"
+                    },
+                    "name": "location_coordinates",
+                    "lowerBound": 1,
+                    "uniqueName": "location_coordinates",
+                    "upperBound": 1,
+                    "ordered": false,
+                    "derived": false,
+                    "dependency": false
+                }
+            ],
+            "uniqueName": "OntoUMLRelationship4"
+        },
+        {
+            "@class": "net.menthor.ontouml.OntoUMLRelationship",
+            "@id": 27,
+            "endPoints": [
+                {
+                    "@class": "net.menthor.ontouml.OntoUMLEndPoint",
+                    "@id": 28,
+                    "classifier": {
+                        "@class": "net.menthor.ontouml.OntoUMLClass",
+                        "@id": 29,
+                        "stereotype": "CATEGORY",
+                        "abstract_": false,
+                        "derived": false,
+                        "extensional": false,
+                        "name": "Spatial Thing",
+                        "uniqueName": "SpatialThing"
+                    },
+                    "name": "spatial_thing",
+                    "lowerBound": 1,
+                    "uniqueName": "spatial_thing",
+                    "upperBound": 1,
+                    "ordered": false,
+                    "derived": false,
+                    "dependency": false
+                },
+                {
+                    "@class": "net.menthor.ontouml.OntoUMLEndPoint",
+                    "@id": 30,
+                    "classifier": 18,
+                    "name": "location",
+                    "lowerBound": 1,
+                    "uniqueName": "location3",
+                    "upperBound": 1,
+                    "ordered": false,
+                    "derived": false,
+                    "dependency": false
+                }
+            ],
+            "reflexivityValue": "IRREFLEXIVE",
+            "symmetryValue": "ASSYMETRIC",
+            "ciclicityValue": "ACYCLIC",
+            "uniqueName": "OntoUMLRelationship5"
+        },
+        {
+            "@class": "net.menthor.ontouml.OntoUMLClass",
+            "@id": 31,
+            "stereotype": "CATEGORY",
+            "abstract_": false,
+            "derived": false,
+            "extensional": false,
+            "name": "Material Entity",
+            "uniqueName": "MaterialEntity"
+        },
+        {
+            "@class": "net.menthor.ontouml.OntoUMLRelationship",
+            "@id": 32,
+            "endPoints": [
+                {
+                    "@class": "net.menthor.ontouml.OntoUMLEndPoint",
+                    "@id": 33,
+                    "classifier": 22,
+                    "name": "physical_object",
+                    "lowerBound": 1,
+                    "uniqueName": "physical_object2",
+                    "upperBound": 1,
+                    "ordered": false,
+                    "derived": false,
+                    "dependency": false
+                },
+                {
+                    "@class": "net.menthor.ontouml.OntoUMLEndPoint",
+                    "@id": 34,
+                    "classifier": 31,
+                    "name": "material_entity",
+                    "uniqueName": "material_entity",
+                    "upperBound": 1,
+                    "ordered": false,
+                    "derived": false,
+                    "dependency": false
+                }
+            ],
+            "name": "isConstitutedBy",
+            "uniqueName": "isConstitutedBy"
+        },
+        {
+            "@class": "net.menthor.ontouml.OntoUMLClass",
+            "@id": 35,
+            "stereotype": "KIND",
+            "abstract_": false,
+            "derived": false,
+            "extensional": false,
+            "name": "Museum",
+            "uniqueName": "Museum"
+        },
+        5,
+        22,
+        {
+            "@class": "net.menthor.ontouml.OntoUMLRelationship",
+            "@id": 36,
+            "endPoints": [
+                {
+                    "@class": "net.menthor.ontouml.OntoUMLEndPoint",
+                    "@id": 37,
+                    "classifier": 29,
+                    "name": "spatial_thing",
+                    "lowerBound": 1,
+                    "uniqueName": "spatial_thing2",
+                    "upperBound": -1,
+                    "ordered": false,
+                    "derived": false,
+                    "dependency": false
+                },
+                {
+                    "@class": "net.menthor.ontouml.OntoUMLEndPoint",
+                    "@id": 38,
+                    "classifier": 22,
+                    "name": "physical_object",
+                    "lowerBound": -1,
+                    "uniqueName": "physical_object3",
+                    "upperBound": -1,
+                    "ordered": false,
+                    "derived": false,
+                    "dependency": false
+                }
+            ],
+            "name": "locatedIn",
+            "uniqueName": "locatedIn"
+        },
+        29,
+        {
+            "@class": "net.menthor.ontouml.OntoUMLClass",
+            "@id": 39,
+            "stereotype": "KIND",
+            "abstract_": false,
+            "derived": false,
+            "extensional": false,
+            "name": "Statue",
+            "uniqueName": "Statue"
+        },
+        {
+            "@class": "net.menthor.ontouml.OntoUMLClass",
+            "@id": 40,
+            "stereotype": "KIND",
+            "abstract_": false,
+            "derived": false,
+            "extensional": false,
+            "name": "Surgery Room",
+            "uniqueName": "SurgeryRoom"
+        },
+        {
+            "@class": "net.menthor.ontouml.OntoUMLDataType",
+            "@id": 41,
+            "stereotype": "DIMENSION",
+            "scale": "INTERVAL",
+            "measurement": "INTEGER",
+            "name": "Altitude",
+            "uniqueName": "Altitude"
+        },
+        {
+            "@class": "net.menthor.ontouml.OntoUMLDataType",
+            "@id": 42,
+            "stereotype": "DIMENSION",
+            "scale": "INTERVAL",
+            "measurement": "INTEGER",
+            "name": "Latitude",
+            "uniqueName": "Latitude"
+        },
+        26,
+        {
+            "@class": "net.menthor.ontouml.OntoUMLDataType",
+            "@id": 43,
+            "stereotype": "DIMENSION",
+            "scale": "INTERVAL",
+            "measurement": "INTEGER",
+            "name": "Longitude",
+            "uniqueName": "Longitude"
+        },
+        {
+            "@class": "net.menthor.ontouml.OntoUMLGeneralization",
+            "@id": 44,
+            "general": 31,
+            "specific": 2
+        },
+        {
+            "@class": "net.menthor.ontouml.OntoUMLGeneralization",
+            "@id": 45,
+            "general": 8,
+            "specific": 7
+        },
+        {
+            "@class": "net.menthor.ontouml.OntoUMLGeneralization",
+            "@id": 46,
+            "general": 29,
+            "specific": 8
+        },
+        {
+            "@class": "net.menthor.ontouml.OntoUMLGeneralization",
+            "@id": 47,
+            "general": 16,
+            "specific": 12
+        },
+        {
+            "@class": "net.menthor.ontouml.OntoUMLGeneralization",
+            "@id": 48,
+            "general": 2,
+            "specific": 16
+        },
+        {
+            "@class": "net.menthor.ontouml.OntoUMLGeneralization",
+            "@id": 49,
+            "general": 31,
+            "specific": 17
+        },
+        {
+            "@class": "net.menthor.ontouml.OntoUMLGeneralization",
+            "@id": 50,
+            "general": 8,
+            "specific": 35
+        },
+        {
+            "@class": "net.menthor.ontouml.OntoUMLGeneralization",
+            "@id": 51,
+            "general": 17,
+            "specific": 39
+        },
+        {
+            "@class": "net.menthor.ontouml.OntoUMLGeneralization",
+            "@id": 52,
+            "general": 8,
+            "specific": 40
+        },
+        {
+            "@class": "net.menthor.ontouml.OntoUMLRelationship",
+            "@id": 53,
+            "endPoints": [
+                {
+                    "@class": "net.menthor.ontouml.OntoUMLEndPoint",
+                    "@id": 54,
+                    "classifier": 26,
+                    "name": "location_coordinates",
+                    "uniqueName": "location_coordinates2",
+                    "upperBound": -1,
+                    "ordered": false,
+                    "derived": false,
+                    "dependency": false
+                },
+                {
+                    "@class": "net.menthor.ontouml.OntoUMLEndPoint",
+                    "@id": 55,
+                    "classifier": 42,
+                    "name": "latitude",
+                    "lowerBound": 1,
+                    "uniqueName": "latitude",
+                    "upperBound": 1,
+                    "ordered": false,
+                    "derived": false,
+                    "dependency": false
+                }
+            ],
+            "stereotype": "STRUCTURATION",
+            "name": "latitude",
+            "uniqueName": "latitude2"
+        },
+        {
+            "@class": "net.menthor.ontouml.OntoUMLRelationship",
+            "@id": 56,
+            "endPoints": [
+                {
+                    "@class": "net.menthor.ontouml.OntoUMLEndPoint",
+                    "@id": 57,
+                    "classifier": 26,
+                    "name": "location_coordinates",
+                    "uniqueName": "location_coordinates3",
+                    "upperBound": -1,
+                    "ordered": false,
+                    "derived": false,
+                    "dependency": false
+                },
+                {
+                    "@class": "net.menthor.ontouml.OntoUMLEndPoint",
+                    "@id": 58,
+                    "classifier": 43,
+                    "name": "longitude",
+                    "lowerBound": 1,
+                    "uniqueName": "longitude",
+                    "upperBound": 1,
+                    "ordered": false,
+                    "derived": false,
+                    "dependency": false
+                }
+            ],
+            "stereotype": "STRUCTURATION",
+            "name": "longitude",
+            "uniqueName": "longitude2"
+        },
+        {
+            "@class": "net.menthor.ontouml.OntoUMLRelationship",
+            "@id": 59,
+            "endPoints": [
+                {
+                    "@class": "net.menthor.ontouml.OntoUMLEndPoint",
+                    "@id": 60,
+                    "classifier": 26,
+                    "name": "location_coordinates",
+                    "uniqueName": "location_coordinates4",
+                    "upperBound": -1,
+                    "ordered": false,
+                    "derived": false,
+                    "dependency": false
+                },
+                {
+                    "@class": "net.menthor.ontouml.OntoUMLEndPoint",
+                    "@id": 61,
+                    "classifier": 41,
+                    "name": "altitude",
+                    "lowerBound": 1,
+                    "uniqueName": "altitude",
+                    "upperBound": 1,
+                    "ordered": false,
+                    "derived": false,
+                    "dependency": false
+                }
+            ],
+            "stereotype": "STRUCTURATION",
+            "name": "altitude",
+            "uniqueName": "altitude2"
+        }
+    ],
+    "uniqueName": "BiologicalEntity"
+}

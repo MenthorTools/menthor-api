@@ -1,0 +1,561 @@
+<?xml version="1.0" encoding="ASCII"?>
+<RefOntoUML:Model xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:RefOntoUML="http://nemo.inf.ufes.br/ontouml/refontouml" name="Ontologia de Futebol">
+  <packagedElement xsi:type="RefOntoUML:Package" name="Etapas de Jogo">
+    <packagedElement xsi:type="RefOntoUML:Class" name="1o Tempo">
+      <generalization general="//@packagedElement.0/@packagedElement.12"/>
+    </packagedElement>
+    <packagedElement xsi:type="RefOntoUML:Class" name="1o Tempo Prorroga&#xe7;&#xe3;o">
+      <generalization general="//@packagedElement.0/@packagedElement.10"/>
+    </packagedElement>
+    <packagedElement xsi:type="RefOntoUML:Class" name="2o Tempo">
+      <generalization general="//@packagedElement.0/@packagedElement.12"/>
+    </packagedElement>
+    <packagedElement xsi:type="RefOntoUML:Class" name="2o Tempo Prorroga&#xe7;&#xe3;o">
+      <generalization general="//@packagedElement.0/@packagedElement.10"/>
+    </packagedElement>
+    <packagedElement xsi:type="RefOntoUML:Class" name="Com Morte S&#xfa;bita">
+      <generalization general="//@packagedElement.0/@packagedElement.10"/>
+    </packagedElement>
+    <packagedElement xsi:type="RefOntoUML:Class" name="Disputa por P&#xea;nalti">
+      <generalization general="//@packagedElement.0/@packagedElement.6"/>
+    </packagedElement>
+    <packagedElement xsi:type="RefOntoUML:Class" name="Etapa de Disputa"/>
+    <packagedElement xsi:type="RefOntoUML:Class" name="Lance"/>
+    <packagedElement xsi:type="RefOntoUML:Class" name="Lance de Disputa Comum">
+      <generalization general="//@packagedElement.0/@packagedElement.7"/>
+    </packagedElement>
+    <packagedElement xsi:type="RefOntoUML:Class" name="Lance de Disputa por P&#xea;nalti">
+      <generalization general="//@packagedElement.0/@packagedElement.7"/>
+    </packagedElement>
+    <packagedElement xsi:type="RefOntoUML:Class" name="Prorroga&#xe7;&#xe3;o">
+      <generalization general="//@packagedElement.0/@packagedElement.6"/>
+    </packagedElement>
+    <packagedElement xsi:type="RefOntoUML:Class" name="Sem Morte S&#xfa;bita">
+      <generalization general="//@packagedElement.0/@packagedElement.10"/>
+    </packagedElement>
+    <packagedElement xsi:type="RefOntoUML:Class" name="Tempo Regulamentar">
+      <generalization general="//@packagedElement.0/@packagedElement.6"/>
+    </packagedElement>
+    <packagedElement xsi:type="RefOntoUML:Association" memberEnd="//@packagedElement.0/@packagedElement.13/@ownedEnd.0 //@packagedElement.0/@packagedElement.13/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.0/@packagedElement.13/@ownedEnd.0 //@packagedElement.0/@packagedElement.13/@ownedEnd.1">
+      <name xsi:nil="true"/>
+      <ownedEnd name="disputa_por_p&#xea;nalti" type="//@packagedElement.0/@packagedElement.5" association="//@packagedElement.0/@packagedElement.13">
+        <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="1"/>
+        <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
+      </ownedEnd>
+      <ownedEnd name="lance_de_disputa_por_p&#xea;nalti" type="//@packagedElement.0/@packagedElement.9" association="//@packagedElement.0/@packagedElement.13">
+        <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="-1"/>
+        <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="-1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xsi:type="RefOntoUML:Association" memberEnd="//@packagedElement.0/@packagedElement.14/@ownedEnd.0 //@packagedElement.0/@packagedElement.14/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.0/@packagedElement.14/@ownedEnd.0 //@packagedElement.0/@packagedElement.14/@ownedEnd.1">
+      <name xsi:nil="true"/>
+      <ownedEnd name="etapa_de_disputa" type="//@packagedElement.0/@packagedElement.6" association="//@packagedElement.0/@packagedElement.14">
+        <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="1"/>
+        <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
+      </ownedEnd>
+      <ownedEnd name="lance" type="//@packagedElement.0/@packagedElement.7" association="//@packagedElement.0/@packagedElement.14">
+        <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="-1"/>
+        <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="2"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xsi:type="RefOntoUML:Association" memberEnd="//@packagedElement.0/@packagedElement.15/@ownedEnd.0 //@packagedElement.0/@packagedElement.15/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.0/@packagedElement.15/@ownedEnd.0 //@packagedElement.0/@packagedElement.15/@ownedEnd.1">
+      <name xsi:nil="true"/>
+      <ownedEnd name="tempo_regulamentar" type="//@packagedElement.0/@packagedElement.12" association="//@packagedElement.0/@packagedElement.15">
+        <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="1"/>
+        <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
+      </ownedEnd>
+      <ownedEnd name="lance_de_disputa_comum" type="//@packagedElement.0/@packagedElement.8" association="//@packagedElement.0/@packagedElement.15">
+        <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="-1"/>
+        <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="-1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xsi:type="RefOntoUML:Association" memberEnd="//@packagedElement.0/@packagedElement.16/@ownedEnd.0 //@packagedElement.0/@packagedElement.16/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.0/@packagedElement.16/@ownedEnd.0 //@packagedElement.0/@packagedElement.16/@ownedEnd.1">
+      <name xsi:nil="true"/>
+      <ownedEnd name="prorroga&#xe7;&#xe3;o" type="//@packagedElement.0/@packagedElement.10" association="//@packagedElement.0/@packagedElement.16">
+        <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="1"/>
+        <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
+      </ownedEnd>
+      <ownedEnd name="lance_de_disputa_comum" type="//@packagedElement.0/@packagedElement.8" association="//@packagedElement.0/@packagedElement.16">
+        <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="-1"/>
+        <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="-1"/>
+      </ownedEnd>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xsi:type="RefOntoUML:Package" name="Lance de Disputa Comum">
+    <packagedElement xsi:type="RefOntoUML:Class" name="Cart&#xe3;o Amarelo">
+      <generalization general="//@packagedElement.1/@packagedElement.11"/>
+    </packagedElement>
+    <packagedElement xsi:type="RefOntoUML:Class" name="Cart&#xe3;o Vermelho">
+      <generalization general="//@packagedElement.1/@packagedElement.11"/>
+    </packagedElement>
+    <packagedElement xsi:type="RefOntoUML:Class" name="Falta Cometida">
+      <generalization general="//@packagedElement.1/@packagedElement.10"/>
+    </packagedElement>
+    <packagedElement xsi:type="RefOntoUML:Class" name="Falta Complexa">
+      <generalization general="//@packagedElement.1/@packagedElement.7"/>
+    </packagedElement>
+    <packagedElement xsi:type="RefOntoUML:Class" name="Falta Recebida">
+      <generalization general="//@packagedElement.1/@packagedElement.10"/>
+    </packagedElement>
+    <packagedElement xsi:type="RefOntoUML:Class" name="LJI Ataque">
+      <generalization general="//@packagedElement.2/@packagedElement.18"/>
+    </packagedElement>
+    <packagedElement xsi:type="RefOntoUML:Class" name="LJI Defesa">
+      <generalization general="//@packagedElement.2/@packagedElement.18"/>
+    </packagedElement>
+    <packagedElement xsi:type="RefOntoUML:Class" name="Lance Complexo">
+      <generalization general="//@packagedElement.0/@packagedElement.7"/>
+      <generalization general="//@packagedElement.0/@packagedElement.8"/>
+    </packagedElement>
+    <packagedElement xsi:type="RefOntoUML:Class" name="Lance Individual">
+      <generalization general="//@packagedElement.0/@packagedElement.8"/>
+      <generalization general="//@packagedElement.0/@packagedElement.7"/>
+    </packagedElement>
+    <packagedElement xsi:type="RefOntoUML:Class" name="Lance de Jogo Complexo">
+      <generalization general="//@packagedElement.1/@packagedElement.7"/>
+    </packagedElement>
+    <packagedElement xsi:type="RefOntoUML:Class" name="Participa&#xe7;&#xe3;o Individual em Falta">
+      <generalization general="//@packagedElement.1/@packagedElement.8"/>
+    </packagedElement>
+    <packagedElement xsi:type="RefOntoUML:Class" name="Puni&#xe7;&#xe3;o">
+      <generalization general="//@packagedElement.1/@packagedElement.8"/>
+    </packagedElement>
+    <packagedElement xsi:type="RefOntoUML:Association" memberEnd="//@packagedElement.1/@packagedElement.12/@ownedEnd.0 //@packagedElement.1/@packagedElement.12/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.1/@packagedElement.12/@ownedEnd.0 //@packagedElement.1/@packagedElement.12/@ownedEnd.1">
+      <name xsi:nil="true"/>
+      <ownedEnd name="falta_cometida" type="//@packagedElement.1/@packagedElement.2" association="//@packagedElement.1/@packagedElement.12">
+        <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="1"/>
+        <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
+      </ownedEnd>
+      <ownedEnd name="puni&#xe7;&#xe3;o" type="//@packagedElement.1/@packagedElement.11" association="//@packagedElement.1/@packagedElement.12">
+        <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="1"/>
+        <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xsi:type="RefOntoUML:Association" memberEnd="//@packagedElement.1/@packagedElement.13/@ownedEnd.0 //@packagedElement.1/@packagedElement.13/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.1/@packagedElement.13/@ownedEnd.0 //@packagedElement.1/@packagedElement.13/@ownedEnd.1">
+      <name xsi:nil="true"/>
+      <ownedEnd name="falta_complexa" type="//@packagedElement.1/@packagedElement.3" association="//@packagedElement.1/@packagedElement.13">
+        <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="1"/>
+        <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
+      </ownedEnd>
+      <ownedEnd name="falta_individual_de_jogo" type="//@packagedElement.3/@packagedElement.0" association="//@packagedElement.1/@packagedElement.13">
+        <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="1"/>
+        <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xsi:type="RefOntoUML:Association" memberEnd="//@packagedElement.1/@packagedElement.14/@ownedEnd.0 //@packagedElement.1/@packagedElement.14/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.1/@packagedElement.14/@ownedEnd.0 //@packagedElement.1/@packagedElement.14/@ownedEnd.1">
+      <name xsi:nil="true"/>
+      <ownedEnd name="falta_complexa" type="//@packagedElement.1/@packagedElement.3" association="//@packagedElement.1/@packagedElement.14">
+        <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="1"/>
+        <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
+      </ownedEnd>
+      <ownedEnd name="falta_recebida" type="//@packagedElement.1/@packagedElement.4" association="//@packagedElement.1/@packagedElement.14">
+        <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="-1"/>
+        <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="2"/>
+      </ownedEnd>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xsi:type="RefOntoUML:Package" name="Lance de Jogo Individual">
+    <packagedElement xsi:type="RefOntoUML:Class" name="Assist&#xea;ncia">
+      <generalization general="//@packagedElement.2/@packagedElement.22"/>
+    </packagedElement>
+    <packagedElement xsi:type="RefOntoUML:Class" name="A&#xe7;&#xe3;o Ofensiva">
+      <generalization general="//@packagedElement.1/@packagedElement.5"/>
+    </packagedElement>
+    <packagedElement xsi:type="RefOntoUML:Class" name="A&#xe7;&#xe3;o com Bola Rolando">
+      <generalization general="//@packagedElement.2/@packagedElement.1"/>
+    </packagedElement>
+    <packagedElement xsi:type="RefOntoUML:Class" name="Bloqueio">
+      <generalization general="//@packagedElement.1/@packagedElement.6"/>
+    </packagedElement>
+    <packagedElement xsi:type="RefOntoUML:Class" name="Cobran&#xe7;a">
+      <generalization general="//@packagedElement.2/@packagedElement.1"/>
+    </packagedElement>
+    <packagedElement xsi:type="RefOntoUML:Class" name="Cobran&#xe7;a de Escanteio">
+      <generalization general="//@packagedElement.2/@packagedElement.4"/>
+    </packagedElement>
+    <packagedElement xsi:type="RefOntoUML:Class" name="Cobran&#xe7;a de Falta">
+      <generalization general="//@packagedElement.2/@packagedElement.4"/>
+    </packagedElement>
+    <packagedElement xsi:type="RefOntoUML:Class" name="Cobran&#xe7;a de Fora da &#xc1;rea">
+      <generalization general="//@packagedElement.2/@packagedElement.6"/>
+    </packagedElement>
+    <packagedElement xsi:type="RefOntoUML:Class" name="Cobran&#xe7;a de Lateral">
+      <generalization general="//@packagedElement.2/@packagedElement.4"/>
+    </packagedElement>
+    <packagedElement xsi:type="RefOntoUML:Class" name="Cobran&#xe7;a de P&#xea;nalti em Jogo">
+      <generalization general="//@packagedElement.2/@packagedElement.6"/>
+    </packagedElement>
+    <packagedElement xsi:type="RefOntoUML:Class" name="Defesa">
+      <generalization general="//@packagedElement.1/@packagedElement.6"/>
+    </packagedElement>
+    <packagedElement xsi:type="RefOntoUML:Class" name="Defesa Dif&#xed;cil">
+      <generalization general="//@packagedElement.2/@packagedElement.10"/>
+    </packagedElement>
+    <packagedElement xsi:type="RefOntoUML:Class" name="F Fora">
+      <generalization general="//@packagedElement.2/@packagedElement.16"/>
+    </packagedElement>
+    <packagedElement xsi:type="RefOntoUML:Class" name="F Gol Convertido">
+      <generalization general="//@packagedElement.2/@packagedElement.16"/>
+    </packagedElement>
+    <packagedElement xsi:type="RefOntoUML:Class" name="F Gol Interceptado">
+      <generalization general="//@packagedElement.2/@packagedElement.16"/>
+    </packagedElement>
+    <packagedElement xsi:type="RefOntoUML:Class" name="F Trave">
+      <generalization general="//@packagedElement.2/@packagedElement.16"/>
+    </packagedElement>
+    <packagedElement xsi:type="RefOntoUML:Class" name="Finaliza&#xe7;ao">
+      <generalization general="//@packagedElement.2/@packagedElement.1"/>
+    </packagedElement>
+    <packagedElement xsi:type="RefOntoUML:Class" name="Gol Contra">
+      <generalization general="//@packagedElement.1/@packagedElement.6"/>
+    </packagedElement>
+    <packagedElement xsi:type="RefOntoUML:Class" name="Lance de Jogo Individual">
+      <generalization general="//@packagedElement.1/@packagedElement.8"/>
+    </packagedElement>
+    <packagedElement xsi:type="RefOntoUML:Class" name="P Comum">
+      <generalization general="//@packagedElement.2/@packagedElement.22"/>
+    </packagedElement>
+    <packagedElement xsi:type="RefOntoUML:Class" name="P Errado">
+      <generalization general="//@packagedElement.2/@packagedElement.22"/>
+    </packagedElement>
+    <packagedElement xsi:type="RefOntoUML:Class" name="P Impedido">
+      <generalization general="//@packagedElement.2/@packagedElement.22"/>
+    </packagedElement>
+    <packagedElement xsi:type="RefOntoUML:Class" name="Passe">
+      <generalization general="//@packagedElement.2/@packagedElement.1"/>
+    </packagedElement>
+    <packagedElement xsi:type="RefOntoUML:Class" name="Recebimento de Passe">
+      <generalization general="//@packagedElement.1/@packagedElement.5"/>
+    </packagedElement>
+    <packagedElement xsi:type="RefOntoUML:Class" name="Roubada de Bola">
+      <generalization general="//@packagedElement.1/@packagedElement.6"/>
+    </packagedElement>
+    <packagedElement xsi:type="RefOntoUML:Association" memberEnd="//@packagedElement.2/@packagedElement.25/@ownedEnd.0 //@packagedElement.2/@packagedElement.25/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.2/@packagedElement.25/@ownedEnd.0 //@packagedElement.2/@packagedElement.25/@ownedEnd.1">
+      <name xsi:nil="true"/>
+      <ownedEnd name="assist&#xea;ncia" type="//@packagedElement.2/@packagedElement.0" association="//@packagedElement.2/@packagedElement.25">
+        <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="1"/>
+        <lowerValue xsi:type="RefOntoUML:LiteralInteger"/>
+      </ownedEnd>
+      <ownedEnd name="f_gol_convertido" type="//@packagedElement.2/@packagedElement.13" association="//@packagedElement.2/@packagedElement.25">
+        <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="1"/>
+        <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xsi:type="RefOntoUML:Association" memberEnd="//@packagedElement.2/@packagedElement.26/@ownedEnd.0 //@packagedElement.2/@packagedElement.26/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.2/@packagedElement.26/@ownedEnd.0 //@packagedElement.2/@packagedElement.26/@ownedEnd.1">
+      <name xsi:nil="true"/>
+      <ownedEnd name="f_bloqueada" type="//@packagedElement.4/@packagedElement.0" association="//@packagedElement.2/@packagedElement.26">
+        <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="1"/>
+        <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
+      </ownedEnd>
+      <ownedEnd name="bloqueio" type="//@packagedElement.2/@packagedElement.3" association="//@packagedElement.2/@packagedElement.26">
+        <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="1"/>
+        <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xsi:type="RefOntoUML:Association" memberEnd="//@packagedElement.2/@packagedElement.27/@ownedEnd.0 //@packagedElement.2/@packagedElement.27/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.2/@packagedElement.27/@ownedEnd.0 //@packagedElement.2/@packagedElement.27/@ownedEnd.1">
+      <name xsi:nil="true"/>
+      <ownedEnd name="f_defendida" type="//@packagedElement.4/@packagedElement.1" association="//@packagedElement.2/@packagedElement.27">
+        <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="1"/>
+        <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
+      </ownedEnd>
+      <ownedEnd name="defesa" type="//@packagedElement.2/@packagedElement.10" association="//@packagedElement.2/@packagedElement.27">
+        <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="1"/>
+        <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xsi:type="RefOntoUML:Association" memberEnd="//@packagedElement.2/@packagedElement.28/@ownedEnd.0 //@packagedElement.2/@packagedElement.28/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.2/@packagedElement.28/@ownedEnd.0 //@packagedElement.2/@packagedElement.28/@ownedEnd.1">
+      <name xsi:nil="true"/>
+      <ownedEnd name="f_bloqueada" type="//@packagedElement.4/@packagedElement.0" association="//@packagedElement.2/@packagedElement.28">
+        <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="1"/>
+        <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
+      </ownedEnd>
+      <ownedEnd name="f_gol_interceptado" type="//@packagedElement.2/@packagedElement.14" association="//@packagedElement.2/@packagedElement.28">
+        <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="1"/>
+        <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xsi:type="RefOntoUML:Association" memberEnd="//@packagedElement.2/@packagedElement.29/@ownedEnd.0 //@packagedElement.2/@packagedElement.29/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.2/@packagedElement.29/@ownedEnd.0 //@packagedElement.2/@packagedElement.29/@ownedEnd.1">
+      <name xsi:nil="true"/>
+      <ownedEnd name="f_defendida" type="//@packagedElement.4/@packagedElement.1" association="//@packagedElement.2/@packagedElement.29">
+        <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="1"/>
+        <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
+      </ownedEnd>
+      <ownedEnd name="f_gol_interceptado" type="//@packagedElement.2/@packagedElement.14" association="//@packagedElement.2/@packagedElement.29">
+        <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="1"/>
+        <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xsi:type="RefOntoUML:Association" memberEnd="//@packagedElement.2/@packagedElement.30/@ownedEnd.0 //@packagedElement.2/@packagedElement.30/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.2/@packagedElement.30/@ownedEnd.0 //@packagedElement.2/@packagedElement.30/@ownedEnd.1">
+      <name xsi:nil="true"/>
+      <ownedEnd name="recuo_irregular" type="//@packagedElement.3/@packagedElement.5" association="//@packagedElement.2/@packagedElement.30">
+        <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="1"/>
+        <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
+      </ownedEnd>
+      <ownedEnd name="p_comum" type="//@packagedElement.2/@packagedElement.19" association="//@packagedElement.2/@packagedElement.30">
+        <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="-1"/>
+        <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="-1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xsi:type="RefOntoUML:Association" memberEnd="//@packagedElement.2/@packagedElement.31/@ownedEnd.0 //@packagedElement.2/@packagedElement.31/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.2/@packagedElement.31/@ownedEnd.0 //@packagedElement.2/@packagedElement.31/@ownedEnd.1">
+      <name xsi:nil="true"/>
+      <ownedEnd name="impedimento" type="//@packagedElement.3/@packagedElement.2" association="//@packagedElement.2/@packagedElement.31">
+        <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="1"/>
+        <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
+      </ownedEnd>
+      <ownedEnd name="p_impedido" type="//@packagedElement.2/@packagedElement.21" association="//@packagedElement.2/@packagedElement.31">
+        <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="1"/>
+        <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xsi:type="RefOntoUML:Package" name="Lance Faltoso">
+    <packagedElement xsi:type="RefOntoUML:Class" name="Falta Individual de Jogo">
+      <generalization general="//@packagedElement.1/@packagedElement.2"/>
+    </packagedElement>
+    <packagedElement xsi:type="RefOntoUML:Class" name="Falta T&#xe9;cnica">
+      <generalization general="//@packagedElement.1/@packagedElement.2"/>
+    </packagedElement>
+    <packagedElement xsi:type="RefOntoUML:Class" name="Impedimento">
+      <generalization general="//@packagedElement.1/@packagedElement.9"/>
+    </packagedElement>
+    <packagedElement xsi:type="RefOntoUML:Class" name="Posi&#xe7;&#xe3;o de Impedimento">
+      <generalization general="//@packagedElement.1/@packagedElement.2"/>
+    </packagedElement>
+    <packagedElement xsi:type="RefOntoUML:Class" name="Recep&#xe7;&#xe3;o Irregular">
+      <generalization general="//@packagedElement.1/@packagedElement.2"/>
+    </packagedElement>
+    <packagedElement xsi:type="RefOntoUML:Class" name="Recuo Irregular">
+      <generalization general="//@packagedElement.1/@packagedElement.9"/>
+    </packagedElement>
+    <packagedElement xsi:type="RefOntoUML:Association" memberEnd="//@packagedElement.3/@packagedElement.6/@ownedEnd.0 //@packagedElement.3/@packagedElement.6/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.3/@packagedElement.6/@ownedEnd.0 //@packagedElement.3/@packagedElement.6/@ownedEnd.1">
+      <name xsi:nil="true"/>
+      <ownedEnd name="impedimento" type="//@packagedElement.3/@packagedElement.2" association="//@packagedElement.3/@packagedElement.6">
+        <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="1"/>
+        <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
+      </ownedEnd>
+      <ownedEnd name="posi&#xe7;&#xe3;o_de_impedimento" type="//@packagedElement.3/@packagedElement.3" association="//@packagedElement.3/@packagedElement.6">
+        <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="1"/>
+        <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xsi:type="RefOntoUML:Association" memberEnd="//@packagedElement.3/@packagedElement.7/@ownedEnd.0 //@packagedElement.3/@packagedElement.7/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.3/@packagedElement.7/@ownedEnd.0 //@packagedElement.3/@packagedElement.7/@ownedEnd.1">
+      <name xsi:nil="true"/>
+      <ownedEnd name="recuo_irregular" type="//@packagedElement.3/@packagedElement.5" association="//@packagedElement.3/@packagedElement.7">
+        <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="1"/>
+        <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
+      </ownedEnd>
+      <ownedEnd name="recep&#xe7;&#xe3;o_irregular" type="//@packagedElement.3/@packagedElement.4" association="//@packagedElement.3/@packagedElement.7">
+        <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="-1"/>
+        <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="-1"/>
+      </ownedEnd>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xsi:type="RefOntoUML:Package" name="Lance V&#xe1;lido">
+    <packagedElement xsi:type="RefOntoUML:Class" name="F Bloqueada">
+      <generalization general="//@packagedElement.1/@packagedElement.9"/>
+    </packagedElement>
+    <packagedElement xsi:type="RefOntoUML:Class" name="F Defendida">
+      <generalization general="//@packagedElement.1/@packagedElement.9"/>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xsi:type="RefOntoUML:Package" name="Participa&#xe7;&#xe3;o em Jogo">
+    <packagedElement xsi:type="RefOntoUML:Class" name="Participa&#xe7;&#xe3;o Coletiva"/>
+    <packagedElement xsi:type="RefOntoUML:Class" name="Participa&#xe7;&#xe3;o Individual"/>
+    <packagedElement xsi:type="RefOntoUML:Class" name="Participa&#xe7;&#xe3;o de Assistente">
+      <generalization general="//@packagedElement.5/@packagedElement.8"/>
+    </packagedElement>
+    <packagedElement xsi:type="RefOntoUML:Class" name="Participa&#xe7;&#xe3;o de Atleta de Linha">
+      <generalization general="//@packagedElement.5/@packagedElement.1"/>
+    </packagedElement>
+    <packagedElement xsi:type="RefOntoUML:Class" name="Participa&#xe7;&#xe3;o de Equipe de Arbitragem"/>
+    <packagedElement xsi:type="RefOntoUML:Class" name="Participa&#xe7;&#xe3;o de Goleiro">
+      <generalization general="//@packagedElement.5/@packagedElement.1"/>
+    </packagedElement>
+    <packagedElement xsi:type="RefOntoUML:Class" name="Participa&#xe7;&#xe3;o de Quarto &#xc1;rbitro">
+      <generalization general="//@packagedElement.5/@packagedElement.8"/>
+    </packagedElement>
+    <packagedElement xsi:type="RefOntoUML:Class" name="Participa&#xe7;&#xe3;o de &#xc1;rbitro Principal">
+      <generalization general="//@packagedElement.5/@packagedElement.8"/>
+    </packagedElement>
+    <packagedElement xsi:type="RefOntoUML:Class" name="Participa&#xe7;&#xe3;o de &#xc1;rbrito"/>
+    <packagedElement xsi:type="RefOntoUML:Association" memberEnd="//@packagedElement.5/@packagedElement.9/@ownedEnd.0 //@packagedElement.5/@packagedElement.9/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.5/@packagedElement.9/@ownedEnd.0 //@packagedElement.5/@packagedElement.9/@ownedEnd.1">
+      <name xsi:nil="true"/>
+      <ownedEnd name="participa&#xe7;&#xe3;o_coletiva" type="//@packagedElement.5/@packagedElement.0" association="//@packagedElement.5/@packagedElement.9">
+        <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="1"/>
+        <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
+      </ownedEnd>
+      <ownedEnd name="participa&#xe7;&#xe3;o_individual" type="//@packagedElement.5/@packagedElement.1" association="//@packagedElement.5/@packagedElement.9">
+        <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="-1"/>
+        <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="2"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xsi:type="RefOntoUML:Association" memberEnd="//@packagedElement.5/@packagedElement.10/@ownedEnd.0 //@packagedElement.5/@packagedElement.10/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.5/@packagedElement.10/@ownedEnd.0 //@packagedElement.5/@packagedElement.10/@ownedEnd.1">
+      <name xsi:nil="true"/>
+      <ownedEnd name="participa&#xe7;&#xe3;o_de_equipe_de_arbitragem" type="//@packagedElement.5/@packagedElement.4" association="//@packagedElement.5/@packagedElement.10">
+        <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="1"/>
+        <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
+      </ownedEnd>
+      <ownedEnd name="participa&#xe7;&#xe3;o_de_&#xe1;rbrito" type="//@packagedElement.5/@packagedElement.8" association="//@packagedElement.5/@packagedElement.10">
+        <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="4"/>
+        <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="4"/>
+      </ownedEnd>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xsi:type="RefOntoUML:Role" name="Atleta">
+    <generalization general="//@packagedElement.12"/>
+  </packagedElement>
+  <packagedElement xsi:type="RefOntoUML:Role" name="Atleta de Linha">
+    <generalization general="//@packagedElement.6"/>
+  </packagedElement>
+  <packagedElement xsi:type="RefOntoUML:Collective" name="Equipe"/>
+  <packagedElement xsi:type="RefOntoUML:Collective" name="Equipe de Arbitragem"/>
+  <packagedElement xsi:type="RefOntoUML:Role" name="Goleiro">
+    <generalization general="//@packagedElement.6"/>
+  </packagedElement>
+  <packagedElement xsi:type="RefOntoUML:Class" name="Jogo"/>
+  <packagedElement xsi:type="RefOntoUML:Kind" name="Pessoa"/>
+  <packagedElement xsi:type="RefOntoUML:Role" name="&#xc1;rbitro"/>
+  <packagedElement xsi:type="RefOntoUML:Association" memberEnd="//@packagedElement.14/@ownedEnd.0 //@packagedElement.14/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.14/@ownedEnd.0 //@packagedElement.14/@ownedEnd.1">
+    <name xsi:nil="true"/>
+    <ownedEnd name="atleta" type="//@packagedElement.6" association="//@packagedElement.14">
+      <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="1"/>
+      <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
+    </ownedEnd>
+    <ownedEnd name="participa&#xe7;&#xe3;o_individual" type="//@packagedElement.5/@packagedElement.1" association="//@packagedElement.14">
+      <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="-1"/>
+      <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xsi:type="RefOntoUML:Association" memberEnd="//@packagedElement.15/@ownedEnd.0 //@packagedElement.15/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.15/@ownedEnd.0 //@packagedElement.15/@ownedEnd.1">
+    <name xsi:nil="true"/>
+    <ownedEnd name="atleta" type="//@packagedElement.6" association="//@packagedElement.15">
+      <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="1"/>
+      <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
+    </ownedEnd>
+    <ownedEnd name="lance_individual" type="//@packagedElement.1/@packagedElement.8" association="//@packagedElement.15">
+      <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="-1"/>
+      <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="-1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xsi:type="RefOntoUML:Association" memberEnd="//@packagedElement.16/@ownedEnd.0 //@packagedElement.16/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.16/@ownedEnd.0 //@packagedElement.16/@ownedEnd.1">
+    <name xsi:nil="true"/>
+    <ownedEnd name="equipe" type="//@packagedElement.8" association="//@packagedElement.16">
+      <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="1"/>
+      <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
+    </ownedEnd>
+    <ownedEnd name="atleta" type="//@packagedElement.6" association="//@packagedElement.16">
+      <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="23"/>
+      <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="7"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xsi:type="RefOntoUML:Association" memberEnd="//@packagedElement.17/@ownedEnd.0 //@packagedElement.17/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.17/@ownedEnd.0 //@packagedElement.17/@ownedEnd.1">
+    <name xsi:nil="true"/>
+    <ownedEnd name="bloqueio" type="//@packagedElement.2/@packagedElement.3" association="//@packagedElement.17">
+      <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="1"/>
+      <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
+    </ownedEnd>
+    <ownedEnd name="atleta_de_linha" type="//@packagedElement.7" association="//@packagedElement.17">
+      <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="1"/>
+      <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xsi:type="RefOntoUML:Association" memberEnd="//@packagedElement.18/@ownedEnd.0 //@packagedElement.18/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.18/@ownedEnd.0 //@packagedElement.18/@ownedEnd.1">
+    <name xsi:nil="true"/>
+    <ownedEnd name="equipe" type="//@packagedElement.8" association="//@packagedElement.18">
+      <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="1"/>
+      <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
+    </ownedEnd>
+    <ownedEnd name="participa&#xe7;&#xe3;o_coletiva" type="//@packagedElement.5/@packagedElement.0" association="//@packagedElement.18">
+      <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="-1"/>
+      <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xsi:type="RefOntoUML:Association" memberEnd="//@packagedElement.19/@ownedEnd.0 //@packagedElement.19/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.19/@ownedEnd.0 //@packagedElement.19/@ownedEnd.1">
+    <name xsi:nil="true"/>
+    <ownedEnd name="equipe_de_arbitragem" type="//@packagedElement.9" association="//@packagedElement.19">
+      <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="1"/>
+      <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
+    </ownedEnd>
+    <ownedEnd name="participa&#xe7;&#xe3;o_de_equipe_de_arbitragem" type="//@packagedElement.5/@packagedElement.4" association="//@packagedElement.19">
+      <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="-1"/>
+      <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xsi:type="RefOntoUML:Association" memberEnd="//@packagedElement.20/@ownedEnd.0 //@packagedElement.20/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.20/@ownedEnd.0 //@packagedElement.20/@ownedEnd.1">
+    <name xsi:nil="true"/>
+    <ownedEnd name="equipe_de_arbitragem" type="//@packagedElement.9" association="//@packagedElement.20">
+      <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="1"/>
+      <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
+    </ownedEnd>
+    <ownedEnd name="&#xe1;rbitro" type="//@packagedElement.13" association="//@packagedElement.20">
+      <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="4"/>
+      <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="4"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xsi:type="RefOntoUML:Association" memberEnd="//@packagedElement.21/@ownedEnd.0 //@packagedElement.21/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.21/@ownedEnd.0 //@packagedElement.21/@ownedEnd.1">
+    <name xsi:nil="true"/>
+    <ownedEnd name="goleiro" type="//@packagedElement.10" association="//@packagedElement.21">
+      <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="1"/>
+      <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
+    </ownedEnd>
+    <ownedEnd name="recep&#xe7;&#xe3;o_irregular" type="//@packagedElement.3/@packagedElement.4" association="//@packagedElement.21">
+      <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="-1"/>
+      <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="-1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xsi:type="RefOntoUML:Association" memberEnd="//@packagedElement.22/@ownedEnd.0 //@packagedElement.22/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.22/@ownedEnd.0 //@packagedElement.22/@ownedEnd.1">
+    <name xsi:nil="true"/>
+    <ownedEnd name="defesa" type="//@packagedElement.2/@packagedElement.10" association="//@packagedElement.22">
+      <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="1"/>
+      <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
+    </ownedEnd>
+    <ownedEnd name="goleiro" type="//@packagedElement.10" association="//@packagedElement.22">
+      <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="1"/>
+      <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xsi:type="RefOntoUML:Association" memberEnd="//@packagedElement.23/@ownedEnd.0 //@packagedElement.23/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.23/@ownedEnd.0 //@packagedElement.23/@ownedEnd.1">
+    <name xsi:nil="true"/>
+    <ownedEnd name="jogo" type="//@packagedElement.11" association="//@packagedElement.23">
+      <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="1"/>
+      <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
+    </ownedEnd>
+    <ownedEnd name="etapa_de_disputa" type="//@packagedElement.0/@packagedElement.6" association="//@packagedElement.23">
+      <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="-1"/>
+      <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="-1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xsi:type="RefOntoUML:Association" memberEnd="//@packagedElement.24/@ownedEnd.0 //@packagedElement.24/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.24/@ownedEnd.0 //@packagedElement.24/@ownedEnd.1">
+    <name xsi:nil="true"/>
+    <ownedEnd name="jogo" type="//@packagedElement.11" association="//@packagedElement.24">
+      <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="1"/>
+      <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
+    </ownedEnd>
+    <ownedEnd name="participa&#xe7;&#xe3;o_de_equipe_de_arbitragem" type="//@packagedElement.5/@packagedElement.4" association="//@packagedElement.24">
+      <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="-1"/>
+      <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="2"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xsi:type="RefOntoUML:Association" memberEnd="//@packagedElement.25/@ownedEnd.0 //@packagedElement.25/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.25/@ownedEnd.0 //@packagedElement.25/@ownedEnd.1">
+    <name xsi:nil="true"/>
+    <ownedEnd name="jogo" type="//@packagedElement.11" association="//@packagedElement.25">
+      <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="1"/>
+      <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
+    </ownedEnd>
+    <ownedEnd name="participa&#xe7;&#xe3;o_coletiva" type="//@packagedElement.5/@packagedElement.0" association="//@packagedElement.25">
+      <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="2"/>
+      <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="2"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xsi:type="RefOntoUML:Association" memberEnd="//@packagedElement.26/@ownedEnd.0 //@packagedElement.26/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.26/@ownedEnd.0 //@packagedElement.26/@ownedEnd.1">
+    <name xsi:nil="true"/>
+    <ownedEnd name="&#xe1;rbitro" type="//@packagedElement.13" association="//@packagedElement.26">
+      <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="1"/>
+      <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
+    </ownedEnd>
+    <ownedEnd name="participa&#xe7;&#xe3;o_de_&#xe1;rbrito" type="//@packagedElement.5/@packagedElement.8" association="//@packagedElement.26">
+      <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="-1"/>
+      <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+</RefOntoUML:Model>

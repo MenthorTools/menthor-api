@@ -1,0 +1,441 @@
+{
+    "@class": "net.menthor.ontouml.OntoUMLModel",
+    "@id": 1,
+    "name": "Car Accident",
+    "elements": [
+        {
+            "@class": "net.menthor.ontouml.OntoUMLClass",
+            "@id": 2,
+            "stereotype": "KIND",
+            "abstract_": false,
+            "derived": false,
+            "extensional": false,
+            "name": "Person",
+            "uniqueName": "Person"
+        },
+        {
+            "@class": "net.menthor.ontouml.OntoUMLClass",
+            "@id": 3,
+            "stereotype": "KIND",
+            "abstract_": false,
+            "derived": false,
+            "extensional": false,
+            "name": "Vehicle",
+            "uniqueName": "Vehicle"
+        },
+        {
+            "@class": "net.menthor.ontouml.OntoUMLClass",
+            "@id": 4,
+            "stereotype": "KIND",
+            "abstract_": false,
+            "derived": false,
+            "extensional": false,
+            "name": "Roadway",
+            "uniqueName": "Roadway"
+        },
+        {
+            "@class": "net.menthor.ontouml.OntoUMLClass",
+            "@id": 5,
+            "stereotype": "SUBKIND",
+            "abstract_": false,
+            "derived": false,
+            "extensional": false,
+            "name": "Man",
+            "uniqueName": "Man"
+        },
+        {
+            "@class": "net.menthor.ontouml.OntoUMLClass",
+            "@id": 6,
+            "stereotype": "SUBKIND",
+            "abstract_": false,
+            "derived": false,
+            "extensional": false,
+            "name": "Woman",
+            "uniqueName": "Woman"
+        },
+        {
+            "@class": "net.menthor.ontouml.OntoUMLGeneralizationSet",
+            "@id": 7,
+            "covering": true,
+            "disjoint": true,
+            "generalizations": [
+                {
+                    "@class": "net.menthor.ontouml.OntoUMLGeneralization",
+                    "@id": 8,
+                    "general": 2,
+                    "specific": 5
+                },
+                {
+                    "@class": "net.menthor.ontouml.OntoUMLGeneralization",
+                    "@id": 9,
+                    "general": 2,
+                    "specific": 6
+                }
+            ]
+        },
+        8,
+        9,
+        {
+            "@class": "net.menthor.ontouml.OntoUMLClass",
+            "@id": 10,
+            "stereotype": "PHASE",
+            "abstract_": false,
+            "derived": false,
+            "extensional": false,
+            "name": "Living",
+            "uniqueName": "Living"
+        },
+        {
+            "@class": "net.menthor.ontouml.OntoUMLClass",
+            "@id": 11,
+            "stereotype": "PHASE",
+            "abstract_": false,
+            "derived": false,
+            "extensional": false,
+            "name": "Deceased",
+            "uniqueName": "Deceased"
+        },
+        {
+            "@class": "net.menthor.ontouml.OntoUMLGeneralizationSet",
+            "@id": 12,
+            "covering": true,
+            "disjoint": true,
+            "generalizations": [
+                {
+                    "@class": "net.menthor.ontouml.OntoUMLGeneralization",
+                    "@id": 13,
+                    "general": 2,
+                    "specific": 10
+                },
+                {
+                    "@class": "net.menthor.ontouml.OntoUMLGeneralization",
+                    "@id": 14,
+                    "general": 2,
+                    "specific": 11
+                }
+            ]
+        },
+        13,
+        14,
+        {
+            "@class": "net.menthor.ontouml.OntoUMLClass",
+            "@id": 15,
+            "stereotype": "ROLE",
+            "abstract_": false,
+            "derived": false,
+            "extensional": false,
+            "name": "Traveler",
+            "uniqueName": "Traveler"
+        },
+        {
+            "@class": "net.menthor.ontouml.OntoUMLClass",
+            "@id": 16,
+            "stereotype": "ROLE",
+            "abstract_": false,
+            "derived": false,
+            "extensional": false,
+            "name": "Victim",
+            "uniqueName": "Victim"
+        },
+        {
+            "@class": "net.menthor.ontouml.OntoUMLClass",
+            "@id": 17,
+            "stereotype": "ROLE",
+            "abstract_": false,
+            "derived": false,
+            "extensional": false,
+            "name": "CrashedVehicle",
+            "uniqueName": "CrashedVehicle"
+        },
+        {
+            "@class": "net.menthor.ontouml.OntoUMLClass",
+            "@id": 18,
+            "stereotype": "RELATOR",
+            "abstract_": false,
+            "derived": false,
+            "extensional": false,
+            "name": "Traffic Accident",
+            "uniqueName": "TrafficAccident"
+        },
+        {
+            "@class": "net.menthor.ontouml.OntoUMLClass",
+            "@id": 19,
+            "stereotype": "RELATOR",
+            "abstract_": false,
+            "derived": false,
+            "extensional": false,
+            "name": "Rear End Collision",
+            "uniqueName": "RearEndCollision"
+        },
+        {
+            "@class": "net.menthor.ontouml.OntoUMLClass",
+            "@id": 20,
+            "stereotype": "RELATOR",
+            "abstract_": false,
+            "derived": false,
+            "extensional": false,
+            "name": "Travel",
+            "uniqueName": "Travel"
+        },
+        {
+            "@class": "net.menthor.ontouml.OntoUMLGeneralization",
+            "@id": 21,
+            "general": 2,
+            "specific": 15
+        },
+        {
+            "@class": "net.menthor.ontouml.OntoUMLGeneralization",
+            "@id": 22,
+            "general": 2,
+            "specific": 16
+        },
+        {
+            "@class": "net.menthor.ontouml.OntoUMLGeneralization",
+            "@id": 23,
+            "general": 3,
+            "specific": 17
+        },
+        {
+            "@class": "net.menthor.ontouml.OntoUMLGeneralization",
+            "@id": 24,
+            "general": 18,
+            "specific": 19
+        },
+        {
+            "@class": "net.menthor.ontouml.OntoUMLRelationship",
+            "@id": 25,
+            "endPoints": [
+                {
+                    "@class": "net.menthor.ontouml.OntoUMLEndPoint",
+                    "@id": 26,
+                    "classifier": 18,
+                    "name": "traffic_accident",
+                    "dependency": false,
+                    "derived": false,
+                    "upperBound": -1,
+                    "lowerBound": 1,
+                    "uniqueName": "traffic_accident",
+                    "ordered": false
+                },
+                {
+                    "@class": "net.menthor.ontouml.OntoUMLEndPoint",
+                    "@id": 27,
+                    "classifier": 4,
+                    "name": "roadway",
+                    "dependency": true,
+                    "derived": false,
+                    "upperBound": 1,
+                    "lowerBound": 1,
+                    "uniqueName": "roadway",
+                    "ordered": false
+                }
+            ],
+            "stereotype": "MEDIATION",
+            "reflexivityValue": "IRREFLEXIVE",
+            "name": "occurs",
+            "uniqueName": "occurs"
+        },
+        {
+            "@class": "net.menthor.ontouml.OntoUMLRelationship",
+            "@id": 28,
+            "endPoints": [
+                {
+                    "@class": "net.menthor.ontouml.OntoUMLEndPoint",
+                    "@id": 29,
+                    "classifier": 18,
+                    "name": "traffic_accident",
+                    "dependency": false,
+                    "derived": false,
+                    "upperBound": 1,
+                    "lowerBound": 1,
+                    "uniqueName": "traffic_accident2",
+                    "ordered": false
+                },
+                {
+                    "@class": "net.menthor.ontouml.OntoUMLEndPoint",
+                    "@id": 30,
+                    "classifier": 16,
+                    "name": "victim",
+                    "dependency": true,
+                    "derived": false,
+                    "upperBound": -1,
+                    "lowerBound": 1,
+                    "uniqueName": "victim",
+                    "ordered": false
+                }
+            ],
+            "stereotype": "MEDIATION",
+            "reflexivityValue": "IRREFLEXIVE",
+            "name": "has",
+            "uniqueName": "has"
+        },
+        {
+            "@class": "net.menthor.ontouml.OntoUMLRelationship",
+            "@id": 31,
+            "endPoints": [
+                {
+                    "@class": "net.menthor.ontouml.OntoUMLEndPoint",
+                    "@id": 32,
+                    "classifier": 18,
+                    "name": "traffic_accident",
+                    "dependency": false,
+                    "derived": false,
+                    "upperBound": 1,
+                    "lowerBound": 1,
+                    "uniqueName": "traffic_accident3",
+                    "ordered": false
+                },
+                {
+                    "@class": "net.menthor.ontouml.OntoUMLEndPoint",
+                    "@id": 33,
+                    "classifier": 17,
+                    "name": "crashedvehicle",
+                    "dependency": true,
+                    "derived": false,
+                    "upperBound": -1,
+                    "lowerBound": 1,
+                    "uniqueName": "crashedvehicle",
+                    "ordered": false
+                }
+            ],
+            "stereotype": "MEDIATION",
+            "reflexivityValue": "IRREFLEXIVE",
+            "name": "involves",
+            "uniqueName": "involves"
+        },
+        {
+            "@class": "net.menthor.ontouml.OntoUMLRelationship",
+            "@id": 34,
+            "endPoints": [
+                {
+                    "@class": "net.menthor.ontouml.OntoUMLEndPoint",
+                    "@id": 35,
+                    "classifier": 20,
+                    "name": "travel",
+                    "dependency": false,
+                    "derived": false,
+                    "upperBound": 1,
+                    "lowerBound": 1,
+                    "uniqueName": "travel",
+                    "ordered": false
+                },
+                {
+                    "@class": "net.menthor.ontouml.OntoUMLEndPoint",
+                    "@id": 36,
+                    "classifier": 15,
+                    "name": "traveler",
+                    "dependency": true,
+                    "derived": false,
+                    "upperBound": -1,
+                    "lowerBound": 1,
+                    "uniqueName": "traveler",
+                    "ordered": false
+                }
+            ],
+            "stereotype": "MEDIATION",
+            "reflexivityValue": "IRREFLEXIVE",
+            "name": "has",
+            "uniqueName": "has2"
+        },
+        {
+            "@class": "net.menthor.ontouml.OntoUMLRelationship",
+            "@id": 37,
+            "endPoints": [
+                {
+                    "@class": "net.menthor.ontouml.OntoUMLEndPoint",
+                    "@id": 38,
+                    "classifier": 20,
+                    "name": "travel",
+                    "dependency": false,
+                    "derived": false,
+                    "upperBound": 1,
+                    "lowerBound": 1,
+                    "uniqueName": "travel2",
+                    "ordered": false
+                },
+                {
+                    "@class": "net.menthor.ontouml.OntoUMLEndPoint",
+                    "@id": 39,
+                    "classifier": 3,
+                    "name": "vehicle",
+                    "dependency": true,
+                    "derived": false,
+                    "upperBound": 1,
+                    "lowerBound": 1,
+                    "uniqueName": "vehicle",
+                    "ordered": false
+                }
+            ],
+            "stereotype": "MEDIATION",
+            "reflexivityValue": "IRREFLEXIVE",
+            "name": "made by",
+            "uniqueName": "madeby"
+        },
+        {
+            "@class": "net.menthor.ontouml.OntoUMLRelationship",
+            "@id": 40,
+            "endPoints": [
+                {
+                    "@class": "net.menthor.ontouml.OntoUMLEndPoint",
+                    "@id": 41,
+                    "classifier": 16,
+                    "name": "victim",
+                    "dependency": false,
+                    "derived": false,
+                    "upperBound": -1,
+                    "lowerBound": 1,
+                    "uniqueName": "victim2",
+                    "ordered": false
+                },
+                {
+                    "@class": "net.menthor.ontouml.OntoUMLEndPoint",
+                    "@id": 42,
+                    "classifier": 4,
+                    "name": "roadway",
+                    "dependency": false,
+                    "derived": false,
+                    "upperBound": 1,
+                    "lowerBound": 1,
+                    "uniqueName": "roadway2",
+                    "ordered": false
+                }
+            ],
+            "stereotype": "MATERIAL",
+            "name": "has been victim in",
+            "uniqueName": "hasbeenvictimin"
+        },
+        {
+            "@class": "net.menthor.ontouml.OntoUMLRelationship",
+            "@id": 43,
+            "endPoints": [
+                {
+                    "@class": "net.menthor.ontouml.OntoUMLEndPoint",
+                    "@id": 44,
+                    "classifier": 40,
+                    "name": "has_been_victim_in",
+                    "dependency": true,
+                    "derived": false,
+                    "upperBound": -1,
+                    "lowerBound": 1,
+                    "uniqueName": "has_been_victim_in",
+                    "ordered": false
+                },
+                {
+                    "@class": "net.menthor.ontouml.OntoUMLEndPoint",
+                    "@id": 45,
+                    "classifier": 18,
+                    "name": "traffic_accident",
+                    "dependency": true,
+                    "derived": false,
+                    "upperBound": -1,
+                    "lowerBound": 1,
+                    "uniqueName": "traffic_accident4",
+                    "ordered": false
+                }
+            ],
+            "stereotype": "DERIVATION",
+            "uniqueName": "OntoUMLRelationship"
+        }
+    ],
+    "uniqueName": "CarAccident"
+}

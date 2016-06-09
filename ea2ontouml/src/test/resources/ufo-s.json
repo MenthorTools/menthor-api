@@ -1,0 +1,1669 @@
+{
+    "@class": "net.menthor.ontouml.OntoUMLModel",
+    "@id": 1,
+    "name": "UFO-S",
+    "elements": [
+        {
+            "@class": "net.menthor.ontouml.OntoUMLPackage",
+            "@id": 2,
+            "name": "Service Delivery",
+            "elements": [
+                {
+                    "@class": "net.menthor.ontouml.OntoUMLClass",
+                    "@id": 3,
+                    "stereotype": "EVENT",
+                    "abstract_": false,
+                    "derived": false,
+                    "extensional": false,
+                    "name": "Customer Action",
+                    "uniqueName": "CustomerAction"
+                },
+                {
+                    "@class": "net.menthor.ontouml.OntoUMLRelationship",
+                    "@id": 4,
+                    "endPoints": [
+                        {
+                            "@class": "net.menthor.ontouml.OntoUMLEndPoint",
+                            "@id": 5,
+                            "classifier": 3,
+                            "name": "customer_action",
+                            "lowerBound": -1,
+                            "uniqueName": "customer_action",
+                            "upperBound": -1,
+                            "ordered": false,
+                            "derived": false,
+                            "dependency": false
+                        },
+                        {
+                            "@class": "net.menthor.ontouml.OntoUMLEndPoint",
+                            "@id": 6,
+                            "classifier": {
+                                "@class": "net.menthor.ontouml.OntoUMLClass",
+                                "@id": 7,
+                                "stereotype": "ROLEMIXIN",
+                                "abstract_": false,
+                                "derived": false,
+                                "extensional": false,
+                                "name": "Service Customer",
+                                "uniqueName": "ServiceCustomer"
+                            },
+                            "name": "service_customer",
+                            "lowerBound": 1,
+                            "uniqueName": "service_customer",
+                            "upperBound": 1,
+                            "ordered": false,
+                            "derived": false,
+                            "dependency": false
+                        }
+                    ],
+                    "name": "performedBy",
+                    "uniqueName": "performedBy"
+                },
+                {
+                    "@class": "net.menthor.ontouml.OntoUMLRelationship",
+                    "@id": 8,
+                    "endPoints": [
+                        {
+                            "@class": "net.menthor.ontouml.OntoUMLEndPoint",
+                            "@id": 9,
+                            "classifier": 3,
+                            "name": "customer_action",
+                            "uniqueName": "customer_action2",
+                            "upperBound": -1,
+                            "ordered": false,
+                            "derived": false,
+                            "dependency": false
+                        },
+                        {
+                            "@class": "net.menthor.ontouml.OntoUMLEndPoint",
+                            "@id": 10,
+                            "classifier": {
+                                "@class": "net.menthor.ontouml.OntoUMLClass",
+                                "@id": 11,
+                                "stereotype": "MODE",
+                                "abstract_": false,
+                                "derived": false,
+                                "extensional": false,
+                                "name": "Service Customer Commitment",
+                                "uniqueName": "ServiceCustomerCommitment"
+                            },
+                            "name": "service_customer_commitment",
+                            "lowerBound": 1,
+                            "uniqueName": "service_customer_commitment",
+                            "upperBound": -1,
+                            "ordered": false,
+                            "derived": false,
+                            "dependency": false
+                        }
+                    ],
+                    "name": "motivatedBy",
+                    "uniqueName": "motivatedBy"
+                },
+                {
+                    "@class": "net.menthor.ontouml.OntoUMLRelationship",
+                    "@id": 12,
+                    "endPoints": [
+                        {
+                            "@class": "net.menthor.ontouml.OntoUMLEndPoint",
+                            "@id": 13,
+                            "classifier": {
+                                "@class": "net.menthor.ontouml.OntoUMLClass",
+                                "@id": 14,
+                                "stereotype": "EVENT",
+                                "abstract_": false,
+                                "derived": false,
+                                "extensional": false,
+                                "name": "Service Delivery",
+                                "uniqueName": "ServiceDelivery2"
+                            },
+                            "name": "service_delivery",
+                            "lowerBound": 1,
+                            "uniqueName": "service_delivery",
+                            "upperBound": 1,
+                            "ordered": false,
+                            "derived": false,
+                            "dependency": false
+                        },
+                        {
+                            "@class": "net.menthor.ontouml.OntoUMLEndPoint",
+                            "@id": 15,
+                            "classifier": 3,
+                            "name": "customer_action",
+                            "uniqueName": "customer_action3",
+                            "upperBound": -1,
+                            "ordered": false,
+                            "derived": false,
+                            "dependency": false
+                        }
+                    ],
+                    "uniqueName": "OntoUMLRelationship141"
+                },
+                {
+                    "@class": "net.menthor.ontouml.OntoUMLClass",
+                    "@id": 16,
+                    "stereotype": "EVENT",
+                    "abstract_": false,
+                    "derived": false,
+                    "extensional": false,
+                    "name": "Hired Provider Action",
+                    "uniqueName": "HiredProviderAction"
+                },
+                {
+                    "@class": "net.menthor.ontouml.OntoUMLRelationship",
+                    "@id": 17,
+                    "endPoints": [
+                        {
+                            "@class": "net.menthor.ontouml.OntoUMLEndPoint",
+                            "@id": 18,
+                            "classifier": 16,
+                            "name": "hired_provider_action",
+                            "lowerBound": -1,
+                            "uniqueName": "hired_provider_action",
+                            "upperBound": -1,
+                            "ordered": false,
+                            "derived": false,
+                            "dependency": false
+                        },
+                        {
+                            "@class": "net.menthor.ontouml.OntoUMLEndPoint",
+                            "@id": 19,
+                            "classifier": {
+                                "@class": "net.menthor.ontouml.OntoUMLClass",
+                                "@id": 20,
+                                "stereotype": "ROLEMIXIN",
+                                "abstract_": false,
+                                "derived": false,
+                                "extensional": false,
+                                "name": "Hired Service Provider",
+                                "uniqueName": "HiredServiceProvider"
+                            },
+                            "name": "hired_service_provider",
+                            "lowerBound": 1,
+                            "uniqueName": "hired_service_provider",
+                            "upperBound": 1,
+                            "ordered": false,
+                            "derived": false,
+                            "dependency": false
+                        }
+                    ],
+                    "name": "performedBy",
+                    "uniqueName": "performedBy2"
+                },
+                {
+                    "@class": "net.menthor.ontouml.OntoUMLRelationship",
+                    "@id": 21,
+                    "endPoints": [
+                        {
+                            "@class": "net.menthor.ontouml.OntoUMLEndPoint",
+                            "@id": 22,
+                            "classifier": 16,
+                            "name": "hired_provider_action",
+                            "uniqueName": "hired_provider_action2",
+                            "upperBound": -1,
+                            "ordered": false,
+                            "derived": false,
+                            "dependency": false
+                        },
+                        {
+                            "@class": "net.menthor.ontouml.OntoUMLEndPoint",
+                            "@id": 23,
+                            "classifier": {
+                                "@class": "net.menthor.ontouml.OntoUMLClass",
+                                "@id": 24,
+                                "stereotype": "MODE",
+                                "abstract_": false,
+                                "derived": false,
+                                "extensional": false,
+                                "name": "Hired Service Provider Commitment",
+                                "uniqueName": "HiredServiceProviderCommitment"
+                            },
+                            "name": "hired_service_provider_commitment",
+                            "lowerBound": 1,
+                            "uniqueName": "hired_service_provider_commitment",
+                            "upperBound": -1,
+                            "ordered": false,
+                            "derived": false,
+                            "dependency": false
+                        }
+                    ],
+                    "name": "motivatedBy",
+                    "uniqueName": "motivatedBy2"
+                },
+                {
+                    "@class": "net.menthor.ontouml.OntoUMLRelationship",
+                    "@id": 25,
+                    "endPoints": [
+                        {
+                            "@class": "net.menthor.ontouml.OntoUMLEndPoint",
+                            "@id": 26,
+                            "classifier": 14,
+                            "name": "service_delivery",
+                            "lowerBound": 1,
+                            "uniqueName": "service_delivery2",
+                            "upperBound": 1,
+                            "ordered": false,
+                            "derived": false,
+                            "dependency": false
+                        },
+                        {
+                            "@class": "net.menthor.ontouml.OntoUMLEndPoint",
+                            "@id": 27,
+                            "classifier": 16,
+                            "name": "hired_provider_action",
+                            "uniqueName": "hired_provider_action3",
+                            "upperBound": -1,
+                            "ordered": false,
+                            "derived": false,
+                            "dependency": false
+                        }
+                    ],
+                    "uniqueName": "OntoUMLRelationship142"
+                },
+                {
+                    "@class": "net.menthor.ontouml.OntoUMLClass",
+                    "@id": 28,
+                    "stereotype": "EVENT",
+                    "abstract_": false,
+                    "derived": false,
+                    "extensional": false,
+                    "name": "Hired Provider-Customer Interaction",
+                    "uniqueName": "HiredProviderCustomerInteraction"
+                },
+                {
+                    "@class": "net.menthor.ontouml.OntoUMLRelationship",
+                    "@id": 29,
+                    "endPoints": [
+                        {
+                            "@class": "net.menthor.ontouml.OntoUMLEndPoint",
+                            "@id": 30,
+                            "classifier": 28,
+                            "name": "hired_provider_customer_interaction",
+                            "lowerBound": -1,
+                            "uniqueName": "hired_provider_customer_interaction",
+                            "upperBound": -1,
+                            "ordered": false,
+                            "derived": false,
+                            "dependency": false
+                        },
+                        {
+                            "@class": "net.menthor.ontouml.OntoUMLEndPoint",
+                            "@id": 31,
+                            "classifier": 7,
+                            "name": "service_customer",
+                            "lowerBound": 1,
+                            "uniqueName": "service_customer2",
+                            "upperBound": -1,
+                            "ordered": false,
+                            "derived": false,
+                            "dependency": false
+                        }
+                    ],
+                    "name": "participatesIn",
+                    "uniqueName": "participatesIn"
+                },
+                {
+                    "@class": "net.menthor.ontouml.OntoUMLRelationship",
+                    "@id": 32,
+                    "endPoints": [
+                        {
+                            "@class": "net.menthor.ontouml.OntoUMLEndPoint",
+                            "@id": 33,
+                            "classifier": 28,
+                            "name": "hired_provider_customer_interaction",
+                            "uniqueName": "hired_provider_customer_interaction2",
+                            "upperBound": -1,
+                            "ordered": false,
+                            "derived": false,
+                            "dependency": false
+                        },
+                        {
+                            "@class": "net.menthor.ontouml.OntoUMLEndPoint",
+                            "@id": 34,
+                            "classifier": 11,
+                            "name": "service_customer_commitment",
+                            "lowerBound": 1,
+                            "uniqueName": "service_customer_commitment2",
+                            "upperBound": -1,
+                            "ordered": false,
+                            "derived": false,
+                            "dependency": false
+                        }
+                    ],
+                    "name": "motivatedBy",
+                    "uniqueName": "motivatedBy3"
+                },
+                {
+                    "@class": "net.menthor.ontouml.OntoUMLRelationship",
+                    "@id": 35,
+                    "endPoints": [
+                        {
+                            "@class": "net.menthor.ontouml.OntoUMLEndPoint",
+                            "@id": 36,
+                            "classifier": 28,
+                            "name": "hired_provider_customer_interaction",
+                            "uniqueName": "hired_provider_customer_interaction3",
+                            "upperBound": -1,
+                            "ordered": false,
+                            "derived": false,
+                            "dependency": false
+                        },
+                        {
+                            "@class": "net.menthor.ontouml.OntoUMLEndPoint",
+                            "@id": 37,
+                            "classifier": 24,
+                            "name": "hired_service_provider_commitment",
+                            "lowerBound": 1,
+                            "uniqueName": "hired_service_provider_commitment2",
+                            "upperBound": -1,
+                            "ordered": false,
+                            "derived": false,
+                            "dependency": false
+                        }
+                    ],
+                    "uniqueName": "OntoUMLRelationship143"
+                },
+                {
+                    "@class": "net.menthor.ontouml.OntoUMLRelationship",
+                    "@id": 38,
+                    "endPoints": [
+                        {
+                            "@class": "net.menthor.ontouml.OntoUMLEndPoint",
+                            "@id": 39,
+                            "classifier": 28,
+                            "name": "hired_provider_customer_interaction",
+                            "uniqueName": "hired_provider_customer_interaction4",
+                            "upperBound": -1,
+                            "ordered": false,
+                            "derived": false,
+                            "dependency": false
+                        },
+                        {
+                            "@class": "net.menthor.ontouml.OntoUMLEndPoint",
+                            "@id": 40,
+                            "classifier": 20,
+                            "name": "hired_service_provider",
+                            "lowerBound": 1,
+                            "uniqueName": "hired_service_provider2",
+                            "upperBound": 1,
+                            "ordered": false,
+                            "derived": false,
+                            "dependency": false
+                        }
+                    ],
+                    "name": "participatesIn",
+                    "uniqueName": "participatesIn2"
+                },
+                {
+                    "@class": "net.menthor.ontouml.OntoUMLRelationship",
+                    "@id": 41,
+                    "endPoints": [
+                        {
+                            "@class": "net.menthor.ontouml.OntoUMLEndPoint",
+                            "@id": 42,
+                            "classifier": 14,
+                            "name": "service_delivery",
+                            "lowerBound": 1,
+                            "uniqueName": "service_delivery3",
+                            "upperBound": 1,
+                            "ordered": false,
+                            "derived": false,
+                            "dependency": false
+                        },
+                        {
+                            "@class": "net.menthor.ontouml.OntoUMLEndPoint",
+                            "@id": 43,
+                            "classifier": 28,
+                            "name": "hired_provider_customer_interaction",
+                            "uniqueName": "hired_provider_customer_interaction5",
+                            "upperBound": -1,
+                            "ordered": false,
+                            "derived": false,
+                            "dependency": false
+                        }
+                    ],
+                    "uniqueName": "OntoUMLRelationship144"
+                },
+                14,
+                {
+                    "@class": "net.menthor.ontouml.OntoUMLRelationship",
+                    "@id": 44,
+                    "endPoints": [
+                        {
+                            "@class": "net.menthor.ontouml.OntoUMLEndPoint",
+                            "@id": 45,
+                            "classifier": 14,
+                            "name": "service_delivery",
+                            "lowerBound": -1,
+                            "uniqueName": "service_delivery4",
+                            "upperBound": -1,
+                            "ordered": false,
+                            "derived": false,
+                            "dependency": false
+                        },
+                        {
+                            "@class": "net.menthor.ontouml.OntoUMLEndPoint",
+                            "@id": 46,
+                            "classifier": {
+                                "@class": "net.menthor.ontouml.OntoUMLClass",
+                                "@id": 47,
+                                "stereotype": "RELATOR",
+                                "abstract_": false,
+                                "derived": false,
+                                "extensional": false,
+                                "name": "Service Agreement",
+                                "uniqueName": "ServiceAgreement"
+                            },
+                            "name": "service_agreement",
+                            "lowerBound": 1,
+                            "uniqueName": "service_agreement",
+                            "upperBound": 1,
+                            "ordered": false,
+                            "derived": false,
+                            "dependency": false
+                        }
+                    ],
+                    "uniqueName": "OntoUMLRelationship145"
+                }
+            ],
+            "uniqueName": "ServiceDelivery"
+        },
+        {
+            "@class": "net.menthor.ontouml.OntoUMLPackage",
+            "@id": 48,
+            "name": "Service Negotiation",
+            "elements": [
+                20,
+                {
+                    "@class": "net.menthor.ontouml.OntoUMLRelationship",
+                    "@id": 49,
+                    "endPoints": [
+                        {
+                            "@class": "net.menthor.ontouml.OntoUMLEndPoint",
+                            "@id": 50,
+                            "classifier": {
+                                "@class": "net.menthor.ontouml.OntoUMLClass",
+                                "@id": 51,
+                                "stereotype": "MODE",
+                                "abstract_": false,
+                                "derived": false,
+                                "extensional": false,
+                                "name": "Service Customer Claim",
+                                "uniqueName": "ServiceCustomerClaim"
+                            },
+                            "name": "service_customer_claim",
+                            "lowerBound": 1,
+                            "uniqueName": "service_customer_claim",
+                            "upperBound": -1,
+                            "ordered": false,
+                            "derived": false,
+                            "dependency": false
+                        },
+                        {
+                            "@class": "net.menthor.ontouml.OntoUMLEndPoint",
+                            "@id": 52,
+                            "classifier": 20,
+                            "name": "hired_service_provider",
+                            "lowerBound": 1,
+                            "uniqueName": "hired_service_provider3",
+                            "upperBound": 1,
+                            "ordered": false,
+                            "derived": false,
+                            "dependency": false
+                        }
+                    ],
+                    "name": "externallyDependentOn",
+                    "uniqueName": "externallyDependentOn"
+                },
+                {
+                    "@class": "net.menthor.ontouml.OntoUMLRelationship",
+                    "@id": 53,
+                    "endPoints": [
+                        {
+                            "@class": "net.menthor.ontouml.OntoUMLEndPoint",
+                            "@id": 54,
+                            "classifier": 11,
+                            "name": "service_customer_commitment",
+                            "uniqueName": "service_customer_commitment3",
+                            "upperBound": -1,
+                            "ordered": false,
+                            "derived": false,
+                            "dependency": false
+                        },
+                        {
+                            "@class": "net.menthor.ontouml.OntoUMLEndPoint",
+                            "@id": 55,
+                            "classifier": 20,
+                            "name": "hired_service_provider",
+                            "lowerBound": 1,
+                            "uniqueName": "hired_service_provider4",
+                            "upperBound": 1,
+                            "ordered": false,
+                            "derived": false,
+                            "dependency": false
+                        }
+                    ],
+                    "name": "externallyDependentOn",
+                    "uniqueName": "externallyDependentOn2"
+                },
+                {
+                    "@class": "net.menthor.ontouml.OntoUMLRelationship",
+                    "@id": 56,
+                    "endPoints": [
+                        {
+                            "@class": "net.menthor.ontouml.OntoUMLEndPoint",
+                            "@id": 57,
+                            "classifier": 47,
+                            "name": "service_agreement",
+                            "lowerBound": 1,
+                            "uniqueName": "service_agreement2",
+                            "upperBound": -1,
+                            "ordered": false,
+                            "derived": false,
+                            "dependency": false
+                        },
+                        {
+                            "@class": "net.menthor.ontouml.OntoUMLEndPoint",
+                            "@id": 58,
+                            "classifier": 20,
+                            "name": "hired_service_provider",
+                            "lowerBound": 1,
+                            "uniqueName": "hired_service_provider5",
+                            "upperBound": 1,
+                            "ordered": false,
+                            "derived": false,
+                            "dependency": false
+                        }
+                    ],
+                    "name": "achieves",
+                    "uniqueName": "achieves"
+                },
+                {
+                    "@class": "net.menthor.ontouml.OntoUMLRelationship",
+                    "@id": 59,
+                    "endPoints": [
+                        {
+                            "@class": "net.menthor.ontouml.OntoUMLEndPoint",
+                            "@id": 60,
+                            "classifier": {
+                                "@class": "net.menthor.ontouml.OntoUMLClass",
+                                "@id": 61,
+                                "stereotype": "MODE",
+                                "abstract_": false,
+                                "derived": false,
+                                "extensional": false,
+                                "name": "Hired Service Provider Claim",
+                                "uniqueName": "HiredServiceProviderClaim"
+                            },
+                            "name": "hired_service_provider_claim",
+                            "uniqueName": "hired_service_provider_claim",
+                            "upperBound": -1,
+                            "ordered": false,
+                            "derived": false,
+                            "dependency": false
+                        },
+                        {
+                            "@class": "net.menthor.ontouml.OntoUMLEndPoint",
+                            "@id": 62,
+                            "classifier": 20,
+                            "name": "hired_service_provider",
+                            "lowerBound": 1,
+                            "uniqueName": "hired_service_provider6",
+                            "upperBound": 1,
+                            "ordered": false,
+                            "derived": false,
+                            "dependency": false
+                        }
+                    ],
+                    "reflexivityValue": "IRREFLEXIVE",
+                    "symmetryValue": "ASSYMETRIC",
+                    "ciclicityValue": "ACYCLIC",
+                    "name": "inheresIn",
+                    "uniqueName": "inheresIn"
+                },
+                {
+                    "@class": "net.menthor.ontouml.OntoUMLRelationship",
+                    "@id": 63,
+                    "endPoints": [
+                        {
+                            "@class": "net.menthor.ontouml.OntoUMLEndPoint",
+                            "@id": 64,
+                            "classifier": 24,
+                            "name": "hired_service_provider_commitment",
+                            "lowerBound": 1,
+                            "uniqueName": "hired_service_provider_commitment3",
+                            "upperBound": -1,
+                            "ordered": false,
+                            "derived": false,
+                            "dependency": false
+                        },
+                        {
+                            "@class": "net.menthor.ontouml.OntoUMLEndPoint",
+                            "@id": 65,
+                            "classifier": 20,
+                            "name": "hired_service_provider",
+                            "lowerBound": 1,
+                            "uniqueName": "hired_service_provider7",
+                            "upperBound": 1,
+                            "ordered": false,
+                            "derived": false,
+                            "dependency": false
+                        }
+                    ],
+                    "reflexivityValue": "IRREFLEXIVE",
+                    "symmetryValue": "ASSYMETRIC",
+                    "ciclicityValue": "ACYCLIC",
+                    "name": "inheresIn",
+                    "uniqueName": "inheresIn2"
+                },
+                61,
+                {
+                    "@class": "net.menthor.ontouml.OntoUMLRelationship",
+                    "@id": 66,
+                    "endPoints": [
+                        {
+                            "@class": "net.menthor.ontouml.OntoUMLEndPoint",
+                            "@id": 67,
+                            "classifier": 61,
+                            "name": "hired_service_provider_claim",
+                            "uniqueName": "hired_service_provider_claim2",
+                            "upperBound": -1,
+                            "ordered": false,
+                            "derived": false,
+                            "dependency": false
+                        },
+                        {
+                            "@class": "net.menthor.ontouml.OntoUMLEndPoint",
+                            "@id": 68,
+                            "classifier": 7,
+                            "name": "service_customer",
+                            "lowerBound": 1,
+                            "uniqueName": "service_customer3",
+                            "upperBound": -1,
+                            "ordered": false,
+                            "derived": false,
+                            "dependency": false
+                        }
+                    ],
+                    "name": "externallyDependentOn",
+                    "uniqueName": "externallyDependentOn3"
+                },
+                {
+                    "@class": "net.menthor.ontouml.OntoUMLRelationship",
+                    "@id": 69,
+                    "endPoints": [
+                        {
+                            "@class": "net.menthor.ontouml.OntoUMLEndPoint",
+                            "@id": 70,
+                            "classifier": 47,
+                            "name": "service_agreement",
+                            "lowerBound": 1,
+                            "uniqueName": "service_agreement3",
+                            "upperBound": 1,
+                            "ordered": false,
+                            "derived": false,
+                            "dependency": false
+                        },
+                        {
+                            "@class": "net.menthor.ontouml.OntoUMLEndPoint",
+                            "@id": 71,
+                            "classifier": 61,
+                            "name": "hired_service_provider_claim",
+                            "uniqueName": "hired_service_provider_claim3",
+                            "upperBound": -1,
+                            "ordered": false,
+                            "derived": false,
+                            "dependency": false
+                        }
+                    ],
+                    "reflexivityValue": "IRREFLEXIVE",
+                    "symmetryValue": "ASSYMETRIC",
+                    "transitivityValue": "TRANSITIVE",
+                    "ciclicityValue": "ACYCLIC",
+                    "uniqueName": "OntoUMLRelationship146"
+                },
+                24,
+                {
+                    "@class": "net.menthor.ontouml.OntoUMLRelationship",
+                    "@id": 72,
+                    "endPoints": [
+                        {
+                            "@class": "net.menthor.ontouml.OntoUMLEndPoint",
+                            "@id": 73,
+                            "classifier": 24,
+                            "name": "hired_service_provider_commitment",
+                            "lowerBound": 1,
+                            "uniqueName": "hired_service_provider_commitment4",
+                            "upperBound": -1,
+                            "ordered": false,
+                            "derived": false,
+                            "dependency": false
+                        },
+                        {
+                            "@class": "net.menthor.ontouml.OntoUMLEndPoint",
+                            "@id": 74,
+                            "classifier": 7,
+                            "name": "service_customer",
+                            "lowerBound": 1,
+                            "uniqueName": "service_customer4",
+                            "upperBound": -1,
+                            "ordered": false,
+                            "derived": false,
+                            "dependency": false
+                        }
+                    ],
+                    "name": "externallyDependentOn",
+                    "uniqueName": "externallyDependentOn4"
+                },
+                {
+                    "@class": "net.menthor.ontouml.OntoUMLRelationship",
+                    "@id": 75,
+                    "endPoints": [
+                        {
+                            "@class": "net.menthor.ontouml.OntoUMLEndPoint",
+                            "@id": 76,
+                            "classifier": 47,
+                            "name": "service_agreement",
+                            "lowerBound": 1,
+                            "uniqueName": "service_agreement4",
+                            "upperBound": 1,
+                            "ordered": false,
+                            "derived": false,
+                            "dependency": false
+                        },
+                        {
+                            "@class": "net.menthor.ontouml.OntoUMLEndPoint",
+                            "@id": 77,
+                            "classifier": 24,
+                            "name": "hired_service_provider_commitment",
+                            "lowerBound": 1,
+                            "uniqueName": "hired_service_provider_commitment5",
+                            "upperBound": -1,
+                            "ordered": false,
+                            "derived": false,
+                            "dependency": false
+                        }
+                    ],
+                    "reflexivityValue": "IRREFLEXIVE",
+                    "symmetryValue": "ASSYMETRIC",
+                    "transitivityValue": "TRANSITIVE",
+                    "ciclicityValue": "ACYCLIC",
+                    "uniqueName": "OntoUMLRelationship147"
+                },
+                47,
+                {
+                    "@class": "net.menthor.ontouml.OntoUMLRelationship",
+                    "@id": 78,
+                    "endPoints": [
+                        {
+                            "@class": "net.menthor.ontouml.OntoUMLEndPoint",
+                            "@id": 79,
+                            "classifier": 47,
+                            "name": "service_agreement",
+                            "lowerBound": 1,
+                            "uniqueName": "service_agreement5",
+                            "upperBound": 1,
+                            "ordered": false,
+                            "derived": false,
+                            "dependency": false
+                        },
+                        {
+                            "@class": "net.menthor.ontouml.OntoUMLEndPoint",
+                            "@id": 80,
+                            "classifier": 11,
+                            "name": "service_customer_commitment",
+                            "uniqueName": "service_customer_commitment4",
+                            "upperBound": -1,
+                            "ordered": false,
+                            "derived": false,
+                            "dependency": false
+                        }
+                    ],
+                    "reflexivityValue": "IRREFLEXIVE",
+                    "symmetryValue": "ASSYMETRIC",
+                    "transitivityValue": "TRANSITIVE",
+                    "ciclicityValue": "ACYCLIC",
+                    "uniqueName": "OntoUMLRelationship148"
+                },
+                {
+                    "@class": "net.menthor.ontouml.OntoUMLRelationship",
+                    "@id": 81,
+                    "endPoints": [
+                        {
+                            "@class": "net.menthor.ontouml.OntoUMLEndPoint",
+                            "@id": 82,
+                            "classifier": 47,
+                            "name": "service_agreement",
+                            "lowerBound": 1,
+                            "uniqueName": "service_agreement6",
+                            "upperBound": -1,
+                            "ordered": false,
+                            "derived": false,
+                            "dependency": false
+                        },
+                        {
+                            "@class": "net.menthor.ontouml.OntoUMLEndPoint",
+                            "@id": 83,
+                            "classifier": {
+                                "@class": "net.menthor.ontouml.OntoUMLClass",
+                                "@id": 84,
+                                "stereotype": "CATEGORY",
+                                "abstract_": false,
+                                "derived": false,
+                                "extensional": false,
+                                "name": "Service Agreement Description",
+                                "uniqueName": "ServiceAgreementDescription"
+                            },
+                            "name": "service_agreement_description",
+                            "uniqueName": "service_agreement_description",
+                            "upperBound": -1,
+                            "ordered": false,
+                            "derived": false,
+                            "dependency": false
+                        }
+                    ],
+                    "name": "describes",
+                    "uniqueName": "describes"
+                },
+                {
+                    "@class": "net.menthor.ontouml.OntoUMLRelationship",
+                    "@id": 85,
+                    "endPoints": [
+                        {
+                            "@class": "net.menthor.ontouml.OntoUMLEndPoint",
+                            "@id": 86,
+                            "classifier": 47,
+                            "name": "service_agreement",
+                            "lowerBound": 1,
+                            "uniqueName": "service_agreement7",
+                            "upperBound": -1,
+                            "ordered": false,
+                            "derived": false,
+                            "dependency": false
+                        },
+                        {
+                            "@class": "net.menthor.ontouml.OntoUMLEndPoint",
+                            "@id": 87,
+                            "classifier": 7,
+                            "name": "service_customer",
+                            "lowerBound": 1,
+                            "uniqueName": "service_customer5",
+                            "upperBound": -1,
+                            "ordered": false,
+                            "derived": false,
+                            "dependency": false
+                        }
+                    ],
+                    "name": "achieves",
+                    "uniqueName": "achieves2"
+                },
+                {
+                    "@class": "net.menthor.ontouml.OntoUMLRelationship",
+                    "@id": 88,
+                    "endPoints": [
+                        {
+                            "@class": "net.menthor.ontouml.OntoUMLEndPoint",
+                            "@id": 89,
+                            "classifier": 47,
+                            "name": "service_agreement",
+                            "uniqueName": "service_agreement8",
+                            "upperBound": -1,
+                            "ordered": false,
+                            "derived": false,
+                            "dependency": false
+                        },
+                        {
+                            "@class": "net.menthor.ontouml.OntoUMLEndPoint",
+                            "@id": 90,
+                            "classifier": {
+                                "@class": "net.menthor.ontouml.OntoUMLClass",
+                                "@id": 91,
+                                "stereotype": "RELATOR",
+                                "abstract_": false,
+                                "derived": false,
+                                "extensional": false,
+                                "name": "Service Offering",
+                                "uniqueName": "ServiceOffering"
+                            },
+                            "name": "service_offering",
+                            "lowerBound": 1,
+                            "uniqueName": "service_offering",
+                            "upperBound": 1,
+                            "ordered": false,
+                            "derived": false,
+                            "dependency": false
+                        }
+                    ],
+                    "name": "conformsTo",
+                    "uniqueName": "conformsTo"
+                },
+                {
+                    "@class": "net.menthor.ontouml.OntoUMLRelationship",
+                    "@id": 92,
+                    "endPoints": [
+                        {
+                            "@class": "net.menthor.ontouml.OntoUMLEndPoint",
+                            "@id": 93,
+                            "classifier": 47,
+                            "name": "service_agreement",
+                            "lowerBound": 1,
+                            "uniqueName": "service_agreement9",
+                            "upperBound": 1,
+                            "ordered": false,
+                            "derived": false,
+                            "dependency": false
+                        },
+                        {
+                            "@class": "net.menthor.ontouml.OntoUMLEndPoint",
+                            "@id": 94,
+                            "classifier": 51,
+                            "name": "service_customer_claim",
+                            "lowerBound": 1,
+                            "uniqueName": "service_customer_claim2",
+                            "upperBound": -1,
+                            "ordered": false,
+                            "derived": false,
+                            "dependency": false
+                        }
+                    ],
+                    "reflexivityValue": "IRREFLEXIVE",
+                    "symmetryValue": "ASSYMETRIC",
+                    "transitivityValue": "TRANSITIVE",
+                    "ciclicityValue": "ACYCLIC",
+                    "uniqueName": "OntoUMLRelationship149"
+                },
+                {
+                    "@class": "net.menthor.ontouml.OntoUMLRelationship",
+                    "@id": 95,
+                    "endPoints": [
+                        {
+                            "@class": "net.menthor.ontouml.OntoUMLEndPoint",
+                            "@id": 96,
+                            "classifier": {
+                                "@class": "net.menthor.ontouml.OntoUMLClass",
+                                "@id": 97,
+                                "stereotype": "EVENT",
+                                "abstract_": false,
+                                "derived": false,
+                                "extensional": false,
+                                "name": "Service Negotiation",
+                                "uniqueName": "ServiceNegotiation2"
+                            },
+                            "name": "service_negotiation",
+                            "lowerBound": 1,
+                            "uniqueName": "service_negotiation",
+                            "upperBound": 1,
+                            "ordered": false,
+                            "derived": false,
+                            "dependency": false
+                        },
+                        {
+                            "@class": "net.menthor.ontouml.OntoUMLEndPoint",
+                            "@id": 98,
+                            "classifier": 47,
+                            "name": "service_agreement",
+                            "uniqueName": "service_agreement10",
+                            "upperBound": 1,
+                            "ordered": false,
+                            "derived": false,
+                            "dependency": false
+                        }
+                    ],
+                    "name": "resultsIn",
+                    "uniqueName": "resultsIn"
+                },
+                84,
+                7,
+                {
+                    "@class": "net.menthor.ontouml.OntoUMLRelationship",
+                    "@id": 99,
+                    "endPoints": [
+                        {
+                            "@class": "net.menthor.ontouml.OntoUMLEndPoint",
+                            "@id": 100,
+                            "classifier": 11,
+                            "name": "service_customer_commitment",
+                            "uniqueName": "service_customer_commitment5",
+                            "upperBound": -1,
+                            "ordered": false,
+                            "derived": false,
+                            "dependency": false
+                        },
+                        {
+                            "@class": "net.menthor.ontouml.OntoUMLEndPoint",
+                            "@id": 101,
+                            "classifier": 7,
+                            "name": "service_customer",
+                            "lowerBound": 1,
+                            "uniqueName": "service_customer6",
+                            "upperBound": 1,
+                            "ordered": false,
+                            "derived": false,
+                            "dependency": false
+                        }
+                    ],
+                    "reflexivityValue": "IRREFLEXIVE",
+                    "symmetryValue": "ASSYMETRIC",
+                    "ciclicityValue": "ACYCLIC",
+                    "name": "inheresIn",
+                    "uniqueName": "inheresIn3"
+                },
+                {
+                    "@class": "net.menthor.ontouml.OntoUMLRelationship",
+                    "@id": 102,
+                    "endPoints": [
+                        {
+                            "@class": "net.menthor.ontouml.OntoUMLEndPoint",
+                            "@id": 103,
+                            "classifier": 51,
+                            "name": "service_customer_claim",
+                            "lowerBound": 1,
+                            "uniqueName": "service_customer_claim3",
+                            "upperBound": -1,
+                            "ordered": false,
+                            "derived": false,
+                            "dependency": false
+                        },
+                        {
+                            "@class": "net.menthor.ontouml.OntoUMLEndPoint",
+                            "@id": 104,
+                            "classifier": 7,
+                            "name": "service_customer",
+                            "lowerBound": 1,
+                            "uniqueName": "service_customer7",
+                            "upperBound": 1,
+                            "ordered": false,
+                            "derived": false,
+                            "dependency": false
+                        }
+                    ],
+                    "reflexivityValue": "IRREFLEXIVE",
+                    "symmetryValue": "ASSYMETRIC",
+                    "ciclicityValue": "ACYCLIC",
+                    "name": "inheresIn",
+                    "uniqueName": "inheresIn4"
+                },
+                51,
+                11,
+                97,
+                {
+                    "@class": "net.menthor.ontouml.OntoUMLRelationship",
+                    "@id": 105,
+                    "endPoints": [
+                        {
+                            "@class": "net.menthor.ontouml.OntoUMLEndPoint",
+                            "@id": 106,
+                            "classifier": 97,
+                            "name": "service_negotiation",
+                            "lowerBound": -1,
+                            "uniqueName": "service_negotiation2",
+                            "upperBound": -1,
+                            "ordered": false,
+                            "derived": false,
+                            "dependency": false
+                        },
+                        {
+                            "@class": "net.menthor.ontouml.OntoUMLEndPoint",
+                            "@id": 107,
+                            "classifier": {
+                                "@class": "net.menthor.ontouml.OntoUMLClass",
+                                "@id": 108,
+                                "stereotype": "ROLEMIXIN",
+                                "abstract_": false,
+                                "derived": false,
+                                "extensional": false,
+                                "name": "Target Customer",
+                                "uniqueName": "TargetCustomer"
+                            },
+                            "name": "target_customer",
+                            "lowerBound": 1,
+                            "uniqueName": "target_customer",
+                            "upperBound": -1,
+                            "ordered": false,
+                            "derived": false,
+                            "dependency": false
+                        }
+                    ],
+                    "name": "participatesIn",
+                    "uniqueName": "participatesIn3"
+                },
+                {
+                    "@class": "net.menthor.ontouml.OntoUMLRelationship",
+                    "@id": 109,
+                    "endPoints": [
+                        {
+                            "@class": "net.menthor.ontouml.OntoUMLEndPoint",
+                            "@id": 110,
+                            "classifier": 97,
+                            "name": "service_negotiation",
+                            "lowerBound": -1,
+                            "uniqueName": "service_negotiation3",
+                            "upperBound": -1,
+                            "ordered": false,
+                            "derived": false,
+                            "dependency": false
+                        },
+                        {
+                            "@class": "net.menthor.ontouml.OntoUMLEndPoint",
+                            "@id": 111,
+                            "classifier": {
+                                "@class": "net.menthor.ontouml.OntoUMLClass",
+                                "@id": 112,
+                                "stereotype": "ROLEMIXIN",
+                                "abstract_": false,
+                                "derived": false,
+                                "extensional": false,
+                                "name": "Service Provider",
+                                "uniqueName": "ServiceProvider"
+                            },
+                            "name": "service_provider",
+                            "lowerBound": 1,
+                            "uniqueName": "service_provider",
+                            "upperBound": 1,
+                            "ordered": false,
+                            "derived": false,
+                            "dependency": false
+                        }
+                    ],
+                    "name": "participatesIn",
+                    "uniqueName": "participatesIn4"
+                },
+                {
+                    "@class": "net.menthor.ontouml.OntoUMLRelationship",
+                    "@id": 113,
+                    "endPoints": [
+                        {
+                            "@class": "net.menthor.ontouml.OntoUMLEndPoint",
+                            "@id": 114,
+                            "classifier": 97,
+                            "name": "service_negotiation",
+                            "lowerBound": -1,
+                            "uniqueName": "service_negotiation4",
+                            "upperBound": -1,
+                            "ordered": false,
+                            "derived": false,
+                            "dependency": false
+                        },
+                        {
+                            "@class": "net.menthor.ontouml.OntoUMLEndPoint",
+                            "@id": 115,
+                            "classifier": 91,
+                            "name": "service_offering",
+                            "lowerBound": 1,
+                            "uniqueName": "service_offering2",
+                            "upperBound": 1,
+                            "ordered": false,
+                            "derived": false,
+                            "dependency": false
+                        }
+                    ],
+                    "name": "regardsTo",
+                    "uniqueName": "regardsTo"
+                },
+                {
+                    "@class": "net.menthor.ontouml.OntoUMLGeneralization",
+                    "@id": 116,
+                    "general": 112,
+                    "specific": 20
+                },
+                {
+                    "@class": "net.menthor.ontouml.OntoUMLGeneralization",
+                    "@id": 117,
+                    "general": 108,
+                    "specific": 7
+                }
+            ],
+            "uniqueName": "ServiceNegotiation"
+        },
+        {
+            "@class": "net.menthor.ontouml.OntoUMLPackage",
+            "@id": 118,
+            "name": "Service Offer",
+            "elements": [
+                {
+                    "@class": "net.menthor.ontouml.OntoUMLClass",
+                    "@id": 119,
+                    "stereotype": "CATEGORY",
+                    "abstract_": false,
+                    "derived": false,
+                    "extensional": false,
+                    "name": "Agent",
+                    "uniqueName": "Agent"
+                },
+                {
+                    "@class": "net.menthor.ontouml.OntoUMLClass",
+                    "@id": 120,
+                    "stereotype": "MODE",
+                    "abstract_": false,
+                    "derived": false,
+                    "extensional": false,
+                    "name": "Service Oferring Commitment",
+                    "uniqueName": "ServiceOferringCommitment"
+                },
+                {
+                    "@class": "net.menthor.ontouml.OntoUMLRelationship",
+                    "@id": 121,
+                    "endPoints": [
+                        {
+                            "@class": "net.menthor.ontouml.OntoUMLEndPoint",
+                            "@id": 122,
+                            "classifier": 120,
+                            "name": "service_oferring_commitment",
+                            "lowerBound": 1,
+                            "uniqueName": "service_oferring_commitment",
+                            "upperBound": -1,
+                            "ordered": false,
+                            "derived": false,
+                            "dependency": false
+                        },
+                        {
+                            "@class": "net.menthor.ontouml.OntoUMLEndPoint",
+                            "@id": 123,
+                            "classifier": {
+                                "@class": "net.menthor.ontouml.OntoUMLClass",
+                                "@id": 124,
+                                "stereotype": "COLLECTIVE",
+                                "abstract_": false,
+                                "derived": false,
+                                "extensional": false,
+                                "name": "Target Customer Community",
+                                "uniqueName": "TargetCustomerCommunity"
+                            },
+                            "name": "target_customer_community",
+                            "lowerBound": 1,
+                            "uniqueName": "target_customer_community",
+                            "upperBound": 1,
+                            "ordered": false,
+                            "derived": false,
+                            "dependency": false
+                        }
+                    ],
+                    "name": "externallyDependentOn",
+                    "uniqueName": "externallyDependentOn5"
+                },
+                {
+                    "@class": "net.menthor.ontouml.OntoUMLRelationship",
+                    "@id": 125,
+                    "endPoints": [
+                        {
+                            "@class": "net.menthor.ontouml.OntoUMLEndPoint",
+                            "@id": 126,
+                            "classifier": 120,
+                            "name": "service_oferring_commitment",
+                            "lowerBound": 1,
+                            "uniqueName": "service_oferring_commitment2",
+                            "upperBound": -1,
+                            "ordered": false,
+                            "derived": false,
+                            "dependency": false
+                        },
+                        {
+                            "@class": "net.menthor.ontouml.OntoUMLEndPoint",
+                            "@id": 127,
+                            "classifier": 112,
+                            "name": "service_provider",
+                            "lowerBound": 1,
+                            "uniqueName": "service_provider2",
+                            "upperBound": 1,
+                            "ordered": false,
+                            "derived": false,
+                            "dependency": false
+                        }
+                    ],
+                    "reflexivityValue": "IRREFLEXIVE",
+                    "symmetryValue": "ASSYMETRIC",
+                    "ciclicityValue": "ACYCLIC",
+                    "name": "inheresIn",
+                    "uniqueName": "inheresIn5"
+                },
+                {
+                    "@class": "net.menthor.ontouml.OntoUMLRelationship",
+                    "@id": 128,
+                    "endPoints": [
+                        {
+                            "@class": "net.menthor.ontouml.OntoUMLEndPoint",
+                            "@id": 129,
+                            "classifier": 91,
+                            "name": "service_offering",
+                            "lowerBound": 1,
+                            "uniqueName": "service_offering3",
+                            "upperBound": 1,
+                            "ordered": false,
+                            "derived": false,
+                            "dependency": false
+                        },
+                        {
+                            "@class": "net.menthor.ontouml.OntoUMLEndPoint",
+                            "@id": 130,
+                            "classifier": 120,
+                            "name": "service_oferring_commitment",
+                            "lowerBound": 1,
+                            "uniqueName": "service_oferring_commitment3",
+                            "upperBound": -1,
+                            "ordered": false,
+                            "derived": false,
+                            "dependency": false
+                        }
+                    ],
+                    "reflexivityValue": "IRREFLEXIVE",
+                    "symmetryValue": "ASSYMETRIC",
+                    "transitivityValue": "TRANSITIVE",
+                    "ciclicityValue": "ACYCLIC",
+                    "uniqueName": "OntoUMLRelationship150"
+                },
+                {
+                    "@class": "net.menthor.ontouml.OntoUMLClass",
+                    "@id": 131,
+                    "stereotype": "EVENT",
+                    "abstract_": false,
+                    "derived": false,
+                    "extensional": false,
+                    "name": "Service Offer",
+                    "uniqueName": "ServiceOffer2"
+                },
+                {
+                    "@class": "net.menthor.ontouml.OntoUMLRelationship",
+                    "@id": 132,
+                    "endPoints": [
+                        {
+                            "@class": "net.menthor.ontouml.OntoUMLEndPoint",
+                            "@id": 133,
+                            "classifier": 131,
+                            "name": "service_offer",
+                            "lowerBound": 1,
+                            "uniqueName": "service_offer",
+                            "upperBound": 1,
+                            "ordered": false,
+                            "derived": false,
+                            "dependency": false
+                        },
+                        {
+                            "@class": "net.menthor.ontouml.OntoUMLEndPoint",
+                            "@id": 134,
+                            "classifier": 91,
+                            "name": "service_offering",
+                            "lowerBound": 1,
+                            "uniqueName": "service_offering4",
+                            "upperBound": 1,
+                            "ordered": false,
+                            "derived": false,
+                            "dependency": false
+                        }
+                    ],
+                    "name": "creates",
+                    "uniqueName": "creates"
+                },
+                91,
+                {
+                    "@class": "net.menthor.ontouml.OntoUMLRelationship",
+                    "@id": 135,
+                    "endPoints": [
+                        {
+                            "@class": "net.menthor.ontouml.OntoUMLEndPoint",
+                            "@id": 136,
+                            "classifier": 91,
+                            "name": "service_offering",
+                            "lowerBound": 1,
+                            "uniqueName": "service_offering5",
+                            "upperBound": -1,
+                            "ordered": false,
+                            "derived": false,
+                            "dependency": false
+                        },
+                        {
+                            "@class": "net.menthor.ontouml.OntoUMLEndPoint",
+                            "@id": 137,
+                            "classifier": 124,
+                            "name": "target_customer_community",
+                            "lowerBound": 1,
+                            "uniqueName": "target_customer_community2",
+                            "upperBound": 1,
+                            "ordered": false,
+                            "derived": false,
+                            "dependency": false
+                        }
+                    ],
+                    "name": "offeredTo",
+                    "uniqueName": "offeredTo"
+                },
+                {
+                    "@class": "net.menthor.ontouml.OntoUMLRelationship",
+                    "@id": 138,
+                    "endPoints": [
+                        {
+                            "@class": "net.menthor.ontouml.OntoUMLEndPoint",
+                            "@id": 139,
+                            "classifier": 91,
+                            "name": "service_offering",
+                            "lowerBound": 1,
+                            "uniqueName": "service_offering6",
+                            "upperBound": -1,
+                            "ordered": false,
+                            "derived": false,
+                            "dependency": false
+                        },
+                        {
+                            "@class": "net.menthor.ontouml.OntoUMLEndPoint",
+                            "@id": 140,
+                            "classifier": 112,
+                            "name": "service_provider",
+                            "lowerBound": 1,
+                            "uniqueName": "service_provider3",
+                            "upperBound": 1,
+                            "ordered": false,
+                            "derived": false,
+                            "dependency": false
+                        }
+                    ],
+                    "name": "provides",
+                    "uniqueName": "provides"
+                },
+                {
+                    "@class": "net.menthor.ontouml.OntoUMLRelationship",
+                    "@id": 141,
+                    "endPoints": [
+                        {
+                            "@class": "net.menthor.ontouml.OntoUMLEndPoint",
+                            "@id": 142,
+                            "classifier": 91,
+                            "name": "service_offering",
+                            "lowerBound": 1,
+                            "uniqueName": "service_offering7",
+                            "upperBound": 1,
+                            "ordered": false,
+                            "derived": false,
+                            "dependency": false
+                        },
+                        {
+                            "@class": "net.menthor.ontouml.OntoUMLEndPoint",
+                            "@id": 143,
+                            "classifier": {
+                                "@class": "net.menthor.ontouml.OntoUMLClass",
+                                "@id": 144,
+                                "stereotype": "CATEGORY",
+                                "abstract_": false,
+                                "derived": false,
+                                "extensional": false,
+                                "name": "Service Offering Description",
+                                "uniqueName": "ServiceOfferingDescription"
+                            },
+                            "name": "service_offering_description",
+                            "uniqueName": "service_offering_description",
+                            "upperBound": -1,
+                            "ordered": false,
+                            "derived": false,
+                            "dependency": false
+                        }
+                    ],
+                    "name": "describes",
+                    "uniqueName": "describes2"
+                },
+                {
+                    "@class": "net.menthor.ontouml.OntoUMLRelationship",
+                    "@id": 145,
+                    "endPoints": [
+                        {
+                            "@class": "net.menthor.ontouml.OntoUMLEndPoint",
+                            "@id": 146,
+                            "classifier": 91,
+                            "name": "service_offering",
+                            "lowerBound": 1,
+                            "uniqueName": "service_offering8",
+                            "upperBound": 1,
+                            "ordered": false,
+                            "derived": false,
+                            "dependency": false
+                        },
+                        {
+                            "@class": "net.menthor.ontouml.OntoUMLEndPoint",
+                            "@id": 147,
+                            "classifier": {
+                                "@class": "net.menthor.ontouml.OntoUMLClass",
+                                "@id": 148,
+                                "stereotype": "MODE",
+                                "abstract_": false,
+                                "derived": false,
+                                "extensional": false,
+                                "name": "Servive Oferring Claim",
+                                "uniqueName": "ServiveOferringClaim"
+                            },
+                            "name": "servive_oferring_claim",
+                            "lowerBound": 1,
+                            "uniqueName": "servive_oferring_claim",
+                            "upperBound": -1,
+                            "ordered": false,
+                            "derived": false,
+                            "dependency": false
+                        }
+                    ],
+                    "reflexivityValue": "IRREFLEXIVE",
+                    "symmetryValue": "ASSYMETRIC",
+                    "transitivityValue": "TRANSITIVE",
+                    "ciclicityValue": "ACYCLIC",
+                    "uniqueName": "OntoUMLRelationship151"
+                },
+                144,
+                112,
+                {
+                    "@class": "net.menthor.ontouml.OntoUMLRelationship",
+                    "@id": 149,
+                    "endPoints": [
+                        {
+                            "@class": "net.menthor.ontouml.OntoUMLEndPoint",
+                            "@id": 150,
+                            "classifier": 148,
+                            "name": "servive_oferring_claim",
+                            "lowerBound": 1,
+                            "uniqueName": "servive_oferring_claim2",
+                            "upperBound": -1,
+                            "ordered": false,
+                            "derived": false,
+                            "dependency": false
+                        },
+                        {
+                            "@class": "net.menthor.ontouml.OntoUMLEndPoint",
+                            "@id": 151,
+                            "classifier": 112,
+                            "name": "service_provider",
+                            "lowerBound": 1,
+                            "uniqueName": "service_provider4",
+                            "upperBound": 1,
+                            "ordered": false,
+                            "derived": false,
+                            "dependency": false
+                        }
+                    ],
+                    "name": "externallyDependentOn",
+                    "uniqueName": "externallyDependentOn6"
+                },
+                148,
+                {
+                    "@class": "net.menthor.ontouml.OntoUMLRelationship",
+                    "@id": 152,
+                    "endPoints": [
+                        {
+                            "@class": "net.menthor.ontouml.OntoUMLEndPoint",
+                            "@id": 153,
+                            "classifier": 148,
+                            "name": "servive_oferring_claim",
+                            "lowerBound": 1,
+                            "uniqueName": "servive_oferring_claim3",
+                            "upperBound": -1,
+                            "ordered": false,
+                            "derived": false,
+                            "dependency": false
+                        },
+                        {
+                            "@class": "net.menthor.ontouml.OntoUMLEndPoint",
+                            "@id": 154,
+                            "classifier": 124,
+                            "name": "target_customer_community",
+                            "lowerBound": 1,
+                            "uniqueName": "target_customer_community3",
+                            "upperBound": 1,
+                            "ordered": false,
+                            "derived": false,
+                            "dependency": false
+                        }
+                    ],
+                    "reflexivityValue": "IRREFLEXIVE",
+                    "symmetryValue": "ASSYMETRIC",
+                    "ciclicityValue": "ACYCLIC",
+                    "name": "inheresIn",
+                    "uniqueName": "inheresIn6"
+                },
+                108,
+                {
+                    "@class": "net.menthor.ontouml.OntoUMLRelationship",
+                    "@id": 155,
+                    "endPoints": [
+                        {
+                            "@class": "net.menthor.ontouml.OntoUMLEndPoint",
+                            "@id": 156,
+                            "classifier": 124,
+                            "name": "target_customer_community",
+                            "lowerBound": 1,
+                            "uniqueName": "target_customer_community4",
+                            "upperBound": -1,
+                            "ordered": false,
+                            "derived": false,
+                            "dependency": false
+                        },
+                        {
+                            "@class": "net.menthor.ontouml.OntoUMLEndPoint",
+                            "@id": 157,
+                            "classifier": 108,
+                            "name": "target_customer",
+                            "lowerBound": 1,
+                            "uniqueName": "target_customer2",
+                            "upperBound": -1,
+                            "ordered": false,
+                            "derived": false,
+                            "dependency": false
+                        }
+                    ],
+                    "reflexivityValue": "IRREFLEXIVE",
+                    "symmetryValue": "ASSYMETRIC",
+                    "transitivityValue": "INTRANSITIVE",
+                    "ciclicityValue": "ACYCLIC",
+                    "name": "memberOf",
+                    "uniqueName": "memberOf"
+                },
+                124,
+                {
+                    "@class": "net.menthor.ontouml.OntoUMLGeneralization",
+                    "@id": 158,
+                    "general": 119,
+                    "specific": 112
+                },
+                {
+                    "@class": "net.menthor.ontouml.OntoUMLGeneralization",
+                    "@id": 159,
+                    "general": 119,
+                    "specific": 108
+                }
+            ],
+            "uniqueName": "ServiceOffer"
+        }
+    ],
+    "uniqueName": "UFOS"
+}

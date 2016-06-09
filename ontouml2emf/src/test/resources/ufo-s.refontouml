@@ -1,0 +1,480 @@
+<?xml version="1.0" encoding="ASCII"?>
+<RefOntoUML:Model xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:RefOntoUML="http://nemo.inf.ufes.br/ontouml/refontouml" name="UFO-S">
+  <packagedElement xsi:type="RefOntoUML:Package" name="Service Delivery">
+    <packagedElement xsi:type="RefOntoUML:Class" name="Customer Action"/>
+    <packagedElement xsi:type="RefOntoUML:Class" name="Hired Provider Action"/>
+    <packagedElement xsi:type="RefOntoUML:Class" name="Hired Provider-Customer Interaction"/>
+    <packagedElement xsi:type="RefOntoUML:Class" name="Service Delivery"/>
+    <packagedElement xsi:type="RefOntoUML:Association" name="performedBy" memberEnd="//@packagedElement.0/@packagedElement.4/@ownedEnd.0 //@packagedElement.0/@packagedElement.4/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.0/@packagedElement.4/@ownedEnd.0 //@packagedElement.0/@packagedElement.4/@ownedEnd.1">
+      <ownedEnd name="customer_action" type="//@packagedElement.0/@packagedElement.0" association="//@packagedElement.0/@packagedElement.4">
+        <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="-1"/>
+        <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="-1"/>
+      </ownedEnd>
+      <ownedEnd name="service_customer" type="//@packagedElement.1/@packagedElement.5" association="//@packagedElement.0/@packagedElement.4">
+        <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="1"/>
+        <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xsi:type="RefOntoUML:Association" name="motivatedBy" memberEnd="//@packagedElement.0/@packagedElement.5/@ownedEnd.0 //@packagedElement.0/@packagedElement.5/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.0/@packagedElement.5/@ownedEnd.0 //@packagedElement.0/@packagedElement.5/@ownedEnd.1">
+      <ownedEnd name="customer_action" type="//@packagedElement.0/@packagedElement.0" association="//@packagedElement.0/@packagedElement.5">
+        <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="-1"/>
+        <lowerValue xsi:type="RefOntoUML:LiteralInteger"/>
+      </ownedEnd>
+      <ownedEnd name="service_customer_commitment" type="//@packagedElement.1/@packagedElement.7" association="//@packagedElement.0/@packagedElement.5">
+        <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="-1"/>
+        <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xsi:type="RefOntoUML:Association" memberEnd="//@packagedElement.0/@packagedElement.6/@ownedEnd.0 //@packagedElement.0/@packagedElement.6/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.0/@packagedElement.6/@ownedEnd.0 //@packagedElement.0/@packagedElement.6/@ownedEnd.1">
+      <name xsi:nil="true"/>
+      <ownedEnd name="service_delivery" type="//@packagedElement.0/@packagedElement.3" association="//@packagedElement.0/@packagedElement.6">
+        <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="1"/>
+        <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
+      </ownedEnd>
+      <ownedEnd name="customer_action" type="//@packagedElement.0/@packagedElement.0" association="//@packagedElement.0/@packagedElement.6">
+        <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="-1"/>
+        <lowerValue xsi:type="RefOntoUML:LiteralInteger"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xsi:type="RefOntoUML:Association" name="performedBy" memberEnd="//@packagedElement.0/@packagedElement.7/@ownedEnd.0 //@packagedElement.0/@packagedElement.7/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.0/@packagedElement.7/@ownedEnd.0 //@packagedElement.0/@packagedElement.7/@ownedEnd.1">
+      <ownedEnd name="hired_provider_action" type="//@packagedElement.0/@packagedElement.1" association="//@packagedElement.0/@packagedElement.7">
+        <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="-1"/>
+        <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="-1"/>
+      </ownedEnd>
+      <ownedEnd name="hired_service_provider" type="//@packagedElement.1/@packagedElement.0" association="//@packagedElement.0/@packagedElement.7">
+        <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="1"/>
+        <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xsi:type="RefOntoUML:Association" name="motivatedBy" memberEnd="//@packagedElement.0/@packagedElement.8/@ownedEnd.0 //@packagedElement.0/@packagedElement.8/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.0/@packagedElement.8/@ownedEnd.0 //@packagedElement.0/@packagedElement.8/@ownedEnd.1">
+      <ownedEnd name="hired_provider_action" type="//@packagedElement.0/@packagedElement.1" association="//@packagedElement.0/@packagedElement.8">
+        <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="-1"/>
+        <lowerValue xsi:type="RefOntoUML:LiteralInteger"/>
+      </ownedEnd>
+      <ownedEnd name="hired_service_provider_commitment" type="//@packagedElement.1/@packagedElement.2" association="//@packagedElement.0/@packagedElement.8">
+        <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="-1"/>
+        <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xsi:type="RefOntoUML:Association" memberEnd="//@packagedElement.0/@packagedElement.9/@ownedEnd.0 //@packagedElement.0/@packagedElement.9/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.0/@packagedElement.9/@ownedEnd.0 //@packagedElement.0/@packagedElement.9/@ownedEnd.1">
+      <name xsi:nil="true"/>
+      <ownedEnd name="service_delivery" type="//@packagedElement.0/@packagedElement.3" association="//@packagedElement.0/@packagedElement.9">
+        <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="1"/>
+        <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
+      </ownedEnd>
+      <ownedEnd name="hired_provider_action" type="//@packagedElement.0/@packagedElement.1" association="//@packagedElement.0/@packagedElement.9">
+        <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="-1"/>
+        <lowerValue xsi:type="RefOntoUML:LiteralInteger"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xsi:type="RefOntoUML:Association" name="participatesIn" memberEnd="//@packagedElement.0/@packagedElement.10/@ownedEnd.0 //@packagedElement.0/@packagedElement.10/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.0/@packagedElement.10/@ownedEnd.0 //@packagedElement.0/@packagedElement.10/@ownedEnd.1">
+      <ownedEnd name="hired_provider_customer_interaction" type="//@packagedElement.0/@packagedElement.2" association="//@packagedElement.0/@packagedElement.10">
+        <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="-1"/>
+        <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="-1"/>
+      </ownedEnd>
+      <ownedEnd name="service_customer" type="//@packagedElement.1/@packagedElement.5" association="//@packagedElement.0/@packagedElement.10">
+        <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="-1"/>
+        <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xsi:type="RefOntoUML:Association" name="motivatedBy" memberEnd="//@packagedElement.0/@packagedElement.11/@ownedEnd.0 //@packagedElement.0/@packagedElement.11/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.0/@packagedElement.11/@ownedEnd.0 //@packagedElement.0/@packagedElement.11/@ownedEnd.1">
+      <ownedEnd name="hired_provider_customer_interaction" type="//@packagedElement.0/@packagedElement.2" association="//@packagedElement.0/@packagedElement.11">
+        <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="-1"/>
+        <lowerValue xsi:type="RefOntoUML:LiteralInteger"/>
+      </ownedEnd>
+      <ownedEnd name="service_customer_commitment" type="//@packagedElement.1/@packagedElement.7" association="//@packagedElement.0/@packagedElement.11">
+        <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="-1"/>
+        <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xsi:type="RefOntoUML:Association" memberEnd="//@packagedElement.0/@packagedElement.12/@ownedEnd.0 //@packagedElement.0/@packagedElement.12/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.0/@packagedElement.12/@ownedEnd.0 //@packagedElement.0/@packagedElement.12/@ownedEnd.1">
+      <name xsi:nil="true"/>
+      <ownedEnd name="hired_provider_customer_interaction" type="//@packagedElement.0/@packagedElement.2" association="//@packagedElement.0/@packagedElement.12">
+        <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="-1"/>
+        <lowerValue xsi:type="RefOntoUML:LiteralInteger"/>
+      </ownedEnd>
+      <ownedEnd name="hired_service_provider_commitment" type="//@packagedElement.1/@packagedElement.2" association="//@packagedElement.0/@packagedElement.12">
+        <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="-1"/>
+        <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xsi:type="RefOntoUML:Association" name="participatesIn" memberEnd="//@packagedElement.0/@packagedElement.13/@ownedEnd.0 //@packagedElement.0/@packagedElement.13/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.0/@packagedElement.13/@ownedEnd.0 //@packagedElement.0/@packagedElement.13/@ownedEnd.1">
+      <ownedEnd name="hired_provider_customer_interaction" type="//@packagedElement.0/@packagedElement.2" association="//@packagedElement.0/@packagedElement.13">
+        <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="-1"/>
+        <lowerValue xsi:type="RefOntoUML:LiteralInteger"/>
+      </ownedEnd>
+      <ownedEnd name="hired_service_provider" type="//@packagedElement.1/@packagedElement.0" association="//@packagedElement.0/@packagedElement.13">
+        <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="1"/>
+        <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xsi:type="RefOntoUML:Association" memberEnd="//@packagedElement.0/@packagedElement.14/@ownedEnd.0 //@packagedElement.0/@packagedElement.14/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.0/@packagedElement.14/@ownedEnd.0 //@packagedElement.0/@packagedElement.14/@ownedEnd.1">
+      <name xsi:nil="true"/>
+      <ownedEnd name="service_delivery" type="//@packagedElement.0/@packagedElement.3" association="//@packagedElement.0/@packagedElement.14">
+        <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="1"/>
+        <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
+      </ownedEnd>
+      <ownedEnd name="hired_provider_customer_interaction" type="//@packagedElement.0/@packagedElement.2" association="//@packagedElement.0/@packagedElement.14">
+        <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="-1"/>
+        <lowerValue xsi:type="RefOntoUML:LiteralInteger"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xsi:type="RefOntoUML:Association" memberEnd="//@packagedElement.0/@packagedElement.15/@ownedEnd.0 //@packagedElement.0/@packagedElement.15/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.0/@packagedElement.15/@ownedEnd.0 //@packagedElement.0/@packagedElement.15/@ownedEnd.1">
+      <name xsi:nil="true"/>
+      <ownedEnd name="service_delivery" type="//@packagedElement.0/@packagedElement.3" association="//@packagedElement.0/@packagedElement.15">
+        <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="-1"/>
+        <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="-1"/>
+      </ownedEnd>
+      <ownedEnd name="service_agreement" type="//@packagedElement.1/@packagedElement.3" association="//@packagedElement.0/@packagedElement.15">
+        <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="1"/>
+        <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xsi:type="RefOntoUML:Package" name="Service Negotiation">
+    <packagedElement xsi:type="RefOntoUML:RoleMixin" name="Hired Service Provider">
+      <generalization general="//@packagedElement.2/@packagedElement.5"/>
+    </packagedElement>
+    <packagedElement xsi:type="RefOntoUML:Mode" name="Hired Service Provider Claim"/>
+    <packagedElement xsi:type="RefOntoUML:Mode" name="Hired Service Provider Commitment"/>
+    <packagedElement xsi:type="RefOntoUML:Relator" name="Service Agreement"/>
+    <packagedElement xsi:type="RefOntoUML:Category" name="Service Agreement Description"/>
+    <packagedElement xsi:type="RefOntoUML:RoleMixin" name="Service Customer">
+      <generalization general="//@packagedElement.2/@packagedElement.7"/>
+    </packagedElement>
+    <packagedElement xsi:type="RefOntoUML:Mode" name="Service Customer Claim"/>
+    <packagedElement xsi:type="RefOntoUML:Mode" name="Service Customer Commitment"/>
+    <packagedElement xsi:type="RefOntoUML:Class" name="Service Negotiation"/>
+    <packagedElement xsi:type="RefOntoUML:Association" name="externallyDependentOn" memberEnd="//@packagedElement.1/@packagedElement.9/@ownedEnd.0 //@packagedElement.1/@packagedElement.9/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.1/@packagedElement.9/@ownedEnd.0 //@packagedElement.1/@packagedElement.9/@ownedEnd.1">
+      <ownedEnd name="service_customer_claim" type="//@packagedElement.1/@packagedElement.6" association="//@packagedElement.1/@packagedElement.9">
+        <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="-1"/>
+        <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
+      </ownedEnd>
+      <ownedEnd name="hired_service_provider" type="//@packagedElement.1/@packagedElement.0" association="//@packagedElement.1/@packagedElement.9">
+        <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="1"/>
+        <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xsi:type="RefOntoUML:Association" name="externallyDependentOn" memberEnd="//@packagedElement.1/@packagedElement.10/@ownedEnd.0 //@packagedElement.1/@packagedElement.10/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.1/@packagedElement.10/@ownedEnd.0 //@packagedElement.1/@packagedElement.10/@ownedEnd.1">
+      <ownedEnd name="service_customer_commitment" type="//@packagedElement.1/@packagedElement.7" association="//@packagedElement.1/@packagedElement.10">
+        <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="-1"/>
+        <lowerValue xsi:type="RefOntoUML:LiteralInteger"/>
+      </ownedEnd>
+      <ownedEnd name="hired_service_provider" type="//@packagedElement.1/@packagedElement.0" association="//@packagedElement.1/@packagedElement.10">
+        <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="1"/>
+        <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xsi:type="RefOntoUML:Association" name="achieves" memberEnd="//@packagedElement.1/@packagedElement.11/@ownedEnd.0 //@packagedElement.1/@packagedElement.11/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.1/@packagedElement.11/@ownedEnd.0 //@packagedElement.1/@packagedElement.11/@ownedEnd.1">
+      <ownedEnd name="service_agreement" type="//@packagedElement.1/@packagedElement.3" association="//@packagedElement.1/@packagedElement.11">
+        <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="-1"/>
+        <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
+      </ownedEnd>
+      <ownedEnd name="hired_service_provider" type="//@packagedElement.1/@packagedElement.0" association="//@packagedElement.1/@packagedElement.11">
+        <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="1"/>
+        <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xsi:type="RefOntoUML:Association" name="inheresIn" memberEnd="//@packagedElement.1/@packagedElement.12/@ownedEnd.0 //@packagedElement.1/@packagedElement.12/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.1/@packagedElement.12/@ownedEnd.0 //@packagedElement.1/@packagedElement.12/@ownedEnd.1">
+      <ownedEnd name="hired_service_provider_claim" type="//@packagedElement.1/@packagedElement.1" association="//@packagedElement.1/@packagedElement.12">
+        <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="-1"/>
+        <lowerValue xsi:type="RefOntoUML:LiteralInteger"/>
+      </ownedEnd>
+      <ownedEnd name="hired_service_provider" type="//@packagedElement.1/@packagedElement.0" association="//@packagedElement.1/@packagedElement.12">
+        <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="1"/>
+        <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xsi:type="RefOntoUML:Association" name="inheresIn" memberEnd="//@packagedElement.1/@packagedElement.13/@ownedEnd.0 //@packagedElement.1/@packagedElement.13/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.1/@packagedElement.13/@ownedEnd.0 //@packagedElement.1/@packagedElement.13/@ownedEnd.1">
+      <ownedEnd name="hired_service_provider_commitment" type="//@packagedElement.1/@packagedElement.2" association="//@packagedElement.1/@packagedElement.13">
+        <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="-1"/>
+        <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
+      </ownedEnd>
+      <ownedEnd name="hired_service_provider" type="//@packagedElement.1/@packagedElement.0" association="//@packagedElement.1/@packagedElement.13">
+        <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="1"/>
+        <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xsi:type="RefOntoUML:Association" name="externallyDependentOn" memberEnd="//@packagedElement.1/@packagedElement.14/@ownedEnd.0 //@packagedElement.1/@packagedElement.14/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.1/@packagedElement.14/@ownedEnd.0 //@packagedElement.1/@packagedElement.14/@ownedEnd.1">
+      <ownedEnd name="hired_service_provider_claim" type="//@packagedElement.1/@packagedElement.1" association="//@packagedElement.1/@packagedElement.14">
+        <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="-1"/>
+        <lowerValue xsi:type="RefOntoUML:LiteralInteger"/>
+      </ownedEnd>
+      <ownedEnd name="service_customer" type="//@packagedElement.1/@packagedElement.5" association="//@packagedElement.1/@packagedElement.14">
+        <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="-1"/>
+        <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xsi:type="RefOntoUML:Association" memberEnd="//@packagedElement.1/@packagedElement.15/@ownedEnd.0 //@packagedElement.1/@packagedElement.15/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.1/@packagedElement.15/@ownedEnd.0 //@packagedElement.1/@packagedElement.15/@ownedEnd.1">
+      <name xsi:nil="true"/>
+      <ownedEnd name="service_agreement" type="//@packagedElement.1/@packagedElement.3" association="//@packagedElement.1/@packagedElement.15">
+        <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="1"/>
+        <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
+      </ownedEnd>
+      <ownedEnd name="hired_service_provider_claim" type="//@packagedElement.1/@packagedElement.1" association="//@packagedElement.1/@packagedElement.15">
+        <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="-1"/>
+        <lowerValue xsi:type="RefOntoUML:LiteralInteger"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xsi:type="RefOntoUML:Association" name="externallyDependentOn" memberEnd="//@packagedElement.1/@packagedElement.16/@ownedEnd.0 //@packagedElement.1/@packagedElement.16/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.1/@packagedElement.16/@ownedEnd.0 //@packagedElement.1/@packagedElement.16/@ownedEnd.1">
+      <ownedEnd name="hired_service_provider_commitment" type="//@packagedElement.1/@packagedElement.2" association="//@packagedElement.1/@packagedElement.16">
+        <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="-1"/>
+        <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
+      </ownedEnd>
+      <ownedEnd name="service_customer" type="//@packagedElement.1/@packagedElement.5" association="//@packagedElement.1/@packagedElement.16">
+        <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="-1"/>
+        <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xsi:type="RefOntoUML:Association" memberEnd="//@packagedElement.1/@packagedElement.17/@ownedEnd.0 //@packagedElement.1/@packagedElement.17/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.1/@packagedElement.17/@ownedEnd.0 //@packagedElement.1/@packagedElement.17/@ownedEnd.1">
+      <name xsi:nil="true"/>
+      <ownedEnd name="service_agreement" type="//@packagedElement.1/@packagedElement.3" association="//@packagedElement.1/@packagedElement.17">
+        <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="1"/>
+        <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
+      </ownedEnd>
+      <ownedEnd name="hired_service_provider_commitment" type="//@packagedElement.1/@packagedElement.2" association="//@packagedElement.1/@packagedElement.17">
+        <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="-1"/>
+        <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xsi:type="RefOntoUML:Association" memberEnd="//@packagedElement.1/@packagedElement.18/@ownedEnd.0 //@packagedElement.1/@packagedElement.18/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.1/@packagedElement.18/@ownedEnd.0 //@packagedElement.1/@packagedElement.18/@ownedEnd.1">
+      <name xsi:nil="true"/>
+      <ownedEnd name="service_agreement" type="//@packagedElement.1/@packagedElement.3" association="//@packagedElement.1/@packagedElement.18">
+        <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="1"/>
+        <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
+      </ownedEnd>
+      <ownedEnd name="service_customer_commitment" type="//@packagedElement.1/@packagedElement.7" association="//@packagedElement.1/@packagedElement.18">
+        <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="-1"/>
+        <lowerValue xsi:type="RefOntoUML:LiteralInteger"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xsi:type="RefOntoUML:Association" name="describes" memberEnd="//@packagedElement.1/@packagedElement.19/@ownedEnd.0 //@packagedElement.1/@packagedElement.19/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.1/@packagedElement.19/@ownedEnd.0 //@packagedElement.1/@packagedElement.19/@ownedEnd.1">
+      <ownedEnd name="service_agreement" type="//@packagedElement.1/@packagedElement.3" association="//@packagedElement.1/@packagedElement.19">
+        <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="-1"/>
+        <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
+      </ownedEnd>
+      <ownedEnd name="service_agreement_description" type="//@packagedElement.1/@packagedElement.4" association="//@packagedElement.1/@packagedElement.19">
+        <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="-1"/>
+        <lowerValue xsi:type="RefOntoUML:LiteralInteger"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xsi:type="RefOntoUML:Association" name="achieves" memberEnd="//@packagedElement.1/@packagedElement.20/@ownedEnd.0 //@packagedElement.1/@packagedElement.20/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.1/@packagedElement.20/@ownedEnd.0 //@packagedElement.1/@packagedElement.20/@ownedEnd.1">
+      <ownedEnd name="service_agreement" type="//@packagedElement.1/@packagedElement.3" association="//@packagedElement.1/@packagedElement.20">
+        <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="-1"/>
+        <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
+      </ownedEnd>
+      <ownedEnd name="service_customer" type="//@packagedElement.1/@packagedElement.5" association="//@packagedElement.1/@packagedElement.20">
+        <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="-1"/>
+        <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xsi:type="RefOntoUML:Association" name="conformsTo" memberEnd="//@packagedElement.1/@packagedElement.21/@ownedEnd.0 //@packagedElement.1/@packagedElement.21/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.1/@packagedElement.21/@ownedEnd.0 //@packagedElement.1/@packagedElement.21/@ownedEnd.1">
+      <ownedEnd name="service_agreement" type="//@packagedElement.1/@packagedElement.3" association="//@packagedElement.1/@packagedElement.21">
+        <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="-1"/>
+        <lowerValue xsi:type="RefOntoUML:LiteralInteger"/>
+      </ownedEnd>
+      <ownedEnd name="service_offering" type="//@packagedElement.2/@packagedElement.3" association="//@packagedElement.1/@packagedElement.21">
+        <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="1"/>
+        <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xsi:type="RefOntoUML:Association" memberEnd="//@packagedElement.1/@packagedElement.22/@ownedEnd.0 //@packagedElement.1/@packagedElement.22/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.1/@packagedElement.22/@ownedEnd.0 //@packagedElement.1/@packagedElement.22/@ownedEnd.1">
+      <name xsi:nil="true"/>
+      <ownedEnd name="service_agreement" type="//@packagedElement.1/@packagedElement.3" association="//@packagedElement.1/@packagedElement.22">
+        <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="1"/>
+        <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
+      </ownedEnd>
+      <ownedEnd name="service_customer_claim" type="//@packagedElement.1/@packagedElement.6" association="//@packagedElement.1/@packagedElement.22">
+        <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="-1"/>
+        <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xsi:type="RefOntoUML:Association" name="resultsIn" memberEnd="//@packagedElement.1/@packagedElement.23/@ownedEnd.0 //@packagedElement.1/@packagedElement.23/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.1/@packagedElement.23/@ownedEnd.0 //@packagedElement.1/@packagedElement.23/@ownedEnd.1">
+      <ownedEnd name="service_negotiation" type="//@packagedElement.1/@packagedElement.8" association="//@packagedElement.1/@packagedElement.23">
+        <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="1"/>
+        <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
+      </ownedEnd>
+      <ownedEnd name="service_agreement" type="//@packagedElement.1/@packagedElement.3" association="//@packagedElement.1/@packagedElement.23">
+        <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="1"/>
+        <lowerValue xsi:type="RefOntoUML:LiteralInteger"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xsi:type="RefOntoUML:Association" name="inheresIn" memberEnd="//@packagedElement.1/@packagedElement.24/@ownedEnd.0 //@packagedElement.1/@packagedElement.24/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.1/@packagedElement.24/@ownedEnd.0 //@packagedElement.1/@packagedElement.24/@ownedEnd.1">
+      <ownedEnd name="service_customer_commitment" type="//@packagedElement.1/@packagedElement.7" association="//@packagedElement.1/@packagedElement.24">
+        <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="-1"/>
+        <lowerValue xsi:type="RefOntoUML:LiteralInteger"/>
+      </ownedEnd>
+      <ownedEnd name="service_customer" type="//@packagedElement.1/@packagedElement.5" association="//@packagedElement.1/@packagedElement.24">
+        <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="1"/>
+        <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xsi:type="RefOntoUML:Association" name="inheresIn" memberEnd="//@packagedElement.1/@packagedElement.25/@ownedEnd.0 //@packagedElement.1/@packagedElement.25/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.1/@packagedElement.25/@ownedEnd.0 //@packagedElement.1/@packagedElement.25/@ownedEnd.1">
+      <ownedEnd name="service_customer_claim" type="//@packagedElement.1/@packagedElement.6" association="//@packagedElement.1/@packagedElement.25">
+        <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="-1"/>
+        <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
+      </ownedEnd>
+      <ownedEnd name="service_customer" type="//@packagedElement.1/@packagedElement.5" association="//@packagedElement.1/@packagedElement.25">
+        <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="1"/>
+        <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xsi:type="RefOntoUML:Association" name="participatesIn" memberEnd="//@packagedElement.1/@packagedElement.26/@ownedEnd.0 //@packagedElement.1/@packagedElement.26/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.1/@packagedElement.26/@ownedEnd.0 //@packagedElement.1/@packagedElement.26/@ownedEnd.1">
+      <ownedEnd name="service_negotiation" type="//@packagedElement.1/@packagedElement.8" association="//@packagedElement.1/@packagedElement.26">
+        <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="-1"/>
+        <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="-1"/>
+      </ownedEnd>
+      <ownedEnd name="target_customer" type="//@packagedElement.2/@packagedElement.7" association="//@packagedElement.1/@packagedElement.26">
+        <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="-1"/>
+        <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xsi:type="RefOntoUML:Association" name="participatesIn" memberEnd="//@packagedElement.1/@packagedElement.27/@ownedEnd.0 //@packagedElement.1/@packagedElement.27/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.1/@packagedElement.27/@ownedEnd.0 //@packagedElement.1/@packagedElement.27/@ownedEnd.1">
+      <ownedEnd name="service_negotiation" type="//@packagedElement.1/@packagedElement.8" association="//@packagedElement.1/@packagedElement.27">
+        <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="-1"/>
+        <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="-1"/>
+      </ownedEnd>
+      <ownedEnd name="service_provider" type="//@packagedElement.2/@packagedElement.5" association="//@packagedElement.1/@packagedElement.27">
+        <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="1"/>
+        <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xsi:type="RefOntoUML:Association" name="regardsTo" memberEnd="//@packagedElement.1/@packagedElement.28/@ownedEnd.0 //@packagedElement.1/@packagedElement.28/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.1/@packagedElement.28/@ownedEnd.0 //@packagedElement.1/@packagedElement.28/@ownedEnd.1">
+      <ownedEnd name="service_negotiation" type="//@packagedElement.1/@packagedElement.8" association="//@packagedElement.1/@packagedElement.28">
+        <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="-1"/>
+        <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="-1"/>
+      </ownedEnd>
+      <ownedEnd name="service_offering" type="//@packagedElement.2/@packagedElement.3" association="//@packagedElement.1/@packagedElement.28">
+        <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="1"/>
+        <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xsi:type="RefOntoUML:Package" name="Service Offer">
+    <packagedElement xsi:type="RefOntoUML:Category" name="Agent"/>
+    <packagedElement xsi:type="RefOntoUML:Mode" name="Service Oferring Commitment"/>
+    <packagedElement xsi:type="RefOntoUML:Class" name="Service Offer"/>
+    <packagedElement xsi:type="RefOntoUML:Relator" name="Service Offering"/>
+    <packagedElement xsi:type="RefOntoUML:Category" name="Service Offering Description"/>
+    <packagedElement xsi:type="RefOntoUML:RoleMixin" name="Service Provider">
+      <generalization general="//@packagedElement.2/@packagedElement.0"/>
+    </packagedElement>
+    <packagedElement xsi:type="RefOntoUML:Mode" name="Servive Oferring Claim"/>
+    <packagedElement xsi:type="RefOntoUML:RoleMixin" name="Target Customer">
+      <generalization general="//@packagedElement.2/@packagedElement.0"/>
+    </packagedElement>
+    <packagedElement xsi:type="RefOntoUML:Collective" name="Target Customer Community"/>
+    <packagedElement xsi:type="RefOntoUML:Association" name="externallyDependentOn" memberEnd="//@packagedElement.2/@packagedElement.9/@ownedEnd.0 //@packagedElement.2/@packagedElement.9/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.2/@packagedElement.9/@ownedEnd.0 //@packagedElement.2/@packagedElement.9/@ownedEnd.1">
+      <ownedEnd name="service_oferring_commitment" type="//@packagedElement.2/@packagedElement.1" association="//@packagedElement.2/@packagedElement.9">
+        <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="-1"/>
+        <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
+      </ownedEnd>
+      <ownedEnd name="target_customer_community" type="//@packagedElement.2/@packagedElement.8" association="//@packagedElement.2/@packagedElement.9">
+        <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="1"/>
+        <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xsi:type="RefOntoUML:Association" name="inheresIn" memberEnd="//@packagedElement.2/@packagedElement.10/@ownedEnd.0 //@packagedElement.2/@packagedElement.10/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.2/@packagedElement.10/@ownedEnd.0 //@packagedElement.2/@packagedElement.10/@ownedEnd.1">
+      <ownedEnd name="service_oferring_commitment" type="//@packagedElement.2/@packagedElement.1" association="//@packagedElement.2/@packagedElement.10">
+        <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="-1"/>
+        <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
+      </ownedEnd>
+      <ownedEnd name="service_provider" type="//@packagedElement.2/@packagedElement.5" association="//@packagedElement.2/@packagedElement.10">
+        <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="1"/>
+        <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xsi:type="RefOntoUML:Association" memberEnd="//@packagedElement.2/@packagedElement.11/@ownedEnd.0 //@packagedElement.2/@packagedElement.11/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.2/@packagedElement.11/@ownedEnd.0 //@packagedElement.2/@packagedElement.11/@ownedEnd.1">
+      <name xsi:nil="true"/>
+      <ownedEnd name="service_offering" type="//@packagedElement.2/@packagedElement.3" association="//@packagedElement.2/@packagedElement.11">
+        <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="1"/>
+        <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
+      </ownedEnd>
+      <ownedEnd name="service_oferring_commitment" type="//@packagedElement.2/@packagedElement.1" association="//@packagedElement.2/@packagedElement.11">
+        <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="-1"/>
+        <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xsi:type="RefOntoUML:Association" name="creates" memberEnd="//@packagedElement.2/@packagedElement.12/@ownedEnd.0 //@packagedElement.2/@packagedElement.12/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.2/@packagedElement.12/@ownedEnd.0 //@packagedElement.2/@packagedElement.12/@ownedEnd.1">
+      <ownedEnd name="service_offer" type="//@packagedElement.2/@packagedElement.2" association="//@packagedElement.2/@packagedElement.12">
+        <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="1"/>
+        <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
+      </ownedEnd>
+      <ownedEnd name="service_offering" type="//@packagedElement.2/@packagedElement.3" association="//@packagedElement.2/@packagedElement.12">
+        <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="1"/>
+        <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xsi:type="RefOntoUML:Association" name="offeredTo" memberEnd="//@packagedElement.2/@packagedElement.13/@ownedEnd.0 //@packagedElement.2/@packagedElement.13/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.2/@packagedElement.13/@ownedEnd.0 //@packagedElement.2/@packagedElement.13/@ownedEnd.1">
+      <ownedEnd name="service_offering" type="//@packagedElement.2/@packagedElement.3" association="//@packagedElement.2/@packagedElement.13">
+        <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="-1"/>
+        <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
+      </ownedEnd>
+      <ownedEnd name="target_customer_community" type="//@packagedElement.2/@packagedElement.8" association="//@packagedElement.2/@packagedElement.13">
+        <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="1"/>
+        <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xsi:type="RefOntoUML:Association" name="provides" memberEnd="//@packagedElement.2/@packagedElement.14/@ownedEnd.0 //@packagedElement.2/@packagedElement.14/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.2/@packagedElement.14/@ownedEnd.0 //@packagedElement.2/@packagedElement.14/@ownedEnd.1">
+      <ownedEnd name="service_offering" type="//@packagedElement.2/@packagedElement.3" association="//@packagedElement.2/@packagedElement.14">
+        <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="-1"/>
+        <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
+      </ownedEnd>
+      <ownedEnd name="service_provider" type="//@packagedElement.2/@packagedElement.5" association="//@packagedElement.2/@packagedElement.14">
+        <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="1"/>
+        <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xsi:type="RefOntoUML:Association" name="describes" memberEnd="//@packagedElement.2/@packagedElement.15/@ownedEnd.0 //@packagedElement.2/@packagedElement.15/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.2/@packagedElement.15/@ownedEnd.0 //@packagedElement.2/@packagedElement.15/@ownedEnd.1">
+      <ownedEnd name="service_offering" type="//@packagedElement.2/@packagedElement.3" association="//@packagedElement.2/@packagedElement.15">
+        <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="1"/>
+        <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
+      </ownedEnd>
+      <ownedEnd name="service_offering_description" type="//@packagedElement.2/@packagedElement.4" association="//@packagedElement.2/@packagedElement.15">
+        <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="-1"/>
+        <lowerValue xsi:type="RefOntoUML:LiteralInteger"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xsi:type="RefOntoUML:Association" memberEnd="//@packagedElement.2/@packagedElement.16/@ownedEnd.0 //@packagedElement.2/@packagedElement.16/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.2/@packagedElement.16/@ownedEnd.0 //@packagedElement.2/@packagedElement.16/@ownedEnd.1">
+      <name xsi:nil="true"/>
+      <ownedEnd name="service_offering" type="//@packagedElement.2/@packagedElement.3" association="//@packagedElement.2/@packagedElement.16">
+        <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="1"/>
+        <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
+      </ownedEnd>
+      <ownedEnd name="servive_oferring_claim" type="//@packagedElement.2/@packagedElement.6" association="//@packagedElement.2/@packagedElement.16">
+        <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="-1"/>
+        <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xsi:type="RefOntoUML:Association" name="externallyDependentOn" memberEnd="//@packagedElement.2/@packagedElement.17/@ownedEnd.0 //@packagedElement.2/@packagedElement.17/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.2/@packagedElement.17/@ownedEnd.0 //@packagedElement.2/@packagedElement.17/@ownedEnd.1">
+      <ownedEnd name="servive_oferring_claim" type="//@packagedElement.2/@packagedElement.6" association="//@packagedElement.2/@packagedElement.17">
+        <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="-1"/>
+        <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
+      </ownedEnd>
+      <ownedEnd name="service_provider" type="//@packagedElement.2/@packagedElement.5" association="//@packagedElement.2/@packagedElement.17">
+        <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="1"/>
+        <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xsi:type="RefOntoUML:Association" name="inheresIn" memberEnd="//@packagedElement.2/@packagedElement.18/@ownedEnd.0 //@packagedElement.2/@packagedElement.18/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.2/@packagedElement.18/@ownedEnd.0 //@packagedElement.2/@packagedElement.18/@ownedEnd.1">
+      <ownedEnd name="servive_oferring_claim" type="//@packagedElement.2/@packagedElement.6" association="//@packagedElement.2/@packagedElement.18">
+        <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="-1"/>
+        <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
+      </ownedEnd>
+      <ownedEnd name="target_customer_community" type="//@packagedElement.2/@packagedElement.8" association="//@packagedElement.2/@packagedElement.18">
+        <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="1"/>
+        <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xsi:type="RefOntoUML:Association" name="memberOf" memberEnd="//@packagedElement.2/@packagedElement.19/@ownedEnd.0 //@packagedElement.2/@packagedElement.19/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.2/@packagedElement.19/@ownedEnd.0 //@packagedElement.2/@packagedElement.19/@ownedEnd.1">
+      <ownedEnd name="target_customer_community" type="//@packagedElement.2/@packagedElement.8" association="//@packagedElement.2/@packagedElement.19">
+        <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="-1"/>
+        <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
+      </ownedEnd>
+      <ownedEnd name="target_customer" type="//@packagedElement.2/@packagedElement.7" association="//@packagedElement.2/@packagedElement.19">
+        <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="-1"/>
+        <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+  </packagedElement>
+</RefOntoUML:Model>

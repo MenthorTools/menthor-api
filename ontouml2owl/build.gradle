@@ -1,0 +1,34 @@
+buildscript {
+	repositories {
+		jcenter()
+		mavenCentral()
+	}
+}
+
+group = "net.menthor"
+version = "1.0"
+description = "Menthor - OntoUML API with OWL Support"
+
+apply plugin: 'groovy'
+apply plugin: 'idea'
+
+repositories {
+	mavenCentral()
+}
+
+//create a single Jar with all dependencies
+task fatJar(type: Jar) {
+	baseName = "menthor-"+project.name
+	from { configurations.compile.collect { it.isDirectory() ? it : zipTree(it) } }
+	with jar
+}
+
+dependencies {
+	compile project(":ontouml")
+    compile "org.codehaus.groovy:groovy-all:2.4.6"
+    compile 'net.sourceforge.owlapi:owlapi-distribution:5.0.1'
+}
+
+task wrapper(type: Wrapper) {
+	gradleVersion = '2.7'
+}

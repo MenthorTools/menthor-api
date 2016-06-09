@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ecore:EPackage xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="Biological Entity" nsURI="http://menthor.net/biological-entity/" nsPrefix="biological-entity">
+  <eClassifiers xsi:type="ecore:EClass" name="Biological Entity" eSuperTypes="//Material%20Entity">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="person" lowerBound="1" eType="//Person" eOpposite="//Person/biological_entity"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Gallery" eSuperTypes="//Geographical%20Space"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Geographical Space" eSuperTypes="//Spatial%20Thing">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="geographical_space" upperBound="-1" eType="//Geographical%20Space" eOpposite="//Geographical%20Space/geographical_space.1"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="geographical_space" lowerBound="1" upperBound="-1" eType="//Geographical%20Space" eOpposite="//Geographical%20Space/geographical_space"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Human Heart" eSuperTypes="//Human%20Organ">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="person" lowerBound="1" eType="//Person" eOpposite="//Person/human_heart"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Human Organ" eSuperTypes="//Biological%20Entity"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Inanimate Entity" eSuperTypes="//Material%20Entity"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Location">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="physical_object" lowerBound="1" eType="//Physical%20Object" eOpposite="//Physical%20Object/location"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="location_coordinates" lowerBound="1" eType="//Location%20Coordinates" eOpposite="//Location%20Coordinates/location"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="spatial_thing" lowerBound="1" eType="//Spatial%20Thing" eOpposite="//Spatial%20Thing/location"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Material Entity">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="physical_object" lowerBound="1" eType="//Physical%20Object" eOpposite="//Physical%20Object/material_entity"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Museum" eSuperTypes="//Geographical%20Space"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Person">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="biological_entity" lowerBound="2" upperBound="-1" eType="//Biological%20Entity" eOpposite="//Biological%20Entity/person"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="human_heart" lowerBound="1" eType="//Human%20Heart" eOpposite="//Human%20Heart/person"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Physical Object">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="location" lowerBound="1" eType="//Location" eOpposite="//Location/physical_object"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="material_entity" eType="//Material%20Entity" eOpposite="//Material%20Entity/physical_object"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="spatial_thing" lowerBound="1" upperBound="-1" eType="//Spatial%20Thing" eOpposite="//Spatial%20Thing/physical_object"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Spatial Thing">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="location" lowerBound="1" eType="//Location" eOpposite="//Location/spatial_thing"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="physical_object" lowerBound="-1" upperBound="-1" eType="//Physical%20Object" eOpposite="//Physical%20Object/spatial_thing"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Statue" eSuperTypes="//Inanimate%20Entity"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Surgery Room" eSuperTypes="//Geographical%20Space"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Altitude">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="location_coordinates" upperBound="-1" eType="//Location%20Coordinates" eOpposite="//Location%20Coordinates/altitude"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Latitude">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="location_coordinates" upperBound="-1" eType="//Location%20Coordinates" eOpposite="//Location%20Coordinates/latitude"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Location Coordinates">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="location" lowerBound="1" eType="//Location" eOpposite="//Location/location_coordinates"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="latitude" lowerBound="1" eType="//Latitude" eOpposite="//Latitude/location_coordinates"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="longitude" lowerBound="1" eType="//Longitude" eOpposite="//Longitude/location_coordinates"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="altitude" lowerBound="1" eType="//Altitude" eOpposite="//Altitude/location_coordinates"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Longitude">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="location_coordinates" upperBound="-1" eType="//Location%20Coordinates" eOpposite="//Location%20Coordinates/longitude"/>
+  </eClassifiers>
+</ecore:EPackage>
