@@ -3,6 +3,11 @@ buildscript {
 		jcenter()
 		mavenCentral()
 	}
+	dependencies {
+		dependencies {
+			classpath "org.springframework.boot:spring-boot-gradle-plugin:1.3.5.RELEASE"
+		}
+	}
 }
 
 group = "net.menthor"
@@ -11,6 +16,23 @@ description = "Menthor API"
 
 apply plugin: 'groovy'
 apply plugin: 'idea'
+apply plugin: 'application'
+apply plugin: 'spring-boot'
+
+mainClassName = 'net.menthor.BootStarter'
+
+dependencies{
+
+	compile project(":ontouml")
+	compile project(":ea2ontouml")
+	compile project(":ontouml2emf")
+	compile "org.codehaus.groovy:groovy-all:2.4.6"
+	//spring
+	compile("org.springframework.boot:spring-boot-starter-web")
+	compile("org.springframework.boot:spring-boot-starter-security")
+	compile("org.springframework.boot:spring-boot-starter-actuator")
+	testCompile("org.springframework.boot:spring-boot-starter-test")
+}
 
 repositories {
 	mavenCentral()

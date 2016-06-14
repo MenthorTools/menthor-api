@@ -106,6 +106,8 @@ trait EAVisitor {
     }
 
     List load(File file){
+        if(!file.exists()) throw Exception("File does not exist ("+file.getAbsolutePath()+")");
+        if(!file.getName().contains(".xml")) throw Exception("A XML file is expected, file format not supported ("+file.getName()+")");
         def doc = new XmlSlurper().parse(file)
         def umlNs = doc.lookupNamespace('uml')
         def nsMap = [ xmi: 'http://schema.omg.org/spec/XMI/2.1',
