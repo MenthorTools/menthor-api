@@ -2,30 +2,19 @@
 
 ### Command Line Terminal
 
-**Build Project**
+At C:\menthor-api> type:
 
-C:\menthor-api> gradle wrapper 
-
-C:\menthor-api> gradlew build
-
-**Generate FatJar** 
-
-C:\menthor-api> gradle fatJar
-
-**Start Service** 
-
-C:\menthor-api> gradle bootRun
-
-**Access via Browser**
-
-http://localhost:8080 ou 
-
-http://localhost:8080/api/{command}/{parameter}
-
-where command = openAsXML | openAsJSON | openAsRefOntoUML and paramater is usually a file path
+* **Build Project**
+  * gradle wrapper 
+  * gradlew build
+* **Generate FatJar**
+  * gradle fatJar
+* **Start Service** 
+  * gradle bootRun
+* **Access via Browser**
+  * http://localhost:8080
 
 ### IntelliJ IDE
 
-**Open Project**
-
-IntelliJ -> Open -> /menthor-api -> OK
+* **Opening**: IntelliJ -> Open -> /menthor-api -> OK
+* **Start Service**: BootStarter.groovy -> Right Click -> Run 
