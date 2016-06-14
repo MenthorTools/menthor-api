@@ -1,13 +1,21 @@
 # Menthor API
 
-### Comand Line
+### Command Line Terminal
 
-**Build Project**: type "gradle wrapper" and then "gradlew build".
+**Build Project**
+C:\menthor-api> gradle wrapper 
+C:\menthor-api> gradlew build
 
-**Generate FatJar**: On a sub-project folder just type "gradle fatJar".
+**Generate FatJar** 
+C:\menthor-api> gradle fatJar
 
-**Start Service**: On command terminal type "gradle bootRun".
+**Start Service** 
+C:\menthor-api> gradle bootRun
+
+**Access via Browser**
+http://localhost:8080/api/{command}/{parameter}
 
 ### IntelliJ IDE
 
-Open -> /menthor-api -> OK
+**Open Project**
+IntelliJ -> Open -> /menthor-api -> OK
