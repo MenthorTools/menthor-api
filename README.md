@@ -13,7 +13,10 @@ C:\menthor-api> gradle fatJar
 C:\menthor-api> gradle bootRun
 
 **Access via Browser**
-http://localhost:8080/api/{command}/{parameter}
+http://localhost:8080
+http://localhost:8080/api/openAsXML/{filepath}
+http://localhost:8080/api/openAsJSON/{filepath}
+http://localhost:8080/api/openAsRefontouml/{filepath}
 
 ### IntelliJ IDE
 
