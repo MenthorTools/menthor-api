@@ -36,6 +36,9 @@ class RefOntoMapper {
     private RefOntoSrcMapper sourceMapper = new RefOntoSrcMapper()
     private RefOntoTgtMapper targetMapper = new RefOntoTgtMapper()
 
+    OntoUMLModel fromRefOntoUML(InputStream inputStream){
+        sourceMapper.fromRefOntoUML(inputStream)
+    }
     OntoUMLModel fromRefOntoUML(RefOntoUML.Package refmodel){
         sourceMapper.fromRefOntoUML(refmodel)
     }

@@ -25,25 +25,26 @@ package net.menthor.ontouml.checker
 
 import net.menthor.ontouml.OntoUMLRelationship
 import net.menthor.core.traits.MClassifier
-import net.menthor.ontouml.rules.GenericCondition
-import net.menthor.ontouml.rules.SyntacticalRule
-import net.menthor.ontouml.rules.value.CausationValues
-import net.menthor.ontouml.rules.value.CharacterizationValues
-import net.menthor.ontouml.rules.value.ComponentOfValues
-import net.menthor.ontouml.rules.value.ConstitutionValues
-import net.menthor.ontouml.rules.value.DuringValues
-import net.menthor.ontouml.rules.value.EqualsValues
-import net.menthor.ontouml.rules.value.FinishesValues
-import net.menthor.ontouml.rules.value.MediationValues
-import net.menthor.ontouml.rules.value.MeetsValues
-import net.menthor.ontouml.rules.value.MemberOfValues
-import net.menthor.ontouml.rules.value.MeronymicValues
-import net.menthor.ontouml.rules.value.OverlapsValues
-import net.menthor.ontouml.rules.value.PrecedesValues
-import net.menthor.ontouml.rules.value.StartsValues
-import net.menthor.ontouml.rules.value.SubCollectionOfValues
-import net.menthor.ontouml.rules.value.SubEventValues
-import net.menthor.ontouml.rules.value.SubQuantityOfValues
+import net.menthor.ontouml.rule.GenericCondition
+import net.menthor.ontouml.rule.SyntacticalRule
+import net.menthor.ontouml.rule.value.CausationValuesRule
+import net.menthor.ontouml.rule.value.CharacterizationValuesRule
+import net.menthor.ontouml.rule.value.ComponentOfValuesRule
+import net.menthor.ontouml.rule.value.ConstitutionValuesRule
+import net.menthor.ontouml.rule.value.DuringValuesRule
+import net.menthor.ontouml.rule.value.EqualsValuesRule
+import net.menthor.ontouml.rule.value.FinishesValuesRule
+import net.menthor.ontouml.rule.value.MediationValuesRule
+import net.menthor.ontouml.rule.value.MeetsValuesRule
+import net.menthor.ontouml.rule.value.MemberOfValuesRule
+import net.menthor.ontouml.rule.value.MeronymicValuesRule
+import net.menthor.ontouml.rule.value.OverlapsValuesRule
+import net.menthor.ontouml.rule.value.PrecedesValuesRule
+import net.menthor.ontouml.rule.value.StartsValuesRule
+import net.menthor.ontouml.rule.value.SubCollectionOfValuesRule
+import net.menthor.ontouml.rule.value.SubEventValuesRule
+import net.menthor.ontouml.rule.value.SubQuantityOfValuesRule
+import net.menthor.ontouml.rule.SyntacticalError
 
 /**
  * @author John Guerson
@@ -55,30 +56,32 @@ class ValuesChecker extends GenericCondition {
         def errors = []
         if(self instanceof OntoUMLRelationship) rules += getRules(self as OntoUMLRelationship)
         rules.each { rule ->
-            errors += (rule as SyntacticalRule).check()
+            if((rule as SyntacticalRule).isRuleActived()) {
+                errors += (rule as SyntacticalRule).check()
+            }
         }
         return errors - null
     }
 
     static List<SyntacticalRule> getRules(OntoUMLRelationship self){
         def list = []
-        list += new MediationValues(self)
-        list += new CharacterizationValues(self)
-        list += new CausationValues(self)
-        list += new MeronymicValues(self)
-        list += new MemberOfValues(self)
-        list += new ComponentOfValues(self)
-        list += new SubCollectionOfValues(self)
-        list += new SubQuantityOfValues(self)
-        list += new SubEventValues(self)
-        list += new ConstitutionValues(self)
-        list += new PrecedesValues(self)
-        list += new DuringValues(self)
-        list += new MeetsValues(self)
-        list += new FinishesValues(self)
-        list += new StartsValues(self)
-        list += new EqualsValues(self)
-        list += new OverlapsValues(self)
+        list += new MediationValuesRule(self)
+        list += new CharacterizationValuesRule(self)
+        list += new CausationValuesRule(self)
+        list += new MeronymicValuesRule(self)
+        list += new MemberOfValuesRule(self)
+        list += new ComponentOfValuesRule(self)
+        list += new SubCollectionOfValuesRule(self)
+        list += new SubQuantityOfValuesRule(self)
+        list += new SubEventValuesRule(self)
+        list += new ConstitutionValuesRule(self)
+        list += new PrecedesValuesRule(self)
+        list += new DuringValuesRule(self)
+        list += new MeetsValuesRule(self)
+        list += new FinishesValuesRule(self)
+        list += new StartsValuesRule(self)
+        list += new EqualsValuesRule(self)
+        list += new OverlapsValuesRule(self)
         return list - null
     }
 }

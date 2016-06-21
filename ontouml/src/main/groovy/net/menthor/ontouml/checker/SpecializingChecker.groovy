@@ -25,23 +25,24 @@ package net.menthor.ontouml.checker
 import net.menthor.core.traits.MClassifier
 import net.menthor.ontouml.OntoUMLClass
 import net.menthor.ontouml.OntoUMLDataType
-import net.menthor.ontouml.rules.SyntacticalRule
-import net.menthor.ontouml.rules.specialization.AntiRigidProvider
-import net.menthor.ontouml.rules.specialization.DataTypeAncestors
-import net.menthor.ontouml.rules.specialization.DimensionAncestors
-import net.menthor.ontouml.rules.specialization.DomainAncestors
-import net.menthor.ontouml.rules.specialization.EndurantAncestors
-import net.menthor.ontouml.rules.specialization.EnumAncestors
-import net.menthor.ontouml.rules.specialization.EventAncestors
-import net.menthor.ontouml.rules.specialization.HighOrderAncestors
-import net.menthor.ontouml.rules.specialization.IdentityProviders
-import net.menthor.ontouml.rules.specialization.MixinAncestors
-import net.menthor.ontouml.rules.specialization.PhaseMustNotSpecialize
-import net.menthor.ontouml.rules.specialization.PhasePartition
-import net.menthor.ontouml.rules.specialization.RigidityAncestors
-import net.menthor.ontouml.rules.specialization.RoleMixinMustNotSpecialize
-import net.menthor.ontouml.rules.specialization.RoleMustNotSpecialize
-import net.menthor.ontouml.rules.specialization.SubKindProvider
+import net.menthor.ontouml.rule.SyntacticalRule
+import net.menthor.ontouml.rule.specialization.AntiRigidProviderRule
+import net.menthor.ontouml.rule.specialization.DataTypeAncestorsRule
+import net.menthor.ontouml.rule.specialization.DimensionAncestorsRule
+import net.menthor.ontouml.rule.specialization.DomainAncestorsRule
+import net.menthor.ontouml.rule.specialization.EndurantAncestorsRule
+import net.menthor.ontouml.rule.specialization.EnumAncestorsRule
+import net.menthor.ontouml.rule.specialization.EventAncestorsRule
+import net.menthor.ontouml.rule.specialization.HighOrderAncestorsRule
+import net.menthor.ontouml.rule.specialization.IdentityProvidersRule
+import net.menthor.ontouml.rule.specialization.MixinAncestorsRule
+import net.menthor.ontouml.rule.specialization.PhaseMustNotSpecializeRule
+import net.menthor.ontouml.rule.specialization.PhasePartitionRule
+import net.menthor.ontouml.rule.specialization.RigidityAncestorsRule
+import net.menthor.ontouml.rule.specialization.RoleMixinMustNotSpecializeRule
+import net.menthor.ontouml.rule.specialization.RoleMustNotSpecializeRule
+import net.menthor.ontouml.rule.specialization.SubKindProviderRule
+import net.menthor.ontouml.rule.SyntacticalError
 
 /**
  * @author John Guerson
@@ -54,34 +55,36 @@ class SpecializingChecker {
         if(self instanceof OntoUMLClass) rules += getRules(self as OntoUMLClass)
         if(self instanceof OntoUMLDataType) rules += getRules(self as OntoUMLDataType)
         rules.each{ rule ->
-            errors += (rule as SyntacticalRule).check()
+            if((rule as SyntacticalRule).isRuleActived()) {
+                errors += (rule as SyntacticalRule).check()
+            }
         }
         return errors - null
     }
 
     static List<SyntacticalRule> getRules(OntoUMLClass self){
         def list = []
-        list += new RigidityAncestors(self)
-        list += new MixinAncestors(self)
-        list += new RoleMixinMustNotSpecialize(self)
-        list += new EventAncestors(self)
-        list += new HighOrderAncestors(self)
-        list += new EndurantAncestors(self)
-        list += new SubKindProvider(self)
-        list += new AntiRigidProvider(self)
-        list += new RoleMustNotSpecialize(self)
-        list += new PhaseMustNotSpecialize(self)
-        list += new IdentityProviders(self)
-        list += new PhasePartition(self)
+        list += new RigidityAncestorsRule(self)
+        list += new MixinAncestorsRule(self)
+        list += new RoleMixinMustNotSpecializeRule(self)
+        list += new EventAncestorsRule(self)
+        list += new HighOrderAncestorsRule(self)
+        list += new EndurantAncestorsRule(self)
+        list += new SubKindProviderRule(self)
+        list += new AntiRigidProviderRule(self)
+        list += new RoleMustNotSpecializeRule(self)
+        list += new PhaseMustNotSpecializeRule(self)
+        list += new IdentityProvidersRule(self)
+        list += new PhasePartitionRule(self)
         return list - null
     }
 
     static List<SyntacticalRule> getRules(OntoUMLDataType self){
         def list = []
-        list += new DataTypeAncestors(self)
-        list += new DimensionAncestors(self)
-        list += new DomainAncestors(self)
-        list += new EnumAncestors(self)
+        list += new DataTypeAncestorsRule(self)
+        list += new DimensionAncestorsRule(self)
+        list += new DomainAncestorsRule(self)
+        list += new EnumAncestorsRule(self)
         return list - null
     }
 }

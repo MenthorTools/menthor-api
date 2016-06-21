@@ -61,7 +61,7 @@ import java.text.Normalizer
  */
 class RefOntoSrcMapper implements EMFVisitor {
 
-    OntoUMLModel fromRefOntoUML(Object refmodel){
+    OntoUMLModel fromRefOntoUML(RefOntoUML.Package refmodel){
         setup(RefOntoUML.Package.class,RefOntoUML.Type.class, RefOntoUML.Class.class, RefOntoUML.DataType.class,
                 RefOntoUML.Association.class,RefOntoUML.Generalization.class, RefOntoUML.Property.class, RefOntoUML.GeneralizationSet.class)
         return visit(refmodel)

@@ -54,6 +54,14 @@ trait MClassifier implements MContainedElement, MNamedElement {
     List<MGeneralization> getIsSpecificIn(){ return isSpecificIn }
 
     @JsonIgnore
+    List<MClassifier> getSuperClassifier(){
+        if(isSpecificIn!=null && isSpecificIn.size()>0){
+
+        }
+        return isSpecificIn
+    }
+
+    @JsonIgnore
     List<MEndPoint> getIsClassifierIn() { return isClassifierIn }
 
     //=============================

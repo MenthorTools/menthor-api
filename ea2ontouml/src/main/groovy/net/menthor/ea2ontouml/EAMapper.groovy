@@ -48,6 +48,15 @@ class EAMapper implements EAVisitor {
         run(file)
     }
 
+    Object run(InputStream stream, EAOptions opt){
+        this.option = opt
+        run(stream)
+    }
+
+    Object run(InputStream stream){
+        return visit(stream)
+    }
+
     Object run(File file){
         return visit(file)
         //printResult()

@@ -24,7 +24,9 @@ package net.menthor.core.util
  */
 
 /**
- * Menthor CORE Counter. Used to counter the number of occurences of a particular name on a model.
+ * Menthor Core - Counter.
+ * Used to count the number of occurrences of a particular name on the model.
+ *
  * @author John Guerson
  */
 class Counter {

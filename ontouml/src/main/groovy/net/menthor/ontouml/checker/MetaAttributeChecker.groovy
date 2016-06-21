@@ -26,30 +26,31 @@ package net.menthor.ontouml.checker
 import net.menthor.ontouml.OntoUMLClass
 import net.menthor.ontouml.OntoUMLRelationship
 import net.menthor.core.traits.MClassifier
-import net.menthor.ontouml.rules.SyntacticalRule
-import net.menthor.ontouml.rules.attribute.CausationDependency
-import net.menthor.ontouml.rules.attribute.CharacterizationDependency
-import net.menthor.ontouml.rules.attribute.CollectionWithEssentialParts
-import net.menthor.ontouml.rules.attribute.DerivationDependency
-import net.menthor.ontouml.rules.attribute.InstanceOfDependency
-import net.menthor.ontouml.rules.attribute.MediationDependency
-import net.menthor.ontouml.rules.attribute.MemberOfAndExtensionalWhole
-import net.menthor.ontouml.rules.attribute.MixinsAbstract
-import net.menthor.ontouml.rules.attribute.ParticipationDependency
-import net.menthor.ontouml.rules.attribute.QuaPartOfEssentialPart
-import net.menthor.ontouml.rules.attribute.QuaPartOfImmutablePart
-import net.menthor.ontouml.rules.attribute.QuaPartOfImmutableWhole
-import net.menthor.ontouml.rules.attribute.QuaPartOfInseparablePart
-import net.menthor.ontouml.rules.attribute.QuaPartOfNonShareable
-import net.menthor.ontouml.rules.attribute.SubEventDependency
-import net.menthor.ontouml.rules.attribute.SubEventOfEssentialPart
-import net.menthor.ontouml.rules.attribute.SubEventOfImmutablePart
-import net.menthor.ontouml.rules.attribute.SubEventOfImmutableWhole
-import net.menthor.ontouml.rules.attribute.SubEventOfInseparablePart
-import net.menthor.ontouml.rules.attribute.SubQuantityOfEssentialPart
-import net.menthor.ontouml.rules.attribute.SubQuantityOfImmutablePart
-import net.menthor.ontouml.rules.attribute.SubQuantityOfNonShareable
-import net.menthor.ontouml.rules.attribute.TemporalDependency
+import net.menthor.ontouml.rule.SyntacticalRule
+import net.menthor.ontouml.rule.attribute.CausationDependencyRule
+import net.menthor.ontouml.rule.attribute.CharacterizationDependencyRule
+import net.menthor.ontouml.rule.attribute.CollectionWithEssentialPartsRule
+import net.menthor.ontouml.rule.attribute.DerivationDependencyRule
+import net.menthor.ontouml.rule.attribute.InstanceOfDependencyRule
+import net.menthor.ontouml.rule.attribute.MediationDependencyRule
+import net.menthor.ontouml.rule.attribute.MemberOfAndExtensionalWholeRule
+import net.menthor.ontouml.rule.attribute.MixinsAbstractRule
+import net.menthor.ontouml.rule.attribute.ParticipationDependencyRule
+import net.menthor.ontouml.rule.attribute.QuaPartOfEssentialPartRule
+import net.menthor.ontouml.rule.attribute.QuaPartOfImmutablePartRule
+import net.menthor.ontouml.rule.attribute.QuaPartOfImmutableWholeRule
+import net.menthor.ontouml.rule.attribute.QuaPartOfInseparablePartRule
+import net.menthor.ontouml.rule.attribute.QuaPartOfNonShareableRule
+import net.menthor.ontouml.rule.attribute.SubEventDependencyRule
+import net.menthor.ontouml.rule.attribute.SubEventOfEssentialPartRule
+import net.menthor.ontouml.rule.attribute.SubEventOfImmutablePartRule
+import net.menthor.ontouml.rule.attribute.SubEventOfImmutableWholeRule
+import net.menthor.ontouml.rule.attribute.SubEventOfInseparablePartRule
+import net.menthor.ontouml.rule.attribute.SubQuantityOfEssentialPartRule
+import net.menthor.ontouml.rule.attribute.SubQuantityOfImmutablePartRule
+import net.menthor.ontouml.rule.attribute.SubQuantityOfNonShareableRule
+import net.menthor.ontouml.rule.attribute.TemporalDependencyRule
+import net.menthor.ontouml.rule.SyntacticalError
 
 /**
  * @author John Guerson
@@ -62,41 +63,43 @@ class MetaAttributeChecker {
         if(self instanceof OntoUMLClass) rules += getRules(self as OntoUMLClass)
         if(self instanceof OntoUMLRelationship) rules += getRules(self as OntoUMLRelationship)
         rules.each{ rule ->
-            errors += (rule as SyntacticalRule).check()
+            if((rule as SyntacticalRule).isRuleActived()) {
+                errors += (rule as SyntacticalRule).check()
+            }
         }
         return errors-null
     }
 
     static List<SyntacticalRule> getRules(OntoUMLClass self){
         def list = []
-        list += new MixinsAbstract(self)
-        list += new CollectionWithEssentialParts(self)
+        list += new MixinsAbstractRule(self)
+        list += new CollectionWithEssentialPartsRule(self)
         return list - null
     }
 
     static List<SyntacticalRule> getRules(OntoUMLRelationship self){
         def list = []
-        list += new MemberOfAndExtensionalWhole(self)
-        list += new DerivationDependency(self)
-        list += new TemporalDependency(self)
-        list += new CausationDependency(self)
-        list += new SubEventDependency(self)
-        list += new MediationDependency(self)
-        list += new CharacterizationDependency(self)
-        list += new ParticipationDependency(self)
-        list += new InstanceOfDependency(self)
-        list += new SubQuantityOfNonShareable(self)
-        list += new QuaPartOfNonShareable(self)
-        list += new SubQuantityOfEssentialPart(self)
-        list += new SubQuantityOfImmutablePart(self)
-        list += new SubEventOfEssentialPart(self)
-        list += new SubEventOfImmutablePart(self)
-        list += new QuaPartOfEssentialPart(self)
-        list += new QuaPartOfImmutablePart(self)
-        list += new SubEventOfInseparablePart(self)
-        list += new SubEventOfImmutableWhole(self)
-        list += new QuaPartOfInseparablePart(self)
-        list += new QuaPartOfImmutableWhole(self)
+        list += new MemberOfAndExtensionalWholeRule(self)
+        list += new DerivationDependencyRule(self)
+        list += new TemporalDependencyRule(self)
+        list += new CausationDependencyRule(self)
+        list += new SubEventDependencyRule(self)
+        list += new MediationDependencyRule(self)
+        list += new CharacterizationDependencyRule(self)
+        list += new ParticipationDependencyRule(self)
+        list += new InstanceOfDependencyRule(self)
+        list += new SubQuantityOfNonShareableRule(self)
+        list += new QuaPartOfNonShareableRule(self)
+        list += new SubQuantityOfEssentialPartRule(self)
+        list += new SubQuantityOfImmutablePartRule(self)
+        list += new SubEventOfEssentialPartRule(self)
+        list += new SubEventOfImmutablePartRule(self)
+        list += new QuaPartOfEssentialPartRule(self)
+        list += new QuaPartOfImmutablePartRule(self)
+        list += new SubEventOfInseparablePartRule(self)
+        list += new SubEventOfImmutableWholeRule(self)
+        list += new QuaPartOfInseparablePartRule(self)
+        list += new QuaPartOfImmutableWholeRule(self)
         return list - null
     }
 }

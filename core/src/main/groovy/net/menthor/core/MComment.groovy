@@ -29,7 +29,7 @@ import com.fasterxml.jackson.annotation.JsonTypeInfo
 import com.fasterxml.jackson.annotation.ObjectIdGenerators
 import net.menthor.core.traits.MContainedElement
 import net.menthor.core.traits.MElement
-import net.menthor.core.util.NameProcessor
+import net.menthor.core.util.UniqueNameProcessor
 
 /**
  * Menthor CORE Comment. A generic comment.
@@ -73,7 +73,7 @@ class MComment implements MElement {
     }
 
     void setIdentifier(String identifier){
-        identifier = NameProcessor.removeInvalidChars(identifier)
+        identifier = UniqueNameProcessor.removeInvalidChars(identifier)
         this.identifier = identifier
     }
 }

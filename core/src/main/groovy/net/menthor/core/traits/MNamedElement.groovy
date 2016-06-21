@@ -28,7 +28,7 @@ import com.fasterxml.jackson.annotation.JsonIgnore
 import com.fasterxml.jackson.annotation.JsonTypeInfo
 import com.fasterxml.jackson.annotation.ObjectIdGenerators
 import net.menthor.core.MConstraint
-import net.menthor.core.util.NameProcessor
+import net.menthor.core.util.UniqueNameProcessor
 
 /**
  * Menthor CORE Named Element. Metamodel element wwhich has a name
@@ -67,13 +67,12 @@ trait MNamedElement implements MElement {
     //=============================
 
     void setName(String name){
+        if(uniqueName!=null) UniqueNameProcessor.remove(uniqueName)
         if(name==null || name.isEmpty()){
-            if(uniqueName!=null) NameProcessor.remove(uniqueName)
             int idx = getClass().getName().lastIndexOf(".")
-            this.uniqueName = NameProcessor.process(getClass().getName().substring(idx))
+            this.uniqueName = UniqueNameProcessor.process(getClass().getName().substring(idx))
         }else{
-            if(uniqueName!=null) NameProcessor.remove(uniqueName)
-            this.uniqueName = NameProcessor.process(name)
+            this.uniqueName = UniqueNameProcessor.process(name)
             this.name = name
         }
     }

@@ -23,7 +23,7 @@ package net.menthor.ontouml.test
  * DEALINGS IN THE SOFTWARE.
  */
 
-import net.menthor.ontouml.checker.OntoUMLChecker
+import net.menthor.ontouml.checker.SyntacticalChecker
 import net.menthor.ontouml.OntoUMLModel
 
 /**
@@ -35,7 +35,7 @@ class CheckerTest {
         OntoUMLModel m = CarAccidentExample.generate()
         m.createMode("Mode1")
 
-        def checker = new OntoUMLChecker()
+        def checker = new SyntacticalChecker()
         checker.execute(m).each{ error ->
             println error
         }

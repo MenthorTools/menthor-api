@@ -98,6 +98,13 @@ trait EAVisitor {
     abstract Object processEAAttribute(GPathResult eaAttr, GPathResult ownerType)
     abstract Object processEAPrimitive(GPathResult eaPrimitive)
 
+    Object visit(InputStream stream){
+        def list = load(stream)
+        visitEAPrimitives(list[1])
+        visitEAModel(list[0])
+        return model
+    }
+
     Object visit(File file){
         def list = load(file)
         visitEAPrimitives(list[1])
@@ -105,13 +112,23 @@ trait EAVisitor {
         return model
     }
 
+    List load(InputStream stream){
+        def doc = new XmlSlurper().parse(stream)
+        return parse(doc)
+    }
+
+
     List load(File file){
         if(!file.exists()) throw Exception("File does not exist ("+file.getAbsolutePath()+")");
         if(!file.getName().contains(".xml")) throw Exception("A XML file is expected, file format not supported ("+file.getName()+")");
         def doc = new XmlSlurper().parse(file)
+        return parse(doc)
+    }
+
+    private List parse(doc){
         def umlNs = doc.lookupNamespace('uml')
         def nsMap = [ xmi: 'http://schema.omg.org/spec/XMI/2.1',
-            thecustomprofile: "http://www.sparxsystems.com/profiles/thecustomprofile/1.0"]
+                      thecustomprofile: "http://www.sparxsystems.com/profiles/thecustomprofile/1.0"]
         if ('http://schema.omg.org/spec/UML/2.2' == umlNs) {
             nsMap['uml'] = 'http://schema.omg.org/spec/UML/2.2'
         } else {

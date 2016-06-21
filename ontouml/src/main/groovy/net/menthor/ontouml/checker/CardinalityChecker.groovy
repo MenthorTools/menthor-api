@@ -25,21 +25,22 @@ package net.menthor.ontouml.checker
 
 import net.menthor.ontouml.OntoUMLClass
 import net.menthor.ontouml.OntoUMLRelationship
-import net.menthor.ontouml.rules.SyntacticalRule
-import net.menthor.ontouml.rules.cardinality.CharacterizationSourceCardinality
-import net.menthor.ontouml.rules.cardinality.CharacterizationTargetCardinality
-import net.menthor.ontouml.rules.cardinality.DerivationSourceCardinality
-import net.menthor.ontouml.rules.cardinality.DerivationTargetCardinality
-import net.menthor.ontouml.rules.cardinality.InstanceOfTargetCardinality
-import net.menthor.ontouml.rules.cardinality.MediationTargetCardinality
-import net.menthor.ontouml.rules.cardinality.QuaPartOfWholeCardinality
-import net.menthor.ontouml.rules.cardinality.StructurationTargetCardinality
-import net.menthor.ontouml.rules.cardinality.SubCollectionPartCardinality
-import net.menthor.ontouml.rules.cardinality.SubQuantityPartCardinality
-import net.menthor.ontouml.rules.cardinality.SubQuantityWholeCardinality
-import net.menthor.ontouml.rules.cardinality.TruthMakerCardinalityEnds
-import net.menthor.ontouml.rules.cardinality.WeakSupplementation
+import net.menthor.ontouml.rule.SyntacticalRule
+import net.menthor.ontouml.rule.cardinality.CharacterizationSourceCardinalityRule
+import net.menthor.ontouml.rule.cardinality.CharacterizationTargetCardinalityRule
+import net.menthor.ontouml.rule.cardinality.DerivationSourceCardinalityRule
+import net.menthor.ontouml.rule.cardinality.DerivationTargetCardinalityRule
+import net.menthor.ontouml.rule.cardinality.InstanceOfTargetCardinalityRule
+import net.menthor.ontouml.rule.cardinality.MediationTargetCardinalityRule
+import net.menthor.ontouml.rule.cardinality.QuaPartOfWholeCardinalityRule
+import net.menthor.ontouml.rule.cardinality.StructurationTargetCardinalityRule
+import net.menthor.ontouml.rule.cardinality.SubCollectionPartCardinalityRule
+import net.menthor.ontouml.rule.cardinality.SubQuantityPartCardinalityRule
+import net.menthor.ontouml.rule.cardinality.SubQuantityWholeCardinalityRule
+import net.menthor.ontouml.rule.cardinality.TruthMakerCardinalityEndsRule
+import net.menthor.ontouml.rule.cardinality.WeakSupplementationRule
 import net.menthor.core.traits.MClassifier
+import net.menthor.ontouml.rule.SyntacticalError
 
 /**
  * @author John Guerson
@@ -52,31 +53,33 @@ class CardinalityChecker {
         if(self instanceof OntoUMLClass) rules += getRules(self as OntoUMLClass)
         if(self instanceof OntoUMLRelationship) rules += getRules(self as OntoUMLRelationship)
         rules.each{ rule ->
-            errors += (rule as SyntacticalRule).check()
+            if((rule as SyntacticalRule).isRuleActived()) {
+                errors += (rule as SyntacticalRule).check()
+            }
         }
         return errors-null
     }
 
     static List<SyntacticalRule> getRules(OntoUMLClass self) {
         def list = []
-        list += new TruthMakerCardinalityEnds(self)
-        list += new WeakSupplementation(self)
+        list += new TruthMakerCardinalityEndsRule(self)
+        list += new WeakSupplementationRule(self)
         return list - null
     }
 
     static List<SyntacticalRule> getRules(OntoUMLRelationship self){
         def list = []
-        list += new MediationTargetCardinality(self)
-        list += new CharacterizationSourceCardinality(self)
-        list += new CharacterizationTargetCardinality(self)
-        list += new InstanceOfTargetCardinality(self)
-        list += new SubCollectionPartCardinality(self)
-        list += new SubQuantityWholeCardinality(self)
-        list += new SubQuantityPartCardinality(self)
-        list += new StructurationTargetCardinality(self)
-        list += new DerivationSourceCardinality(self)
-        list += new DerivationTargetCardinality(self)
-        list += new QuaPartOfWholeCardinality(self)
+        list += new MediationTargetCardinalityRule(self)
+        list += new CharacterizationSourceCardinalityRule(self)
+        list += new CharacterizationTargetCardinalityRule(self)
+        list += new InstanceOfTargetCardinalityRule(self)
+        list += new SubCollectionPartCardinalityRule(self)
+        list += new SubQuantityWholeCardinalityRule(self)
+        list += new SubQuantityPartCardinalityRule(self)
+        list += new StructurationTargetCardinalityRule(self)
+        list += new DerivationSourceCardinalityRule(self)
+        list += new DerivationTargetCardinalityRule(self)
+        list += new QuaPartOfWholeCardinalityRule(self)
         return list - null
     }
 }

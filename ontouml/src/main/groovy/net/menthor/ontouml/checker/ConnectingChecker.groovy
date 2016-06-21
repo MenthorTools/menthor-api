@@ -26,44 +26,45 @@ import net.menthor.ontouml.OntoUMLClass
 import net.menthor.ontouml.OntoUMLDataType
 import net.menthor.ontouml.OntoUMLRelationship
 import net.menthor.core.traits.MClassifier
-import net.menthor.ontouml.rules.SyntacticalRule
-import net.menthor.ontouml.rules.connection.CausationSourceAndTarget
-import net.menthor.ontouml.rules.connection.CharacterizationSource
-import net.menthor.ontouml.rules.connection.CharacterizationTarget
-import net.menthor.ontouml.rules.connection.ComponentOfPart
-import net.menthor.ontouml.rules.connection.ComponentOfWhole
-import net.menthor.ontouml.rules.connection.ConsitutionPart
-import net.menthor.ontouml.rules.connection.ConsitutionWhole
-import net.menthor.ontouml.rules.connection.DimensionConnectedToStructuration
-import net.menthor.ontouml.rules.connection.DomainComposedDimensions
-import net.menthor.ontouml.rules.connection.DomainConnectedToStructuration
-import net.menthor.ontouml.rules.connection.EnumComposedLiterals
-import net.menthor.ontouml.rules.connection.EnumConnectedToStructuration
-import net.menthor.ontouml.rules.connection.EventConnectedToParticipation
-import net.menthor.ontouml.rules.connection.HighOrderConnectedToInstanceOf
-import net.menthor.ontouml.rules.connection.InstanceOfSource
-import net.menthor.ontouml.rules.connection.InstanceOfTarget
-import net.menthor.ontouml.rules.connection.MaterialSourceAndTarget
-import net.menthor.ontouml.rules.connection.MediationSource
-import net.menthor.ontouml.rules.connection.MediationTarget
-import net.menthor.ontouml.rules.connection.MemberOfPart
-import net.menthor.ontouml.rules.connection.MemberOfWhole
-import net.menthor.ontouml.rules.connection.ModeConnectedToCharacterization
-import net.menthor.ontouml.rules.connection.ParticipationSourceAndTarget
-import net.menthor.ontouml.rules.connection.QuaPartOfPart
-import net.menthor.ontouml.rules.connection.QuaPartOfWhole
-import net.menthor.ontouml.rules.connection.QualityConnectedToStructuration
-import net.menthor.ontouml.rules.connection.RelatorConnectedToMediation
-import net.menthor.ontouml.rules.connection.RoleConnectedToMediationOrParticipation
-import net.menthor.ontouml.rules.connection.RoleMixinConnectedToMediationOrParticipation
-import net.menthor.ontouml.rules.connection.StructurationSource
-import net.menthor.ontouml.rules.connection.StructurationTarget
-import net.menthor.ontouml.rules.connection.SubCollectionOfPart
-import net.menthor.ontouml.rules.connection.SubCollectionOfWhole
-import net.menthor.ontouml.rules.connection.SubEventOfPartAndWhole
-import net.menthor.ontouml.rules.connection.SubQuantityOfPart
-import net.menthor.ontouml.rules.connection.SubQuantityOfWhole
-import net.menthor.ontouml.rules.connection.TemporalSourceAndTarget
+import net.menthor.ontouml.rule.SyntacticalRule
+import net.menthor.ontouml.rule.connection.CausationSourceAndTargetRule
+import net.menthor.ontouml.rule.connection.CharacterizationSourceRule
+import net.menthor.ontouml.rule.connection.CharacterizationTargetRule
+import net.menthor.ontouml.rule.connection.ComponentOfPartRule
+import net.menthor.ontouml.rule.connection.ComponentOfWholeRule
+import net.menthor.ontouml.rule.connection.ConsitutionPartRule
+import net.menthor.ontouml.rule.connection.ConsitutionWholeRule
+import net.menthor.ontouml.rule.connection.DimensionConnectedToStructurationRule
+import net.menthor.ontouml.rule.connection.DomainComposedDimensionsRule
+import net.menthor.ontouml.rule.connection.DomainConnectedToStructurationRule
+import net.menthor.ontouml.rule.connection.EnumComposedLiteralsRule
+import net.menthor.ontouml.rule.connection.EnumConnectedToStructurationRule
+import net.menthor.ontouml.rule.connection.EventConnectedToParticipationRule
+import net.menthor.ontouml.rule.connection.HighOrderConnectedToInstanceOfRule
+import net.menthor.ontouml.rule.connection.InstanceOfSourceRule
+import net.menthor.ontouml.rule.connection.InstanceOfTargetRule
+import net.menthor.ontouml.rule.connection.MaterialSourceAndTargetRule
+import net.menthor.ontouml.rule.connection.MediationSourceRule
+import net.menthor.ontouml.rule.connection.MediationTargetRule
+import net.menthor.ontouml.rule.connection.MemberOfPartRule
+import net.menthor.ontouml.rule.connection.MemberOfWholeRule
+import net.menthor.ontouml.rule.connection.ModeConnectedToCharacterizationRule
+import net.menthor.ontouml.rule.connection.ParticipationSourceAndTargetRule
+import net.menthor.ontouml.rule.connection.QuaPartOfPartRule
+import net.menthor.ontouml.rule.connection.QuaPartOfWholeRule
+import net.menthor.ontouml.rule.connection.QualityConnectedToStructurationRule
+import net.menthor.ontouml.rule.connection.RelatorConnectedToMediationRule
+import net.menthor.ontouml.rule.connection.RoleConnectedToMediationOrParticipationRule
+import net.menthor.ontouml.rule.connection.RoleMixinConnectedToMediationOrParticipationRule
+import net.menthor.ontouml.rule.connection.StructurationSourceRule
+import net.menthor.ontouml.rule.connection.StructurationTargetRule
+import net.menthor.ontouml.rule.connection.SubCollectionOfPartRule
+import net.menthor.ontouml.rule.connection.SubCollectionOfWholeRule
+import net.menthor.ontouml.rule.connection.SubEventOfPartAndWholeRule
+import net.menthor.ontouml.rule.connection.SubQuantityOfPartRule
+import net.menthor.ontouml.rule.connection.SubQuantityOfWholeRule
+import net.menthor.ontouml.rule.connection.TemporalSourceAndTargetRule
+import net.menthor.ontouml.rule.SyntacticalError
 
 /**
  * @author John Guerson
@@ -77,60 +78,62 @@ class ConnectingChecker {
         if(self instanceof OntoUMLDataType) rules += getRules(self as OntoUMLDataType)
         if(self instanceof OntoUMLRelationship) rules += getRules(self as OntoUMLRelationship)
         rules.each{ rule ->
-            errors += (rule as SyntacticalRule).check()
+            if((rule as SyntacticalRule).isRuleActived()) {
+                errors += (rule as SyntacticalRule).check()
+            }
         }
         return errors - null
     }
 
     static List<SyntacticalRule> getRules(OntoUMLClass self){
         def list = []
-        list += new ModeConnectedToCharacterization(self)
-        list += new QualityConnectedToStructuration(self)
-        list += new RelatorConnectedToMediation(self)
-        list += new HighOrderConnectedToInstanceOf(self)
-        list += new EventConnectedToParticipation(self)
-        list += new RoleConnectedToMediationOrParticipation(self)
-        list += new RoleMixinConnectedToMediationOrParticipation(self)
+        list += new ModeConnectedToCharacterizationRule(self)
+        list += new QualityConnectedToStructurationRule(self)
+        list += new RelatorConnectedToMediationRule(self)
+        list += new HighOrderConnectedToInstanceOfRule(self)
+        list += new EventConnectedToParticipationRule(self)
+        list += new RoleConnectedToMediationOrParticipationRule(self)
+        list += new RoleMixinConnectedToMediationOrParticipationRule(self)
         return list - null
     }
 
     static List<SyntacticalRule> getRules(OntoUMLDataType self){
         def list = []
-        list += new DomainComposedDimensions(self)
-        list += new DomainConnectedToStructuration(self)
-        list += new EnumComposedLiterals(self)
-        list += new EnumConnectedToStructuration(self)
-        list += new DimensionConnectedToStructuration(self)
+        list += new DomainComposedDimensionsRule(self)
+        list += new DomainConnectedToStructurationRule(self)
+        list += new EnumComposedLiteralsRule(self)
+        list += new EnumConnectedToStructurationRule(self)
+        list += new DimensionConnectedToStructurationRule(self)
         return list - null
     }
 
     static List<SyntacticalRule> getRules(OntoUMLRelationship self){
         def list = []
-        list += new MediationSource(self)
-        list += new StructurationSource(self)
-        list += new CharacterizationSource(self)
-        list += new CharacterizationTarget(self)
-        list += new ComponentOfPart(self)
-        list += new ComponentOfWhole(self)
-        list += new MemberOfPart(self)
-        list += new MemberOfWhole(self)
-        list += new SubCollectionOfPart(self)
-        list += new SubCollectionOfWhole(self)
-        list += new SubQuantityOfPart(self)
-        list += new SubQuantityOfWhole(self)
-        list += new ConsitutionPart(self)
-        list += new ConsitutionWhole(self)
-        list += new QuaPartOfPart(self)
-        list += new QuaPartOfWhole(self)
-        list += new InstanceOfSource(self)
-        list += new InstanceOfTarget(self)
-        list += new ParticipationSourceAndTarget(self)
-        list += new TemporalSourceAndTarget(self)
-        list += new CausationSourceAndTarget(self)
-        list += new MaterialSourceAndTarget(self)
-        list += new SubEventOfPartAndWhole(self)
-        list += new MediationTarget(self)
-        list += new StructurationTarget(self)
+        list += new MediationSourceRule(self)
+        list += new StructurationSourceRule(self)
+        list += new CharacterizationSourceRule(self)
+        list += new CharacterizationTargetRule(self)
+        list += new ComponentOfPartRule(self)
+        list += new ComponentOfWholeRule(self)
+        list += new MemberOfPartRule(self)
+        list += new MemberOfWholeRule(self)
+        list += new SubCollectionOfPartRule(self)
+        list += new SubCollectionOfWholeRule(self)
+        list += new SubQuantityOfPartRule(self)
+        list += new SubQuantityOfWholeRule(self)
+        list += new ConsitutionPartRule(self)
+        list += new ConsitutionWholeRule(self)
+        list += new QuaPartOfPartRule(self)
+        list += new QuaPartOfWholeRule(self)
+        list += new InstanceOfSourceRule(self)
+        list += new InstanceOfTargetRule(self)
+        list += new ParticipationSourceAndTargetRule(self)
+        list += new TemporalSourceAndTargetRule(self)
+        list += new CausationSourceAndTargetRule(self)
+        list += new MaterialSourceAndTargetRule(self)
+        list += new SubEventOfPartAndWholeRule(self)
+        list += new MediationTargetRule(self)
+        list += new StructurationTargetRule(self)
         return list - null
     }
 }

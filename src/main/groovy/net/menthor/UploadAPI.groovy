@@ -1,7 +1,15 @@
 package net.menthor
 
+import net.menthor.core.MPackage
+import net.menthor.core.traits.MClassifier
+import net.menthor.core.traits.MType
+import net.menthor.ea2ontouml.EAMapper
+import net.menthor.ontouml.OntoUMLClass
+import net.menthor.ontouml.OntoUMLDataType
 import net.menthor.ontouml.OntoUMLModel
+import net.menthor.ontouml.OntoUMLPackage
 import net.menthor.ontouml.OntoUMLSerializer
+import net.menthor.ontouml2emf.refontouml.RefOntoMapper
 import org.springframework.context.annotation.Bean
 import org.springframework.web.bind.annotation.RequestMapping
 import org.springframework.web.bind.annotation.RequestMethod
@@ -44,8 +52,7 @@ import javax.servlet.http.HttpServletRequest
 @RestController
 class UploadAPI {
 
-    /** Study later how can we store the ontology in a database */
-    OntoUMLModel ontology;
+    static OntoUMLModel ontology;
 
     @Bean
     /** Enables Cross Origin Requests i.e. requests from the same host but from a different port */
@@ -54,6 +61,9 @@ class UploadAPI {
             @Override
             void addCorsMappings(CorsRegistry registry) {
                 registry.addMapping("/api/upload/json").allowedOrigins("http://localhost:8000")
+                registry.addMapping("/api/upload/ea").allowedOrigins("http://localhost:8000")
+                registry.addMapping("/api/tree/package-hierarchy").allowedOrigins("http://localhost:8000")
+                registry.addMapping("/api/tree/type-hierarchy").allowedOrigins("http://localhost:8000")
             }
         }
     }
@@ -66,7 +76,16 @@ class UploadAPI {
         String content = inputStream.getText()
         OntoUMLSerializer s = new OntoUMLSerializer()
         ontology = s.fromJSONString(content)
-        println ontology
+        return ontology;
+    }
+
+    @RequestMapping(value = '/api/upload/ea', method = RequestMethod.POST)
+    public @ResponseBody def uploadEa(HttpServletRequest request){
+        MultipartHttpServletRequest multipartRequest = (MultipartHttpServletRequest) request
+        MultipartFile file = multipartRequest.getFile("file")
+        InputStream inputStream = file.getInputStream()
+        EAMapper m = new EAMapper()
+        ontology = m.run(inputStream)
         return ontology;
     }
  }

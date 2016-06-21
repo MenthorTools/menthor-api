@@ -220,6 +220,17 @@ trait MContainer implements MNamedElement {
         return allElements(MType.class)
     }
 
+    List<MType> allTopLevelTypes(){
+        List<MType> result = []
+        def types = allElements(MType.class)
+        if(types==null || types.size()==0) return result
+        types.each{ e ->
+            def list = (e as MClassifier).getIsSpecificIn()
+            if(list==null || list.size()==0)  result.add(e)
+        }
+        return result
+    }
+
     //=============================
     // MClassifier
     //=============================
