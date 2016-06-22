@@ -124,10 +124,11 @@ class EAProfileCorrelator {
     // ====== Stereotype =======
 
     def setupAssociationStereotype = { eaStereo, ontoumlStereo ->
-        mapper.eaRoot."$eaStereo".each{ k ->
+        mapper.eaRoot.'uml:Model'."$eaStereo".each{ k ->
             def id = k.'@base_Association'.text()
             OntoUMLRelationship ontoRelationship = mapper.getAssociationById(id)
             if(ontoRelationship!=null) ontoRelationship.setStereotype(ontoumlStereo)
+            else mapper.log.appendLine("[EA] An error occurred when relating stereotypes EA:"+eaStereo+" and Menthor:"+ontoumlStereo)
         }
     }
 
@@ -137,6 +138,7 @@ class EAProfileCorrelator {
             if(id.isEmpty()) id = k.'@base_AssociationClass'.text()
             OntoUMLClass ontoClass = mapper.getTypeById(id)
             if(ontoClass!=null) ontoClass.setStereotype(ontoumlStereo)
+            else mapper.log.appendLine("[EA] A SEVERE ERROR occurred when relating stereotypes EA:"+eaStereo+" and Menthor:"+ontoumlStereo)
         }
     }
 
@@ -146,6 +148,7 @@ class EAProfileCorrelator {
             if(id.isEmpty()) id = k.'@base_Enumeration'.text()
             OntoUMLDataType ontoDataType = mapper.getTypeById(id)
             if(ontoDataType!=null) ontoDataType.setStereotype(ontoumlStereo)
+            else mapper.log.appendLine("[EA] A SEVERE ERROR occurred when relating stereotypes EA:"+eaStereo+" and Menthor:"+ontoumlStereo)
         }
     }
 

@@ -54,14 +54,6 @@ trait MClassifier implements MContainedElement, MNamedElement {
     List<MGeneralization> getIsSpecificIn(){ return isSpecificIn }
 
     @JsonIgnore
-    List<MClassifier> getSuperClassifier(){
-        if(isSpecificIn!=null && isSpecificIn.size()>0){
-
-        }
-        return isSpecificIn
-    }
-
-    @JsonIgnore
     List<MEndPoint> getIsClassifierIn() { return isClassifierIn }
 
     //=============================
@@ -230,7 +222,7 @@ trait MClassifier implements MContainedElement, MNamedElement {
         def result = []
         parents().each{ p ->
             p.children().each{ sibling ->
-                if(!sibling.equals(this)) {
+                if(sibling != (this)) {
                     result.add(sibling)
                 }
             }
@@ -245,6 +237,17 @@ trait MClassifier implements MContainedElement, MNamedElement {
     /** Returns all direct end-points from this classifier (in which we can navigate from it)
      *  In other words, it returns all opposite ends of the relationships connected to this classifier. */
     List<MEndPoint> oppositeEndPoints(){
+        /** FIXME: I am not sure why this not works.
+        // Somehow isClassifierIn and equality between endpoints are not working
+        def result = []
+        isClassifierIn.each{ ep ->
+            def owner = ep.getOwner()
+            def opposite = owner.oppositeEndPoint(ep)
+            println "opposite of "+ep+" :"+opposite
+            if(opposite!=null) result.add(opposite);
+        }
+        return result;
+        */
         def result = []
         model().allRelationships().each{ rel ->
             rel = rel as MRelationship
@@ -275,6 +278,15 @@ trait MClassifier implements MContainedElement, MNamedElement {
 
     /** Returns all direct relationships this classifier is connected to */
     List<MRelationship> relationships(){
+        /** FIXME: I am not sure why this not works.
+        // Somehow isClassifierIn and equality between endpoints are not working
+        def result = []
+        isClassifierIn.each{ ep ->
+            def rel = ep.getOwner()
+            if(rel!=null) result.add(rel)
+        }
+        return result
+        */
         def result = []
         model().allRelationships().each{ rel ->
             if(rel.isConnecting(this)){

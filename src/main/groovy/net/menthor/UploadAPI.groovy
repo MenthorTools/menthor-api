@@ -54,20 +54,6 @@ class UploadAPI {
 
     static OntoUMLModel ontology;
 
-    @Bean
-    /** Enables Cross Origin Requests i.e. requests from the same host but from a different port */
-    public WebMvcConfigurer corsConfigurer() {
-        return new WebMvcConfigurerAdapter() {
-            @Override
-            void addCorsMappings(CorsRegistry registry) {
-                registry.addMapping("/api/upload/json").allowedOrigins("http://localhost:8000")
-                registry.addMapping("/api/upload/ea").allowedOrigins("http://localhost:8000")
-                registry.addMapping("/api/tree/package-hierarchy").allowedOrigins("http://localhost:8000")
-                registry.addMapping("/api/tree/type-hierarchy").allowedOrigins("http://localhost:8000")
-            }
-        }
-    }
-
     @RequestMapping(value = '/api/upload/json', method = RequestMethod.POST)
     public @ResponseBody def uploadJson(HttpServletRequest request){
         MultipartHttpServletRequest multipartRequest = (MultipartHttpServletRequest) request
@@ -86,7 +72,7 @@ class UploadAPI {
         InputStream inputStream = file.getInputStream()
         EAMapper m = new EAMapper()
         ontology = m.run(inputStream)
-        return ontology;
+        return m.getLog().getText();
     }
  }
 

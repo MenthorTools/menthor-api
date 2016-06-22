@@ -43,8 +43,22 @@ import net.menthor.ontouml.stereotypes.RelationshipStereotype
 class OntoUMLPackage extends MPackage {
 
     List<OntoUMLClass> allNominalQualities(){
-        return allClasses().collect { (it as OntoUMLClass).isNominalQuality() }
+        return allClasses().findAll { (it as OntoUMLClass).isNominalQuality() }
     }
+
+    List<OntoUMLClass> allTopLevelWholes(){
+        def result = []
+        def classes = allElements(OntoUMLClass.class)
+        if(classes==null || classes.size()==0) return result
+        classes.each{ e ->
+            if((e as OntoUMLClass).wholes().isEmpty()) result.add(e)
+        }
+        return result
+    }
+
+    //============================
+    //Factory utilities direct from a package
+    //============================
 
     OntoUMLPackage createPackage(String name) {
         return OntoUMLFactory.createPackage(name,this)

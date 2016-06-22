@@ -176,6 +176,27 @@ class MRelationship implements MClassifier {
         }
     }
 
+    /** Returns the first end-point different than 'ep'. In other words, the opposite end-point if this is a binary relationship. */
+    MEndPoint oppositeEndPoint(MEndPoint ep){
+        if(!endPoints.contains(ep)) return null
+        endPoints.each{ p ->
+            if(!p.equals(ep)) {
+                return p
+            }
+        }
+        return null;
+    }
+
+    List<MEndPoint> oppositeEndPoints(MEndPoint ep){
+        def result = []
+        endPoints.each{ p ->
+            if(!p.equals(ep)) {
+                result.add(p)
+            }
+        }
+        return result
+    }
+
     void setDefaultEndPoints(int arity) {
         for (int i = 1; i <= arity; i++) {
             MEndPoint ep = new MEndPoint();

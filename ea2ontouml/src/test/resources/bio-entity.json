@@ -32,11 +32,11 @@
                     },
                     "name": "person",
                     "lowerBound": 1,
-                    "uniqueName": "person",
                     "upperBound": 1,
-                    "ordered": false,
+                    "dependency": false,
                     "derived": false,
-                    "dependency": false
+                    "ordered": false,
+                    "uniqueName": "person"
                 },
                 {
                     "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -44,13 +44,14 @@
                     "classifier": 2,
                     "name": "biological_entity",
                     "lowerBound": 2,
-                    "uniqueName": "biological_entity",
                     "upperBound": -1,
-                    "ordered": false,
+                    "dependency": false,
                     "derived": false,
-                    "dependency": false
+                    "ordered": false,
+                    "uniqueName": "biological_entity"
                 }
             ],
+            "stereotype": "COMPONENTOF",
             "reflexivityValue": "IRREFLEXIVE",
             "symmetryValue": "ASSYMETRIC",
             "transitivityValue": "TRANSITIVE",
@@ -86,11 +87,11 @@
                     "@id": 10,
                     "classifier": 8,
                     "name": "geographical_space",
-                    "uniqueName": "geographical_space2",
                     "upperBound": -1,
-                    "ordered": false,
+                    "dependency": false,
                     "derived": false,
-                    "dependency": false
+                    "ordered": false,
+                    "uniqueName": "geographical_space2"
                 },
                 {
                     "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -98,13 +99,14 @@
                     "classifier": 8,
                     "name": "geographical_space",
                     "lowerBound": 1,
-                    "uniqueName": "geographical_space",
                     "upperBound": -1,
-                    "ordered": false,
+                    "dependency": false,
                     "derived": false,
-                    "dependency": false
+                    "ordered": false,
+                    "uniqueName": "geographical_space"
                 }
             ],
+            "stereotype": "FORMAL",
             "name": "spatiallySubsumes",
             "uniqueName": "spatiallySubsumes"
         },
@@ -128,11 +130,11 @@
                     "classifier": 5,
                     "name": "person",
                     "lowerBound": 1,
-                    "uniqueName": "person2",
                     "upperBound": 1,
-                    "ordered": false,
+                    "dependency": false,
                     "derived": false,
-                    "dependency": false
+                    "ordered": false,
+                    "uniqueName": "person2"
                 },
                 {
                     "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -140,13 +142,14 @@
                     "classifier": 12,
                     "name": "human_heart",
                     "lowerBound": 1,
-                    "uniqueName": "human_heart",
                     "upperBound": 1,
-                    "ordered": false,
+                    "dependency": false,
                     "derived": false,
-                    "dependency": false
+                    "ordered": false,
+                    "uniqueName": "human_heart"
                 }
             ],
+            "stereotype": "COMPONENTOF",
             "reflexivityValue": "IRREFLEXIVE",
             "symmetryValue": "ASSYMETRIC",
             "transitivityValue": "TRANSITIVE",
@@ -193,11 +196,11 @@
                     "classifier": 18,
                     "name": "location",
                     "lowerBound": 1,
-                    "uniqueName": "location",
                     "upperBound": 1,
-                    "ordered": false,
+                    "dependency": false,
                     "derived": false,
-                    "dependency": false
+                    "ordered": false,
+                    "uniqueName": "location"
                 },
                 {
                     "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -214,13 +217,14 @@
                     },
                     "name": "physical_object",
                     "lowerBound": 1,
-                    "uniqueName": "physical_object",
                     "upperBound": 1,
-                    "ordered": false,
+                    "dependency": false,
                     "derived": false,
-                    "dependency": false
+                    "ordered": false,
+                    "uniqueName": "physical_object"
                 }
             ],
+            "stereotype": "CHARACTERIZATION",
             "reflexivityValue": "IRREFLEXIVE",
             "symmetryValue": "ASSYMETRIC",
             "ciclicityValue": "ACYCLIC",
@@ -236,11 +240,11 @@
                     "classifier": 18,
                     "name": "location",
                     "lowerBound": 1,
-                    "uniqueName": "location2",
                     "upperBound": 1,
-                    "ordered": false,
+                    "dependency": false,
                     "derived": false,
-                    "dependency": false
+                    "ordered": false,
+                    "uniqueName": "location2"
                 },
                 {
                     "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -254,13 +258,14 @@
                     },
                     "name": "location_coordinates",
                     "lowerBound": 1,
-                    "uniqueName": "location_coordinates",
                     "upperBound": 1,
-                    "ordered": false,
+                    "dependency": false,
                     "derived": false,
-                    "dependency": false
+                    "ordered": false,
+                    "uniqueName": "location_coordinates"
                 }
             ],
+            "stereotype": "STRUCTURATION",
             "uniqueName": "OntoUMLRelationship4"
         },
         {
@@ -282,11 +287,11 @@
                     },
                     "name": "spatial_thing",
                     "lowerBound": 1,
-                    "uniqueName": "spatial_thing",
                     "upperBound": 1,
-                    "ordered": false,
+                    "dependency": false,
                     "derived": false,
-                    "dependency": false
+                    "ordered": false,
+                    "uniqueName": "spatial_thing"
                 },
                 {
                     "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -294,13 +299,14 @@
                     "classifier": 18,
                     "name": "location",
                     "lowerBound": 1,
-                    "uniqueName": "location3",
                     "upperBound": 1,
-                    "ordered": false,
+                    "dependency": false,
                     "derived": false,
-                    "dependency": false
+                    "ordered": false,
+                    "uniqueName": "location3"
                 }
             ],
+            "stereotype": "CHARACTERIZATION",
             "reflexivityValue": "IRREFLEXIVE",
             "symmetryValue": "ASSYMETRIC",
             "ciclicityValue": "ACYCLIC",
@@ -326,24 +332,25 @@
                     "classifier": 22,
                     "name": "physical_object",
                     "lowerBound": 1,
-                    "uniqueName": "physical_object2",
                     "upperBound": 1,
-                    "ordered": false,
+                    "dependency": false,
                     "derived": false,
-                    "dependency": false
+                    "ordered": false,
+                    "uniqueName": "physical_object2"
                 },
                 {
                     "@class": "net.menthor.ontouml.OntoUMLEndPoint",
                     "@id": 34,
                     "classifier": 31,
                     "name": "material_entity",
-                    "uniqueName": "material_entity",
                     "upperBound": 1,
-                    "ordered": false,
+                    "dependency": false,
                     "derived": false,
-                    "dependency": false
+                    "ordered": false,
+                    "uniqueName": "material_entity"
                 }
             ],
+            "stereotype": "FORMAL",
             "name": "isConstitutedBy",
             "uniqueName": "isConstitutedBy"
         },
@@ -369,11 +376,11 @@
                     "classifier": 29,
                     "name": "spatial_thing",
                     "lowerBound": 1,
-                    "uniqueName": "spatial_thing2",
                     "upperBound": -1,
-                    "ordered": false,
+                    "dependency": false,
                     "derived": false,
-                    "dependency": false
+                    "ordered": false,
+                    "uniqueName": "spatial_thing2"
                 },
                 {
                     "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -381,13 +388,14 @@
                     "classifier": 22,
                     "name": "physical_object",
                     "lowerBound": -1,
-                    "uniqueName": "physical_object3",
                     "upperBound": -1,
-                    "ordered": false,
+                    "dependency": false,
                     "derived": false,
-                    "dependency": false
+                    "ordered": false,
+                    "uniqueName": "physical_object3"
                 }
             ],
+            "stereotype": "FORMAL",
             "name": "locatedIn",
             "uniqueName": "locatedIn"
         },
@@ -503,11 +511,11 @@
                     "@id": 54,
                     "classifier": 26,
                     "name": "location_coordinates",
-                    "uniqueName": "location_coordinates2",
                     "upperBound": -1,
-                    "ordered": false,
+                    "dependency": false,
                     "derived": false,
-                    "dependency": false
+                    "ordered": false,
+                    "uniqueName": "location_coordinates2"
                 },
                 {
                     "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -515,11 +523,11 @@
                     "classifier": 42,
                     "name": "latitude",
                     "lowerBound": 1,
-                    "uniqueName": "latitude",
                     "upperBound": 1,
-                    "ordered": false,
+                    "dependency": false,
                     "derived": false,
-                    "dependency": false
+                    "ordered": false,
+                    "uniqueName": "latitude"
                 }
             ],
             "stereotype": "STRUCTURATION",
@@ -535,11 +543,11 @@
                     "@id": 57,
                     "classifier": 26,
                     "name": "location_coordinates",
-                    "uniqueName": "location_coordinates3",
                     "upperBound": -1,
-                    "ordered": false,
+                    "dependency": false,
                     "derived": false,
-                    "dependency": false
+                    "ordered": false,
+                    "uniqueName": "location_coordinates3"
                 },
                 {
                     "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -547,11 +555,11 @@
                     "classifier": 43,
                     "name": "longitude",
                     "lowerBound": 1,
-                    "uniqueName": "longitude",
                     "upperBound": 1,
-                    "ordered": false,
+                    "dependency": false,
                     "derived": false,
-                    "dependency": false
+                    "ordered": false,
+                    "uniqueName": "longitude"
                 }
             ],
             "stereotype": "STRUCTURATION",
@@ -567,11 +575,11 @@
                     "@id": 60,
                     "classifier": 26,
                     "name": "location_coordinates",
-                    "uniqueName": "location_coordinates4",
                     "upperBound": -1,
-                    "ordered": false,
+                    "dependency": false,
                     "derived": false,
-                    "dependency": false
+                    "ordered": false,
+                    "uniqueName": "location_coordinates4"
                 },
                 {
                     "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -579,11 +587,11 @@
                     "classifier": 41,
                     "name": "altitude",
                     "lowerBound": 1,
-                    "uniqueName": "altitude",
                     "upperBound": 1,
-                    "ordered": false,
+                    "dependency": false,
                     "derived": false,
-                    "dependency": false
+                    "ordered": false,
+                    "uniqueName": "altitude"
                 }
             ],
             "stereotype": "STRUCTURATION",

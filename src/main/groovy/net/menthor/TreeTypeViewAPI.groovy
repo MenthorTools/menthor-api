@@ -1,7 +1,6 @@
 package net.menthor
 
 import net.menthor.core.traits.MClassifier
-import net.menthor.core.traits.MType
 import org.springframework.web.bind.annotation.RequestMapping
 import org.springframework.web.bind.annotation.RequestMethod
 import org.springframework.web.bind.annotation.ResponseBody
@@ -43,14 +42,14 @@ class TreeTypeViewAPI {
         processed.clear()
         def result = "["
         def toplevels = UploadAPI.ontology.allTopLevelTypes()
-        result += getJSONForTypes(toplevels)
+        result += getJSONForTypes(toplevels, "parents", "generalization")
         toplevels.each { toplevel ->
             def children = toplevel.allChildren()
             children.each { c ->
-                def jsonParents = getJSONForAllParents(c);
-                if(!jsonParents.isEmpty()) result += ","+getJSONForAllParents(c)
+                def jsonParents = getJSONForAllSuperTypes(c, "parents", "allParents", "generalization");
+                if(!jsonParents.isEmpty()) result += ","+jsonParents
                 if(!processed.contains(c)) {
-                    def jsonChild = getJSONForType(c)
+                    def jsonChild = getJSONForType(c, "parents", "generalization")
                     if(!jsonChild.isEmpty()) result += ","+jsonChild;
                 }
             }
@@ -59,24 +58,45 @@ class TreeTypeViewAPI {
         return result
     }
 
-    private String getJSONForAllParents(MClassifier c){
+    @RequestMapping(value = '/api/tree/type-composition', method = RequestMethod.GET)
+    public @ResponseBody def typeCompositionView(){
+        processed.clear()
+        def result = "["
+        def toplevels = UploadAPI.ontology.allTopLevelWholes()
+        result += getJSONForTypes(toplevels, "wholes", "meronymic")
+        toplevels.each { toplevel ->
+            def children = toplevel.allParts()
+            children.each { c ->
+                def jsonParents = getJSONForAllSuperTypes(c, "wholes", "allWholes", "meronymic");
+                if(!jsonParents.isEmpty()) result += ","+jsonParents
+                if(!processed.contains(c)) {
+                    def jsonChild = getJSONForType(c, "wholes", "meronymic")
+                    if(!jsonChild.isEmpty()) result += ","+jsonChild;
+                }
+            }
+        }
+        result += "]"
+        return result
+    }
+
+    private String getJSONForAllSuperTypes(MClassifier c, String parentMethodCall, String allParentMethodCall, String iconType){
         def result = ""
-        def parents = c.allParents().reverse();
+        def parents = c."${allParentMethodCall}"().reverse();
         parents.eachWithIndex { p, k ->
             if(!processed.contains(p)) {
-                result += getJSONForType(p)
+                result += getJSONForType(p, parentMethodCall, iconType)
                 if (k < parents.size() - 1) result += ", "
             }
         }
         return result
     }
 
-    private String getJSONForType(MClassifier t){
+    private String getJSONForType(MClassifier t, String parentMethodCall, String iconType){
         def result = ""
-        def list = t.parents()
+        def list = t."${parentMethodCall}"()
         if(list!=null && list.size()>0) {
             list.eachWithIndex { p, idx ->
-                result += "{\"id\" : \"" + t.getUniqueName() + "\", \"parent\" : \"" + (p as MClassifier).getUniqueName() + "\", \"text\" : \"" + t.toString() + "\", \"type\": \"type\" }"
+                result += "{\"id\" : \"" + t.getUniqueName() + "\", \"parent\" : \"" + (p as MClassifier).getUniqueName() + "\", \"text\" : \"" + t.toString() + "\", \"type\": \""+iconType+"\" }"
                 if (idx<list.size()-1) result+=", "
             }
         } else{
@@ -86,10 +106,10 @@ class TreeTypeViewAPI {
         return result;
     }
 
-    private String getJSONForTypes(List types){
+    private String getJSONForTypes(List types, String parentMethodCall, String iconType){
         def result = ""
         types.eachWithIndex{ t, idx ->
-            result += getJSONForType(t)
+            result += getJSONForType(t, parentMethodCall, iconType)
             if(idx<types.size()-1) result+=", "
         }
         return result

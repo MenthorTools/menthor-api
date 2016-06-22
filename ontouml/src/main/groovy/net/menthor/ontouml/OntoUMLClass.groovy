@@ -511,5 +511,60 @@ class OntoUMLClass extends MClass {
         return result;
     }
 
+    /** If this is a 'part' in some meroymic relationship, the method return all its respective wholes */
+    List<OntoUMLClass> wholes(){
+        def list = []
+        oppositeEndPoints().each{ opposite ->
+            def relationship = opposite.getOwner()
+            if(relationship!=null){
+                def isMeronymic = (relationship as OntoUMLRelationship).isMeronymic()
+                def part = (relationship as OntoUMLRelationship).partClass()
+                if(isMeronymic && part.equals(this)) list.add(opposite.getClassifier())
+            }
+        }
+        return list;
+    }
+
+    /** All (direct and indirect) wholes related to this part */
+    void allWholes(OntoUMLClass c, List result){
+        c.wholes().each{ w ->
+            result.add(w);
+            allWholes(w,result);
+        }
+    }
+    List<OntoUMLClass> allWholes(){
+        def result = []
+        allWholes(this, result)
+        return result
+    }
+
+    /** If this is a 'whle' in some meroymic relationship, the method return all its respective parts */
+    List<OntoUMLClass> parts(){
+        def list = []
+        oppositeEndPoints().each{ opposite ->
+            def relationship = opposite.getOwner()
+            if(relationship!=null){
+                def isMeronymic = (relationship as OntoUMLRelationship).isMeronymic()
+                def whole = (relationship as OntoUMLRelationship).wholeClass()
+                if(isMeronymic && whole.equals(this)) list.add(opposite.getClassifier())
+            }
+        }
+        return list;
+    }
+
+    /** All (direct and indirect) parts related to this whole */
+    void allParts(OntoUMLClass c, List result){
+        c.parts().each{ p ->
+            result.add(p)
+            allParts(p,result)
+        }
+    }
+    List<OntoUMLClass> allParts(){
+        def result = []
+        allParts(this, result)
+        return result
+    }
+
     String toString() { OntoUMLPrinter.print(this) }
+
 }

@@ -66,11 +66,11 @@ class MEndPoint implements MProperty {
     }
 
     void setClassifier(MClassifier c){
-        classifier = c
-        if(c == null) return
+        this.classifier = c
+        if(c==null) return
         //Ensuring opposite end
         if(!c.getIsClassifierIn().contains(this)){
-            c.setIsClassifierIn(this)
+            c.getIsClassifierIn().add(this)
         }
     }
 
