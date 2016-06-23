@@ -25,30 +25,37 @@ package net.menthor.ontouml2emf.test
 
 import net.menthor.ontouml.OntoUMLModel
 import net.menthor.ontouml.OntoUMLSerializer
-import net.menthor.ontouml2emf.refontouml.RefOntoMapper
+import net.menthor.ontouml2emf.refontouml.RefontoumlMapper
 
 /**
  * @author John Guerson
  */
-class RefOntoMapperTest {
+class RefontoumlMapperTest {
 
     static void main(String[] args) {
-        toRefOntoTest()
+        //toRefOntoTest()
         fromRefOntoTest()
     }
 
     static void fromRefOntoTest(){
-
+        println "======== REFONTOUML: ECG TEST ===="
+        File input = new File("ontouml2emf/src/test/resources/ecg.refontouml")
+        OntoUMLSerializer s = new OntoUMLSerializer()
+        def mapper = new RefontoumlMapper()
+        def refmodel = mapper.deserialize(input.getAbsolutePath())
+        def ontomodel = mapper.fromRefOntoUML(refmodel)
+        s.toJSONFile(ontomodel, "ontouml2emf/src/test/resources/","ecg.json")
+        println "[FINISHED]."
+        println "==========================================="
     }
 
     static void toRefOntoTest(){
-
         println "======== REFONTOUML: CAR ACCIDENT TEST ===="
         File input = new File("ontouml2emf/src/test/resources/CarAccident.json")
         File output = new File("ontouml2emf/src/test/resources/CarAccident.refontouml")
         OntoUMLSerializer s = new OntoUMLSerializer()
         OntoUMLModel ontomodel = s.fromJSONFile(input)
-        def mapper = new RefOntoMapper()
+        def mapper = new RefontoumlMapper()
         def model = mapper.toRefOntoUML(ontomodel)
         mapper.serialize(model, output.getAbsolutePath())
         println "[FINISHED]."
@@ -61,7 +68,7 @@ class RefOntoMapperTest {
         output = new File("ontouml2emf/src/test/resources/ecg.refontouml")
         s = new OntoUMLSerializer()
         ontomodel = s.fromJSONFile(input)
-        mapper = new RefOntoMapper()
+        mapper = new RefontoumlMapper()
         model = mapper.toRefOntoUML(ontomodel)
         mapper.serialize(model, output.getAbsolutePath())
         println "[FINISHED]."
@@ -74,7 +81,7 @@ class RefOntoMapperTest {
         output = new File("ontouml2emf/src/test/resources/football.refontouml")
         s = new OntoUMLSerializer()
         ontomodel = s.fromJSONFile(input)
-        mapper = new RefOntoMapper()
+        mapper = new RefontoumlMapper()
         model = mapper.toRefOntoUML(ontomodel)
         mapper.serialize(model, output.getAbsolutePath())
         println "[FINISHED]."
@@ -87,7 +94,7 @@ class RefOntoMapperTest {
         output = new File("ontouml2emf/src/test/resources/bio-entity.refontouml")
         s = new OntoUMLSerializer()
         ontomodel = s.fromJSONFile(input)
-        mapper = new RefOntoMapper()
+        mapper = new RefontoumlMapper()
         model = mapper.toRefOntoUML(ontomodel)
         mapper.serialize(model, output.getAbsolutePath())
         println "[FINISHED]."
@@ -100,7 +107,7 @@ class RefOntoMapperTest {
         output = new File("ontouml2emf/src/test/resources/ufo-s.refontouml")
         s = new OntoUMLSerializer()
         ontomodel = s.fromJSONFile(input)
-        mapper = new RefOntoMapper()
+        mapper = new RefontoumlMapper()
         model = mapper.toRefOntoUML(ontomodel)
         mapper.serialize(model, output.getAbsolutePath())
         println "[FINISHED]."

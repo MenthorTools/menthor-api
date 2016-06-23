@@ -24,34 +24,33 @@ package net.menthor.ontouml2emf.refontouml
  */
 
 import net.menthor.ontouml.OntoUMLModel
-import net.menthor.ontouml2emf.refontouml.RefOntoSrcMapper
-import net.menthor.ontouml2emf.refontouml.RefOntoTgtMapper
 
 /**
  * @author John Guerson
  */
 
-class RefOntoMapper {
+class RefontoumlMapper {
 
-    private RefOntoSrcMapper sourceMapper = new RefOntoSrcMapper()
-    private RefOntoTgtMapper targetMapper = new RefOntoTgtMapper()
+    private RefontoumlSrcMapper sourceMapper = new RefontoumlSrcMapper()
+    private RefontoumlTgtMapper targetMapper = new RefontoumlTgtMapper()
 
-    OntoUMLModel fromRefOntoUML(InputStream inputStream){
-        sourceMapper.fromRefOntoUML(inputStream)
-    }
     OntoUMLModel fromRefOntoUML(RefOntoUML.Package refmodel){
-        sourceMapper.fromRefOntoUML(refmodel)
+        return sourceMapper.fromRefOntoUML(refmodel)
     }
 
     RefOntoUML.Package toRefOntoUML(OntoUMLModel m){
-        targetMapper.toRefOntoUML(m)
+        return targetMapper.toRefOntoUML(m)
     }
 
     void serialize(RefOntoUML.Package model, String path){
         targetMapper.serialize(model,path)
     }
 
+    RefOntoUML.Package deserialize(InputStream is){
+       return sourceMapper.deserialize(is)
+    }
+
     RefOntoUML.Package deserialize(String path){
-        sourceMapper.deserialize(path)
+        return sourceMapper.deserialize(path)
     }
 }

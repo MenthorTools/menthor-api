@@ -47,10 +47,14 @@ class TreeTypeViewAPI {
             def children = toplevel.allChildren()
             children.each { c ->
                 def jsonParents = getJSONForAllSuperTypes(c, "parents", "allParents", "generalization");
-                if(!jsonParents.isEmpty()) result += ","+jsonParents
+                if(!jsonParents.trim().isEmpty()) {
+                    result += ","+jsonParents
+                }
                 if(!processed.contains(c)) {
                     def jsonChild = getJSONForType(c, "parents", "generalization")
-                    if(!jsonChild.isEmpty()) result += ","+jsonChild;
+                    if(!jsonChild.trim().isEmpty()) {
+                        result += ","+jsonChild
+                    }
                 }
             }
         }
@@ -68,10 +72,14 @@ class TreeTypeViewAPI {
             def children = toplevel.allParts()
             children.each { c ->
                 def jsonParents = getJSONForAllSuperTypes(c, "wholes", "allWholes", "meronymic");
-                if(!jsonParents.isEmpty()) result += ","+jsonParents
+                if(!jsonParents.trim().isEmpty()) {
+                    result += ","+jsonParents
+                }
                 if(!processed.contains(c)) {
                     def jsonChild = getJSONForType(c, "wholes", "meronymic")
-                    if(!jsonChild.isEmpty()) result += ","+jsonChild;
+                    if(!jsonChild.trim().isEmpty()) {
+                        result += ","+jsonChild
+                    }
                 }
             }
         }
@@ -80,24 +88,26 @@ class TreeTypeViewAPI {
     }
 
     private String getJSONForAllSuperTypes(MClassifier c, String parentMethodCall, String allParentMethodCall, String iconType){
-        def result = ""
-        def parents = c."${allParentMethodCall}"().reverse();
+        def result = new String()
+        List parents = c."${allParentMethodCall}"().reverse();
+        parents.removeAll(processed);
         parents.eachWithIndex { p, k ->
-            if(!processed.contains(p)) {
-                result += getJSONForType(p, parentMethodCall, iconType)
-                if (k < parents.size() - 1) result += ", "
+            def json = getJSONForType(p, parentMethodCall, iconType)
+            if(!json.trim().isEmpty()) {
+                result+=json
+                if (k<parents.size()-1) result+=","
             }
         }
         return result
     }
 
     private String getJSONForType(MClassifier t, String parentMethodCall, String iconType){
-        def result = ""
+        def result = new String()
         def list = t."${parentMethodCall}"()
         if(list!=null && list.size()>0) {
             list.eachWithIndex { p, idx ->
                 result += "{\"id\" : \"" + t.getUniqueName() + "\", \"parent\" : \"" + (p as MClassifier).getUniqueName() + "\", \"text\" : \"" + t.toString() + "\", \"type\": \""+iconType+"\" }"
-                if (idx<list.size()-1) result+=", "
+                if (idx<list.size()-1) result+=","
             }
         } else{
             result += "{\"id\" : \"" + t.getUniqueName() + "\", \"parent\" : \"" + "#" + "\", \"text\" : \"" + t.toString() + "\", \"type\": \"type\" }"
@@ -107,10 +117,13 @@ class TreeTypeViewAPI {
     }
 
     private String getJSONForTypes(List types, String parentMethodCall, String iconType){
-        def result = ""
+        def result = new String()
         types.eachWithIndex{ t, idx ->
-            result += getJSONForType(t, parentMethodCall, iconType)
-            if(idx<types.size()-1) result+=", "
+            def json = getJSONForType(t, parentMethodCall, iconType)
+            if(!json.trim().isEmpty()) {
+                result+=json
+                if(idx<types.size()-1) result+=","
+            }
         }
         return result
     }

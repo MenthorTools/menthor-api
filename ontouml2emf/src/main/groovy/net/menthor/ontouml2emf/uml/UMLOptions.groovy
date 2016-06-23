@@ -26,7 +26,7 @@ package net.menthor.ontouml2emf.uml
 /**
  * @author John Guerson
  */
-class UMLOptions {
+class UmlOptions {
 
     boolean ignorePackages = false
 }

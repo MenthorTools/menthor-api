@@ -2,7 +2,6 @@ package net.menthor.ontouml2emf.uml
 
 import net.menthor.ontouml.OntoUMLModel
 import org.eclipse.uml2.uml.Package
-import org.eclipse.uml2.uml.UMLPackage
 
 /**
  * The MIT License (MIT)
@@ -30,9 +29,9 @@ import org.eclipse.uml2.uml.UMLPackage
 /**
  * @author John Guerson
  */
-class UMLMapper {
+class UmlMapper {
 
-    private UMLTgtMapper tgtMapper = new UMLTgtMapper()
+    private UmlTgtMapper tgtMapper = new UmlTgtMapper()
 
     Package toUML(OntoUMLModel m) {
         return tgtMapper.toUML(m)

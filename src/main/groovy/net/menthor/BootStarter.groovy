@@ -52,6 +52,8 @@ class BootStarter {
             void addCorsMappings(CorsRegistry registry) {
                 registry.addMapping("/api/upload/json").allowedOrigins("http://localhost:8000")
                 registry.addMapping("/api/upload/ea").allowedOrigins("http://localhost:8000")
+                registry.addMapping("/api/upload/refontouml").allowedOrigins("http://localhost:8000")
+
                 registry.addMapping("/api/tree/package-hierarchy").allowedOrigins("http://localhost:8000")
                 registry.addMapping("/api/tree/type-hierarchy").allowedOrigins("http://localhost:8000")
                 registry.addMapping("/api/tree/type-composition").allowedOrigins("http://localhost:8000")

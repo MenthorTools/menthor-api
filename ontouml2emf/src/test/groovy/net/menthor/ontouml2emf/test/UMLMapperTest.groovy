@@ -2,7 +2,7 @@ package net.menthor.ontouml2emf.test
 
 import net.menthor.ontouml.OntoUMLModel
 import net.menthor.ontouml.OntoUMLSerializer
-import net.menthor.ontouml2emf.uml.UMLMapper
+import net.menthor.ontouml2emf.uml.UmlMapper
 
 /**
  * The MIT License (MIT)
@@ -27,7 +27,7 @@ import net.menthor.ontouml2emf.uml.UMLMapper
  * DEALINGS IN THE SOFTWARE.
  */
 
-class UMLMapperTest {
+class UmlMapperTest {
 
     static void main(String[] args){
         toUMLTest()
@@ -44,7 +44,7 @@ class UMLMapperTest {
         File output = new File("ontouml2emf/src/test/resources/ecg.uml")
         OntoUMLSerializer s = new OntoUMLSerializer()
         OntoUMLModel ontomodel = s.fromJSONFile(input)
-        def mapper = new UMLMapper()
+        def mapper = new UmlMapper()
         def umlmodel = mapper.toUML(ontomodel)
         mapper.serialize(umlmodel, output.getAbsolutePath())
         println "[FINISHED]."
@@ -57,7 +57,7 @@ class UMLMapperTest {
         output = new File("ontouml2emf/src/test/resources/football.uml")
         s = new OntoUMLSerializer()
         ontomodel = s.fromJSONFile(input)
-        mapper = new UMLMapper()
+        mapper = new UmlMapper()
         umlmodel = mapper.toUML(ontomodel)
         mapper.serialize(umlmodel, output.getAbsolutePath())
         println "[FINISHED]."
@@ -70,7 +70,7 @@ class UMLMapperTest {
         output = new File("ontouml2emf/src/test/resources/bio-entity.uml")
         s = new OntoUMLSerializer()
         ontomodel = s.fromJSONFile(input)
-        mapper = new UMLMapper()
+        mapper = new UmlMapper()
         umlmodel = mapper.toUML(ontomodel)
         mapper.serialize(umlmodel, output.getAbsolutePath())
         println "[FINISHED]."
@@ -83,7 +83,7 @@ class UMLMapperTest {
         output = new File("ontouml2emf/src/test/resources/ufo-s.uml")
         s = new OntoUMLSerializer()
         ontomodel = s.fromJSONFile(input)
-        mapper = new UMLMapper()
+        mapper = new UmlMapper()
         umlmodel = mapper.toUML(ontomodel)
         mapper.serialize(umlmodel, output.getAbsolutePath())
         println "[FINISHED]."

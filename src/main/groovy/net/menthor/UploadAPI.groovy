@@ -1,25 +1,15 @@
 package net.menthor
 
-import net.menthor.core.MPackage
-import net.menthor.core.traits.MClassifier
-import net.menthor.core.traits.MType
 import net.menthor.ea2ontouml.EAMapper
-import net.menthor.ontouml.OntoUMLClass
-import net.menthor.ontouml.OntoUMLDataType
 import net.menthor.ontouml.OntoUMLModel
-import net.menthor.ontouml.OntoUMLPackage
 import net.menthor.ontouml.OntoUMLSerializer
-import net.menthor.ontouml2emf.refontouml.RefOntoMapper
-import org.springframework.context.annotation.Bean
+import net.menthor.ontouml2emf.refontouml.RefontoumlMapper
 import org.springframework.web.bind.annotation.RequestMapping
 import org.springframework.web.bind.annotation.RequestMethod
 import org.springframework.web.bind.annotation.ResponseBody
 import org.springframework.web.bind.annotation.RestController
 import org.springframework.web.multipart.MultipartFile
 import org.springframework.web.multipart.MultipartHttpServletRequest
-import org.springframework.web.servlet.config.annotation.CorsRegistry
-import org.springframework.web.servlet.config.annotation.WebMvcConfigurer
-import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter
 
 import javax.servlet.http.HttpServletRequest
 
@@ -58,10 +48,12 @@ class UploadAPI {
     public @ResponseBody def uploadJson(HttpServletRequest request){
         MultipartHttpServletRequest multipartRequest = (MultipartHttpServletRequest) request
         MultipartFile file = multipartRequest.getFile("file")
-        InputStream inputStream = file.getInputStream()
-        String content = inputStream.getText()
-        OntoUMLSerializer s = new OntoUMLSerializer()
-        ontology = s.fromJSONString(content)
+        if(file!=null) {
+            InputStream inputStream = file.getInputStream()
+            String content = inputStream.getText()
+            OntoUMLSerializer s = new OntoUMLSerializer()
+            ontology = s.fromJSONString(content)
+        }
         return ontology;
     }
 
@@ -69,10 +61,26 @@ class UploadAPI {
     public @ResponseBody def uploadEa(HttpServletRequest request){
         MultipartHttpServletRequest multipartRequest = (MultipartHttpServletRequest) request
         MultipartFile file = multipartRequest.getFile("file")
-        InputStream inputStream = file.getInputStream()
-        EAMapper m = new EAMapper()
-        ontology = m.run(inputStream)
-        return m.getLog().getText();
+        if(file!=null) {
+            InputStream inputStream = file.getInputStream()
+            EAMapper m = new EAMapper()
+            ontology = m.run(inputStream)
+            return m.getLog().getText();
+        }
+        return ontology
+    }
+
+    @RequestMapping(value = '/api/upload/refontouml', method = RequestMethod.POST)
+    public @ResponseBody def uploadRefontouml(HttpServletRequest request){
+        MultipartHttpServletRequest multipartRequest = (MultipartHttpServletRequest) request
+        MultipartFile file = multipartRequest.getFile("file")
+        if(file!=null) {
+            InputStream inputStream = file.getInputStream()
+            RefontoumlMapper m = new RefontoumlMapper()
+            def refmodel = m.deserialize(inputStream)
+            ontology = m.fromRefOntoUML(refmodel)
+        }
+        return ontology
     }
  }
 

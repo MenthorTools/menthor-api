@@ -79,7 +79,7 @@ class OntoUMLClass extends MClass {
 
     void setQualityStereotype(QualityStereotype stereo) { qualityStereotype = stereo }
 
-    void setIsAbstract(boolean value){ isAbstract  = value}
+    void setIsAbstract(boolean value){ abstract_  = value}
 
     void setIsDerived(boolean value){ derived = value }
 

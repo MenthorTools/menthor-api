@@ -93,7 +93,7 @@ trait OntoUMLVisitor {
         commentMap.keySet().each{ a -> if(commentMap.get(a)!=null) println commentMap.get(a)}
     }
 
-    public Object visit(OntoUMLModel ontomodel){
+    Object visit(OntoUMLModel ontomodel){
         this.model = visitModel(ontomodel)
         packagesMap.put(ontomodel as OntoUMLPackage,model)
         runPackages(ontomodel, model)

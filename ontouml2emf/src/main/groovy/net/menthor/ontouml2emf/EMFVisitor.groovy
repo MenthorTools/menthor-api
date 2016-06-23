@@ -33,6 +33,7 @@ import net.menthor.ontouml.OntoUMLGeneralizationSet
 import net.menthor.ontouml.OntoUMLModel
 import net.menthor.ontouml.OntoUMLRelationship
 import net.menthor.core.traits.MContainer
+import org.eclipse.emf.common.util.EList
 
 trait EMFVisitor {
 
@@ -93,12 +94,12 @@ trait EMFVisitor {
         return ontomodel;
     }
 
-    private void runModel(Object srcModel) {
+    void runModel(Object srcModel) {
         this.ontomodel = visitModel(srcModel)
         srcPackagesMap.put(srcModel, ontomodel)
     }
 
-    private void runPackages (Object srcPack, MContainer ontoParentPackage){
+    void runPackages (Object srcPack, MContainer ontoParentPackage){
         srcPack."${accessMethod}"().each{ srcElem ->
             if(packageClass.isInstance(srcElem)){
                 OntoUMLPackage ontopackage = visitPackage(srcElem, ontoParentPackage)
@@ -108,7 +109,7 @@ trait EMFVisitor {
         }
     }
 
-    private void runTypes(){
+    void runTypes(){
         srcPackagesMap.keySet().each{ srcpack ->
             srcpack."${accessMethod}"().each{ srcelem ->
                 if(classClass.isInstance(srcelem)){
@@ -123,7 +124,7 @@ trait EMFVisitor {
         }
     }
 
-    private void runRelationships(){
+    void runRelationships(){
         srcPackagesMap.keySet().each{ srcpack ->
             srcpack."${accessMethod}"().each { srcelem ->
                 if (relationshipClass.isInstance(srcelem)){
@@ -134,7 +135,7 @@ trait EMFVisitor {
         }
     }
 
-    private void runAttributes(){
+    void runAttributes(){
         srcPackagesMap.keySet().each{ srcpack ->
             srcpack."${accessMethod}"().each { srcelem ->
                 if(classClass.isInstance(srcelem) || dataTypeClass.isInstance(srcelem)){
@@ -149,7 +150,7 @@ trait EMFVisitor {
         }
     }
 
-    private void runEndPoints(){
+    void runEndPoints(){
         srcPackagesMap.keySet().each{ srcpack ->
             srcpack."${accessMethod}"().each { srcelem ->
                 if(relationshipClass.isInstance(srcelem)){
@@ -162,13 +163,13 @@ trait EMFVisitor {
         }
     }
 
-    private void runSubsetsAndRedefines(){
+    void runSubsetsAndRedefines(){
         srcEndpointsMap.keySet().each { srcep ->
            visitSubsetsAndRedefines(srcep)
         }
     }
 
-   private void runGeneralizations(){
+   void runGeneralizations(){
         srcPackagesMap.keySet().each {  srcpack ->
             srcpack."${accessMethod}"().each { srcelem ->
                 if(typeClass.isInstance(srcelem) || relationshipClass.isInstance(srcelem)) {
@@ -183,7 +184,7 @@ trait EMFVisitor {
         }
     }
 
-    private void runGeneralizationSets(){
+    void runGeneralizationSets(){
         srcPackagesMap.keySet().each { srcpack ->
             srcpack."${accessMethod}"().each { srcelem ->
                 if(genSetClass.isInstance(srcelem)) {

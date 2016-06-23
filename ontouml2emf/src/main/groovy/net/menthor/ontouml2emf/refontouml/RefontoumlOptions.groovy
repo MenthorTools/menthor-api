@@ -26,7 +26,7 @@ package net.menthor.ontouml2emf.refontouml
 /**
  * @author John Guerson
  */
-class RefOntoOptions {
+class RefontoumlOptions {
 
     boolean ignorePackages = false
 }

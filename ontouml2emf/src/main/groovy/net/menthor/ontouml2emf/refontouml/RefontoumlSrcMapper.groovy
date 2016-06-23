@@ -49,7 +49,9 @@ import net.menthor.ontouml2emf.EMFVisitor
 import org.eclipse.emf.common.util.URI
 import org.eclipse.emf.ecore.resource.Resource
 import org.eclipse.emf.ecore.resource.ResourceSet
+import org.eclipse.emf.ecore.resource.impl.ResourceImpl
 import org.eclipse.emf.ecore.resource.impl.ResourceSetImpl
+import org.eclipse.emf.ecore.util.ExtendedMetaData
 import org.eclipse.emf.ecore.xmi.XMLResource
 import org.eclipse.emf.ecore.xmi.impl.XMLParserPoolImpl
 import org.eclipse.emf.ecore.xmi.impl.XMLResourceImpl
@@ -59,12 +61,29 @@ import java.text.Normalizer
 /**
  * @author John Guerson
  */
-class RefOntoSrcMapper implements EMFVisitor {
+class RefontoumlSrcMapper implements EMFVisitor {
 
     OntoUMLModel fromRefOntoUML(RefOntoUML.Package refmodel){
         setup(RefOntoUML.Package.class,RefOntoUML.Type.class, RefOntoUML.Class.class, RefOntoUML.DataType.class,
                 RefOntoUML.Association.class,RefOntoUML.Generalization.class, RefOntoUML.Property.class, RefOntoUML.GeneralizationSet.class)
         return visit(refmodel)
+    }
+
+    def RefOntoUML.Package deserialize(InputStream is){
+        ResourceSet rset = new ResourceSetImpl();
+        rset.getResourceFactoryRegistry().getExtensionToFactoryMap().put("refontouml",new RefOntoUMLResourceFactoryImpl());
+        rset.getPackageRegistry().put(RefOntoUML.RefOntoUMLPackage.eNS_URI,	RefOntoUML.RefOntoUMLPackage.eINSTANCE);
+        Resource resource = rset.createResource(URI.createURI("fakeFile.refontouml"))
+        /**Load options that significantly improved the performance of loading EMF instances*/
+        Map<Object,Object> loadOptions = ((XMLResourceImpl)resource).getDefaultLoadOptions();
+        loadOptions.put(XMLResource.OPTION_USE_PARSER_POOL, new XMLParserPoolImpl());
+        loadOptions.put(XMLResource.OPTION_DEFER_IDREF_RESOLUTION, Boolean.TRUE);
+        try {
+            resource.load(is, loadOptions);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return resource.getContents().get(0)
     }
 
     def RefOntoUML.Package deserialize(String path){
@@ -74,7 +93,7 @@ class RefOntoSrcMapper implements EMFVisitor {
         File file = new File(path);
         URI fileURI = URI.createFileURI(file.getAbsolutePath());
         Resource resource = rset.createResource(fileURI);
-        /**Load options that significantly improved the performance of loading EMF OntoUMLModel instances*/
+        /**Load options that significantly improved the performance of loading EMF instances*/
         Map<Object,Object> loadOptions = ((XMLResourceImpl)resource).getDefaultLoadOptions();
         loadOptions.put(XMLResource.OPTION_USE_PARSER_POOL, new XMLParserPoolImpl());
         loadOptions.put(XMLResource.OPTION_DEFER_IDREF_RESOLUTION, Boolean.TRUE);
@@ -291,7 +310,7 @@ class RefOntoSrcMapper implements EMFVisitor {
         MClassifier ontospecific = srcClassMap.get(specific)
         if(ontospecific==null) ontospecific = srcDataTypeMap.get(specific)
         if(ontospecific==null) ontospecific = srcRelationshipsMap.get(specific)
-        OntoUMLGeneralization ontog = OntoUMLFactory.createGeneralization(ontogeneral, ontospecific, srcPackagesMap.get(g.eContainer()))
+        OntoUMLGeneralization ontog = OntoUMLFactory.createGeneralization(ontospecific, ontogeneral, srcPackagesMap.get(g.eContainer()))
         return ontog
     }
 
