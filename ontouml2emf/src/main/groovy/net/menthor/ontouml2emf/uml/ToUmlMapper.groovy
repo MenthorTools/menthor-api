@@ -61,18 +61,18 @@ import org.eclipse.uml2.uml.resource.UMLResource
 /**
  * @author John Guerson
  */
-class UmlTgtMapper implements OntoUMLVisitor {
+class ToUmlMapper implements OntoUMLVisitor {
 
     static UMLFactory theUmlFactory = UMLFactory.eINSTANCE
 
     UmlOptions options = new UmlOptions()
 
-    Object toUML(OntoUMLModel ontomodel, UmlOptions opt) {
+    Object run(OntoUMLModel ontomodel, UmlOptions opt) {
         this.options = opt
         return visit(ontomodel)
     }
 
-    Object toUML(OntoUMLModel ontomodel) {
+    Object run(OntoUMLModel ontomodel) {
         return visit(ontomodel)
     }
 

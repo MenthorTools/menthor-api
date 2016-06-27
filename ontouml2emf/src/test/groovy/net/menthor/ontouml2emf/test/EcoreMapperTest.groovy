@@ -32,18 +32,18 @@ class EcoreMapperTest {
 
     static void main(String[] args) {
         toEcoreTest()
-        fromEcoreTest()
+        //fromEcoreTest()
     }
 
     static void fromEcoreTest() {
-
+        //no implementation yet
     }
 
     static void toEcoreTest(){
 
         println "======== ECORE: CAR ACCIDENT TEST ========="
-        File input = new File("ontouml2emf/src/test/resources/CarAccident.json")
-        File output = new File("ontouml2emf/src/test/resources/CarAccident.ecore")
+        File input = new File("ontouml2emf/src/test/resources/json/car-accident.json")
+        File output = new File("ontouml2emf/src/test/resources/ecore/car-accident.ecore")
         OntoUMLSerializer s = new OntoUMLSerializer()
         OntoUMLModel ontomodel = s.fromJSONFile(input)
         def mapper = new EcoreMapper()
@@ -55,8 +55,8 @@ class EcoreMapperTest {
         println ""
 
         println "======== ECORE: ECG TEST =================="
-        input = new File("ontouml2emf/src/test/resources/ecg.json")
-        output = new File("ontouml2emf/src/test/resources/ecg.ecore")
+        input = new File("ontouml2emf/src/test/resources/json/ecg.json")
+        output = new File("ontouml2emf/src/test/resources/ecore/ecg.ecore")
         s = new OntoUMLSerializer()
         ontomodel = s.fromJSONFile(input)
         mapper = new EcoreMapper()
@@ -68,8 +68,8 @@ class EcoreMapperTest {
         println ""
 
         println "======== ECORE: FOOTBALL TEST ===========-="
-        input = new File("ontouml2emf/src/test/resources/football.json")
-        output = new File("ontouml2emf/src/test/resources/football.ecore")
+        input = new File("ontouml2emf/src/test/resources/json/football.json")
+        output = new File("ontouml2emf/src/test/resources/ecore/football.ecore")
         s = new OntoUMLSerializer()
         ontomodel = s.fromJSONFile(input)
         mapper = new EcoreMapper()
@@ -81,8 +81,8 @@ class EcoreMapperTest {
         println ""
 
         println "======== ECORE: BIO-ENTITY TEST ==========="
-        input = new File("ontouml2emf/src/test/resources/bio-entity.json")
-        output = new File("ontouml2emf/src/test/resources/bio-entity.ecore")
+        input = new File("ontouml2emf/src/test/resources/json/bio-entity.json")
+        output = new File("ontouml2emf/src/test/resources/ecore/bio-entity.ecore")
         s = new OntoUMLSerializer()
         ontomodel = s.fromJSONFile(input)
         mapper = new EcoreMapper()
@@ -94,8 +94,8 @@ class EcoreMapperTest {
         println ""
 
         println "======== ECORE: UFO-S TEST ================"
-        input = new File("ontouml2emf/src/test/resources/ufo-s.json")
-        output = new File("ontouml2emf/src/test/resources/ufo-s.ecore")
+        input = new File("ontouml2emf/src/test/resources/json/ufo-s.json")
+        output = new File("ontouml2emf/src/test/resources/ecore/ufo-s.ecore")
         s = new OntoUMLSerializer()
         ontomodel = s.fromJSONFile(input)
         mapper = new EcoreMapper()

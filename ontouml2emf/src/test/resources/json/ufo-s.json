@@ -28,11 +28,11 @@
                             "classifier": 3,
                             "name": "customer_action",
                             "lowerBound": -1,
-                            "uniqueName": "customer_action",
                             "upperBound": -1,
-                            "ordered": false,
+                            "dependency": false,
                             "derived": false,
-                            "dependency": false
+                            "uniqueName": "customer_action",
+                            "ordered": false
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -49,13 +49,14 @@
                             },
                             "name": "service_customer",
                             "lowerBound": 1,
-                            "uniqueName": "service_customer",
                             "upperBound": 1,
-                            "ordered": false,
+                            "dependency": false,
                             "derived": false,
-                            "dependency": false
+                            "uniqueName": "service_customer",
+                            "ordered": false
                         }
                     ],
+                    "stereotype": "PARTICIPATION",
                     "name": "performedBy",
                     "uniqueName": "performedBy"
                 },
@@ -68,11 +69,11 @@
                             "@id": 9,
                             "classifier": 3,
                             "name": "customer_action",
-                            "uniqueName": "customer_action2",
                             "upperBound": -1,
-                            "ordered": false,
+                            "dependency": false,
                             "derived": false,
-                            "dependency": false
+                            "uniqueName": "customer_action2",
+                            "ordered": false
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -89,11 +90,11 @@
                             },
                             "name": "service_customer_commitment",
                             "lowerBound": 1,
-                            "uniqueName": "service_customer_commitment",
                             "upperBound": -1,
-                            "ordered": false,
+                            "dependency": false,
                             "derived": false,
-                            "dependency": false
+                            "uniqueName": "service_customer_commitment",
+                            "ordered": false
                         }
                     ],
                     "name": "motivatedBy",
@@ -118,24 +119,25 @@
                             },
                             "name": "service_delivery",
                             "lowerBound": 1,
-                            "uniqueName": "service_delivery",
                             "upperBound": 1,
-                            "ordered": false,
+                            "dependency": false,
                             "derived": false,
-                            "dependency": false
+                            "uniqueName": "service_delivery",
+                            "ordered": false
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
                             "@id": 15,
                             "classifier": 3,
                             "name": "customer_action",
-                            "uniqueName": "customer_action3",
                             "upperBound": -1,
-                            "ordered": false,
+                            "dependency": false,
                             "derived": false,
-                            "dependency": false
+                            "uniqueName": "customer_action3",
+                            "ordered": false
                         }
                     ],
+                    "stereotype": "SUBEVENTOF",
                     "uniqueName": "OntoUMLRelationship141"
                 },
                 {
@@ -158,11 +160,11 @@
                             "classifier": 16,
                             "name": "hired_provider_action",
                             "lowerBound": -1,
-                            "uniqueName": "hired_provider_action",
                             "upperBound": -1,
-                            "ordered": false,
+                            "dependency": false,
                             "derived": false,
-                            "dependency": false
+                            "uniqueName": "hired_provider_action",
+                            "ordered": false
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -179,13 +181,14 @@
                             },
                             "name": "hired_service_provider",
                             "lowerBound": 1,
-                            "uniqueName": "hired_service_provider",
                             "upperBound": 1,
-                            "ordered": false,
+                            "dependency": false,
                             "derived": false,
-                            "dependency": false
+                            "uniqueName": "hired_service_provider",
+                            "ordered": false
                         }
                     ],
+                    "stereotype": "PARTICIPATION",
                     "name": "performedBy",
                     "uniqueName": "performedBy2"
                 },
@@ -198,11 +201,11 @@
                             "@id": 22,
                             "classifier": 16,
                             "name": "hired_provider_action",
-                            "uniqueName": "hired_provider_action2",
                             "upperBound": -1,
-                            "ordered": false,
+                            "dependency": false,
                             "derived": false,
-                            "dependency": false
+                            "uniqueName": "hired_provider_action2",
+                            "ordered": false
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -219,11 +222,11 @@
                             },
                             "name": "hired_service_provider_commitment",
                             "lowerBound": 1,
-                            "uniqueName": "hired_service_provider_commitment",
                             "upperBound": -1,
-                            "ordered": false,
+                            "dependency": false,
                             "derived": false,
-                            "dependency": false
+                            "uniqueName": "hired_service_provider_commitment",
+                            "ordered": false
                         }
                     ],
                     "name": "motivatedBy",
@@ -239,24 +242,25 @@
                             "classifier": 14,
                             "name": "service_delivery",
                             "lowerBound": 1,
-                            "uniqueName": "service_delivery2",
                             "upperBound": 1,
-                            "ordered": false,
+                            "dependency": false,
                             "derived": false,
-                            "dependency": false
+                            "uniqueName": "service_delivery2",
+                            "ordered": false
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
                             "@id": 27,
                             "classifier": 16,
                             "name": "hired_provider_action",
-                            "uniqueName": "hired_provider_action3",
                             "upperBound": -1,
-                            "ordered": false,
+                            "dependency": false,
                             "derived": false,
-                            "dependency": false
+                            "uniqueName": "hired_provider_action3",
+                            "ordered": false
                         }
                     ],
+                    "stereotype": "SUBEVENTOF",
                     "uniqueName": "OntoUMLRelationship142"
                 },
                 {
@@ -279,11 +283,11 @@
                             "classifier": 28,
                             "name": "hired_provider_customer_interaction",
                             "lowerBound": -1,
-                            "uniqueName": "hired_provider_customer_interaction",
                             "upperBound": -1,
-                            "ordered": false,
+                            "dependency": false,
                             "derived": false,
-                            "dependency": false
+                            "uniqueName": "hired_provider_customer_interaction",
+                            "ordered": false
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -291,13 +295,14 @@
                             "classifier": 7,
                             "name": "service_customer",
                             "lowerBound": 1,
-                            "uniqueName": "service_customer2",
                             "upperBound": -1,
-                            "ordered": false,
+                            "dependency": false,
                             "derived": false,
-                            "dependency": false
+                            "uniqueName": "service_customer2",
+                            "ordered": false
                         }
                     ],
+                    "stereotype": "PARTICIPATION",
                     "name": "participatesIn",
                     "uniqueName": "participatesIn"
                 },
@@ -310,11 +315,11 @@
                             "@id": 33,
                             "classifier": 28,
                             "name": "hired_provider_customer_interaction",
-                            "uniqueName": "hired_provider_customer_interaction2",
                             "upperBound": -1,
-                            "ordered": false,
+                            "dependency": false,
                             "derived": false,
-                            "dependency": false
+                            "uniqueName": "hired_provider_customer_interaction2",
+                            "ordered": false
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -322,11 +327,11 @@
                             "classifier": 11,
                             "name": "service_customer_commitment",
                             "lowerBound": 1,
-                            "uniqueName": "service_customer_commitment2",
                             "upperBound": -1,
-                            "ordered": false,
+                            "dependency": false,
                             "derived": false,
-                            "dependency": false
+                            "uniqueName": "service_customer_commitment2",
+                            "ordered": false
                         }
                     ],
                     "name": "motivatedBy",
@@ -341,11 +346,11 @@
                             "@id": 36,
                             "classifier": 28,
                             "name": "hired_provider_customer_interaction",
-                            "uniqueName": "hired_provider_customer_interaction3",
                             "upperBound": -1,
-                            "ordered": false,
+                            "dependency": false,
                             "derived": false,
-                            "dependency": false
+                            "uniqueName": "hired_provider_customer_interaction3",
+                            "ordered": false
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -353,11 +358,11 @@
                             "classifier": 24,
                             "name": "hired_service_provider_commitment",
                             "lowerBound": 1,
-                            "uniqueName": "hired_service_provider_commitment2",
                             "upperBound": -1,
-                            "ordered": false,
+                            "dependency": false,
                             "derived": false,
-                            "dependency": false
+                            "uniqueName": "hired_service_provider_commitment2",
+                            "ordered": false
                         }
                     ],
                     "uniqueName": "OntoUMLRelationship143"
@@ -371,11 +376,11 @@
                             "@id": 39,
                             "classifier": 28,
                             "name": "hired_provider_customer_interaction",
-                            "uniqueName": "hired_provider_customer_interaction4",
                             "upperBound": -1,
-                            "ordered": false,
+                            "dependency": false,
                             "derived": false,
-                            "dependency": false
+                            "uniqueName": "hired_provider_customer_interaction4",
+                            "ordered": false
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -383,13 +388,14 @@
                             "classifier": 20,
                             "name": "hired_service_provider",
                             "lowerBound": 1,
-                            "uniqueName": "hired_service_provider2",
                             "upperBound": 1,
-                            "ordered": false,
+                            "dependency": false,
                             "derived": false,
-                            "dependency": false
+                            "uniqueName": "hired_service_provider2",
+                            "ordered": false
                         }
                     ],
+                    "stereotype": "PARTICIPATION",
                     "name": "participatesIn",
                     "uniqueName": "participatesIn2"
                 },
@@ -403,24 +409,25 @@
                             "classifier": 14,
                             "name": "service_delivery",
                             "lowerBound": 1,
-                            "uniqueName": "service_delivery3",
                             "upperBound": 1,
-                            "ordered": false,
+                            "dependency": false,
                             "derived": false,
-                            "dependency": false
+                            "uniqueName": "service_delivery3",
+                            "ordered": false
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
                             "@id": 43,
                             "classifier": 28,
                             "name": "hired_provider_customer_interaction",
-                            "uniqueName": "hired_provider_customer_interaction5",
                             "upperBound": -1,
-                            "ordered": false,
+                            "dependency": false,
                             "derived": false,
-                            "dependency": false
+                            "uniqueName": "hired_provider_customer_interaction5",
+                            "ordered": false
                         }
                     ],
+                    "stereotype": "SUBEVENTOF",
                     "uniqueName": "OntoUMLRelationship144"
                 },
                 14,
@@ -434,11 +441,11 @@
                             "classifier": 14,
                             "name": "service_delivery",
                             "lowerBound": -1,
-                            "uniqueName": "service_delivery4",
                             "upperBound": -1,
-                            "ordered": false,
+                            "dependency": false,
                             "derived": false,
-                            "dependency": false
+                            "uniqueName": "service_delivery4",
+                            "ordered": false
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -455,11 +462,11 @@
                             },
                             "name": "service_agreement",
                             "lowerBound": 1,
-                            "uniqueName": "service_agreement",
                             "upperBound": 1,
-                            "ordered": false,
+                            "dependency": false,
                             "derived": false,
-                            "dependency": false
+                            "uniqueName": "service_agreement",
+                            "ordered": false
                         }
                     ],
                     "uniqueName": "OntoUMLRelationship145"
@@ -492,11 +499,11 @@
                             },
                             "name": "service_customer_claim",
                             "lowerBound": 1,
-                            "uniqueName": "service_customer_claim",
                             "upperBound": -1,
-                            "ordered": false,
+                            "dependency": false,
                             "derived": false,
-                            "dependency": false
+                            "uniqueName": "service_customer_claim",
+                            "ordered": false
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -504,11 +511,11 @@
                             "classifier": 20,
                             "name": "hired_service_provider",
                             "lowerBound": 1,
-                            "uniqueName": "hired_service_provider3",
                             "upperBound": 1,
-                            "ordered": false,
+                            "dependency": false,
                             "derived": false,
-                            "dependency": false
+                            "uniqueName": "hired_service_provider3",
+                            "ordered": false
                         }
                     ],
                     "name": "externallyDependentOn",
@@ -523,11 +530,11 @@
                             "@id": 54,
                             "classifier": 11,
                             "name": "service_customer_commitment",
-                            "uniqueName": "service_customer_commitment3",
                             "upperBound": -1,
-                            "ordered": false,
+                            "dependency": false,
                             "derived": false,
-                            "dependency": false
+                            "uniqueName": "service_customer_commitment3",
+                            "ordered": false
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -535,11 +542,11 @@
                             "classifier": 20,
                             "name": "hired_service_provider",
                             "lowerBound": 1,
-                            "uniqueName": "hired_service_provider4",
                             "upperBound": 1,
-                            "ordered": false,
+                            "dependency": false,
                             "derived": false,
-                            "dependency": false
+                            "uniqueName": "hired_service_provider4",
+                            "ordered": false
                         }
                     ],
                     "name": "externallyDependentOn",
@@ -555,11 +562,11 @@
                             "classifier": 47,
                             "name": "service_agreement",
                             "lowerBound": 1,
-                            "uniqueName": "service_agreement2",
                             "upperBound": -1,
-                            "ordered": false,
+                            "dependency": false,
                             "derived": false,
-                            "dependency": false
+                            "uniqueName": "service_agreement2",
+                            "ordered": false
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -567,13 +574,14 @@
                             "classifier": 20,
                             "name": "hired_service_provider",
                             "lowerBound": 1,
-                            "uniqueName": "hired_service_provider5",
                             "upperBound": 1,
-                            "ordered": false,
+                            "dependency": false,
                             "derived": false,
-                            "dependency": false
+                            "uniqueName": "hired_service_provider5",
+                            "ordered": false
                         }
                     ],
+                    "stereotype": "MEDIATION",
                     "name": "achieves",
                     "uniqueName": "achieves"
                 },
@@ -595,11 +603,11 @@
                                 "uniqueName": "HiredServiceProviderClaim"
                             },
                             "name": "hired_service_provider_claim",
-                            "uniqueName": "hired_service_provider_claim",
                             "upperBound": -1,
-                            "ordered": false,
+                            "dependency": false,
                             "derived": false,
-                            "dependency": false
+                            "uniqueName": "hired_service_provider_claim",
+                            "ordered": false
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -607,13 +615,14 @@
                             "classifier": 20,
                             "name": "hired_service_provider",
                             "lowerBound": 1,
-                            "uniqueName": "hired_service_provider6",
                             "upperBound": 1,
-                            "ordered": false,
+                            "dependency": false,
                             "derived": false,
-                            "dependency": false
+                            "uniqueName": "hired_service_provider6",
+                            "ordered": false
                         }
                     ],
+                    "stereotype": "CHARACTERIZATION",
                     "reflexivityValue": "IRREFLEXIVE",
                     "symmetryValue": "ASSYMETRIC",
                     "ciclicityValue": "ACYCLIC",
@@ -630,11 +639,11 @@
                             "classifier": 24,
                             "name": "hired_service_provider_commitment",
                             "lowerBound": 1,
-                            "uniqueName": "hired_service_provider_commitment3",
                             "upperBound": -1,
-                            "ordered": false,
+                            "dependency": false,
                             "derived": false,
-                            "dependency": false
+                            "uniqueName": "hired_service_provider_commitment3",
+                            "ordered": false
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -642,13 +651,14 @@
                             "classifier": 20,
                             "name": "hired_service_provider",
                             "lowerBound": 1,
-                            "uniqueName": "hired_service_provider7",
                             "upperBound": 1,
-                            "ordered": false,
+                            "dependency": false,
                             "derived": false,
-                            "dependency": false
+                            "uniqueName": "hired_service_provider7",
+                            "ordered": false
                         }
                     ],
+                    "stereotype": "CHARACTERIZATION",
                     "reflexivityValue": "IRREFLEXIVE",
                     "symmetryValue": "ASSYMETRIC",
                     "ciclicityValue": "ACYCLIC",
@@ -665,11 +675,11 @@
                             "@id": 67,
                             "classifier": 61,
                             "name": "hired_service_provider_claim",
-                            "uniqueName": "hired_service_provider_claim2",
                             "upperBound": -1,
-                            "ordered": false,
+                            "dependency": false,
                             "derived": false,
-                            "dependency": false
+                            "uniqueName": "hired_service_provider_claim2",
+                            "ordered": false
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -677,11 +687,11 @@
                             "classifier": 7,
                             "name": "service_customer",
                             "lowerBound": 1,
-                            "uniqueName": "service_customer3",
                             "upperBound": -1,
-                            "ordered": false,
+                            "dependency": false,
                             "derived": false,
-                            "dependency": false
+                            "uniqueName": "service_customer3",
+                            "ordered": false
                         }
                     ],
                     "name": "externallyDependentOn",
@@ -697,24 +707,25 @@
                             "classifier": 47,
                             "name": "service_agreement",
                             "lowerBound": 1,
-                            "uniqueName": "service_agreement3",
                             "upperBound": 1,
-                            "ordered": false,
+                            "dependency": false,
                             "derived": false,
-                            "dependency": false
+                            "uniqueName": "service_agreement3",
+                            "ordered": false
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
                             "@id": 71,
                             "classifier": 61,
                             "name": "hired_service_provider_claim",
-                            "uniqueName": "hired_service_provider_claim3",
                             "upperBound": -1,
-                            "ordered": false,
+                            "dependency": false,
                             "derived": false,
-                            "dependency": false
+                            "uniqueName": "hired_service_provider_claim3",
+                            "ordered": false
                         }
                     ],
+                    "stereotype": "COMPONENTOF",
                     "reflexivityValue": "IRREFLEXIVE",
                     "symmetryValue": "ASSYMETRIC",
                     "transitivityValue": "TRANSITIVE",
@@ -732,11 +743,11 @@
                             "classifier": 24,
                             "name": "hired_service_provider_commitment",
                             "lowerBound": 1,
-                            "uniqueName": "hired_service_provider_commitment4",
                             "upperBound": -1,
-                            "ordered": false,
+                            "dependency": false,
                             "derived": false,
-                            "dependency": false
+                            "uniqueName": "hired_service_provider_commitment4",
+                            "ordered": false
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -744,11 +755,11 @@
                             "classifier": 7,
                             "name": "service_customer",
                             "lowerBound": 1,
-                            "uniqueName": "service_customer4",
                             "upperBound": -1,
-                            "ordered": false,
+                            "dependency": false,
                             "derived": false,
-                            "dependency": false
+                            "uniqueName": "service_customer4",
+                            "ordered": false
                         }
                     ],
                     "name": "externallyDependentOn",
@@ -764,11 +775,11 @@
                             "classifier": 47,
                             "name": "service_agreement",
                             "lowerBound": 1,
-                            "uniqueName": "service_agreement4",
                             "upperBound": 1,
-                            "ordered": false,
+                            "dependency": false,
                             "derived": false,
-                            "dependency": false
+                            "uniqueName": "service_agreement4",
+                            "ordered": false
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -776,13 +787,14 @@
                             "classifier": 24,
                             "name": "hired_service_provider_commitment",
                             "lowerBound": 1,
-                            "uniqueName": "hired_service_provider_commitment5",
                             "upperBound": -1,
-                            "ordered": false,
+                            "dependency": false,
                             "derived": false,
-                            "dependency": false
+                            "uniqueName": "hired_service_provider_commitment5",
+                            "ordered": false
                         }
                     ],
+                    "stereotype": "COMPONENTOF",
                     "reflexivityValue": "IRREFLEXIVE",
                     "symmetryValue": "ASSYMETRIC",
                     "transitivityValue": "TRANSITIVE",
@@ -800,24 +812,25 @@
                             "classifier": 47,
                             "name": "service_agreement",
                             "lowerBound": 1,
-                            "uniqueName": "service_agreement5",
                             "upperBound": 1,
-                            "ordered": false,
+                            "dependency": false,
                             "derived": false,
-                            "dependency": false
+                            "uniqueName": "service_agreement5",
+                            "ordered": false
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
                             "@id": 80,
                             "classifier": 11,
                             "name": "service_customer_commitment",
-                            "uniqueName": "service_customer_commitment4",
                             "upperBound": -1,
-                            "ordered": false,
+                            "dependency": false,
                             "derived": false,
-                            "dependency": false
+                            "uniqueName": "service_customer_commitment4",
+                            "ordered": false
                         }
                     ],
+                    "stereotype": "COMPONENTOF",
                     "reflexivityValue": "IRREFLEXIVE",
                     "symmetryValue": "ASSYMETRIC",
                     "transitivityValue": "TRANSITIVE",
@@ -834,11 +847,11 @@
                             "classifier": 47,
                             "name": "service_agreement",
                             "lowerBound": 1,
-                            "uniqueName": "service_agreement6",
                             "upperBound": -1,
-                            "ordered": false,
+                            "dependency": false,
                             "derived": false,
-                            "dependency": false
+                            "uniqueName": "service_agreement6",
+                            "ordered": false
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -854,13 +867,14 @@
                                 "uniqueName": "ServiceAgreementDescription"
                             },
                             "name": "service_agreement_description",
-                            "uniqueName": "service_agreement_description",
                             "upperBound": -1,
-                            "ordered": false,
+                            "dependency": false,
                             "derived": false,
-                            "dependency": false
+                            "uniqueName": "service_agreement_description",
+                            "ordered": false
                         }
                     ],
+                    "stereotype": "MEDIATION",
                     "name": "describes",
                     "uniqueName": "describes"
                 },
@@ -874,11 +888,11 @@
                             "classifier": 47,
                             "name": "service_agreement",
                             "lowerBound": 1,
-                            "uniqueName": "service_agreement7",
                             "upperBound": -1,
-                            "ordered": false,
+                            "dependency": false,
                             "derived": false,
-                            "dependency": false
+                            "uniqueName": "service_agreement7",
+                            "ordered": false
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -886,13 +900,14 @@
                             "classifier": 7,
                             "name": "service_customer",
                             "lowerBound": 1,
-                            "uniqueName": "service_customer5",
                             "upperBound": -1,
-                            "ordered": false,
+                            "dependency": false,
                             "derived": false,
-                            "dependency": false
+                            "uniqueName": "service_customer5",
+                            "ordered": false
                         }
                     ],
+                    "stereotype": "MEDIATION",
                     "name": "achieves",
                     "uniqueName": "achieves2"
                 },
@@ -905,11 +920,11 @@
                             "@id": 89,
                             "classifier": 47,
                             "name": "service_agreement",
-                            "uniqueName": "service_agreement8",
                             "upperBound": -1,
-                            "ordered": false,
+                            "dependency": false,
                             "derived": false,
-                            "dependency": false
+                            "uniqueName": "service_agreement8",
+                            "ordered": false
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -926,11 +941,11 @@
                             },
                             "name": "service_offering",
                             "lowerBound": 1,
-                            "uniqueName": "service_offering",
                             "upperBound": 1,
-                            "ordered": false,
+                            "dependency": false,
                             "derived": false,
-                            "dependency": false
+                            "uniqueName": "service_offering",
+                            "ordered": false
                         }
                     ],
                     "name": "conformsTo",
@@ -946,11 +961,11 @@
                             "classifier": 47,
                             "name": "service_agreement",
                             "lowerBound": 1,
-                            "uniqueName": "service_agreement9",
                             "upperBound": 1,
-                            "ordered": false,
+                            "dependency": false,
                             "derived": false,
-                            "dependency": false
+                            "uniqueName": "service_agreement9",
+                            "ordered": false
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -958,13 +973,14 @@
                             "classifier": 51,
                             "name": "service_customer_claim",
                             "lowerBound": 1,
-                            "uniqueName": "service_customer_claim2",
                             "upperBound": -1,
-                            "ordered": false,
+                            "dependency": false,
                             "derived": false,
-                            "dependency": false
+                            "uniqueName": "service_customer_claim2",
+                            "ordered": false
                         }
                     ],
+                    "stereotype": "COMPONENTOF",
                     "reflexivityValue": "IRREFLEXIVE",
                     "symmetryValue": "ASSYMETRIC",
                     "transitivityValue": "TRANSITIVE",
@@ -990,22 +1006,22 @@
                             },
                             "name": "service_negotiation",
                             "lowerBound": 1,
-                            "uniqueName": "service_negotiation",
                             "upperBound": 1,
-                            "ordered": false,
+                            "dependency": false,
                             "derived": false,
-                            "dependency": false
+                            "uniqueName": "service_negotiation",
+                            "ordered": false
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
                             "@id": 98,
                             "classifier": 47,
                             "name": "service_agreement",
-                            "uniqueName": "service_agreement10",
                             "upperBound": 1,
-                            "ordered": false,
+                            "dependency": false,
                             "derived": false,
-                            "dependency": false
+                            "uniqueName": "service_agreement10",
+                            "ordered": false
                         }
                     ],
                     "name": "resultsIn",
@@ -1022,11 +1038,11 @@
                             "@id": 100,
                             "classifier": 11,
                             "name": "service_customer_commitment",
-                            "uniqueName": "service_customer_commitment5",
                             "upperBound": -1,
-                            "ordered": false,
+                            "dependency": false,
                             "derived": false,
-                            "dependency": false
+                            "uniqueName": "service_customer_commitment5",
+                            "ordered": false
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -1034,13 +1050,14 @@
                             "classifier": 7,
                             "name": "service_customer",
                             "lowerBound": 1,
-                            "uniqueName": "service_customer6",
                             "upperBound": 1,
-                            "ordered": false,
+                            "dependency": false,
                             "derived": false,
-                            "dependency": false
+                            "uniqueName": "service_customer6",
+                            "ordered": false
                         }
                     ],
+                    "stereotype": "CHARACTERIZATION",
                     "reflexivityValue": "IRREFLEXIVE",
                     "symmetryValue": "ASSYMETRIC",
                     "ciclicityValue": "ACYCLIC",
@@ -1057,11 +1074,11 @@
                             "classifier": 51,
                             "name": "service_customer_claim",
                             "lowerBound": 1,
-                            "uniqueName": "service_customer_claim3",
                             "upperBound": -1,
-                            "ordered": false,
+                            "dependency": false,
                             "derived": false,
-                            "dependency": false
+                            "uniqueName": "service_customer_claim3",
+                            "ordered": false
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -1069,13 +1086,14 @@
                             "classifier": 7,
                             "name": "service_customer",
                             "lowerBound": 1,
-                            "uniqueName": "service_customer7",
                             "upperBound": 1,
-                            "ordered": false,
+                            "dependency": false,
                             "derived": false,
-                            "dependency": false
+                            "uniqueName": "service_customer7",
+                            "ordered": false
                         }
                     ],
+                    "stereotype": "CHARACTERIZATION",
                     "reflexivityValue": "IRREFLEXIVE",
                     "symmetryValue": "ASSYMETRIC",
                     "ciclicityValue": "ACYCLIC",
@@ -1095,11 +1113,11 @@
                             "classifier": 97,
                             "name": "service_negotiation",
                             "lowerBound": -1,
-                            "uniqueName": "service_negotiation2",
                             "upperBound": -1,
-                            "ordered": false,
+                            "dependency": false,
                             "derived": false,
-                            "dependency": false
+                            "uniqueName": "service_negotiation2",
+                            "ordered": false
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -1116,13 +1134,14 @@
                             },
                             "name": "target_customer",
                             "lowerBound": 1,
-                            "uniqueName": "target_customer",
                             "upperBound": -1,
-                            "ordered": false,
+                            "dependency": false,
                             "derived": false,
-                            "dependency": false
+                            "uniqueName": "target_customer",
+                            "ordered": false
                         }
                     ],
+                    "stereotype": "PARTICIPATION",
                     "name": "participatesIn",
                     "uniqueName": "participatesIn3"
                 },
@@ -1136,11 +1155,11 @@
                             "classifier": 97,
                             "name": "service_negotiation",
                             "lowerBound": -1,
-                            "uniqueName": "service_negotiation3",
                             "upperBound": -1,
-                            "ordered": false,
+                            "dependency": false,
                             "derived": false,
-                            "dependency": false
+                            "uniqueName": "service_negotiation3",
+                            "ordered": false
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -1157,13 +1176,14 @@
                             },
                             "name": "service_provider",
                             "lowerBound": 1,
-                            "uniqueName": "service_provider",
                             "upperBound": 1,
-                            "ordered": false,
+                            "dependency": false,
                             "derived": false,
-                            "dependency": false
+                            "uniqueName": "service_provider",
+                            "ordered": false
                         }
                     ],
+                    "stereotype": "PARTICIPATION",
                     "name": "participatesIn",
                     "uniqueName": "participatesIn4"
                 },
@@ -1177,11 +1197,11 @@
                             "classifier": 97,
                             "name": "service_negotiation",
                             "lowerBound": -1,
-                            "uniqueName": "service_negotiation4",
                             "upperBound": -1,
-                            "ordered": false,
+                            "dependency": false,
                             "derived": false,
-                            "dependency": false
+                            "uniqueName": "service_negotiation4",
+                            "ordered": false
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -1189,11 +1209,11 @@
                             "classifier": 91,
                             "name": "service_offering",
                             "lowerBound": 1,
-                            "uniqueName": "service_offering2",
                             "upperBound": 1,
-                            "ordered": false,
+                            "dependency": false,
                             "derived": false,
-                            "dependency": false
+                            "uniqueName": "service_offering2",
+                            "ordered": false
                         }
                     ],
                     "name": "regardsTo",
@@ -1249,11 +1269,11 @@
                             "classifier": 120,
                             "name": "service_oferring_commitment",
                             "lowerBound": 1,
-                            "uniqueName": "service_oferring_commitment",
                             "upperBound": -1,
-                            "ordered": false,
+                            "dependency": false,
                             "derived": false,
-                            "dependency": false
+                            "uniqueName": "service_oferring_commitment",
+                            "ordered": false
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -1270,11 +1290,11 @@
                             },
                             "name": "target_customer_community",
                             "lowerBound": 1,
-                            "uniqueName": "target_customer_community",
                             "upperBound": 1,
-                            "ordered": false,
+                            "dependency": false,
                             "derived": false,
-                            "dependency": false
+                            "uniqueName": "target_customer_community",
+                            "ordered": false
                         }
                     ],
                     "name": "externallyDependentOn",
@@ -1290,11 +1310,11 @@
                             "classifier": 120,
                             "name": "service_oferring_commitment",
                             "lowerBound": 1,
-                            "uniqueName": "service_oferring_commitment2",
                             "upperBound": -1,
-                            "ordered": false,
+                            "dependency": false,
                             "derived": false,
-                            "dependency": false
+                            "uniqueName": "service_oferring_commitment2",
+                            "ordered": false
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -1302,13 +1322,14 @@
                             "classifier": 112,
                             "name": "service_provider",
                             "lowerBound": 1,
-                            "uniqueName": "service_provider2",
                             "upperBound": 1,
-                            "ordered": false,
+                            "dependency": false,
                             "derived": false,
-                            "dependency": false
+                            "uniqueName": "service_provider2",
+                            "ordered": false
                         }
                     ],
+                    "stereotype": "CHARACTERIZATION",
                     "reflexivityValue": "IRREFLEXIVE",
                     "symmetryValue": "ASSYMETRIC",
                     "ciclicityValue": "ACYCLIC",
@@ -1325,11 +1346,11 @@
                             "classifier": 91,
                             "name": "service_offering",
                             "lowerBound": 1,
-                            "uniqueName": "service_offering3",
                             "upperBound": 1,
-                            "ordered": false,
+                            "dependency": false,
                             "derived": false,
-                            "dependency": false
+                            "uniqueName": "service_offering3",
+                            "ordered": false
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -1337,13 +1358,14 @@
                             "classifier": 120,
                             "name": "service_oferring_commitment",
                             "lowerBound": 1,
-                            "uniqueName": "service_oferring_commitment3",
                             "upperBound": -1,
-                            "ordered": false,
+                            "dependency": false,
                             "derived": false,
-                            "dependency": false
+                            "uniqueName": "service_oferring_commitment3",
+                            "ordered": false
                         }
                     ],
+                    "stereotype": "COMPONENTOF",
                     "reflexivityValue": "IRREFLEXIVE",
                     "symmetryValue": "ASSYMETRIC",
                     "transitivityValue": "TRANSITIVE",
@@ -1370,11 +1392,11 @@
                             "classifier": 131,
                             "name": "service_offer",
                             "lowerBound": 1,
-                            "uniqueName": "service_offer",
                             "upperBound": 1,
-                            "ordered": false,
+                            "dependency": false,
                             "derived": false,
-                            "dependency": false
+                            "uniqueName": "service_offer",
+                            "ordered": false
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -1382,11 +1404,11 @@
                             "classifier": 91,
                             "name": "service_offering",
                             "lowerBound": 1,
-                            "uniqueName": "service_offering4",
                             "upperBound": 1,
-                            "ordered": false,
+                            "dependency": false,
                             "derived": false,
-                            "dependency": false
+                            "uniqueName": "service_offering4",
+                            "ordered": false
                         }
                     ],
                     "name": "creates",
@@ -1403,11 +1425,11 @@
                             "classifier": 91,
                             "name": "service_offering",
                             "lowerBound": 1,
-                            "uniqueName": "service_offering5",
                             "upperBound": -1,
-                            "ordered": false,
+                            "dependency": false,
                             "derived": false,
-                            "dependency": false
+                            "uniqueName": "service_offering5",
+                            "ordered": false
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -1415,13 +1437,14 @@
                             "classifier": 124,
                             "name": "target_customer_community",
                             "lowerBound": 1,
-                            "uniqueName": "target_customer_community2",
                             "upperBound": 1,
-                            "ordered": false,
+                            "dependency": false,
                             "derived": false,
-                            "dependency": false
+                            "uniqueName": "target_customer_community2",
+                            "ordered": false
                         }
                     ],
+                    "stereotype": "MEDIATION",
                     "name": "offeredTo",
                     "uniqueName": "offeredTo"
                 },
@@ -1435,11 +1458,11 @@
                             "classifier": 91,
                             "name": "service_offering",
                             "lowerBound": 1,
-                            "uniqueName": "service_offering6",
                             "upperBound": -1,
-                            "ordered": false,
+                            "dependency": false,
                             "derived": false,
-                            "dependency": false
+                            "uniqueName": "service_offering6",
+                            "ordered": false
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -1447,13 +1470,14 @@
                             "classifier": 112,
                             "name": "service_provider",
                             "lowerBound": 1,
-                            "uniqueName": "service_provider3",
                             "upperBound": 1,
-                            "ordered": false,
+                            "dependency": false,
                             "derived": false,
-                            "dependency": false
+                            "uniqueName": "service_provider3",
+                            "ordered": false
                         }
                     ],
+                    "stereotype": "MEDIATION",
                     "name": "provides",
                     "uniqueName": "provides"
                 },
@@ -1467,11 +1491,11 @@
                             "classifier": 91,
                             "name": "service_offering",
                             "lowerBound": 1,
-                            "uniqueName": "service_offering7",
                             "upperBound": 1,
-                            "ordered": false,
+                            "dependency": false,
                             "derived": false,
-                            "dependency": false
+                            "uniqueName": "service_offering7",
+                            "ordered": false
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -1487,13 +1511,14 @@
                                 "uniqueName": "ServiceOfferingDescription"
                             },
                             "name": "service_offering_description",
-                            "uniqueName": "service_offering_description",
                             "upperBound": -1,
-                            "ordered": false,
+                            "dependency": false,
                             "derived": false,
-                            "dependency": false
+                            "uniqueName": "service_offering_description",
+                            "ordered": false
                         }
                     ],
+                    "stereotype": "MEDIATION",
                     "name": "describes",
                     "uniqueName": "describes2"
                 },
@@ -1507,11 +1532,11 @@
                             "classifier": 91,
                             "name": "service_offering",
                             "lowerBound": 1,
-                            "uniqueName": "service_offering8",
                             "upperBound": 1,
-                            "ordered": false,
+                            "dependency": false,
                             "derived": false,
-                            "dependency": false
+                            "uniqueName": "service_offering8",
+                            "ordered": false
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -1528,13 +1553,14 @@
                             },
                             "name": "servive_oferring_claim",
                             "lowerBound": 1,
-                            "uniqueName": "servive_oferring_claim",
                             "upperBound": -1,
-                            "ordered": false,
+                            "dependency": false,
                             "derived": false,
-                            "dependency": false
+                            "uniqueName": "servive_oferring_claim",
+                            "ordered": false
                         }
                     ],
+                    "stereotype": "COMPONENTOF",
                     "reflexivityValue": "IRREFLEXIVE",
                     "symmetryValue": "ASSYMETRIC",
                     "transitivityValue": "TRANSITIVE",
@@ -1553,11 +1579,11 @@
                             "classifier": 148,
                             "name": "servive_oferring_claim",
                             "lowerBound": 1,
-                            "uniqueName": "servive_oferring_claim2",
                             "upperBound": -1,
-                            "ordered": false,
+                            "dependency": false,
                             "derived": false,
-                            "dependency": false
+                            "uniqueName": "servive_oferring_claim2",
+                            "ordered": false
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -1565,11 +1591,11 @@
                             "classifier": 112,
                             "name": "service_provider",
                             "lowerBound": 1,
-                            "uniqueName": "service_provider4",
                             "upperBound": 1,
-                            "ordered": false,
+                            "dependency": false,
                             "derived": false,
-                            "dependency": false
+                            "uniqueName": "service_provider4",
+                            "ordered": false
                         }
                     ],
                     "name": "externallyDependentOn",
@@ -1586,11 +1612,11 @@
                             "classifier": 148,
                             "name": "servive_oferring_claim",
                             "lowerBound": 1,
-                            "uniqueName": "servive_oferring_claim3",
                             "upperBound": -1,
-                            "ordered": false,
+                            "dependency": false,
                             "derived": false,
-                            "dependency": false
+                            "uniqueName": "servive_oferring_claim3",
+                            "ordered": false
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -1598,13 +1624,14 @@
                             "classifier": 124,
                             "name": "target_customer_community",
                             "lowerBound": 1,
-                            "uniqueName": "target_customer_community3",
                             "upperBound": 1,
-                            "ordered": false,
+                            "dependency": false,
                             "derived": false,
-                            "dependency": false
+                            "uniqueName": "target_customer_community3",
+                            "ordered": false
                         }
                     ],
+                    "stereotype": "CHARACTERIZATION",
                     "reflexivityValue": "IRREFLEXIVE",
                     "symmetryValue": "ASSYMETRIC",
                     "ciclicityValue": "ACYCLIC",
@@ -1622,11 +1649,11 @@
                             "classifier": 124,
                             "name": "target_customer_community",
                             "lowerBound": 1,
-                            "uniqueName": "target_customer_community4",
                             "upperBound": -1,
-                            "ordered": false,
+                            "dependency": false,
                             "derived": false,
-                            "dependency": false
+                            "uniqueName": "target_customer_community4",
+                            "ordered": false
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -1634,13 +1661,14 @@
                             "classifier": 108,
                             "name": "target_customer",
                             "lowerBound": 1,
-                            "uniqueName": "target_customer2",
                             "upperBound": -1,
-                            "ordered": false,
+                            "dependency": false,
                             "derived": false,
-                            "dependency": false
+                            "uniqueName": "target_customer2",
+                            "ordered": false
                         }
                     ],
+                    "stereotype": "MEMBEROF",
                     "reflexivityValue": "IRREFLEXIVE",
                     "symmetryValue": "ASSYMETRIC",
                     "transitivityValue": "INTRANSITIVE",

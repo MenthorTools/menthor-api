@@ -165,7 +165,7 @@
         <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
       </ownedEnd>
     </packagedElement>
-    <packagedElement xsi:type="RefOntoUML:Association" name="achieves" memberEnd="//@packagedElement.1/@packagedElement.11/@ownedEnd.0 //@packagedElement.1/@packagedElement.11/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.1/@packagedElement.11/@ownedEnd.0 //@packagedElement.1/@packagedElement.11/@ownedEnd.1">
+    <packagedElement xsi:type="RefOntoUML:Mediation" name="achieves" memberEnd="//@packagedElement.1/@packagedElement.11/@ownedEnd.0 //@packagedElement.1/@packagedElement.11/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.1/@packagedElement.11/@ownedEnd.0 //@packagedElement.1/@packagedElement.11/@ownedEnd.1">
       <ownedEnd name="service_agreement" type="//@packagedElement.1/@packagedElement.3" association="//@packagedElement.1/@packagedElement.11">
         <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="-1"/>
         <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
@@ -175,7 +175,7 @@
         <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
       </ownedEnd>
     </packagedElement>
-    <packagedElement xsi:type="RefOntoUML:Association" name="inheresIn" memberEnd="//@packagedElement.1/@packagedElement.12/@ownedEnd.0 //@packagedElement.1/@packagedElement.12/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.1/@packagedElement.12/@ownedEnd.0 //@packagedElement.1/@packagedElement.12/@ownedEnd.1">
+    <packagedElement xsi:type="RefOntoUML:Characterization" name="inheresIn" memberEnd="//@packagedElement.1/@packagedElement.12/@ownedEnd.0 //@packagedElement.1/@packagedElement.12/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.1/@packagedElement.12/@ownedEnd.0 //@packagedElement.1/@packagedElement.12/@ownedEnd.1">
       <ownedEnd name="hired_service_provider_claim" type="//@packagedElement.1/@packagedElement.1" association="//@packagedElement.1/@packagedElement.12">
         <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="-1"/>
         <lowerValue xsi:type="RefOntoUML:LiteralInteger"/>
@@ -185,7 +185,7 @@
         <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
       </ownedEnd>
     </packagedElement>
-    <packagedElement xsi:type="RefOntoUML:Association" name="inheresIn" memberEnd="//@packagedElement.1/@packagedElement.13/@ownedEnd.0 //@packagedElement.1/@packagedElement.13/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.1/@packagedElement.13/@ownedEnd.0 //@packagedElement.1/@packagedElement.13/@ownedEnd.1">
+    <packagedElement xsi:type="RefOntoUML:Characterization" name="inheresIn" memberEnd="//@packagedElement.1/@packagedElement.13/@ownedEnd.0 //@packagedElement.1/@packagedElement.13/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.1/@packagedElement.13/@ownedEnd.0 //@packagedElement.1/@packagedElement.13/@ownedEnd.1">
       <ownedEnd name="hired_service_provider_commitment" type="//@packagedElement.1/@packagedElement.2" association="//@packagedElement.1/@packagedElement.13">
         <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="-1"/>
         <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
@@ -205,7 +205,7 @@
         <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
       </ownedEnd>
     </packagedElement>
-    <packagedElement xsi:type="RefOntoUML:Association" memberEnd="//@packagedElement.1/@packagedElement.15/@ownedEnd.0 //@packagedElement.1/@packagedElement.15/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.1/@packagedElement.15/@ownedEnd.0 //@packagedElement.1/@packagedElement.15/@ownedEnd.1">
+    <packagedElement xsi:type="RefOntoUML:componentOf" memberEnd="//@packagedElement.1/@packagedElement.15/@ownedEnd.0 //@packagedElement.1/@packagedElement.15/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.1/@packagedElement.15/@ownedEnd.0 //@packagedElement.1/@packagedElement.15/@ownedEnd.1">
       <name xsi:nil="true"/>
       <ownedEnd name="service_agreement" type="//@packagedElement.1/@packagedElement.3" association="//@packagedElement.1/@packagedElement.15">
         <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="1"/>
@@ -226,7 +226,7 @@
         <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
       </ownedEnd>
     </packagedElement>
-    <packagedElement xsi:type="RefOntoUML:Association" memberEnd="//@packagedElement.1/@packagedElement.17/@ownedEnd.0 //@packagedElement.1/@packagedElement.17/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.1/@packagedElement.17/@ownedEnd.0 //@packagedElement.1/@packagedElement.17/@ownedEnd.1">
+    <packagedElement xsi:type="RefOntoUML:componentOf" memberEnd="//@packagedElement.1/@packagedElement.17/@ownedEnd.0 //@packagedElement.1/@packagedElement.17/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.1/@packagedElement.17/@ownedEnd.0 //@packagedElement.1/@packagedElement.17/@ownedEnd.1">
       <name xsi:nil="true"/>
       <ownedEnd name="service_agreement" type="//@packagedElement.1/@packagedElement.3" association="//@packagedElement.1/@packagedElement.17">
         <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="1"/>
@@ -237,7 +237,7 @@
         <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
       </ownedEnd>
     </packagedElement>
-    <packagedElement xsi:type="RefOntoUML:Association" memberEnd="//@packagedElement.1/@packagedElement.18/@ownedEnd.0 //@packagedElement.1/@packagedElement.18/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.1/@packagedElement.18/@ownedEnd.0 //@packagedElement.1/@packagedElement.18/@ownedEnd.1">
+    <packagedElement xsi:type="RefOntoUML:componentOf" memberEnd="//@packagedElement.1/@packagedElement.18/@ownedEnd.0 //@packagedElement.1/@packagedElement.18/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.1/@packagedElement.18/@ownedEnd.0 //@packagedElement.1/@packagedElement.18/@ownedEnd.1">
       <name xsi:nil="true"/>
       <ownedEnd name="service_agreement" type="//@packagedElement.1/@packagedElement.3" association="//@packagedElement.1/@packagedElement.18">
         <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="1"/>
@@ -248,7 +248,7 @@
         <lowerValue xsi:type="RefOntoUML:LiteralInteger"/>
       </ownedEnd>
     </packagedElement>
-    <packagedElement xsi:type="RefOntoUML:Association" name="describes" memberEnd="//@packagedElement.1/@packagedElement.19/@ownedEnd.0 //@packagedElement.1/@packagedElement.19/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.1/@packagedElement.19/@ownedEnd.0 //@packagedElement.1/@packagedElement.19/@ownedEnd.1">
+    <packagedElement xsi:type="RefOntoUML:Mediation" name="describes" memberEnd="//@packagedElement.1/@packagedElement.19/@ownedEnd.0 //@packagedElement.1/@packagedElement.19/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.1/@packagedElement.19/@ownedEnd.0 //@packagedElement.1/@packagedElement.19/@ownedEnd.1">
       <ownedEnd name="service_agreement" type="//@packagedElement.1/@packagedElement.3" association="//@packagedElement.1/@packagedElement.19">
         <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="-1"/>
         <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
@@ -258,7 +258,7 @@
         <lowerValue xsi:type="RefOntoUML:LiteralInteger"/>
       </ownedEnd>
     </packagedElement>
-    <packagedElement xsi:type="RefOntoUML:Association" name="achieves" memberEnd="//@packagedElement.1/@packagedElement.20/@ownedEnd.0 //@packagedElement.1/@packagedElement.20/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.1/@packagedElement.20/@ownedEnd.0 //@packagedElement.1/@packagedElement.20/@ownedEnd.1">
+    <packagedElement xsi:type="RefOntoUML:Mediation" name="achieves" memberEnd="//@packagedElement.1/@packagedElement.20/@ownedEnd.0 //@packagedElement.1/@packagedElement.20/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.1/@packagedElement.20/@ownedEnd.0 //@packagedElement.1/@packagedElement.20/@ownedEnd.1">
       <ownedEnd name="service_agreement" type="//@packagedElement.1/@packagedElement.3" association="//@packagedElement.1/@packagedElement.20">
         <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="-1"/>
         <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
@@ -278,7 +278,7 @@
         <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
       </ownedEnd>
     </packagedElement>
-    <packagedElement xsi:type="RefOntoUML:Association" memberEnd="//@packagedElement.1/@packagedElement.22/@ownedEnd.0 //@packagedElement.1/@packagedElement.22/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.1/@packagedElement.22/@ownedEnd.0 //@packagedElement.1/@packagedElement.22/@ownedEnd.1">
+    <packagedElement xsi:type="RefOntoUML:componentOf" memberEnd="//@packagedElement.1/@packagedElement.22/@ownedEnd.0 //@packagedElement.1/@packagedElement.22/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.1/@packagedElement.22/@ownedEnd.0 //@packagedElement.1/@packagedElement.22/@ownedEnd.1">
       <name xsi:nil="true"/>
       <ownedEnd name="service_agreement" type="//@packagedElement.1/@packagedElement.3" association="//@packagedElement.1/@packagedElement.22">
         <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="1"/>
@@ -299,7 +299,7 @@
         <lowerValue xsi:type="RefOntoUML:LiteralInteger"/>
       </ownedEnd>
     </packagedElement>
-    <packagedElement xsi:type="RefOntoUML:Association" name="inheresIn" memberEnd="//@packagedElement.1/@packagedElement.24/@ownedEnd.0 //@packagedElement.1/@packagedElement.24/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.1/@packagedElement.24/@ownedEnd.0 //@packagedElement.1/@packagedElement.24/@ownedEnd.1">
+    <packagedElement xsi:type="RefOntoUML:Characterization" name="inheresIn" memberEnd="//@packagedElement.1/@packagedElement.24/@ownedEnd.0 //@packagedElement.1/@packagedElement.24/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.1/@packagedElement.24/@ownedEnd.0 //@packagedElement.1/@packagedElement.24/@ownedEnd.1">
       <ownedEnd name="service_customer_commitment" type="//@packagedElement.1/@packagedElement.7" association="//@packagedElement.1/@packagedElement.24">
         <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="-1"/>
         <lowerValue xsi:type="RefOntoUML:LiteralInteger"/>
@@ -309,7 +309,7 @@
         <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
       </ownedEnd>
     </packagedElement>
-    <packagedElement xsi:type="RefOntoUML:Association" name="inheresIn" memberEnd="//@packagedElement.1/@packagedElement.25/@ownedEnd.0 //@packagedElement.1/@packagedElement.25/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.1/@packagedElement.25/@ownedEnd.0 //@packagedElement.1/@packagedElement.25/@ownedEnd.1">
+    <packagedElement xsi:type="RefOntoUML:Characterization" name="inheresIn" memberEnd="//@packagedElement.1/@packagedElement.25/@ownedEnd.0 //@packagedElement.1/@packagedElement.25/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.1/@packagedElement.25/@ownedEnd.0 //@packagedElement.1/@packagedElement.25/@ownedEnd.1">
       <ownedEnd name="service_customer_claim" type="//@packagedElement.1/@packagedElement.6" association="//@packagedElement.1/@packagedElement.25">
         <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="-1"/>
         <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
@@ -374,7 +374,7 @@
         <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
       </ownedEnd>
     </packagedElement>
-    <packagedElement xsi:type="RefOntoUML:Association" name="inheresIn" memberEnd="//@packagedElement.2/@packagedElement.10/@ownedEnd.0 //@packagedElement.2/@packagedElement.10/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.2/@packagedElement.10/@ownedEnd.0 //@packagedElement.2/@packagedElement.10/@ownedEnd.1">
+    <packagedElement xsi:type="RefOntoUML:Characterization" name="inheresIn" memberEnd="//@packagedElement.2/@packagedElement.10/@ownedEnd.0 //@packagedElement.2/@packagedElement.10/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.2/@packagedElement.10/@ownedEnd.0 //@packagedElement.2/@packagedElement.10/@ownedEnd.1">
       <ownedEnd name="service_oferring_commitment" type="//@packagedElement.2/@packagedElement.1" association="//@packagedElement.2/@packagedElement.10">
         <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="-1"/>
         <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
@@ -384,7 +384,7 @@
         <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
       </ownedEnd>
     </packagedElement>
-    <packagedElement xsi:type="RefOntoUML:Association" memberEnd="//@packagedElement.2/@packagedElement.11/@ownedEnd.0 //@packagedElement.2/@packagedElement.11/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.2/@packagedElement.11/@ownedEnd.0 //@packagedElement.2/@packagedElement.11/@ownedEnd.1">
+    <packagedElement xsi:type="RefOntoUML:componentOf" memberEnd="//@packagedElement.2/@packagedElement.11/@ownedEnd.0 //@packagedElement.2/@packagedElement.11/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.2/@packagedElement.11/@ownedEnd.0 //@packagedElement.2/@packagedElement.11/@ownedEnd.1">
       <name xsi:nil="true"/>
       <ownedEnd name="service_offering" type="//@packagedElement.2/@packagedElement.3" association="//@packagedElement.2/@packagedElement.11">
         <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="1"/>
@@ -405,7 +405,7 @@
         <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
       </ownedEnd>
     </packagedElement>
-    <packagedElement xsi:type="RefOntoUML:Association" name="offeredTo" memberEnd="//@packagedElement.2/@packagedElement.13/@ownedEnd.0 //@packagedElement.2/@packagedElement.13/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.2/@packagedElement.13/@ownedEnd.0 //@packagedElement.2/@packagedElement.13/@ownedEnd.1">
+    <packagedElement xsi:type="RefOntoUML:Mediation" name="offeredTo" memberEnd="//@packagedElement.2/@packagedElement.13/@ownedEnd.0 //@packagedElement.2/@packagedElement.13/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.2/@packagedElement.13/@ownedEnd.0 //@packagedElement.2/@packagedElement.13/@ownedEnd.1">
       <ownedEnd name="service_offering" type="//@packagedElement.2/@packagedElement.3" association="//@packagedElement.2/@packagedElement.13">
         <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="-1"/>
         <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
@@ -415,7 +415,7 @@
         <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
       </ownedEnd>
     </packagedElement>
-    <packagedElement xsi:type="RefOntoUML:Association" name="provides" memberEnd="//@packagedElement.2/@packagedElement.14/@ownedEnd.0 //@packagedElement.2/@packagedElement.14/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.2/@packagedElement.14/@ownedEnd.0 //@packagedElement.2/@packagedElement.14/@ownedEnd.1">
+    <packagedElement xsi:type="RefOntoUML:Mediation" name="provides" memberEnd="//@packagedElement.2/@packagedElement.14/@ownedEnd.0 //@packagedElement.2/@packagedElement.14/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.2/@packagedElement.14/@ownedEnd.0 //@packagedElement.2/@packagedElement.14/@ownedEnd.1">
       <ownedEnd name="service_offering" type="//@packagedElement.2/@packagedElement.3" association="//@packagedElement.2/@packagedElement.14">
         <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="-1"/>
         <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
@@ -425,7 +425,7 @@
         <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
       </ownedEnd>
     </packagedElement>
-    <packagedElement xsi:type="RefOntoUML:Association" name="describes" memberEnd="//@packagedElement.2/@packagedElement.15/@ownedEnd.0 //@packagedElement.2/@packagedElement.15/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.2/@packagedElement.15/@ownedEnd.0 //@packagedElement.2/@packagedElement.15/@ownedEnd.1">
+    <packagedElement xsi:type="RefOntoUML:Mediation" name="describes" memberEnd="//@packagedElement.2/@packagedElement.15/@ownedEnd.0 //@packagedElement.2/@packagedElement.15/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.2/@packagedElement.15/@ownedEnd.0 //@packagedElement.2/@packagedElement.15/@ownedEnd.1">
       <ownedEnd name="service_offering" type="//@packagedElement.2/@packagedElement.3" association="//@packagedElement.2/@packagedElement.15">
         <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="1"/>
         <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
@@ -435,7 +435,7 @@
         <lowerValue xsi:type="RefOntoUML:LiteralInteger"/>
       </ownedEnd>
     </packagedElement>
-    <packagedElement xsi:type="RefOntoUML:Association" memberEnd="//@packagedElement.2/@packagedElement.16/@ownedEnd.0 //@packagedElement.2/@packagedElement.16/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.2/@packagedElement.16/@ownedEnd.0 //@packagedElement.2/@packagedElement.16/@ownedEnd.1">
+    <packagedElement xsi:type="RefOntoUML:componentOf" memberEnd="//@packagedElement.2/@packagedElement.16/@ownedEnd.0 //@packagedElement.2/@packagedElement.16/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.2/@packagedElement.16/@ownedEnd.0 //@packagedElement.2/@packagedElement.16/@ownedEnd.1">
       <name xsi:nil="true"/>
       <ownedEnd name="service_offering" type="//@packagedElement.2/@packagedElement.3" association="//@packagedElement.2/@packagedElement.16">
         <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="1"/>
@@ -456,7 +456,7 @@
         <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
       </ownedEnd>
     </packagedElement>
-    <packagedElement xsi:type="RefOntoUML:Association" name="inheresIn" memberEnd="//@packagedElement.2/@packagedElement.18/@ownedEnd.0 //@packagedElement.2/@packagedElement.18/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.2/@packagedElement.18/@ownedEnd.0 //@packagedElement.2/@packagedElement.18/@ownedEnd.1">
+    <packagedElement xsi:type="RefOntoUML:Characterization" name="inheresIn" memberEnd="//@packagedElement.2/@packagedElement.18/@ownedEnd.0 //@packagedElement.2/@packagedElement.18/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.2/@packagedElement.18/@ownedEnd.0 //@packagedElement.2/@packagedElement.18/@ownedEnd.1">
       <ownedEnd name="servive_oferring_claim" type="//@packagedElement.2/@packagedElement.6" association="//@packagedElement.2/@packagedElement.18">
         <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="-1"/>
         <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
@@ -466,7 +466,7 @@
         <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
       </ownedEnd>
     </packagedElement>
-    <packagedElement xsi:type="RefOntoUML:Association" name="memberOf" memberEnd="//@packagedElement.2/@packagedElement.19/@ownedEnd.0 //@packagedElement.2/@packagedElement.19/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.2/@packagedElement.19/@ownedEnd.0 //@packagedElement.2/@packagedElement.19/@ownedEnd.1">
+    <packagedElement xsi:type="RefOntoUML:memberOf" name="memberOf" memberEnd="//@packagedElement.2/@packagedElement.19/@ownedEnd.0 //@packagedElement.2/@packagedElement.19/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.2/@packagedElement.19/@ownedEnd.0 //@packagedElement.2/@packagedElement.19/@ownedEnd.1">
       <ownedEnd name="target_customer_community" type="//@packagedElement.2/@packagedElement.8" association="//@packagedElement.2/@packagedElement.19">
         <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="-1"/>
         <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>

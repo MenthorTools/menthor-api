@@ -61,9 +61,16 @@ import java.text.Normalizer
 /**
  * @author John Guerson
  */
-class RefontoumlSrcMapper implements EMFVisitor {
+class FromRefontoumlMapper implements EMFVisitor {
 
-    OntoUMLModel fromRefOntoUML(RefOntoUML.Package refmodel){
+    RefontoumlOptions options = new RefontoumlOptions()
+
+    OntoUMLModel run(RefOntoUML.Package refmodel, RefontoumlOptions options){
+        this.options = options
+        run(refmodel)
+    }
+
+    OntoUMLModel run(RefOntoUML.Package refmodel){
         setup(RefOntoUML.Package.class,RefOntoUML.Type.class, RefOntoUML.Class.class, RefOntoUML.DataType.class,
                 RefOntoUML.Association.class,RefOntoUML.Generalization.class, RefOntoUML.Property.class, RefOntoUML.GeneralizationSet.class)
         return visit(refmodel)
@@ -127,19 +134,22 @@ class RefontoumlSrcMapper implements EMFVisitor {
         ClassStereotype cs = ClassStereotype.getEnum(getRefStereotype(refElem))
         if(cs==null){
             if(refElem instanceof RefOntoUML.Kind) cs = ClassStereotype.KIND
-            if(refElem instanceof RefOntoUML.Quantity) cs = ClassStereotype.QUANTITY
-            if(refElem instanceof RefOntoUML.Collective) cs = ClassStereotype.COLLECTIVE
-            if(refElem instanceof RefOntoUML.SubKind) cs = ClassStereotype.SUBKIND
-            if(refElem instanceof RefOntoUML.Phase) cs = ClassStereotype.PHASE
-            if(refElem instanceof RefOntoUML.Role) cs = ClassStereotype.ROLE
-            if(refElem instanceof RefOntoUML.RoleMixin) cs = ClassStereotype.ROLEMIXIN
-            if(refElem instanceof RefOntoUML.Category) cs = ClassStereotype.CATEGORY
-            if(refElem instanceof RefOntoUML.Mixin) cs = ClassStereotype.MIXIN
-            if(refElem instanceof RefOntoUML.Relator) cs = ClassStereotype.RELATOR
-            if(refElem instanceof RefOntoUML.Mode) cs = ClassStereotype.MODE
-            if(refElem instanceof RefOntoUML.PerceivableQuality) cs = ClassStereotype.QUALITY
-            if(refElem instanceof RefOntoUML.NonPerceivableQuality) cs = ClassStereotype.QUALITY
-            if(refElem instanceof RefOntoUML.NominalQuality) cs = ClassStereotype.QUALITY
+            else if(refElem instanceof RefOntoUML.Quantity) cs = ClassStereotype.QUANTITY
+            else if(refElem instanceof RefOntoUML.Collective) cs = ClassStereotype.COLLECTIVE
+            else if(refElem instanceof RefOntoUML.SubKind) cs = ClassStereotype.SUBKIND
+            else if(refElem instanceof RefOntoUML.Phase) cs = ClassStereotype.PHASE
+            else if(refElem instanceof RefOntoUML.Role) cs = ClassStereotype.ROLE
+            else if(refElem instanceof RefOntoUML.RoleMixin) cs = ClassStereotype.ROLEMIXIN
+            else if(refElem instanceof RefOntoUML.Category) cs = ClassStereotype.CATEGORY
+            else if(refElem instanceof RefOntoUML.Mixin) cs = ClassStereotype.MIXIN
+            else if(refElem instanceof RefOntoUML.Relator) cs = ClassStereotype.RELATOR
+            else if(refElem instanceof RefOntoUML.Mode) cs = ClassStereotype.MODE
+            else if(refElem instanceof RefOntoUML.PerceivableQuality) cs = ClassStereotype.QUALITY
+            else if(refElem instanceof RefOntoUML.NonPerceivableQuality) cs = ClassStereotype.QUALITY
+            else if(refElem instanceof RefOntoUML.NominalQuality) cs = ClassStereotype.QUALITY
+            else{
+                if(options.assumeClassAsEvent) cs = ClassStereotype.EVENT
+            }
         }
         return cs
     }

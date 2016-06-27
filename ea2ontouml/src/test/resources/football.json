@@ -81,8 +81,8 @@
                             "upperBound": 1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "disputa_por_pnalti"
+                            "uniqueName": "disputa_por_pnalti",
+                            "ordered": false
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -102,8 +102,8 @@
                             "upperBound": -1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "lance_de_disputa_por_pnalti"
+                            "uniqueName": "lance_de_disputa_por_pnalti",
+                            "ordered": false
                         }
                     ],
                     "stereotype": "SUBEVENTOF",
@@ -132,8 +132,8 @@
                             "upperBound": 1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "etapa_de_disputa2"
+                            "uniqueName": "etapa_de_disputa2",
+                            "ordered": false
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -153,8 +153,8 @@
                             "upperBound": -1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "lance"
+                            "uniqueName": "lance",
+                            "ordered": false
                         }
                     ],
                     "stereotype": "SUBEVENTOF",
@@ -193,8 +193,8 @@
                             "upperBound": 1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "tempo_regulamentar"
+                            "uniqueName": "tempo_regulamentar",
+                            "ordered": false
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -205,8 +205,8 @@
                             "upperBound": -1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "lance_de_disputa_comum"
+                            "uniqueName": "lance_de_disputa_comum",
+                            "ordered": false
                         }
                     ],
                     "stereotype": "SUBEVENTOF",
@@ -234,8 +234,8 @@
                             "upperBound": 1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "prorrogao"
+                            "uniqueName": "prorrogao",
+                            "ordered": false
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -246,8 +246,8 @@
                             "upperBound": -1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "lance_de_disputa_comum2"
+                            "uniqueName": "lance_de_disputa_comum2",
+                            "ordered": false
                         }
                     ],
                     "stereotype": "SUBEVENTOF",
@@ -383,8 +383,8 @@
                             "upperBound": 1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "falta_cometida"
+                            "uniqueName": "falta_cometida",
+                            "ordered": false
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -404,8 +404,8 @@
                             "upperBound": 1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "punio"
+                            "uniqueName": "punio",
+                            "ordered": false
                         }
                     ],
                     "stereotype": "CAUSATION",
@@ -434,8 +434,8 @@
                             "upperBound": 1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "falta_complexa"
+                            "uniqueName": "falta_complexa",
+                            "ordered": false
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -455,8 +455,8 @@
                             "upperBound": 1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "falta_individual_de_jogo"
+                            "uniqueName": "falta_individual_de_jogo",
+                            "ordered": false
                         }
                     ],
                     "stereotype": "SUBEVENTOF",
@@ -475,8 +475,8 @@
                             "upperBound": 1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "falta_complexa2"
+                            "uniqueName": "falta_complexa2",
+                            "ordered": false
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -496,8 +496,8 @@
                             "upperBound": -1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "falta_recebida"
+                            "uniqueName": "falta_recebida",
+                            "ordered": false
                         }
                     ],
                     "stereotype": "SUBEVENTOF",
@@ -688,8 +688,8 @@
                             "upperBound": 1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "assistncia"
+                            "uniqueName": "assistncia",
+                            "ordered": false
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -709,8 +709,8 @@
                             "upperBound": 1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "f_gol_convertido"
+                            "uniqueName": "f_gol_convertido",
+                            "ordered": false
                         }
                     ],
                     "stereotype": "CAUSATION",
@@ -768,8 +768,8 @@
                             "upperBound": 1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "f_bloqueada"
+                            "uniqueName": "f_bloqueada",
+                            "ordered": false
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -780,8 +780,8 @@
                             "upperBound": 1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "bloqueio2"
+                            "uniqueName": "bloqueio2",
+                            "ordered": false
                         }
                     ],
                     "stereotype": "SUBEVENTOF",
@@ -879,8 +879,8 @@
                             "upperBound": 1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "f_defendida"
+                            "uniqueName": "f_defendida",
+                            "ordered": false
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -891,8 +891,8 @@
                             "upperBound": 1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "defesa2"
+                            "uniqueName": "defesa2",
+                            "ordered": false
                         }
                     ],
                     "stereotype": "SUBEVENTOF",
@@ -942,8 +942,8 @@
                             "upperBound": 1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "f_bloqueada2"
+                            "uniqueName": "f_bloqueada2",
+                            "ordered": false
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -954,8 +954,8 @@
                             "upperBound": 1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "f_gol_interceptado"
+                            "uniqueName": "f_gol_interceptado",
+                            "ordered": false
                         }
                     ],
                     "stereotype": "SUBEVENTOF",
@@ -974,8 +974,8 @@
                             "upperBound": 1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "f_defendida2"
+                            "uniqueName": "f_defendida2",
+                            "ordered": false
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -986,8 +986,8 @@
                             "upperBound": 1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "f_gol_interceptado2"
+                            "uniqueName": "f_gol_interceptado2",
+                            "ordered": false
                         }
                     ],
                     "stereotype": "SUBEVENTOF",
@@ -1056,8 +1056,8 @@
                             "upperBound": 1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "recuo_irregular"
+                            "uniqueName": "recuo_irregular",
+                            "ordered": false
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -1068,8 +1068,8 @@
                             "upperBound": -1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "p_comum"
+                            "uniqueName": "p_comum",
+                            "ordered": false
                         }
                     ],
                     "stereotype": "SUBEVENTOF",
@@ -1117,8 +1117,8 @@
                             "upperBound": 1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "impedimento"
+                            "uniqueName": "impedimento",
+                            "ordered": false
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -1129,8 +1129,8 @@
                             "upperBound": 1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "p_impedido"
+                            "uniqueName": "p_impedido",
+                            "ordered": false
                         }
                     ],
                     "stereotype": "SUBEVENTOF",
@@ -1349,8 +1349,8 @@
                             "upperBound": 1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "impedimento2"
+                            "uniqueName": "impedimento2",
+                            "ordered": false
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -1370,8 +1370,8 @@
                             "upperBound": 1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "posio_de_impedimento"
+                            "uniqueName": "posio_de_impedimento",
+                            "ordered": false
                         }
                     ],
                     "stereotype": "SUBEVENTOF",
@@ -1401,8 +1401,8 @@
                             "upperBound": 1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "recuo_irregular2"
+                            "uniqueName": "recuo_irregular2",
+                            "ordered": false
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -1413,8 +1413,8 @@
                             "upperBound": -1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "recepo_irregular2"
+                            "uniqueName": "recepo_irregular2",
+                            "ordered": false
                         }
                     ],
                     "stereotype": "SUBEVENTOF",
@@ -1510,8 +1510,8 @@
                             "upperBound": 1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "participao_coletiva3"
+                            "uniqueName": "participao_coletiva3",
+                            "ordered": false
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -1531,8 +1531,8 @@
                             "upperBound": -1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "participao_individual2"
+                            "uniqueName": "participao_individual2",
+                            "ordered": false
                         }
                     ],
                     "stereotype": "SUBEVENTOF",
@@ -1582,8 +1582,8 @@
                             "upperBound": 1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "participao_de_equipe_de_arbitragem3"
+                            "uniqueName": "participao_de_equipe_de_arbitragem3",
+                            "ordered": false
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -1603,8 +1603,8 @@
                             "upperBound": 4,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "participao_de_rbrito2"
+                            "uniqueName": "participao_de_rbrito2",
+                            "ordered": false
                         }
                     ],
                     "stereotype": "SUBEVENTOF",
@@ -1697,8 +1697,8 @@
                     "upperBound": 1,
                     "dependency": false,
                     "derived": false,
-                    "ordered": false,
-                    "uniqueName": "atleta"
+                    "uniqueName": "atleta",
+                    "ordered": false
                 },
                 {
                     "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -1709,8 +1709,8 @@
                     "upperBound": -1,
                     "dependency": false,
                     "derived": false,
-                    "ordered": false,
-                    "uniqueName": "participao_individual"
+                    "uniqueName": "participao_individual",
+                    "ordered": false
                 }
             ],
             "stereotype": "PARTICIPATION",
@@ -1729,8 +1729,8 @@
                     "upperBound": 1,
                     "dependency": false,
                     "derived": false,
-                    "ordered": false,
-                    "uniqueName": "atleta2"
+                    "uniqueName": "atleta2",
+                    "ordered": false
                 },
                 {
                     "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -1741,8 +1741,8 @@
                     "upperBound": -1,
                     "dependency": false,
                     "derived": false,
-                    "ordered": false,
-                    "uniqueName": "lance_individual"
+                    "uniqueName": "lance_individual",
+                    "ordered": false
                 }
             ],
             "stereotype": "PARTICIPATION",
@@ -1770,8 +1770,8 @@
                     "upperBound": 1,
                     "dependency": false,
                     "derived": false,
-                    "ordered": false,
-                    "uniqueName": "equipe"
+                    "uniqueName": "equipe",
+                    "ordered": false
                 },
                 {
                     "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -1782,8 +1782,8 @@
                     "upperBound": 23,
                     "dependency": false,
                     "derived": false,
-                    "ordered": false,
-                    "uniqueName": "atleta3"
+                    "uniqueName": "atleta3",
+                    "ordered": false
                 }
             ],
             "stereotype": "MEMBEROF",
@@ -1816,8 +1816,8 @@
                     "upperBound": 1,
                     "dependency": false,
                     "derived": false,
-                    "ordered": false,
-                    "uniqueName": "bloqueio"
+                    "uniqueName": "bloqueio",
+                    "ordered": false
                 },
                 {
                     "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -1828,8 +1828,8 @@
                     "upperBound": 1,
                     "dependency": false,
                     "derived": false,
-                    "ordered": false,
-                    "uniqueName": "atleta_de_linha"
+                    "uniqueName": "atleta_de_linha",
+                    "ordered": false
                 }
             ],
             "stereotype": "PARTICIPATION",
@@ -1849,8 +1849,8 @@
                     "upperBound": 1,
                     "dependency": false,
                     "derived": false,
-                    "ordered": false,
-                    "uniqueName": "equipe2"
+                    "uniqueName": "equipe2",
+                    "ordered": false
                 },
                 {
                     "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -1861,8 +1861,8 @@
                     "upperBound": -1,
                     "dependency": false,
                     "derived": false,
-                    "ordered": false,
-                    "uniqueName": "participao_coletiva"
+                    "uniqueName": "participao_coletiva",
+                    "ordered": false
                 }
             ],
             "stereotype": "PARTICIPATION",
@@ -1891,8 +1891,8 @@
                     "upperBound": 1,
                     "dependency": false,
                     "derived": false,
-                    "ordered": false,
-                    "uniqueName": "equipe_de_arbitragem"
+                    "uniqueName": "equipe_de_arbitragem",
+                    "ordered": false
                 },
                 {
                     "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -1903,8 +1903,8 @@
                     "upperBound": -1,
                     "dependency": false,
                     "derived": false,
-                    "ordered": false,
-                    "uniqueName": "participao_de_equipe_de_arbitragem"
+                    "uniqueName": "participao_de_equipe_de_arbitragem",
+                    "ordered": false
                 }
             ],
             "stereotype": "PARTICIPATION",
@@ -1923,8 +1923,8 @@
                     "upperBound": 1,
                     "dependency": false,
                     "derived": false,
-                    "ordered": false,
-                    "uniqueName": "equipe_de_arbitragem2"
+                    "uniqueName": "equipe_de_arbitragem2",
+                    "ordered": false
                 },
                 {
                     "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -1944,8 +1944,8 @@
                     "upperBound": 4,
                     "dependency": false,
                     "derived": false,
-                    "ordered": false,
-                    "uniqueName": "rbitro2"
+                    "uniqueName": "rbitro2",
+                    "ordered": false
                 }
             ],
             "stereotype": "MEMBEROF",
@@ -1978,8 +1978,8 @@
                     "upperBound": 1,
                     "dependency": false,
                     "derived": false,
-                    "ordered": false,
-                    "uniqueName": "goleiro"
+                    "uniqueName": "goleiro",
+                    "ordered": false
                 },
                 {
                     "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -1990,8 +1990,8 @@
                     "upperBound": -1,
                     "dependency": false,
                     "derived": false,
-                    "ordered": false,
-                    "uniqueName": "recepo_irregular"
+                    "uniqueName": "recepo_irregular",
+                    "ordered": false
                 }
             ],
             "stereotype": "PARTICIPATION",
@@ -2010,8 +2010,8 @@
                     "upperBound": 1,
                     "dependency": false,
                     "derived": false,
-                    "ordered": false,
-                    "uniqueName": "defesa"
+                    "uniqueName": "defesa",
+                    "ordered": false
                 },
                 {
                     "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -2022,8 +2022,8 @@
                     "upperBound": 1,
                     "dependency": false,
                     "derived": false,
-                    "ordered": false,
-                    "uniqueName": "goleiro2"
+                    "uniqueName": "goleiro2",
+                    "ordered": false
                 }
             ],
             "stereotype": "PARTICIPATION",
@@ -2052,8 +2052,8 @@
                     "upperBound": 1,
                     "dependency": false,
                     "derived": false,
-                    "ordered": false,
-                    "uniqueName": "jogo"
+                    "uniqueName": "jogo",
+                    "ordered": false
                 },
                 {
                     "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -2064,8 +2064,8 @@
                     "upperBound": -1,
                     "dependency": false,
                     "derived": false,
-                    "ordered": false,
-                    "uniqueName": "etapa_de_disputa"
+                    "uniqueName": "etapa_de_disputa",
+                    "ordered": false
                 }
             ],
             "stereotype": "SUBEVENTOF",
@@ -2084,8 +2084,8 @@
                     "upperBound": 1,
                     "dependency": false,
                     "derived": false,
-                    "ordered": false,
-                    "uniqueName": "jogo2"
+                    "uniqueName": "jogo2",
+                    "ordered": false
                 },
                 {
                     "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -2096,8 +2096,8 @@
                     "upperBound": -1,
                     "dependency": false,
                     "derived": false,
-                    "ordered": false,
-                    "uniqueName": "participao_de_equipe_de_arbitragem2"
+                    "uniqueName": "participao_de_equipe_de_arbitragem2",
+                    "ordered": false
                 }
             ],
             "stereotype": "SUBEVENTOF",
@@ -2116,8 +2116,8 @@
                     "upperBound": 1,
                     "dependency": false,
                     "derived": false,
-                    "ordered": false,
-                    "uniqueName": "jogo3"
+                    "uniqueName": "jogo3",
+                    "ordered": false
                 },
                 {
                     "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -2128,8 +2128,8 @@
                     "upperBound": 2,
                     "dependency": false,
                     "derived": false,
-                    "ordered": false,
-                    "uniqueName": "participao_coletiva2"
+                    "uniqueName": "participao_coletiva2",
+                    "ordered": false
                 }
             ],
             "stereotype": "SUBEVENTOF",
@@ -2159,8 +2159,8 @@
                     "upperBound": 1,
                     "dependency": false,
                     "derived": false,
-                    "ordered": false,
-                    "uniqueName": "rbitro3"
+                    "uniqueName": "rbitro3",
+                    "ordered": false
                 },
                 {
                     "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -2171,8 +2171,8 @@
                     "upperBound": -1,
                     "dependency": false,
                     "derived": false,
-                    "ordered": false,
-                    "uniqueName": "participao_de_rbrito"
+                    "uniqueName": "participao_de_rbrito",
+                    "ordered": false
                 }
             ],
             "stereotype": "PARTICIPATION",

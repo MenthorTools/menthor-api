@@ -437,7 +437,7 @@
       <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="-1"/>
     </ownedEnd>
   </packagedElement>
-  <packagedElement xsi:type="RefOntoUML:Association" memberEnd="//@packagedElement.16/@ownedEnd.0 //@packagedElement.16/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.16/@ownedEnd.0 //@packagedElement.16/@ownedEnd.1">
+  <packagedElement xsi:type="RefOntoUML:memberOf" memberEnd="//@packagedElement.16/@ownedEnd.0 //@packagedElement.16/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.16/@ownedEnd.0 //@packagedElement.16/@ownedEnd.1">
     <name xsi:nil="true"/>
     <ownedEnd name="equipe" type="//@packagedElement.8" association="//@packagedElement.16">
       <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="1"/>
@@ -481,7 +481,7 @@
       <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
     </ownedEnd>
   </packagedElement>
-  <packagedElement xsi:type="RefOntoUML:Association" memberEnd="//@packagedElement.20/@ownedEnd.0 //@packagedElement.20/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.20/@ownedEnd.0 //@packagedElement.20/@ownedEnd.1">
+  <packagedElement xsi:type="RefOntoUML:memberOf" memberEnd="//@packagedElement.20/@ownedEnd.0 //@packagedElement.20/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.20/@ownedEnd.0 //@packagedElement.20/@ownedEnd.1">
     <name xsi:nil="true"/>
     <ownedEnd name="equipe_de_arbitragem" type="//@packagedElement.9" association="//@packagedElement.20">
       <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="1"/>

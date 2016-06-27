@@ -3,7 +3,7 @@
   <eClassifiers xsi:type="ecore:EClass" name="Atleta" eSuperTypes="//Pessoa">
     <eStructuralFeatures xsi:type="ecore:EReference" name="participa&#xe7;&#xe3;o_individual" lowerBound="1" upperBound="-1" eType="//Participação%20em%20Jogo/Participação%20Individual" eOpposite="//Participação%20em%20Jogo/Participação%20Individual/atleta"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="lance_individual" lowerBound="-1" upperBound="-1" eType="//Lance%20de%20Disputa%20Comum/Lance%20Individual" eOpposite="//Lance%20de%20Disputa%20Comum/Lance%20Individual/atleta"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="equipe" lowerBound="1" eType="//Equipe" eOpposite="//Equipe/atleta"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="equipe" lowerBound="1" eType="//Equipe" containment="true" eOpposite="//Equipe/atleta"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Atleta de Linha" eSuperTypes="//Atleta">
     <eStructuralFeatures xsi:type="ecore:EReference" name="bloqueio" lowerBound="1" eType="//Lance%20de%20Jogo%20Individual/Bloqueio" eOpposite="//Lance%20de%20Jogo%20Individual/Bloqueio/atleta_de_linha"/>
@@ -27,7 +27,7 @@
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Pessoa"/>
   <eClassifiers xsi:type="ecore:EClass" name="&#xc1;rbitro">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="equipe_de_arbitragem" lowerBound="1" eType="//Equipe%20de%20Arbitragem" eOpposite="//Equipe%20de%20Arbitragem/árbitro"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="equipe_de_arbitragem" lowerBound="1" eType="//Equipe%20de%20Arbitragem" containment="true" eOpposite="//Equipe%20de%20Arbitragem/árbitro"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="participa&#xe7;&#xe3;o_de_&#xe1;rbrito" lowerBound="1" upperBound="-1" eType="//Participação%20em%20Jogo/Participação%20de%20Árbrito" eOpposite="//Participação%20em%20Jogo/Participação%20de%20Árbrito/árbitro"/>
   </eClassifiers>
   <eSubpackages name="Etapas de Jogo">
@@ -40,18 +40,18 @@
       <eStructuralFeatures xsi:type="ecore:EReference" name="lance_de_disputa_por_p&#xea;nalti" lowerBound="-1" upperBound="-1" eType="//Etapas%20de%20Jogo/Lance%20de%20Disputa%20por%20Pênalti" eOpposite="//Etapas%20de%20Jogo/Lance%20de%20Disputa%20por%20Pênalti/disputa_por_pênalti"/>
     </eClassifiers>
     <eClassifiers xsi:type="ecore:EClass" name="Etapa de Disputa">
-      <eStructuralFeatures xsi:type="ecore:EReference" name="jogo" lowerBound="1" eType="//Jogo" eOpposite="//Jogo/etapa_de_disputa"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="jogo" lowerBound="1" eType="//Jogo" containment="true" eOpposite="//Jogo/etapa_de_disputa"/>
       <eStructuralFeatures xsi:type="ecore:EReference" name="lance" lowerBound="2" upperBound="-1" eType="//Etapas%20de%20Jogo/Lance" eOpposite="//Etapas%20de%20Jogo/Lance/etapa_de_disputa"/>
     </eClassifiers>
     <eClassifiers xsi:type="ecore:EClass" name="Lance">
-      <eStructuralFeatures xsi:type="ecore:EReference" name="etapa_de_disputa" lowerBound="1" eType="//Etapas%20de%20Jogo/Etapa%20de%20Disputa" eOpposite="//Etapas%20de%20Jogo/Etapa%20de%20Disputa/lance"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="etapa_de_disputa" lowerBound="1" eType="//Etapas%20de%20Jogo/Etapa%20de%20Disputa" containment="true" eOpposite="//Etapas%20de%20Jogo/Etapa%20de%20Disputa/lance"/>
     </eClassifiers>
     <eClassifiers xsi:type="ecore:EClass" name="Lance de Disputa Comum" eSuperTypes="//Etapas%20de%20Jogo/Lance">
-      <eStructuralFeatures xsi:type="ecore:EReference" name="tempo_regulamentar" lowerBound="1" eType="//Etapas%20de%20Jogo/Tempo%20Regulamentar" eOpposite="//Etapas%20de%20Jogo/Tempo%20Regulamentar/lance_de_disputa_comum"/>
-      <eStructuralFeatures xsi:type="ecore:EReference" name="prorroga&#xe7;&#xe3;o" lowerBound="1" eType="//Etapas%20de%20Jogo/Prorrogação" eOpposite="//Etapas%20de%20Jogo/Prorrogação/lance_de_disputa_comum"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="tempo_regulamentar" lowerBound="1" eType="//Etapas%20de%20Jogo/Tempo%20Regulamentar" containment="true" eOpposite="//Etapas%20de%20Jogo/Tempo%20Regulamentar/lance_de_disputa_comum"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="prorroga&#xe7;&#xe3;o" lowerBound="1" eType="//Etapas%20de%20Jogo/Prorrogação" containment="true" eOpposite="//Etapas%20de%20Jogo/Prorrogação/lance_de_disputa_comum"/>
     </eClassifiers>
     <eClassifiers xsi:type="ecore:EClass" name="Lance de Disputa por P&#xea;nalti" eSuperTypes="//Etapas%20de%20Jogo/Lance">
-      <eStructuralFeatures xsi:type="ecore:EReference" name="disputa_por_p&#xea;nalti" lowerBound="1" eType="//Etapas%20de%20Jogo/Disputa%20por%20Pênalti" eOpposite="//Etapas%20de%20Jogo/Disputa%20por%20Pênalti/lance_de_disputa_por_pênalti"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="disputa_por_p&#xea;nalti" lowerBound="1" eType="//Etapas%20de%20Jogo/Disputa%20por%20Pênalti" containment="true" eOpposite="//Etapas%20de%20Jogo/Disputa%20por%20Pênalti/lance_de_disputa_por_pênalti"/>
     </eClassifiers>
     <eClassifiers xsi:type="ecore:EClass" name="Prorroga&#xe7;&#xe3;o" eSuperTypes="//Etapas%20de%20Jogo/Etapa%20de%20Disputa">
       <eStructuralFeatures xsi:type="ecore:EReference" name="lance_de_disputa_comum" lowerBound="-1" upperBound="-1" eType="//Etapas%20de%20Jogo/Lance%20de%20Disputa%20Comum" eOpposite="//Etapas%20de%20Jogo/Lance%20de%20Disputa%20Comum/prorrogação"/>
@@ -72,7 +72,7 @@
       <eStructuralFeatures xsi:type="ecore:EReference" name="falta_recebida" lowerBound="2" upperBound="-1" eType="//Lance%20de%20Disputa%20Comum/Falta%20Recebida" eOpposite="//Lance%20de%20Disputa%20Comum/Falta%20Recebida/falta_complexa"/>
     </eClassifiers>
     <eClassifiers xsi:type="ecore:EClass" name="Falta Recebida" eSuperTypes="//Lance%20de%20Disputa%20Comum/Participação%20Individual%20em%20Falta">
-      <eStructuralFeatures xsi:type="ecore:EReference" name="falta_complexa" lowerBound="1" eType="//Lance%20de%20Disputa%20Comum/Falta%20Complexa" eOpposite="//Lance%20de%20Disputa%20Comum/Falta%20Complexa/falta_recebida"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="falta_complexa" lowerBound="1" eType="//Lance%20de%20Disputa%20Comum/Falta%20Complexa" containment="true" eOpposite="//Lance%20de%20Disputa%20Comum/Falta%20Complexa/falta_recebida"/>
     </eClassifiers>
     <eClassifiers xsi:type="ecore:EClass" name="LJI Ataque" eSuperTypes="//Lance%20de%20Jogo%20Individual/Lance%20de%20Jogo%20Individual"/>
     <eClassifiers xsi:type="ecore:EClass" name="LJI Defesa" eSuperTypes="//Lance%20de%20Jogo%20Individual/Lance%20de%20Jogo%20Individual"/>
@@ -94,7 +94,7 @@
     <eClassifiers xsi:type="ecore:EClass" name="A&#xe7;&#xe3;o com Bola Rolando" eSuperTypes="//Lance%20de%20Jogo%20Individual/Ação%20Ofensiva"/>
     <eClassifiers xsi:type="ecore:EClass" name="Bloqueio" eSuperTypes="//Lance%20de%20Disputa%20Comum/LJI%20Defesa">
       <eStructuralFeatures xsi:type="ecore:EReference" name="atleta_de_linha" lowerBound="1" eType="//Atleta%20de%20Linha" eOpposite="//Atleta%20de%20Linha/bloqueio"/>
-      <eStructuralFeatures xsi:type="ecore:EReference" name="f_bloqueada" lowerBound="1" eType="//Lance%20Válido/F%20Bloqueada" eOpposite="//Lance%20Válido/F%20Bloqueada/bloqueio"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="f_bloqueada" lowerBound="1" eType="//Lance%20Válido/F%20Bloqueada" containment="true" eOpposite="//Lance%20Válido/F%20Bloqueada/bloqueio"/>
     </eClassifiers>
     <eClassifiers xsi:type="ecore:EClass" name="Cobran&#xe7;a" eSuperTypes="//Lance%20de%20Jogo%20Individual/Ação%20Ofensiva"/>
     <eClassifiers xsi:type="ecore:EClass" name="Cobran&#xe7;a de Escanteio" eSuperTypes="//Lance%20de%20Jogo%20Individual/Cobrança"/>
@@ -104,7 +104,7 @@
     <eClassifiers xsi:type="ecore:EClass" name="Cobran&#xe7;a de P&#xea;nalti em Jogo" eSuperTypes="//Lance%20de%20Jogo%20Individual/Cobrança%20de%20Falta"/>
     <eClassifiers xsi:type="ecore:EClass" name="Defesa" eSuperTypes="//Lance%20de%20Disputa%20Comum/LJI%20Defesa">
       <eStructuralFeatures xsi:type="ecore:EReference" name="goleiro" lowerBound="1" eType="//Goleiro" eOpposite="//Goleiro/defesa"/>
-      <eStructuralFeatures xsi:type="ecore:EReference" name="f_defendida" lowerBound="1" eType="//Lance%20Válido/F%20Defendida" eOpposite="//Lance%20Válido/F%20Defendida/defesa"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="f_defendida" lowerBound="1" eType="//Lance%20Válido/F%20Defendida" containment="true" eOpposite="//Lance%20Válido/F%20Defendida/defesa"/>
     </eClassifiers>
     <eClassifiers xsi:type="ecore:EClass" name="Defesa Dif&#xed;cil" eSuperTypes="//Lance%20de%20Jogo%20Individual/Defesa"/>
     <eClassifiers xsi:type="ecore:EClass" name="F Fora" eSuperTypes="//Lance%20de%20Jogo%20Individual/Finalizaçao"/>
@@ -112,19 +112,19 @@
       <eStructuralFeatures xsi:type="ecore:EReference" name="assist&#xea;ncia" eType="//Lance%20de%20Jogo%20Individual/Assistência" eOpposite="//Lance%20de%20Jogo%20Individual/Assistência/f_gol_convertido"/>
     </eClassifiers>
     <eClassifiers xsi:type="ecore:EClass" name="F Gol Interceptado" eSuperTypes="//Lance%20de%20Jogo%20Individual/Finalizaçao">
-      <eStructuralFeatures xsi:type="ecore:EReference" name="f_bloqueada" lowerBound="1" eType="//Lance%20Válido/F%20Bloqueada" eOpposite="//Lance%20Válido/F%20Bloqueada/f_gol_interceptado"/>
-      <eStructuralFeatures xsi:type="ecore:EReference" name="f_defendida" lowerBound="1" eType="//Lance%20Válido/F%20Defendida" eOpposite="//Lance%20Válido/F%20Defendida/f_gol_interceptado"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="f_bloqueada" lowerBound="1" eType="//Lance%20Válido/F%20Bloqueada" containment="true" eOpposite="//Lance%20Válido/F%20Bloqueada/f_gol_interceptado"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="f_defendida" lowerBound="1" eType="//Lance%20Válido/F%20Defendida" containment="true" eOpposite="//Lance%20Válido/F%20Defendida/f_gol_interceptado"/>
     </eClassifiers>
     <eClassifiers xsi:type="ecore:EClass" name="F Trave" eSuperTypes="//Lance%20de%20Jogo%20Individual/Finalizaçao"/>
     <eClassifiers xsi:type="ecore:EClass" name="Finaliza&#xe7;ao" eSuperTypes="//Lance%20de%20Jogo%20Individual/Ação%20Ofensiva"/>
     <eClassifiers xsi:type="ecore:EClass" name="Gol Contra" eSuperTypes="//Lance%20de%20Disputa%20Comum/LJI%20Defesa"/>
     <eClassifiers xsi:type="ecore:EClass" name="Lance de Jogo Individual" eSuperTypes="//Lance%20de%20Disputa%20Comum/Lance%20Individual"/>
     <eClassifiers xsi:type="ecore:EClass" name="P Comum" eSuperTypes="//Lance%20de%20Jogo%20Individual/Passe">
-      <eStructuralFeatures xsi:type="ecore:EReference" name="recuo_irregular" lowerBound="1" eType="//Lance%20Faltoso/Recuo%20Irregular" eOpposite="//Lance%20Faltoso/Recuo%20Irregular/p_comum"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="recuo_irregular" lowerBound="1" eType="//Lance%20Faltoso/Recuo%20Irregular" containment="true" eOpposite="//Lance%20Faltoso/Recuo%20Irregular/p_comum"/>
     </eClassifiers>
     <eClassifiers xsi:type="ecore:EClass" name="P Errado" eSuperTypes="//Lance%20de%20Jogo%20Individual/Passe"/>
     <eClassifiers xsi:type="ecore:EClass" name="P Impedido" eSuperTypes="//Lance%20de%20Jogo%20Individual/Passe">
-      <eStructuralFeatures xsi:type="ecore:EReference" name="impedimento" lowerBound="1" eType="//Lance%20Faltoso/Impedimento" eOpposite="//Lance%20Faltoso/Impedimento/p_impedido"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="impedimento" lowerBound="1" eType="//Lance%20Faltoso/Impedimento" containment="true" eOpposite="//Lance%20Faltoso/Impedimento/p_impedido"/>
     </eClassifiers>
     <eClassifiers xsi:type="ecore:EClass" name="Passe" eSuperTypes="//Lance%20de%20Jogo%20Individual/Ação%20Ofensiva"/>
     <eClassifiers xsi:type="ecore:EClass" name="Recebimento de Passe" eSuperTypes="//Lance%20de%20Disputa%20Comum/LJI%20Ataque"/>
@@ -132,7 +132,7 @@
   </eSubpackages>
   <eSubpackages name="Lance Faltoso">
     <eClassifiers xsi:type="ecore:EClass" name="Falta Individual de Jogo" eSuperTypes="//Lance%20de%20Disputa%20Comum/Falta%20Cometida">
-      <eStructuralFeatures xsi:type="ecore:EReference" name="falta_complexa" lowerBound="1" eType="//Lance%20de%20Disputa%20Comum/Falta%20Complexa" eOpposite="//Lance%20de%20Disputa%20Comum/Falta%20Complexa/falta_individual_de_jogo"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="falta_complexa" lowerBound="1" eType="//Lance%20de%20Disputa%20Comum/Falta%20Complexa" containment="true" eOpposite="//Lance%20de%20Disputa%20Comum/Falta%20Complexa/falta_individual_de_jogo"/>
     </eClassifiers>
     <eClassifiers xsi:type="ecore:EClass" name="Falta T&#xe9;cnica" eSuperTypes="//Lance%20de%20Disputa%20Comum/Falta%20Cometida"/>
     <eClassifiers xsi:type="ecore:EClass" name="Impedimento" eSuperTypes="//Lance%20de%20Disputa%20Comum/Lance%20de%20Jogo%20Complexo">
@@ -140,11 +140,11 @@
       <eStructuralFeatures xsi:type="ecore:EReference" name="posi&#xe7;&#xe3;o_de_impedimento" lowerBound="1" eType="//Lance%20Faltoso/Posição%20de%20Impedimento" eOpposite="//Lance%20Faltoso/Posição%20de%20Impedimento/impedimento"/>
     </eClassifiers>
     <eClassifiers xsi:type="ecore:EClass" name="Posi&#xe7;&#xe3;o de Impedimento" eSuperTypes="//Lance%20de%20Disputa%20Comum/Falta%20Cometida">
-      <eStructuralFeatures xsi:type="ecore:EReference" name="impedimento" lowerBound="1" eType="//Lance%20Faltoso/Impedimento" eOpposite="//Lance%20Faltoso/Impedimento/posição_de_impedimento"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="impedimento" lowerBound="1" eType="//Lance%20Faltoso/Impedimento" containment="true" eOpposite="//Lance%20Faltoso/Impedimento/posição_de_impedimento"/>
     </eClassifiers>
     <eClassifiers xsi:type="ecore:EClass" name="Recep&#xe7;&#xe3;o Irregular" eSuperTypes="//Lance%20de%20Disputa%20Comum/Falta%20Cometida">
       <eStructuralFeatures xsi:type="ecore:EReference" name="goleiro" lowerBound="1" eType="//Goleiro" eOpposite="//Goleiro/recepção_irregular"/>
-      <eStructuralFeatures xsi:type="ecore:EReference" name="recuo_irregular" lowerBound="1" eType="//Lance%20Faltoso/Recuo%20Irregular" eOpposite="//Lance%20Faltoso/Recuo%20Irregular/recepção_irregular"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="recuo_irregular" lowerBound="1" eType="//Lance%20Faltoso/Recuo%20Irregular" containment="true" eOpposite="//Lance%20Faltoso/Recuo%20Irregular/recepção_irregular"/>
     </eClassifiers>
     <eClassifiers xsi:type="ecore:EClass" name="Recuo Irregular" eSuperTypes="//Lance%20de%20Disputa%20Comum/Lance%20de%20Jogo%20Complexo">
       <eStructuralFeatures xsi:type="ecore:EReference" name="p_comum" lowerBound="-1" upperBound="-1" eType="//Lance%20de%20Jogo%20Individual/P%20Comum" eOpposite="//Lance%20de%20Jogo%20Individual/P%20Comum/recuo_irregular"/>
@@ -164,18 +164,18 @@
   <eSubpackages name="Participa&#xe7;&#xe3;o em Jogo">
     <eClassifiers xsi:type="ecore:EClass" name="Participa&#xe7;&#xe3;o Coletiva">
       <eStructuralFeatures xsi:type="ecore:EReference" name="equipe" lowerBound="1" eType="//Equipe" eOpposite="//Equipe/participação_coletiva"/>
-      <eStructuralFeatures xsi:type="ecore:EReference" name="jogo" lowerBound="1" eType="//Jogo" eOpposite="//Jogo/participação_coletiva"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="jogo" lowerBound="1" eType="//Jogo" containment="true" eOpposite="//Jogo/participação_coletiva"/>
       <eStructuralFeatures xsi:type="ecore:EReference" name="participa&#xe7;&#xe3;o_individual" lowerBound="2" upperBound="-1" eType="//Participação%20em%20Jogo/Participação%20Individual" eOpposite="//Participação%20em%20Jogo/Participação%20Individual/participação_coletiva"/>
     </eClassifiers>
     <eClassifiers xsi:type="ecore:EClass" name="Participa&#xe7;&#xe3;o Individual">
       <eStructuralFeatures xsi:type="ecore:EReference" name="atleta" lowerBound="1" eType="//Atleta" eOpposite="//Atleta/participação_individual"/>
-      <eStructuralFeatures xsi:type="ecore:EReference" name="participa&#xe7;&#xe3;o_coletiva" lowerBound="1" eType="//Participação%20em%20Jogo/Participação%20Coletiva" eOpposite="//Participação%20em%20Jogo/Participação%20Coletiva/participação_individual"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="participa&#xe7;&#xe3;o_coletiva" lowerBound="1" eType="//Participação%20em%20Jogo/Participação%20Coletiva" containment="true" eOpposite="//Participação%20em%20Jogo/Participação%20Coletiva/participação_individual"/>
     </eClassifiers>
     <eClassifiers xsi:type="ecore:EClass" name="Participa&#xe7;&#xe3;o de Assistente" eSuperTypes="//Participação%20em%20Jogo/Participação%20de%20Árbrito"/>
     <eClassifiers xsi:type="ecore:EClass" name="Participa&#xe7;&#xe3;o de Atleta de Linha" eSuperTypes="//Participação%20em%20Jogo/Participação%20Individual"/>
     <eClassifiers xsi:type="ecore:EClass" name="Participa&#xe7;&#xe3;o de Equipe de Arbitragem">
       <eStructuralFeatures xsi:type="ecore:EReference" name="equipe_de_arbitragem" lowerBound="1" eType="//Equipe%20de%20Arbitragem" eOpposite="//Equipe%20de%20Arbitragem/participação_de_equipe_de_arbitragem"/>
-      <eStructuralFeatures xsi:type="ecore:EReference" name="jogo" lowerBound="1" eType="//Jogo" eOpposite="//Jogo/participação_de_equipe_de_arbitragem"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="jogo" lowerBound="1" eType="//Jogo" containment="true" eOpposite="//Jogo/participação_de_equipe_de_arbitragem"/>
       <eStructuralFeatures xsi:type="ecore:EReference" name="participa&#xe7;&#xe3;o_de_&#xe1;rbrito" lowerBound="4" upperBound="4" eType="//Participação%20em%20Jogo/Participação%20de%20Árbrito" eOpposite="//Participação%20em%20Jogo/Participação%20de%20Árbrito/participação_de_equipe_de_arbitragem"/>
     </eClassifiers>
     <eClassifiers xsi:type="ecore:EClass" name="Participa&#xe7;&#xe3;o de Goleiro" eSuperTypes="//Participação%20em%20Jogo/Participação%20Individual"/>
@@ -183,7 +183,7 @@
     <eClassifiers xsi:type="ecore:EClass" name="Participa&#xe7;&#xe3;o de &#xc1;rbitro Principal" eSuperTypes="//Participação%20em%20Jogo/Participação%20de%20Árbrito"/>
     <eClassifiers xsi:type="ecore:EClass" name="Participa&#xe7;&#xe3;o de &#xc1;rbrito">
       <eStructuralFeatures xsi:type="ecore:EReference" name="&#xe1;rbitro" lowerBound="1" eType="//Árbitro" eOpposite="//Árbitro/participação_de_árbrito"/>
-      <eStructuralFeatures xsi:type="ecore:EReference" name="participa&#xe7;&#xe3;o_de_equipe_de_arbitragem" lowerBound="1" eType="//Participação%20em%20Jogo/Participação%20de%20Equipe%20de%20Arbitragem" eOpposite="//Participação%20em%20Jogo/Participação%20de%20Equipe%20de%20Arbitragem/participação_de_árbrito"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="participa&#xe7;&#xe3;o_de_equipe_de_arbitragem" lowerBound="1" eType="//Participação%20em%20Jogo/Participação%20de%20Equipe%20de%20Arbitragem" containment="true" eOpposite="//Participação%20em%20Jogo/Participação%20de%20Equipe%20de%20Arbitragem/participação_de_árbrito"/>
     </eClassifiers>
   </eSubpackages>
 </ecore:EPackage>

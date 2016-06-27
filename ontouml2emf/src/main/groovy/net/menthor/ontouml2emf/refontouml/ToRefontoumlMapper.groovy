@@ -47,18 +47,18 @@ import RefOntoUML.util.RefOntoUMLResourceFactoryImpl
 /**
  * @author John Guerson
  */
-class RefontoumlTgtMapper implements OntoUMLVisitor {
+class ToRefontoumlMapper implements OntoUMLVisitor {
 
     static RefOntoUMLFactory factory = RefOntoUMLFactory.eINSTANCE
 
     RefontoumlOptions options = new RefontoumlOptions()
 
-    Object toRefOntoUML(OntoUMLModel ontomodel, RefontoumlOptions opt) {
+    Object run(OntoUMLModel ontomodel, RefontoumlOptions opt) {
         this.options = opt
-        return toRefOntoUML(ontomodel)
+        return run(ontomodel)
     }
 
-    Object toRefOntoUML(OntoUMLModel ontomodel) {
+    Object run(OntoUMLModel ontomodel) {
         return visit(ontomodel)
     }
 

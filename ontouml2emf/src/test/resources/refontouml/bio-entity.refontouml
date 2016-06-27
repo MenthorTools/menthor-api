@@ -36,7 +36,7 @@
   <packagedElement xsi:type="RefOntoUML:IntegerIntervalDimension" name="Latitude"/>
   <packagedElement xsi:type="RefOntoUML:MeasurementDomain" name="Location Coordinates"/>
   <packagedElement xsi:type="RefOntoUML:IntegerIntervalDimension" name="Longitude"/>
-  <packagedElement xsi:type="RefOntoUML:Association" memberEnd="//@packagedElement.18/@ownedEnd.0 //@packagedElement.18/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.18/@ownedEnd.0 //@packagedElement.18/@ownedEnd.1">
+  <packagedElement xsi:type="RefOntoUML:componentOf" memberEnd="//@packagedElement.18/@ownedEnd.0 //@packagedElement.18/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.18/@ownedEnd.0 //@packagedElement.18/@ownedEnd.1">
     <name xsi:nil="true"/>
     <ownedEnd name="person" type="//@packagedElement.9" association="//@packagedElement.18">
       <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="1"/>
@@ -47,7 +47,7 @@
       <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="2"/>
     </ownedEnd>
   </packagedElement>
-  <packagedElement xsi:type="RefOntoUML:Association" name="spatiallySubsumes" memberEnd="//@packagedElement.19/@ownedEnd.0 //@packagedElement.19/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.19/@ownedEnd.0 //@packagedElement.19/@ownedEnd.1">
+  <packagedElement xsi:type="RefOntoUML:FormalAssociation" name="spatiallySubsumes" memberEnd="//@packagedElement.19/@ownedEnd.0 //@packagedElement.19/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.19/@ownedEnd.0 //@packagedElement.19/@ownedEnd.1">
     <ownedEnd name="geographical_space" type="//@packagedElement.2" association="//@packagedElement.19">
       <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="-1"/>
       <lowerValue xsi:type="RefOntoUML:LiteralInteger"/>
@@ -57,7 +57,7 @@
       <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
     </ownedEnd>
   </packagedElement>
-  <packagedElement xsi:type="RefOntoUML:Association" memberEnd="//@packagedElement.20/@ownedEnd.0 //@packagedElement.20/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.20/@ownedEnd.0 //@packagedElement.20/@ownedEnd.1">
+  <packagedElement xsi:type="RefOntoUML:componentOf" memberEnd="//@packagedElement.20/@ownedEnd.0 //@packagedElement.20/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.20/@ownedEnd.0 //@packagedElement.20/@ownedEnd.1">
     <name xsi:nil="true"/>
     <ownedEnd name="person" type="//@packagedElement.9" association="//@packagedElement.20">
       <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="1"/>
@@ -68,7 +68,7 @@
       <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
     </ownedEnd>
   </packagedElement>
-  <packagedElement xsi:type="RefOntoUML:Association" memberEnd="//@packagedElement.21/@ownedEnd.0 //@packagedElement.21/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.21/@ownedEnd.0 //@packagedElement.21/@ownedEnd.1">
+  <packagedElement xsi:type="RefOntoUML:Characterization" memberEnd="//@packagedElement.21/@ownedEnd.0 //@packagedElement.21/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.21/@ownedEnd.0 //@packagedElement.21/@ownedEnd.1">
     <name xsi:nil="true"/>
     <ownedEnd name="location" type="//@packagedElement.6" association="//@packagedElement.21">
       <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="1"/>
@@ -79,7 +79,7 @@
       <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
     </ownedEnd>
   </packagedElement>
-  <packagedElement xsi:type="RefOntoUML:Association" memberEnd="//@packagedElement.22/@ownedEnd.0 //@packagedElement.22/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.22/@ownedEnd.0 //@packagedElement.22/@ownedEnd.1">
+  <packagedElement xsi:type="RefOntoUML:Structuration" memberEnd="//@packagedElement.22/@ownedEnd.0 //@packagedElement.22/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.22/@ownedEnd.0 //@packagedElement.22/@ownedEnd.1">
     <name xsi:nil="true"/>
     <ownedEnd name="location" type="//@packagedElement.6" association="//@packagedElement.22">
       <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="1"/>
@@ -90,7 +90,7 @@
       <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
     </ownedEnd>
   </packagedElement>
-  <packagedElement xsi:type="RefOntoUML:Association" memberEnd="//@packagedElement.23/@ownedEnd.0 //@packagedElement.23/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.23/@ownedEnd.0 //@packagedElement.23/@ownedEnd.1">
+  <packagedElement xsi:type="RefOntoUML:Characterization" memberEnd="//@packagedElement.23/@ownedEnd.0 //@packagedElement.23/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.23/@ownedEnd.0 //@packagedElement.23/@ownedEnd.1">
     <name xsi:nil="true"/>
     <ownedEnd name="spatial_thing" type="//@packagedElement.11" association="//@packagedElement.23">
       <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="1"/>
@@ -101,7 +101,7 @@
       <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
     </ownedEnd>
   </packagedElement>
-  <packagedElement xsi:type="RefOntoUML:Association" name="isConstitutedBy" memberEnd="//@packagedElement.24/@ownedEnd.0 //@packagedElement.24/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.24/@ownedEnd.0 //@packagedElement.24/@ownedEnd.1">
+  <packagedElement xsi:type="RefOntoUML:FormalAssociation" name="isConstitutedBy" memberEnd="//@packagedElement.24/@ownedEnd.0 //@packagedElement.24/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.24/@ownedEnd.0 //@packagedElement.24/@ownedEnd.1">
     <ownedEnd name="physical_object" type="//@packagedElement.10" association="//@packagedElement.24">
       <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="1"/>
       <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
@@ -111,7 +111,7 @@
       <lowerValue xsi:type="RefOntoUML:LiteralInteger"/>
     </ownedEnd>
   </packagedElement>
-  <packagedElement xsi:type="RefOntoUML:Association" name="locatedIn" memberEnd="//@packagedElement.25/@ownedEnd.0 //@packagedElement.25/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.25/@ownedEnd.0 //@packagedElement.25/@ownedEnd.1">
+  <packagedElement xsi:type="RefOntoUML:FormalAssociation" name="locatedIn" memberEnd="//@packagedElement.25/@ownedEnd.0 //@packagedElement.25/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.25/@ownedEnd.0 //@packagedElement.25/@ownedEnd.1">
     <ownedEnd name="spatial_thing" type="//@packagedElement.11" association="//@packagedElement.25">
       <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="-1"/>
       <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>

@@ -78,11 +78,11 @@
                             "classifier": 8,
                             "name": "disputa_por_p\u00eanalti",
                             "lowerBound": 1,
-                            "uniqueName": "disputa_por_pnalti",
                             "upperBound": 1,
-                            "ordered": false,
+                            "dependency": false,
                             "derived": false,
-                            "dependency": false
+                            "uniqueName": "disputa_por_pnalti",
+                            "ordered": false
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -99,13 +99,14 @@
                             },
                             "name": "lance_de_disputa_por_p\u00eanalti",
                             "lowerBound": -1,
-                            "uniqueName": "lance_de_disputa_por_pnalti",
                             "upperBound": -1,
-                            "ordered": false,
+                            "dependency": false,
                             "derived": false,
-                            "dependency": false
+                            "uniqueName": "lance_de_disputa_por_pnalti",
+                            "ordered": false
                         }
                     ],
+                    "stereotype": "SUBEVENTOF",
                     "uniqueName": "OntoUMLRelationship22"
                 },
                 {
@@ -128,11 +129,11 @@
                             "classifier": 13,
                             "name": "etapa_de_disputa",
                             "lowerBound": 1,
-                            "uniqueName": "etapa_de_disputa2",
                             "upperBound": 1,
-                            "ordered": false,
+                            "dependency": false,
                             "derived": false,
-                            "dependency": false
+                            "uniqueName": "etapa_de_disputa2",
+                            "ordered": false
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -149,13 +150,14 @@
                             },
                             "name": "lance",
                             "lowerBound": 2,
-                            "uniqueName": "lance",
                             "upperBound": -1,
-                            "ordered": false,
+                            "dependency": false,
                             "derived": false,
-                            "dependency": false
+                            "uniqueName": "lance",
+                            "ordered": false
                         }
                     ],
+                    "stereotype": "SUBEVENTOF",
                     "uniqueName": "OntoUMLRelationship23"
                 },
                 17,
@@ -188,11 +190,11 @@
                             },
                             "name": "tempo_regulamentar",
                             "lowerBound": 1,
-                            "uniqueName": "tempo_regulamentar",
                             "upperBound": 1,
-                            "ordered": false,
+                            "dependency": false,
                             "derived": false,
-                            "dependency": false
+                            "uniqueName": "tempo_regulamentar",
+                            "ordered": false
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -200,13 +202,14 @@
                             "classifier": 18,
                             "name": "lance_de_disputa_comum",
                             "lowerBound": -1,
-                            "uniqueName": "lance_de_disputa_comum",
                             "upperBound": -1,
-                            "ordered": false,
+                            "dependency": false,
                             "derived": false,
-                            "dependency": false
+                            "uniqueName": "lance_de_disputa_comum",
+                            "ordered": false
                         }
                     ],
+                    "stereotype": "SUBEVENTOF",
                     "uniqueName": "OntoUMLRelationship24"
                 },
                 {
@@ -228,11 +231,11 @@
                             },
                             "name": "prorroga\u00e7\u00e3o",
                             "lowerBound": 1,
-                            "uniqueName": "prorrogao",
                             "upperBound": 1,
-                            "ordered": false,
+                            "dependency": false,
                             "derived": false,
-                            "dependency": false
+                            "uniqueName": "prorrogao",
+                            "ordered": false
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -240,13 +243,14 @@
                             "classifier": 18,
                             "name": "lance_de_disputa_comum",
                             "lowerBound": -1,
-                            "uniqueName": "lance_de_disputa_comum2",
                             "upperBound": -1,
-                            "ordered": false,
+                            "dependency": false,
                             "derived": false,
-                            "dependency": false
+                            "uniqueName": "lance_de_disputa_comum2",
+                            "ordered": false
                         }
                     ],
+                    "stereotype": "SUBEVENTOF",
                     "uniqueName": "OntoUMLRelationship25"
                 },
                 12,
@@ -376,11 +380,11 @@
                             "classifier": 42,
                             "name": "falta_cometida",
                             "lowerBound": 1,
-                            "uniqueName": "falta_cometida",
                             "upperBound": 1,
-                            "ordered": false,
+                            "dependency": false,
                             "derived": false,
-                            "dependency": false
+                            "uniqueName": "falta_cometida",
+                            "ordered": false
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -397,13 +401,14 @@
                             },
                             "name": "puni\u00e7\u00e3o",
                             "lowerBound": 1,
-                            "uniqueName": "punio",
                             "upperBound": 1,
-                            "ordered": false,
+                            "dependency": false,
                             "derived": false,
-                            "dependency": false
+                            "uniqueName": "punio",
+                            "ordered": false
                         }
                     ],
+                    "stereotype": "CAUSATION",
                     "uniqueName": "OntoUMLRelationship26"
                 },
                 {
@@ -426,11 +431,11 @@
                             "classifier": 47,
                             "name": "falta_complexa",
                             "lowerBound": 1,
-                            "uniqueName": "falta_complexa",
                             "upperBound": 1,
-                            "ordered": false,
+                            "dependency": false,
                             "derived": false,
-                            "dependency": false
+                            "uniqueName": "falta_complexa",
+                            "ordered": false
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -447,13 +452,14 @@
                             },
                             "name": "falta_individual_de_jogo",
                             "lowerBound": 1,
-                            "uniqueName": "falta_individual_de_jogo",
                             "upperBound": 1,
-                            "ordered": false,
+                            "dependency": false,
                             "derived": false,
-                            "dependency": false
+                            "uniqueName": "falta_individual_de_jogo",
+                            "ordered": false
                         }
                     ],
+                    "stereotype": "SUBEVENTOF",
                     "uniqueName": "OntoUMLRelationship27"
                 },
                 {
@@ -466,11 +472,11 @@
                             "classifier": 47,
                             "name": "falta_complexa",
                             "lowerBound": 1,
-                            "uniqueName": "falta_complexa2",
                             "upperBound": 1,
-                            "ordered": false,
+                            "dependency": false,
                             "derived": false,
-                            "dependency": false
+                            "uniqueName": "falta_complexa2",
+                            "ordered": false
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -487,13 +493,14 @@
                             },
                             "name": "falta_recebida",
                             "lowerBound": 2,
-                            "uniqueName": "falta_recebida",
                             "upperBound": -1,
-                            "ordered": false,
+                            "dependency": false,
                             "derived": false,
-                            "dependency": false
+                            "uniqueName": "falta_recebida",
+                            "ordered": false
                         }
                     ],
+                    "stereotype": "SUBEVENTOF",
                     "uniqueName": "OntoUMLRelationship28"
                 },
                 55,
@@ -678,11 +685,11 @@
                             "@id": 80,
                             "classifier": 78,
                             "name": "assist\u00eancia",
-                            "uniqueName": "assistncia",
                             "upperBound": 1,
-                            "ordered": false,
+                            "dependency": false,
                             "derived": false,
-                            "dependency": false
+                            "uniqueName": "assistncia",
+                            "ordered": false
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -699,13 +706,14 @@
                             },
                             "name": "f_gol_convertido",
                             "lowerBound": 1,
-                            "uniqueName": "f_gol_convertido",
                             "upperBound": 1,
-                            "ordered": false,
+                            "dependency": false,
                             "derived": false,
-                            "dependency": false
+                            "uniqueName": "f_gol_convertido",
+                            "ordered": false
                         }
                     ],
+                    "stereotype": "CAUSATION",
                     "uniqueName": "OntoUMLRelationship29"
                 },
                 {
@@ -757,11 +765,11 @@
                             },
                             "name": "f_bloqueada",
                             "lowerBound": 1,
-                            "uniqueName": "f_bloqueada",
                             "upperBound": 1,
-                            "ordered": false,
+                            "dependency": false,
                             "derived": false,
-                            "dependency": false
+                            "uniqueName": "f_bloqueada",
+                            "ordered": false
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -769,13 +777,14 @@
                             "classifier": 85,
                             "name": "bloqueio",
                             "lowerBound": 1,
-                            "uniqueName": "bloqueio2",
                             "upperBound": 1,
-                            "ordered": false,
+                            "dependency": false,
                             "derived": false,
-                            "dependency": false
+                            "uniqueName": "bloqueio2",
+                            "ordered": false
                         }
                     ],
+                    "stereotype": "SUBEVENTOF",
                     "uniqueName": "OntoUMLRelationship30"
                 },
                 {
@@ -867,11 +876,11 @@
                             },
                             "name": "f_defendida",
                             "lowerBound": 1,
-                            "uniqueName": "f_defendida",
                             "upperBound": 1,
-                            "ordered": false,
+                            "dependency": false,
                             "derived": false,
-                            "dependency": false
+                            "uniqueName": "f_defendida",
+                            "ordered": false
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -879,13 +888,14 @@
                             "classifier": 96,
                             "name": "defesa",
                             "lowerBound": 1,
-                            "uniqueName": "defesa2",
                             "upperBound": 1,
-                            "ordered": false,
+                            "dependency": false,
                             "derived": false,
-                            "dependency": false
+                            "uniqueName": "defesa2",
+                            "ordered": false
                         }
                     ],
+                    "stereotype": "SUBEVENTOF",
                     "uniqueName": "OntoUMLRelationship31"
                 },
                 {
@@ -929,11 +939,11 @@
                             "classifier": 88,
                             "name": "f_bloqueada",
                             "lowerBound": 1,
-                            "uniqueName": "f_bloqueada2",
                             "upperBound": 1,
-                            "ordered": false,
+                            "dependency": false,
                             "derived": false,
-                            "dependency": false
+                            "uniqueName": "f_bloqueada2",
+                            "ordered": false
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -941,13 +951,14 @@
                             "classifier": 103,
                             "name": "f_gol_interceptado",
                             "lowerBound": 1,
-                            "uniqueName": "f_gol_interceptado",
                             "upperBound": 1,
-                            "ordered": false,
+                            "dependency": false,
                             "derived": false,
-                            "dependency": false
+                            "uniqueName": "f_gol_interceptado",
+                            "ordered": false
                         }
                     ],
+                    "stereotype": "SUBEVENTOF",
                     "uniqueName": "OntoUMLRelationship32"
                 },
                 {
@@ -960,11 +971,11 @@
                             "classifier": 99,
                             "name": "f_defendida",
                             "lowerBound": 1,
-                            "uniqueName": "f_defendida2",
                             "upperBound": 1,
-                            "ordered": false,
+                            "dependency": false,
                             "derived": false,
-                            "dependency": false
+                            "uniqueName": "f_defendida2",
+                            "ordered": false
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -972,13 +983,14 @@
                             "classifier": 103,
                             "name": "f_gol_interceptado",
                             "lowerBound": 1,
-                            "uniqueName": "f_gol_interceptado2",
                             "upperBound": 1,
-                            "ordered": false,
+                            "dependency": false,
                             "derived": false,
-                            "dependency": false
+                            "uniqueName": "f_gol_interceptado2",
+                            "ordered": false
                         }
                     ],
+                    "stereotype": "SUBEVENTOF",
                     "uniqueName": "OntoUMLRelationship33"
                 },
                 {
@@ -1041,11 +1053,11 @@
                             },
                             "name": "recuo_irregular",
                             "lowerBound": 1,
-                            "uniqueName": "recuo_irregular",
                             "upperBound": 1,
-                            "ordered": false,
+                            "dependency": false,
                             "derived": false,
-                            "dependency": false
+                            "uniqueName": "recuo_irregular",
+                            "ordered": false
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -1053,13 +1065,14 @@
                             "classifier": 113,
                             "name": "p_comum",
                             "lowerBound": -1,
-                            "uniqueName": "p_comum",
                             "upperBound": -1,
-                            "ordered": false,
+                            "dependency": false,
                             "derived": false,
-                            "dependency": false
+                            "uniqueName": "p_comum",
+                            "ordered": false
                         }
                     ],
+                    "stereotype": "SUBEVENTOF",
                     "uniqueName": "OntoUMLRelationship34"
                 },
                 {
@@ -1101,11 +1114,11 @@
                             },
                             "name": "impedimento",
                             "lowerBound": 1,
-                            "uniqueName": "impedimento",
                             "upperBound": 1,
-                            "ordered": false,
+                            "dependency": false,
                             "derived": false,
-                            "dependency": false
+                            "uniqueName": "impedimento",
+                            "ordered": false
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -1113,13 +1126,14 @@
                             "classifier": 119,
                             "name": "p_impedido",
                             "lowerBound": 1,
-                            "uniqueName": "p_impedido",
                             "upperBound": 1,
-                            "ordered": false,
+                            "dependency": false,
                             "derived": false,
-                            "dependency": false
+                            "uniqueName": "p_impedido",
+                            "ordered": false
                         }
                     ],
+                    "stereotype": "SUBEVENTOF",
                     "uniqueName": "OntoUMLRelationship35"
                 },
                 {
@@ -1332,11 +1346,11 @@
                             "classifier": 122,
                             "name": "impedimento",
                             "lowerBound": 1,
-                            "uniqueName": "impedimento2",
                             "upperBound": 1,
-                            "ordered": false,
+                            "dependency": false,
                             "derived": false,
-                            "dependency": false
+                            "uniqueName": "impedimento2",
+                            "ordered": false
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -1353,13 +1367,14 @@
                             },
                             "name": "posi\u00e7\u00e3o_de_impedimento",
                             "lowerBound": 1,
-                            "uniqueName": "posio_de_impedimento",
                             "upperBound": 1,
-                            "ordered": false,
+                            "dependency": false,
                             "derived": false,
-                            "dependency": false
+                            "uniqueName": "posio_de_impedimento",
+                            "ordered": false
                         }
                     ],
+                    "stereotype": "SUBEVENTOF",
                     "uniqueName": "OntoUMLRelationship36"
                 },
                 157,
@@ -1383,11 +1398,11 @@
                             "classifier": 116,
                             "name": "recuo_irregular",
                             "lowerBound": 1,
-                            "uniqueName": "recuo_irregular2",
                             "upperBound": 1,
-                            "ordered": false,
+                            "dependency": false,
                             "derived": false,
-                            "dependency": false
+                            "uniqueName": "recuo_irregular2",
+                            "ordered": false
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -1395,13 +1410,14 @@
                             "classifier": 158,
                             "name": "recep\u00e7\u00e3o_irregular",
                             "lowerBound": -1,
-                            "uniqueName": "recepo_irregular2",
                             "upperBound": -1,
-                            "ordered": false,
+                            "dependency": false,
                             "derived": false,
-                            "dependency": false
+                            "uniqueName": "recepo_irregular2",
+                            "ordered": false
                         }
                     ],
+                    "stereotype": "SUBEVENTOF",
                     "uniqueName": "OntoUMLRelationship37"
                 },
                 116,
@@ -1491,11 +1507,11 @@
                             "classifier": 172,
                             "name": "participa\u00e7\u00e3o_coletiva",
                             "lowerBound": 1,
-                            "uniqueName": "participao_coletiva3",
                             "upperBound": 1,
-                            "ordered": false,
+                            "dependency": false,
                             "derived": false,
-                            "dependency": false
+                            "uniqueName": "participao_coletiva3",
+                            "ordered": false
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -1512,13 +1528,14 @@
                             },
                             "name": "participa\u00e7\u00e3o_individual",
                             "lowerBound": 2,
-                            "uniqueName": "participao_individual2",
                             "upperBound": -1,
-                            "ordered": false,
+                            "dependency": false,
                             "derived": false,
-                            "dependency": false
+                            "uniqueName": "participao_individual2",
+                            "ordered": false
                         }
                     ],
+                    "stereotype": "SUBEVENTOF",
                     "uniqueName": "OntoUMLRelationship38"
                 },
                 176,
@@ -1562,11 +1579,11 @@
                             "classifier": 179,
                             "name": "participa\u00e7\u00e3o_de_equipe_de_arbitragem",
                             "lowerBound": 1,
-                            "uniqueName": "participao_de_equipe_de_arbitragem3",
                             "upperBound": 1,
-                            "ordered": false,
+                            "dependency": false,
                             "derived": false,
-                            "dependency": false
+                            "uniqueName": "participao_de_equipe_de_arbitragem3",
+                            "ordered": false
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -1583,13 +1600,14 @@
                             },
                             "name": "participa\u00e7\u00e3o_de_\u00e1rbrito",
                             "lowerBound": 4,
-                            "uniqueName": "participao_de_rbrito2",
                             "upperBound": 4,
-                            "ordered": false,
+                            "dependency": false,
                             "derived": false,
-                            "dependency": false
+                            "uniqueName": "participao_de_rbrito2",
+                            "ordered": false
                         }
                     ],
+                    "stereotype": "SUBEVENTOF",
                     "uniqueName": "OntoUMLRelationship39"
                 },
                 {
@@ -1676,11 +1694,11 @@
                     "classifier": 192,
                     "name": "atleta",
                     "lowerBound": 1,
-                    "uniqueName": "atleta",
                     "upperBound": 1,
-                    "ordered": false,
+                    "dependency": false,
                     "derived": false,
-                    "dependency": false
+                    "uniqueName": "atleta",
+                    "ordered": false
                 },
                 {
                     "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -1688,13 +1706,14 @@
                     "classifier": 176,
                     "name": "participa\u00e7\u00e3o_individual",
                     "lowerBound": 1,
-                    "uniqueName": "participao_individual",
                     "upperBound": -1,
-                    "ordered": false,
+                    "dependency": false,
                     "derived": false,
-                    "dependency": false
+                    "uniqueName": "participao_individual",
+                    "ordered": false
                 }
             ],
+            "stereotype": "PARTICIPATION",
             "uniqueName": "OntoUMLRelationship9"
         },
         {
@@ -1707,11 +1726,11 @@
                     "classifier": 192,
                     "name": "atleta",
                     "lowerBound": 1,
-                    "uniqueName": "atleta2",
                     "upperBound": 1,
-                    "ordered": false,
+                    "dependency": false,
                     "derived": false,
-                    "dependency": false
+                    "uniqueName": "atleta2",
+                    "ordered": false
                 },
                 {
                     "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -1719,13 +1738,14 @@
                     "classifier": 59,
                     "name": "lance_individual",
                     "lowerBound": -1,
-                    "uniqueName": "lance_individual",
                     "upperBound": -1,
-                    "ordered": false,
+                    "dependency": false,
                     "derived": false,
-                    "dependency": false
+                    "uniqueName": "lance_individual",
+                    "ordered": false
                 }
             ],
+            "stereotype": "PARTICIPATION",
             "uniqueName": "OntoUMLRelationship10"
         },
         {
@@ -1747,11 +1767,11 @@
                     },
                     "name": "equipe",
                     "lowerBound": 1,
-                    "uniqueName": "equipe",
                     "upperBound": 1,
-                    "ordered": false,
+                    "dependency": false,
                     "derived": false,
-                    "dependency": false
+                    "uniqueName": "equipe",
+                    "ordered": false
                 },
                 {
                     "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -1759,13 +1779,14 @@
                     "classifier": 192,
                     "name": "atleta",
                     "lowerBound": 7,
-                    "uniqueName": "atleta3",
                     "upperBound": 23,
-                    "ordered": false,
+                    "dependency": false,
                     "derived": false,
-                    "dependency": false
+                    "uniqueName": "atleta3",
+                    "ordered": false
                 }
             ],
+            "stereotype": "MEMBEROF",
             "reflexivityValue": "IRREFLEXIVE",
             "symmetryValue": "ASSYMETRIC",
             "transitivityValue": "INTRANSITIVE",
@@ -1792,11 +1813,11 @@
                     "classifier": 85,
                     "name": "bloqueio",
                     "lowerBound": 1,
-                    "uniqueName": "bloqueio",
                     "upperBound": 1,
-                    "ordered": false,
+                    "dependency": false,
                     "derived": false,
-                    "dependency": false
+                    "uniqueName": "bloqueio",
+                    "ordered": false
                 },
                 {
                     "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -1804,13 +1825,14 @@
                     "classifier": 203,
                     "name": "atleta_de_linha",
                     "lowerBound": 1,
-                    "uniqueName": "atleta_de_linha",
                     "upperBound": 1,
-                    "ordered": false,
+                    "dependency": false,
                     "derived": false,
-                    "dependency": false
+                    "uniqueName": "atleta_de_linha",
+                    "ordered": false
                 }
             ],
+            "stereotype": "PARTICIPATION",
             "uniqueName": "OntoUMLRelationship12"
         },
         201,
@@ -1824,11 +1846,11 @@
                     "classifier": 201,
                     "name": "equipe",
                     "lowerBound": 1,
-                    "uniqueName": "equipe2",
                     "upperBound": 1,
-                    "ordered": false,
+                    "dependency": false,
                     "derived": false,
-                    "dependency": false
+                    "uniqueName": "equipe2",
+                    "ordered": false
                 },
                 {
                     "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -1836,13 +1858,14 @@
                     "classifier": 172,
                     "name": "participa\u00e7\u00e3o_coletiva",
                     "lowerBound": 1,
-                    "uniqueName": "participao_coletiva",
                     "upperBound": -1,
-                    "ordered": false,
+                    "dependency": false,
                     "derived": false,
-                    "dependency": false
+                    "uniqueName": "participao_coletiva",
+                    "ordered": false
                 }
             ],
+            "stereotype": "PARTICIPATION",
             "uniqueName": "OntoUMLRelationship13"
         },
         {
@@ -1865,11 +1888,11 @@
                     "classifier": 210,
                     "name": "equipe_de_arbitragem",
                     "lowerBound": 1,
-                    "uniqueName": "equipe_de_arbitragem",
                     "upperBound": 1,
-                    "ordered": false,
+                    "dependency": false,
                     "derived": false,
-                    "dependency": false
+                    "uniqueName": "equipe_de_arbitragem",
+                    "ordered": false
                 },
                 {
                     "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -1877,13 +1900,14 @@
                     "classifier": 179,
                     "name": "participa\u00e7\u00e3o_de_equipe_de_arbitragem",
                     "lowerBound": 1,
-                    "uniqueName": "participao_de_equipe_de_arbitragem",
                     "upperBound": -1,
-                    "ordered": false,
+                    "dependency": false,
                     "derived": false,
-                    "dependency": false
+                    "uniqueName": "participao_de_equipe_de_arbitragem",
+                    "ordered": false
                 }
             ],
+            "stereotype": "PARTICIPATION",
             "uniqueName": "OntoUMLRelationship14"
         },
         {
@@ -1896,11 +1920,11 @@
                     "classifier": 210,
                     "name": "equipe_de_arbitragem",
                     "lowerBound": 1,
-                    "uniqueName": "equipe_de_arbitragem2",
                     "upperBound": 1,
-                    "ordered": false,
+                    "dependency": false,
                     "derived": false,
-                    "dependency": false
+                    "uniqueName": "equipe_de_arbitragem2",
+                    "ordered": false
                 },
                 {
                     "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -1917,13 +1941,14 @@
                     },
                     "name": "\u00e1rbitro",
                     "lowerBound": 4,
-                    "uniqueName": "rbitro2",
                     "upperBound": 4,
-                    "ordered": false,
+                    "dependency": false,
                     "derived": false,
-                    "dependency": false
+                    "uniqueName": "rbitro2",
+                    "ordered": false
                 }
             ],
+            "stereotype": "MEMBEROF",
             "reflexivityValue": "IRREFLEXIVE",
             "symmetryValue": "ASSYMETRIC",
             "transitivityValue": "INTRANSITIVE",
@@ -1950,11 +1975,11 @@
                     "classifier": 218,
                     "name": "goleiro",
                     "lowerBound": 1,
-                    "uniqueName": "goleiro",
                     "upperBound": 1,
-                    "ordered": false,
+                    "dependency": false,
                     "derived": false,
-                    "dependency": false
+                    "uniqueName": "goleiro",
+                    "ordered": false
                 },
                 {
                     "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -1962,13 +1987,14 @@
                     "classifier": 158,
                     "name": "recep\u00e7\u00e3o_irregular",
                     "lowerBound": -1,
-                    "uniqueName": "recepo_irregular",
                     "upperBound": -1,
-                    "ordered": false,
+                    "dependency": false,
                     "derived": false,
-                    "dependency": false
+                    "uniqueName": "recepo_irregular",
+                    "ordered": false
                 }
             ],
+            "stereotype": "PARTICIPATION",
             "uniqueName": "OntoUMLRelationship16"
         },
         {
@@ -1981,11 +2007,11 @@
                     "classifier": 96,
                     "name": "defesa",
                     "lowerBound": 1,
-                    "uniqueName": "defesa",
                     "upperBound": 1,
-                    "ordered": false,
+                    "dependency": false,
                     "derived": false,
-                    "dependency": false
+                    "uniqueName": "defesa",
+                    "ordered": false
                 },
                 {
                     "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -1993,13 +2019,14 @@
                     "classifier": 218,
                     "name": "goleiro",
                     "lowerBound": 1,
-                    "uniqueName": "goleiro2",
                     "upperBound": 1,
-                    "ordered": false,
+                    "dependency": false,
                     "derived": false,
-                    "dependency": false
+                    "uniqueName": "goleiro2",
+                    "ordered": false
                 }
             ],
+            "stereotype": "PARTICIPATION",
             "uniqueName": "OntoUMLRelationship17"
         },
         {
@@ -2022,11 +2049,11 @@
                     "classifier": 225,
                     "name": "jogo",
                     "lowerBound": 1,
-                    "uniqueName": "jogo",
                     "upperBound": 1,
-                    "ordered": false,
+                    "dependency": false,
                     "derived": false,
-                    "dependency": false
+                    "uniqueName": "jogo",
+                    "ordered": false
                 },
                 {
                     "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -2034,13 +2061,14 @@
                     "classifier": 13,
                     "name": "etapa_de_disputa",
                     "lowerBound": -1,
-                    "uniqueName": "etapa_de_disputa",
                     "upperBound": -1,
-                    "ordered": false,
+                    "dependency": false,
                     "derived": false,
-                    "dependency": false
+                    "uniqueName": "etapa_de_disputa",
+                    "ordered": false
                 }
             ],
+            "stereotype": "SUBEVENTOF",
             "uniqueName": "OntoUMLRelationship18"
         },
         {
@@ -2053,11 +2081,11 @@
                     "classifier": 225,
                     "name": "jogo",
                     "lowerBound": 1,
-                    "uniqueName": "jogo2",
                     "upperBound": 1,
-                    "ordered": false,
+                    "dependency": false,
                     "derived": false,
-                    "dependency": false
+                    "uniqueName": "jogo2",
+                    "ordered": false
                 },
                 {
                     "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -2065,13 +2093,14 @@
                     "classifier": 179,
                     "name": "participa\u00e7\u00e3o_de_equipe_de_arbitragem",
                     "lowerBound": 2,
-                    "uniqueName": "participao_de_equipe_de_arbitragem2",
                     "upperBound": -1,
-                    "ordered": false,
+                    "dependency": false,
                     "derived": false,
-                    "dependency": false
+                    "uniqueName": "participao_de_equipe_de_arbitragem2",
+                    "ordered": false
                 }
             ],
+            "stereotype": "SUBEVENTOF",
             "uniqueName": "OntoUMLRelationship19"
         },
         {
@@ -2084,11 +2113,11 @@
                     "classifier": 225,
                     "name": "jogo",
                     "lowerBound": 1,
-                    "uniqueName": "jogo3",
                     "upperBound": 1,
-                    "ordered": false,
+                    "dependency": false,
                     "derived": false,
-                    "dependency": false
+                    "uniqueName": "jogo3",
+                    "ordered": false
                 },
                 {
                     "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -2096,13 +2125,14 @@
                     "classifier": 172,
                     "name": "participa\u00e7\u00e3o_coletiva",
                     "lowerBound": 2,
-                    "uniqueName": "participao_coletiva2",
                     "upperBound": 2,
-                    "ordered": false,
+                    "dependency": false,
                     "derived": false,
-                    "dependency": false
+                    "uniqueName": "participao_coletiva2",
+                    "ordered": false
                 }
             ],
+            "stereotype": "SUBEVENTOF",
             "uniqueName": "OntoUMLRelationship20"
         },
         {
@@ -2126,11 +2156,11 @@
                     "classifier": 217,
                     "name": "\u00e1rbitro",
                     "lowerBound": 1,
-                    "uniqueName": "rbitro3",
                     "upperBound": 1,
-                    "ordered": false,
+                    "dependency": false,
                     "derived": false,
-                    "dependency": false
+                    "uniqueName": "rbitro3",
+                    "ordered": false
                 },
                 {
                     "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -2138,13 +2168,14 @@
                     "classifier": 183,
                     "name": "participa\u00e7\u00e3o_de_\u00e1rbrito",
                     "lowerBound": 1,
-                    "uniqueName": "participao_de_rbrito",
                     "upperBound": -1,
-                    "ordered": false,
+                    "dependency": false,
                     "derived": false,
-                    "dependency": false
+                    "uniqueName": "participao_de_rbrito",
+                    "ordered": false
                 }
             ],
+            "stereotype": "PARTICIPATION",
             "uniqueName": "OntoUMLRelationship21"
         },
         {

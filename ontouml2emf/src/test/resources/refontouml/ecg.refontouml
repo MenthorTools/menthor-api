@@ -55,7 +55,7 @@
         <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
       </ownedEnd>
     </packagedElement>
-    <packagedElement xsi:type="RefOntoUML:Association" memberEnd="//@packagedElement.0/@packagedElement.22/@ownedEnd.0 //@packagedElement.0/@packagedElement.22/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.0/@packagedElement.22/@ownedEnd.0 //@packagedElement.0/@packagedElement.22/@ownedEnd.1">
+    <packagedElement xsi:type="RefOntoUML:Mediation" memberEnd="//@packagedElement.0/@packagedElement.22/@ownedEnd.0 //@packagedElement.0/@packagedElement.22/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.0/@packagedElement.22/@ownedEnd.0 //@packagedElement.0/@packagedElement.22/@ownedEnd.1">
       <name xsi:nil="true"/>
       <ownedEnd name="la_contraction" type="//@packagedElement.0/@packagedElement.7" association="//@packagedElement.0/@packagedElement.22">
         <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="1"/>
@@ -66,7 +66,7 @@
         <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
       </ownedEnd>
     </packagedElement>
-    <packagedElement xsi:type="RefOntoUML:Association" memberEnd="//@packagedElement.0/@packagedElement.23/@ownedEnd.0 //@packagedElement.0/@packagedElement.23/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.0/@packagedElement.23/@ownedEnd.0 //@packagedElement.0/@packagedElement.23/@ownedEnd.1">
+    <packagedElement xsi:type="RefOntoUML:componentOf" memberEnd="//@packagedElement.0/@packagedElement.23/@ownedEnd.0 //@packagedElement.0/@packagedElement.23/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.0/@packagedElement.23/@ownedEnd.0 //@packagedElement.0/@packagedElement.23/@ownedEnd.1">
       <name xsi:nil="true"/>
       <ownedEnd name="his_purkinje_electrical_impulse" type="//@packagedElement.0/@packagedElement.6" association="//@packagedElement.0/@packagedElement.23">
         <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="1"/>
@@ -110,7 +110,7 @@
         <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
       </ownedEnd>
     </packagedElement>
-    <packagedElement xsi:type="RefOntoUML:Association" memberEnd="//@packagedElement.0/@packagedElement.27/@ownedEnd.0 //@packagedElement.0/@packagedElement.27/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.0/@packagedElement.27/@ownedEnd.0 //@packagedElement.0/@packagedElement.27/@ownedEnd.1">
+    <packagedElement xsi:type="RefOntoUML:componentOf" memberEnd="//@packagedElement.0/@packagedElement.27/@ownedEnd.0 //@packagedElement.0/@packagedElement.27/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.0/@packagedElement.27/@ownedEnd.0 //@packagedElement.0/@packagedElement.27/@ownedEnd.1">
       <name xsi:nil="true"/>
       <ownedEnd name="heart_as_a_pump" type="//@packagedElement.0/@packagedElement.3" association="//@packagedElement.0/@packagedElement.27">
         <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="1"/>
@@ -121,7 +121,7 @@
         <lowerValue xsi:type="RefOntoUML:LiteralInteger"/>
       </ownedEnd>
     </packagedElement>
-    <packagedElement xsi:type="RefOntoUML:Association" memberEnd="//@packagedElement.0/@packagedElement.28/@ownedEnd.0 //@packagedElement.0/@packagedElement.28/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.0/@packagedElement.28/@ownedEnd.0 //@packagedElement.0/@packagedElement.28/@ownedEnd.1">
+    <packagedElement xsi:type="RefOntoUML:componentOf" memberEnd="//@packagedElement.0/@packagedElement.28/@ownedEnd.0 //@packagedElement.0/@packagedElement.28/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.0/@packagedElement.28/@ownedEnd.0 //@packagedElement.0/@packagedElement.28/@ownedEnd.1">
       <name xsi:nil="true"/>
       <ownedEnd name="heart_as_a_pump" type="//@packagedElement.0/@packagedElement.3" association="//@packagedElement.0/@packagedElement.28">
         <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="1"/>
@@ -132,7 +132,7 @@
         <lowerValue xsi:type="RefOntoUML:LiteralInteger"/>
       </ownedEnd>
     </packagedElement>
-    <packagedElement xsi:type="RefOntoUML:Association" memberEnd="//@packagedElement.0/@packagedElement.29/@ownedEnd.0 //@packagedElement.0/@packagedElement.29/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.0/@packagedElement.29/@ownedEnd.0 //@packagedElement.0/@packagedElement.29/@ownedEnd.1">
+    <packagedElement xsi:type="RefOntoUML:componentOf" memberEnd="//@packagedElement.0/@packagedElement.29/@ownedEnd.0 //@packagedElement.0/@packagedElement.29/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.0/@packagedElement.29/@ownedEnd.0 //@packagedElement.0/@packagedElement.29/@ownedEnd.1">
       <name xsi:nil="true"/>
       <ownedEnd name="heart_as_a_pump" type="//@packagedElement.0/@packagedElement.3" isReadOnly="true" association="//@packagedElement.0/@packagedElement.29">
         <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="1"/>
@@ -143,7 +143,7 @@
         <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
       </ownedEnd>
     </packagedElement>
-    <packagedElement xsi:type="RefOntoUML:Association" memberEnd="//@packagedElement.0/@packagedElement.30/@ownedEnd.0 //@packagedElement.0/@packagedElement.30/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.0/@packagedElement.30/@ownedEnd.0 //@packagedElement.0/@packagedElement.30/@ownedEnd.1">
+    <packagedElement xsi:type="RefOntoUML:componentOf" memberEnd="//@packagedElement.0/@packagedElement.30/@ownedEnd.0 //@packagedElement.0/@packagedElement.30/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.0/@packagedElement.30/@ownedEnd.0 //@packagedElement.0/@packagedElement.30/@ownedEnd.1">
       <name xsi:nil="true"/>
       <ownedEnd name="heart_as_a_pump" type="//@packagedElement.0/@packagedElement.3" isReadOnly="true" association="//@packagedElement.0/@packagedElement.30">
         <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="1"/>
@@ -165,7 +165,7 @@
         <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
       </ownedEnd>
     </packagedElement>
-    <packagedElement xsi:type="RefOntoUML:Association" memberEnd="//@packagedElement.0/@packagedElement.32/@ownedEnd.0 //@packagedElement.0/@packagedElement.32/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.0/@packagedElement.32/@ownedEnd.0 //@packagedElement.0/@packagedElement.32/@ownedEnd.1">
+    <packagedElement xsi:type="RefOntoUML:componentOf" memberEnd="//@packagedElement.0/@packagedElement.32/@ownedEnd.0 //@packagedElement.0/@packagedElement.32/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.0/@packagedElement.32/@ownedEnd.0 //@packagedElement.0/@packagedElement.32/@ownedEnd.1">
       <name xsi:nil="true"/>
       <ownedEnd name="human_heart" type="//@packagedElement.5/@packagedElement.2" association="//@packagedElement.0/@packagedElement.32">
         <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="1"/>
@@ -176,7 +176,7 @@
         <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
       </ownedEnd>
     </packagedElement>
-    <packagedElement xsi:type="RefOntoUML:Association" memberEnd="//@packagedElement.0/@packagedElement.33/@ownedEnd.0 //@packagedElement.0/@packagedElement.33/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.0/@packagedElement.33/@ownedEnd.0 //@packagedElement.0/@packagedElement.33/@ownedEnd.1">
+    <packagedElement xsi:type="RefOntoUML:componentOf" memberEnd="//@packagedElement.0/@packagedElement.33/@ownedEnd.0 //@packagedElement.0/@packagedElement.33/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.0/@packagedElement.33/@ownedEnd.0 //@packagedElement.0/@packagedElement.33/@ownedEnd.1">
       <name xsi:nil="true"/>
       <ownedEnd name="his_purkinje_electrical_impulse" type="//@packagedElement.0/@packagedElement.6" association="//@packagedElement.0/@packagedElement.33">
         <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="1"/>
@@ -187,7 +187,7 @@
         <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
       </ownedEnd>
     </packagedElement>
-    <packagedElement xsi:type="RefOntoUML:Association" name="maps" memberEnd="//@packagedElement.0/@packagedElement.34/@ownedEnd.0 //@packagedElement.0/@packagedElement.34/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.0/@packagedElement.34/@ownedEnd.0 //@packagedElement.0/@packagedElement.34/@ownedEnd.1">
+    <packagedElement xsi:type="RefOntoUML:MaterialAssociation" name="maps" memberEnd="//@packagedElement.0/@packagedElement.34/@ownedEnd.0 //@packagedElement.0/@packagedElement.34/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.0/@packagedElement.34/@ownedEnd.0 //@packagedElement.0/@packagedElement.34/@ownedEnd.1">
       <ownedEnd name="qrscomplex" type="//@packagedElement.4/@packagedElement.13" association="//@packagedElement.0/@packagedElement.34">
         <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="1"/>
         <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
@@ -197,7 +197,7 @@
         <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
       </ownedEnd>
     </packagedElement>
-    <packagedElement xsi:type="RefOntoUML:Association" memberEnd="//@packagedElement.0/@packagedElement.35/@ownedEnd.0 //@packagedElement.0/@packagedElement.35/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.0/@packagedElement.35/@ownedEnd.0 //@packagedElement.0/@packagedElement.35/@ownedEnd.1">
+    <packagedElement xsi:type="RefOntoUML:Mediation" memberEnd="//@packagedElement.0/@packagedElement.35/@ownedEnd.0 //@packagedElement.0/@packagedElement.35/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.0/@packagedElement.35/@ownedEnd.0 //@packagedElement.0/@packagedElement.35/@ownedEnd.1">
       <name xsi:nil="true"/>
       <ownedEnd name="la_contraction" type="//@packagedElement.0/@packagedElement.7" association="//@packagedElement.0/@packagedElement.35">
         <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="-1"/>
@@ -208,7 +208,7 @@
         <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
       </ownedEnd>
     </packagedElement>
-    <packagedElement xsi:type="RefOntoUML:Association" memberEnd="//@packagedElement.0/@packagedElement.36/@ownedEnd.0 //@packagedElement.0/@packagedElement.36/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.0/@packagedElement.36/@ownedEnd.0 //@packagedElement.0/@packagedElement.36/@ownedEnd.1">
+    <packagedElement xsi:type="RefOntoUML:Mediation" memberEnd="//@packagedElement.0/@packagedElement.36/@ownedEnd.0 //@packagedElement.0/@packagedElement.36/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.0/@packagedElement.36/@ownedEnd.0 //@packagedElement.0/@packagedElement.36/@ownedEnd.1">
       <name xsi:nil="true"/>
       <ownedEnd name="lv_contraction" type="//@packagedElement.0/@packagedElement.8" association="//@packagedElement.0/@packagedElement.36">
         <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="-1"/>
@@ -219,7 +219,7 @@
         <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
       </ownedEnd>
     </packagedElement>
-    <packagedElement xsi:type="RefOntoUML:Association" memberEnd="//@packagedElement.0/@packagedElement.37/@ownedEnd.0 //@packagedElement.0/@packagedElement.37/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.0/@packagedElement.37/@ownedEnd.0 //@packagedElement.0/@packagedElement.37/@ownedEnd.1">
+    <packagedElement xsi:type="RefOntoUML:Mediation" memberEnd="//@packagedElement.0/@packagedElement.37/@ownedEnd.0 //@packagedElement.0/@packagedElement.37/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.0/@packagedElement.37/@ownedEnd.0 //@packagedElement.0/@packagedElement.37/@ownedEnd.1">
       <name xsi:nil="true"/>
       <ownedEnd name="lv_contraction" type="//@packagedElement.0/@packagedElement.8" association="//@packagedElement.0/@packagedElement.37">
         <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="1"/>
@@ -230,7 +230,7 @@
         <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
       </ownedEnd>
     </packagedElement>
-    <packagedElement xsi:type="RefOntoUML:Association" name="contraction" memberEnd="//@packagedElement.0/@packagedElement.38/@ownedEnd.0 //@packagedElement.0/@packagedElement.38/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.0/@packagedElement.38/@ownedEnd.0 //@packagedElement.0/@packagedElement.38/@ownedEnd.1">
+    <packagedElement xsi:type="RefOntoUML:MaterialAssociation" name="contraction" memberEnd="//@packagedElement.0/@packagedElement.38/@ownedEnd.0 //@packagedElement.0/@packagedElement.38/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.0/@packagedElement.38/@ownedEnd.0 //@packagedElement.0/@packagedElement.38/@ownedEnd.1">
       <ownedEnd name="left_ventricle_as_a_pump" type="//@packagedElement.0/@packagedElement.10" association="//@packagedElement.0/@packagedElement.38">
         <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="1"/>
         <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
@@ -240,7 +240,7 @@
         <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
       </ownedEnd>
     </packagedElement>
-    <packagedElement xsi:type="RefOntoUML:Association" memberEnd="//@packagedElement.0/@packagedElement.39/@ownedEnd.0 //@packagedElement.0/@packagedElement.39/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.0/@packagedElement.39/@ownedEnd.0 //@packagedElement.0/@packagedElement.39/@ownedEnd.1">
+    <packagedElement xsi:type="RefOntoUML:Mediation" memberEnd="//@packagedElement.0/@packagedElement.39/@ownedEnd.0 //@packagedElement.0/@packagedElement.39/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.0/@packagedElement.39/@ownedEnd.0 //@packagedElement.0/@packagedElement.39/@ownedEnd.1">
       <name xsi:nil="true"/>
       <ownedEnd name="rv_contraction" type="//@packagedElement.0/@packagedElement.15" association="//@packagedElement.0/@packagedElement.39">
         <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="1"/>
@@ -251,7 +251,7 @@
         <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
       </ownedEnd>
     </packagedElement>
-    <packagedElement xsi:type="RefOntoUML:Association" name="contraction" memberEnd="//@packagedElement.0/@packagedElement.40/@ownedEnd.0 //@packagedElement.0/@packagedElement.40/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.0/@packagedElement.40/@ownedEnd.0 //@packagedElement.0/@packagedElement.40/@ownedEnd.1">
+    <packagedElement xsi:type="RefOntoUML:MaterialAssociation" name="contraction" memberEnd="//@packagedElement.0/@packagedElement.40/@ownedEnd.0 //@packagedElement.0/@packagedElement.40/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.0/@packagedElement.40/@ownedEnd.0 //@packagedElement.0/@packagedElement.40/@ownedEnd.1">
       <ownedEnd name="right_ventricle_as_a_pump" type="//@packagedElement.0/@packagedElement.17" association="//@packagedElement.0/@packagedElement.40">
         <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="1"/>
         <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
@@ -261,7 +261,7 @@
         <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
       </ownedEnd>
     </packagedElement>
-    <packagedElement xsi:type="RefOntoUML:Association" memberEnd="//@packagedElement.0/@packagedElement.41/@ownedEnd.0 //@packagedElement.0/@packagedElement.41/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.0/@packagedElement.41/@ownedEnd.0 //@packagedElement.0/@packagedElement.41/@ownedEnd.1">
+    <packagedElement xsi:type="RefOntoUML:Mediation" memberEnd="//@packagedElement.0/@packagedElement.41/@ownedEnd.0 //@packagedElement.0/@packagedElement.41/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.0/@packagedElement.41/@ownedEnd.0 //@packagedElement.0/@packagedElement.41/@ownedEnd.1">
       <name xsi:nil="true"/>
       <ownedEnd name="ra_contraction" type="//@packagedElement.0/@packagedElement.14" association="//@packagedElement.0/@packagedElement.41">
         <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="1"/>
@@ -272,7 +272,7 @@
         <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
       </ownedEnd>
     </packagedElement>
-    <packagedElement xsi:type="RefOntoUML:Association" memberEnd="//@packagedElement.0/@packagedElement.42/@ownedEnd.0 //@packagedElement.0/@packagedElement.42/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.0/@packagedElement.42/@ownedEnd.0 //@packagedElement.0/@packagedElement.42/@ownedEnd.1">
+    <packagedElement xsi:type="RefOntoUML:Mediation" memberEnd="//@packagedElement.0/@packagedElement.42/@ownedEnd.0 //@packagedElement.0/@packagedElement.42/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.0/@packagedElement.42/@ownedEnd.0 //@packagedElement.0/@packagedElement.42/@ownedEnd.1">
       <name xsi:nil="true"/>
       <ownedEnd name="ra_contraction" type="//@packagedElement.0/@packagedElement.14" association="//@packagedElement.0/@packagedElement.42">
         <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="-1"/>
@@ -283,7 +283,7 @@
         <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
       </ownedEnd>
     </packagedElement>
-    <packagedElement xsi:type="RefOntoUML:Association" memberEnd="//@packagedElement.0/@packagedElement.43/@ownedEnd.0 //@packagedElement.0/@packagedElement.43/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.0/@packagedElement.43/@ownedEnd.0 //@packagedElement.0/@packagedElement.43/@ownedEnd.1">
+    <packagedElement xsi:type="RefOntoUML:Mediation" memberEnd="//@packagedElement.0/@packagedElement.43/@ownedEnd.0 //@packagedElement.0/@packagedElement.43/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.0/@packagedElement.43/@ownedEnd.0 //@packagedElement.0/@packagedElement.43/@ownedEnd.1">
       <name xsi:nil="true"/>
       <ownedEnd name="rv_contraction" type="//@packagedElement.0/@packagedElement.15" association="//@packagedElement.0/@packagedElement.43">
         <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="-1"/>
@@ -294,7 +294,7 @@
         <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
       </ownedEnd>
     </packagedElement>
-    <packagedElement xsi:type="RefOntoUML:Association" name="maps" memberEnd="//@packagedElement.0/@packagedElement.44/@ownedEnd.0 //@packagedElement.0/@packagedElement.44/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.0/@packagedElement.44/@ownedEnd.0 //@packagedElement.0/@packagedElement.44/@ownedEnd.1">
+    <packagedElement xsi:type="RefOntoUML:MaterialAssociation" name="maps" memberEnd="//@packagedElement.0/@packagedElement.44/@ownedEnd.0 //@packagedElement.0/@packagedElement.44/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.0/@packagedElement.44/@ownedEnd.0 //@packagedElement.0/@packagedElement.44/@ownedEnd.1">
       <ownedEnd name="pwave" type="//@packagedElement.4/@packagedElement.12" association="//@packagedElement.0/@packagedElement.44">
         <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="1"/>
         <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
@@ -500,7 +500,7 @@
     <packagedElement xsi:type="RefOntoUML:Role" name="Right Atrium As A Blood Container">
       <generalization general="//@packagedElement.5/@packagedElement.6"/>
     </packagedElement>
-    <packagedElement xsi:type="RefOntoUML:Association" memberEnd="//@packagedElement.2/@packagedElement.22/@ownedEnd.0 //@packagedElement.2/@packagedElement.22/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.2/@packagedElement.22/@ownedEnd.0 //@packagedElement.2/@packagedElement.22/@ownedEnd.1">
+    <packagedElement xsi:type="RefOntoUML:componentOf" memberEnd="//@packagedElement.2/@packagedElement.22/@ownedEnd.0 //@packagedElement.2/@packagedElement.22/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.2/@packagedElement.22/@ownedEnd.0 //@packagedElement.2/@packagedElement.22/@ownedEnd.1">
       <name xsi:nil="true"/>
       <ownedEnd name="bloodinhumanbody" type="//@packagedElement.2/@packagedElement.6" isReadOnly="true" association="//@packagedElement.2/@packagedElement.22">
         <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="1"/>
@@ -511,7 +511,7 @@
         <lowerValue xsi:type="RefOntoUML:LiteralInteger"/>
       </ownedEnd>
     </packagedElement>
-    <packagedElement xsi:type="RefOntoUML:Association" memberEnd="//@packagedElement.2/@packagedElement.23/@ownedEnd.0 //@packagedElement.2/@packagedElement.23/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.2/@packagedElement.23/@ownedEnd.0 //@packagedElement.2/@packagedElement.23/@ownedEnd.1">
+    <packagedElement xsi:type="RefOntoUML:Mediation" memberEnd="//@packagedElement.2/@packagedElement.23/@ownedEnd.0 //@packagedElement.2/@packagedElement.23/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.2/@packagedElement.23/@ownedEnd.0 //@packagedElement.2/@packagedElement.23/@ownedEnd.1">
       <name xsi:nil="true"/>
       <ownedEnd name="lungs_blood_storing" type="//@packagedElement.2/@packagedElement.14" association="//@packagedElement.2/@packagedElement.23">
         <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="1"/>
@@ -522,7 +522,7 @@
         <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
       </ownedEnd>
     </packagedElement>
-    <packagedElement xsi:type="RefOntoUML:Association" memberEnd="//@packagedElement.2/@packagedElement.24/@ownedEnd.0 //@packagedElement.2/@packagedElement.24/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.2/@packagedElement.24/@ownedEnd.0 //@packagedElement.2/@packagedElement.24/@ownedEnd.1">
+    <packagedElement xsi:type="RefOntoUML:Mediation" memberEnd="//@packagedElement.2/@packagedElement.24/@ownedEnd.0 //@packagedElement.2/@packagedElement.24/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.2/@packagedElement.24/@ownedEnd.0 //@packagedElement.2/@packagedElement.24/@ownedEnd.1">
       <name xsi:nil="true"/>
       <ownedEnd name="ra_blood_storing" type="//@packagedElement.2/@packagedElement.18" association="//@packagedElement.2/@packagedElement.24">
         <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="1"/>
@@ -533,7 +533,7 @@
         <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
       </ownedEnd>
     </packagedElement>
-    <packagedElement xsi:type="RefOntoUML:Association" memberEnd="//@packagedElement.2/@packagedElement.25/@ownedEnd.0 //@packagedElement.2/@packagedElement.25/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.2/@packagedElement.25/@ownedEnd.0 //@packagedElement.2/@packagedElement.25/@ownedEnd.1">
+    <packagedElement xsi:type="RefOntoUML:componentOf" memberEnd="//@packagedElement.2/@packagedElement.25/@ownedEnd.0 //@packagedElement.2/@packagedElement.25/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.2/@packagedElement.25/@ownedEnd.0 //@packagedElement.2/@packagedElement.25/@ownedEnd.1">
       <name xsi:nil="true"/>
       <ownedEnd name="bloodinhumanbody" type="//@packagedElement.2/@packagedElement.6" isReadOnly="true" association="//@packagedElement.2/@packagedElement.25">
         <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="1"/>
@@ -544,7 +544,7 @@
         <lowerValue xsi:type="RefOntoUML:LiteralInteger"/>
       </ownedEnd>
     </packagedElement>
-    <packagedElement xsi:type="RefOntoUML:Association" memberEnd="//@packagedElement.2/@packagedElement.26/@ownedEnd.0 //@packagedElement.2/@packagedElement.26/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.2/@packagedElement.26/@ownedEnd.0 //@packagedElement.2/@packagedElement.26/@ownedEnd.1">
+    <packagedElement xsi:type="RefOntoUML:Mediation" memberEnd="//@packagedElement.2/@packagedElement.26/@ownedEnd.0 //@packagedElement.2/@packagedElement.26/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.2/@packagedElement.26/@ownedEnd.0 //@packagedElement.2/@packagedElement.26/@ownedEnd.1">
       <name xsi:nil="true"/>
       <ownedEnd name="la_blood_storing" type="//@packagedElement.2/@packagedElement.8" association="//@packagedElement.2/@packagedElement.26">
         <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="1"/>
@@ -555,7 +555,7 @@
         <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
       </ownedEnd>
     </packagedElement>
-    <packagedElement xsi:type="RefOntoUML:Association" memberEnd="//@packagedElement.2/@packagedElement.27/@ownedEnd.0 //@packagedElement.2/@packagedElement.27/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.2/@packagedElement.27/@ownedEnd.0 //@packagedElement.2/@packagedElement.27/@ownedEnd.1">
+    <packagedElement xsi:type="RefOntoUML:componentOf" memberEnd="//@packagedElement.2/@packagedElement.27/@ownedEnd.0 //@packagedElement.2/@packagedElement.27/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.2/@packagedElement.27/@ownedEnd.0 //@packagedElement.2/@packagedElement.27/@ownedEnd.1">
       <name xsi:nil="true"/>
       <ownedEnd name="bloodinhumanbody" type="//@packagedElement.2/@packagedElement.6" isReadOnly="true" association="//@packagedElement.2/@packagedElement.27">
         <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="1"/>
@@ -566,7 +566,7 @@
         <lowerValue xsi:type="RefOntoUML:LiteralInteger"/>
       </ownedEnd>
     </packagedElement>
-    <packagedElement xsi:type="RefOntoUML:Association" memberEnd="//@packagedElement.2/@packagedElement.28/@ownedEnd.0 //@packagedElement.2/@packagedElement.28/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.2/@packagedElement.28/@ownedEnd.0 //@packagedElement.2/@packagedElement.28/@ownedEnd.1">
+    <packagedElement xsi:type="RefOntoUML:componentOf" memberEnd="//@packagedElement.2/@packagedElement.28/@ownedEnd.0 //@packagedElement.2/@packagedElement.28/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.2/@packagedElement.28/@ownedEnd.0 //@packagedElement.2/@packagedElement.28/@ownedEnd.1">
       <name xsi:nil="true"/>
       <ownedEnd name="bloodinhumanbody" type="//@packagedElement.2/@packagedElement.6" isReadOnly="true" association="//@packagedElement.2/@packagedElement.28">
         <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="1"/>
@@ -577,7 +577,7 @@
         <lowerValue xsi:type="RefOntoUML:LiteralInteger"/>
       </ownedEnd>
     </packagedElement>
-    <packagedElement xsi:type="RefOntoUML:Association" memberEnd="//@packagedElement.2/@packagedElement.29/@ownedEnd.0 //@packagedElement.2/@packagedElement.29/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.2/@packagedElement.29/@ownedEnd.0 //@packagedElement.2/@packagedElement.29/@ownedEnd.1">
+    <packagedElement xsi:type="RefOntoUML:Mediation" memberEnd="//@packagedElement.2/@packagedElement.29/@ownedEnd.0 //@packagedElement.2/@packagedElement.29/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.2/@packagedElement.29/@ownedEnd.0 //@packagedElement.2/@packagedElement.29/@ownedEnd.1">
       <name xsi:nil="true"/>
       <ownedEnd name="lv_blood_storing" type="//@packagedElement.2/@packagedElement.9" association="//@packagedElement.2/@packagedElement.29">
         <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="1"/>
@@ -588,7 +588,7 @@
         <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
       </ownedEnd>
     </packagedElement>
-    <packagedElement xsi:type="RefOntoUML:Association" memberEnd="//@packagedElement.2/@packagedElement.30/@ownedEnd.0 //@packagedElement.2/@packagedElement.30/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.2/@packagedElement.30/@ownedEnd.0 //@packagedElement.2/@packagedElement.30/@ownedEnd.1">
+    <packagedElement xsi:type="RefOntoUML:Mediation" memberEnd="//@packagedElement.2/@packagedElement.30/@ownedEnd.0 //@packagedElement.2/@packagedElement.30/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.2/@packagedElement.30/@ownedEnd.0 //@packagedElement.2/@packagedElement.30/@ownedEnd.1">
       <name xsi:nil="true"/>
       <ownedEnd name="peripherals_blood_storing" type="//@packagedElement.2/@packagedElement.17" association="//@packagedElement.2/@packagedElement.30">
         <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="1"/>
@@ -599,7 +599,7 @@
         <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
       </ownedEnd>
     </packagedElement>
-    <packagedElement xsi:type="RefOntoUML:Association" memberEnd="//@packagedElement.2/@packagedElement.31/@ownedEnd.0 //@packagedElement.2/@packagedElement.31/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.2/@packagedElement.31/@ownedEnd.0 //@packagedElement.2/@packagedElement.31/@ownedEnd.1">
+    <packagedElement xsi:type="RefOntoUML:componentOf" memberEnd="//@packagedElement.2/@packagedElement.31/@ownedEnd.0 //@packagedElement.2/@packagedElement.31/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.2/@packagedElement.31/@ownedEnd.0 //@packagedElement.2/@packagedElement.31/@ownedEnd.1">
       <name xsi:nil="true"/>
       <ownedEnd name="bloodinhumanbody" type="//@packagedElement.2/@packagedElement.6" isReadOnly="true" association="//@packagedElement.2/@packagedElement.31">
         <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="1"/>
@@ -610,7 +610,7 @@
         <lowerValue xsi:type="RefOntoUML:LiteralInteger"/>
       </ownedEnd>
     </packagedElement>
-    <packagedElement xsi:type="RefOntoUML:Association" memberEnd="//@packagedElement.2/@packagedElement.32/@ownedEnd.0 //@packagedElement.2/@packagedElement.32/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.2/@packagedElement.32/@ownedEnd.0 //@packagedElement.2/@packagedElement.32/@ownedEnd.1">
+    <packagedElement xsi:type="RefOntoUML:Mediation" memberEnd="//@packagedElement.2/@packagedElement.32/@ownedEnd.0 //@packagedElement.2/@packagedElement.32/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.2/@packagedElement.32/@ownedEnd.0 //@packagedElement.2/@packagedElement.32/@ownedEnd.1">
       <name xsi:nil="true"/>
       <ownedEnd name="rv_blood_storing" type="//@packagedElement.2/@packagedElement.19" association="//@packagedElement.2/@packagedElement.32">
         <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="1"/>
@@ -621,7 +621,7 @@
         <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
       </ownedEnd>
     </packagedElement>
-    <packagedElement xsi:type="RefOntoUML:Association" memberEnd="//@packagedElement.2/@packagedElement.33/@ownedEnd.0 //@packagedElement.2/@packagedElement.33/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.2/@packagedElement.33/@ownedEnd.0 //@packagedElement.2/@packagedElement.33/@ownedEnd.1">
+    <packagedElement xsi:type="RefOntoUML:componentOf" memberEnd="//@packagedElement.2/@packagedElement.33/@ownedEnd.0 //@packagedElement.2/@packagedElement.33/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.2/@packagedElement.33/@ownedEnd.0 //@packagedElement.2/@packagedElement.33/@ownedEnd.1">
       <name xsi:nil="true"/>
       <ownedEnd name="bloodinhumanbody" type="//@packagedElement.2/@packagedElement.6" isReadOnly="true" association="//@packagedElement.2/@packagedElement.33">
         <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="1"/>
@@ -632,7 +632,7 @@
         <lowerValue xsi:type="RefOntoUML:LiteralInteger"/>
       </ownedEnd>
     </packagedElement>
-    <packagedElement xsi:type="RefOntoUML:Association" memberEnd="//@packagedElement.2/@packagedElement.34/@ownedEnd.0 //@packagedElement.2/@packagedElement.34/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.2/@packagedElement.34/@ownedEnd.0 //@packagedElement.2/@packagedElement.34/@ownedEnd.1">
+    <packagedElement xsi:type="RefOntoUML:componentOf" memberEnd="//@packagedElement.2/@packagedElement.34/@ownedEnd.0 //@packagedElement.2/@packagedElement.34/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.2/@packagedElement.34/@ownedEnd.0 //@packagedElement.2/@packagedElement.34/@ownedEnd.1">
       <name xsi:nil="true"/>
       <ownedEnd name="heart_as_blood_container" type="//@packagedElement.2/@packagedElement.7" isReadOnly="true" association="//@packagedElement.2/@packagedElement.34">
         <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="1"/>
@@ -643,7 +643,7 @@
         <lowerValue xsi:type="RefOntoUML:LiteralInteger"/>
       </ownedEnd>
     </packagedElement>
-    <packagedElement xsi:type="RefOntoUML:Association" memberEnd="//@packagedElement.2/@packagedElement.35/@ownedEnd.0 //@packagedElement.2/@packagedElement.35/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.2/@packagedElement.35/@ownedEnd.0 //@packagedElement.2/@packagedElement.35/@ownedEnd.1">
+    <packagedElement xsi:type="RefOntoUML:componentOf" memberEnd="//@packagedElement.2/@packagedElement.35/@ownedEnd.0 //@packagedElement.2/@packagedElement.35/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.2/@packagedElement.35/@ownedEnd.0 //@packagedElement.2/@packagedElement.35/@ownedEnd.1">
       <name xsi:nil="true"/>
       <ownedEnd name="heart_as_blood_container" type="//@packagedElement.2/@packagedElement.7" isReadOnly="true" association="//@packagedElement.2/@packagedElement.35">
         <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="1"/>
@@ -654,7 +654,7 @@
         <lowerValue xsi:type="RefOntoUML:LiteralInteger"/>
       </ownedEnd>
     </packagedElement>
-    <packagedElement xsi:type="RefOntoUML:Association" memberEnd="//@packagedElement.2/@packagedElement.36/@ownedEnd.0 //@packagedElement.2/@packagedElement.36/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.2/@packagedElement.36/@ownedEnd.0 //@packagedElement.2/@packagedElement.36/@ownedEnd.1">
+    <packagedElement xsi:type="RefOntoUML:componentOf" memberEnd="//@packagedElement.2/@packagedElement.36/@ownedEnd.0 //@packagedElement.2/@packagedElement.36/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.2/@packagedElement.36/@ownedEnd.0 //@packagedElement.2/@packagedElement.36/@ownedEnd.1">
       <name xsi:nil="true"/>
       <ownedEnd name="heart_as_blood_container" type="//@packagedElement.2/@packagedElement.7" isReadOnly="true" association="//@packagedElement.2/@packagedElement.36">
         <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="1"/>
@@ -665,7 +665,7 @@
         <lowerValue xsi:type="RefOntoUML:LiteralInteger"/>
       </ownedEnd>
     </packagedElement>
-    <packagedElement xsi:type="RefOntoUML:Association" memberEnd="//@packagedElement.2/@packagedElement.37/@ownedEnd.0 //@packagedElement.2/@packagedElement.37/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.2/@packagedElement.37/@ownedEnd.0 //@packagedElement.2/@packagedElement.37/@ownedEnd.1">
+    <packagedElement xsi:type="RefOntoUML:componentOf" memberEnd="//@packagedElement.2/@packagedElement.37/@ownedEnd.0 //@packagedElement.2/@packagedElement.37/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.2/@packagedElement.37/@ownedEnd.0 //@packagedElement.2/@packagedElement.37/@ownedEnd.1">
       <name xsi:nil="true"/>
       <ownedEnd name="heart_as_blood_container" type="//@packagedElement.2/@packagedElement.7" isReadOnly="true" association="//@packagedElement.2/@packagedElement.37">
         <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="1"/>
@@ -676,7 +676,7 @@
         <lowerValue xsi:type="RefOntoUML:LiteralInteger"/>
       </ownedEnd>
     </packagedElement>
-    <packagedElement xsi:type="RefOntoUML:Association" memberEnd="//@packagedElement.2/@packagedElement.38/@ownedEnd.0 //@packagedElement.2/@packagedElement.38/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.2/@packagedElement.38/@ownedEnd.0 //@packagedElement.2/@packagedElement.38/@ownedEnd.1">
+    <packagedElement xsi:type="RefOntoUML:Mediation" memberEnd="//@packagedElement.2/@packagedElement.38/@ownedEnd.0 //@packagedElement.2/@packagedElement.38/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.2/@packagedElement.38/@ownedEnd.0 //@packagedElement.2/@packagedElement.38/@ownedEnd.1">
       <name xsi:nil="true"/>
       <ownedEnd name="la_blood_storing" type="//@packagedElement.2/@packagedElement.8" association="//@packagedElement.2/@packagedElement.38">
         <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="1"/>
@@ -687,7 +687,7 @@
         <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
       </ownedEnd>
     </packagedElement>
-    <packagedElement xsi:type="RefOntoUML:Association" memberEnd="//@packagedElement.2/@packagedElement.39/@ownedEnd.0 //@packagedElement.2/@packagedElement.39/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.2/@packagedElement.39/@ownedEnd.0 //@packagedElement.2/@packagedElement.39/@ownedEnd.1">
+    <packagedElement xsi:type="RefOntoUML:Mediation" memberEnd="//@packagedElement.2/@packagedElement.39/@ownedEnd.0 //@packagedElement.2/@packagedElement.39/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.2/@packagedElement.39/@ownedEnd.0 //@packagedElement.2/@packagedElement.39/@ownedEnd.1">
       <name xsi:nil="true"/>
       <ownedEnd name="lv_blood_storing" type="//@packagedElement.2/@packagedElement.9" association="//@packagedElement.2/@packagedElement.39">
         <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="1"/>
@@ -698,7 +698,7 @@
         <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
       </ownedEnd>
     </packagedElement>
-    <packagedElement xsi:type="RefOntoUML:Association" memberEnd="//@packagedElement.2/@packagedElement.40/@ownedEnd.0 //@packagedElement.2/@packagedElement.40/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.2/@packagedElement.40/@ownedEnd.0 //@packagedElement.2/@packagedElement.40/@ownedEnd.1">
+    <packagedElement xsi:type="RefOntoUML:componentOf" memberEnd="//@packagedElement.2/@packagedElement.40/@ownedEnd.0 //@packagedElement.2/@packagedElement.40/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.2/@packagedElement.40/@ownedEnd.0 //@packagedElement.2/@packagedElement.40/@ownedEnd.1">
       <name xsi:nil="true"/>
       <ownedEnd name="human_body" type="//@packagedElement.5/@packagedElement.1" association="//@packagedElement.2/@packagedElement.40">
         <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="1"/>
@@ -709,7 +709,7 @@
         <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
       </ownedEnd>
     </packagedElement>
-    <packagedElement xsi:type="RefOntoUML:Association" memberEnd="//@packagedElement.2/@packagedElement.41/@ownedEnd.0 //@packagedElement.2/@packagedElement.41/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.2/@packagedElement.41/@ownedEnd.0 //@packagedElement.2/@packagedElement.41/@ownedEnd.1">
+    <packagedElement xsi:type="RefOntoUML:Mediation" memberEnd="//@packagedElement.2/@packagedElement.41/@ownedEnd.0 //@packagedElement.2/@packagedElement.41/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.2/@packagedElement.41/@ownedEnd.0 //@packagedElement.2/@packagedElement.41/@ownedEnd.1">
       <name xsi:nil="true"/>
       <ownedEnd name="lungs_blood_storing" type="//@packagedElement.2/@packagedElement.14" association="//@packagedElement.2/@packagedElement.41">
         <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="1"/>
@@ -720,7 +720,7 @@
         <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
       </ownedEnd>
     </packagedElement>
-    <packagedElement xsi:type="RefOntoUML:Association" memberEnd="//@packagedElement.2/@packagedElement.42/@ownedEnd.0 //@packagedElement.2/@packagedElement.42/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.2/@packagedElement.42/@ownedEnd.0 //@packagedElement.2/@packagedElement.42/@ownedEnd.1">
+    <packagedElement xsi:type="RefOntoUML:componentOf" memberEnd="//@packagedElement.2/@packagedElement.42/@ownedEnd.0 //@packagedElement.2/@packagedElement.42/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.2/@packagedElement.42/@ownedEnd.0 //@packagedElement.2/@packagedElement.42/@ownedEnd.1">
       <name xsi:nil="true"/>
       <ownedEnd name="human_body" type="//@packagedElement.5/@packagedElement.1" association="//@packagedElement.2/@packagedElement.42">
         <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="1"/>
@@ -731,7 +731,7 @@
         <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
       </ownedEnd>
     </packagedElement>
-    <packagedElement xsi:type="RefOntoUML:Association" memberEnd="//@packagedElement.2/@packagedElement.43/@ownedEnd.0 //@packagedElement.2/@packagedElement.43/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.2/@packagedElement.43/@ownedEnd.0 //@packagedElement.2/@packagedElement.43/@ownedEnd.1">
+    <packagedElement xsi:type="RefOntoUML:Mediation" memberEnd="//@packagedElement.2/@packagedElement.43/@ownedEnd.0 //@packagedElement.2/@packagedElement.43/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.2/@packagedElement.43/@ownedEnd.0 //@packagedElement.2/@packagedElement.43/@ownedEnd.1">
       <name xsi:nil="true"/>
       <ownedEnd name="peripherals_blood_storing" type="//@packagedElement.2/@packagedElement.17" association="//@packagedElement.2/@packagedElement.43">
         <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="1"/>
@@ -742,7 +742,7 @@
         <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
       </ownedEnd>
     </packagedElement>
-    <packagedElement xsi:type="RefOntoUML:Association" memberEnd="//@packagedElement.2/@packagedElement.44/@ownedEnd.0 //@packagedElement.2/@packagedElement.44/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.2/@packagedElement.44/@ownedEnd.0 //@packagedElement.2/@packagedElement.44/@ownedEnd.1">
+    <packagedElement xsi:type="RefOntoUML:Mediation" memberEnd="//@packagedElement.2/@packagedElement.44/@ownedEnd.0 //@packagedElement.2/@packagedElement.44/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.2/@packagedElement.44/@ownedEnd.0 //@packagedElement.2/@packagedElement.44/@ownedEnd.1">
       <name xsi:nil="true"/>
       <ownedEnd name="ra_blood_storing" type="//@packagedElement.2/@packagedElement.18" association="//@packagedElement.2/@packagedElement.44">
         <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="1"/>
@@ -753,7 +753,7 @@
         <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
       </ownedEnd>
     </packagedElement>
-    <packagedElement xsi:type="RefOntoUML:Association" memberEnd="//@packagedElement.2/@packagedElement.45/@ownedEnd.0 //@packagedElement.2/@packagedElement.45/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.2/@packagedElement.45/@ownedEnd.0 //@packagedElement.2/@packagedElement.45/@ownedEnd.1">
+    <packagedElement xsi:type="RefOntoUML:Mediation" memberEnd="//@packagedElement.2/@packagedElement.45/@ownedEnd.0 //@packagedElement.2/@packagedElement.45/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.2/@packagedElement.45/@ownedEnd.0 //@packagedElement.2/@packagedElement.45/@ownedEnd.1">
       <name xsi:nil="true"/>
       <ownedEnd name="rv_blood_storing" type="//@packagedElement.2/@packagedElement.19" association="//@packagedElement.2/@packagedElement.45">
         <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="1"/>
@@ -786,7 +786,7 @@
     <packagedElement xsi:type="RefOntoUML:IntegerIntervalDimension" name="Second" unitOfMeasure="Seg"/>
     <packagedElement xsi:type="RefOntoUML:MeasurementDomain" name="Time Domain"/>
     <packagedElement xsi:type="RefOntoUML:IntegerIntervalDimension" name="Year"/>
-    <packagedElement xsi:type="RefOntoUML:Association" memberEnd="//@packagedElement.3/@packagedElement.20/@ownedEnd.0 //@packagedElement.3/@packagedElement.20/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.3/@packagedElement.20/@ownedEnd.0 //@packagedElement.3/@packagedElement.20/@ownedEnd.1">
+    <packagedElement xsi:type="RefOntoUML:Structuration" memberEnd="//@packagedElement.3/@packagedElement.20/@ownedEnd.0 //@packagedElement.3/@packagedElement.20/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.3/@packagedElement.20/@ownedEnd.0 //@packagedElement.3/@packagedElement.20/@ownedEnd.1">
       <name xsi:nil="true"/>
       <ownedEnd name="annotation" type="//@packagedElement.3/@packagedElement.0" association="//@packagedElement.3/@packagedElement.20">
         <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="1"/>
@@ -797,7 +797,7 @@
         <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
       </ownedEnd>
     </packagedElement>
-    <packagedElement xsi:type="RefOntoUML:Association" memberEnd="//@packagedElement.3/@packagedElement.21/@ownedEnd.0 //@packagedElement.3/@packagedElement.21/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.3/@packagedElement.21/@ownedEnd.0 //@packagedElement.3/@packagedElement.21/@ownedEnd.1">
+    <packagedElement xsi:type="RefOntoUML:Characterization" memberEnd="//@packagedElement.3/@packagedElement.21/@ownedEnd.0 //@packagedElement.3/@packagedElement.21/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.3/@packagedElement.21/@ownedEnd.0 //@packagedElement.3/@packagedElement.21/@ownedEnd.1">
       <name xsi:nil="true"/>
       <ownedEnd name="annotation" type="//@packagedElement.3/@packagedElement.0" association="//@packagedElement.3/@packagedElement.21">
         <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="1"/>
@@ -808,7 +808,7 @@
         <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
       </ownedEnd>
     </packagedElement>
-    <packagedElement xsi:type="RefOntoUML:Association" memberEnd="//@packagedElement.3/@packagedElement.22/@ownedEnd.0 //@packagedElement.3/@packagedElement.22/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.3/@packagedElement.22/@ownedEnd.0 //@packagedElement.3/@packagedElement.22/@ownedEnd.1">
+    <packagedElement xsi:type="RefOntoUML:Structuration" memberEnd="//@packagedElement.3/@packagedElement.22/@ownedEnd.0 //@packagedElement.3/@packagedElement.22/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.3/@packagedElement.22/@ownedEnd.0 //@packagedElement.3/@packagedElement.22/@ownedEnd.1">
       <name xsi:nil="true"/>
       <ownedEnd name="cardiac_frequency" type="//@packagedElement.3/@packagedElement.1" association="//@packagedElement.3/@packagedElement.22">
         <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="-1"/>
@@ -819,7 +819,7 @@
         <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
       </ownedEnd>
     </packagedElement>
-    <packagedElement xsi:type="RefOntoUML:Association" name="cardiacFrequency" memberEnd="//@packagedElement.3/@packagedElement.23/@ownedEnd.0 //@packagedElement.3/@packagedElement.23/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.3/@packagedElement.23/@ownedEnd.0 //@packagedElement.3/@packagedElement.23/@ownedEnd.1">
+    <packagedElement xsi:type="RefOntoUML:Characterization" name="cardiacFrequency" memberEnd="//@packagedElement.3/@packagedElement.23/@ownedEnd.0 //@packagedElement.3/@packagedElement.23/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.3/@packagedElement.23/@ownedEnd.0 //@packagedElement.3/@packagedElement.23/@ownedEnd.1">
       <ownedEnd name="cardiac_frequency" type="//@packagedElement.3/@packagedElement.1" association="//@packagedElement.3/@packagedElement.23">
         <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="1"/>
         <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
@@ -829,7 +829,7 @@
         <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
       </ownedEnd>
     </packagedElement>
-    <packagedElement xsi:type="RefOntoUML:Association" memberEnd="//@packagedElement.3/@packagedElement.24/@ownedEnd.0 //@packagedElement.3/@packagedElement.24/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.3/@packagedElement.24/@ownedEnd.0 //@packagedElement.3/@packagedElement.24/@ownedEnd.1">
+    <packagedElement xsi:type="RefOntoUML:Structuration" memberEnd="//@packagedElement.3/@packagedElement.24/@ownedEnd.0 //@packagedElement.3/@packagedElement.24/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.3/@packagedElement.24/@ownedEnd.0 //@packagedElement.3/@packagedElement.24/@ownedEnd.1">
       <name xsi:nil="true"/>
       <ownedEnd name="date" type="//@packagedElement.3/@packagedElement.2" association="//@packagedElement.3/@packagedElement.24">
         <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="1"/>
@@ -840,7 +840,7 @@
         <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
       </ownedEnd>
     </packagedElement>
-    <packagedElement xsi:type="RefOntoUML:Association" name="startDate" memberEnd="//@packagedElement.3/@packagedElement.25/@ownedEnd.0 //@packagedElement.3/@packagedElement.25/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.3/@packagedElement.25/@ownedEnd.0 //@packagedElement.3/@packagedElement.25/@ownedEnd.1">
+    <packagedElement xsi:type="RefOntoUML:Characterization" name="startDate" memberEnd="//@packagedElement.3/@packagedElement.25/@ownedEnd.0 //@packagedElement.3/@packagedElement.25/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.3/@packagedElement.25/@ownedEnd.0 //@packagedElement.3/@packagedElement.25/@ownedEnd.1">
       <ownedEnd name="ecg_recording_session" type="//@packagedElement.4/@packagedElement.5" association="//@packagedElement.3/@packagedElement.25">
         <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="1"/>
         <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
@@ -850,7 +850,7 @@
         <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
       </ownedEnd>
     </packagedElement>
-    <packagedElement xsi:type="RefOntoUML:Association" memberEnd="//@packagedElement.3/@packagedElement.26/@ownedEnd.0 //@packagedElement.3/@packagedElement.26/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.3/@packagedElement.26/@ownedEnd.0 //@packagedElement.3/@packagedElement.26/@ownedEnd.1">
+    <packagedElement xsi:type="RefOntoUML:Structuration" memberEnd="//@packagedElement.3/@packagedElement.26/@ownedEnd.0 //@packagedElement.3/@packagedElement.26/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.3/@packagedElement.26/@ownedEnd.0 //@packagedElement.3/@packagedElement.26/@ownedEnd.1">
       <name xsi:nil="true"/>
       <ownedEnd name="electrical_potential" type="//@packagedElement.3/@packagedElement.3" association="//@packagedElement.3/@packagedElement.26">
         <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="1"/>
@@ -861,7 +861,7 @@
         <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
       </ownedEnd>
     </packagedElement>
-    <packagedElement xsi:type="RefOntoUML:Association" name="electricalPotential" memberEnd="//@packagedElement.3/@packagedElement.27/@ownedEnd.0 //@packagedElement.3/@packagedElement.27/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.3/@packagedElement.27/@ownedEnd.0 //@packagedElement.3/@packagedElement.27/@ownedEnd.1">
+    <packagedElement xsi:type="RefOntoUML:Characterization" name="electricalPotential" memberEnd="//@packagedElement.3/@packagedElement.27/@ownedEnd.0 //@packagedElement.3/@packagedElement.27/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.3/@packagedElement.27/@ownedEnd.0 //@packagedElement.3/@packagedElement.27/@ownedEnd.1">
       <ownedEnd name="electrical_potential" type="//@packagedElement.3/@packagedElement.3" association="//@packagedElement.3/@packagedElement.27">
         <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="1"/>
         <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
@@ -871,7 +871,7 @@
         <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
       </ownedEnd>
     </packagedElement>
-    <packagedElement xsi:type="RefOntoUML:Association" memberEnd="//@packagedElement.3/@packagedElement.28/@ownedEnd.0 //@packagedElement.3/@packagedElement.28/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.3/@packagedElement.28/@ownedEnd.0 //@packagedElement.3/@packagedElement.28/@ownedEnd.1">
+    <packagedElement xsi:type="RefOntoUML:Characterization" memberEnd="//@packagedElement.3/@packagedElement.28/@ownedEnd.0 //@packagedElement.3/@packagedElement.28/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.3/@packagedElement.28/@ownedEnd.0 //@packagedElement.3/@packagedElement.28/@ownedEnd.1">
       <name xsi:nil="true"/>
       <ownedEnd name="measurement" type="//@packagedElement.3/@packagedElement.4" association="//@packagedElement.3/@packagedElement.28">
         <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="1"/>
@@ -882,7 +882,7 @@
         <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
       </ownedEnd>
     </packagedElement>
-    <packagedElement xsi:type="RefOntoUML:Association" memberEnd="//@packagedElement.3/@packagedElement.29/@ownedEnd.0 //@packagedElement.3/@packagedElement.29/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.3/@packagedElement.29/@ownedEnd.0 //@packagedElement.3/@packagedElement.29/@ownedEnd.1">
+    <packagedElement xsi:type="RefOntoUML:Structuration" memberEnd="//@packagedElement.3/@packagedElement.29/@ownedEnd.0 //@packagedElement.3/@packagedElement.29/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.3/@packagedElement.29/@ownedEnd.0 //@packagedElement.3/@packagedElement.29/@ownedEnd.1">
       <name xsi:nil="true"/>
       <ownedEnd name="measurement" type="//@packagedElement.3/@packagedElement.4" association="//@packagedElement.3/@packagedElement.29">
         <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="1"/>
@@ -893,7 +893,7 @@
         <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
       </ownedEnd>
     </packagedElement>
-    <packagedElement xsi:type="RefOntoUML:Association" memberEnd="//@packagedElement.3/@packagedElement.30/@ownedEnd.0 //@packagedElement.3/@packagedElement.30/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.3/@packagedElement.30/@ownedEnd.0 //@packagedElement.3/@packagedElement.30/@ownedEnd.1">
+    <packagedElement xsi:type="RefOntoUML:Structuration" memberEnd="//@packagedElement.3/@packagedElement.30/@ownedEnd.0 //@packagedElement.3/@packagedElement.30/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.3/@packagedElement.30/@ownedEnd.0 //@packagedElement.3/@packagedElement.30/@ownedEnd.1">
       <name xsi:nil="true"/>
       <ownedEnd name="sample" type="//@packagedElement.3/@packagedElement.5" association="//@packagedElement.3/@packagedElement.30">
         <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="1"/>
@@ -904,7 +904,7 @@
         <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
       </ownedEnd>
     </packagedElement>
-    <packagedElement xsi:type="RefOntoUML:Association" memberEnd="//@packagedElement.3/@packagedElement.31/@ownedEnd.0 //@packagedElement.3/@packagedElement.31/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.3/@packagedElement.31/@ownedEnd.0 //@packagedElement.3/@packagedElement.31/@ownedEnd.1">
+    <packagedElement xsi:type="RefOntoUML:Characterization" memberEnd="//@packagedElement.3/@packagedElement.31/@ownedEnd.0 //@packagedElement.3/@packagedElement.31/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.3/@packagedElement.31/@ownedEnd.0 //@packagedElement.3/@packagedElement.31/@ownedEnd.1">
       <name xsi:nil="true"/>
       <ownedEnd name="sample" type="//@packagedElement.3/@packagedElement.5" association="//@packagedElement.3/@packagedElement.31">
         <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="1"/>
@@ -915,7 +915,7 @@
         <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
       </ownedEnd>
     </packagedElement>
-    <packagedElement xsi:type="RefOntoUML:Association" memberEnd="//@packagedElement.3/@packagedElement.32/@ownedEnd.0 //@packagedElement.3/@packagedElement.32/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.3/@packagedElement.32/@ownedEnd.0 //@packagedElement.3/@packagedElement.32/@ownedEnd.1">
+    <packagedElement xsi:type="RefOntoUML:Structuration" memberEnd="//@packagedElement.3/@packagedElement.32/@ownedEnd.0 //@packagedElement.3/@packagedElement.32/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.3/@packagedElement.32/@ownedEnd.0 //@packagedElement.3/@packagedElement.32/@ownedEnd.1">
       <name xsi:nil="true"/>
       <ownedEnd name="time" type="//@packagedElement.3/@packagedElement.6" association="//@packagedElement.3/@packagedElement.32">
         <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="1"/>
@@ -926,7 +926,7 @@
         <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
       </ownedEnd>
     </packagedElement>
-    <packagedElement xsi:type="RefOntoUML:Association" name="time" memberEnd="//@packagedElement.3/@packagedElement.33/@ownedEnd.0 //@packagedElement.3/@packagedElement.33/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.3/@packagedElement.33/@ownedEnd.0 //@packagedElement.3/@packagedElement.33/@ownedEnd.1">
+    <packagedElement xsi:type="RefOntoUML:Characterization" name="time" memberEnd="//@packagedElement.3/@packagedElement.33/@ownedEnd.0 //@packagedElement.3/@packagedElement.33/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.3/@packagedElement.33/@ownedEnd.0 //@packagedElement.3/@packagedElement.33/@ownedEnd.1">
       <ownedEnd name="observation" type="//@packagedElement.4/@packagedElement.10" association="//@packagedElement.3/@packagedElement.33">
         <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="1"/>
         <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
@@ -936,7 +936,7 @@
         <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
       </ownedEnd>
     </packagedElement>
-    <packagedElement xsi:type="RefOntoUML:Association" name="startTime" memberEnd="//@packagedElement.3/@packagedElement.34/@ownedEnd.0 //@packagedElement.3/@packagedElement.34/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.3/@packagedElement.34/@ownedEnd.0 //@packagedElement.3/@packagedElement.34/@ownedEnd.1">
+    <packagedElement xsi:type="RefOntoUML:Characterization" name="startTime" memberEnd="//@packagedElement.3/@packagedElement.34/@ownedEnd.0 //@packagedElement.3/@packagedElement.34/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.3/@packagedElement.34/@ownedEnd.0 //@packagedElement.3/@packagedElement.34/@ownedEnd.1">
       <ownedEnd name="ecg_recording_session" type="//@packagedElement.4/@packagedElement.5" association="//@packagedElement.3/@packagedElement.34">
         <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="1"/>
         <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
@@ -946,7 +946,7 @@
         <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
       </ownedEnd>
     </packagedElement>
-    <packagedElement xsi:type="RefOntoUML:Association" name="duration" memberEnd="//@packagedElement.3/@packagedElement.35/@ownedEnd.0 //@packagedElement.3/@packagedElement.35/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.3/@packagedElement.35/@ownedEnd.0 //@packagedElement.3/@packagedElement.35/@ownedEnd.1">
+    <packagedElement xsi:type="RefOntoUML:Characterization" name="duration" memberEnd="//@packagedElement.3/@packagedElement.35/@ownedEnd.0 //@packagedElement.3/@packagedElement.35/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.3/@packagedElement.35/@ownedEnd.0 //@packagedElement.3/@packagedElement.35/@ownedEnd.1">
       <ownedEnd name="cycle" type="//@packagedElement.4/@packagedElement.2" association="//@packagedElement.3/@packagedElement.35">
         <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="1"/>
         <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
@@ -956,7 +956,7 @@
         <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
       </ownedEnd>
     </packagedElement>
-    <packagedElement xsi:type="RefOntoUML:Association" name="duration" memberEnd="//@packagedElement.3/@packagedElement.36/@ownedEnd.0 //@packagedElement.3/@packagedElement.36/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.3/@packagedElement.36/@ownedEnd.0 //@packagedElement.3/@packagedElement.36/@ownedEnd.1">
+    <packagedElement xsi:type="RefOntoUML:Characterization" name="duration" memberEnd="//@packagedElement.3/@packagedElement.36/@ownedEnd.0 //@packagedElement.3/@packagedElement.36/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.3/@packagedElement.36/@ownedEnd.0 //@packagedElement.3/@packagedElement.36/@ownedEnd.1">
       <ownedEnd name="ecg_recording_session" type="//@packagedElement.4/@packagedElement.5" association="//@packagedElement.3/@packagedElement.36">
         <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="1"/>
         <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
@@ -1151,7 +1151,7 @@
         <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
       </ownedEnd>
     </packagedElement>
-    <packagedElement xsi:type="RefOntoUML:Association" memberEnd="//@packagedElement.4/@packagedElement.23/@ownedEnd.0 //@packagedElement.4/@packagedElement.23/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.4/@packagedElement.23/@ownedEnd.0 //@packagedElement.4/@packagedElement.23/@ownedEnd.1">
+    <packagedElement xsi:type="RefOntoUML:componentOf" memberEnd="//@packagedElement.4/@packagedElement.23/@ownedEnd.0 //@packagedElement.4/@packagedElement.23/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.4/@packagedElement.23/@ownedEnd.0 //@packagedElement.4/@packagedElement.23/@ownedEnd.1">
       <name xsi:nil="true"/>
       <ownedEnd name="cycle" type="//@packagedElement.4/@packagedElement.2" association="//@packagedElement.4/@packagedElement.23">
         <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="1"/>
@@ -1162,7 +1162,7 @@
         <lowerValue xsi:type="RefOntoUML:LiteralInteger"/>
       </ownedEnd>
     </packagedElement>
-    <packagedElement xsi:type="RefOntoUML:Association" memberEnd="//@packagedElement.4/@packagedElement.24/@ownedEnd.0 //@packagedElement.4/@packagedElement.24/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.4/@packagedElement.24/@ownedEnd.0 //@packagedElement.4/@packagedElement.24/@ownedEnd.1">
+    <packagedElement xsi:type="RefOntoUML:componentOf" memberEnd="//@packagedElement.4/@packagedElement.24/@ownedEnd.0 //@packagedElement.4/@packagedElement.24/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.4/@packagedElement.24/@ownedEnd.0 //@packagedElement.4/@packagedElement.24/@ownedEnd.1">
       <name xsi:nil="true"/>
       <ownedEnd name="cycle" type="//@packagedElement.4/@packagedElement.2" association="//@packagedElement.4/@packagedElement.24">
         <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="1"/>
@@ -1173,7 +1173,7 @@
         <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
       </ownedEnd>
     </packagedElement>
-    <packagedElement xsi:type="RefOntoUML:Association" memberEnd="//@packagedElement.4/@packagedElement.25/@ownedEnd.0 //@packagedElement.4/@packagedElement.25/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.4/@packagedElement.25/@ownedEnd.0 //@packagedElement.4/@packagedElement.25/@ownedEnd.1">
+    <packagedElement xsi:type="RefOntoUML:componentOf" memberEnd="//@packagedElement.4/@packagedElement.25/@ownedEnd.0 //@packagedElement.4/@packagedElement.25/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.4/@packagedElement.25/@ownedEnd.0 //@packagedElement.4/@packagedElement.25/@ownedEnd.1">
       <name xsi:nil="true"/>
       <ownedEnd name="wave_form" type="//@packagedElement.4/@packagedElement.18" association="//@packagedElement.4/@packagedElement.25">
         <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="1"/>
@@ -1184,7 +1184,7 @@
         <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
       </ownedEnd>
     </packagedElement>
-    <packagedElement xsi:type="RefOntoUML:Association" memberEnd="//@packagedElement.4/@packagedElement.26/@ownedEnd.0 //@packagedElement.4/@packagedElement.26/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.4/@packagedElement.26/@ownedEnd.0 //@packagedElement.4/@packagedElement.26/@ownedEnd.1">
+    <packagedElement xsi:type="RefOntoUML:Mediation" memberEnd="//@packagedElement.4/@packagedElement.26/@ownedEnd.0 //@packagedElement.4/@packagedElement.26/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.4/@packagedElement.26/@ownedEnd.0 //@packagedElement.4/@packagedElement.26/@ownedEnd.1">
       <name xsi:nil="true"/>
       <ownedEnd name="ecg_lead" type="//@packagedElement.4/@packagedElement.3" association="//@packagedElement.4/@packagedElement.26">
         <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="-1"/>
@@ -1195,7 +1195,7 @@
         <lowerValue xsi:type="RefOntoUML:LiteralInteger"/>
       </ownedEnd>
     </packagedElement>
-    <packagedElement xsi:type="RefOntoUML:Association" memberEnd="//@packagedElement.4/@packagedElement.27/@ownedEnd.0 //@packagedElement.4/@packagedElement.27/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.4/@packagedElement.27/@ownedEnd.0 //@packagedElement.4/@packagedElement.27/@ownedEnd.1">
+    <packagedElement xsi:type="RefOntoUML:Mediation" memberEnd="//@packagedElement.4/@packagedElement.27/@ownedEnd.0 //@packagedElement.4/@packagedElement.27/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.4/@packagedElement.27/@ownedEnd.0 //@packagedElement.4/@packagedElement.27/@ownedEnd.1">
       <name xsi:nil="true"/>
       <ownedEnd name="ecg_lead" type="//@packagedElement.4/@packagedElement.3" association="//@packagedElement.4/@packagedElement.27">
         <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="2"/>
@@ -1216,7 +1216,7 @@
         <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
       </ownedEnd>
     </packagedElement>
-    <packagedElement xsi:type="RefOntoUML:Association" name="performs" memberEnd="//@packagedElement.4/@packagedElement.29/@ownedEnd.0 //@packagedElement.4/@packagedElement.29/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.4/@packagedElement.29/@ownedEnd.0 //@packagedElement.4/@packagedElement.29/@ownedEnd.1">
+    <packagedElement xsi:type="RefOntoUML:MaterialAssociation" name="performs" memberEnd="//@packagedElement.4/@packagedElement.29/@ownedEnd.0 //@packagedElement.4/@packagedElement.29/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.4/@packagedElement.29/@ownedEnd.0 //@packagedElement.4/@packagedElement.29/@ownedEnd.1">
       <ownedEnd name="ecg_recording_device" type="//@packagedElement.4/@packagedElement.4" association="//@packagedElement.4/@packagedElement.29">
         <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="-1"/>
         <lowerValue xsi:type="RefOntoUML:LiteralInteger"/>
@@ -1226,7 +1226,7 @@
         <lowerValue xsi:type="RefOntoUML:LiteralInteger"/>
       </ownedEnd>
     </packagedElement>
-    <packagedElement xsi:type="RefOntoUML:Association" name="performs" memberEnd="//@packagedElement.4/@packagedElement.30/@ownedEnd.0 //@packagedElement.4/@packagedElement.30/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.4/@packagedElement.30/@ownedEnd.0 //@packagedElement.4/@packagedElement.30/@ownedEnd.1">
+    <packagedElement xsi:type="RefOntoUML:MaterialAssociation" name="performs" memberEnd="//@packagedElement.4/@packagedElement.30/@ownedEnd.0 //@packagedElement.4/@packagedElement.30/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.4/@packagedElement.30/@ownedEnd.0 //@packagedElement.4/@packagedElement.30/@ownedEnd.1">
       <ownedEnd name="ecg_recording_device" type="//@packagedElement.4/@packagedElement.4" association="//@packagedElement.4/@packagedElement.30">
         <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="1"/>
         <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
@@ -1236,7 +1236,7 @@
         <lowerValue xsi:type="RefOntoUML:LiteralInteger"/>
       </ownedEnd>
     </packagedElement>
-    <packagedElement xsi:type="RefOntoUML:Association" memberEnd="//@packagedElement.4/@packagedElement.31/@ownedEnd.0 //@packagedElement.4/@packagedElement.31/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.4/@packagedElement.31/@ownedEnd.0 //@packagedElement.4/@packagedElement.31/@ownedEnd.1">
+    <packagedElement xsi:type="RefOntoUML:componentOf" memberEnd="//@packagedElement.4/@packagedElement.31/@ownedEnd.0 //@packagedElement.4/@packagedElement.31/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.4/@packagedElement.31/@ownedEnd.0 //@packagedElement.4/@packagedElement.31/@ownedEnd.1">
       <name xsi:nil="true"/>
       <ownedEnd name="ecg_recording_device" type="//@packagedElement.4/@packagedElement.4" association="//@packagedElement.4/@packagedElement.31">
         <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="1"/>
@@ -1258,7 +1258,7 @@
         <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
       </ownedEnd>
     </packagedElement>
-    <packagedElement xsi:type="RefOntoUML:Association" name="isAcquiredBy" memberEnd="//@packagedElement.4/@packagedElement.33/@ownedEnd.0 //@packagedElement.4/@packagedElement.33/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.4/@packagedElement.33/@ownedEnd.0 //@packagedElement.4/@packagedElement.33/@ownedEnd.1">
+    <packagedElement xsi:type="RefOntoUML:MaterialAssociation" name="isAcquiredBy" memberEnd="//@packagedElement.4/@packagedElement.33/@ownedEnd.0 //@packagedElement.4/@packagedElement.33/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.4/@packagedElement.33/@ownedEnd.0 //@packagedElement.4/@packagedElement.33/@ownedEnd.1">
       <ownedEnd name="ecg_record" type="//@packagedElement.6/@packagedElement.0" association="//@packagedElement.4/@packagedElement.33">
         <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="-1"/>
         <lowerValue xsi:type="RefOntoUML:LiteralInteger"/>
@@ -1300,7 +1300,7 @@
         <lowerValue xsi:type="RefOntoUML:LiteralInteger"/>
       </ownedEnd>
     </packagedElement>
-    <packagedElement xsi:type="RefOntoUML:Association" name="requests" memberEnd="//@packagedElement.4/@packagedElement.37/@ownedEnd.0 //@packagedElement.4/@packagedElement.37/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.4/@packagedElement.37/@ownedEnd.0 //@packagedElement.4/@packagedElement.37/@ownedEnd.1">
+    <packagedElement xsi:type="RefOntoUML:MaterialAssociation" name="requests" memberEnd="//@packagedElement.4/@packagedElement.37/@ownedEnd.0 //@packagedElement.4/@packagedElement.37/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.4/@packagedElement.37/@ownedEnd.0 //@packagedElement.4/@packagedElement.37/@ownedEnd.1">
       <ownedEnd name="physician" type="//@packagedElement.6/@packagedElement.4" association="//@packagedElement.4/@packagedElement.37">
         <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="1"/>
         <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
@@ -1363,7 +1363,7 @@
         <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
       </ownedEnd>
     </packagedElement>
-    <packagedElement xsi:type="RefOntoUML:Association" memberEnd="//@packagedElement.4/@packagedElement.43/@ownedEnd.0 //@packagedElement.4/@packagedElement.43/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.4/@packagedElement.43/@ownedEnd.0 //@packagedElement.4/@packagedElement.43/@ownedEnd.1">
+    <packagedElement xsi:type="RefOntoUML:componentOf" memberEnd="//@packagedElement.4/@packagedElement.43/@ownedEnd.0 //@packagedElement.4/@packagedElement.43/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.4/@packagedElement.43/@ownedEnd.0 //@packagedElement.4/@packagedElement.43/@ownedEnd.1">
       <name xsi:nil="true"/>
       <ownedEnd name="wave_form" type="//@packagedElement.4/@packagedElement.18" association="//@packagedElement.4/@packagedElement.43">
         <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="1"/>
@@ -1403,7 +1403,7 @@
       <generalization general="//@packagedElement.5/@packagedElement.0"/>
       <generalization general="//@packagedElement.5/@packagedElement.5"/>
     </packagedElement>
-    <packagedElement xsi:type="RefOntoUML:Association" memberEnd="//@packagedElement.5/@packagedElement.8/@ownedEnd.0 //@packagedElement.5/@packagedElement.8/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.5/@packagedElement.8/@ownedEnd.0 //@packagedElement.5/@packagedElement.8/@ownedEnd.1">
+    <packagedElement xsi:type="RefOntoUML:componentOf" memberEnd="//@packagedElement.5/@packagedElement.8/@ownedEnd.0 //@packagedElement.5/@packagedElement.8/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.5/@packagedElement.8/@ownedEnd.0 //@packagedElement.5/@packagedElement.8/@ownedEnd.1">
       <name xsi:nil="true"/>
       <ownedEnd name="human_body" type="//@packagedElement.5/@packagedElement.1" association="//@packagedElement.5/@packagedElement.8">
         <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="1"/>
@@ -1414,7 +1414,7 @@
         <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
       </ownedEnd>
     </packagedElement>
-    <packagedElement xsi:type="RefOntoUML:Association" memberEnd="//@packagedElement.5/@packagedElement.9/@ownedEnd.0 //@packagedElement.5/@packagedElement.9/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.5/@packagedElement.9/@ownedEnd.0 //@packagedElement.5/@packagedElement.9/@ownedEnd.1">
+    <packagedElement xsi:type="RefOntoUML:componentOf" memberEnd="//@packagedElement.5/@packagedElement.9/@ownedEnd.0 //@packagedElement.5/@packagedElement.9/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.5/@packagedElement.9/@ownedEnd.0 //@packagedElement.5/@packagedElement.9/@ownedEnd.1">
       <name xsi:nil="true"/>
       <ownedEnd name="human_heart" type="//@packagedElement.5/@packagedElement.2" isReadOnly="true" association="//@packagedElement.5/@packagedElement.9">
         <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="1"/>
@@ -1425,7 +1425,7 @@
         <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
       </ownedEnd>
     </packagedElement>
-    <packagedElement xsi:type="RefOntoUML:Association" memberEnd="//@packagedElement.5/@packagedElement.10/@ownedEnd.0 //@packagedElement.5/@packagedElement.10/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.5/@packagedElement.10/@ownedEnd.0 //@packagedElement.5/@packagedElement.10/@ownedEnd.1">
+    <packagedElement xsi:type="RefOntoUML:componentOf" memberEnd="//@packagedElement.5/@packagedElement.10/@ownedEnd.0 //@packagedElement.5/@packagedElement.10/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.5/@packagedElement.10/@ownedEnd.0 //@packagedElement.5/@packagedElement.10/@ownedEnd.1">
       <name xsi:nil="true"/>
       <ownedEnd name="human_heart" type="//@packagedElement.5/@packagedElement.2" isReadOnly="true" association="//@packagedElement.5/@packagedElement.10">
         <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="1"/>
@@ -1436,7 +1436,7 @@
         <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
       </ownedEnd>
     </packagedElement>
-    <packagedElement xsi:type="RefOntoUML:Association" memberEnd="//@packagedElement.5/@packagedElement.11/@ownedEnd.0 //@packagedElement.5/@packagedElement.11/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.5/@packagedElement.11/@ownedEnd.0 //@packagedElement.5/@packagedElement.11/@ownedEnd.1">
+    <packagedElement xsi:type="RefOntoUML:componentOf" memberEnd="//@packagedElement.5/@packagedElement.11/@ownedEnd.0 //@packagedElement.5/@packagedElement.11/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.5/@packagedElement.11/@ownedEnd.0 //@packagedElement.5/@packagedElement.11/@ownedEnd.1">
       <name xsi:nil="true"/>
       <ownedEnd name="human_heart" type="//@packagedElement.5/@packagedElement.2" isReadOnly="true" association="//@packagedElement.5/@packagedElement.11">
         <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="1"/>
@@ -1447,7 +1447,7 @@
         <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
       </ownedEnd>
     </packagedElement>
-    <packagedElement xsi:type="RefOntoUML:Association" memberEnd="//@packagedElement.5/@packagedElement.12/@ownedEnd.0 //@packagedElement.5/@packagedElement.12/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.5/@packagedElement.12/@ownedEnd.0 //@packagedElement.5/@packagedElement.12/@ownedEnd.1">
+    <packagedElement xsi:type="RefOntoUML:componentOf" memberEnd="//@packagedElement.5/@packagedElement.12/@ownedEnd.0 //@packagedElement.5/@packagedElement.12/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.5/@packagedElement.12/@ownedEnd.0 //@packagedElement.5/@packagedElement.12/@ownedEnd.1">
       <name xsi:nil="true"/>
       <ownedEnd name="human_heart" type="//@packagedElement.5/@packagedElement.2" isReadOnly="true" association="//@packagedElement.5/@packagedElement.12">
         <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="1"/>
@@ -1470,7 +1470,7 @@
       <generalization general="//@packagedElement.6/@packagedElement.3"/>
     </packagedElement>
     <packagedElement xsi:type="RefOntoUML:Relator" name="Treatment"/>
-    <packagedElement xsi:type="RefOntoUML:Association" name="belongsTo" memberEnd="//@packagedElement.6/@packagedElement.6/@ownedEnd.0 //@packagedElement.6/@packagedElement.6/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.6/@packagedElement.6/@ownedEnd.0 //@packagedElement.6/@packagedElement.6/@ownedEnd.1">
+    <packagedElement xsi:type="RefOntoUML:MaterialAssociation" name="belongsTo" memberEnd="//@packagedElement.6/@packagedElement.6/@ownedEnd.0 //@packagedElement.6/@packagedElement.6/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.6/@packagedElement.6/@ownedEnd.0 //@packagedElement.6/@packagedElement.6/@ownedEnd.1">
       <ownedEnd name="ecg_record" type="//@packagedElement.6/@packagedElement.0" association="//@packagedElement.6/@packagedElement.6">
         <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="-1"/>
         <lowerValue xsi:type="RefOntoUML:LiteralInteger"/>
@@ -1480,7 +1480,7 @@
         <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
       </ownedEnd>
     </packagedElement>
-    <packagedElement xsi:type="RefOntoUML:Association" memberEnd="//@packagedElement.6/@packagedElement.7/@ownedEnd.0 //@packagedElement.6/@packagedElement.7/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.6/@packagedElement.7/@ownedEnd.0 //@packagedElement.6/@packagedElement.7/@ownedEnd.1">
+    <packagedElement xsi:type="RefOntoUML:componentOf" memberEnd="//@packagedElement.6/@packagedElement.7/@ownedEnd.0 //@packagedElement.6/@packagedElement.7/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.6/@packagedElement.7/@ownedEnd.0 //@packagedElement.6/@packagedElement.7/@ownedEnd.1">
       <name xsi:nil="true"/>
       <ownedEnd name="epr" type="//@packagedElement.6/@packagedElement.1" association="//@packagedElement.6/@packagedElement.7">
         <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="1"/>
@@ -1491,7 +1491,7 @@
         <lowerValue xsi:type="RefOntoUML:LiteralInteger"/>
       </ownedEnd>
     </packagedElement>
-    <packagedElement xsi:type="RefOntoUML:Association" name="has" memberEnd="//@packagedElement.6/@packagedElement.8/@ownedEnd.0 //@packagedElement.6/@packagedElement.8/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.6/@packagedElement.8/@ownedEnd.0 //@packagedElement.6/@packagedElement.8/@ownedEnd.1">
+    <packagedElement xsi:type="RefOntoUML:MaterialAssociation" name="has" memberEnd="//@packagedElement.6/@packagedElement.8/@ownedEnd.0 //@packagedElement.6/@packagedElement.8/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.6/@packagedElement.8/@ownedEnd.0 //@packagedElement.6/@packagedElement.8/@ownedEnd.1">
       <ownedEnd name="patient" type="//@packagedElement.6/@packagedElement.2" association="//@packagedElement.6/@packagedElement.8">
         <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="1"/>
         <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
@@ -1501,7 +1501,7 @@
         <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
       </ownedEnd>
     </packagedElement>
-    <packagedElement xsi:type="RefOntoUML:Association" memberEnd="//@packagedElement.6/@packagedElement.9/@ownedEnd.0 //@packagedElement.6/@packagedElement.9/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.6/@packagedElement.9/@ownedEnd.0 //@packagedElement.6/@packagedElement.9/@ownedEnd.1">
+    <packagedElement xsi:type="RefOntoUML:Mediation" memberEnd="//@packagedElement.6/@packagedElement.9/@ownedEnd.0 //@packagedElement.6/@packagedElement.9/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.6/@packagedElement.9/@ownedEnd.0 //@packagedElement.6/@packagedElement.9/@ownedEnd.1">
       <name xsi:nil="true"/>
       <ownedEnd name="treatment" type="//@packagedElement.6/@packagedElement.5" association="//@packagedElement.6/@packagedElement.9">
         <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="-1"/>
@@ -1512,7 +1512,7 @@
         <lowerValue xsi:type="RefOntoUML:LiteralInteger" value="1"/>
       </ownedEnd>
     </packagedElement>
-    <packagedElement xsi:type="RefOntoUML:Association" memberEnd="//@packagedElement.6/@packagedElement.10/@ownedEnd.0 //@packagedElement.6/@packagedElement.10/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.6/@packagedElement.10/@ownedEnd.0 //@packagedElement.6/@packagedElement.10/@ownedEnd.1">
+    <packagedElement xsi:type="RefOntoUML:Mediation" memberEnd="//@packagedElement.6/@packagedElement.10/@ownedEnd.0 //@packagedElement.6/@packagedElement.10/@ownedEnd.1" navigableOwnedEnd="//@packagedElement.6/@packagedElement.10/@ownedEnd.0 //@packagedElement.6/@packagedElement.10/@ownedEnd.1">
       <name xsi:nil="true"/>
       <ownedEnd name="treatment" type="//@packagedElement.6/@packagedElement.5" association="//@packagedElement.6/@packagedElement.10">
         <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" value="-1"/>

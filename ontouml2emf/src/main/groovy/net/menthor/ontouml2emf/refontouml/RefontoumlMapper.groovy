@@ -31,25 +31,35 @@ import net.menthor.ontouml.OntoUMLModel
 
 class RefontoumlMapper {
 
-    private RefontoumlSrcMapper sourceMapper = new RefontoumlSrcMapper()
-    private RefontoumlTgtMapper targetMapper = new RefontoumlTgtMapper()
+    private FromRefontoumlMapper sourceMapper = new FromRefontoumlMapper()
+    private ToRefontoumlMapper targetMapper = new ToRefontoumlMapper()
+
+    //from
 
     OntoUMLModel fromRefOntoUML(RefOntoUML.Package refmodel){
-        return sourceMapper.fromRefOntoUML(refmodel)
+        return sourceMapper.run(refmodel)
+    }
+    OntoUMLModel fromRefOntoUML(RefOntoUML.Package refmodel, RefontoumlOptions options){
+        return sourceMapper.run(refmodel, options)
     }
 
+    //to
+
     RefOntoUML.Package toRefOntoUML(OntoUMLModel m){
-        return targetMapper.toRefOntoUML(m)
+        return targetMapper.run(m)
     }
+    RefOntoUML.Package toRefOntoUML(OntoUMLModel m, RefontoumlOptions options){
+        return targetMapper.run(m, options)
+    }
+
+    //serialization
 
     void serialize(RefOntoUML.Package model, String path){
         targetMapper.serialize(model,path)
     }
-
     RefOntoUML.Package deserialize(InputStream is){
        return sourceMapper.deserialize(is)
     }
-
     RefOntoUML.Package deserialize(String path){
         return sourceMapper.deserialize(path)
     }

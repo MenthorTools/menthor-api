@@ -24,7 +24,6 @@ package net.menthor.ontouml2emf.ecore
  */
 
 import net.menthor.ontouml.*
-import net.menthor.ontouml2emf.ecore.EcoreTgtMapper
 import org.eclipse.emf.ecore.*
 
 /**
@@ -32,14 +31,14 @@ import org.eclipse.emf.ecore.*
  */
 class EcoreMapper {
 
-    private EcoreTgtMapper tgtMapper = new EcoreTgtMapper()
+    private ToEcoreMapper tgtMapper = new ToEcoreMapper()
 
     EPackage toEcore(OntoUMLModel m) {
-        return tgtMapper.toEcore(m)
+        return tgtMapper.run(m)
     }
 
     EPackage toEcore(OntoUMLModel m, boolean ignorePackages) {
-        return tgtMapper.toEcore(m, ignorePackages)
+        return tgtMapper.run(m, ignorePackages)
     }
 
     void serialize(EPackage ecoremodel, String path){

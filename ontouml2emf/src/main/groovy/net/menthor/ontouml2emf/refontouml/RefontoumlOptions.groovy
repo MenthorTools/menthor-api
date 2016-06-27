@@ -29,4 +29,5 @@ package net.menthor.ontouml2emf.refontouml
 class RefontoumlOptions {
 
     boolean ignorePackages = false
+    boolean assumeClassAsEvent = false
 }

@@ -26,6 +26,7 @@ package net.menthor.ontouml2emf.test
 import net.menthor.ontouml.OntoUMLModel
 import net.menthor.ontouml.OntoUMLSerializer
 import net.menthor.ontouml2emf.refontouml.RefontoumlMapper
+import net.menthor.ontouml2emf.refontouml.RefontoumlOptions
 
 /**
  * @author John Guerson
@@ -39,20 +40,22 @@ class RefontoumlMapperTest {
 
     static void fromRefOntoTest(){
         println "======== REFONTOUML: ECG TEST ===="
-        File input = new File("ontouml2emf/src/test/resources/ecg.refontouml")
+        File input = new File("ontouml2emf/src/test/resources/refontouml/ecg.refontouml")
         OntoUMLSerializer s = new OntoUMLSerializer()
         def mapper = new RefontoumlMapper()
         def refmodel = mapper.deserialize(input.getAbsolutePath())
-        def ontomodel = mapper.fromRefOntoUML(refmodel)
-        s.toJSONFile(ontomodel, "ontouml2emf/src/test/resources/","ecg.json")
+        def options = new RefontoumlOptions()
+        options.setAssumeClassAsEvent(true)
+        def ontomodel = mapper.fromRefOntoUML(refmodel, options)
+        s.toFormattedJSONFile(ontomodel, "ontouml2emf/src/test/resources/refontouml/","ecg")
         println "[FINISHED]."
         println "==========================================="
     }
 
     static void toRefOntoTest(){
         println "======== REFONTOUML: CAR ACCIDENT TEST ===="
-        File input = new File("ontouml2emf/src/test/resources/CarAccident.json")
-        File output = new File("ontouml2emf/src/test/resources/CarAccident.refontouml")
+        File input = new File("ontouml2emf/src/test/resources/json/car-accident.json")
+        File output = new File("ontouml2emf/src/test/resources/refontouml/car-accident.refontouml")
         OntoUMLSerializer s = new OntoUMLSerializer()
         OntoUMLModel ontomodel = s.fromJSONFile(input)
         def mapper = new RefontoumlMapper()
@@ -64,8 +67,8 @@ class RefontoumlMapperTest {
         println ""
 
         println "======== REFONTOUML: ECG TEST ============="
-        input = new File("ontouml2emf/src/test/resources/ecg.json")
-        output = new File("ontouml2emf/src/test/resources/ecg.refontouml")
+        input = new File("ontouml2emf/src/test/resources/json/ecg.json")
+        output = new File("ontouml2emf/src/test/resources/refontouml/ecg.refontouml")
         s = new OntoUMLSerializer()
         ontomodel = s.fromJSONFile(input)
         mapper = new RefontoumlMapper()
@@ -77,8 +80,8 @@ class RefontoumlMapperTest {
         println ""
 
         println "======== REFONTOUML: FOOTBALL TEST ========"
-        input = new File("ontouml2emf/src/test/resources/football.json")
-        output = new File("ontouml2emf/src/test/resources/football.refontouml")
+        input = new File("ontouml2emf/src/test/resources/json/football.json")
+        output = new File("ontouml2emf/src/test/resources/refontouml/football.refontouml")
         s = new OntoUMLSerializer()
         ontomodel = s.fromJSONFile(input)
         mapper = new RefontoumlMapper()
@@ -90,8 +93,8 @@ class RefontoumlMapperTest {
         println ""
 
         println "======== REFONTOUML: BIO-ENTITY TEST ======"
-        input = new File("ontouml2emf/src/test/resources/bio-entity.json")
-        output = new File("ontouml2emf/src/test/resources/bio-entity.refontouml")
+        input = new File("ontouml2emf/src/test/resources/json/bio-entity.json")
+        output = new File("ontouml2emf/src/test/resources/refontouml/bio-entity.refontouml")
         s = new OntoUMLSerializer()
         ontomodel = s.fromJSONFile(input)
         mapper = new RefontoumlMapper()
@@ -103,8 +106,8 @@ class RefontoumlMapperTest {
         println ""
 
         println "======== REFONTOUML: UFO-S TEST ==========="
-        input = new File("ontouml2emf/src/test/resources/ufo-s.json")
-        output = new File("ontouml2emf/src/test/resources/ufo-s.refontouml")
+        input = new File("ontouml2emf/src/test/resources/json/ufo-s.json")
+        output = new File("ontouml2emf/src/test/resources/refontouml/ufo-s.refontouml")
         s = new OntoUMLSerializer()
         ontomodel = s.fromJSONFile(input)
         mapper = new RefontoumlMapper()

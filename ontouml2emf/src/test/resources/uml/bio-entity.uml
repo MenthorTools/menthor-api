@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_xW05YDyHEeapYOv580323A" name="Biological Entity">
+  <packagedElement xmi:type="uml:Class" xmi:id="_xW05YTyHEeapYOv580323A" name="Biological Entity">
+    <generalization xmi:id="_xW05YjyHEeapYOv580323A" general="_xW1gcDyHEeapYOv580323A"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_xW05YzyHEeapYOv580323A" name="Gallery">
+    <generalization xmi:id="_xW05ZDyHEeapYOv580323A" general="_xW05ZTyHEeapYOv580323A"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_xW05ZTyHEeapYOv580323A" name="Geographical Space">
+    <generalization xmi:id="_xW05ZjyHEeapYOv580323A" general="_xW1gdTyHEeapYOv580323A"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_xW05ZzyHEeapYOv580323A" name="Human Heart">
+    <generalization xmi:id="_xW05aDyHEeapYOv580323A" general="_xW05aTyHEeapYOv580323A"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_xW05aTyHEeapYOv580323A" name="Human Organ">
+    <generalization xmi:id="_xW05ajyHEeapYOv580323A" general="_xW05YTyHEeapYOv580323A"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_xW05azyHEeapYOv580323A" name="Inanimate Entity">
+    <generalization xmi:id="_xW05bDyHEeapYOv580323A" general="_xW1gcDyHEeapYOv580323A"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_xW05bTyHEeapYOv580323A" name="Location"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_xW1gcDyHEeapYOv580323A" name="Material Entity"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_xW1gcTyHEeapYOv580323A" name="Museum">
+    <generalization xmi:id="_xW1gcjyHEeapYOv580323A" general="_xW05ZTyHEeapYOv580323A"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_xW1gczyHEeapYOv580323A" name="Person"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_xW1gdDyHEeapYOv580323A" name="Physical Object"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_xW1gdTyHEeapYOv580323A" name="Spatial Thing"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_xW1gdjyHEeapYOv580323A" name="Statue">
+    <generalization xmi:id="_xW1gdzyHEeapYOv580323A" general="_xW05azyHEeapYOv580323A"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_xW1geDyHEeapYOv580323A" name="Surgery Room">
+    <generalization xmi:id="_xW1geTyHEeapYOv580323A" general="_xW05ZTyHEeapYOv580323A"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_xW1gejyHEeapYOv580323A" name="Altitude"/>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_xW1gezyHEeapYOv580323A" name="Latitude"/>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_xW1gfDyHEeapYOv580323A" name="Location Coordinates"/>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_xW1gfTyHEeapYOv580323A" name="Longitude"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_xW1gfjyHEeapYOv580323A" memberEnd="_xW1gfzyHEeapYOv580323A _xW1ggjyHEeapYOv580323A" navigableOwnedEnd="_xW1gfzyHEeapYOv580323A _xW1ggjyHEeapYOv580323A">
+    <name xsi:nil="true"/>
+    <ownedEnd xmi:id="_xW1gfzyHEeapYOv580323A" name="person" type="_xW1gczyHEeapYOv580323A" association="_xW1gfjyHEeapYOv580323A">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xW1ggDyHEeapYOv580323A" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xW1ggTyHEeapYOv580323A" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_xW1ggjyHEeapYOv580323A" name="biological_entity" type="_xW05YTyHEeapYOv580323A" association="_xW1gfjyHEeapYOv580323A">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xW1ggzyHEeapYOv580323A" value="2"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xW1ghDyHEeapYOv580323A" value="*"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_xW1ghTyHEeapYOv580323A" name="spatiallySubsumes" memberEnd="_xW1ghjyHEeapYOv580323A _xW1giTyHEeapYOv580323A" navigableOwnedEnd="_xW1ghjyHEeapYOv580323A _xW1giTyHEeapYOv580323A">
+    <ownedEnd xmi:id="_xW1ghjyHEeapYOv580323A" name="geographical_space" type="_xW05ZTyHEeapYOv580323A" association="_xW1ghTyHEeapYOv580323A">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xW1ghzyHEeapYOv580323A"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xW1giDyHEeapYOv580323A" value="*"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_xW1giTyHEeapYOv580323A" name="geographical_space" type="_xW05ZTyHEeapYOv580323A" association="_xW1ghTyHEeapYOv580323A">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xW1gijyHEeapYOv580323A" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xW1gizyHEeapYOv580323A" value="*"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_xW1gjDyHEeapYOv580323A" memberEnd="_xW1gjTyHEeapYOv580323A _xW1gkDyHEeapYOv580323A" navigableOwnedEnd="_xW1gjTyHEeapYOv580323A _xW1gkDyHEeapYOv580323A">
+    <name xsi:nil="true"/>
+    <ownedEnd xmi:id="_xW1gjTyHEeapYOv580323A" name="person" type="_xW1gczyHEeapYOv580323A" association="_xW1gjDyHEeapYOv580323A">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xW1gjjyHEeapYOv580323A" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xW1gjzyHEeapYOv580323A" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_xW1gkDyHEeapYOv580323A" name="human_heart" type="_xW05ZzyHEeapYOv580323A" association="_xW1gjDyHEeapYOv580323A">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xW1gkTyHEeapYOv580323A" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xW1gkjyHEeapYOv580323A" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_xW1gkzyHEeapYOv580323A" memberEnd="_xW1glDyHEeapYOv580323A _xW1glzyHEeapYOv580323A" navigableOwnedEnd="_xW1glDyHEeapYOv580323A _xW1glzyHEeapYOv580323A">
+    <name xsi:nil="true"/>
+    <ownedEnd xmi:id="_xW1glDyHEeapYOv580323A" name="location" type="_xW05bTyHEeapYOv580323A" association="_xW1gkzyHEeapYOv580323A">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xW1glTyHEeapYOv580323A" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xW1gljyHEeapYOv580323A" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_xW1glzyHEeapYOv580323A" name="physical_object" type="_xW1gdDyHEeapYOv580323A" association="_xW1gkzyHEeapYOv580323A">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xW1gmDyHEeapYOv580323A" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xW1gmTyHEeapYOv580323A" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_xW1gmjyHEeapYOv580323A" memberEnd="_xW1gmzyHEeapYOv580323A _xW1gnjyHEeapYOv580323A" navigableOwnedEnd="_xW1gmzyHEeapYOv580323A _xW1gnjyHEeapYOv580323A">
+    <name xsi:nil="true"/>
+    <ownedEnd xmi:id="_xW1gmzyHEeapYOv580323A" name="location" type="_xW05bTyHEeapYOv580323A" association="_xW1gmjyHEeapYOv580323A">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xW1gnDyHEeapYOv580323A" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xW1gnTyHEeapYOv580323A" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_xW1gnjyHEeapYOv580323A" name="location_coordinates" type="_xW1gfDyHEeapYOv580323A" association="_xW1gmjyHEeapYOv580323A">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xW1gnzyHEeapYOv580323A" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xW1goDyHEeapYOv580323A" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_xW1goTyHEeapYOv580323A" memberEnd="_xW1gojyHEeapYOv580323A _xW1gpTyHEeapYOv580323A" navigableOwnedEnd="_xW1gojyHEeapYOv580323A _xW1gpTyHEeapYOv580323A">
+    <name xsi:nil="true"/>
+    <ownedEnd xmi:id="_xW1gojyHEeapYOv580323A" name="spatial_thing" type="_xW1gdTyHEeapYOv580323A" association="_xW1goTyHEeapYOv580323A">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xW1gozyHEeapYOv580323A" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xW1gpDyHEeapYOv580323A" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_xW1gpTyHEeapYOv580323A" name="location" type="_xW05bTyHEeapYOv580323A" association="_xW1goTyHEeapYOv580323A">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xW1gpjyHEeapYOv580323A" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xW1gpzyHEeapYOv580323A" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_xW1gqDyHEeapYOv580323A" name="isConstitutedBy" memberEnd="_xW1gqTyHEeapYOv580323A _xW1grDyHEeapYOv580323A" navigableOwnedEnd="_xW1gqTyHEeapYOv580323A _xW1grDyHEeapYOv580323A">
+    <ownedEnd xmi:id="_xW1gqTyHEeapYOv580323A" name="physical_object" type="_xW1gdDyHEeapYOv580323A" association="_xW1gqDyHEeapYOv580323A">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xW1gqjyHEeapYOv580323A" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xW1gqzyHEeapYOv580323A" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_xW1grDyHEeapYOv580323A" name="material_entity" type="_xW1gcDyHEeapYOv580323A" association="_xW1gqDyHEeapYOv580323A">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xW1grTyHEeapYOv580323A"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xW1grjyHEeapYOv580323A" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_xW1grzyHEeapYOv580323A" name="locatedIn" memberEnd="_xW1gsDyHEeapYOv580323A _xW1gszyHEeapYOv580323A" navigableOwnedEnd="_xW1gsDyHEeapYOv580323A _xW1gszyHEeapYOv580323A">
+    <ownedEnd xmi:id="_xW1gsDyHEeapYOv580323A" name="spatial_thing" type="_xW1gdTyHEeapYOv580323A" association="_xW1grzyHEeapYOv580323A">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xW1gsTyHEeapYOv580323A" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xW1gsjyHEeapYOv580323A" value="*"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_xW1gszyHEeapYOv580323A" name="physical_object" type="_xW1gdDyHEeapYOv580323A" association="_xW1grzyHEeapYOv580323A">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xW1gtDyHEeapYOv580323A" value="-1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xW1gtTyHEeapYOv580323A" value="*"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_xW1gtjyHEeapYOv580323A" name="latitude" memberEnd="_xW1gtzyHEeapYOv580323A _xW1gujyHEeapYOv580323A" navigableOwnedEnd="_xW1gtzyHEeapYOv580323A _xW1gujyHEeapYOv580323A">
+    <ownedEnd xmi:id="_xW1gtzyHEeapYOv580323A" name="location_coordinates" type="_xW1gfDyHEeapYOv580323A" association="_xW1gtjyHEeapYOv580323A">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xW1guDyHEeapYOv580323A"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xW1guTyHEeapYOv580323A" value="*"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_xW1gujyHEeapYOv580323A" name="latitude" type="_xW1gezyHEeapYOv580323A" association="_xW1gtjyHEeapYOv580323A">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xW1guzyHEeapYOv580323A" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xW1gvDyHEeapYOv580323A" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_xW1gvTyHEeapYOv580323A" name="longitude" memberEnd="_xW1gvjyHEeapYOv580323A _xW1gwTyHEeapYOv580323A" navigableOwnedEnd="_xW1gvjyHEeapYOv580323A _xW1gwTyHEeapYOv580323A">
+    <ownedEnd xmi:id="_xW1gvjyHEeapYOv580323A" name="location_coordinates" type="_xW1gfDyHEeapYOv580323A" association="_xW1gvTyHEeapYOv580323A">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xW1gvzyHEeapYOv580323A"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xW1gwDyHEeapYOv580323A" value="*"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_xW1gwTyHEeapYOv580323A" name="longitude" type="_xW1gfTyHEeapYOv580323A" association="_xW1gvTyHEeapYOv580323A">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xW1gwjyHEeapYOv580323A" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xW1gwzyHEeapYOv580323A" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_xW1gxDyHEeapYOv580323A" name="altitude" memberEnd="_xW1gxTyHEeapYOv580323A _xW1gyDyHEeapYOv580323A" navigableOwnedEnd="_xW1gxTyHEeapYOv580323A _xW1gyDyHEeapYOv580323A">
+    <ownedEnd xmi:id="_xW1gxTyHEeapYOv580323A" name="location_coordinates" type="_xW1gfDyHEeapYOv580323A" association="_xW1gxDyHEeapYOv580323A">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xW1gxjyHEeapYOv580323A"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xW1gxzyHEeapYOv580323A" value="*"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_xW1gyDyHEeapYOv580323A" name="altitude" type="_xW1gejyHEeapYOv580323A" association="_xW1gxDyHEeapYOv580323A">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xW1gyTyHEeapYOv580323A" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xW1gyjyHEeapYOv580323A" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+</uml:Model>

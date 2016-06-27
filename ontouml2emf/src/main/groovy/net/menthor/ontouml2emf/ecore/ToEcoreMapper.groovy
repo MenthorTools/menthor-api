@@ -49,18 +49,18 @@ import sun.security.krb5.internal.crypto.EType
 /**
  * @author John Guerson
  */
-class EcoreTgtMapper implements OntoUMLVisitor {
+class ToEcoreMapper implements OntoUMLVisitor {
 
     static EcoreFactory theCoreFactory = EcoreFactory.eINSTANCE
 
     EcoreOptions options = new EcoreOptions()
 
-    Object toEcore(OntoUMLModel ontomodel, EcoreOptions opt) {
+    Object run(OntoUMLModel ontomodel, EcoreOptions opt) {
         this.options = opt
         return visit(ontomodel)
     }
 
-    Object toEcore(OntoUMLModel ontomodel) {
+    Object run(OntoUMLModel ontomodel) {
         return visit(ontomodel)
     }
 

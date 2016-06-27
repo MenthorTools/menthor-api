@@ -39,8 +39,8 @@
                             "upperBound": -1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "sa_electrical_impulse_generator"
+                            "uniqueName": "sa_electrical_impulse_generator",
+                            "ordered": false
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -51,8 +51,8 @@
                             "upperBound": 1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "av_electrical_impulse"
+                            "uniqueName": "av_electrical_impulse",
+                            "ordered": false
                         }
                     ],
                     "stereotype": "PARTICIPATION",
@@ -80,8 +80,8 @@
                             "upperBound": 1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "la_contraction"
+                            "uniqueName": "la_contraction",
+                            "ordered": false
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -92,8 +92,8 @@
                             "upperBound": 1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "av_electrical_impulse2"
+                            "uniqueName": "av_electrical_impulse2",
+                            "ordered": false
                         }
                     ],
                     "stereotype": "MEDIATION",
@@ -121,8 +121,8 @@
                             "upperBound": 1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "his_purkinje_electrical_impulse"
+                            "uniqueName": "his_purkinje_electrical_impulse",
+                            "ordered": false
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -133,8 +133,8 @@
                             "upperBound": 1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "av_electrical_impulse3"
+                            "uniqueName": "av_electrical_impulse3",
+                            "ordered": false
                         }
                     ],
                     "stereotype": "COMPONENTOF",
@@ -167,8 +167,8 @@
                             "upperBound": -1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "av_electrical_impulse_generator"
+                            "uniqueName": "av_electrical_impulse_generator",
+                            "ordered": false
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -188,8 +188,8 @@
                             "upperBound": 1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "sa_node_cells"
+                            "uniqueName": "sa_node_cells",
+                            "ordered": false
                         }
                     ],
                     "stereotype": "PARTICIPATION",
@@ -208,8 +208,8 @@
                             "upperBound": -1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "av_electrical_impulse_generator2"
+                            "uniqueName": "av_electrical_impulse_generator2",
+                            "ordered": false
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -229,8 +229,8 @@
                             "upperBound": 1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "sa_electrical_impulse"
+                            "uniqueName": "sa_electrical_impulse",
+                            "ordered": false
                         }
                     ],
                     "stereotype": "PARTICIPATION",
@@ -259,8 +259,8 @@
                             "upperBound": -1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "sa_electrical_impulse_generator2"
+                            "uniqueName": "sa_electrical_impulse_generator2",
+                            "ordered": false
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -271,8 +271,8 @@
                             "upperBound": 1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "av_node_cells"
+                            "uniqueName": "av_node_cells",
+                            "ordered": false
                         }
                     ],
                     "stereotype": "PARTICIPATION",
@@ -301,8 +301,8 @@
                             "upperBound": 1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "heart_as_a_pump"
+                            "uniqueName": "heart_as_a_pump",
+                            "ordered": false
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -321,8 +321,8 @@
                             "upperBound": 1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "right_atrium_as_a_pump"
+                            "uniqueName": "right_atrium_as_a_pump",
+                            "ordered": false
                         }
                     ],
                     "stereotype": "COMPONENTOF",
@@ -345,8 +345,8 @@
                             "upperBound": 1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "heart_as_a_pump2"
+                            "uniqueName": "heart_as_a_pump2",
+                            "ordered": false
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -365,8 +365,8 @@
                             "upperBound": 1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "left_atrium_as_a_pump"
+                            "uniqueName": "left_atrium_as_a_pump",
+                            "ordered": false
                         }
                     ],
                     "stereotype": "COMPONENTOF",
@@ -389,8 +389,8 @@
                             "upperBound": 1,
                             "dependency": true,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "heart_as_a_pump3"
+                            "uniqueName": "heart_as_a_pump3",
+                            "ordered": false
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -410,8 +410,8 @@
                             "upperBound": 1,
                             "dependency": true,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "right_ventricle_as_a_pump"
+                            "uniqueName": "right_ventricle_as_a_pump",
+                            "ordered": false
                         }
                     ],
                     "stereotype": "COMPONENTOF",
@@ -434,8 +434,8 @@
                             "upperBound": 1,
                             "dependency": true,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "heart_as_a_pump4"
+                            "uniqueName": "heart_as_a_pump4",
+                            "ordered": false
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -455,8 +455,8 @@
                             "upperBound": 1,
                             "dependency": true,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "left_ventricle_as_a_pump"
+                            "uniqueName": "left_ventricle_as_a_pump",
+                            "ordered": false
                         }
                     ],
                     "stereotype": "COMPONENTOF",
@@ -488,8 +488,8 @@
                             "upperBound": -1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "blood_pumping"
+                            "uniqueName": "blood_pumping",
+                            "ordered": false
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -500,8 +500,8 @@
                             "upperBound": 1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "heart_as_a_pump5"
+                            "uniqueName": "heart_as_a_pump5",
+                            "ordered": false
                         }
                     ],
                     "stereotype": "PARTICIPATION",
@@ -539,8 +539,8 @@
                             "upperBound": 1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "human_heart2"
+                            "uniqueName": "human_heart2",
+                            "ordered": false
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -551,8 +551,8 @@
                             "upperBound": 1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "heart_cells"
+                            "uniqueName": "heart_cells",
+                            "ordered": false
                         }
                     ],
                     "stereotype": "COMPONENTOF",
@@ -586,8 +586,8 @@
                             "upperBound": 1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "his_purkinje_electrical_impulse2"
+                            "uniqueName": "his_purkinje_electrical_impulse2",
+                            "ordered": false
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -598,8 +598,8 @@
                             "upperBound": 1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "sa_electrical_impulse2"
+                            "uniqueName": "sa_electrical_impulse2",
+                            "ordered": false
                         }
                     ],
                     "stereotype": "COMPONENTOF",
@@ -631,8 +631,8 @@
                             "upperBound": 1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "qrscomplex"
+                            "uniqueName": "qrscomplex",
+                            "ordered": false
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -643,8 +643,8 @@
                             "upperBound": 1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "his_purkinje_electrical_impulse3"
+                            "uniqueName": "his_purkinje_electrical_impulse3",
+                            "ordered": false
                         }
                     ],
                     "stereotype": "MATERIAL",
@@ -665,8 +665,8 @@
                             "upperBound": -1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "la_contraction2"
+                            "uniqueName": "la_contraction2",
+                            "ordered": false
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -677,8 +677,8 @@
                             "upperBound": 1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "left_atrium_as_a_pump2"
+                            "uniqueName": "left_atrium_as_a_pump2",
+                            "ordered": false
                         }
                     ],
                     "stereotype": "MEDIATION",
@@ -707,8 +707,8 @@
                             "upperBound": -1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "lv_contraction"
+                            "uniqueName": "lv_contraction",
+                            "ordered": false
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -719,8 +719,8 @@
                             "upperBound": 1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "left_ventricle_as_a_pump2"
+                            "uniqueName": "left_ventricle_as_a_pump2",
+                            "ordered": false
                         }
                     ],
                     "stereotype": "MEDIATION",
@@ -739,8 +739,8 @@
                             "upperBound": 1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "lv_contraction2"
+                            "uniqueName": "lv_contraction2",
+                            "ordered": false
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -760,8 +760,8 @@
                             "upperBound": 1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "pukinje_electrical_impulse"
+                            "uniqueName": "pukinje_electrical_impulse",
+                            "ordered": false
                         }
                     ],
                     "stereotype": "MEDIATION",
@@ -782,8 +782,8 @@
                             "upperBound": 1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "left_ventricle_as_a_pump3"
+                            "uniqueName": "left_ventricle_as_a_pump3",
+                            "ordered": false
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -794,8 +794,8 @@
                             "upperBound": -1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "pukinje_electrical_impulse2"
+                            "uniqueName": "pukinje_electrical_impulse2",
+                            "ordered": false
                         }
                     ],
                     "stereotype": "MATERIAL",
@@ -845,8 +845,8 @@
                             "upperBound": 1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "rv_contraction"
+                            "uniqueName": "rv_contraction",
+                            "ordered": false
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -857,8 +857,8 @@
                             "upperBound": 1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "pukinje_electrical_impulse3"
+                            "uniqueName": "pukinje_electrical_impulse3",
+                            "ordered": false
                         }
                     ],
                     "stereotype": "MEDIATION",
@@ -877,8 +877,8 @@
                             "upperBound": 1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "right_ventricle_as_a_pump2"
+                            "uniqueName": "right_ventricle_as_a_pump2",
+                            "ordered": false
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -889,8 +889,8 @@
                             "upperBound": -1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "pukinje_electrical_impulse4"
+                            "uniqueName": "pukinje_electrical_impulse4",
+                            "ordered": false
                         }
                     ],
                     "stereotype": "MATERIAL",
@@ -920,8 +920,8 @@
                             "upperBound": 1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "ra_contraction"
+                            "uniqueName": "ra_contraction",
+                            "ordered": false
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -932,8 +932,8 @@
                             "upperBound": 1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "sa_electrical_impulse3"
+                            "uniqueName": "sa_electrical_impulse3",
+                            "ordered": false
                         }
                     ],
                     "stereotype": "MEDIATION",
@@ -952,8 +952,8 @@
                             "upperBound": -1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "ra_contraction2"
+                            "uniqueName": "ra_contraction2",
+                            "ordered": false
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -964,8 +964,8 @@
                             "upperBound": 1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "right_atrium_as_a_pump2"
+                            "uniqueName": "right_atrium_as_a_pump2",
+                            "ordered": false
                         }
                     ],
                     "stereotype": "MEDIATION",
@@ -985,8 +985,8 @@
                             "upperBound": -1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "rv_contraction2"
+                            "uniqueName": "rv_contraction2",
+                            "ordered": false
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -997,8 +997,8 @@
                             "upperBound": 1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "right_ventricle_as_a_pump3"
+                            "uniqueName": "right_ventricle_as_a_pump3",
+                            "ordered": false
                         }
                     ],
                     "stereotype": "MEDIATION",
@@ -1029,8 +1029,8 @@
                             "upperBound": 1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "pwave"
+                            "uniqueName": "pwave",
+                            "ordered": false
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -1041,8 +1041,8 @@
                             "upperBound": 1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "sa_electrical_impulse4"
+                            "uniqueName": "sa_electrical_impulse4",
+                            "ordered": false
                         }
                     ],
                     "stereotype": "MATERIAL",
@@ -1231,8 +1231,8 @@
                             "upperBound": -1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "blood_movement_from_la_to_lv_container"
+                            "uniqueName": "blood_movement_from_la_to_lv_container",
+                            "ordered": false
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -1252,8 +1252,8 @@
                             "upperBound": 1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "blood_in_left_atrium"
+                            "uniqueName": "blood_in_left_atrium",
+                            "ordered": false
                         }
                     ],
                     "stereotype": "PARTICIPATION",
@@ -1272,8 +1272,8 @@
                             "upperBound": -1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "blood_movement_from_la_to_lv_container2"
+                            "uniqueName": "blood_movement_from_la_to_lv_container2",
+                            "ordered": false
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -1293,8 +1293,8 @@
                             "upperBound": 1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "left_ventricle_as_a_blood_container"
+                            "uniqueName": "left_ventricle_as_a_blood_container",
+                            "ordered": false
                         }
                     ],
                     "stereotype": "PARTICIPATION",
@@ -1323,8 +1323,8 @@
                             "upperBound": -1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "blood_movement_from_lungs_to_la"
+                            "uniqueName": "blood_movement_from_lungs_to_la",
+                            "ordered": false
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -1335,8 +1335,8 @@
                             "upperBound": 1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "blood_in_left_atrium2"
+                            "uniqueName": "blood_in_left_atrium2",
+                            "ordered": false
                         }
                     ],
                     "stereotype": "PARTICIPATION",
@@ -1355,8 +1355,8 @@
                             "upperBound": -1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "blood_movement_from_lungs_to_la2"
+                            "uniqueName": "blood_movement_from_lungs_to_la2",
+                            "ordered": false
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -1376,8 +1376,8 @@
                             "upperBound": 1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "blood_in_lungs"
+                            "uniqueName": "blood_in_lungs",
+                            "ordered": false
                         }
                     ],
                     "stereotype": "PARTICIPATION",
@@ -1406,8 +1406,8 @@
                             "upperBound": -1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "blood_movement_from_peripheral_container_to_lv"
+                            "uniqueName": "blood_movement_from_peripheral_container_to_lv",
+                            "ordered": false
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -1427,8 +1427,8 @@
                             "upperBound": 1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "peripherals_as_a_blood_container"
+                            "uniqueName": "peripherals_as_a_blood_container",
+                            "ordered": false
                         }
                     ],
                     "stereotype": "PARTICIPATION",
@@ -1447,8 +1447,8 @@
                             "upperBound": -1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "blood_movement_from_peripheral_container_to_lv2"
+                            "uniqueName": "blood_movement_from_peripheral_container_to_lv2",
+                            "ordered": false
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -1468,8 +1468,8 @@
                             "upperBound": 1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "blood_in_left_ventricle"
+                            "uniqueName": "blood_in_left_ventricle",
+                            "ordered": false
                         }
                     ],
                     "stereotype": "PARTICIPATION",
@@ -1498,8 +1498,8 @@
                             "upperBound": -1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "blood_movement_from_peripheral_to_ra"
+                            "uniqueName": "blood_movement_from_peripheral_to_ra",
+                            "ordered": false
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -1519,8 +1519,8 @@
                             "upperBound": 1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "blood_in_right_atrium"
+                            "uniqueName": "blood_in_right_atrium",
+                            "ordered": false
                         }
                     ],
                     "stereotype": "PARTICIPATION",
@@ -1539,8 +1539,8 @@
                             "upperBound": -1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "blood_movement_from_peripheral_to_ra2"
+                            "uniqueName": "blood_movement_from_peripheral_to_ra2",
+                            "ordered": false
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -1560,8 +1560,8 @@
                             "upperBound": 1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "blood_in_peripherals"
+                            "uniqueName": "blood_in_peripherals",
+                            "ordered": false
                         }
                     ],
                     "stereotype": "PARTICIPATION",
@@ -1590,8 +1590,8 @@
                             "upperBound": -1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "blood_movement_from_ra_to_rv_container"
+                            "uniqueName": "blood_movement_from_ra_to_rv_container",
+                            "ordered": false
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -1602,8 +1602,8 @@
                             "upperBound": 1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "blood_in_right_atrium2"
+                            "uniqueName": "blood_in_right_atrium2",
+                            "ordered": false
                         }
                     ],
                     "stereotype": "PARTICIPATION",
@@ -1622,8 +1622,8 @@
                             "upperBound": -1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "blood_movement_from_ra_to_rv_container2"
+                            "uniqueName": "blood_movement_from_ra_to_rv_container2",
+                            "ordered": false
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -1643,8 +1643,8 @@
                             "upperBound": 1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "righ_ventricle_as_a_blood_container"
+                            "uniqueName": "righ_ventricle_as_a_blood_container",
+                            "ordered": false
                         }
                     ],
                     "stereotype": "PARTICIPATION",
@@ -1673,8 +1673,8 @@
                             "upperBound": -1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "blood_movement_from_rv_to_lungs_as_container"
+                            "uniqueName": "blood_movement_from_rv_to_lungs_as_container",
+                            "ordered": false
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -1694,8 +1694,8 @@
                             "upperBound": 1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "lungs_as_a_blood_container"
+                            "uniqueName": "lungs_as_a_blood_container",
+                            "ordered": false
                         }
                     ],
                     "stereotype": "PARTICIPATION",
@@ -1714,8 +1714,8 @@
                             "upperBound": -1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "blood_movement_from_rv_to_lungs_as_container2"
+                            "uniqueName": "blood_movement_from_rv_to_lungs_as_container2",
+                            "ordered": false
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -1735,8 +1735,8 @@
                             "upperBound": 1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "blood_in_right_ventricle"
+                            "uniqueName": "blood_in_right_ventricle",
+                            "ordered": false
                         }
                     ],
                     "stereotype": "PARTICIPATION",
@@ -1756,8 +1756,8 @@
                             "upperBound": -1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "blood_pumping2"
+                            "uniqueName": "blood_pumping2",
+                            "ordered": false
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -1777,8 +1777,8 @@
                             "upperBound": 1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "bloodinhumanbody"
+                            "uniqueName": "bloodinhumanbody",
+                            "ordered": false
                         }
                     ],
                     "stereotype": "PARTICIPATION",
@@ -1806,8 +1806,8 @@
                             "upperBound": 1,
                             "dependency": true,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "bloodinhumanbody2"
+                            "uniqueName": "bloodinhumanbody2",
+                            "ordered": false
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -1817,8 +1817,8 @@
                             "upperBound": 1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "blood_in_lungs2"
+                            "uniqueName": "blood_in_lungs2",
+                            "ordered": false
                         }
                     ],
                     "stereotype": "COMPONENTOF",
@@ -1850,8 +1850,8 @@
                             "upperBound": 1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "lungs_blood_storing"
+                            "uniqueName": "lungs_blood_storing",
+                            "ordered": false
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -1862,8 +1862,8 @@
                             "upperBound": 1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "blood_in_lungs3"
+                            "uniqueName": "blood_in_lungs3",
+                            "ordered": false
                         }
                     ],
                     "stereotype": "MEDIATION",
@@ -1892,8 +1892,8 @@
                             "upperBound": 1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "ra_blood_storing"
+                            "uniqueName": "ra_blood_storing",
+                            "ordered": false
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -1904,8 +1904,8 @@
                             "upperBound": 1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "blood_in_right_atrium3"
+                            "uniqueName": "blood_in_right_atrium3",
+                            "ordered": false
                         }
                     ],
                     "stereotype": "MEDIATION",
@@ -1924,8 +1924,8 @@
                             "upperBound": 1,
                             "dependency": true,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "bloodinhumanbody3"
+                            "uniqueName": "bloodinhumanbody3",
+                            "ordered": false
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -1935,8 +1935,8 @@
                             "upperBound": 1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "blood_in_right_atrium4"
+                            "uniqueName": "blood_in_right_atrium4",
+                            "ordered": false
                         }
                     ],
                     "stereotype": "COMPONENTOF",
@@ -1969,8 +1969,8 @@
                             "upperBound": 1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "la_blood_storing"
+                            "uniqueName": "la_blood_storing",
+                            "ordered": false
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -1981,8 +1981,8 @@
                             "upperBound": 1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "blood_in_left_atrium3"
+                            "uniqueName": "blood_in_left_atrium3",
+                            "ordered": false
                         }
                     ],
                     "stereotype": "MEDIATION",
@@ -2001,8 +2001,8 @@
                             "upperBound": 1,
                             "dependency": true,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "bloodinhumanbody4"
+                            "uniqueName": "bloodinhumanbody4",
+                            "ordered": false
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -2012,8 +2012,8 @@
                             "upperBound": 1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "blood_in_left_atrium4"
+                            "uniqueName": "blood_in_left_atrium4",
+                            "ordered": false
                         }
                     ],
                     "stereotype": "COMPONENTOF",
@@ -2037,8 +2037,8 @@
                             "upperBound": 1,
                             "dependency": true,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "bloodinhumanbody5"
+                            "uniqueName": "bloodinhumanbody5",
+                            "ordered": false
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -2048,8 +2048,8 @@
                             "upperBound": 1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "blood_in_left_ventricle2"
+                            "uniqueName": "blood_in_left_ventricle2",
+                            "ordered": false
                         }
                     ],
                     "stereotype": "COMPONENTOF",
@@ -2081,8 +2081,8 @@
                             "upperBound": 1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "lv_blood_storing"
+                            "uniqueName": "lv_blood_storing",
+                            "ordered": false
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -2093,8 +2093,8 @@
                             "upperBound": 1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "blood_in_left_ventricle3"
+                            "uniqueName": "blood_in_left_ventricle3",
+                            "ordered": false
                         }
                     ],
                     "stereotype": "MEDIATION",
@@ -2123,8 +2123,8 @@
                             "upperBound": 1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "peripherals_blood_storing"
+                            "uniqueName": "peripherals_blood_storing",
+                            "ordered": false
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -2135,8 +2135,8 @@
                             "upperBound": 1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "blood_in_peripherals2"
+                            "uniqueName": "blood_in_peripherals2",
+                            "ordered": false
                         }
                     ],
                     "stereotype": "MEDIATION",
@@ -2155,8 +2155,8 @@
                             "upperBound": 1,
                             "dependency": true,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "bloodinhumanbody6"
+                            "uniqueName": "bloodinhumanbody6",
+                            "ordered": false
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -2166,8 +2166,8 @@
                             "upperBound": 1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "blood_in_peripherals3"
+                            "uniqueName": "blood_in_peripherals3",
+                            "ordered": false
                         }
                     ],
                     "stereotype": "COMPONENTOF",
@@ -2200,8 +2200,8 @@
                             "upperBound": 1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "rv_blood_storing"
+                            "uniqueName": "rv_blood_storing",
+                            "ordered": false
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -2212,8 +2212,8 @@
                             "upperBound": 1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "blood_in_right_ventricle2"
+                            "uniqueName": "blood_in_right_ventricle2",
+                            "ordered": false
                         }
                     ],
                     "stereotype": "MEDIATION",
@@ -2232,8 +2232,8 @@
                             "upperBound": 1,
                             "dependency": true,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "bloodinhumanbody7"
+                            "uniqueName": "bloodinhumanbody7",
+                            "ordered": false
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -2243,8 +2243,8 @@
                             "upperBound": 1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "blood_in_right_ventricle3"
+                            "uniqueName": "blood_in_right_ventricle3",
+                            "ordered": false
                         }
                     ],
                     "stereotype": "COMPONENTOF",
@@ -2278,8 +2278,8 @@
                             "upperBound": 1,
                             "dependency": true,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "heart_as_blood_container"
+                            "uniqueName": "heart_as_blood_container",
+                            "ordered": false
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -2298,8 +2298,8 @@
                             "upperBound": 1,
                             "dependency": true,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "left_atrium_as_a_blood_container"
+                            "uniqueName": "left_atrium_as_a_blood_container",
+                            "ordered": false
                         }
                     ],
                     "stereotype": "COMPONENTOF",
@@ -2322,8 +2322,8 @@
                             "upperBound": 1,
                             "dependency": true,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "heart_as_blood_container2"
+                            "uniqueName": "heart_as_blood_container2",
+                            "ordered": false
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -2333,8 +2333,8 @@
                             "upperBound": 1,
                             "dependency": true,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "left_ventricle_as_a_blood_container2"
+                            "uniqueName": "left_ventricle_as_a_blood_container2",
+                            "ordered": false
                         }
                     ],
                     "stereotype": "COMPONENTOF",
@@ -2357,8 +2357,8 @@
                             "upperBound": 1,
                             "dependency": true,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "heart_as_blood_container3"
+                            "uniqueName": "heart_as_blood_container3",
+                            "ordered": false
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -2368,8 +2368,8 @@
                             "upperBound": 1,
                             "dependency": true,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "righ_ventricle_as_a_blood_container2"
+                            "uniqueName": "righ_ventricle_as_a_blood_container2",
+                            "ordered": false
                         }
                     ],
                     "stereotype": "COMPONENTOF",
@@ -2392,8 +2392,8 @@
                             "upperBound": 1,
                             "dependency": true,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "heart_as_blood_container4"
+                            "uniqueName": "heart_as_blood_container4",
+                            "ordered": false
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -2412,8 +2412,8 @@
                             "upperBound": 1,
                             "dependency": true,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "right_atrium_as_a_blood_container"
+                            "uniqueName": "right_atrium_as_a_blood_container",
+                            "ordered": false
                         }
                     ],
                     "stereotype": "COMPONENTOF",
@@ -2437,8 +2437,8 @@
                             "upperBound": 1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "la_blood_storing2"
+                            "uniqueName": "la_blood_storing2",
+                            "ordered": false
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -2449,8 +2449,8 @@
                             "upperBound": 1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "left_atrium_as_a_blood_container2"
+                            "uniqueName": "left_atrium_as_a_blood_container2",
+                            "ordered": false
                         }
                     ],
                     "stereotype": "MEDIATION",
@@ -2470,8 +2470,8 @@
                             "upperBound": 1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "lv_blood_storing2"
+                            "uniqueName": "lv_blood_storing2",
+                            "ordered": false
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -2482,8 +2482,8 @@
                             "upperBound": 1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "left_ventricle_as_a_blood_container3"
+                            "uniqueName": "left_ventricle_as_a_blood_container3",
+                            "ordered": false
                         }
                     ],
                     "stereotype": "MEDIATION",
@@ -2523,8 +2523,8 @@
                             "upperBound": 1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "human_body"
+                            "uniqueName": "human_body",
+                            "ordered": false
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -2535,8 +2535,8 @@
                             "upperBound": 1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "lungs"
+                            "uniqueName": "lungs",
+                            "ordered": false
                         }
                     ],
                     "stereotype": "COMPONENTOF",
@@ -2560,8 +2560,8 @@
                             "upperBound": 1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "lungs_blood_storing2"
+                            "uniqueName": "lungs_blood_storing2",
+                            "ordered": false
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -2572,8 +2572,8 @@
                             "upperBound": 1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "lungs_as_a_blood_container2"
+                            "uniqueName": "lungs_as_a_blood_container2",
+                            "ordered": false
                         }
                     ],
                     "stereotype": "MEDIATION",
@@ -2603,8 +2603,8 @@
                             "upperBound": 1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "human_body2"
+                            "uniqueName": "human_body2",
+                            "ordered": false
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -2615,8 +2615,8 @@
                             "upperBound": 1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "peripherals"
+                            "uniqueName": "peripherals",
+                            "ordered": false
                         }
                     ],
                     "stereotype": "COMPONENTOF",
@@ -2640,8 +2640,8 @@
                             "upperBound": 1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "peripherals_blood_storing2"
+                            "uniqueName": "peripherals_blood_storing2",
+                            "ordered": false
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -2652,8 +2652,8 @@
                             "upperBound": 1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "peripherals_as_a_blood_container2"
+                            "uniqueName": "peripherals_as_a_blood_container2",
+                            "ordered": false
                         }
                     ],
                     "stereotype": "MEDIATION",
@@ -2674,8 +2674,8 @@
                             "upperBound": 1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "ra_blood_storing2"
+                            "uniqueName": "ra_blood_storing2",
+                            "ordered": false
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -2686,8 +2686,8 @@
                             "upperBound": 1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "right_atrium_as_a_blood_container2"
+                            "uniqueName": "right_atrium_as_a_blood_container2",
+                            "ordered": false
                         }
                     ],
                     "stereotype": "MEDIATION",
@@ -2707,8 +2707,8 @@
                             "upperBound": 1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "rv_blood_storing2"
+                            "uniqueName": "rv_blood_storing2",
+                            "ordered": false
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -2719,8 +2719,8 @@
                             "upperBound": 1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "righ_ventricle_as_a_blood_container3"
+                            "uniqueName": "righ_ventricle_as_a_blood_container3",
+                            "ordered": false
                         }
                     ],
                     "stereotype": "MEDIATION",
@@ -2816,8 +2816,8 @@
                             "upperBound": 1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "annotation"
+                            "uniqueName": "annotation",
+                            "ordered": false
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -2834,8 +2834,8 @@
                             "upperBound": 1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "annotation_domain"
+                            "uniqueName": "annotation_domain",
+                            "ordered": false
                         }
                     ],
                     "stereotype": "STRUCTURATION",
@@ -2854,8 +2854,8 @@
                             "upperBound": 1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "annotation2"
+                            "uniqueName": "annotation2",
+                            "ordered": false
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -2875,8 +2875,8 @@
                             "upperBound": 1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "elementary_form"
+                            "uniqueName": "elementary_form",
+                            "ordered": false
                         }
                     ],
                     "stereotype": "CHARACTERIZATION",
@@ -2908,8 +2908,8 @@
                             "upperBound": -1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "cardiac_frequency"
+                            "uniqueName": "cardiac_frequency",
+                            "ordered": false
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -2928,8 +2928,8 @@
                             "upperBound": 1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "cardiac_frequency_rate"
+                            "uniqueName": "cardiac_frequency_rate",
+                            "ordered": false
                         }
                     ],
                     "stereotype": "STRUCTURATION",
@@ -2948,8 +2948,8 @@
                             "upperBound": 1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "cardiac_frequency2"
+                            "uniqueName": "cardiac_frequency2",
+                            "ordered": false
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -2969,8 +2969,8 @@
                             "upperBound": 1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "cycle"
+                            "uniqueName": "cycle",
+                            "ordered": false
                         }
                     ],
                     "stereotype": "CHARACTERIZATION",
@@ -3003,8 +3003,8 @@
                             "upperBound": 1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "date"
+                            "uniqueName": "date",
+                            "ordered": false
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -3021,8 +3021,8 @@
                             "upperBound": 1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "date_domain"
+                            "uniqueName": "date_domain",
+                            "ordered": false
                         }
                     ],
                     "stereotype": "STRUCTURATION",
@@ -3050,8 +3050,8 @@
                             "upperBound": 1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "ecg_recording_session"
+                            "uniqueName": "ecg_recording_session",
+                            "ordered": false
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -3062,8 +3062,8 @@
                             "upperBound": 1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "date2"
+                            "uniqueName": "date2",
+                            "ordered": false
                         }
                     ],
                     "stereotype": "CHARACTERIZATION",
@@ -3096,8 +3096,8 @@
                             "upperBound": 1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "electrical_potential"
+                            "uniqueName": "electrical_potential",
+                            "ordered": false
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -3117,8 +3117,8 @@
                             "upperBound": 1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "electrical_potential_rate"
+                            "uniqueName": "electrical_potential_rate",
+                            "ordered": false
                         }
                     ],
                     "stereotype": "STRUCTURATION",
@@ -3137,8 +3137,8 @@
                             "upperBound": 1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "electrical_potential2"
+                            "uniqueName": "electrical_potential2",
+                            "ordered": false
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -3158,8 +3158,8 @@
                             "upperBound": 1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "sample"
+                            "uniqueName": "sample",
+                            "ordered": false
                         }
                     ],
                     "stereotype": "CHARACTERIZATION",
@@ -3192,8 +3192,8 @@
                             "upperBound": 1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "measurement"
+                            "uniqueName": "measurement",
+                            "ordered": false
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -3204,8 +3204,8 @@
                             "upperBound": 1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "elementary_form2"
+                            "uniqueName": "elementary_form2",
+                            "ordered": false
                         }
                     ],
                     "stereotype": "CHARACTERIZATION",
@@ -3227,8 +3227,8 @@
                             "upperBound": 1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "measurement2"
+                            "uniqueName": "measurement2",
+                            "ordered": false
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -3245,8 +3245,8 @@
                             "upperBound": 1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "measurement_domain"
+                            "uniqueName": "measurement_domain",
+                            "ordered": false
                         }
                     ],
                     "stereotype": "STRUCTURATION",
@@ -3275,8 +3275,8 @@
                             "upperBound": 1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "sample2"
+                            "uniqueName": "sample2",
+                            "ordered": false
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -3296,8 +3296,8 @@
                             "upperBound": 1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "sample_rate"
+                            "uniqueName": "sample_rate",
+                            "ordered": false
                         }
                     ],
                     "stereotype": "STRUCTURATION",
@@ -3316,8 +3316,8 @@
                             "upperBound": 1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "sample3"
+                            "uniqueName": "sample3",
+                            "ordered": false
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -3337,8 +3337,8 @@
                             "upperBound": 1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "observation_series"
+                            "uniqueName": "observation_series",
+                            "ordered": false
                         }
                     ],
                     "stereotype": "CHARACTERIZATION",
@@ -3370,8 +3370,8 @@
                             "upperBound": 1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "time2"
+                            "uniqueName": "time2",
+                            "ordered": false
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -3388,8 +3388,8 @@
                             "upperBound": 1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "time_domain"
+                            "uniqueName": "time_domain",
+                            "ordered": false
                         }
                     ],
                     "stereotype": "STRUCTURATION",
@@ -3417,8 +3417,8 @@
                             "upperBound": 1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "observation"
+                            "uniqueName": "observation",
+                            "ordered": false
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -3429,8 +3429,8 @@
                             "upperBound": 1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "time3"
+                            "uniqueName": "time3",
+                            "ordered": false
                         }
                     ],
                     "stereotype": "CHARACTERIZATION",
@@ -3453,8 +3453,8 @@
                             "upperBound": 1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "ecg_recording_session2"
+                            "uniqueName": "ecg_recording_session2",
+                            "ordered": false
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -3465,8 +3465,8 @@
                             "upperBound": 1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "time4"
+                            "uniqueName": "time4",
+                            "ordered": false
                         }
                     ],
                     "stereotype": "CHARACTERIZATION",
@@ -3489,8 +3489,8 @@
                             "upperBound": 1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "cycle2"
+                            "uniqueName": "cycle2",
+                            "ordered": false
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -3501,8 +3501,8 @@
                             "upperBound": 1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "time5"
+                            "uniqueName": "time5",
+                            "ordered": false
                         }
                     ],
                     "stereotype": "CHARACTERIZATION",
@@ -3525,8 +3525,8 @@
                             "upperBound": 1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "ecg_recording_session3"
+                            "uniqueName": "ecg_recording_session3",
+                            "ordered": false
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -3537,8 +3537,8 @@
                             "upperBound": 1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "time6"
+                            "uniqueName": "time6",
+                            "ordered": false
                         }
                     ],
                     "stereotype": "CHARACTERIZATION",
@@ -3627,8 +3627,8 @@
                             "upperBound": -1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "annotation_domain2"
+                            "uniqueName": "annotation_domain2",
+                            "ordered": false
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -3639,8 +3639,8 @@
                             "upperBound": 1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "time_domain2"
+                            "uniqueName": "time_domain2",
+                            "ordered": false
                         }
                     ],
                     "stereotype": "STRUCTURATION",
@@ -3659,8 +3659,8 @@
                             "upperBound": -1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "annotation_domain3"
+                            "uniqueName": "annotation_domain3",
+                            "ordered": false
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -3671,8 +3671,8 @@
                             "upperBound": 1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "time_domain3"
+                            "uniqueName": "time_domain3",
+                            "ordered": false
                         }
                     ],
                     "stereotype": "STRUCTURATION",
@@ -3691,8 +3691,8 @@
                             "upperBound": -1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "annotation_domain4"
+                            "uniqueName": "annotation_domain4",
+                            "ordered": false
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -3703,8 +3703,8 @@
                             "upperBound": 1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "time_domain4"
+                            "uniqueName": "time_domain4",
+                            "ordered": false
                         }
                     ],
                     "stereotype": "STRUCTURATION",
@@ -3723,8 +3723,8 @@
                             "upperBound": -1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "date_domain2"
+                            "uniqueName": "date_domain2",
+                            "ordered": false
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -3735,8 +3735,8 @@
                             "upperBound": 1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "day"
+                            "uniqueName": "day",
+                            "ordered": false
                         }
                     ],
                     "stereotype": "STRUCTURATION",
@@ -3755,8 +3755,8 @@
                             "upperBound": -1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "date_domain3"
+                            "uniqueName": "date_domain3",
+                            "ordered": false
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -3767,8 +3767,8 @@
                             "upperBound": 1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "month"
+                            "uniqueName": "month",
+                            "ordered": false
                         }
                     ],
                     "stereotype": "STRUCTURATION",
@@ -3787,8 +3787,8 @@
                             "upperBound": -1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "date_domain4"
+                            "uniqueName": "date_domain4",
+                            "ordered": false
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -3799,8 +3799,8 @@
                             "upperBound": 1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "year"
+                            "uniqueName": "year",
+                            "ordered": false
                         }
                     ],
                     "stereotype": "STRUCTURATION",
@@ -3819,8 +3819,8 @@
                             "upperBound": -1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "measurement_domain2"
+                            "uniqueName": "measurement_domain2",
+                            "ordered": false
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -3831,8 +3831,8 @@
                             "upperBound": 1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "time_domain5"
+                            "uniqueName": "time_domain5",
+                            "ordered": false
                         }
                     ],
                     "stereotype": "STRUCTURATION",
@@ -3851,8 +3851,8 @@
                             "upperBound": -1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "measurement_domain3"
+                            "uniqueName": "measurement_domain3",
+                            "ordered": false
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -3863,8 +3863,8 @@
                             "upperBound": 1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "electrical_potential_rate2"
+                            "uniqueName": "electrical_potential_rate2",
+                            "ordered": false
                         }
                     ],
                     "stereotype": "STRUCTURATION",
@@ -3883,8 +3883,8 @@
                             "upperBound": -1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "time_domain6"
+                            "uniqueName": "time_domain6",
+                            "ordered": false
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -3895,8 +3895,8 @@
                             "upperBound": 1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "hour"
+                            "uniqueName": "hour",
+                            "ordered": false
                         }
                     ],
                     "stereotype": "STRUCTURATION",
@@ -3915,8 +3915,8 @@
                             "upperBound": -1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "time_domain7"
+                            "uniqueName": "time_domain7",
+                            "ordered": false
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -3927,8 +3927,8 @@
                             "upperBound": 1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "minute"
+                            "uniqueName": "minute",
+                            "ordered": false
                         }
                     ],
                     "stereotype": "STRUCTURATION",
@@ -3947,8 +3947,8 @@
                             "upperBound": -1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "time_domain8"
+                            "uniqueName": "time_domain8",
+                            "ordered": false
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -3959,8 +3959,8 @@
                             "upperBound": 1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "second"
+                            "uniqueName": "second",
+                            "ordered": false
                         }
                     ],
                     "stereotype": "STRUCTURATION",
@@ -4008,8 +4008,8 @@
                             "upperBound": 1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "correlated_observation_series"
+                            "uniqueName": "correlated_observation_series",
+                            "ordered": false
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -4020,8 +4020,8 @@
                             "upperBound": 12,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "observation_series2"
+                            "uniqueName": "observation_series2",
+                            "ordered": false
                         }
                     ],
                     "stereotype": "SUBEVENTOF",
@@ -4040,8 +4040,8 @@
                             "upperBound": 1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "correlated_observation_series2"
+                            "uniqueName": "correlated_observation_series2",
+                            "ordered": false
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -4061,8 +4061,8 @@
                             "upperBound": -1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "wave_form"
+                            "uniqueName": "wave_form",
+                            "ordered": false
                         }
                     ],
                     "stereotype": "PARTICIPATION",
@@ -4082,8 +4082,8 @@
                             "upperBound": 1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "ecg_recording_session4"
+                            "uniqueName": "ecg_recording_session4",
+                            "ordered": false
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -4094,8 +4094,8 @@
                             "upperBound": 1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "correlated_observation_series3"
+                            "uniqueName": "correlated_observation_series3",
+                            "ordered": false
                         }
                     ],
                     "stereotype": "SUBEVENTOF",
@@ -4123,8 +4123,8 @@
                             "upperBound": 1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "ecg_record"
+                            "uniqueName": "ecg_record",
+                            "ordered": false
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -4135,8 +4135,8 @@
                             "upperBound": 1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "correlated_observation_series4"
+                            "uniqueName": "correlated_observation_series4",
+                            "ordered": false
                         }
                     ],
                     "stereotype": "PARTICIPATION",
@@ -4157,8 +4157,8 @@
                             "upperBound": 1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "cycle3"
+                            "uniqueName": "cycle3",
+                            "ordered": false
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -4168,8 +4168,8 @@
                             "upperBound": 4,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "elementary_form3"
+                            "uniqueName": "elementary_form3",
+                            "ordered": false
                         }
                     ],
                     "stereotype": "COMPONENTOF",
@@ -4192,8 +4192,8 @@
                             "upperBound": 1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "cycle4"
+                            "uniqueName": "cycle4",
+                            "ordered": false
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -4213,8 +4213,8 @@
                             "upperBound": -1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "segment"
+                            "uniqueName": "segment",
+                            "ordered": false
                         }
                     ],
                     "stereotype": "COMPONENTOF",
@@ -4237,8 +4237,8 @@
                             "upperBound": 1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "wave_form2"
+                            "uniqueName": "wave_form2",
+                            "ordered": false
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -4249,8 +4249,8 @@
                             "upperBound": -1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "cycle5"
+                            "uniqueName": "cycle5",
+                            "ordered": false
                         }
                     ],
                     "stereotype": "COMPONENTOF",
@@ -4282,8 +4282,8 @@
                             "upperBound": -1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "ecg_lead"
+                            "uniqueName": "ecg_lead",
+                            "ordered": false
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -4293,8 +4293,8 @@
                             "upperBound": -1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "human_body3"
+                            "uniqueName": "human_body3",
+                            "ordered": false
                         }
                     ],
                     "stereotype": "MEDIATION",
@@ -4313,8 +4313,8 @@
                             "upperBound": 2,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "ecg_lead2"
+                            "uniqueName": "ecg_lead2",
+                            "ordered": false
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -4334,8 +4334,8 @@
                             "upperBound": 2,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "electrode"
+                            "uniqueName": "electrode",
+                            "ordered": false
                         }
                     ],
                     "stereotype": "MEDIATION",
@@ -4353,8 +4353,8 @@
                             "upperBound": -1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "observation_series3"
+                            "uniqueName": "observation_series3",
+                            "ordered": false
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -4365,8 +4365,8 @@
                             "upperBound": 1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "ecg_lead3"
+                            "uniqueName": "ecg_lead3",
+                            "ordered": false
                         }
                     ],
                     "name": "isDevelopedIn",
@@ -4394,8 +4394,8 @@
                             "upperBound": -1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "ecg_recording_device"
+                            "uniqueName": "ecg_recording_device",
+                            "ordered": false
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -4414,8 +4414,8 @@
                             "upperBound": -1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "filtering_technique"
+                            "uniqueName": "filtering_technique",
+                            "ordered": false
                         }
                     ],
                     "stereotype": "MATERIAL",
@@ -4435,8 +4435,8 @@
                             "upperBound": 1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "ecg_recording_device2"
+                            "uniqueName": "ecg_recording_device2",
+                            "ordered": false
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -4446,8 +4446,8 @@
                             "upperBound": -1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "observation2"
+                            "uniqueName": "observation2",
+                            "ordered": false
                         }
                     ],
                     "stereotype": "MATERIAL",
@@ -4467,8 +4467,8 @@
                             "upperBound": 1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "ecg_recording_device3"
+                            "uniqueName": "ecg_recording_device3",
+                            "ordered": false
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -4479,8 +4479,8 @@
                             "upperBound": -1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "electrode2"
+                            "uniqueName": "electrode2",
+                            "ordered": false
                         }
                     ],
                     "stereotype": "COMPONENTOF",
@@ -4502,8 +4502,8 @@
                             "upperBound": -1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "ecg_recording_session5"
+                            "uniqueName": "ecg_recording_session5",
+                            "ordered": false
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -4514,8 +4514,8 @@
                             "upperBound": 1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "ecg_recording_device4"
+                            "uniqueName": "ecg_recording_device4",
+                            "ordered": false
                         }
                     ],
                     "stereotype": "PARTICIPATION",
@@ -4533,8 +4533,8 @@
                             "upperBound": -1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "ecg_record2"
+                            "uniqueName": "ecg_record2",
+                            "ordered": false
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -4545,8 +4545,8 @@
                             "upperBound": 1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "ecg_recording_device5"
+                            "uniqueName": "ecg_recording_device5",
+                            "ordered": false
                         }
                     ],
                     "stereotype": "MATERIAL",
@@ -4566,8 +4566,8 @@
                             "upperBound": -1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "ecg_recording_session6"
+                            "uniqueName": "ecg_recording_session6",
+                            "ordered": false
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -4587,8 +4587,8 @@
                             "upperBound": 1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "treatment"
+                            "uniqueName": "treatment",
+                            "ordered": false
                         }
                     ],
                     "name": "isAssociatedWith",
@@ -4607,8 +4607,8 @@
                             "upperBound": 1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "ecg_recording_session7"
+                            "uniqueName": "ecg_recording_session7",
+                            "ordered": false
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -4619,8 +4619,8 @@
                             "upperBound": 1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "ecg_record3"
+                            "uniqueName": "ecg_record3",
+                            "ordered": false
                         }
                     ],
                     "stereotype": "PARTICIPATION",
@@ -4648,8 +4648,8 @@
                             "upperBound": 1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "patient"
+                            "uniqueName": "patient",
+                            "ordered": false
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -4659,8 +4659,8 @@
                             "upperBound": -1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "ecg_recording_session8"
+                            "uniqueName": "ecg_recording_session8",
+                            "ordered": false
                         }
                     ],
                     "stereotype": "PARTICIPATION",
@@ -4688,8 +4688,8 @@
                             "upperBound": 1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "physician"
+                            "uniqueName": "physician",
+                            "ordered": false
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -4699,8 +4699,8 @@
                             "upperBound": -1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "ecg_recording_session9"
+                            "uniqueName": "ecg_recording_session9",
+                            "ordered": false
                         }
                     ],
                     "stereotype": "MATERIAL",
@@ -4721,8 +4721,8 @@
                             "upperBound": -1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "observation3"
+                            "uniqueName": "observation3",
+                            "ordered": false
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -4733,8 +4733,8 @@
                             "upperBound": 1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "electrode3"
+                            "uniqueName": "electrode3",
+                            "ordered": false
                         }
                     ],
                     "stereotype": "PARTICIPATION",
@@ -4766,8 +4766,8 @@
                             "upperBound": -1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "observation4"
+                            "uniqueName": "observation4",
+                            "ordered": false
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -4778,8 +4778,8 @@
                             "upperBound": 1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "human_body4"
+                            "uniqueName": "human_body4",
+                            "ordered": false
                         }
                     ],
                     "stereotype": "PARTICIPATION",
@@ -4798,8 +4798,8 @@
                             "upperBound": 1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "observation5"
+                            "uniqueName": "observation5",
+                            "ordered": false
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -4810,8 +4810,8 @@
                             "upperBound": 1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "sample4"
+                            "uniqueName": "sample4",
+                            "ordered": false
                         }
                     ],
                     "stereotype": "PARTICIPATION",
@@ -4831,8 +4831,8 @@
                             "upperBound": 1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "observation_series4"
+                            "uniqueName": "observation_series4",
+                            "ordered": false
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -4843,8 +4843,8 @@
                             "upperBound": -1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "observation6"
+                            "uniqueName": "observation6",
+                            "ordered": false
                         }
                     ],
                     "stereotype": "SUBEVENTOF",
@@ -4864,8 +4864,8 @@
                             "upperBound": 1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "observation_series5"
+                            "uniqueName": "observation_series5",
+                            "ordered": false
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -4876,8 +4876,8 @@
                             "upperBound": 1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "wave_form3"
+                            "uniqueName": "wave_form3",
+                            "ordered": false
                         }
                     ],
                     "stereotype": "PARTICIPATION",
@@ -4900,8 +4900,8 @@
                             "upperBound": 1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "wave_form4"
+                            "uniqueName": "wave_form4",
+                            "ordered": false
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -4912,8 +4912,8 @@
                             "upperBound": -1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "sample5"
+                            "uniqueName": "sample5",
+                            "ordered": false
                         }
                     ],
                     "stereotype": "COMPONENTOF",
@@ -5030,8 +5030,8 @@
                             "upperBound": 1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "human_body5"
+                            "uniqueName": "human_body5",
+                            "ordered": false
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -5042,8 +5042,8 @@
                             "upperBound": 1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "human_heart3"
+                            "uniqueName": "human_heart3",
+                            "ordered": false
                         }
                     ],
                     "stereotype": "COMPONENTOF",
@@ -5067,8 +5067,8 @@
                             "upperBound": 1,
                             "dependency": true,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "human_heart4"
+                            "uniqueName": "human_heart4",
+                            "ordered": false
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -5079,8 +5079,8 @@
                             "upperBound": 1,
                             "dependency": true,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "left_atrium"
+                            "uniqueName": "left_atrium",
+                            "ordered": false
                         }
                     ],
                     "stereotype": "COMPONENTOF",
@@ -5103,8 +5103,8 @@
                             "upperBound": 1,
                             "dependency": true,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "human_heart5"
+                            "uniqueName": "human_heart5",
+                            "ordered": false
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -5115,8 +5115,8 @@
                             "upperBound": 1,
                             "dependency": true,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "right_atrium"
+                            "uniqueName": "right_atrium",
+                            "ordered": false
                         }
                     ],
                     "stereotype": "COMPONENTOF",
@@ -5139,8 +5139,8 @@
                             "upperBound": 1,
                             "dependency": true,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "human_heart6"
+                            "uniqueName": "human_heart6",
+                            "ordered": false
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -5151,8 +5151,8 @@
                             "upperBound": 1,
                             "dependency": true,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "right_ventricle"
+                            "uniqueName": "right_ventricle",
+                            "ordered": false
                         }
                     ],
                     "stereotype": "COMPONENTOF",
@@ -5175,8 +5175,8 @@
                             "upperBound": 1,
                             "dependency": true,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "human_heart7"
+                            "uniqueName": "human_heart7",
+                            "ordered": false
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -5187,8 +5187,8 @@
                             "upperBound": 1,
                             "dependency": true,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "left_ventricle"
+                            "uniqueName": "left_ventricle",
+                            "ordered": false
                         }
                     ],
                     "stereotype": "COMPONENTOF",
@@ -5299,8 +5299,8 @@
                             "upperBound": -1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "ecg_record4"
+                            "uniqueName": "ecg_record4",
+                            "ordered": false
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -5311,8 +5311,8 @@
                             "upperBound": 1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "patient2"
+                            "uniqueName": "patient2",
+                            "ordered": false
                         }
                     ],
                     "stereotype": "MATERIAL",
@@ -5341,8 +5341,8 @@
                             "upperBound": 1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "epr"
+                            "uniqueName": "epr",
+                            "ordered": false
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -5352,8 +5352,8 @@
                             "upperBound": -1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "ecg_record5"
+                            "uniqueName": "ecg_record5",
+                            "ordered": false
                         }
                     ],
                     "stereotype": "COMPONENTOF",
@@ -5377,8 +5377,8 @@
                             "upperBound": 1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "patient3"
+                            "uniqueName": "patient3",
+                            "ordered": false
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -5389,8 +5389,8 @@
                             "upperBound": 1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "epr2"
+                            "uniqueName": "epr2",
+                            "ordered": false
                         }
                     ],
                     "stereotype": "MATERIAL",
@@ -5411,8 +5411,8 @@
                             "upperBound": -1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "treatment2"
+                            "uniqueName": "treatment2",
+                            "ordered": false
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -5423,8 +5423,8 @@
                             "upperBound": 1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "patient4"
+                            "uniqueName": "patient4",
+                            "ordered": false
                         }
                     ],
                     "stereotype": "MEDIATION",
@@ -5453,8 +5453,8 @@
                             "upperBound": -1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "treatment3"
+                            "uniqueName": "treatment3",
+                            "ordered": false
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -5465,8 +5465,8 @@
                             "upperBound": 1,
                             "dependency": false,
                             "derived": false,
-                            "ordered": false,
-                            "uniqueName": "physician2"
+                            "uniqueName": "physician2",
+                            "ordered": false
                         }
                     ],
                     "stereotype": "MEDIATION",

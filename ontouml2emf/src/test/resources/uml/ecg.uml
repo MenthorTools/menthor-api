@@ -1,0 +1,1527 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_xSi2UDyHEeapYOv580323A" name="Electrocardiogram">
+  <packagedElement xmi:type="uml:Package" xmi:id="_xSkEcDyHEeapYOv580323A" name="Biolectric">
+    <packagedElement xmi:type="uml:Class" xmi:id="_xSkEcTyHEeapYOv580323A" name="AV Electrical Impulse"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_xSkEcjyHEeapYOv580323A" name="AV Electrical Impulse Generator"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_xSkEczyHEeapYOv580323A" name="AV Node Cells">
+      <generalization xmi:id="_xSkEdDyHEeapYOv580323A" general="_xSkEgzyHEeapYOv580323A" generalizationSet="_xSmhGTyHEeapYOv580323A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_xSkEdTyHEeapYOv580323A" name="Heart As A Pump">
+      <generalization xmi:id="_xSkEdjyHEeapYOv580323A" general="_xSo9cjyHEeapYOv580323A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_xSkEdzyHEeapYOv580323A" name="Heart Cells"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_xSkEeDyHEeapYOv580323A" name="His Electrical Impulse">
+      <generalization xmi:id="_xSkEeTyHEeapYOv580323A" general="_xSkEejyHEeapYOv580323A" generalizationSet="_xSmhGjyHEeapYOv580323A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_xSkEejyHEeapYOv580323A" name="His Purkinje Electrical Impulse"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_xSkEezyHEeapYOv580323A" name="LA Contraction"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_xSkEfDyHEeapYOv580323A" name="LV Contraction"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_xSkEfTyHEeapYOv580323A" name="Left Atrium As A Pump">
+      <generalization xmi:id="_xSkEfjyHEeapYOv580323A" general="_xSo9dTyHEeapYOv580323A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_xSkEfzyHEeapYOv580323A" name="Left Ventricle As A Pump">
+      <generalization xmi:id="_xSkEgDyHEeapYOv580323A" general="_xSo9eDyHEeapYOv580323A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_xSkEgTyHEeapYOv580323A" name="Non Pacemaker Cells">
+      <generalization xmi:id="_xSkEgjyHEeapYOv580323A" general="_xSkEdzyHEeapYOv580323A" generalizationSet="_xSmhGzyHEeapYOv580323A _xSmhHDyHEeapYOv580323A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_xSkEgzyHEeapYOv580323A" name="Pacemaker Cells">
+      <generalization xmi:id="_xSkEhDyHEeapYOv580323A" general="_xSkEdzyHEeapYOv580323A" generalizationSet="_xSmhGzyHEeapYOv580323A _xSmhHDyHEeapYOv580323A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_xSkEhTyHEeapYOv580323A" name="Pukinje Electrical Impulse">
+      <generalization xmi:id="_xSkEhjyHEeapYOv580323A" general="_xSkEejyHEeapYOv580323A" generalizationSet="_xSmhGjyHEeapYOv580323A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_xSkEhzyHEeapYOv580323A" name="RA Contraction"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_xSkEiDyHEeapYOv580323A" name="RV Contraction"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_xSkEiTyHEeapYOv580323A" name="Right Atrium As A Pump">
+      <generalization xmi:id="_xSkEijyHEeapYOv580323A" general="_xSo9fDyHEeapYOv580323A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_xSkEizyHEeapYOv580323A" name="Right Ventricle As A Pump">
+      <generalization xmi:id="_xSkEjDyHEeapYOv580323A" general="_xSo9fzyHEeapYOv580323A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_xSkEjTyHEeapYOv580323A" name="SA Electrical Impulse"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_xSkEjjyHEeapYOv580323A" name="SA Electrical Impulse Generator"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_xSkrgDyHEeapYOv580323A" name="SA Node Cells">
+      <generalization xmi:id="_xSkrgTyHEeapYOv580323A" general="_xSkEgzyHEeapYOv580323A" generalizationSet="_xSmhGTyHEeapYOv580323A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_xSkrgjyHEeapYOv580323A" memberEnd="_xSkrgzyHEeapYOv580323A _xSkrhjyHEeapYOv580323A" navigableOwnedEnd="_xSkrgzyHEeapYOv580323A _xSkrhjyHEeapYOv580323A">
+      <name xsi:nil="true"/>
+      <ownedEnd xmi:id="_xSkrgzyHEeapYOv580323A" name="sa_electrical_impulse_generator" type="_xSkEjjyHEeapYOv580323A" association="_xSkrgjyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSkrhDyHEeapYOv580323A" value="-1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSkrhTyHEeapYOv580323A" value="*"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_xSkrhjyHEeapYOv580323A" name="av_electrical_impulse" type="_xSkEcTyHEeapYOv580323A" association="_xSkrgjyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSkrhzyHEeapYOv580323A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSkriDyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_xSkriTyHEeapYOv580323A" memberEnd="_xSkrijyHEeapYOv580323A _xSkrjTyHEeapYOv580323A" navigableOwnedEnd="_xSkrijyHEeapYOv580323A _xSkrjTyHEeapYOv580323A">
+      <name xsi:nil="true"/>
+      <ownedEnd xmi:id="_xSkrijyHEeapYOv580323A" name="la_contraction" type="_xSkEezyHEeapYOv580323A" association="_xSkriTyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSkrizyHEeapYOv580323A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSkrjDyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_xSkrjTyHEeapYOv580323A" name="av_electrical_impulse" type="_xSkEcTyHEeapYOv580323A" association="_xSkriTyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSkrjjyHEeapYOv580323A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSkrjzyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_xSkrkDyHEeapYOv580323A" memberEnd="_xSkrkTyHEeapYOv580323A _xSkrlDyHEeapYOv580323A" navigableOwnedEnd="_xSkrkTyHEeapYOv580323A _xSkrlDyHEeapYOv580323A">
+      <name xsi:nil="true"/>
+      <ownedEnd xmi:id="_xSkrkTyHEeapYOv580323A" name="his_purkinje_electrical_impulse" type="_xSkEejyHEeapYOv580323A" association="_xSkrkDyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSkrkjyHEeapYOv580323A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSkrkzyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_xSkrlDyHEeapYOv580323A" name="av_electrical_impulse" type="_xSkEcTyHEeapYOv580323A" association="_xSkrkDyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSkrlTyHEeapYOv580323A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSkrljyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_xSkrlzyHEeapYOv580323A" memberEnd="_xSkrmDyHEeapYOv580323A _xSkrmzyHEeapYOv580323A" navigableOwnedEnd="_xSkrmDyHEeapYOv580323A _xSkrmzyHEeapYOv580323A">
+      <name xsi:nil="true"/>
+      <ownedEnd xmi:id="_xSkrmDyHEeapYOv580323A" name="av_electrical_impulse_generator" type="_xSkEcjyHEeapYOv580323A" association="_xSkrlzyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSkrmTyHEeapYOv580323A" value="-1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSkrmjyHEeapYOv580323A" value="*"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_xSkrmzyHEeapYOv580323A" name="sa_node_cells" type="_xSkrgDyHEeapYOv580323A" association="_xSkrlzyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSkrnDyHEeapYOv580323A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSkrnTyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_xSkrnjyHEeapYOv580323A" memberEnd="_xSkrnzyHEeapYOv580323A _xSkrojyHEeapYOv580323A" navigableOwnedEnd="_xSkrnzyHEeapYOv580323A _xSkrojyHEeapYOv580323A">
+      <name xsi:nil="true"/>
+      <ownedEnd xmi:id="_xSkrnzyHEeapYOv580323A" name="av_electrical_impulse_generator" type="_xSkEcjyHEeapYOv580323A" association="_xSkrnjyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSkroDyHEeapYOv580323A" value="-1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSkroTyHEeapYOv580323A" value="*"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_xSkrojyHEeapYOv580323A" name="sa_electrical_impulse" type="_xSkEjTyHEeapYOv580323A" association="_xSkrnjyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSkrozyHEeapYOv580323A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSkrpDyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_xSkrpTyHEeapYOv580323A" memberEnd="_xSl5oDyHEeapYOv580323A _xSl5ozyHEeapYOv580323A" navigableOwnedEnd="_xSl5oDyHEeapYOv580323A _xSl5ozyHEeapYOv580323A">
+      <name xsi:nil="true"/>
+      <ownedEnd xmi:id="_xSl5oDyHEeapYOv580323A" name="sa_electrical_impulse_generator" type="_xSkEjjyHEeapYOv580323A" association="_xSkrpTyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSl5oTyHEeapYOv580323A" value="-1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSl5ojyHEeapYOv580323A" value="*"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_xSl5ozyHEeapYOv580323A" name="av_node_cells" type="_xSkEczyHEeapYOv580323A" association="_xSkrpTyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSl5pDyHEeapYOv580323A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSl5pTyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_xSl5pjyHEeapYOv580323A" memberEnd="_xSl5pzyHEeapYOv580323A _xSl5qjyHEeapYOv580323A" navigableOwnedEnd="_xSl5pzyHEeapYOv580323A _xSl5qjyHEeapYOv580323A">
+      <name xsi:nil="true"/>
+      <ownedEnd xmi:id="_xSl5pzyHEeapYOv580323A" name="heart_as_a_pump" type="_xSkEdTyHEeapYOv580323A" association="_xSl5pjyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSl5qDyHEeapYOv580323A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSl5qTyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_xSl5qjyHEeapYOv580323A" name="right_atrium_as_a_pump" type="_xSkEiTyHEeapYOv580323A" association="_xSl5pjyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSl5qzyHEeapYOv580323A"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSl5rDyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_xSl5rTyHEeapYOv580323A" memberEnd="_xSl5rjyHEeapYOv580323A _xSl5sTyHEeapYOv580323A" navigableOwnedEnd="_xSl5rjyHEeapYOv580323A _xSl5sTyHEeapYOv580323A">
+      <name xsi:nil="true"/>
+      <ownedEnd xmi:id="_xSl5rjyHEeapYOv580323A" name="heart_as_a_pump" type="_xSkEdTyHEeapYOv580323A" association="_xSl5rTyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSl5rzyHEeapYOv580323A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSl5sDyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_xSl5sTyHEeapYOv580323A" name="left_atrium_as_a_pump" type="_xSkEfTyHEeapYOv580323A" association="_xSl5rTyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSl5sjyHEeapYOv580323A"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSl5szyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_xSl5tDyHEeapYOv580323A" memberEnd="_xSl5tTyHEeapYOv580323A _xSl5uDyHEeapYOv580323A" navigableOwnedEnd="_xSl5tTyHEeapYOv580323A _xSl5uDyHEeapYOv580323A">
+      <name xsi:nil="true"/>
+      <ownedEnd xmi:id="_xSl5tTyHEeapYOv580323A" name="heart_as_a_pump" type="_xSkEdTyHEeapYOv580323A" isReadOnly="true" association="_xSl5tDyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSl5tjyHEeapYOv580323A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSl5tzyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_xSl5uDyHEeapYOv580323A" name="right_ventricle_as_a_pump" type="_xSkEizyHEeapYOv580323A" isReadOnly="true" association="_xSl5tDyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSl5uTyHEeapYOv580323A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSl5ujyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_xSmgsDyHEeapYOv580323A" memberEnd="_xSmgsTyHEeapYOv580323A _xSmgtDyHEeapYOv580323A" navigableOwnedEnd="_xSmgsTyHEeapYOv580323A _xSmgtDyHEeapYOv580323A">
+      <name xsi:nil="true"/>
+      <ownedEnd xmi:id="_xSmgsTyHEeapYOv580323A" name="heart_as_a_pump" type="_xSkEdTyHEeapYOv580323A" isReadOnly="true" association="_xSmgsDyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSmgsjyHEeapYOv580323A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSmgszyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_xSmgtDyHEeapYOv580323A" name="left_ventricle_as_a_pump" type="_xSkEfzyHEeapYOv580323A" isReadOnly="true" association="_xSmgsDyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSmgtTyHEeapYOv580323A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSmgtjyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_xSmgtzyHEeapYOv580323A" memberEnd="_xSmguDyHEeapYOv580323A _xSmguzyHEeapYOv580323A" navigableOwnedEnd="_xSmguDyHEeapYOv580323A _xSmguzyHEeapYOv580323A">
+      <name xsi:nil="true"/>
+      <ownedEnd xmi:id="_xSmguDyHEeapYOv580323A" name="blood_pumping" type="_xSmhJDyHEeapYOv580323A" association="_xSmgtzyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSmguTyHEeapYOv580323A" value="-1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSmgujyHEeapYOv580323A" value="*"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_xSmguzyHEeapYOv580323A" name="heart_as_a_pump" type="_xSkEdTyHEeapYOv580323A" association="_xSmgtzyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSmgvDyHEeapYOv580323A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSmgvTyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_xSmgvjyHEeapYOv580323A" memberEnd="_xSmgvzyHEeapYOv580323A _xSmgwjyHEeapYOv580323A" navigableOwnedEnd="_xSmgvzyHEeapYOv580323A _xSmgwjyHEeapYOv580323A">
+      <name xsi:nil="true"/>
+      <ownedEnd xmi:id="_xSmgvzyHEeapYOv580323A" name="human_heart" type="_xSo9cjyHEeapYOv580323A" association="_xSmgvjyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSmgwDyHEeapYOv580323A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSmgwTyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_xSmgwjyHEeapYOv580323A" name="heart_cells" type="_xSkEdzyHEeapYOv580323A" association="_xSmgvjyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSmgwzyHEeapYOv580323A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSmgxDyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_xSmgxTyHEeapYOv580323A" memberEnd="_xSmgxjyHEeapYOv580323A _xSmgyTyHEeapYOv580323A" navigableOwnedEnd="_xSmgxjyHEeapYOv580323A _xSmgyTyHEeapYOv580323A">
+      <name xsi:nil="true"/>
+      <ownedEnd xmi:id="_xSmgxjyHEeapYOv580323A" name="his_purkinje_electrical_impulse" type="_xSkEejyHEeapYOv580323A" association="_xSmgxTyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSmgxzyHEeapYOv580323A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSmgyDyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_xSmgyTyHEeapYOv580323A" name="sa_electrical_impulse" type="_xSkEjTyHEeapYOv580323A" association="_xSmgxTyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSmgyjyHEeapYOv580323A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSmgyzyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_xSmgzDyHEeapYOv580323A" name="maps" memberEnd="_xSmgzTyHEeapYOv580323A _xSmg0DyHEeapYOv580323A" navigableOwnedEnd="_xSmgzTyHEeapYOv580323A _xSmg0DyHEeapYOv580323A">
+      <ownedEnd xmi:id="_xSmgzTyHEeapYOv580323A" name="qrscomplex" type="_xSoWeTyHEeapYOv580323A" association="_xSmgzDyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSmgzjyHEeapYOv580323A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSmgzzyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_xSmg0DyHEeapYOv580323A" name="his_purkinje_electrical_impulse" type="_xSkEejyHEeapYOv580323A" association="_xSmgzDyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSmg0TyHEeapYOv580323A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSmg0jyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_xSmg0zyHEeapYOv580323A" memberEnd="_xSmg1DyHEeapYOv580323A _xSmg1zyHEeapYOv580323A" navigableOwnedEnd="_xSmg1DyHEeapYOv580323A _xSmg1zyHEeapYOv580323A">
+      <name xsi:nil="true"/>
+      <ownedEnd xmi:id="_xSmg1DyHEeapYOv580323A" name="la_contraction" type="_xSkEezyHEeapYOv580323A" association="_xSmg0zyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSmg1TyHEeapYOv580323A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSmg1jyHEeapYOv580323A" value="*"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_xSmg1zyHEeapYOv580323A" name="left_atrium_as_a_pump" type="_xSkEfTyHEeapYOv580323A" association="_xSmg0zyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSmg2DyHEeapYOv580323A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSmg2TyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_xSmg2jyHEeapYOv580323A" memberEnd="_xSmg2zyHEeapYOv580323A _xSmg3jyHEeapYOv580323A" navigableOwnedEnd="_xSmg2zyHEeapYOv580323A _xSmg3jyHEeapYOv580323A">
+      <name xsi:nil="true"/>
+      <ownedEnd xmi:id="_xSmg2zyHEeapYOv580323A" name="lv_contraction" type="_xSkEfDyHEeapYOv580323A" association="_xSmg2jyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSmg3DyHEeapYOv580323A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSmg3TyHEeapYOv580323A" value="*"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_xSmg3jyHEeapYOv580323A" name="left_ventricle_as_a_pump" type="_xSkEfzyHEeapYOv580323A" association="_xSmg2jyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSmg3zyHEeapYOv580323A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSmg4DyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_xSmg4TyHEeapYOv580323A" memberEnd="_xSmg4jyHEeapYOv580323A _xSmg5TyHEeapYOv580323A" navigableOwnedEnd="_xSmg4jyHEeapYOv580323A _xSmg5TyHEeapYOv580323A">
+      <name xsi:nil="true"/>
+      <ownedEnd xmi:id="_xSmg4jyHEeapYOv580323A" name="lv_contraction" type="_xSkEfDyHEeapYOv580323A" association="_xSmg4TyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSmg4zyHEeapYOv580323A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSmg5DyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_xSmg5TyHEeapYOv580323A" name="pukinje_electrical_impulse" type="_xSkEhTyHEeapYOv580323A" association="_xSmg4TyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSmg5jyHEeapYOv580323A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSmg5zyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_xSmg6DyHEeapYOv580323A" name="contraction" memberEnd="_xSmg6TyHEeapYOv580323A _xSmg7DyHEeapYOv580323A" navigableOwnedEnd="_xSmg6TyHEeapYOv580323A _xSmg7DyHEeapYOv580323A">
+      <ownedEnd xmi:id="_xSmg6TyHEeapYOv580323A" name="left_ventricle_as_a_pump" type="_xSkEfzyHEeapYOv580323A" association="_xSmg6DyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSmg6jyHEeapYOv580323A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSmg6zyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_xSmg7DyHEeapYOv580323A" name="pukinje_electrical_impulse" type="_xSkEhTyHEeapYOv580323A" association="_xSmg6DyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSmg7TyHEeapYOv580323A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSmg7jyHEeapYOv580323A" value="*"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_xSmg7zyHEeapYOv580323A" memberEnd="_xSmg8DyHEeapYOv580323A _xSmg8zyHEeapYOv580323A" navigableOwnedEnd="_xSmg8DyHEeapYOv580323A _xSmg8zyHEeapYOv580323A">
+      <name xsi:nil="true"/>
+      <ownedEnd xmi:id="_xSmg8DyHEeapYOv580323A" name="rv_contraction" type="_xSkEiDyHEeapYOv580323A" association="_xSmg7zyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSmg8TyHEeapYOv580323A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSmg8jyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_xSmg8zyHEeapYOv580323A" name="pukinje_electrical_impulse" type="_xSkEhTyHEeapYOv580323A" association="_xSmg7zyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSmg9DyHEeapYOv580323A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSmg9TyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_xSmg9jyHEeapYOv580323A" name="contraction" memberEnd="_xSmg9zyHEeapYOv580323A _xSmg-jyHEeapYOv580323A" navigableOwnedEnd="_xSmg9zyHEeapYOv580323A _xSmg-jyHEeapYOv580323A">
+      <ownedEnd xmi:id="_xSmg9zyHEeapYOv580323A" name="right_ventricle_as_a_pump" type="_xSkEizyHEeapYOv580323A" association="_xSmg9jyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSmg-DyHEeapYOv580323A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSmg-TyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_xSmg-jyHEeapYOv580323A" name="pukinje_electrical_impulse" type="_xSkEhTyHEeapYOv580323A" association="_xSmg9jyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSmg-zyHEeapYOv580323A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSmg_DyHEeapYOv580323A" value="*"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_xSmg_TyHEeapYOv580323A" memberEnd="_xSmg_jyHEeapYOv580323A _xSmhATyHEeapYOv580323A" navigableOwnedEnd="_xSmg_jyHEeapYOv580323A _xSmhATyHEeapYOv580323A">
+      <name xsi:nil="true"/>
+      <ownedEnd xmi:id="_xSmg_jyHEeapYOv580323A" name="ra_contraction" type="_xSkEhzyHEeapYOv580323A" association="_xSmg_TyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSmg_zyHEeapYOv580323A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSmhADyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_xSmhATyHEeapYOv580323A" name="sa_electrical_impulse" type="_xSkEjTyHEeapYOv580323A" association="_xSmg_TyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSmhAjyHEeapYOv580323A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSmhAzyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_xSmhBDyHEeapYOv580323A" memberEnd="_xSmhBTyHEeapYOv580323A _xSmhCDyHEeapYOv580323A" navigableOwnedEnd="_xSmhBTyHEeapYOv580323A _xSmhCDyHEeapYOv580323A">
+      <name xsi:nil="true"/>
+      <ownedEnd xmi:id="_xSmhBTyHEeapYOv580323A" name="ra_contraction" type="_xSkEhzyHEeapYOv580323A" association="_xSmhBDyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSmhBjyHEeapYOv580323A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSmhBzyHEeapYOv580323A" value="*"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_xSmhCDyHEeapYOv580323A" name="right_atrium_as_a_pump" type="_xSkEiTyHEeapYOv580323A" association="_xSmhBDyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSmhCTyHEeapYOv580323A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSmhCjyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_xSmhCzyHEeapYOv580323A" memberEnd="_xSmhDDyHEeapYOv580323A _xSmhDzyHEeapYOv580323A" navigableOwnedEnd="_xSmhDDyHEeapYOv580323A _xSmhDzyHEeapYOv580323A">
+      <name xsi:nil="true"/>
+      <ownedEnd xmi:id="_xSmhDDyHEeapYOv580323A" name="rv_contraction" type="_xSkEiDyHEeapYOv580323A" association="_xSmhCzyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSmhDTyHEeapYOv580323A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSmhDjyHEeapYOv580323A" value="*"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_xSmhDzyHEeapYOv580323A" name="right_ventricle_as_a_pump" type="_xSkEizyHEeapYOv580323A" association="_xSmhCzyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSmhEDyHEeapYOv580323A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSmhETyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_xSmhEjyHEeapYOv580323A" name="maps" memberEnd="_xSmhEzyHEeapYOv580323A _xSmhFjyHEeapYOv580323A" navigableOwnedEnd="_xSmhEzyHEeapYOv580323A _xSmhFjyHEeapYOv580323A">
+      <ownedEnd xmi:id="_xSmhEzyHEeapYOv580323A" name="pwave" type="_xSoWdzyHEeapYOv580323A" association="_xSmhEjyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSmhFDyHEeapYOv580323A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSmhFTyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_xSmhFjyHEeapYOv580323A" name="sa_electrical_impulse" type="_xSkEjTyHEeapYOv580323A" association="_xSmhEjyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSmhFzyHEeapYOv580323A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSmhGDyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:GeneralizationSet" xmi:id="_xSmhGTyHEeapYOv580323A" name="" isDisjoint="true" generalization="_xSkEdDyHEeapYOv580323A _xSkrgTyHEeapYOv580323A"/>
+    <packagedElement xmi:type="uml:GeneralizationSet" xmi:id="_xSmhGjyHEeapYOv580323A" name="" isDisjoint="true" generalization="_xSkEeTyHEeapYOv580323A _xSkEhjyHEeapYOv580323A"/>
+    <packagedElement xmi:type="uml:GeneralizationSet" xmi:id="_xSmhGzyHEeapYOv580323A" name="" generalization="_xSkEgjyHEeapYOv580323A _xSkEhDyHEeapYOv580323A"/>
+    <packagedElement xmi:type="uml:GeneralizationSet" xmi:id="_xSmhHDyHEeapYOv580323A" name="" isCovering="true" isDisjoint="true" generalization="_xSkEgjyHEeapYOv580323A _xSkEhDyHEeapYOv580323A"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_xSmhHTyHEeapYOv580323A" name="Blood Pumping">
+    <packagedElement xmi:type="uml:Class" xmi:id="_xSmhHjyHEeapYOv580323A" name="Blood Movement from LA to LV Container"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_xSmhHzyHEeapYOv580323A" name="Blood Movement from Lungs to LA"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_xSmhIDyHEeapYOv580323A" name="Blood Movement from Peripheral Container to LV"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_xSmhITyHEeapYOv580323A" name="Blood Movement from Peripheral to RA"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_xSmhIjyHEeapYOv580323A" name="Blood Movement from RA to RV Container"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_xSmhIzyHEeapYOv580323A" name="Blood Movement from RV to Lungs as Container"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_xSmhJDyHEeapYOv580323A" name="Blood Pumping"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_xSmhJTyHEeapYOv580323A" memberEnd="_xSmhJjyHEeapYOv580323A _xSmhKTyHEeapYOv580323A" navigableOwnedEnd="_xSmhJjyHEeapYOv580323A _xSmhKTyHEeapYOv580323A">
+      <name xsi:nil="true"/>
+      <ownedEnd xmi:id="_xSmhJjyHEeapYOv580323A" name="blood_movement_from_la_to_lv_container" type="_xSmhHjyHEeapYOv580323A" association="_xSmhJTyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSmhJzyHEeapYOv580323A" value="-1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSmhKDyHEeapYOv580323A" value="*"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_xSmhKTyHEeapYOv580323A" name="blood_in_left_atrium" type="_xSnIATyHEeapYOv580323A" association="_xSmhJTyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSmhKjyHEeapYOv580323A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSmhKzyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_xSmhLDyHEeapYOv580323A" memberEnd="_xSmhLTyHEeapYOv580323A _xSmhMDyHEeapYOv580323A" navigableOwnedEnd="_xSmhLTyHEeapYOv580323A _xSmhMDyHEeapYOv580323A">
+      <name xsi:nil="true"/>
+      <ownedEnd xmi:id="_xSmhLTyHEeapYOv580323A" name="blood_movement_from_la_to_lv_container" type="_xSmhHjyHEeapYOv580323A" association="_xSmhLDyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSmhLjyHEeapYOv580323A" value="-1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSmhLzyHEeapYOv580323A" value="*"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_xSmhMDyHEeapYOv580323A" name="left_ventricle_as_a_blood_container" type="_xSnICzyHEeapYOv580323A" association="_xSmhLDyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSmhMTyHEeapYOv580323A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSmhMjyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_xSmhMzyHEeapYOv580323A" memberEnd="_xSmhNDyHEeapYOv580323A _xSmhNzyHEeapYOv580323A" navigableOwnedEnd="_xSmhNDyHEeapYOv580323A _xSmhNzyHEeapYOv580323A">
+      <name xsi:nil="true"/>
+      <ownedEnd xmi:id="_xSmhNDyHEeapYOv580323A" name="blood_movement_from_lungs_to_la" type="_xSmhHzyHEeapYOv580323A" association="_xSmhMzyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSmhNTyHEeapYOv580323A" value="-1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSmhNjyHEeapYOv580323A" value="*"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_xSmhNzyHEeapYOv580323A" name="blood_in_left_atrium" type="_xSnIATyHEeapYOv580323A" association="_xSmhMzyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSmhODyHEeapYOv580323A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSmhOTyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_xSmhOjyHEeapYOv580323A" memberEnd="_xSmhOzyHEeapYOv580323A _xSmhPjyHEeapYOv580323A" navigableOwnedEnd="_xSmhOzyHEeapYOv580323A _xSmhPjyHEeapYOv580323A">
+      <name xsi:nil="true"/>
+      <ownedEnd xmi:id="_xSmhOzyHEeapYOv580323A" name="blood_movement_from_lungs_to_la" type="_xSmhHzyHEeapYOv580323A" association="_xSmhOjyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSmhPDyHEeapYOv580323A" value="-1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSmhPTyHEeapYOv580323A" value="*"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_xSmhPjyHEeapYOv580323A" name="blood_in_lungs" type="_xSnH_zyHEeapYOv580323A" association="_xSmhOjyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSmhPzyHEeapYOv580323A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSmhQDyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_xSmhQTyHEeapYOv580323A" memberEnd="_xSnHwDyHEeapYOv580323A _xSnHwzyHEeapYOv580323A" navigableOwnedEnd="_xSnHwDyHEeapYOv580323A _xSnHwzyHEeapYOv580323A">
+      <name xsi:nil="true"/>
+      <ownedEnd xmi:id="_xSnHwDyHEeapYOv580323A" name="blood_movement_from_peripheral_container_to_lv" type="_xSmhIDyHEeapYOv580323A" association="_xSmhQTyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSnHwTyHEeapYOv580323A" value="-1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSnHwjyHEeapYOv580323A" value="*"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_xSnHwzyHEeapYOv580323A" name="peripherals_as_a_blood_container" type="_xSnIFDyHEeapYOv580323A" association="_xSmhQTyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSnHxDyHEeapYOv580323A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSnHxTyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_xSnHxjyHEeapYOv580323A" memberEnd="_xSnHxzyHEeapYOv580323A _xSnHyjyHEeapYOv580323A" navigableOwnedEnd="_xSnHxzyHEeapYOv580323A _xSnHyjyHEeapYOv580323A">
+      <name xsi:nil="true"/>
+      <ownedEnd xmi:id="_xSnHxzyHEeapYOv580323A" name="blood_movement_from_peripheral_container_to_lv" type="_xSmhIDyHEeapYOv580323A" association="_xSnHxjyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSnHyDyHEeapYOv580323A" value="-1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSnHyTyHEeapYOv580323A" value="*"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_xSnHyjyHEeapYOv580323A" name="blood_in_left_ventricle" type="_xSnIAjyHEeapYOv580323A" association="_xSnHxjyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSnHyzyHEeapYOv580323A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSnHzDyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_xSnHzTyHEeapYOv580323A" memberEnd="_xSnHzjyHEeapYOv580323A _xSnH0TyHEeapYOv580323A" navigableOwnedEnd="_xSnHzjyHEeapYOv580323A _xSnH0TyHEeapYOv580323A">
+      <name xsi:nil="true"/>
+      <ownedEnd xmi:id="_xSnHzjyHEeapYOv580323A" name="blood_movement_from_peripheral_to_ra" type="_xSmhITyHEeapYOv580323A" association="_xSnHzTyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSnHzzyHEeapYOv580323A" value="-1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSnH0DyHEeapYOv580323A" value="*"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_xSnH0TyHEeapYOv580323A" name="blood_in_right_atrium" type="_xSnIADyHEeapYOv580323A" association="_xSnHzTyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSnH0jyHEeapYOv580323A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSnH0zyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_xSnH1DyHEeapYOv580323A" memberEnd="_xSnH1TyHEeapYOv580323A _xSnH2DyHEeapYOv580323A" navigableOwnedEnd="_xSnH1TyHEeapYOv580323A _xSnH2DyHEeapYOv580323A">
+      <name xsi:nil="true"/>
+      <ownedEnd xmi:id="_xSnH1TyHEeapYOv580323A" name="blood_movement_from_peripheral_to_ra" type="_xSmhITyHEeapYOv580323A" association="_xSnH1DyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSnH1jyHEeapYOv580323A" value="-1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSnH1zyHEeapYOv580323A" value="*"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_xSnH2DyHEeapYOv580323A" name="blood_in_peripherals" type="_xSnIAzyHEeapYOv580323A" association="_xSnH1DyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSnH2TyHEeapYOv580323A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSnH2jyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_xSnH2zyHEeapYOv580323A" memberEnd="_xSnH3DyHEeapYOv580323A _xSnH3zyHEeapYOv580323A" navigableOwnedEnd="_xSnH3DyHEeapYOv580323A _xSnH3zyHEeapYOv580323A">
+      <name xsi:nil="true"/>
+      <ownedEnd xmi:id="_xSnH3DyHEeapYOv580323A" name="blood_movement_from_ra_to_rv_container" type="_xSmhIjyHEeapYOv580323A" association="_xSnH2zyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSnH3TyHEeapYOv580323A" value="-1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSnH3jyHEeapYOv580323A" value="*"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_xSnH3zyHEeapYOv580323A" name="blood_in_right_atrium" type="_xSnIADyHEeapYOv580323A" association="_xSnH2zyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSnH4DyHEeapYOv580323A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSnH4TyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_xSnH4jyHEeapYOv580323A" memberEnd="_xSnH4zyHEeapYOv580323A _xSnH5jyHEeapYOv580323A" navigableOwnedEnd="_xSnH4zyHEeapYOv580323A _xSnH5jyHEeapYOv580323A">
+      <name xsi:nil="true"/>
+      <ownedEnd xmi:id="_xSnH4zyHEeapYOv580323A" name="blood_movement_from_ra_to_rv_container" type="_xSmhIjyHEeapYOv580323A" association="_xSnH4jyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSnH5DyHEeapYOv580323A" value="-1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSnH5TyHEeapYOv580323A" value="*"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_xSnH5jyHEeapYOv580323A" name="righ_ventricle_as_a_blood_container" type="_xSnIGTyHEeapYOv580323A" association="_xSnH4jyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSnH5zyHEeapYOv580323A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSnH6DyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_xSnH6TyHEeapYOv580323A" memberEnd="_xSnH6jyHEeapYOv580323A _xSnH7TyHEeapYOv580323A" navigableOwnedEnd="_xSnH6jyHEeapYOv580323A _xSnH7TyHEeapYOv580323A">
+      <name xsi:nil="true"/>
+      <ownedEnd xmi:id="_xSnH6jyHEeapYOv580323A" name="blood_movement_from_rv_to_lungs_as_container" type="_xSmhIzyHEeapYOv580323A" association="_xSnH6TyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSnH6zyHEeapYOv580323A" value="-1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSnH7DyHEeapYOv580323A" value="*"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_xSnH7TyHEeapYOv580323A" name="lungs_as_a_blood_container" type="_xSnIDzyHEeapYOv580323A" association="_xSnH6TyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSnH7jyHEeapYOv580323A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSnH7zyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_xSnH8DyHEeapYOv580323A" memberEnd="_xSnH8TyHEeapYOv580323A _xSnH9DyHEeapYOv580323A" navigableOwnedEnd="_xSnH8TyHEeapYOv580323A _xSnH9DyHEeapYOv580323A">
+      <name xsi:nil="true"/>
+      <ownedEnd xmi:id="_xSnH8TyHEeapYOv580323A" name="blood_movement_from_rv_to_lungs_as_container" type="_xSmhIzyHEeapYOv580323A" association="_xSnH8DyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSnH8jyHEeapYOv580323A" value="-1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSnH8zyHEeapYOv580323A" value="*"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_xSnH9DyHEeapYOv580323A" name="blood_in_right_ventricle" type="_xSnIBDyHEeapYOv580323A" association="_xSnH8DyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSnH9TyHEeapYOv580323A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSnH9jyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_xSnH9zyHEeapYOv580323A" memberEnd="_xSnH-DyHEeapYOv580323A _xSnH-zyHEeapYOv580323A" navigableOwnedEnd="_xSnH-DyHEeapYOv580323A _xSnH-zyHEeapYOv580323A">
+      <name xsi:nil="true"/>
+      <ownedEnd xmi:id="_xSnH-DyHEeapYOv580323A" name="blood_pumping" type="_xSmhJDyHEeapYOv580323A" association="_xSnH9zyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSnH-TyHEeapYOv580323A" value="-1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSnH-jyHEeapYOv580323A" value="*"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_xSnH-zyHEeapYOv580323A" name="bloodinhumanbody" type="_xSnIBTyHEeapYOv580323A" association="_xSnH9zyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSnH_DyHEeapYOv580323A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSnH_TyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_xSnH_jyHEeapYOv580323A" name="Circulatory">
+    <packagedElement xmi:type="uml:Class" xmi:id="_xSnH_zyHEeapYOv580323A" name="Blood In Lungs"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_xSnIADyHEeapYOv580323A" name="Blood In RIght Atrium"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_xSnIATyHEeapYOv580323A" name="Blood in Left Atrium"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_xSnIAjyHEeapYOv580323A" name="Blood in Left Ventricle"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_xSnIAzyHEeapYOv580323A" name="Blood in Peripherals"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_xSnIBDyHEeapYOv580323A" name="Blood in Right Ventricle"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_xSnIBTyHEeapYOv580323A" name="BloodInHumanBody"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_xSnIBjyHEeapYOv580323A" name="Heart As Blood Container"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_xSnIBzyHEeapYOv580323A" name="LA Blood Storing"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_xSnICDyHEeapYOv580323A" name="LV Blood Storing"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_xSnICTyHEeapYOv580323A" name="Left Atrium As A Blood Container">
+      <generalization xmi:id="_xSnICjyHEeapYOv580323A" general="_xSo9dTyHEeapYOv580323A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_xSnICzyHEeapYOv580323A" name="Left Ventricle As A Blood Container">
+      <generalization xmi:id="_xSnIDDyHEeapYOv580323A" general="_xSo9eDyHEeapYOv580323A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_xSnIDTyHEeapYOv580323A" name="Lungs">
+      <generalization xmi:id="_xSnIDjyHEeapYOv580323A" general="_xSo9bzyHEeapYOv580323A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_xSnIDzyHEeapYOv580323A" name="Lungs As A Blood Container">
+      <generalization xmi:id="_xSnIEDyHEeapYOv580323A" general="_xSnIDTyHEeapYOv580323A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_xSnIETyHEeapYOv580323A" name="Lungs Blood Storing"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_xSnIEjyHEeapYOv580323A" name="Peripherals">
+      <generalization xmi:id="_xSnIEzyHEeapYOv580323A" general="_xSo9bzyHEeapYOv580323A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_xSnIFDyHEeapYOv580323A" name="Peripherals As A Blood Container">
+      <generalization xmi:id="_xSnIFTyHEeapYOv580323A" general="_xSnIEjyHEeapYOv580323A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_xSnIFjyHEeapYOv580323A" name="Peripherals Blood Storing"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_xSnIFzyHEeapYOv580323A" name="RA Blood Storing"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_xSnIGDyHEeapYOv580323A" name="RV Blood Storing"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_xSnIGTyHEeapYOv580323A" name="Righ Ventricle As A Blood Container">
+      <generalization xmi:id="_xSnIGjyHEeapYOv580323A" general="_xSo9fzyHEeapYOv580323A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_xSnIGzyHEeapYOv580323A" name="Right Atrium As A Blood Container">
+      <generalization xmi:id="_xSnIHDyHEeapYOv580323A" general="_xSo9fDyHEeapYOv580323A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_xSnIHTyHEeapYOv580323A" memberEnd="_xSnIHjyHEeapYOv580323A _xSnIITyHEeapYOv580323A" navigableOwnedEnd="_xSnIHjyHEeapYOv580323A _xSnIITyHEeapYOv580323A">
+      <name xsi:nil="true"/>
+      <ownedEnd xmi:id="_xSnIHjyHEeapYOv580323A" name="bloodinhumanbody" type="_xSnIBTyHEeapYOv580323A" isReadOnly="true" association="_xSnIHTyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSnIHzyHEeapYOv580323A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSnIIDyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_xSnIITyHEeapYOv580323A" name="blood_in_lungs" type="_xSnH_zyHEeapYOv580323A" association="_xSnIHTyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSnIIjyHEeapYOv580323A"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSnIIzyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_xSnIJDyHEeapYOv580323A" memberEnd="_xSnIJTyHEeapYOv580323A _xSnIKDyHEeapYOv580323A" navigableOwnedEnd="_xSnIJTyHEeapYOv580323A _xSnIKDyHEeapYOv580323A">
+      <name xsi:nil="true"/>
+      <ownedEnd xmi:id="_xSnIJTyHEeapYOv580323A" name="lungs_blood_storing" type="_xSnIETyHEeapYOv580323A" association="_xSnIJDyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSnIJjyHEeapYOv580323A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSnIJzyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_xSnIKDyHEeapYOv580323A" name="blood_in_lungs" type="_xSnH_zyHEeapYOv580323A" association="_xSnIJDyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSnIKTyHEeapYOv580323A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSnIKjyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_xSnIKzyHEeapYOv580323A" memberEnd="_xSnILDyHEeapYOv580323A _xSnILzyHEeapYOv580323A" navigableOwnedEnd="_xSnILDyHEeapYOv580323A _xSnILzyHEeapYOv580323A">
+      <name xsi:nil="true"/>
+      <ownedEnd xmi:id="_xSnILDyHEeapYOv580323A" name="ra_blood_storing" type="_xSnIFzyHEeapYOv580323A" association="_xSnIKzyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSnILTyHEeapYOv580323A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSnILjyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_xSnILzyHEeapYOv580323A" name="blood_in_right_atrium" type="_xSnIADyHEeapYOv580323A" association="_xSnIKzyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSnIMDyHEeapYOv580323A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSnIMTyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_xSnIMjyHEeapYOv580323A" memberEnd="_xSnIMzyHEeapYOv580323A _xSnINjyHEeapYOv580323A" navigableOwnedEnd="_xSnIMzyHEeapYOv580323A _xSnINjyHEeapYOv580323A">
+      <name xsi:nil="true"/>
+      <ownedEnd xmi:id="_xSnIMzyHEeapYOv580323A" name="bloodinhumanbody" type="_xSnIBTyHEeapYOv580323A" isReadOnly="true" association="_xSnIMjyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSnINDyHEeapYOv580323A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSnINTyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_xSnINjyHEeapYOv580323A" name="blood_in_right_atrium" type="_xSnIADyHEeapYOv580323A" association="_xSnIMjyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSnINzyHEeapYOv580323A"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSnIODyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_xSnIOTyHEeapYOv580323A" memberEnd="_xSnIOjyHEeapYOv580323A _xSnIPTyHEeapYOv580323A" navigableOwnedEnd="_xSnIOjyHEeapYOv580323A _xSnIPTyHEeapYOv580323A">
+      <name xsi:nil="true"/>
+      <ownedEnd xmi:id="_xSnIOjyHEeapYOv580323A" name="la_blood_storing" type="_xSnIBzyHEeapYOv580323A" association="_xSnIOTyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSnIOzyHEeapYOv580323A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSnIPDyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_xSnIPTyHEeapYOv580323A" name="blood_in_left_atrium" type="_xSnIATyHEeapYOv580323A" association="_xSnIOTyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSnIPjyHEeapYOv580323A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSnIPzyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_xSnIQDyHEeapYOv580323A" memberEnd="_xSnIQTyHEeapYOv580323A _xSnIRDyHEeapYOv580323A" navigableOwnedEnd="_xSnIQTyHEeapYOv580323A _xSnIRDyHEeapYOv580323A">
+      <name xsi:nil="true"/>
+      <ownedEnd xmi:id="_xSnIQTyHEeapYOv580323A" name="bloodinhumanbody" type="_xSnIBTyHEeapYOv580323A" isReadOnly="true" association="_xSnIQDyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSnIQjyHEeapYOv580323A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSnIQzyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_xSnIRDyHEeapYOv580323A" name="blood_in_left_atrium" type="_xSnIATyHEeapYOv580323A" association="_xSnIQDyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSnIRTyHEeapYOv580323A"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSnIRjyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_xSnIRzyHEeapYOv580323A" memberEnd="_xSnISDyHEeapYOv580323A _xSnISzyHEeapYOv580323A" navigableOwnedEnd="_xSnISDyHEeapYOv580323A _xSnISzyHEeapYOv580323A">
+      <name xsi:nil="true"/>
+      <ownedEnd xmi:id="_xSnISDyHEeapYOv580323A" name="bloodinhumanbody" type="_xSnIBTyHEeapYOv580323A" isReadOnly="true" association="_xSnIRzyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSnISTyHEeapYOv580323A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSnISjyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_xSnISzyHEeapYOv580323A" name="blood_in_left_ventricle" type="_xSnIAjyHEeapYOv580323A" association="_xSnIRzyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSnITDyHEeapYOv580323A"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSnITTyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_xSnITjyHEeapYOv580323A" memberEnd="_xSnITzyHEeapYOv580323A _xSnu0jyHEeapYOv580323A" navigableOwnedEnd="_xSnITzyHEeapYOv580323A _xSnu0jyHEeapYOv580323A">
+      <name xsi:nil="true"/>
+      <ownedEnd xmi:id="_xSnITzyHEeapYOv580323A" name="lv_blood_storing" type="_xSnICDyHEeapYOv580323A" association="_xSnITjyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSnu0DyHEeapYOv580323A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSnu0TyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_xSnu0jyHEeapYOv580323A" name="blood_in_left_ventricle" type="_xSnIAjyHEeapYOv580323A" association="_xSnITjyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSnu0zyHEeapYOv580323A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSnu1DyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_xSnu1TyHEeapYOv580323A" memberEnd="_xSnu1jyHEeapYOv580323A _xSnu2TyHEeapYOv580323A" navigableOwnedEnd="_xSnu1jyHEeapYOv580323A _xSnu2TyHEeapYOv580323A">
+      <name xsi:nil="true"/>
+      <ownedEnd xmi:id="_xSnu1jyHEeapYOv580323A" name="peripherals_blood_storing" type="_xSnIFjyHEeapYOv580323A" association="_xSnu1TyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSnu1zyHEeapYOv580323A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSnu2DyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_xSnu2TyHEeapYOv580323A" name="blood_in_peripherals" type="_xSnIAzyHEeapYOv580323A" association="_xSnu1TyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSnu2jyHEeapYOv580323A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSnu2zyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_xSnu3DyHEeapYOv580323A" memberEnd="_xSnu3TyHEeapYOv580323A _xSnu4DyHEeapYOv580323A" navigableOwnedEnd="_xSnu3TyHEeapYOv580323A _xSnu4DyHEeapYOv580323A">
+      <name xsi:nil="true"/>
+      <ownedEnd xmi:id="_xSnu3TyHEeapYOv580323A" name="bloodinhumanbody" type="_xSnIBTyHEeapYOv580323A" isReadOnly="true" association="_xSnu3DyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSnu3jyHEeapYOv580323A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSnu3zyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_xSnu4DyHEeapYOv580323A" name="blood_in_peripherals" type="_xSnIAzyHEeapYOv580323A" association="_xSnu3DyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSnu4TyHEeapYOv580323A"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSnu4jyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_xSnu4zyHEeapYOv580323A" memberEnd="_xSnu5DyHEeapYOv580323A _xSnu5zyHEeapYOv580323A" navigableOwnedEnd="_xSnu5DyHEeapYOv580323A _xSnu5zyHEeapYOv580323A">
+      <name xsi:nil="true"/>
+      <ownedEnd xmi:id="_xSnu5DyHEeapYOv580323A" name="rv_blood_storing" type="_xSnIGDyHEeapYOv580323A" association="_xSnu4zyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSnu5TyHEeapYOv580323A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSnu5jyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_xSnu5zyHEeapYOv580323A" name="blood_in_right_ventricle" type="_xSnIBDyHEeapYOv580323A" association="_xSnu4zyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSnu6DyHEeapYOv580323A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSnu6TyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_xSnu6jyHEeapYOv580323A" memberEnd="_xSnu6zyHEeapYOv580323A _xSnu7jyHEeapYOv580323A" navigableOwnedEnd="_xSnu6zyHEeapYOv580323A _xSnu7jyHEeapYOv580323A">
+      <name xsi:nil="true"/>
+      <ownedEnd xmi:id="_xSnu6zyHEeapYOv580323A" name="bloodinhumanbody" type="_xSnIBTyHEeapYOv580323A" isReadOnly="true" association="_xSnu6jyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSnu7DyHEeapYOv580323A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSnu7TyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_xSnu7jyHEeapYOv580323A" name="blood_in_right_ventricle" type="_xSnIBDyHEeapYOv580323A" association="_xSnu6jyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSnu7zyHEeapYOv580323A"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSnu8DyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_xSnu8TyHEeapYOv580323A" memberEnd="_xSnu8jyHEeapYOv580323A _xSnu9TyHEeapYOv580323A" navigableOwnedEnd="_xSnu8jyHEeapYOv580323A _xSnu9TyHEeapYOv580323A">
+      <name xsi:nil="true"/>
+      <ownedEnd xmi:id="_xSnu8jyHEeapYOv580323A" name="heart_as_blood_container" type="_xSnIBjyHEeapYOv580323A" isReadOnly="true" association="_xSnu8TyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSnu8zyHEeapYOv580323A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSnu9DyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_xSnu9TyHEeapYOv580323A" name="left_atrium_as_a_blood_container" type="_xSnICTyHEeapYOv580323A" isReadOnly="true" association="_xSnu8TyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSnu9jyHEeapYOv580323A"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSnu9zyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_xSnu-DyHEeapYOv580323A" memberEnd="_xSnu-TyHEeapYOv580323A _xSnu_DyHEeapYOv580323A" navigableOwnedEnd="_xSnu-TyHEeapYOv580323A _xSnu_DyHEeapYOv580323A">
+      <name xsi:nil="true"/>
+      <ownedEnd xmi:id="_xSnu-TyHEeapYOv580323A" name="heart_as_blood_container" type="_xSnIBjyHEeapYOv580323A" isReadOnly="true" association="_xSnu-DyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSnu-jyHEeapYOv580323A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSnu-zyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_xSnu_DyHEeapYOv580323A" name="left_ventricle_as_a_blood_container" type="_xSnICzyHEeapYOv580323A" isReadOnly="true" association="_xSnu-DyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSnu_TyHEeapYOv580323A"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSnu_jyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_xSnu_zyHEeapYOv580323A" memberEnd="_xSnvADyHEeapYOv580323A _xSnvAzyHEeapYOv580323A" navigableOwnedEnd="_xSnvADyHEeapYOv580323A _xSnvAzyHEeapYOv580323A">
+      <name xsi:nil="true"/>
+      <ownedEnd xmi:id="_xSnvADyHEeapYOv580323A" name="heart_as_blood_container" type="_xSnIBjyHEeapYOv580323A" isReadOnly="true" association="_xSnu_zyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSnvATyHEeapYOv580323A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSnvAjyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_xSnvAzyHEeapYOv580323A" name="righ_ventricle_as_a_blood_container" type="_xSnIGTyHEeapYOv580323A" isReadOnly="true" association="_xSnu_zyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSnvBDyHEeapYOv580323A"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSnvBTyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_xSnvBjyHEeapYOv580323A" memberEnd="_xSnvBzyHEeapYOv580323A _xSnvCjyHEeapYOv580323A" navigableOwnedEnd="_xSnvBzyHEeapYOv580323A _xSnvCjyHEeapYOv580323A">
+      <name xsi:nil="true"/>
+      <ownedEnd xmi:id="_xSnvBzyHEeapYOv580323A" name="heart_as_blood_container" type="_xSnIBjyHEeapYOv580323A" isReadOnly="true" association="_xSnvBjyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSnvCDyHEeapYOv580323A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSnvCTyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_xSnvCjyHEeapYOv580323A" name="right_atrium_as_a_blood_container" type="_xSnIGzyHEeapYOv580323A" isReadOnly="true" association="_xSnvBjyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSnvCzyHEeapYOv580323A"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSnvDDyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_xSnvDTyHEeapYOv580323A" memberEnd="_xSnvDjyHEeapYOv580323A _xSnvETyHEeapYOv580323A" navigableOwnedEnd="_xSnvDjyHEeapYOv580323A _xSnvETyHEeapYOv580323A">
+      <name xsi:nil="true"/>
+      <ownedEnd xmi:id="_xSnvDjyHEeapYOv580323A" name="la_blood_storing" type="_xSnIBzyHEeapYOv580323A" association="_xSnvDTyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSnvDzyHEeapYOv580323A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSnvEDyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_xSnvETyHEeapYOv580323A" name="left_atrium_as_a_blood_container" type="_xSnICTyHEeapYOv580323A" association="_xSnvDTyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSnvEjyHEeapYOv580323A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSnvEzyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_xSnvFDyHEeapYOv580323A" memberEnd="_xSnvFTyHEeapYOv580323A _xSnvGDyHEeapYOv580323A" navigableOwnedEnd="_xSnvFTyHEeapYOv580323A _xSnvGDyHEeapYOv580323A">
+      <name xsi:nil="true"/>
+      <ownedEnd xmi:id="_xSnvFTyHEeapYOv580323A" name="lv_blood_storing" type="_xSnICDyHEeapYOv580323A" association="_xSnvFDyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSnvFjyHEeapYOv580323A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSnvFzyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_xSnvGDyHEeapYOv580323A" name="left_ventricle_as_a_blood_container" type="_xSnICzyHEeapYOv580323A" association="_xSnvFDyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSnvGTyHEeapYOv580323A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSnvGjyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_xSnvGzyHEeapYOv580323A" memberEnd="_xSnvHDyHEeapYOv580323A _xSnvHzyHEeapYOv580323A" navigableOwnedEnd="_xSnvHDyHEeapYOv580323A _xSnvHzyHEeapYOv580323A">
+      <name xsi:nil="true"/>
+      <ownedEnd xmi:id="_xSnvHDyHEeapYOv580323A" name="human_body" type="_xSo9cDyHEeapYOv580323A" association="_xSnvGzyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSnvHTyHEeapYOv580323A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSnvHjyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_xSnvHzyHEeapYOv580323A" name="lungs" type="_xSnIDTyHEeapYOv580323A" association="_xSnvGzyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSnvIDyHEeapYOv580323A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSnvITyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_xSnvIjyHEeapYOv580323A" memberEnd="_xSnvIzyHEeapYOv580323A _xSnvJjyHEeapYOv580323A" navigableOwnedEnd="_xSnvIzyHEeapYOv580323A _xSnvJjyHEeapYOv580323A">
+      <name xsi:nil="true"/>
+      <ownedEnd xmi:id="_xSnvIzyHEeapYOv580323A" name="lungs_blood_storing" type="_xSnIETyHEeapYOv580323A" association="_xSnvIjyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSnvJDyHEeapYOv580323A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSnvJTyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_xSnvJjyHEeapYOv580323A" name="lungs_as_a_blood_container" type="_xSnIDzyHEeapYOv580323A" association="_xSnvIjyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSnvJzyHEeapYOv580323A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSnvKDyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_xSnvKTyHEeapYOv580323A" memberEnd="_xSnvKjyHEeapYOv580323A _xSnvLTyHEeapYOv580323A" navigableOwnedEnd="_xSnvKjyHEeapYOv580323A _xSnvLTyHEeapYOv580323A">
+      <name xsi:nil="true"/>
+      <ownedEnd xmi:id="_xSnvKjyHEeapYOv580323A" name="human_body" type="_xSo9cDyHEeapYOv580323A" association="_xSnvKTyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSnvKzyHEeapYOv580323A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSnvLDyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_xSnvLTyHEeapYOv580323A" name="peripherals" type="_xSnIEjyHEeapYOv580323A" association="_xSnvKTyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSnvLjyHEeapYOv580323A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSnvLzyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_xSnvMDyHEeapYOv580323A" memberEnd="_xSnvMTyHEeapYOv580323A _xSnvNDyHEeapYOv580323A" navigableOwnedEnd="_xSnvMTyHEeapYOv580323A _xSnvNDyHEeapYOv580323A">
+      <name xsi:nil="true"/>
+      <ownedEnd xmi:id="_xSnvMTyHEeapYOv580323A" name="peripherals_blood_storing" type="_xSnIFjyHEeapYOv580323A" association="_xSnvMDyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSnvMjyHEeapYOv580323A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSnvMzyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_xSnvNDyHEeapYOv580323A" name="peripherals_as_a_blood_container" type="_xSnIFDyHEeapYOv580323A" association="_xSnvMDyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSnvNTyHEeapYOv580323A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSnvNjyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_xSnvNzyHEeapYOv580323A" memberEnd="_xSnvODyHEeapYOv580323A _xSnvOzyHEeapYOv580323A" navigableOwnedEnd="_xSnvODyHEeapYOv580323A _xSnvOzyHEeapYOv580323A">
+      <name xsi:nil="true"/>
+      <ownedEnd xmi:id="_xSnvODyHEeapYOv580323A" name="ra_blood_storing" type="_xSnIFzyHEeapYOv580323A" association="_xSnvNzyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSnvOTyHEeapYOv580323A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSnvOjyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_xSnvOzyHEeapYOv580323A" name="right_atrium_as_a_blood_container" type="_xSnIGzyHEeapYOv580323A" association="_xSnvNzyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSnvPDyHEeapYOv580323A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSnvPTyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_xSnvPjyHEeapYOv580323A" memberEnd="_xSnvPzyHEeapYOv580323A _xSnvQjyHEeapYOv580323A" navigableOwnedEnd="_xSnvPzyHEeapYOv580323A _xSnvQjyHEeapYOv580323A">
+      <name xsi:nil="true"/>
+      <ownedEnd xmi:id="_xSnvPzyHEeapYOv580323A" name="rv_blood_storing" type="_xSnIGDyHEeapYOv580323A" association="_xSnvPjyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSnvQDyHEeapYOv580323A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSnvQTyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_xSnvQjyHEeapYOv580323A" name="righ_ventricle_as_a_blood_container" type="_xSnIGTyHEeapYOv580323A" association="_xSnvPjyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSnvQzyHEeapYOv580323A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSnvRDyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_xSnvRTyHEeapYOv580323A" name="Session Qualities">
+    <packagedElement xmi:type="uml:Class" xmi:id="_xSnvRjyHEeapYOv580323A" name="Annotation"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_xSnvRzyHEeapYOv580323A" name="Cardiac Frequency"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_xSnvSDyHEeapYOv580323A" name="Date"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_xSnvSTyHEeapYOv580323A" name="Electrical Potential"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_xSnvSjyHEeapYOv580323A" name="Measurement"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_xSnvSzyHEeapYOv580323A" name="Sample"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_xSnvTDyHEeapYOv580323A" name="Time"/>
+    <packagedElement xmi:type="uml:DataType" xmi:id="_xSnvTTyHEeapYOv580323A" name="Annotation Domain"/>
+    <packagedElement xmi:type="uml:DataType" xmi:id="_xSnvTjyHEeapYOv580323A" name="Cardiac Frequency Rate"/>
+    <packagedElement xmi:type="uml:DataType" xmi:id="_xSnvTzyHEeapYOv580323A" name="Date Domain"/>
+    <packagedElement xmi:type="uml:DataType" xmi:id="_xSnvUDyHEeapYOv580323A" name="Day"/>
+    <packagedElement xmi:type="uml:DataType" xmi:id="_xSnvUTyHEeapYOv580323A" name="Electrical Potential Rate"/>
+    <packagedElement xmi:type="uml:DataType" xmi:id="_xSnvUjyHEeapYOv580323A" name="Hour"/>
+    <packagedElement xmi:type="uml:DataType" xmi:id="_xSnvUzyHEeapYOv580323A" name="Measurement Domain"/>
+    <packagedElement xmi:type="uml:DataType" xmi:id="_xSnvVDyHEeapYOv580323A" name="Minute"/>
+    <packagedElement xmi:type="uml:DataType" xmi:id="_xSnvVTyHEeapYOv580323A" name="Month"/>
+    <packagedElement xmi:type="uml:DataType" xmi:id="_xSnvVjyHEeapYOv580323A" name="Sample Rate"/>
+    <packagedElement xmi:type="uml:DataType" xmi:id="_xSnvVzyHEeapYOv580323A" name="Second"/>
+    <packagedElement xmi:type="uml:DataType" xmi:id="_xSnvWDyHEeapYOv580323A" name="Time Domain"/>
+    <packagedElement xmi:type="uml:DataType" xmi:id="_xSnvWTyHEeapYOv580323A" name="Year"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_xSnvWjyHEeapYOv580323A" memberEnd="_xSnvWzyHEeapYOv580323A _xSnvXjyHEeapYOv580323A" navigableOwnedEnd="_xSnvWzyHEeapYOv580323A _xSnvXjyHEeapYOv580323A">
+      <name xsi:nil="true"/>
+      <ownedEnd xmi:id="_xSnvWzyHEeapYOv580323A" name="annotation" type="_xSnvRjyHEeapYOv580323A" association="_xSnvWjyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSnvXDyHEeapYOv580323A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSnvXTyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_xSnvXjyHEeapYOv580323A" name="annotation_domain" type="_xSnvTTyHEeapYOv580323A" association="_xSnvWjyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSnvXzyHEeapYOv580323A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSnvYDyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_xSnvYTyHEeapYOv580323A" memberEnd="_xSnvYjyHEeapYOv580323A _xSnvZTyHEeapYOv580323A" navigableOwnedEnd="_xSnvYjyHEeapYOv580323A _xSnvZTyHEeapYOv580323A">
+      <name xsi:nil="true"/>
+      <ownedEnd xmi:id="_xSnvYjyHEeapYOv580323A" name="annotation" type="_xSnvRjyHEeapYOv580323A" association="_xSnvYTyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSnvYzyHEeapYOv580323A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSnvZDyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_xSnvZTyHEeapYOv580323A" name="elementary_form" type="_xSoWcTyHEeapYOv580323A" association="_xSnvYTyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSnvZjyHEeapYOv580323A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSnvZzyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_xSnvaDyHEeapYOv580323A" memberEnd="_xSnvaTyHEeapYOv580323A _xSnvbDyHEeapYOv580323A" navigableOwnedEnd="_xSnvaTyHEeapYOv580323A _xSnvbDyHEeapYOv580323A">
+      <name xsi:nil="true"/>
+      <ownedEnd xmi:id="_xSnvaTyHEeapYOv580323A" name="cardiac_frequency" type="_xSnvRzyHEeapYOv580323A" association="_xSnvaDyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSnvajyHEeapYOv580323A" value="-1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSnvazyHEeapYOv580323A" value="*"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_xSnvbDyHEeapYOv580323A" name="cardiac_frequency_rate" type="_xSnvTjyHEeapYOv580323A" association="_xSnvaDyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSnvbTyHEeapYOv580323A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSnvbjyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_xSnvbzyHEeapYOv580323A" name="cardiacFrequency" memberEnd="_xSnvcDyHEeapYOv580323A _xSnvczyHEeapYOv580323A" navigableOwnedEnd="_xSnvcDyHEeapYOv580323A _xSnvczyHEeapYOv580323A">
+      <ownedEnd xmi:id="_xSnvcDyHEeapYOv580323A" name="cardiac_frequency" type="_xSnvRzyHEeapYOv580323A" association="_xSnvbzyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSnvcTyHEeapYOv580323A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSnvcjyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_xSnvczyHEeapYOv580323A" name="cycle" type="_xSoWbDyHEeapYOv580323A" association="_xSnvbzyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSnvdDyHEeapYOv580323A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSnvdTyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_xSnvdjyHEeapYOv580323A" memberEnd="_xSnvdzyHEeapYOv580323A _xSnvejyHEeapYOv580323A" navigableOwnedEnd="_xSnvdzyHEeapYOv580323A _xSnvejyHEeapYOv580323A">
+      <name xsi:nil="true"/>
+      <ownedEnd xmi:id="_xSnvdzyHEeapYOv580323A" name="date" type="_xSnvSDyHEeapYOv580323A" association="_xSnvdjyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSnveDyHEeapYOv580323A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSnveTyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_xSnvejyHEeapYOv580323A" name="date_domain" type="_xSnvTzyHEeapYOv580323A" association="_xSnvdjyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSnvezyHEeapYOv580323A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSnvfDyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_xSnvfTyHEeapYOv580323A" name="startDate" memberEnd="_xSnvfjyHEeapYOv580323A _xSnvgTyHEeapYOv580323A" navigableOwnedEnd="_xSnvfjyHEeapYOv580323A _xSnvgTyHEeapYOv580323A">
+      <ownedEnd xmi:id="_xSnvfjyHEeapYOv580323A" name="ecg_recording_session" type="_xSoWbzyHEeapYOv580323A" association="_xSnvfTyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSnvfzyHEeapYOv580323A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSnvgDyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_xSnvgTyHEeapYOv580323A" name="date" type="_xSnvSDyHEeapYOv580323A" association="_xSnvfTyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSnvgjyHEeapYOv580323A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSnvgzyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_xSnvhDyHEeapYOv580323A" memberEnd="_xSnvhTyHEeapYOv580323A _xSnviDyHEeapYOv580323A" navigableOwnedEnd="_xSnvhTyHEeapYOv580323A _xSnviDyHEeapYOv580323A">
+      <name xsi:nil="true"/>
+      <ownedEnd xmi:id="_xSnvhTyHEeapYOv580323A" name="electrical_potential" type="_xSnvSTyHEeapYOv580323A" association="_xSnvhDyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSnvhjyHEeapYOv580323A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSnvhzyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_xSnviDyHEeapYOv580323A" name="electrical_potential_rate" type="_xSnvUTyHEeapYOv580323A" association="_xSnvhDyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSnviTyHEeapYOv580323A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSnvijyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_xSnvizyHEeapYOv580323A" name="electricalPotential" memberEnd="_xSnvjDyHEeapYOv580323A _xSnvjzyHEeapYOv580323A" navigableOwnedEnd="_xSnvjDyHEeapYOv580323A _xSnvjzyHEeapYOv580323A">
+      <ownedEnd xmi:id="_xSnvjDyHEeapYOv580323A" name="electrical_potential" type="_xSnvSTyHEeapYOv580323A" association="_xSnvizyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSnvjTyHEeapYOv580323A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSnvjjyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_xSnvjzyHEeapYOv580323A" name="sample" type="_xSoWezyHEeapYOv580323A" association="_xSnvizyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSnvkDyHEeapYOv580323A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSnvkTyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_xSnvkjyHEeapYOv580323A" memberEnd="_xSnvkzyHEeapYOv580323A _xSoV4DyHEeapYOv580323A" navigableOwnedEnd="_xSnvkzyHEeapYOv580323A _xSoV4DyHEeapYOv580323A">
+      <name xsi:nil="true"/>
+      <ownedEnd xmi:id="_xSnvkzyHEeapYOv580323A" name="measurement" type="_xSnvSjyHEeapYOv580323A" association="_xSnvkjyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSnvlDyHEeapYOv580323A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSnvlTyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_xSoV4DyHEeapYOv580323A" name="elementary_form" type="_xSoWcTyHEeapYOv580323A" association="_xSnvkjyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSoV4TyHEeapYOv580323A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSoV4jyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_xSoV4zyHEeapYOv580323A" memberEnd="_xSoV5DyHEeapYOv580323A _xSoV5zyHEeapYOv580323A" navigableOwnedEnd="_xSoV5DyHEeapYOv580323A _xSoV5zyHEeapYOv580323A">
+      <name xsi:nil="true"/>
+      <ownedEnd xmi:id="_xSoV5DyHEeapYOv580323A" name="measurement" type="_xSnvSjyHEeapYOv580323A" association="_xSoV4zyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSoV5TyHEeapYOv580323A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSoV5jyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_xSoV5zyHEeapYOv580323A" name="measurement_domain" type="_xSnvUzyHEeapYOv580323A" association="_xSoV4zyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSoV6DyHEeapYOv580323A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSoV6TyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_xSoV6jyHEeapYOv580323A" memberEnd="_xSoV6zyHEeapYOv580323A _xSoV7jyHEeapYOv580323A" navigableOwnedEnd="_xSoV6zyHEeapYOv580323A _xSoV7jyHEeapYOv580323A">
+      <name xsi:nil="true"/>
+      <ownedEnd xmi:id="_xSoV6zyHEeapYOv580323A" name="sample" type="_xSnvSzyHEeapYOv580323A" association="_xSoV6jyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSoV7DyHEeapYOv580323A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSoV7TyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_xSoV7jyHEeapYOv580323A" name="sample_rate" type="_xSnvVjyHEeapYOv580323A" association="_xSoV6jyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSoV7zyHEeapYOv580323A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSoV8DyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_xSoV8TyHEeapYOv580323A" memberEnd="_xSoV8jyHEeapYOv580323A _xSoV9TyHEeapYOv580323A" navigableOwnedEnd="_xSoV8jyHEeapYOv580323A _xSoV9TyHEeapYOv580323A">
+      <name xsi:nil="true"/>
+      <ownedEnd xmi:id="_xSoV8jyHEeapYOv580323A" name="sample" type="_xSnvSzyHEeapYOv580323A" association="_xSoV8TyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSoV8zyHEeapYOv580323A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSoV9DyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_xSoV9TyHEeapYOv580323A" name="observation_series" type="_xSoWdjyHEeapYOv580323A" association="_xSoV8TyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSoV9jyHEeapYOv580323A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSoV9zyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_xSoV-DyHEeapYOv580323A" memberEnd="_xSoV-TyHEeapYOv580323A _xSoV_DyHEeapYOv580323A" navigableOwnedEnd="_xSoV-TyHEeapYOv580323A _xSoV_DyHEeapYOv580323A">
+      <name xsi:nil="true"/>
+      <ownedEnd xmi:id="_xSoV-TyHEeapYOv580323A" name="time" type="_xSnvTDyHEeapYOv580323A" association="_xSoV-DyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSoV-jyHEeapYOv580323A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSoV-zyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_xSoV_DyHEeapYOv580323A" name="time_domain" type="_xSnvWDyHEeapYOv580323A" association="_xSoV-DyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSoV_TyHEeapYOv580323A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSoV_jyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_xSoV_zyHEeapYOv580323A" name="time" memberEnd="_xSoWADyHEeapYOv580323A _xSoWAzyHEeapYOv580323A" navigableOwnedEnd="_xSoWADyHEeapYOv580323A _xSoWAzyHEeapYOv580323A">
+      <ownedEnd xmi:id="_xSoWADyHEeapYOv580323A" name="observation" type="_xSoWdTyHEeapYOv580323A" association="_xSoV_zyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSoWATyHEeapYOv580323A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSoWAjyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_xSoWAzyHEeapYOv580323A" name="time" type="_xSnvTDyHEeapYOv580323A" association="_xSoV_zyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSoWBDyHEeapYOv580323A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSoWBTyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_xSoWBjyHEeapYOv580323A" name="startTime" memberEnd="_xSoWBzyHEeapYOv580323A _xSoWCjyHEeapYOv580323A" navigableOwnedEnd="_xSoWBzyHEeapYOv580323A _xSoWCjyHEeapYOv580323A">
+      <ownedEnd xmi:id="_xSoWBzyHEeapYOv580323A" name="ecg_recording_session" type="_xSoWbzyHEeapYOv580323A" association="_xSoWBjyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSoWCDyHEeapYOv580323A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSoWCTyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_xSoWCjyHEeapYOv580323A" name="time" type="_xSnvTDyHEeapYOv580323A" association="_xSoWBjyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSoWCzyHEeapYOv580323A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSoWDDyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_xSoWDTyHEeapYOv580323A" name="duration" memberEnd="_xSoWDjyHEeapYOv580323A _xSoWETyHEeapYOv580323A" navigableOwnedEnd="_xSoWDjyHEeapYOv580323A _xSoWETyHEeapYOv580323A">
+      <ownedEnd xmi:id="_xSoWDjyHEeapYOv580323A" name="cycle" type="_xSoWbDyHEeapYOv580323A" association="_xSoWDTyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSoWDzyHEeapYOv580323A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSoWEDyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_xSoWETyHEeapYOv580323A" name="time" type="_xSnvTDyHEeapYOv580323A" association="_xSoWDTyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSoWEjyHEeapYOv580323A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSoWEzyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_xSoWFDyHEeapYOv580323A" name="duration" memberEnd="_xSoWFTyHEeapYOv580323A _xSoWGDyHEeapYOv580323A" navigableOwnedEnd="_xSoWFTyHEeapYOv580323A _xSoWGDyHEeapYOv580323A">
+      <ownedEnd xmi:id="_xSoWFTyHEeapYOv580323A" name="ecg_recording_session" type="_xSoWbzyHEeapYOv580323A" association="_xSoWFDyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSoWFjyHEeapYOv580323A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSoWFzyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_xSoWGDyHEeapYOv580323A" name="time" type="_xSnvTDyHEeapYOv580323A" association="_xSoWFDyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSoWGTyHEeapYOv580323A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSoWGjyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_xSoWGzyHEeapYOv580323A" name="onset" memberEnd="_xSoWHDyHEeapYOv580323A _xSoWHzyHEeapYOv580323A" navigableOwnedEnd="_xSoWHDyHEeapYOv580323A _xSoWHzyHEeapYOv580323A">
+      <ownedEnd xmi:id="_xSoWHDyHEeapYOv580323A" name="annotation_domain" type="_xSnvTTyHEeapYOv580323A" association="_xSoWGzyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSoWHTyHEeapYOv580323A"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSoWHjyHEeapYOv580323A" value="*"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_xSoWHzyHEeapYOv580323A" name="time_domain" type="_xSnvWDyHEeapYOv580323A" association="_xSoWGzyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSoWIDyHEeapYOv580323A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSoWITyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_xSoWIjyHEeapYOv580323A" name="offset" memberEnd="_xSoWIzyHEeapYOv580323A _xSoWJjyHEeapYOv580323A" navigableOwnedEnd="_xSoWIzyHEeapYOv580323A _xSoWJjyHEeapYOv580323A">
+      <ownedEnd xmi:id="_xSoWIzyHEeapYOv580323A" name="annotation_domain" type="_xSnvTTyHEeapYOv580323A" association="_xSoWIjyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSoWJDyHEeapYOv580323A"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSoWJTyHEeapYOv580323A" value="*"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_xSoWJjyHEeapYOv580323A" name="time_domain" type="_xSnvWDyHEeapYOv580323A" association="_xSoWIjyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSoWJzyHEeapYOv580323A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSoWKDyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_xSoWKTyHEeapYOv580323A" name="peak" memberEnd="_xSoWKjyHEeapYOv580323A _xSoWLTyHEeapYOv580323A" navigableOwnedEnd="_xSoWKjyHEeapYOv580323A _xSoWLTyHEeapYOv580323A">
+      <ownedEnd xmi:id="_xSoWKjyHEeapYOv580323A" name="annotation_domain" type="_xSnvTTyHEeapYOv580323A" association="_xSoWKTyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSoWKzyHEeapYOv580323A"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSoWLDyHEeapYOv580323A" value="*"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_xSoWLTyHEeapYOv580323A" name="time_domain" type="_xSnvWDyHEeapYOv580323A" association="_xSoWKTyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSoWLjyHEeapYOv580323A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSoWLzyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_xSoWMDyHEeapYOv580323A" name="day" memberEnd="_xSoWMTyHEeapYOv580323A _xSoWNDyHEeapYOv580323A" navigableOwnedEnd="_xSoWMTyHEeapYOv580323A _xSoWNDyHEeapYOv580323A">
+      <ownedEnd xmi:id="_xSoWMTyHEeapYOv580323A" name="date_domain" type="_xSnvTzyHEeapYOv580323A" association="_xSoWMDyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSoWMjyHEeapYOv580323A"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSoWMzyHEeapYOv580323A" value="*"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_xSoWNDyHEeapYOv580323A" name="day" type="_xSnvUDyHEeapYOv580323A" association="_xSoWMDyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSoWNTyHEeapYOv580323A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSoWNjyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_xSoWNzyHEeapYOv580323A" name="month" memberEnd="_xSoWODyHEeapYOv580323A _xSoWOzyHEeapYOv580323A" navigableOwnedEnd="_xSoWODyHEeapYOv580323A _xSoWOzyHEeapYOv580323A">
+      <ownedEnd xmi:id="_xSoWODyHEeapYOv580323A" name="date_domain" type="_xSnvTzyHEeapYOv580323A" association="_xSoWNzyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSoWOTyHEeapYOv580323A"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSoWOjyHEeapYOv580323A" value="*"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_xSoWOzyHEeapYOv580323A" name="month" type="_xSnvVTyHEeapYOv580323A" association="_xSoWNzyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSoWPDyHEeapYOv580323A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSoWPTyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_xSoWPjyHEeapYOv580323A" name="year" memberEnd="_xSoWPzyHEeapYOv580323A _xSoWQjyHEeapYOv580323A" navigableOwnedEnd="_xSoWPzyHEeapYOv580323A _xSoWQjyHEeapYOv580323A">
+      <ownedEnd xmi:id="_xSoWPzyHEeapYOv580323A" name="date_domain" type="_xSnvTzyHEeapYOv580323A" association="_xSoWPjyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSoWQDyHEeapYOv580323A"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSoWQTyHEeapYOv580323A" value="*"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_xSoWQjyHEeapYOv580323A" name="year" type="_xSnvWTyHEeapYOv580323A" association="_xSoWPjyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSoWQzyHEeapYOv580323A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSoWRDyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_xSoWRTyHEeapYOv580323A" name="duration" memberEnd="_xSoWRjyHEeapYOv580323A _xSoWSTyHEeapYOv580323A" navigableOwnedEnd="_xSoWRjyHEeapYOv580323A _xSoWSTyHEeapYOv580323A">
+      <ownedEnd xmi:id="_xSoWRjyHEeapYOv580323A" name="measurement_domain" type="_xSnvUzyHEeapYOv580323A" association="_xSoWRTyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSoWRzyHEeapYOv580323A"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSoWSDyHEeapYOv580323A" value="*"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_xSoWSTyHEeapYOv580323A" name="time_domain" type="_xSnvWDyHEeapYOv580323A" association="_xSoWRTyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSoWSjyHEeapYOv580323A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSoWSzyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_xSoWTDyHEeapYOv580323A" name="amplitude" memberEnd="_xSoWTTyHEeapYOv580323A _xSoWUDyHEeapYOv580323A" navigableOwnedEnd="_xSoWTTyHEeapYOv580323A _xSoWUDyHEeapYOv580323A">
+      <ownedEnd xmi:id="_xSoWTTyHEeapYOv580323A" name="measurement_domain" type="_xSnvUzyHEeapYOv580323A" association="_xSoWTDyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSoWTjyHEeapYOv580323A"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSoWTzyHEeapYOv580323A" value="*"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_xSoWUDyHEeapYOv580323A" name="electrical_potential_rate" type="_xSnvUTyHEeapYOv580323A" association="_xSoWTDyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSoWUTyHEeapYOv580323A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSoWUjyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_xSoWUzyHEeapYOv580323A" name="hour" memberEnd="_xSoWVDyHEeapYOv580323A _xSoWVzyHEeapYOv580323A" navigableOwnedEnd="_xSoWVDyHEeapYOv580323A _xSoWVzyHEeapYOv580323A">
+      <ownedEnd xmi:id="_xSoWVDyHEeapYOv580323A" name="time_domain" type="_xSnvWDyHEeapYOv580323A" association="_xSoWUzyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSoWVTyHEeapYOv580323A"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSoWVjyHEeapYOv580323A" value="*"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_xSoWVzyHEeapYOv580323A" name="hour" type="_xSnvUjyHEeapYOv580323A" association="_xSoWUzyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSoWWDyHEeapYOv580323A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSoWWTyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_xSoWWjyHEeapYOv580323A" name="minutes" memberEnd="_xSoWWzyHEeapYOv580323A _xSoWXjyHEeapYOv580323A" navigableOwnedEnd="_xSoWWzyHEeapYOv580323A _xSoWXjyHEeapYOv580323A">
+      <ownedEnd xmi:id="_xSoWWzyHEeapYOv580323A" name="time_domain" type="_xSnvWDyHEeapYOv580323A" association="_xSoWWjyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSoWXDyHEeapYOv580323A"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSoWXTyHEeapYOv580323A" value="*"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_xSoWXjyHEeapYOv580323A" name="minute" type="_xSnvVDyHEeapYOv580323A" association="_xSoWWjyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSoWXzyHEeapYOv580323A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSoWYDyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_xSoWYTyHEeapYOv580323A" name="seconds" memberEnd="_xSoWYjyHEeapYOv580323A _xSoWZTyHEeapYOv580323A" navigableOwnedEnd="_xSoWYjyHEeapYOv580323A _xSoWZTyHEeapYOv580323A">
+      <ownedEnd xmi:id="_xSoWYjyHEeapYOv580323A" name="time_domain" type="_xSnvWDyHEeapYOv580323A" association="_xSoWYTyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSoWYzyHEeapYOv580323A"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSoWZDyHEeapYOv580323A" value="*"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_xSoWZTyHEeapYOv580323A" name="second" type="_xSnvVzyHEeapYOv580323A" association="_xSoWYTyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSoWZjyHEeapYOv580323A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSoWZzyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_xSoWaDyHEeapYOv580323A" name="Electrocardiography">
+    <packagedElement xmi:type="uml:Class" xmi:id="_xSoWaTyHEeapYOv580323A" name="BandpassFilter">
+      <generalization xmi:id="_xSoWajyHEeapYOv580323A" general="_xSoWcjyHEeapYOv580323A" generalizationSet="_xSo9bDyHEeapYOv580323A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_xSoWazyHEeapYOv580323A" name="Correlated Observation Series"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_xSoWbDyHEeapYOv580323A" name="Cycle"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_xSoWbTyHEeapYOv580323A" name="ECG Lead"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_xSoWbjyHEeapYOv580323A" name="ECG Recording Device"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_xSoWbzyHEeapYOv580323A" name="ECG Recording Session"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_xSoWcDyHEeapYOv580323A" name="Electrode"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_xSoWcTyHEeapYOv580323A" name="Elementary Form"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_xSoWcjyHEeapYOv580323A" name="Filtering Technique"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_xSoWczyHEeapYOv580323A" name="LowpassFilter">
+      <generalization xmi:id="_xSoWdDyHEeapYOv580323A" general="_xSoWcjyHEeapYOv580323A" generalizationSet="_xSo9bDyHEeapYOv580323A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_xSoWdTyHEeapYOv580323A" name="Observation"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_xSoWdjyHEeapYOv580323A" name="Observation Series"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_xSoWdzyHEeapYOv580323A" name="PWave">
+      <generalization xmi:id="_xSoWeDyHEeapYOv580323A" general="_xSoWcTyHEeapYOv580323A" generalizationSet="_xSo9bTyHEeapYOv580323A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_xSoWeTyHEeapYOv580323A" name="QRSComplex">
+      <generalization xmi:id="_xSoWejyHEeapYOv580323A" general="_xSoWcTyHEeapYOv580323A" generalizationSet="_xSo9bTyHEeapYOv580323A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_xSoWezyHEeapYOv580323A" name="Sample"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_xSoWfDyHEeapYOv580323A" name="Segment"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_xSoWfTyHEeapYOv580323A" name="TWave">
+      <generalization xmi:id="_xSoWfjyHEeapYOv580323A" general="_xSoWcTyHEeapYOv580323A" generalizationSet="_xSo9bTyHEeapYOv580323A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_xSoWfzyHEeapYOv580323A" name="UWave">
+      <generalization xmi:id="_xSoWgDyHEeapYOv580323A" general="_xSoWcTyHEeapYOv580323A" generalizationSet="_xSo9bTyHEeapYOv580323A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_xSoWgTyHEeapYOv580323A" name="Wave Form"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_xSoWgjyHEeapYOv580323A" memberEnd="_xSoWgzyHEeapYOv580323A _xSoWhjyHEeapYOv580323A" navigableOwnedEnd="_xSoWgzyHEeapYOv580323A _xSoWhjyHEeapYOv580323A">
+      <name xsi:nil="true"/>
+      <ownedEnd xmi:id="_xSoWgzyHEeapYOv580323A" name="correlated_observation_series" type="_xSoWazyHEeapYOv580323A" association="_xSoWgjyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSoWhDyHEeapYOv580323A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSoWhTyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_xSoWhjyHEeapYOv580323A" name="observation_series" type="_xSoWdjyHEeapYOv580323A" association="_xSoWgjyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSoWhzyHEeapYOv580323A" value="2"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSoWiDyHEeapYOv580323A" value="12"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_xSoWiTyHEeapYOv580323A" name="represents" memberEnd="_xSoWijyHEeapYOv580323A _xSoWjTyHEeapYOv580323A" navigableOwnedEnd="_xSoWijyHEeapYOv580323A _xSoWjTyHEeapYOv580323A">
+      <ownedEnd xmi:id="_xSoWijyHEeapYOv580323A" name="correlated_observation_series" type="_xSoWazyHEeapYOv580323A" association="_xSoWiTyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSoWizyHEeapYOv580323A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSoWjDyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_xSoWjTyHEeapYOv580323A" name="wave_form" type="_xSoWgTyHEeapYOv580323A" association="_xSoWiTyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSoWjjyHEeapYOv580323A" value="2"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSoWjzyHEeapYOv580323A" value="*"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_xSoWkDyHEeapYOv580323A" memberEnd="_xSoWkTyHEeapYOv580323A _xSoWlDyHEeapYOv580323A" navigableOwnedEnd="_xSoWkTyHEeapYOv580323A _xSoWlDyHEeapYOv580323A">
+      <name xsi:nil="true"/>
+      <ownedEnd xmi:id="_xSoWkTyHEeapYOv580323A" name="ecg_recording_session" type="_xSoWbzyHEeapYOv580323A" association="_xSoWkDyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSoWkjyHEeapYOv580323A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSoWkzyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_xSoWlDyHEeapYOv580323A" name="correlated_observation_series" type="_xSoWazyHEeapYOv580323A" association="_xSoWkDyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSoWlTyHEeapYOv580323A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSoWljyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_xSoWlzyHEeapYOv580323A" name="isAssociatedWith" memberEnd="_xSoWmDyHEeapYOv580323A _xSoWmzyHEeapYOv580323A" navigableOwnedEnd="_xSoWmDyHEeapYOv580323A _xSoWmzyHEeapYOv580323A">
+      <ownedEnd xmi:id="_xSoWmDyHEeapYOv580323A" name="ecg_record" type="_xSo9pjyHEeapYOv580323A" association="_xSoWlzyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSoWmTyHEeapYOv580323A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSoWmjyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_xSoWmzyHEeapYOv580323A" name="correlated_observation_series" type="_xSoWazyHEeapYOv580323A" association="_xSoWlzyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSoWnDyHEeapYOv580323A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSoWnTyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_xSoWnjyHEeapYOv580323A" memberEnd="_xSoWnzyHEeapYOv580323A _xSoWojyHEeapYOv580323A" navigableOwnedEnd="_xSoWnzyHEeapYOv580323A _xSoWojyHEeapYOv580323A">
+      <name xsi:nil="true"/>
+      <ownedEnd xmi:id="_xSoWnzyHEeapYOv580323A" name="cycle" type="_xSoWbDyHEeapYOv580323A" association="_xSoWnjyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSoWoDyHEeapYOv580323A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSoWoTyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_xSoWojyHEeapYOv580323A" name="elementary_form" type="_xSoWcTyHEeapYOv580323A" association="_xSoWnjyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSoWozyHEeapYOv580323A"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSoWpDyHEeapYOv580323A" value="4"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_xSoWpTyHEeapYOv580323A" memberEnd="_xSoWpjyHEeapYOv580323A _xSoWqTyHEeapYOv580323A" navigableOwnedEnd="_xSoWpjyHEeapYOv580323A _xSoWqTyHEeapYOv580323A">
+      <name xsi:nil="true"/>
+      <ownedEnd xmi:id="_xSoWpjyHEeapYOv580323A" name="cycle" type="_xSoWbDyHEeapYOv580323A" association="_xSoWpTyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSoWpzyHEeapYOv580323A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSoWqDyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_xSoWqTyHEeapYOv580323A" name="segment" type="_xSoWfDyHEeapYOv580323A" association="_xSoWpTyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSoWqjyHEeapYOv580323A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSoWqzyHEeapYOv580323A" value="*"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_xSoWrDyHEeapYOv580323A" memberEnd="_xSoWrTyHEeapYOv580323A _xSoWsDyHEeapYOv580323A" navigableOwnedEnd="_xSoWrTyHEeapYOv580323A _xSoWsDyHEeapYOv580323A">
+      <name xsi:nil="true"/>
+      <ownedEnd xmi:id="_xSoWrTyHEeapYOv580323A" name="wave_form" type="_xSoWgTyHEeapYOv580323A" association="_xSoWrDyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSoWrjyHEeapYOv580323A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSoWrzyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_xSoWsDyHEeapYOv580323A" name="cycle" type="_xSoWbDyHEeapYOv580323A" association="_xSoWrDyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSoWsTyHEeapYOv580323A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSoWsjyHEeapYOv580323A" value="*"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_xSoWszyHEeapYOv580323A" memberEnd="_xSoWtDyHEeapYOv580323A _xSo88jyHEeapYOv580323A" navigableOwnedEnd="_xSoWtDyHEeapYOv580323A _xSo88jyHEeapYOv580323A">
+      <name xsi:nil="true"/>
+      <ownedEnd xmi:id="_xSoWtDyHEeapYOv580323A" name="ecg_lead" type="_xSoWbTyHEeapYOv580323A" association="_xSoWszyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSo88DyHEeapYOv580323A"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSo88TyHEeapYOv580323A" value="*"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_xSo88jyHEeapYOv580323A" name="human_body" type="_xSo9cDyHEeapYOv580323A" association="_xSoWszyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSo88zyHEeapYOv580323A"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSo89DyHEeapYOv580323A" value="*"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_xSo89TyHEeapYOv580323A" memberEnd="_xSo89jyHEeapYOv580323A _xSo8-TyHEeapYOv580323A" navigableOwnedEnd="_xSo89jyHEeapYOv580323A _xSo8-TyHEeapYOv580323A">
+      <name xsi:nil="true"/>
+      <ownedEnd xmi:id="_xSo89jyHEeapYOv580323A" name="ecg_lead" type="_xSoWbTyHEeapYOv580323A" association="_xSo89TyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSo89zyHEeapYOv580323A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSo8-DyHEeapYOv580323A" value="2"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_xSo8-TyHEeapYOv580323A" name="electrode" type="_xSoWcDyHEeapYOv580323A" association="_xSo89TyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSo8-jyHEeapYOv580323A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSo8-zyHEeapYOv580323A" value="2"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_xSo8_DyHEeapYOv580323A" name="isDevelopedIn" memberEnd="_xSo8_TyHEeapYOv580323A _xSo9ADyHEeapYOv580323A" navigableOwnedEnd="_xSo8_TyHEeapYOv580323A _xSo9ADyHEeapYOv580323A">
+      <ownedEnd xmi:id="_xSo8_TyHEeapYOv580323A" name="observation_series" type="_xSoWdjyHEeapYOv580323A" association="_xSo8_DyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSo8_jyHEeapYOv580323A"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSo8_zyHEeapYOv580323A" value="*"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_xSo9ADyHEeapYOv580323A" name="ecg_lead" type="_xSoWbTyHEeapYOv580323A" association="_xSo8_DyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSo9ATyHEeapYOv580323A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSo9AjyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_xSo9AzyHEeapYOv580323A" name="performs" memberEnd="_xSo9BDyHEeapYOv580323A _xSo9BzyHEeapYOv580323A" navigableOwnedEnd="_xSo9BDyHEeapYOv580323A _xSo9BzyHEeapYOv580323A">
+      <ownedEnd xmi:id="_xSo9BDyHEeapYOv580323A" name="ecg_recording_device" type="_xSoWbjyHEeapYOv580323A" association="_xSo9AzyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSo9BTyHEeapYOv580323A"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSo9BjyHEeapYOv580323A" value="*"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_xSo9BzyHEeapYOv580323A" name="filtering_technique" type="_xSoWcjyHEeapYOv580323A" association="_xSo9AzyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSo9CDyHEeapYOv580323A"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSo9CTyHEeapYOv580323A" value="*"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_xSo9CjyHEeapYOv580323A" name="performs" memberEnd="_xSo9CzyHEeapYOv580323A _xSo9DjyHEeapYOv580323A" navigableOwnedEnd="_xSo9CzyHEeapYOv580323A _xSo9DjyHEeapYOv580323A">
+      <ownedEnd xmi:id="_xSo9CzyHEeapYOv580323A" name="ecg_recording_device" type="_xSoWbjyHEeapYOv580323A" association="_xSo9CjyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSo9DDyHEeapYOv580323A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSo9DTyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_xSo9DjyHEeapYOv580323A" name="observation" type="_xSoWdTyHEeapYOv580323A" association="_xSo9CjyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSo9DzyHEeapYOv580323A"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSo9EDyHEeapYOv580323A" value="*"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_xSo9ETyHEeapYOv580323A" memberEnd="_xSo9EjyHEeapYOv580323A _xSo9FTyHEeapYOv580323A" navigableOwnedEnd="_xSo9EjyHEeapYOv580323A _xSo9FTyHEeapYOv580323A">
+      <name xsi:nil="true"/>
+      <ownedEnd xmi:id="_xSo9EjyHEeapYOv580323A" name="ecg_recording_device" type="_xSoWbjyHEeapYOv580323A" association="_xSo9ETyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSo9EzyHEeapYOv580323A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSo9FDyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_xSo9FTyHEeapYOv580323A" name="electrode" type="_xSoWcDyHEeapYOv580323A" association="_xSo9ETyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSo9FjyHEeapYOv580323A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSo9FzyHEeapYOv580323A" value="*"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_xSo9GDyHEeapYOv580323A" memberEnd="_xSo9GTyHEeapYOv580323A _xSo9HDyHEeapYOv580323A" navigableOwnedEnd="_xSo9GTyHEeapYOv580323A _xSo9HDyHEeapYOv580323A">
+      <name xsi:nil="true"/>
+      <ownedEnd xmi:id="_xSo9GTyHEeapYOv580323A" name="ecg_recording_session" type="_xSoWbzyHEeapYOv580323A" association="_xSo9GDyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSo9GjyHEeapYOv580323A"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSo9GzyHEeapYOv580323A" value="*"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_xSo9HDyHEeapYOv580323A" name="ecg_recording_device" type="_xSoWbjyHEeapYOv580323A" association="_xSo9GDyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSo9HTyHEeapYOv580323A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSo9HjyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_xSo9HzyHEeapYOv580323A" name="isAcquiredBy" memberEnd="_xSo9IDyHEeapYOv580323A _xSo9IzyHEeapYOv580323A" navigableOwnedEnd="_xSo9IDyHEeapYOv580323A _xSo9IzyHEeapYOv580323A">
+      <ownedEnd xmi:id="_xSo9IDyHEeapYOv580323A" name="ecg_record" type="_xSo9pjyHEeapYOv580323A" association="_xSo9HzyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSo9ITyHEeapYOv580323A"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSo9IjyHEeapYOv580323A" value="*"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_xSo9IzyHEeapYOv580323A" name="ecg_recording_device" type="_xSoWbjyHEeapYOv580323A" association="_xSo9HzyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSo9JDyHEeapYOv580323A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSo9JTyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_xSo9JjyHEeapYOv580323A" name="isAssociatedWith" memberEnd="_xSo9JzyHEeapYOv580323A _xSo9KjyHEeapYOv580323A" navigableOwnedEnd="_xSo9JzyHEeapYOv580323A _xSo9KjyHEeapYOv580323A">
+      <ownedEnd xmi:id="_xSo9JzyHEeapYOv580323A" name="ecg_recording_session" type="_xSoWbzyHEeapYOv580323A" association="_xSo9JjyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSo9KDyHEeapYOv580323A"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSo9KTyHEeapYOv580323A" value="*"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_xSo9KjyHEeapYOv580323A" name="treatment" type="_xSo9rTyHEeapYOv580323A" association="_xSo9JjyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSo9KzyHEeapYOv580323A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSo9LDyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_xSo9LTyHEeapYOv580323A" memberEnd="_xSo9LjyHEeapYOv580323A _xSo9MTyHEeapYOv580323A" navigableOwnedEnd="_xSo9LjyHEeapYOv580323A _xSo9MTyHEeapYOv580323A">
+      <name xsi:nil="true"/>
+      <ownedEnd xmi:id="_xSo9LjyHEeapYOv580323A" name="ecg_recording_session" type="_xSoWbzyHEeapYOv580323A" association="_xSo9LTyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSo9LzyHEeapYOv580323A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSo9MDyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_xSo9MTyHEeapYOv580323A" name="ecg_record" type="_xSo9pjyHEeapYOv580323A" association="_xSo9LTyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSo9MjyHEeapYOv580323A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSo9MzyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_xSo9NDyHEeapYOv580323A" memberEnd="_xSo9NTyHEeapYOv580323A _xSo9ODyHEeapYOv580323A" navigableOwnedEnd="_xSo9NTyHEeapYOv580323A _xSo9ODyHEeapYOv580323A">
+      <name xsi:nil="true"/>
+      <ownedEnd xmi:id="_xSo9NTyHEeapYOv580323A" name="patient" type="_xSo9qDyHEeapYOv580323A" association="_xSo9NDyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSo9NjyHEeapYOv580323A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSo9NzyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_xSo9ODyHEeapYOv580323A" name="ecg_recording_session" type="_xSoWbzyHEeapYOv580323A" association="_xSo9NDyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSo9OTyHEeapYOv580323A"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSo9OjyHEeapYOv580323A" value="*"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_xSo9OzyHEeapYOv580323A" name="requests" memberEnd="_xSo9PDyHEeapYOv580323A _xSo9PzyHEeapYOv580323A" navigableOwnedEnd="_xSo9PDyHEeapYOv580323A _xSo9PzyHEeapYOv580323A">
+      <ownedEnd xmi:id="_xSo9PDyHEeapYOv580323A" name="physician" type="_xSo9qzyHEeapYOv580323A" association="_xSo9OzyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSo9PTyHEeapYOv580323A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSo9PjyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_xSo9PzyHEeapYOv580323A" name="ecg_recording_session" type="_xSoWbzyHEeapYOv580323A" association="_xSo9OzyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSo9QDyHEeapYOv580323A"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSo9QTyHEeapYOv580323A" value="*"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_xSo9QjyHEeapYOv580323A" memberEnd="_xSo9QzyHEeapYOv580323A _xSo9RjyHEeapYOv580323A" navigableOwnedEnd="_xSo9QzyHEeapYOv580323A _xSo9RjyHEeapYOv580323A">
+      <name xsi:nil="true"/>
+      <ownedEnd xmi:id="_xSo9QzyHEeapYOv580323A" name="observation" type="_xSoWdTyHEeapYOv580323A" association="_xSo9QjyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSo9RDyHEeapYOv580323A" value="-1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSo9RTyHEeapYOv580323A" value="*"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_xSo9RjyHEeapYOv580323A" name="electrode" type="_xSoWcDyHEeapYOv580323A" association="_xSo9QjyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSo9RzyHEeapYOv580323A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSo9SDyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_xSo9STyHEeapYOv580323A" memberEnd="_xSo9SjyHEeapYOv580323A _xSo9TTyHEeapYOv580323A" navigableOwnedEnd="_xSo9SjyHEeapYOv580323A _xSo9TTyHEeapYOv580323A">
+      <name xsi:nil="true"/>
+      <ownedEnd xmi:id="_xSo9SjyHEeapYOv580323A" name="observation" type="_xSoWdTyHEeapYOv580323A" association="_xSo9STyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSo9SzyHEeapYOv580323A" value="-1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSo9TDyHEeapYOv580323A" value="*"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_xSo9TTyHEeapYOv580323A" name="human_body" type="_xSo9cDyHEeapYOv580323A" association="_xSo9STyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSo9TjyHEeapYOv580323A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSo9TzyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_xSo9UDyHEeapYOv580323A" name="givesRiseTo" memberEnd="_xSo9UTyHEeapYOv580323A _xSo9VDyHEeapYOv580323A" navigableOwnedEnd="_xSo9UTyHEeapYOv580323A _xSo9VDyHEeapYOv580323A">
+      <ownedEnd xmi:id="_xSo9UTyHEeapYOv580323A" name="observation" type="_xSoWdTyHEeapYOv580323A" association="_xSo9UDyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSo9UjyHEeapYOv580323A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSo9UzyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_xSo9VDyHEeapYOv580323A" name="sample" type="_xSoWezyHEeapYOv580323A" association="_xSo9UDyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSo9VTyHEeapYOv580323A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSo9VjyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_xSo9VzyHEeapYOv580323A" memberEnd="_xSo9WDyHEeapYOv580323A _xSo9WzyHEeapYOv580323A" navigableOwnedEnd="_xSo9WDyHEeapYOv580323A _xSo9WzyHEeapYOv580323A">
+      <name xsi:nil="true"/>
+      <ownedEnd xmi:id="_xSo9WDyHEeapYOv580323A" name="observation_series" type="_xSoWdjyHEeapYOv580323A" association="_xSo9VzyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSo9WTyHEeapYOv580323A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSo9WjyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_xSo9WzyHEeapYOv580323A" name="observation" type="_xSoWdTyHEeapYOv580323A" association="_xSo9VzyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSo9XDyHEeapYOv580323A" value="2"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSo9XTyHEeapYOv580323A" value="*"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_xSo9XjyHEeapYOv580323A" name="constitutes" memberEnd="_xSo9XzyHEeapYOv580323A _xSo9YjyHEeapYOv580323A" navigableOwnedEnd="_xSo9XzyHEeapYOv580323A _xSo9YjyHEeapYOv580323A">
+      <ownedEnd xmi:id="_xSo9XzyHEeapYOv580323A" name="observation_series" type="_xSoWdjyHEeapYOv580323A" association="_xSo9XjyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSo9YDyHEeapYOv580323A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSo9YTyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_xSo9YjyHEeapYOv580323A" name="wave_form" type="_xSoWgTyHEeapYOv580323A" association="_xSo9XjyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSo9YzyHEeapYOv580323A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSo9ZDyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_xSo9ZTyHEeapYOv580323A" memberEnd="_xSo9ZjyHEeapYOv580323A _xSo9aTyHEeapYOv580323A" navigableOwnedEnd="_xSo9ZjyHEeapYOv580323A _xSo9aTyHEeapYOv580323A">
+      <name xsi:nil="true"/>
+      <ownedEnd xmi:id="_xSo9ZjyHEeapYOv580323A" name="wave_form" type="_xSoWgTyHEeapYOv580323A" association="_xSo9ZTyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSo9ZzyHEeapYOv580323A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSo9aDyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_xSo9aTyHEeapYOv580323A" name="sample" type="_xSoWezyHEeapYOv580323A" association="_xSo9ZTyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSo9ajyHEeapYOv580323A" value="2"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSo9azyHEeapYOv580323A" value="*"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:GeneralizationSet" xmi:id="_xSo9bDyHEeapYOv580323A" name="" isDisjoint="true" generalization="_xSoWajyHEeapYOv580323A _xSoWdDyHEeapYOv580323A"/>
+    <packagedElement xmi:type="uml:GeneralizationSet" xmi:id="_xSo9bTyHEeapYOv580323A" name="" isDisjoint="true" generalization="_xSoWeDyHEeapYOv580323A _xSoWejyHEeapYOv580323A _xSoWfjyHEeapYOv580323A _xSoWgDyHEeapYOv580323A"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_xSo9bjyHEeapYOv580323A" name="Human Heart">
+    <packagedElement xmi:type="uml:Class" xmi:id="_xSo9bzyHEeapYOv580323A" name="Chamber"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_xSo9cDyHEeapYOv580323A" name="Human Body">
+      <generalization xmi:id="_xSo9cTyHEeapYOv580323A" general="_xSo9bzyHEeapYOv580323A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_xSo9cjyHEeapYOv580323A" name="Human Heart">
+      <generalization xmi:id="_xSo9czyHEeapYOv580323A" general="_xSo9ezyHEeapYOv580323A"/>
+      <generalization xmi:id="_xSo9dDyHEeapYOv580323A" general="_xSo9bzyHEeapYOv580323A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_xSo9dTyHEeapYOv580323A" name="Left Atrium">
+      <generalization xmi:id="_xSo9djyHEeapYOv580323A" general="_xSo9ezyHEeapYOv580323A"/>
+      <generalization xmi:id="_xSo9dzyHEeapYOv580323A" general="_xSo9bzyHEeapYOv580323A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_xSo9eDyHEeapYOv580323A" name="Left Ventricle">
+      <generalization xmi:id="_xSo9eTyHEeapYOv580323A" general="_xSo9bzyHEeapYOv580323A"/>
+      <generalization xmi:id="_xSo9ejyHEeapYOv580323A" general="_xSo9ezyHEeapYOv580323A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_xSo9ezyHEeapYOv580323A" name="Muscle"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_xSo9fDyHEeapYOv580323A" name="Right Atrium">
+      <generalization xmi:id="_xSo9fTyHEeapYOv580323A" general="_xSo9bzyHEeapYOv580323A"/>
+      <generalization xmi:id="_xSo9fjyHEeapYOv580323A" general="_xSo9ezyHEeapYOv580323A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_xSo9fzyHEeapYOv580323A" name="Right Ventricle">
+      <generalization xmi:id="_xSo9gDyHEeapYOv580323A" general="_xSo9bzyHEeapYOv580323A"/>
+      <generalization xmi:id="_xSo9gTyHEeapYOv580323A" general="_xSo9ezyHEeapYOv580323A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_xSo9gjyHEeapYOv580323A" memberEnd="_xSo9gzyHEeapYOv580323A _xSo9hjyHEeapYOv580323A" navigableOwnedEnd="_xSo9gzyHEeapYOv580323A _xSo9hjyHEeapYOv580323A">
+      <name xsi:nil="true"/>
+      <ownedEnd xmi:id="_xSo9gzyHEeapYOv580323A" name="human_body" type="_xSo9cDyHEeapYOv580323A" association="_xSo9gjyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSo9hDyHEeapYOv580323A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSo9hTyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_xSo9hjyHEeapYOv580323A" name="human_heart" type="_xSo9cjyHEeapYOv580323A" association="_xSo9gjyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSo9hzyHEeapYOv580323A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSo9iDyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_xSo9iTyHEeapYOv580323A" memberEnd="_xSo9ijyHEeapYOv580323A _xSo9jTyHEeapYOv580323A" navigableOwnedEnd="_xSo9ijyHEeapYOv580323A _xSo9jTyHEeapYOv580323A">
+      <name xsi:nil="true"/>
+      <ownedEnd xmi:id="_xSo9ijyHEeapYOv580323A" name="human_heart" type="_xSo9cjyHEeapYOv580323A" isReadOnly="true" association="_xSo9iTyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSo9izyHEeapYOv580323A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSo9jDyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_xSo9jTyHEeapYOv580323A" name="left_atrium" type="_xSo9dTyHEeapYOv580323A" isReadOnly="true" association="_xSo9iTyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSo9jjyHEeapYOv580323A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSo9jzyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_xSo9kDyHEeapYOv580323A" memberEnd="_xSo9kTyHEeapYOv580323A _xSo9lDyHEeapYOv580323A" navigableOwnedEnd="_xSo9kTyHEeapYOv580323A _xSo9lDyHEeapYOv580323A">
+      <name xsi:nil="true"/>
+      <ownedEnd xmi:id="_xSo9kTyHEeapYOv580323A" name="human_heart" type="_xSo9cjyHEeapYOv580323A" isReadOnly="true" association="_xSo9kDyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSo9kjyHEeapYOv580323A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSo9kzyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_xSo9lDyHEeapYOv580323A" name="right_atrium" type="_xSo9fDyHEeapYOv580323A" isReadOnly="true" association="_xSo9kDyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSo9lTyHEeapYOv580323A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSo9ljyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_xSo9lzyHEeapYOv580323A" memberEnd="_xSo9mDyHEeapYOv580323A _xSo9mzyHEeapYOv580323A" navigableOwnedEnd="_xSo9mDyHEeapYOv580323A _xSo9mzyHEeapYOv580323A">
+      <name xsi:nil="true"/>
+      <ownedEnd xmi:id="_xSo9mDyHEeapYOv580323A" name="human_heart" type="_xSo9cjyHEeapYOv580323A" isReadOnly="true" association="_xSo9lzyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSo9mTyHEeapYOv580323A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSo9mjyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_xSo9mzyHEeapYOv580323A" name="right_ventricle" type="_xSo9fzyHEeapYOv580323A" isReadOnly="true" association="_xSo9lzyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSo9nDyHEeapYOv580323A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSo9nTyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_xSo9njyHEeapYOv580323A" memberEnd="_xSo9nzyHEeapYOv580323A _xSo9ojyHEeapYOv580323A" navigableOwnedEnd="_xSo9nzyHEeapYOv580323A _xSo9ojyHEeapYOv580323A">
+      <name xsi:nil="true"/>
+      <ownedEnd xmi:id="_xSo9nzyHEeapYOv580323A" name="human_heart" type="_xSo9cjyHEeapYOv580323A" isReadOnly="true" association="_xSo9njyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSo9oDyHEeapYOv580323A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSo9oTyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_xSo9ojyHEeapYOv580323A" name="left_ventricle" type="_xSo9eDyHEeapYOv580323A" isReadOnly="true" association="_xSo9njyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSo9ozyHEeapYOv580323A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSo9pDyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_xSo9pTyHEeapYOv580323A" name="Human Protocol">
+    <packagedElement xmi:type="uml:Class" xmi:id="_xSo9pjyHEeapYOv580323A" name="ECG Record"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_xSo9pzyHEeapYOv580323A" name="EPR"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_xSo9qDyHEeapYOv580323A" name="Patient">
+      <generalization xmi:id="_xSo9qTyHEeapYOv580323A" general="_xSo9qjyHEeapYOv580323A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_xSo9qjyHEeapYOv580323A" name="Person"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_xSo9qzyHEeapYOv580323A" name="Physician">
+      <generalization xmi:id="_xSo9rDyHEeapYOv580323A" general="_xSo9qjyHEeapYOv580323A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_xSo9rTyHEeapYOv580323A" name="Treatment"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_xSo9rjyHEeapYOv580323A" name="belongsTo" memberEnd="_xSo9rzyHEeapYOv580323A _xSo9sjyHEeapYOv580323A" navigableOwnedEnd="_xSo9rzyHEeapYOv580323A _xSo9sjyHEeapYOv580323A">
+      <ownedEnd xmi:id="_xSo9rzyHEeapYOv580323A" name="ecg_record" type="_xSo9pjyHEeapYOv580323A" association="_xSo9rjyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSo9sDyHEeapYOv580323A"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSo9sTyHEeapYOv580323A" value="*"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_xSo9sjyHEeapYOv580323A" name="patient" type="_xSo9qDyHEeapYOv580323A" association="_xSo9rjyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSo9szyHEeapYOv580323A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSo9tDyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_xSo9tTyHEeapYOv580323A" memberEnd="_xSo9tjyHEeapYOv580323A _xSo9uTyHEeapYOv580323A" navigableOwnedEnd="_xSo9tjyHEeapYOv580323A _xSo9uTyHEeapYOv580323A">
+      <name xsi:nil="true"/>
+      <ownedEnd xmi:id="_xSo9tjyHEeapYOv580323A" name="epr" type="_xSo9pzyHEeapYOv580323A" association="_xSo9tTyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSo9tzyHEeapYOv580323A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSo9uDyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_xSo9uTyHEeapYOv580323A" name="ecg_record" type="_xSo9pjyHEeapYOv580323A" association="_xSo9tTyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSo9ujyHEeapYOv580323A"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSo9uzyHEeapYOv580323A" value="*"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_xSo9vDyHEeapYOv580323A" name="has" memberEnd="_xSo9vTyHEeapYOv580323A _xSo9wDyHEeapYOv580323A" navigableOwnedEnd="_xSo9vTyHEeapYOv580323A _xSo9wDyHEeapYOv580323A">
+      <ownedEnd xmi:id="_xSo9vTyHEeapYOv580323A" name="patient" type="_xSo9qDyHEeapYOv580323A" association="_xSo9vDyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSo9vjyHEeapYOv580323A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSo9vzyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_xSo9wDyHEeapYOv580323A" name="epr" type="_xSo9pzyHEeapYOv580323A" association="_xSo9vDyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSo9wTyHEeapYOv580323A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSo9wjyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_xSo9wzyHEeapYOv580323A" memberEnd="_xSo9xDyHEeapYOv580323A _xSo9xzyHEeapYOv580323A" navigableOwnedEnd="_xSo9xDyHEeapYOv580323A _xSo9xzyHEeapYOv580323A">
+      <name xsi:nil="true"/>
+      <ownedEnd xmi:id="_xSo9xDyHEeapYOv580323A" name="treatment" type="_xSo9rTyHEeapYOv580323A" association="_xSo9wzyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSo9xTyHEeapYOv580323A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSo9xjyHEeapYOv580323A" value="*"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_xSo9xzyHEeapYOv580323A" name="patient" type="_xSo9qDyHEeapYOv580323A" association="_xSo9wzyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSo9yDyHEeapYOv580323A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSo9yTyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_xSo9yjyHEeapYOv580323A" memberEnd="_xSo9yzyHEeapYOv580323A _xSo9zjyHEeapYOv580323A" navigableOwnedEnd="_xSo9yzyHEeapYOv580323A _xSo9zjyHEeapYOv580323A">
+      <name xsi:nil="true"/>
+      <ownedEnd xmi:id="_xSo9yzyHEeapYOv580323A" name="treatment" type="_xSo9rTyHEeapYOv580323A" association="_xSo9yjyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSo9zDyHEeapYOv580323A"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSo9zTyHEeapYOv580323A" value="*"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_xSo9zjyHEeapYOv580323A" name="physician" type="_xSo9qzyHEeapYOv580323A" association="_xSo9yjyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSo9zzyHEeapYOv580323A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSo90DyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+  </packagedElement>
+</uml:Model>

@@ -31,14 +31,14 @@ import org.eclipse.uml2.uml.Package
  */
 class UmlMapper {
 
-    private UmlTgtMapper tgtMapper = new UmlTgtMapper()
+    private ToUmlMapper tgtMapper = new ToUmlMapper()
 
     Package toUML(OntoUMLModel m) {
-        return tgtMapper.toUML(m)
+        return tgtMapper.run(m)
     }
 
     Package toUML(OntoUMLModel m, boolean ignorePackages) {
-        return tgtMapper.toUML(m, ignorePackages)
+        return tgtMapper.run(m, ignorePackages)
     }
 
     void serialize(Package ecoremodel, String path){

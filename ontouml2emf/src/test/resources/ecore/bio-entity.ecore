@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="ASCII"?>
 <ecore:EPackage xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="Biological Entity" nsURI="http://menthor.net/biological-entity/" nsPrefix="biological-entity">
   <eClassifiers xsi:type="ecore:EClass" name="Biological Entity" eSuperTypes="//Material%20Entity">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="person" lowerBound="1" eType="//Person" eOpposite="//Person/biological_entity"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="person" lowerBound="1" eType="//Person" containment="true" eOpposite="//Person/biological_entity"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Gallery" eSuperTypes="//Geographical%20Space"/>
   <eClassifiers xsi:type="ecore:EClass" name="Geographical Space" eSuperTypes="//Spatial%20Thing">
@@ -9,7 +9,7 @@
     <eStructuralFeatures xsi:type="ecore:EReference" name="geographical_space" lowerBound="1" upperBound="-1" eType="//Geographical%20Space" eOpposite="//Geographical%20Space/geographical_space"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Human Heart" eSuperTypes="//Human%20Organ">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="person" lowerBound="1" eType="//Person" eOpposite="//Person/human_heart"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="person" lowerBound="1" eType="//Person" containment="true" eOpposite="//Person/human_heart"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Human Organ" eSuperTypes="//Biological%20Entity"/>
   <eClassifiers xsi:type="ecore:EClass" name="Inanimate Entity" eSuperTypes="//Material%20Entity"/>

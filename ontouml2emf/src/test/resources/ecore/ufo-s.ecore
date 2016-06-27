@@ -4,19 +4,19 @@
     <eClassifiers xsi:type="ecore:EClass" name="Customer Action">
       <eStructuralFeatures xsi:type="ecore:EReference" name="service_customer" lowerBound="1" eType="//Service%20Negotiation/Service%20Customer" eOpposite="//Service%20Negotiation/Service%20Customer/customer_action"/>
       <eStructuralFeatures xsi:type="ecore:EReference" name="service_customer_commitment" lowerBound="1" upperBound="-1" eType="//Service%20Negotiation/Service%20Customer%20Commitment" eOpposite="//Service%20Negotiation/Service%20Customer%20Commitment/customer_action"/>
-      <eStructuralFeatures xsi:type="ecore:EReference" name="service_delivery" lowerBound="1" eType="//Service%20Delivery/Service%20Delivery" eOpposite="//Service%20Delivery/Service%20Delivery/customer_action"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="service_delivery" lowerBound="1" eType="//Service%20Delivery/Service%20Delivery" containment="true" eOpposite="//Service%20Delivery/Service%20Delivery/customer_action"/>
     </eClassifiers>
     <eClassifiers xsi:type="ecore:EClass" name="Hired Provider Action">
       <eStructuralFeatures xsi:type="ecore:EReference" name="hired_service_provider" lowerBound="1" eType="//Service%20Negotiation/Hired%20Service%20Provider" eOpposite="//Service%20Negotiation/Hired%20Service%20Provider/hired_provider_action"/>
       <eStructuralFeatures xsi:type="ecore:EReference" name="hired_service_provider_commitment" lowerBound="1" upperBound="-1" eType="//Service%20Negotiation/Hired%20Service%20Provider%20Commitment" eOpposite="//Service%20Negotiation/Hired%20Service%20Provider%20Commitment/hired_provider_action"/>
-      <eStructuralFeatures xsi:type="ecore:EReference" name="service_delivery" lowerBound="1" eType="//Service%20Delivery/Service%20Delivery" eOpposite="//Service%20Delivery/Service%20Delivery/hired_provider_action"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="service_delivery" lowerBound="1" eType="//Service%20Delivery/Service%20Delivery" containment="true" eOpposite="//Service%20Delivery/Service%20Delivery/hired_provider_action"/>
     </eClassifiers>
     <eClassifiers xsi:type="ecore:EClass" name="Hired Provider-Customer Interaction">
       <eStructuralFeatures xsi:type="ecore:EReference" name="service_customer" lowerBound="1" upperBound="-1" eType="//Service%20Negotiation/Service%20Customer" eOpposite="//Service%20Negotiation/Service%20Customer/hired_provider_customer_interaction"/>
       <eStructuralFeatures xsi:type="ecore:EReference" name="service_customer_commitment" lowerBound="1" upperBound="-1" eType="//Service%20Negotiation/Service%20Customer%20Commitment" eOpposite="//Service%20Negotiation/Service%20Customer%20Commitment/hired_provider_customer_interaction"/>
       <eStructuralFeatures xsi:type="ecore:EReference" name="hired_service_provider_commitment" lowerBound="1" upperBound="-1" eType="//Service%20Negotiation/Hired%20Service%20Provider%20Commitment" eOpposite="//Service%20Negotiation/Hired%20Service%20Provider%20Commitment/hired_provider_customer_interaction"/>
       <eStructuralFeatures xsi:type="ecore:EReference" name="hired_service_provider" lowerBound="1" eType="//Service%20Negotiation/Hired%20Service%20Provider" eOpposite="//Service%20Negotiation/Hired%20Service%20Provider/hired_provider_customer_interaction"/>
-      <eStructuralFeatures xsi:type="ecore:EReference" name="service_delivery" lowerBound="1" eType="//Service%20Delivery/Service%20Delivery" eOpposite="//Service%20Delivery/Service%20Delivery/hired_provider_customer_interaction"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="service_delivery" lowerBound="1" eType="//Service%20Delivery/Service%20Delivery" containment="true" eOpposite="//Service%20Delivery/Service%20Delivery/hired_provider_customer_interaction"/>
     </eClassifiers>
     <eClassifiers xsi:type="ecore:EClass" name="Service Delivery">
       <eStructuralFeatures xsi:type="ecore:EReference" name="customer_action" upperBound="-1" eType="//Service%20Delivery/Customer%20Action" eOpposite="//Service%20Delivery/Customer%20Action/service_delivery"/>
@@ -38,14 +38,14 @@
     <eClassifiers xsi:type="ecore:EClass" name="Hired Service Provider Claim">
       <eStructuralFeatures xsi:type="ecore:EReference" name="hired_service_provider" lowerBound="1" eType="//Service%20Negotiation/Hired%20Service%20Provider" eOpposite="//Service%20Negotiation/Hired%20Service%20Provider/hired_service_provider_claim"/>
       <eStructuralFeatures xsi:type="ecore:EReference" name="service_customer" lowerBound="1" upperBound="-1" eType="//Service%20Negotiation/Service%20Customer" eOpposite="//Service%20Negotiation/Service%20Customer/hired_service_provider_claim"/>
-      <eStructuralFeatures xsi:type="ecore:EReference" name="service_agreement" lowerBound="1" eType="//Service%20Negotiation/Service%20Agreement" eOpposite="//Service%20Negotiation/Service%20Agreement/hired_service_provider_claim"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="service_agreement" lowerBound="1" eType="//Service%20Negotiation/Service%20Agreement" containment="true" eOpposite="//Service%20Negotiation/Service%20Agreement/hired_service_provider_claim"/>
     </eClassifiers>
     <eClassifiers xsi:type="ecore:EClass" name="Hired Service Provider Commitment">
       <eStructuralFeatures xsi:type="ecore:EReference" name="hired_provider_action" upperBound="-1" eType="//Service%20Delivery/Hired%20Provider%20Action" eOpposite="//Service%20Delivery/Hired%20Provider%20Action/hired_service_provider_commitment"/>
       <eStructuralFeatures xsi:type="ecore:EReference" name="hired_provider_customer_interaction" upperBound="-1" eType="//Service%20Delivery/Hired%20Provider-Customer%20Interaction" eOpposite="//Service%20Delivery/Hired%20Provider-Customer%20Interaction/hired_service_provider_commitment"/>
       <eStructuralFeatures xsi:type="ecore:EReference" name="hired_service_provider" lowerBound="1" eType="//Service%20Negotiation/Hired%20Service%20Provider" eOpposite="//Service%20Negotiation/Hired%20Service%20Provider/hired_service_provider_commitment"/>
       <eStructuralFeatures xsi:type="ecore:EReference" name="service_customer" lowerBound="1" upperBound="-1" eType="//Service%20Negotiation/Service%20Customer" eOpposite="//Service%20Negotiation/Service%20Customer/hired_service_provider_commitment"/>
-      <eStructuralFeatures xsi:type="ecore:EReference" name="service_agreement" lowerBound="1" eType="//Service%20Negotiation/Service%20Agreement" eOpposite="//Service%20Negotiation/Service%20Agreement/hired_service_provider_commitment"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="service_agreement" lowerBound="1" eType="//Service%20Negotiation/Service%20Agreement" containment="true" eOpposite="//Service%20Negotiation/Service%20Agreement/hired_service_provider_commitment"/>
     </eClassifiers>
     <eClassifiers xsi:type="ecore:EClass" name="Service Agreement">
       <eStructuralFeatures xsi:type="ecore:EReference" name="service_delivery" lowerBound="-1" upperBound="-1" eType="//Service%20Delivery/Service%20Delivery" eOpposite="//Service%20Delivery/Service%20Delivery/service_agreement"/>
@@ -73,14 +73,14 @@
     </eClassifiers>
     <eClassifiers xsi:type="ecore:EClass" name="Service Customer Claim">
       <eStructuralFeatures xsi:type="ecore:EReference" name="hired_service_provider" lowerBound="1" eType="//Service%20Negotiation/Hired%20Service%20Provider" eOpposite="//Service%20Negotiation/Hired%20Service%20Provider/service_customer_claim"/>
-      <eStructuralFeatures xsi:type="ecore:EReference" name="service_agreement" lowerBound="1" eType="//Service%20Negotiation/Service%20Agreement" eOpposite="//Service%20Negotiation/Service%20Agreement/service_customer_claim"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="service_agreement" lowerBound="1" eType="//Service%20Negotiation/Service%20Agreement" containment="true" eOpposite="//Service%20Negotiation/Service%20Agreement/service_customer_claim"/>
       <eStructuralFeatures xsi:type="ecore:EReference" name="service_customer" lowerBound="1" eType="//Service%20Negotiation/Service%20Customer" eOpposite="//Service%20Negotiation/Service%20Customer/service_customer_claim"/>
     </eClassifiers>
     <eClassifiers xsi:type="ecore:EClass" name="Service Customer Commitment">
       <eStructuralFeatures xsi:type="ecore:EReference" name="customer_action" upperBound="-1" eType="//Service%20Delivery/Customer%20Action" eOpposite="//Service%20Delivery/Customer%20Action/service_customer_commitment"/>
       <eStructuralFeatures xsi:type="ecore:EReference" name="hired_provider_customer_interaction" upperBound="-1" eType="//Service%20Delivery/Hired%20Provider-Customer%20Interaction" eOpposite="//Service%20Delivery/Hired%20Provider-Customer%20Interaction/service_customer_commitment"/>
       <eStructuralFeatures xsi:type="ecore:EReference" name="hired_service_provider" lowerBound="1" eType="//Service%20Negotiation/Hired%20Service%20Provider" eOpposite="//Service%20Negotiation/Hired%20Service%20Provider/service_customer_commitment"/>
-      <eStructuralFeatures xsi:type="ecore:EReference" name="service_agreement" lowerBound="1" eType="//Service%20Negotiation/Service%20Agreement" eOpposite="//Service%20Negotiation/Service%20Agreement/service_customer_commitment"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="service_agreement" lowerBound="1" eType="//Service%20Negotiation/Service%20Agreement" containment="true" eOpposite="//Service%20Negotiation/Service%20Agreement/service_customer_commitment"/>
       <eStructuralFeatures xsi:type="ecore:EReference" name="service_customer" lowerBound="1" eType="//Service%20Negotiation/Service%20Customer" eOpposite="//Service%20Negotiation/Service%20Customer/service_customer_commitment"/>
     </eClassifiers>
     <eClassifiers xsi:type="ecore:EClass" name="Service Negotiation">
@@ -95,7 +95,7 @@
     <eClassifiers xsi:type="ecore:EClass" name="Service Oferring Commitment">
       <eStructuralFeatures xsi:type="ecore:EReference" name="target_customer_community" lowerBound="1" eType="//Service%20Offer/Target%20Customer%20Community" eOpposite="//Service%20Offer/Target%20Customer%20Community/service_oferring_commitment"/>
       <eStructuralFeatures xsi:type="ecore:EReference" name="service_provider" lowerBound="1" eType="//Service%20Offer/Service%20Provider" eOpposite="//Service%20Offer/Service%20Provider/service_oferring_commitment"/>
-      <eStructuralFeatures xsi:type="ecore:EReference" name="service_offering" lowerBound="1" eType="//Service%20Offer/Service%20Offering" eOpposite="//Service%20Offer/Service%20Offering/service_oferring_commitment"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="service_offering" lowerBound="1" eType="//Service%20Offer/Service%20Offering" containment="true" eOpposite="//Service%20Offer/Service%20Offering/service_oferring_commitment"/>
     </eClassifiers>
     <eClassifiers xsi:type="ecore:EClass" name="Service Offer">
       <eStructuralFeatures xsi:type="ecore:EReference" name="service_offering" lowerBound="1" eType="//Service%20Offer/Service%20Offering" eOpposite="//Service%20Offer/Service%20Offering/service_offer"/>
@@ -120,13 +120,13 @@
       <eStructuralFeatures xsi:type="ecore:EReference" name="servive_oferring_claim" lowerBound="1" upperBound="-1" eType="//Service%20Offer/Servive%20Oferring%20Claim" eOpposite="//Service%20Offer/Servive%20Oferring%20Claim/service_provider"/>
     </eClassifiers>
     <eClassifiers xsi:type="ecore:EClass" name="Servive Oferring Claim">
-      <eStructuralFeatures xsi:type="ecore:EReference" name="service_offering" lowerBound="1" eType="//Service%20Offer/Service%20Offering" eOpposite="//Service%20Offer/Service%20Offering/servive_oferring_claim"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="service_offering" lowerBound="1" eType="//Service%20Offer/Service%20Offering" containment="true" eOpposite="//Service%20Offer/Service%20Offering/servive_oferring_claim"/>
       <eStructuralFeatures xsi:type="ecore:EReference" name="service_provider" lowerBound="1" eType="//Service%20Offer/Service%20Provider" eOpposite="//Service%20Offer/Service%20Provider/servive_oferring_claim"/>
       <eStructuralFeatures xsi:type="ecore:EReference" name="target_customer_community" lowerBound="1" eType="//Service%20Offer/Target%20Customer%20Community" eOpposite="//Service%20Offer/Target%20Customer%20Community/servive_oferring_claim"/>
     </eClassifiers>
     <eClassifiers xsi:type="ecore:EClass" name="Target Customer" eSuperTypes="//Service%20Offer/Agent">
       <eStructuralFeatures xsi:type="ecore:EReference" name="service_negotiation" lowerBound="-1" upperBound="-1" eType="//Service%20Negotiation/Service%20Negotiation" eOpposite="//Service%20Negotiation/Service%20Negotiation/target_customer"/>
-      <eStructuralFeatures xsi:type="ecore:EReference" name="target_customer_community" lowerBound="1" upperBound="-1" eType="//Service%20Offer/Target%20Customer%20Community" eOpposite="//Service%20Offer/Target%20Customer%20Community/target_customer"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="target_customer_community" lowerBound="1" upperBound="-1" eType="//Service%20Offer/Target%20Customer%20Community" containment="true" eOpposite="//Service%20Offer/Target%20Customer%20Community/target_customer"/>
     </eClassifiers>
     <eClassifiers xsi:type="ecore:EClass" name="Target Customer Community">
       <eStructuralFeatures xsi:type="ecore:EReference" name="service_oferring_commitment" lowerBound="1" upperBound="-1" eType="//Service%20Offer/Service%20Oferring%20Commitment" eOpposite="//Service%20Offer/Service%20Oferring%20Commitment/target_customer_community"/>

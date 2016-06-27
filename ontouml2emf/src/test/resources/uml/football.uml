@@ -1,0 +1,561 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_xVSoUDyHEeapYOv580323A" name="Ontologia de Futebol">
+  <packagedElement xmi:type="uml:Package" xmi:id="_xVSoUTyHEeapYOv580323A" name="Etapas de Jogo">
+    <packagedElement xmi:type="uml:Class" xmi:id="_xVSoUjyHEeapYOv580323A" name="1o Tempo">
+      <generalization xmi:id="_xVSoUzyHEeapYOv580323A" general="_xVSoaDyHEeapYOv580323A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_xVSoVDyHEeapYOv580323A" name="1o Tempo Prorrogação">
+      <generalization xmi:id="_xVSoVTyHEeapYOv580323A" general="_xVSoZDyHEeapYOv580323A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_xVSoVjyHEeapYOv580323A" name="2o Tempo">
+      <generalization xmi:id="_xVSoVzyHEeapYOv580323A" general="_xVSoaDyHEeapYOv580323A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_xVSoWDyHEeapYOv580323A" name="2o Tempo Prorrogação">
+      <generalization xmi:id="_xVSoWTyHEeapYOv580323A" general="_xVSoZDyHEeapYOv580323A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_xVSoWjyHEeapYOv580323A" name="Com Morte Súbita">
+      <generalization xmi:id="_xVSoWzyHEeapYOv580323A" general="_xVSoZDyHEeapYOv580323A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_xVSoXDyHEeapYOv580323A" name="Disputa por Pênalti">
+      <generalization xmi:id="_xVSoXTyHEeapYOv580323A" general="_xVSoXjyHEeapYOv580323A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_xVSoXjyHEeapYOv580323A" name="Etapa de Disputa"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_xVSoXzyHEeapYOv580323A" name="Lance"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_xVSoYDyHEeapYOv580323A" name="Lance de Disputa Comum">
+      <generalization xmi:id="_xVSoYTyHEeapYOv580323A" general="_xVSoXzyHEeapYOv580323A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_xVSoYjyHEeapYOv580323A" name="Lance de Disputa por Pênalti">
+      <generalization xmi:id="_xVSoYzyHEeapYOv580323A" general="_xVSoXzyHEeapYOv580323A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_xVSoZDyHEeapYOv580323A" name="Prorrogação">
+      <generalization xmi:id="_xVSoZTyHEeapYOv580323A" general="_xVSoXjyHEeapYOv580323A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_xVSoZjyHEeapYOv580323A" name="Sem Morte Súbita">
+      <generalization xmi:id="_xVSoZzyHEeapYOv580323A" general="_xVSoZDyHEeapYOv580323A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_xVSoaDyHEeapYOv580323A" name="Tempo Regulamentar">
+      <generalization xmi:id="_xVSoaTyHEeapYOv580323A" general="_xVSoXjyHEeapYOv580323A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_xVSoajyHEeapYOv580323A" memberEnd="_xVSoazyHEeapYOv580323A _xVTPYjyHEeapYOv580323A" navigableOwnedEnd="_xVSoazyHEeapYOv580323A _xVTPYjyHEeapYOv580323A">
+      <name xsi:nil="true"/>
+      <ownedEnd xmi:id="_xVSoazyHEeapYOv580323A" name="disputa_por_pênalti" type="_xVSoXDyHEeapYOv580323A" association="_xVSoajyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xVTPYDyHEeapYOv580323A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xVTPYTyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_xVTPYjyHEeapYOv580323A" name="lance_de_disputa_por_pênalti" type="_xVSoYjyHEeapYOv580323A" association="_xVSoajyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xVTPYzyHEeapYOv580323A" value="-1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xVTPZDyHEeapYOv580323A" value="*"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_xVTPZTyHEeapYOv580323A" memberEnd="_xVTPZjyHEeapYOv580323A _xVTPaTyHEeapYOv580323A" navigableOwnedEnd="_xVTPZjyHEeapYOv580323A _xVTPaTyHEeapYOv580323A">
+      <name xsi:nil="true"/>
+      <ownedEnd xmi:id="_xVTPZjyHEeapYOv580323A" name="etapa_de_disputa" type="_xVSoXjyHEeapYOv580323A" association="_xVTPZTyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xVTPZzyHEeapYOv580323A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xVTPaDyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_xVTPaTyHEeapYOv580323A" name="lance" type="_xVSoXzyHEeapYOv580323A" association="_xVTPZTyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xVTPajyHEeapYOv580323A" value="2"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xVTPazyHEeapYOv580323A" value="*"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_xVTPbDyHEeapYOv580323A" memberEnd="_xVTPbTyHEeapYOv580323A _xVTPcDyHEeapYOv580323A" navigableOwnedEnd="_xVTPbTyHEeapYOv580323A _xVTPcDyHEeapYOv580323A">
+      <name xsi:nil="true"/>
+      <ownedEnd xmi:id="_xVTPbTyHEeapYOv580323A" name="tempo_regulamentar" type="_xVSoaDyHEeapYOv580323A" association="_xVTPbDyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xVTPbjyHEeapYOv580323A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xVTPbzyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_xVTPcDyHEeapYOv580323A" name="lance_de_disputa_comum" type="_xVSoYDyHEeapYOv580323A" association="_xVTPbDyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xVTPcTyHEeapYOv580323A" value="-1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xVTPcjyHEeapYOv580323A" value="*"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_xVTPczyHEeapYOv580323A" memberEnd="_xVTPdDyHEeapYOv580323A _xVTPdzyHEeapYOv580323A" navigableOwnedEnd="_xVTPdDyHEeapYOv580323A _xVTPdzyHEeapYOv580323A">
+      <name xsi:nil="true"/>
+      <ownedEnd xmi:id="_xVTPdDyHEeapYOv580323A" name="prorrogação" type="_xVSoZDyHEeapYOv580323A" association="_xVTPczyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xVTPdTyHEeapYOv580323A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xVTPdjyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_xVTPdzyHEeapYOv580323A" name="lance_de_disputa_comum" type="_xVSoYDyHEeapYOv580323A" association="_xVTPczyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xVTPeDyHEeapYOv580323A" value="-1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xVTPeTyHEeapYOv580323A" value="*"/>
+      </ownedEnd>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_xVTPejyHEeapYOv580323A" name="Lance de Disputa Comum">
+    <packagedElement xmi:type="uml:Class" xmi:id="_xVTPezyHEeapYOv580323A" name="Cartão Amarelo">
+      <generalization xmi:id="_xVTPfDyHEeapYOv580323A" general="_xVTPkzyHEeapYOv580323A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_xVTPfTyHEeapYOv580323A" name="Cartão Vermelho">
+      <generalization xmi:id="_xVTPfjyHEeapYOv580323A" general="_xVTPkzyHEeapYOv580323A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_xVTPfzyHEeapYOv580323A" name="Falta Cometida">
+      <generalization xmi:id="_xVTPgDyHEeapYOv580323A" general="_xVTPkTyHEeapYOv580323A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_xVTPgTyHEeapYOv580323A" name="Falta Complexa">
+      <generalization xmi:id="_xVTPgjyHEeapYOv580323A" general="_xVTPiTyHEeapYOv580323A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_xVTPgzyHEeapYOv580323A" name="Falta Recebida">
+      <generalization xmi:id="_xVTPhDyHEeapYOv580323A" general="_xVTPkTyHEeapYOv580323A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_xVTPhTyHEeapYOv580323A" name="LJI Ataque">
+      <generalization xmi:id="_xVTPhjyHEeapYOv580323A" general="_xVT2njyHEeapYOv580323A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_xVTPhzyHEeapYOv580323A" name="LJI Defesa">
+      <generalization xmi:id="_xVTPiDyHEeapYOv580323A" general="_xVT2njyHEeapYOv580323A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_xVTPiTyHEeapYOv580323A" name="Lance Complexo">
+      <generalization xmi:id="_xVTPijyHEeapYOv580323A" general="_xVSoXzyHEeapYOv580323A"/>
+      <generalization xmi:id="_xVTPizyHEeapYOv580323A" general="_xVSoYDyHEeapYOv580323A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_xVTPjDyHEeapYOv580323A" name="Lance Individual">
+      <generalization xmi:id="_xVTPjTyHEeapYOv580323A" general="_xVSoYDyHEeapYOv580323A"/>
+      <generalization xmi:id="_xVTPjjyHEeapYOv580323A" general="_xVSoXzyHEeapYOv580323A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_xVTPjzyHEeapYOv580323A" name="Lance de Jogo Complexo">
+      <generalization xmi:id="_xVTPkDyHEeapYOv580323A" general="_xVTPiTyHEeapYOv580323A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_xVTPkTyHEeapYOv580323A" name="Participação Individual em Falta">
+      <generalization xmi:id="_xVTPkjyHEeapYOv580323A" general="_xVTPjDyHEeapYOv580323A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_xVTPkzyHEeapYOv580323A" name="Punição">
+      <generalization xmi:id="_xVTPlDyHEeapYOv580323A" general="_xVTPjDyHEeapYOv580323A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_xVTPlTyHEeapYOv580323A" memberEnd="_xVTPljyHEeapYOv580323A _xVTPmTyHEeapYOv580323A" navigableOwnedEnd="_xVTPljyHEeapYOv580323A _xVTPmTyHEeapYOv580323A">
+      <name xsi:nil="true"/>
+      <ownedEnd xmi:id="_xVTPljyHEeapYOv580323A" name="falta_cometida" type="_xVTPfzyHEeapYOv580323A" association="_xVTPlTyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xVTPlzyHEeapYOv580323A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xVTPmDyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_xVTPmTyHEeapYOv580323A" name="punição" type="_xVTPkzyHEeapYOv580323A" association="_xVTPlTyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xVTPmjyHEeapYOv580323A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xVTPmzyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_xVTPnDyHEeapYOv580323A" memberEnd="_xVTPnTyHEeapYOv580323A _xVTPoDyHEeapYOv580323A" navigableOwnedEnd="_xVTPnTyHEeapYOv580323A _xVTPoDyHEeapYOv580323A">
+      <name xsi:nil="true"/>
+      <ownedEnd xmi:id="_xVTPnTyHEeapYOv580323A" name="falta_complexa" type="_xVTPgTyHEeapYOv580323A" association="_xVTPnDyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xVTPnjyHEeapYOv580323A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xVTPnzyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_xVTPoDyHEeapYOv580323A" name="falta_individual_de_jogo" type="_xVT23jyHEeapYOv580323A" association="_xVTPnDyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xVT2cDyHEeapYOv580323A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xVT2cTyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_xVT2cjyHEeapYOv580323A" memberEnd="_xVT2czyHEeapYOv580323A _xVT2djyHEeapYOv580323A" navigableOwnedEnd="_xVT2czyHEeapYOv580323A _xVT2djyHEeapYOv580323A">
+      <name xsi:nil="true"/>
+      <ownedEnd xmi:id="_xVT2czyHEeapYOv580323A" name="falta_complexa" type="_xVTPgTyHEeapYOv580323A" association="_xVT2cjyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xVT2dDyHEeapYOv580323A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xVT2dTyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_xVT2djyHEeapYOv580323A" name="falta_recebida" type="_xVTPgzyHEeapYOv580323A" association="_xVT2cjyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xVT2dzyHEeapYOv580323A" value="2"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xVT2eDyHEeapYOv580323A" value="*"/>
+      </ownedEnd>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_xVT2eTyHEeapYOv580323A" name="Lance de Jogo Individual">
+    <packagedElement xmi:type="uml:Class" xmi:id="_xVT2ejyHEeapYOv580323A" name="Assistência">
+      <generalization xmi:id="_xVT2ezyHEeapYOv580323A" general="_xVT2pjyHEeapYOv580323A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_xVT2fDyHEeapYOv580323A" name="Ação Ofensiva">
+      <generalization xmi:id="_xVT2fTyHEeapYOv580323A" general="_xVTPhTyHEeapYOv580323A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_xVT2fjyHEeapYOv580323A" name="Ação com Bola Rolando">
+      <generalization xmi:id="_xVT2fzyHEeapYOv580323A" general="_xVT2fDyHEeapYOv580323A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_xVT2gDyHEeapYOv580323A" name="Bloqueio">
+      <generalization xmi:id="_xVT2gTyHEeapYOv580323A" general="_xVTPhzyHEeapYOv580323A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_xVT2gjyHEeapYOv580323A" name="Cobrança">
+      <generalization xmi:id="_xVT2gzyHEeapYOv580323A" general="_xVT2fDyHEeapYOv580323A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_xVT2hDyHEeapYOv580323A" name="Cobrança de Escanteio">
+      <generalization xmi:id="_xVT2hTyHEeapYOv580323A" general="_xVT2gjyHEeapYOv580323A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_xVT2hjyHEeapYOv580323A" name="Cobrança de Falta">
+      <generalization xmi:id="_xVT2hzyHEeapYOv580323A" general="_xVT2gjyHEeapYOv580323A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_xVT2iDyHEeapYOv580323A" name="Cobrança de Fora da Área">
+      <generalization xmi:id="_xVT2iTyHEeapYOv580323A" general="_xVT2hjyHEeapYOv580323A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_xVT2ijyHEeapYOv580323A" name="Cobrança de Lateral">
+      <generalization xmi:id="_xVT2izyHEeapYOv580323A" general="_xVT2gjyHEeapYOv580323A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_xVT2jDyHEeapYOv580323A" name="Cobrança de Pênalti em Jogo">
+      <generalization xmi:id="_xVT2jTyHEeapYOv580323A" general="_xVT2hjyHEeapYOv580323A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_xVT2jjyHEeapYOv580323A" name="Defesa">
+      <generalization xmi:id="_xVT2jzyHEeapYOv580323A" general="_xVTPhzyHEeapYOv580323A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_xVT2kDyHEeapYOv580323A" name="Defesa Difícil">
+      <generalization xmi:id="_xVT2kTyHEeapYOv580323A" general="_xVT2jjyHEeapYOv580323A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_xVT2kjyHEeapYOv580323A" name="F Fora">
+      <generalization xmi:id="_xVT2kzyHEeapYOv580323A" general="_xVT2mjyHEeapYOv580323A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_xVT2lDyHEeapYOv580323A" name="F Gol Convertido">
+      <generalization xmi:id="_xVT2lTyHEeapYOv580323A" general="_xVT2mjyHEeapYOv580323A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_xVT2ljyHEeapYOv580323A" name="F Gol Interceptado">
+      <generalization xmi:id="_xVT2lzyHEeapYOv580323A" general="_xVT2mjyHEeapYOv580323A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_xVT2mDyHEeapYOv580323A" name="F Trave">
+      <generalization xmi:id="_xVT2mTyHEeapYOv580323A" general="_xVT2mjyHEeapYOv580323A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_xVT2mjyHEeapYOv580323A" name="Finalizaçao">
+      <generalization xmi:id="_xVT2mzyHEeapYOv580323A" general="_xVT2fDyHEeapYOv580323A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_xVT2nDyHEeapYOv580323A" name="Gol Contra">
+      <generalization xmi:id="_xVT2nTyHEeapYOv580323A" general="_xVTPhzyHEeapYOv580323A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_xVT2njyHEeapYOv580323A" name="Lance de Jogo Individual">
+      <generalization xmi:id="_xVT2nzyHEeapYOv580323A" general="_xVTPjDyHEeapYOv580323A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_xVT2oDyHEeapYOv580323A" name="P Comum">
+      <generalization xmi:id="_xVT2oTyHEeapYOv580323A" general="_xVT2pjyHEeapYOv580323A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_xVT2ojyHEeapYOv580323A" name="P Errado">
+      <generalization xmi:id="_xVT2ozyHEeapYOv580323A" general="_xVT2pjyHEeapYOv580323A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_xVT2pDyHEeapYOv580323A" name="P Impedido">
+      <generalization xmi:id="_xVT2pTyHEeapYOv580323A" general="_xVT2pjyHEeapYOv580323A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_xVT2pjyHEeapYOv580323A" name="Passe">
+      <generalization xmi:id="_xVT2pzyHEeapYOv580323A" general="_xVT2fDyHEeapYOv580323A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_xVT2qDyHEeapYOv580323A" name="Recebimento de Passe">
+      <generalization xmi:id="_xVT2qTyHEeapYOv580323A" general="_xVTPhTyHEeapYOv580323A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_xVT2qjyHEeapYOv580323A" name="Roubada de Bola">
+      <generalization xmi:id="_xVT2qzyHEeapYOv580323A" general="_xVTPhzyHEeapYOv580323A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_xVT2rDyHEeapYOv580323A" memberEnd="_xVT2rTyHEeapYOv580323A _xVT2sDyHEeapYOv580323A" navigableOwnedEnd="_xVT2rTyHEeapYOv580323A _xVT2sDyHEeapYOv580323A">
+      <name xsi:nil="true"/>
+      <ownedEnd xmi:id="_xVT2rTyHEeapYOv580323A" name="assistência" type="_xVT2ejyHEeapYOv580323A" association="_xVT2rDyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xVT2rjyHEeapYOv580323A"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xVT2rzyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_xVT2sDyHEeapYOv580323A" name="f_gol_convertido" type="_xVT2lDyHEeapYOv580323A" association="_xVT2rDyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xVT2sTyHEeapYOv580323A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xVT2sjyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_xVT2szyHEeapYOv580323A" memberEnd="_xVT2tDyHEeapYOv580323A _xVT2tzyHEeapYOv580323A" navigableOwnedEnd="_xVT2tDyHEeapYOv580323A _xVT2tzyHEeapYOv580323A">
+      <name xsi:nil="true"/>
+      <ownedEnd xmi:id="_xVT2tDyHEeapYOv580323A" name="f_bloqueada" type="_xVT2-TyHEeapYOv580323A" association="_xVT2szyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xVT2tTyHEeapYOv580323A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xVT2tjyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_xVT2tzyHEeapYOv580323A" name="bloqueio" type="_xVT2gDyHEeapYOv580323A" association="_xVT2szyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xVT2uDyHEeapYOv580323A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xVT2uTyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_xVT2ujyHEeapYOv580323A" memberEnd="_xVT2uzyHEeapYOv580323A _xVT2vjyHEeapYOv580323A" navigableOwnedEnd="_xVT2uzyHEeapYOv580323A _xVT2vjyHEeapYOv580323A">
+      <name xsi:nil="true"/>
+      <ownedEnd xmi:id="_xVT2uzyHEeapYOv580323A" name="f_defendida" type="_xVT2-zyHEeapYOv580323A" association="_xVT2ujyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xVT2vDyHEeapYOv580323A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xVT2vTyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_xVT2vjyHEeapYOv580323A" name="defesa" type="_xVT2jjyHEeapYOv580323A" association="_xVT2ujyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xVT2vzyHEeapYOv580323A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xVT2wDyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_xVT2wTyHEeapYOv580323A" memberEnd="_xVT2wjyHEeapYOv580323A _xVT2xTyHEeapYOv580323A" navigableOwnedEnd="_xVT2wjyHEeapYOv580323A _xVT2xTyHEeapYOv580323A">
+      <name xsi:nil="true"/>
+      <ownedEnd xmi:id="_xVT2wjyHEeapYOv580323A" name="f_bloqueada" type="_xVT2-TyHEeapYOv580323A" association="_xVT2wTyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xVT2wzyHEeapYOv580323A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xVT2xDyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_xVT2xTyHEeapYOv580323A" name="f_gol_interceptado" type="_xVT2ljyHEeapYOv580323A" association="_xVT2wTyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xVT2xjyHEeapYOv580323A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xVT2xzyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_xVT2yDyHEeapYOv580323A" memberEnd="_xVT2yTyHEeapYOv580323A _xVT2zDyHEeapYOv580323A" navigableOwnedEnd="_xVT2yTyHEeapYOv580323A _xVT2zDyHEeapYOv580323A">
+      <name xsi:nil="true"/>
+      <ownedEnd xmi:id="_xVT2yTyHEeapYOv580323A" name="f_defendida" type="_xVT2-zyHEeapYOv580323A" association="_xVT2yDyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xVT2yjyHEeapYOv580323A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xVT2yzyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_xVT2zDyHEeapYOv580323A" name="f_gol_interceptado" type="_xVT2ljyHEeapYOv580323A" association="_xVT2yDyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xVT2zTyHEeapYOv580323A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xVT2zjyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_xVT2zzyHEeapYOv580323A" memberEnd="_xVT20DyHEeapYOv580323A _xVT20zyHEeapYOv580323A" navigableOwnedEnd="_xVT20DyHEeapYOv580323A _xVT20zyHEeapYOv580323A">
+      <name xsi:nil="true"/>
+      <ownedEnd xmi:id="_xVT20DyHEeapYOv580323A" name="recuo_irregular" type="_xVT26DyHEeapYOv580323A" association="_xVT2zzyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xVT20TyHEeapYOv580323A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xVT20jyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_xVT20zyHEeapYOv580323A" name="p_comum" type="_xVT2oDyHEeapYOv580323A" association="_xVT2zzyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xVT21DyHEeapYOv580323A" value="-1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xVT21TyHEeapYOv580323A" value="*"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_xVT21jyHEeapYOv580323A" memberEnd="_xVT21zyHEeapYOv580323A _xVT22jyHEeapYOv580323A" navigableOwnedEnd="_xVT21zyHEeapYOv580323A _xVT22jyHEeapYOv580323A">
+      <name xsi:nil="true"/>
+      <ownedEnd xmi:id="_xVT21zyHEeapYOv580323A" name="impedimento" type="_xVT24jyHEeapYOv580323A" association="_xVT21jyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xVT22DyHEeapYOv580323A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xVT22TyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_xVT22jyHEeapYOv580323A" name="p_impedido" type="_xVT2pDyHEeapYOv580323A" association="_xVT21jyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xVT22zyHEeapYOv580323A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xVT23DyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_xVT23TyHEeapYOv580323A" name="Lance Faltoso">
+    <packagedElement xmi:type="uml:Class" xmi:id="_xVT23jyHEeapYOv580323A" name="Falta Individual de Jogo">
+      <generalization xmi:id="_xVT23zyHEeapYOv580323A" general="_xVTPfzyHEeapYOv580323A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_xVT24DyHEeapYOv580323A" name="Falta Técnica">
+      <generalization xmi:id="_xVT24TyHEeapYOv580323A" general="_xVTPfzyHEeapYOv580323A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_xVT24jyHEeapYOv580323A" name="Impedimento">
+      <generalization xmi:id="_xVT24zyHEeapYOv580323A" general="_xVTPjzyHEeapYOv580323A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_xVT25DyHEeapYOv580323A" name="Posição de Impedimento">
+      <generalization xmi:id="_xVT25TyHEeapYOv580323A" general="_xVTPfzyHEeapYOv580323A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_xVT25jyHEeapYOv580323A" name="Recepção Irregular">
+      <generalization xmi:id="_xVT25zyHEeapYOv580323A" general="_xVTPfzyHEeapYOv580323A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_xVT26DyHEeapYOv580323A" name="Recuo Irregular">
+      <generalization xmi:id="_xVT26TyHEeapYOv580323A" general="_xVTPjzyHEeapYOv580323A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_xVT26jyHEeapYOv580323A" memberEnd="_xVT26zyHEeapYOv580323A _xVT27jyHEeapYOv580323A" navigableOwnedEnd="_xVT26zyHEeapYOv580323A _xVT27jyHEeapYOv580323A">
+      <name xsi:nil="true"/>
+      <ownedEnd xmi:id="_xVT26zyHEeapYOv580323A" name="impedimento" type="_xVT24jyHEeapYOv580323A" association="_xVT26jyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xVT27DyHEeapYOv580323A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xVT27TyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_xVT27jyHEeapYOv580323A" name="posição_de_impedimento" type="_xVT25DyHEeapYOv580323A" association="_xVT26jyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xVT27zyHEeapYOv580323A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xVT28DyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_xVT28TyHEeapYOv580323A" memberEnd="_xVT28jyHEeapYOv580323A _xVT29TyHEeapYOv580323A" navigableOwnedEnd="_xVT28jyHEeapYOv580323A _xVT29TyHEeapYOv580323A">
+      <name xsi:nil="true"/>
+      <ownedEnd xmi:id="_xVT28jyHEeapYOv580323A" name="recuo_irregular" type="_xVT26DyHEeapYOv580323A" association="_xVT28TyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xVT28zyHEeapYOv580323A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xVT29DyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_xVT29TyHEeapYOv580323A" name="recepção_irregular" type="_xVT25jyHEeapYOv580323A" association="_xVT28TyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xVT29jyHEeapYOv580323A" value="-1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xVT29zyHEeapYOv580323A" value="*"/>
+      </ownedEnd>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_xVT2-DyHEeapYOv580323A" name="Lance Válido">
+    <packagedElement xmi:type="uml:Class" xmi:id="_xVT2-TyHEeapYOv580323A" name="F Bloqueada">
+      <generalization xmi:id="_xVT2-jyHEeapYOv580323A" general="_xVTPjzyHEeapYOv580323A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_xVT2-zyHEeapYOv580323A" name="F Defendida">
+      <generalization xmi:id="_xVT2_DyHEeapYOv580323A" general="_xVTPjzyHEeapYOv580323A"/>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_xVT2_TyHEeapYOv580323A" name="Participação em Jogo">
+    <packagedElement xmi:type="uml:Class" xmi:id="_xVT2_jyHEeapYOv580323A" name="Participação Coletiva"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_xVT2_zyHEeapYOv580323A" name="Participação Individual"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_xVT3ADyHEeapYOv580323A" name="Participação de Assistente">
+      <generalization xmi:id="_xVT3ATyHEeapYOv580323A" general="_xVT3CzyHEeapYOv580323A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_xVT3AjyHEeapYOv580323A" name="Participação de Atleta de Linha">
+      <generalization xmi:id="_xVT3AzyHEeapYOv580323A" general="_xVT2_zyHEeapYOv580323A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_xVT3BDyHEeapYOv580323A" name="Participação de Equipe de Arbitragem"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_xVT3BTyHEeapYOv580323A" name="Participação de Goleiro">
+      <generalization xmi:id="_xVT3BjyHEeapYOv580323A" general="_xVT2_zyHEeapYOv580323A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_xVT3BzyHEeapYOv580323A" name="Participação de Quarto Árbitro">
+      <generalization xmi:id="_xVT3CDyHEeapYOv580323A" general="_xVT3CzyHEeapYOv580323A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_xVT3CTyHEeapYOv580323A" name="Participação de Árbitro Principal">
+      <generalization xmi:id="_xVT3CjyHEeapYOv580323A" general="_xVT3CzyHEeapYOv580323A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_xVT3CzyHEeapYOv580323A" name="Participação de Árbrito"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_xVT3DDyHEeapYOv580323A" memberEnd="_xVT3DTyHEeapYOv580323A _xVT3EDyHEeapYOv580323A" navigableOwnedEnd="_xVT3DTyHEeapYOv580323A _xVT3EDyHEeapYOv580323A">
+      <name xsi:nil="true"/>
+      <ownedEnd xmi:id="_xVT3DTyHEeapYOv580323A" name="participação_coletiva" type="_xVT2_jyHEeapYOv580323A" association="_xVT3DDyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xVT3DjyHEeapYOv580323A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xVT3DzyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_xVT3EDyHEeapYOv580323A" name="participação_individual" type="_xVT2_zyHEeapYOv580323A" association="_xVT3DDyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xVT3ETyHEeapYOv580323A" value="2"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xVT3EjyHEeapYOv580323A" value="*"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_xVT3EzyHEeapYOv580323A" memberEnd="_xVT3FDyHEeapYOv580323A _xVT3FzyHEeapYOv580323A" navigableOwnedEnd="_xVT3FDyHEeapYOv580323A _xVT3FzyHEeapYOv580323A">
+      <name xsi:nil="true"/>
+      <ownedEnd xmi:id="_xVT3FDyHEeapYOv580323A" name="participação_de_equipe_de_arbitragem" type="_xVT3BDyHEeapYOv580323A" association="_xVT3EzyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xVT3FTyHEeapYOv580323A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xVT3FjyHEeapYOv580323A" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_xVT3FzyHEeapYOv580323A" name="participação_de_árbrito" type="_xVT3CzyHEeapYOv580323A" association="_xVT3EzyHEeapYOv580323A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xVT3GDyHEeapYOv580323A" value="4"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xVT3GTyHEeapYOv580323A" value="4"/>
+      </ownedEnd>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_xVT3GjyHEeapYOv580323A" name="Atleta">
+    <generalization xmi:id="_xVT3GzyHEeapYOv580323A" general="_xVT3IzyHEeapYOv580323A"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_xVT3HDyHEeapYOv580323A" name="Atleta de Linha">
+    <generalization xmi:id="_xVT3HTyHEeapYOv580323A" general="_xVT3GjyHEeapYOv580323A"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_xVT3HjyHEeapYOv580323A" name="Equipe"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_xVT3HzyHEeapYOv580323A" name="Equipe de Arbitragem"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_xVT3IDyHEeapYOv580323A" name="Goleiro">
+    <generalization xmi:id="_xVT3ITyHEeapYOv580323A" general="_xVT3GjyHEeapYOv580323A"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_xVT3IjyHEeapYOv580323A" name="Jogo"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_xVT3IzyHEeapYOv580323A" name="Pessoa"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_xVT3JDyHEeapYOv580323A" name="Árbitro"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_xVT3JTyHEeapYOv580323A" memberEnd="_xVT3JjyHEeapYOv580323A _xVT3KTyHEeapYOv580323A" navigableOwnedEnd="_xVT3JjyHEeapYOv580323A _xVT3KTyHEeapYOv580323A">
+    <name xsi:nil="true"/>
+    <ownedEnd xmi:id="_xVT3JjyHEeapYOv580323A" name="atleta" type="_xVT3GjyHEeapYOv580323A" association="_xVT3JTyHEeapYOv580323A">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xVT3JzyHEeapYOv580323A" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xVT3KDyHEeapYOv580323A" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_xVT3KTyHEeapYOv580323A" name="participação_individual" type="_xVT2_zyHEeapYOv580323A" association="_xVT3JTyHEeapYOv580323A">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xVT3KjyHEeapYOv580323A" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xVT3KzyHEeapYOv580323A" value="*"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_xVT3LDyHEeapYOv580323A" memberEnd="_xVT3LTyHEeapYOv580323A _xVT3MDyHEeapYOv580323A" navigableOwnedEnd="_xVT3LTyHEeapYOv580323A _xVT3MDyHEeapYOv580323A">
+    <name xsi:nil="true"/>
+    <ownedEnd xmi:id="_xVT3LTyHEeapYOv580323A" name="atleta" type="_xVT3GjyHEeapYOv580323A" association="_xVT3LDyHEeapYOv580323A">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xVT3LjyHEeapYOv580323A" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xVT3LzyHEeapYOv580323A" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_xVT3MDyHEeapYOv580323A" name="lance_individual" type="_xVTPjDyHEeapYOv580323A" association="_xVT3LDyHEeapYOv580323A">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xVT3MTyHEeapYOv580323A" value="-1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xVT3MjyHEeapYOv580323A" value="*"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_xVT3MzyHEeapYOv580323A" memberEnd="_xVT3NDyHEeapYOv580323A _xVT3NzyHEeapYOv580323A" navigableOwnedEnd="_xVT3NDyHEeapYOv580323A _xVT3NzyHEeapYOv580323A">
+    <name xsi:nil="true"/>
+    <ownedEnd xmi:id="_xVT3NDyHEeapYOv580323A" name="equipe" type="_xVT3HjyHEeapYOv580323A" association="_xVT3MzyHEeapYOv580323A">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xVT3NTyHEeapYOv580323A" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xVT3NjyHEeapYOv580323A" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_xVT3NzyHEeapYOv580323A" name="atleta" type="_xVT3GjyHEeapYOv580323A" association="_xVT3MzyHEeapYOv580323A">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xVT3ODyHEeapYOv580323A" value="7"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xVT3OTyHEeapYOv580323A" value="23"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_xVT3OjyHEeapYOv580323A" memberEnd="_xVT3OzyHEeapYOv580323A _xVT3PjyHEeapYOv580323A" navigableOwnedEnd="_xVT3OzyHEeapYOv580323A _xVT3PjyHEeapYOv580323A">
+    <name xsi:nil="true"/>
+    <ownedEnd xmi:id="_xVT3OzyHEeapYOv580323A" name="bloqueio" type="_xVT2gDyHEeapYOv580323A" association="_xVT3OjyHEeapYOv580323A">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xVT3PDyHEeapYOv580323A" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xVT3PTyHEeapYOv580323A" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_xVT3PjyHEeapYOv580323A" name="atleta_de_linha" type="_xVT3HDyHEeapYOv580323A" association="_xVT3OjyHEeapYOv580323A">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xVT3PzyHEeapYOv580323A" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xVT3QDyHEeapYOv580323A" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_xVT3QTyHEeapYOv580323A" memberEnd="_xVT3QjyHEeapYOv580323A _xVT3RTyHEeapYOv580323A" navigableOwnedEnd="_xVT3QjyHEeapYOv580323A _xVT3RTyHEeapYOv580323A">
+    <name xsi:nil="true"/>
+    <ownedEnd xmi:id="_xVT3QjyHEeapYOv580323A" name="equipe" type="_xVT3HjyHEeapYOv580323A" association="_xVT3QTyHEeapYOv580323A">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xVT3QzyHEeapYOv580323A" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xVT3RDyHEeapYOv580323A" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_xVT3RTyHEeapYOv580323A" name="participação_coletiva" type="_xVT2_jyHEeapYOv580323A" association="_xVT3QTyHEeapYOv580323A">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xVT3RjyHEeapYOv580323A" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xVT3RzyHEeapYOv580323A" value="*"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_xVT3SDyHEeapYOv580323A" memberEnd="_xVT3STyHEeapYOv580323A _xVT3TDyHEeapYOv580323A" navigableOwnedEnd="_xVT3STyHEeapYOv580323A _xVT3TDyHEeapYOv580323A">
+    <name xsi:nil="true"/>
+    <ownedEnd xmi:id="_xVT3STyHEeapYOv580323A" name="equipe_de_arbitragem" type="_xVT3HzyHEeapYOv580323A" association="_xVT3SDyHEeapYOv580323A">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xVT3SjyHEeapYOv580323A" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xVT3SzyHEeapYOv580323A" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_xVT3TDyHEeapYOv580323A" name="participação_de_equipe_de_arbitragem" type="_xVT3BDyHEeapYOv580323A" association="_xVT3SDyHEeapYOv580323A">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xVT3TTyHEeapYOv580323A" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xVT3TjyHEeapYOv580323A" value="*"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_xVT3TzyHEeapYOv580323A" memberEnd="_xVT3UDyHEeapYOv580323A _xVT3UzyHEeapYOv580323A" navigableOwnedEnd="_xVT3UDyHEeapYOv580323A _xVT3UzyHEeapYOv580323A">
+    <name xsi:nil="true"/>
+    <ownedEnd xmi:id="_xVT3UDyHEeapYOv580323A" name="equipe_de_arbitragem" type="_xVT3HzyHEeapYOv580323A" association="_xVT3TzyHEeapYOv580323A">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xVT3UTyHEeapYOv580323A" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xVT3UjyHEeapYOv580323A" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_xVT3UzyHEeapYOv580323A" name="árbitro" type="_xVT3JDyHEeapYOv580323A" association="_xVT3TzyHEeapYOv580323A">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xVT3VDyHEeapYOv580323A" value="4"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xVT3VTyHEeapYOv580323A" value="4"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_xVT3VjyHEeapYOv580323A" memberEnd="_xVT3VzyHEeapYOv580323A _xVT3WjyHEeapYOv580323A" navigableOwnedEnd="_xVT3VzyHEeapYOv580323A _xVT3WjyHEeapYOv580323A">
+    <name xsi:nil="true"/>
+    <ownedEnd xmi:id="_xVT3VzyHEeapYOv580323A" name="goleiro" type="_xVT3IDyHEeapYOv580323A" association="_xVT3VjyHEeapYOv580323A">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xVT3WDyHEeapYOv580323A" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xVT3WTyHEeapYOv580323A" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_xVT3WjyHEeapYOv580323A" name="recepção_irregular" type="_xVT25jyHEeapYOv580323A" association="_xVT3VjyHEeapYOv580323A">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xVT3WzyHEeapYOv580323A" value="-1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xVT3XDyHEeapYOv580323A" value="*"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_xVT3XTyHEeapYOv580323A" memberEnd="_xVT3XjyHEeapYOv580323A _xVT3YTyHEeapYOv580323A" navigableOwnedEnd="_xVT3XjyHEeapYOv580323A _xVT3YTyHEeapYOv580323A">
+    <name xsi:nil="true"/>
+    <ownedEnd xmi:id="_xVT3XjyHEeapYOv580323A" name="defesa" type="_xVT2jjyHEeapYOv580323A" association="_xVT3XTyHEeapYOv580323A">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xVT3XzyHEeapYOv580323A" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xVT3YDyHEeapYOv580323A" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_xVT3YTyHEeapYOv580323A" name="goleiro" type="_xVT3IDyHEeapYOv580323A" association="_xVT3XTyHEeapYOv580323A">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xVT3YjyHEeapYOv580323A" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xVT3YzyHEeapYOv580323A" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_xVT3ZDyHEeapYOv580323A" memberEnd="_xVT3ZTyHEeapYOv580323A _xVT3aDyHEeapYOv580323A" navigableOwnedEnd="_xVT3ZTyHEeapYOv580323A _xVT3aDyHEeapYOv580323A">
+    <name xsi:nil="true"/>
+    <ownedEnd xmi:id="_xVT3ZTyHEeapYOv580323A" name="jogo" type="_xVT3IjyHEeapYOv580323A" association="_xVT3ZDyHEeapYOv580323A">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xVT3ZjyHEeapYOv580323A" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xVT3ZzyHEeapYOv580323A" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_xVT3aDyHEeapYOv580323A" name="etapa_de_disputa" type="_xVSoXjyHEeapYOv580323A" association="_xVT3ZDyHEeapYOv580323A">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xVT3aTyHEeapYOv580323A" value="-1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xVT3ajyHEeapYOv580323A" value="*"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_xVT3azyHEeapYOv580323A" memberEnd="_xVT3bDyHEeapYOv580323A _xVT3bzyHEeapYOv580323A" navigableOwnedEnd="_xVT3bDyHEeapYOv580323A _xVT3bzyHEeapYOv580323A">
+    <name xsi:nil="true"/>
+    <ownedEnd xmi:id="_xVT3bDyHEeapYOv580323A" name="jogo" type="_xVT3IjyHEeapYOv580323A" association="_xVT3azyHEeapYOv580323A">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xVT3bTyHEeapYOv580323A" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xVT3bjyHEeapYOv580323A" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_xVT3bzyHEeapYOv580323A" name="participação_de_equipe_de_arbitragem" type="_xVT3BDyHEeapYOv580323A" association="_xVT3azyHEeapYOv580323A">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xVT3cDyHEeapYOv580323A" value="2"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xVT3cTyHEeapYOv580323A" value="*"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_xVT3cjyHEeapYOv580323A" memberEnd="_xVT3czyHEeapYOv580323A _xVT3djyHEeapYOv580323A" navigableOwnedEnd="_xVT3czyHEeapYOv580323A _xVT3djyHEeapYOv580323A">
+    <name xsi:nil="true"/>
+    <ownedEnd xmi:id="_xVT3czyHEeapYOv580323A" name="jogo" type="_xVT3IjyHEeapYOv580323A" association="_xVT3cjyHEeapYOv580323A">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xVT3dDyHEeapYOv580323A" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xVT3dTyHEeapYOv580323A" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_xVT3djyHEeapYOv580323A" name="participação_coletiva" type="_xVT2_jyHEeapYOv580323A" association="_xVT3cjyHEeapYOv580323A">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xVT3dzyHEeapYOv580323A" value="2"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xVT3eDyHEeapYOv580323A" value="2"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_xVT3eTyHEeapYOv580323A" memberEnd="_xVT3ejyHEeapYOv580323A _xVT3fTyHEeapYOv580323A" navigableOwnedEnd="_xVT3ejyHEeapYOv580323A _xVT3fTyHEeapYOv580323A">
+    <name xsi:nil="true"/>
+    <ownedEnd xmi:id="_xVT3ejyHEeapYOv580323A" name="árbitro" type="_xVT3JDyHEeapYOv580323A" association="_xVT3eTyHEeapYOv580323A">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xVT3ezyHEeapYOv580323A" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xVT3fDyHEeapYOv580323A" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_xVT3fTyHEeapYOv580323A" name="participação_de_árbrito" type="_xVT3CzyHEeapYOv580323A" association="_xVT3eTyHEeapYOv580323A">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xVT3fjyHEeapYOv580323A" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xVT3fzyHEeapYOv580323A" value="*"/>
+    </ownedEnd>
+  </packagedElement>
+</uml:Model>

@@ -31,17 +31,17 @@ class UmlMapperTest {
 
     static void main(String[] args){
         toUMLTest()
-        fromUMLTest()
+        //fromUMLTest()
     }
 
     static void fromUMLTest(){
-
+        //no implementation yet
     }
 
     static void toUMLTest(){
         println "======== UML: ECG TEST ===================="
-        File input = new File("ontouml2emf/src/test/resources/ecg.json")
-        File output = new File("ontouml2emf/src/test/resources/ecg.uml")
+        File input = new File("ontouml2emf/src/test/resources/json/ecg.json")
+        File output = new File("ontouml2emf/src/test/resources/uml/ecg.uml")
         OntoUMLSerializer s = new OntoUMLSerializer()
         OntoUMLModel ontomodel = s.fromJSONFile(input)
         def mapper = new UmlMapper()
@@ -53,8 +53,8 @@ class UmlMapperTest {
         println ""
 
         println "======== UML: FOOTBALL TEST ==============="
-        input = new File("ontouml2emf/src/test/resources/football.json")
-        output = new File("ontouml2emf/src/test/resources/football.uml")
+        input = new File("ontouml2emf/src/test/resources/json/football.json")
+        output = new File("ontouml2emf/src/test/resources/uml/football.uml")
         s = new OntoUMLSerializer()
         ontomodel = s.fromJSONFile(input)
         mapper = new UmlMapper()
@@ -66,8 +66,8 @@ class UmlMapperTest {
         println ""
 
         println "======== UML: BIO-ENTITY TEST ============="
-        input = new File("ontouml2emf/src/test/resources/bio-entity.json")
-        output = new File("ontouml2emf/src/test/resources/bio-entity.uml")
+        input = new File("ontouml2emf/src/test/resources/json/bio-entity.json")
+        output = new File("ontouml2emf/src/test/resources/uml/bio-entity.uml")
         s = new OntoUMLSerializer()
         ontomodel = s.fromJSONFile(input)
         mapper = new UmlMapper()
@@ -79,8 +79,8 @@ class UmlMapperTest {
         println ""
 
         println "======== UML: UFO-S TEST =================="
-        input = new File("ontouml2emf/src/test/resources/ufo-s.json")
-        output = new File("ontouml2emf/src/test/resources/ufo-s.uml")
+        input = new File("ontouml2emf/src/test/resources/json/ufo-s.json")
+        output = new File("ontouml2emf/src/test/resources/uml/ufo-s.uml")
         s = new OntoUMLSerializer()
         ontomodel = s.fromJSONFile(input)
         mapper = new UmlMapper()

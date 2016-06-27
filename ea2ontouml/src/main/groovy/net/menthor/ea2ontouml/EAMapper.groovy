@@ -56,18 +56,18 @@ class EAMapper implements EAVisitor {
 
     Object run(InputStream stream){
         log.clear()
-        log.appendLine("[EA] Starting translation...")
+        log.appendLine("Starting translation...")
         def result = visit(stream)
-        log.appendLine("[EA] Finished successfully!")
+        log.appendLine("Finished successfully!")
         return result
     }
 
     Object run(File file){
         log.clear()
-        log.appendLine("[EA] Starting translation...")
+        log.appendLine("Starting translation...")
         def result = visit(file)
         //printResult()
-        log.appendLine("[EA] Finished successfully!")
+        log.appendLine("Finished successfully!")
         return result
     }
 
@@ -90,7 +90,7 @@ class EAMapper implements EAVisitor {
     Object processEAClass(GPathResult eaClass, GPathResult eaParentPack) {
         def name = eaClass.@name.text()
         if (option.ignoreUnnamedTypes && (name == null || name.isEmpty())) {
-            log.appendLine("[EA] Class ignored {" + eaClass.'@xmi:id'.text() + "}. Reason: attribute 'name' was not found")
+            log.appendLine("Class ignored {" + eaClass.'@xmi:id'.text() + "}. Reason: attribute 'name' was not found")
             return null
         } else {
             def ontoContainer = packagesMap.get(eaParentPack)
@@ -104,7 +104,7 @@ class EAMapper implements EAVisitor {
         def name = eaClass.@name.text()
         if (option.ignoreUnnamedTypes && (name == null || name.isEmpty())) {
 
-            log.appendLine("[EA] Association-Class ignored {" + eaClass.'@xmi:id'.text() + "}. Reason: attribute 'name' was not found")
+            log.appendLine("Association-Class ignored {" + eaClass.'@xmi:id'.text() + "}. Reason: attribute 'name' was not found")
             return null
         } else {
             def ontoContainer = packagesMap.get(eaParentPack)
@@ -117,7 +117,7 @@ class EAMapper implements EAVisitor {
     Object processEADataType(GPathResult eaDataType, GPathResult eaParentPack) {
         def name = eaDataType.@name.text()
         if (option.ignoreUnnamedTypes && (name == null || name.isEmpty())) {
-            log.appendLine("[EA] DataType ignored {" + eaDataType.'@xmi:id'.text() + "}. Reason: attribute 'name' was not found")
+            log.appendLine("DataType ignored {" + eaDataType.'@xmi:id'.text() + "}. Reason: attribute 'name' was not found")
             return null
         } else {
             def ontoContainer = packagesMap.get(eaParentPack)
@@ -130,7 +130,7 @@ class EAMapper implements EAVisitor {
     Object processEAEnumeration(GPathResult eaEnum, GPathResult eaParentPack) {
         def name = eaEnum.@name.text()
         if (option.ignoreUnnamedTypes && (name == null || name.isEmpty())) {
-            log.appendLine("[EA] Enumeration ignored {" + eaEnum.'@xmi:id'.text() + "}. Reason: attribute 'name' was not found")
+            log.appendLine("Enumeration ignored {" + eaEnum.'@xmi:id'.text() + "}. Reason: attribute 'name' was not found")
             return null
         } else {
             def ontoContainer = packagesMap.get(eaParentPack)
@@ -153,10 +153,10 @@ class EAMapper implements EAVisitor {
         Object ontoGeneral = getClassifierById(generalId)
         Object ontoSpecific = classifierMap.get(eaSpecificType)
         if (ontoGeneral == null) {
-            log.appendLine("[EA] Generalization ignored {" + eaGen.'@xmi:id'.text() + "}. Reason: general classifier is missing")
+            log.appendLine("Generalization ignored {" + eaGen.'@xmi:id'.text() + "}. Reason: general classifier is missing")
             return null
         } else if(ontoSpecific==null){
-            log.appendLine("[EA] Generalization ignored {" + eaGen.'@xmi:id'.text() + "}. Reason: specific classifier is missing")
+            log.appendLine("Generalization ignored {" + eaGen.'@xmi:id'.text() + "}. Reason: specific classifier is missing")
             return null
         }else {
             Object ontoContainer = (ontoSpecific as MClassifier).getContainer()
@@ -184,7 +184,7 @@ class EAMapper implements EAVisitor {
     Object processEAEndPoint(GPathResult eaProp) {
         def ontoClassifier = getClassifierById(eaProp.type.'@xmi:idref'.text())
         if(ontoClassifier==null) {
-            log.appendLine("[EA] End-point ignored {"+eaProp.'@xmi:id'.text()+"}. Reason: classifier is missing at the end-type")
+            log.appendLine("End-point ignored {"+eaProp.'@xmi:id'.text()+"}. Reason: classifier is missing at the end-type")
             return null
         }else {
             OntoUMLRelationship ontoRel = getAssociationById(eaProp.@association.text())
@@ -208,7 +208,7 @@ class EAMapper implements EAVisitor {
     Object processEAAttribute(GPathResult eaAttr, GPathResult ownerType) {
         def owner = typesMap.get(ownerType)
         if(owner==null){
-            log.appendLine("[EA] Attribute ignored {"+ownerType.'@xmi:id'.text()+"}. Reason: owner type is missing")
+            log.appendLine("Attribute ignored {"+ownerType.'@xmi:id'.text()+"}. Reason: owner type is missing")
             return null
         }else {
             def id = eaAttr.type.'@xmi:idref'.text()
@@ -233,11 +233,11 @@ class EAMapper implements EAVisitor {
         try{
             upper = eaProp.upperValue.@value.text().toInteger()
         }catch(NumberFormatException e){
-            log.appendLine("[EA] Upper value not recognized {" + eaProp.'@xmi:id'.text() + "}. Reason: "+e.getLocalizedMessage()+". Solution:  value 1 was set by default")
+            log.appendLine("Upper value not recognized {" + eaProp.'@xmi:id'.text() + "}. Reason: "+e.getLocalizedMessage()+". Solution:  value 1 was set by default")
             upper = 1
         }
         if(option.set1ForNullMultiplicities && upper==null) {
-            log.appendLine("[EA] Upper value not recognized {" + eaProp.'@xmi:id'.text() + "}. Reason: attribute 'upperValue' was not found. Solution: value 1 was set by default")
+            log.appendLine("Upper value not recognized {" + eaProp.'@xmi:id'.text() + "}. Reason: attribute 'upperValue' was not found. Solution: value 1 was set by default")
             upper = 1
         }
         return upper
@@ -248,11 +248,11 @@ class EAMapper implements EAVisitor {
         try {
             lower = eaProp.lowerValue.@value.text().toInteger()
         }catch(NumberFormatException e){
-            log.appendLine("[EA] Lower value not recognized {" + eaProp.'@xmi:id'.text() + "}. Reason: "+e.getLocalizedMessage()+". Solution: value 1 was set by default")
+            log.appendLine("Lower value not recognized {" + eaProp.'@xmi:id'.text() + "}. Reason: "+e.getLocalizedMessage()+". Solution: value 1 was set by default")
             lower = 1
         }
         if(option.set1ForNullMultiplicities && lower==null) {
-            log.appendLine("[EA] Lower value not recognized {" + eaProp.'@xmi:id'.text() + "}. Reason: attribute 'lowerValue' was not found. Solution: value 1 was set by default")
+            log.appendLine("Lower value not recognized {" + eaProp.'@xmi:id'.text() + "}. Reason: attribute 'lowerValue' was not found. Solution: value 1 was set by default")
             lower = 1
         }
         return lower
@@ -267,7 +267,7 @@ class EAMapper implements EAVisitor {
         if(eaPrimitive.'@name'.text().compareToIgnoreCase('Double')==0) return PrimitiveStereotype.REAL
         if(eaPrimitive.'@name'.text().compareToIgnoreCase('char')==0) return PrimitiveStereotype.STRING
         if(eaPrimitive.'@name'.text().compareToIgnoreCase('boolean')==0) return PrimitiveStereotype.BOOLEAN
-        log.appendLine("[EA] Primitive ignored. Reason: There is no '"+eaPrimitive.'@name'.text()+"' primitive stereotype for matching in OntoUML")
+        log.appendLine("Primitive ignored. Reason: There is no '"+eaPrimitive.'@name'.text()+"' primitive stereotype for matching in OntoUML")
     }
 
     /** End visit:  Correlates EA stereotypes & values at last */
