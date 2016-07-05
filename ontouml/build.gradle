@@ -6,7 +6,7 @@ buildscript {
 }
 
 group = "net.menthor"
-version = "1.0"
+version = "1.0.1"
 description = "Menthor - OntoUML API"
 
 apply plugin: 'groovy'
@@ -29,6 +29,13 @@ dependencies {
 	compile "com.fasterxml.jackson.core:jackson-core:2.6.3"
 	compile "com.fasterxml.jackson.core:jackson-databind:2.6.3"
 	compile "com.fasterxml.jackson.core:jackson-annotations:2.6.3"
+}
+
+jar {
+	doFirst {
+		from { configurations.compile.collect { it.isDirectory() ? it : zipTree(it) } }
+	}
+	exclude 'META-INF/*.RSA', 'META-INF/*.SF','META-INF/*.DSA'
 }
 
 task wrapper(type: Wrapper) {

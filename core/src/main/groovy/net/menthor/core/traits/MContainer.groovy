@@ -341,12 +341,12 @@ trait MContainer implements MNamedElement {
         return MFactory.createGeneralization(source, target, this)
     }
 
-    MGeneralizationSet createGeneralizationSet(boolean isCovering, boolean isDisj, List<MGeneralization> gens){
-        return MFactory.createGeneralizationSet(isCovering, isDisj, gens, this)
+    MGeneralizationSet createGeneralizationSet(String name, boolean isCovering, boolean isDisj, List<MGeneralization> gens){
+        return MFactory.createGeneralizationSet(name, isCovering, isDisj, gens, this)
     }
 
-    MGeneralizationSet createPartition(List<MClassifier> specifics, MClassifier general){
-        return MFactory.createPartition(specifics, general, this)
+    MGeneralizationSet createPartition(String name, List<MClassifier> specifics, MClassifier general){
+        return MFactory.createPartition(name, specifics, general, this)
     }
 
     MConstraint createConstraint(MNamedElement context, String name, String condition){

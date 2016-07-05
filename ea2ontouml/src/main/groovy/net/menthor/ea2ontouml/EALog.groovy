@@ -35,7 +35,7 @@ class EALog {
     }
 
     def appendLine(String line){
-        text.append("[EA] "+line+"\n")
+        text.append("[info-ea] "+line+"\n")
         println line
     }
 

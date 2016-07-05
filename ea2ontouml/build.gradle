@@ -6,7 +6,7 @@ buildscript {
 }
 
 group = "net.menthor"
-version = "1.0"
+version = "1.0.1"
 description = "Menthor - OntoUML API with EA Support"
 
 apply plugin: 'groovy'
@@ -26,6 +26,13 @@ task fatJar(type: Jar) {
 dependencies {
 	compile project(":ontouml")
     compile "org.codehaus.groovy:groovy-all:2.4.6"
+}
+
+jar {
+	doFirst {
+		from { configurations.compile.collect { it.isDirectory() ? it : zipTree(it) } }
+	}
+	exclude 'META-INF/*.RSA', 'META-INF/*.SF','META-INF/*.DSA'
 }
 
 task wrapper(type: Wrapper) {

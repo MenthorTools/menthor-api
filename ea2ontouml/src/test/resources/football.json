@@ -12,9 +12,6 @@
                     "@class": "net.menthor.ontouml.OntoUMLClass",
                     "@id": 3,
                     "stereotype": "EVENT",
-                    "abstract_": false,
-                    "derived": false,
-                    "extensional": false,
                     "name": "1o Tempo",
                     "uniqueName": "1oTempo"
                 },
@@ -22,9 +19,6 @@
                     "@class": "net.menthor.ontouml.OntoUMLClass",
                     "@id": 4,
                     "stereotype": "EVENT",
-                    "abstract_": false,
-                    "derived": false,
-                    "extensional": false,
                     "name": "1o Tempo Prorroga\u00e7\u00e3o",
                     "uniqueName": "1oTempoProrrogao"
                 },
@@ -32,9 +26,6 @@
                     "@class": "net.menthor.ontouml.OntoUMLClass",
                     "@id": 5,
                     "stereotype": "EVENT",
-                    "abstract_": false,
-                    "derived": false,
-                    "extensional": false,
                     "name": "2o Tempo",
                     "uniqueName": "2oTempo"
                 },
@@ -42,9 +33,6 @@
                     "@class": "net.menthor.ontouml.OntoUMLClass",
                     "@id": 6,
                     "stereotype": "EVENT",
-                    "abstract_": false,
-                    "derived": false,
-                    "extensional": false,
                     "name": "2o Tempo Prorroga\u00e7\u00e3o",
                     "uniqueName": "2oTempoProrrogao"
                 },
@@ -52,9 +40,6 @@
                     "@class": "net.menthor.ontouml.OntoUMLClass",
                     "@id": 7,
                     "stereotype": "EVENT",
-                    "abstract_": false,
-                    "derived": false,
-                    "extensional": false,
                     "name": "Com Morte S\u00fabita",
                     "uniqueName": "ComMorteSbita"
                 },
@@ -62,9 +47,6 @@
                     "@class": "net.menthor.ontouml.OntoUMLClass",
                     "@id": 8,
                     "stereotype": "EVENT",
-                    "abstract_": false,
-                    "derived": false,
-                    "extensional": false,
                     "name": "Disputa por P\u00eanalti",
                     "uniqueName": "DisputaporPnalti"
                 },
@@ -79,10 +61,7 @@
                             "name": "disputa_por_p\u00eanalti",
                             "lowerBound": 1,
                             "upperBound": 1,
-                            "dependency": false,
-                            "derived": false,
-                            "uniqueName": "disputa_por_pnalti",
-                            "ordered": false
+                            "uniqueName": "disputa_por_pnalti"
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -91,19 +70,13 @@
                                 "@class": "net.menthor.ontouml.OntoUMLClass",
                                 "@id": 12,
                                 "stereotype": "EVENT",
-                                "abstract_": false,
-                                "derived": false,
-                                "extensional": false,
                                 "name": "Lance de Disputa por P\u00eanalti",
                                 "uniqueName": "LancedeDisputaporPnalti"
                             },
                             "name": "lance_de_disputa_por_p\u00eanalti",
                             "lowerBound": -1,
                             "upperBound": -1,
-                            "dependency": false,
-                            "derived": false,
-                            "uniqueName": "lance_de_disputa_por_pnalti",
-                            "ordered": false
+                            "uniqueName": "lance_de_disputa_por_pnalti"
                         }
                     ],
                     "stereotype": "SUBEVENTOF",
@@ -113,9 +86,6 @@
                     "@class": "net.menthor.ontouml.OntoUMLClass",
                     "@id": 13,
                     "stereotype": "EVENT",
-                    "abstract_": false,
-                    "derived": false,
-                    "extensional": false,
                     "name": "Etapa de Disputa",
                     "uniqueName": "EtapadeDisputa"
                 },
@@ -130,10 +100,7 @@
                             "name": "etapa_de_disputa",
                             "lowerBound": 1,
                             "upperBound": 1,
-                            "dependency": false,
-                            "derived": false,
-                            "uniqueName": "etapa_de_disputa2",
-                            "ordered": false
+                            "uniqueName": "etapa_de_disputa2"
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -142,19 +109,13 @@
                                 "@class": "net.menthor.ontouml.OntoUMLClass",
                                 "@id": 17,
                                 "stereotype": "EVENT",
-                                "abstract_": false,
-                                "derived": false,
-                                "extensional": false,
                                 "name": "Lance",
                                 "uniqueName": "Lance"
                             },
                             "name": "lance",
                             "lowerBound": 2,
                             "upperBound": -1,
-                            "dependency": false,
-                            "derived": false,
-                            "uniqueName": "lance",
-                            "ordered": false
+                            "uniqueName": "lance"
                         }
                     ],
                     "stereotype": "SUBEVENTOF",
@@ -165,9 +126,6 @@
                     "@class": "net.menthor.ontouml.OntoUMLClass",
                     "@id": 18,
                     "stereotype": "EVENT",
-                    "abstract_": false,
-                    "derived": false,
-                    "extensional": false,
                     "name": "Lance de Disputa Comum",
                     "uniqueName": "LancedeDisputaComum2"
                 },
@@ -182,19 +140,13 @@
                                 "@class": "net.menthor.ontouml.OntoUMLClass",
                                 "@id": 21,
                                 "stereotype": "EVENT",
-                                "abstract_": false,
-                                "derived": false,
-                                "extensional": false,
                                 "name": "Tempo Regulamentar",
                                 "uniqueName": "TempoRegulamentar"
                             },
                             "name": "tempo_regulamentar",
                             "lowerBound": 1,
                             "upperBound": 1,
-                            "dependency": false,
-                            "derived": false,
-                            "uniqueName": "tempo_regulamentar",
-                            "ordered": false
+                            "uniqueName": "tempo_regulamentar"
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -203,10 +155,7 @@
                             "name": "lance_de_disputa_comum",
                             "lowerBound": -1,
                             "upperBound": -1,
-                            "dependency": false,
-                            "derived": false,
-                            "uniqueName": "lance_de_disputa_comum",
-                            "ordered": false
+                            "uniqueName": "lance_de_disputa_comum"
                         }
                     ],
                     "stereotype": "SUBEVENTOF",
@@ -223,19 +172,13 @@
                                 "@class": "net.menthor.ontouml.OntoUMLClass",
                                 "@id": 25,
                                 "stereotype": "EVENT",
-                                "abstract_": false,
-                                "derived": false,
-                                "extensional": false,
                                 "name": "Prorroga\u00e7\u00e3o",
                                 "uniqueName": "Prorrogao"
                             },
                             "name": "prorroga\u00e7\u00e3o",
                             "lowerBound": 1,
                             "upperBound": 1,
-                            "dependency": false,
-                            "derived": false,
-                            "uniqueName": "prorrogao",
-                            "ordered": false
+                            "uniqueName": "prorrogao"
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -244,10 +187,7 @@
                             "name": "lance_de_disputa_comum",
                             "lowerBound": -1,
                             "upperBound": -1,
-                            "dependency": false,
-                            "derived": false,
-                            "uniqueName": "lance_de_disputa_comum2",
-                            "ordered": false
+                            "uniqueName": "lance_de_disputa_comum2"
                         }
                     ],
                     "stereotype": "SUBEVENTOF",
@@ -259,9 +199,6 @@
                     "@class": "net.menthor.ontouml.OntoUMLClass",
                     "@id": 27,
                     "stereotype": "EVENT",
-                    "abstract_": false,
-                    "derived": false,
-                    "extensional": false,
                     "name": "Sem Morte S\u00fabita",
                     "uniqueName": "SemMorteSbita"
                 },
@@ -344,9 +281,6 @@
                     "@class": "net.menthor.ontouml.OntoUMLClass",
                     "@id": 40,
                     "stereotype": "EVENT",
-                    "abstract_": false,
-                    "derived": false,
-                    "extensional": false,
                     "name": "Cart\u00e3o Amarelo",
                     "uniqueName": "CartoAmarelo"
                 },
@@ -354,9 +288,6 @@
                     "@class": "net.menthor.ontouml.OntoUMLClass",
                     "@id": 41,
                     "stereotype": "EVENT",
-                    "abstract_": false,
-                    "derived": false,
-                    "extensional": false,
                     "name": "Cart\u00e3o Vermelho",
                     "uniqueName": "CartoVermelho"
                 },
@@ -364,9 +295,6 @@
                     "@class": "net.menthor.ontouml.OntoUMLClass",
                     "@id": 42,
                     "stereotype": "EVENT",
-                    "abstract_": false,
-                    "derived": false,
-                    "extensional": false,
                     "name": "Falta Cometida",
                     "uniqueName": "FaltaCometida"
                 },
@@ -381,10 +309,7 @@
                             "name": "falta_cometida",
                             "lowerBound": 1,
                             "upperBound": 1,
-                            "dependency": false,
-                            "derived": false,
-                            "uniqueName": "falta_cometida",
-                            "ordered": false
+                            "uniqueName": "falta_cometida"
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -393,19 +318,13 @@
                                 "@class": "net.menthor.ontouml.OntoUMLClass",
                                 "@id": 46,
                                 "stereotype": "EVENT",
-                                "abstract_": false,
-                                "derived": false,
-                                "extensional": false,
                                 "name": "Puni\u00e7\u00e3o",
                                 "uniqueName": "Punio"
                             },
                             "name": "puni\u00e7\u00e3o",
                             "lowerBound": 1,
                             "upperBound": 1,
-                            "dependency": false,
-                            "derived": false,
-                            "uniqueName": "punio",
-                            "ordered": false
+                            "uniqueName": "punio"
                         }
                     ],
                     "stereotype": "CAUSATION",
@@ -415,9 +334,6 @@
                     "@class": "net.menthor.ontouml.OntoUMLClass",
                     "@id": 47,
                     "stereotype": "EVENT",
-                    "abstract_": false,
-                    "derived": false,
-                    "extensional": false,
                     "name": "Falta Complexa",
                     "uniqueName": "FaltaComplexa"
                 },
@@ -432,10 +348,7 @@
                             "name": "falta_complexa",
                             "lowerBound": 1,
                             "upperBound": 1,
-                            "dependency": false,
-                            "derived": false,
-                            "uniqueName": "falta_complexa",
-                            "ordered": false
+                            "uniqueName": "falta_complexa"
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -444,19 +357,13 @@
                                 "@class": "net.menthor.ontouml.OntoUMLClass",
                                 "@id": 51,
                                 "stereotype": "EVENT",
-                                "abstract_": false,
-                                "derived": false,
-                                "extensional": false,
                                 "name": "Falta Individual de Jogo",
                                 "uniqueName": "FaltaIndividualdeJogo"
                             },
                             "name": "falta_individual_de_jogo",
                             "lowerBound": 1,
                             "upperBound": 1,
-                            "dependency": false,
-                            "derived": false,
-                            "uniqueName": "falta_individual_de_jogo",
-                            "ordered": false
+                            "uniqueName": "falta_individual_de_jogo"
                         }
                     ],
                     "stereotype": "SUBEVENTOF",
@@ -473,10 +380,7 @@
                             "name": "falta_complexa",
                             "lowerBound": 1,
                             "upperBound": 1,
-                            "dependency": false,
-                            "derived": false,
-                            "uniqueName": "falta_complexa2",
-                            "ordered": false
+                            "uniqueName": "falta_complexa2"
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -485,19 +389,13 @@
                                 "@class": "net.menthor.ontouml.OntoUMLClass",
                                 "@id": 55,
                                 "stereotype": "EVENT",
-                                "abstract_": false,
-                                "derived": false,
-                                "extensional": false,
                                 "name": "Falta Recebida",
                                 "uniqueName": "FaltaRecebida"
                             },
                             "name": "falta_recebida",
                             "lowerBound": 2,
                             "upperBound": -1,
-                            "dependency": false,
-                            "derived": false,
-                            "uniqueName": "falta_recebida",
-                            "ordered": false
+                            "uniqueName": "falta_recebida"
                         }
                     ],
                     "stereotype": "SUBEVENTOF",
@@ -508,9 +406,6 @@
                     "@class": "net.menthor.ontouml.OntoUMLClass",
                     "@id": 56,
                     "stereotype": "EVENT",
-                    "abstract_": false,
-                    "derived": false,
-                    "extensional": false,
                     "name": "LJI Ataque",
                     "uniqueName": "LJIAtaque"
                 },
@@ -518,9 +413,6 @@
                     "@class": "net.menthor.ontouml.OntoUMLClass",
                     "@id": 57,
                     "stereotype": "EVENT",
-                    "abstract_": false,
-                    "derived": false,
-                    "extensional": false,
                     "name": "LJI Defesa",
                     "uniqueName": "LJIDefesa"
                 },
@@ -528,9 +420,6 @@
                     "@class": "net.menthor.ontouml.OntoUMLClass",
                     "@id": 58,
                     "stereotype": "EVENT",
-                    "abstract_": false,
-                    "derived": false,
-                    "extensional": false,
                     "name": "Lance Complexo",
                     "uniqueName": "LanceComplexo"
                 },
@@ -538,9 +427,6 @@
                     "@class": "net.menthor.ontouml.OntoUMLClass",
                     "@id": 59,
                     "stereotype": "EVENT",
-                    "abstract_": false,
-                    "derived": false,
-                    "extensional": false,
                     "name": "Lance Individual",
                     "uniqueName": "LanceIndividual"
                 },
@@ -548,9 +434,6 @@
                     "@class": "net.menthor.ontouml.OntoUMLClass",
                     "@id": 60,
                     "stereotype": "EVENT",
-                    "abstract_": false,
-                    "derived": false,
-                    "extensional": false,
                     "name": "Lance de Jogo Complexo",
                     "uniqueName": "LancedeJogoComplexo"
                 },
@@ -558,9 +441,6 @@
                     "@class": "net.menthor.ontouml.OntoUMLClass",
                     "@id": 61,
                     "stereotype": "EVENT",
-                    "abstract_": false,
-                    "derived": false,
-                    "extensional": false,
                     "name": "Participa\u00e7\u00e3o Individual em Falta",
                     "uniqueName": "ParticipaoIndividualemFalta"
                 },
@@ -602,9 +482,6 @@
                         "@class": "net.menthor.ontouml.OntoUMLClass",
                         "@id": 68,
                         "stereotype": "EVENT",
-                        "abstract_": false,
-                        "derived": false,
-                        "extensional": false,
                         "name": "Lance de Jogo Individual",
                         "uniqueName": "LancedeJogoIndividual2"
                     },
@@ -670,9 +547,6 @@
                     "@class": "net.menthor.ontouml.OntoUMLClass",
                     "@id": 78,
                     "stereotype": "EVENT",
-                    "abstract_": false,
-                    "derived": false,
-                    "extensional": false,
                     "name": "Assist\u00eancia",
                     "uniqueName": "Assistncia"
                 },
@@ -686,10 +560,7 @@
                             "classifier": 78,
                             "name": "assist\u00eancia",
                             "upperBound": 1,
-                            "dependency": false,
-                            "derived": false,
-                            "uniqueName": "assistncia",
-                            "ordered": false
+                            "uniqueName": "assistncia"
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -698,19 +569,13 @@
                                 "@class": "net.menthor.ontouml.OntoUMLClass",
                                 "@id": 82,
                                 "stereotype": "EVENT",
-                                "abstract_": false,
-                                "derived": false,
-                                "extensional": false,
                                 "name": "F Gol Convertido",
                                 "uniqueName": "FGolConvertido"
                             },
                             "name": "f_gol_convertido",
                             "lowerBound": 1,
                             "upperBound": 1,
-                            "dependency": false,
-                            "derived": false,
-                            "uniqueName": "f_gol_convertido",
-                            "ordered": false
+                            "uniqueName": "f_gol_convertido"
                         }
                     ],
                     "stereotype": "CAUSATION",
@@ -720,9 +585,6 @@
                     "@class": "net.menthor.ontouml.OntoUMLClass",
                     "@id": 83,
                     "stereotype": "EVENT",
-                    "abstract_": false,
-                    "derived": false,
-                    "extensional": false,
                     "name": "A\u00e7\u00e3o Ofensiva",
                     "uniqueName": "AoOfensiva"
                 },
@@ -730,9 +592,6 @@
                     "@class": "net.menthor.ontouml.OntoUMLClass",
                     "@id": 84,
                     "stereotype": "EVENT",
-                    "abstract_": false,
-                    "derived": false,
-                    "extensional": false,
                     "name": "A\u00e7\u00e3o com Bola Rolando",
                     "uniqueName": "AocomBolaRolando"
                 },
@@ -740,9 +599,6 @@
                     "@class": "net.menthor.ontouml.OntoUMLClass",
                     "@id": 85,
                     "stereotype": "EVENT",
-                    "abstract_": false,
-                    "derived": false,
-                    "extensional": false,
                     "name": "Bloqueio",
                     "uniqueName": "Bloqueio"
                 },
@@ -757,19 +613,13 @@
                                 "@class": "net.menthor.ontouml.OntoUMLClass",
                                 "@id": 88,
                                 "stereotype": "EVENT",
-                                "abstract_": false,
-                                "derived": false,
-                                "extensional": false,
                                 "name": "F Bloqueada",
                                 "uniqueName": "FBloqueada"
                             },
                             "name": "f_bloqueada",
                             "lowerBound": 1,
                             "upperBound": 1,
-                            "dependency": false,
-                            "derived": false,
-                            "uniqueName": "f_bloqueada",
-                            "ordered": false
+                            "uniqueName": "f_bloqueada"
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -778,10 +628,7 @@
                             "name": "bloqueio",
                             "lowerBound": 1,
                             "upperBound": 1,
-                            "dependency": false,
-                            "derived": false,
-                            "uniqueName": "bloqueio2",
-                            "ordered": false
+                            "uniqueName": "bloqueio2"
                         }
                     ],
                     "stereotype": "SUBEVENTOF",
@@ -791,9 +638,6 @@
                     "@class": "net.menthor.ontouml.OntoUMLClass",
                     "@id": 90,
                     "stereotype": "EVENT",
-                    "abstract_": false,
-                    "derived": false,
-                    "extensional": false,
                     "name": "Cobran\u00e7a",
                     "uniqueName": "Cobrana"
                 },
@@ -801,9 +645,6 @@
                     "@class": "net.menthor.ontouml.OntoUMLClass",
                     "@id": 91,
                     "stereotype": "EVENT",
-                    "abstract_": false,
-                    "derived": false,
-                    "extensional": false,
                     "name": "Cobran\u00e7a de Escanteio",
                     "uniqueName": "CobranadeEscanteio"
                 },
@@ -811,9 +652,6 @@
                     "@class": "net.menthor.ontouml.OntoUMLClass",
                     "@id": 92,
                     "stereotype": "EVENT",
-                    "abstract_": false,
-                    "derived": false,
-                    "extensional": false,
                     "name": "Cobran\u00e7a de Falta",
                     "uniqueName": "CobranadeFalta"
                 },
@@ -821,9 +659,6 @@
                     "@class": "net.menthor.ontouml.OntoUMLClass",
                     "@id": 93,
                     "stereotype": "EVENT",
-                    "abstract_": false,
-                    "derived": false,
-                    "extensional": false,
                     "name": "Cobran\u00e7a de Fora da \u00c1rea",
                     "uniqueName": "CobranadeForadarea"
                 },
@@ -831,9 +666,6 @@
                     "@class": "net.menthor.ontouml.OntoUMLClass",
                     "@id": 94,
                     "stereotype": "EVENT",
-                    "abstract_": false,
-                    "derived": false,
-                    "extensional": false,
                     "name": "Cobran\u00e7a de Lateral",
                     "uniqueName": "CobranadeLateral"
                 },
@@ -841,9 +673,6 @@
                     "@class": "net.menthor.ontouml.OntoUMLClass",
                     "@id": 95,
                     "stereotype": "EVENT",
-                    "abstract_": false,
-                    "derived": false,
-                    "extensional": false,
                     "name": "Cobran\u00e7a de P\u00eanalti em Jogo",
                     "uniqueName": "CobranadePnaltiemJogo"
                 },
@@ -851,9 +680,6 @@
                     "@class": "net.menthor.ontouml.OntoUMLClass",
                     "@id": 96,
                     "stereotype": "EVENT",
-                    "abstract_": false,
-                    "derived": false,
-                    "extensional": false,
                     "name": "Defesa",
                     "uniqueName": "Defesa"
                 },
@@ -868,19 +694,13 @@
                                 "@class": "net.menthor.ontouml.OntoUMLClass",
                                 "@id": 99,
                                 "stereotype": "EVENT",
-                                "abstract_": false,
-                                "derived": false,
-                                "extensional": false,
                                 "name": "F Defendida",
                                 "uniqueName": "FDefendida"
                             },
                             "name": "f_defendida",
                             "lowerBound": 1,
                             "upperBound": 1,
-                            "dependency": false,
-                            "derived": false,
-                            "uniqueName": "f_defendida",
-                            "ordered": false
+                            "uniqueName": "f_defendida"
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -889,10 +709,7 @@
                             "name": "defesa",
                             "lowerBound": 1,
                             "upperBound": 1,
-                            "dependency": false,
-                            "derived": false,
-                            "uniqueName": "defesa2",
-                            "ordered": false
+                            "uniqueName": "defesa2"
                         }
                     ],
                     "stereotype": "SUBEVENTOF",
@@ -902,9 +719,6 @@
                     "@class": "net.menthor.ontouml.OntoUMLClass",
                     "@id": 101,
                     "stereotype": "EVENT",
-                    "abstract_": false,
-                    "derived": false,
-                    "extensional": false,
                     "name": "Defesa Dif\u00edcil",
                     "uniqueName": "DefesaDifcil"
                 },
@@ -912,9 +726,6 @@
                     "@class": "net.menthor.ontouml.OntoUMLClass",
                     "@id": 102,
                     "stereotype": "EVENT",
-                    "abstract_": false,
-                    "derived": false,
-                    "extensional": false,
                     "name": "F Fora",
                     "uniqueName": "FFora"
                 },
@@ -923,9 +734,6 @@
                     "@class": "net.menthor.ontouml.OntoUMLClass",
                     "@id": 103,
                     "stereotype": "EVENT",
-                    "abstract_": false,
-                    "derived": false,
-                    "extensional": false,
                     "name": "F Gol Interceptado",
                     "uniqueName": "FGolInterceptado"
                 },
@@ -940,10 +748,7 @@
                             "name": "f_bloqueada",
                             "lowerBound": 1,
                             "upperBound": 1,
-                            "dependency": false,
-                            "derived": false,
-                            "uniqueName": "f_bloqueada2",
-                            "ordered": false
+                            "uniqueName": "f_bloqueada2"
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -952,10 +757,7 @@
                             "name": "f_gol_interceptado",
                             "lowerBound": 1,
                             "upperBound": 1,
-                            "dependency": false,
-                            "derived": false,
-                            "uniqueName": "f_gol_interceptado",
-                            "ordered": false
+                            "uniqueName": "f_gol_interceptado"
                         }
                     ],
                     "stereotype": "SUBEVENTOF",
@@ -972,10 +774,7 @@
                             "name": "f_defendida",
                             "lowerBound": 1,
                             "upperBound": 1,
-                            "dependency": false,
-                            "derived": false,
-                            "uniqueName": "f_defendida2",
-                            "ordered": false
+                            "uniqueName": "f_defendida2"
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -984,10 +783,7 @@
                             "name": "f_gol_interceptado",
                             "lowerBound": 1,
                             "upperBound": 1,
-                            "dependency": false,
-                            "derived": false,
-                            "uniqueName": "f_gol_interceptado2",
-                            "ordered": false
+                            "uniqueName": "f_gol_interceptado2"
                         }
                     ],
                     "stereotype": "SUBEVENTOF",
@@ -997,9 +793,6 @@
                     "@class": "net.menthor.ontouml.OntoUMLClass",
                     "@id": 110,
                     "stereotype": "EVENT",
-                    "abstract_": false,
-                    "derived": false,
-                    "extensional": false,
                     "name": "F Trave",
                     "uniqueName": "FTrave"
                 },
@@ -1007,9 +800,6 @@
                     "@class": "net.menthor.ontouml.OntoUMLClass",
                     "@id": 111,
                     "stereotype": "EVENT",
-                    "abstract_": false,
-                    "derived": false,
-                    "extensional": false,
                     "name": "Finaliza\u00e7ao",
                     "uniqueName": "Finalizaao"
                 },
@@ -1017,9 +807,6 @@
                     "@class": "net.menthor.ontouml.OntoUMLClass",
                     "@id": 112,
                     "stereotype": "EVENT",
-                    "abstract_": false,
-                    "derived": false,
-                    "extensional": false,
                     "name": "Gol Contra",
                     "uniqueName": "GolContra"
                 },
@@ -1028,9 +815,6 @@
                     "@class": "net.menthor.ontouml.OntoUMLClass",
                     "@id": 113,
                     "stereotype": "EVENT",
-                    "abstract_": false,
-                    "derived": false,
-                    "extensional": false,
                     "name": "P Comum",
                     "uniqueName": "PComum"
                 },
@@ -1045,19 +829,13 @@
                                 "@class": "net.menthor.ontouml.OntoUMLClass",
                                 "@id": 116,
                                 "stereotype": "EVENT",
-                                "abstract_": false,
-                                "derived": false,
-                                "extensional": false,
                                 "name": "Recuo Irregular",
                                 "uniqueName": "RecuoIrregular"
                             },
                             "name": "recuo_irregular",
                             "lowerBound": 1,
                             "upperBound": 1,
-                            "dependency": false,
-                            "derived": false,
-                            "uniqueName": "recuo_irregular",
-                            "ordered": false
+                            "uniqueName": "recuo_irregular"
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -1066,10 +844,7 @@
                             "name": "p_comum",
                             "lowerBound": -1,
                             "upperBound": -1,
-                            "dependency": false,
-                            "derived": false,
-                            "uniqueName": "p_comum",
-                            "ordered": false
+                            "uniqueName": "p_comum"
                         }
                     ],
                     "stereotype": "SUBEVENTOF",
@@ -1079,9 +854,6 @@
                     "@class": "net.menthor.ontouml.OntoUMLClass",
                     "@id": 118,
                     "stereotype": "EVENT",
-                    "abstract_": false,
-                    "derived": false,
-                    "extensional": false,
                     "name": "P Errado",
                     "uniqueName": "PErrado"
                 },
@@ -1089,9 +861,6 @@
                     "@class": "net.menthor.ontouml.OntoUMLClass",
                     "@id": 119,
                     "stereotype": "EVENT",
-                    "abstract_": false,
-                    "derived": false,
-                    "extensional": false,
                     "name": "P Impedido",
                     "uniqueName": "PImpedido"
                 },
@@ -1106,19 +875,13 @@
                                 "@class": "net.menthor.ontouml.OntoUMLClass",
                                 "@id": 122,
                                 "stereotype": "EVENT",
-                                "abstract_": false,
-                                "derived": false,
-                                "extensional": false,
                                 "name": "Impedimento",
                                 "uniqueName": "Impedimento"
                             },
                             "name": "impedimento",
                             "lowerBound": 1,
                             "upperBound": 1,
-                            "dependency": false,
-                            "derived": false,
-                            "uniqueName": "impedimento",
-                            "ordered": false
+                            "uniqueName": "impedimento"
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -1127,10 +890,7 @@
                             "name": "p_impedido",
                             "lowerBound": 1,
                             "upperBound": 1,
-                            "dependency": false,
-                            "derived": false,
-                            "uniqueName": "p_impedido",
-                            "ordered": false
+                            "uniqueName": "p_impedido"
                         }
                     ],
                     "stereotype": "SUBEVENTOF",
@@ -1140,9 +900,6 @@
                     "@class": "net.menthor.ontouml.OntoUMLClass",
                     "@id": 124,
                     "stereotype": "EVENT",
-                    "abstract_": false,
-                    "derived": false,
-                    "extensional": false,
                     "name": "Passe",
                     "uniqueName": "Passe"
                 },
@@ -1150,9 +907,6 @@
                     "@class": "net.menthor.ontouml.OntoUMLClass",
                     "@id": 125,
                     "stereotype": "EVENT",
-                    "abstract_": false,
-                    "derived": false,
-                    "extensional": false,
                     "name": "Recebimento de Passe",
                     "uniqueName": "RecebimentodePasse"
                 },
@@ -1160,9 +914,6 @@
                     "@class": "net.menthor.ontouml.OntoUMLClass",
                     "@id": 126,
                     "stereotype": "EVENT",
-                    "abstract_": false,
-                    "derived": false,
-                    "extensional": false,
                     "name": "Roubada de Bola",
                     "uniqueName": "RoubadadeBola"
                 },
@@ -1329,9 +1080,6 @@
                     "@class": "net.menthor.ontouml.OntoUMLClass",
                     "@id": 153,
                     "stereotype": "EVENT",
-                    "abstract_": false,
-                    "derived": false,
-                    "extensional": false,
                     "name": "Falta T\u00e9cnica",
                     "uniqueName": "FaltaTcnica"
                 },
@@ -1347,10 +1095,7 @@
                             "name": "impedimento",
                             "lowerBound": 1,
                             "upperBound": 1,
-                            "dependency": false,
-                            "derived": false,
-                            "uniqueName": "impedimento2",
-                            "ordered": false
+                            "uniqueName": "impedimento2"
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -1359,19 +1104,13 @@
                                 "@class": "net.menthor.ontouml.OntoUMLClass",
                                 "@id": 157,
                                 "stereotype": "EVENT",
-                                "abstract_": false,
-                                "derived": false,
-                                "extensional": false,
                                 "name": "Posi\u00e7\u00e3o de Impedimento",
                                 "uniqueName": "PosiodeImpedimento"
                             },
                             "name": "posi\u00e7\u00e3o_de_impedimento",
                             "lowerBound": 1,
                             "upperBound": 1,
-                            "dependency": false,
-                            "derived": false,
-                            "uniqueName": "posio_de_impedimento",
-                            "ordered": false
+                            "uniqueName": "posio_de_impedimento"
                         }
                     ],
                     "stereotype": "SUBEVENTOF",
@@ -1382,9 +1121,6 @@
                     "@class": "net.menthor.ontouml.OntoUMLClass",
                     "@id": 158,
                     "stereotype": "EVENT",
-                    "abstract_": false,
-                    "derived": false,
-                    "extensional": false,
                     "name": "Recep\u00e7\u00e3o Irregular",
                     "uniqueName": "RecepoIrregular"
                 },
@@ -1399,10 +1135,7 @@
                             "name": "recuo_irregular",
                             "lowerBound": 1,
                             "upperBound": 1,
-                            "dependency": false,
-                            "derived": false,
-                            "uniqueName": "recuo_irregular2",
-                            "ordered": false
+                            "uniqueName": "recuo_irregular2"
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -1411,10 +1144,7 @@
                             "name": "recep\u00e7\u00e3o_irregular",
                             "lowerBound": -1,
                             "upperBound": -1,
-                            "dependency": false,
-                            "derived": false,
-                            "uniqueName": "recepo_irregular2",
-                            "ordered": false
+                            "uniqueName": "recepo_irregular2"
                         }
                     ],
                     "stereotype": "SUBEVENTOF",
@@ -1491,9 +1221,6 @@
                     "@class": "net.menthor.ontouml.OntoUMLClass",
                     "@id": 172,
                     "stereotype": "EVENT",
-                    "abstract_": false,
-                    "derived": false,
-                    "extensional": false,
                     "name": "Participa\u00e7\u00e3o Coletiva",
                     "uniqueName": "ParticipaoColetiva"
                 },
@@ -1508,10 +1235,7 @@
                             "name": "participa\u00e7\u00e3o_coletiva",
                             "lowerBound": 1,
                             "upperBound": 1,
-                            "dependency": false,
-                            "derived": false,
-                            "uniqueName": "participao_coletiva3",
-                            "ordered": false
+                            "uniqueName": "participao_coletiva3"
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -1520,19 +1244,13 @@
                                 "@class": "net.menthor.ontouml.OntoUMLClass",
                                 "@id": 176,
                                 "stereotype": "EVENT",
-                                "abstract_": false,
-                                "derived": false,
-                                "extensional": false,
                                 "name": "Participa\u00e7\u00e3o Individual",
                                 "uniqueName": "ParticipaoIndividual"
                             },
                             "name": "participa\u00e7\u00e3o_individual",
                             "lowerBound": 2,
                             "upperBound": -1,
-                            "dependency": false,
-                            "derived": false,
-                            "uniqueName": "participao_individual2",
-                            "ordered": false
+                            "uniqueName": "participao_individual2"
                         }
                     ],
                     "stereotype": "SUBEVENTOF",
@@ -1543,9 +1261,6 @@
                     "@class": "net.menthor.ontouml.OntoUMLClass",
                     "@id": 177,
                     "stereotype": "EVENT",
-                    "abstract_": false,
-                    "derived": false,
-                    "extensional": false,
                     "name": "Participa\u00e7\u00e3o de Assistente",
                     "uniqueName": "ParticipaodeAssistente"
                 },
@@ -1553,9 +1268,6 @@
                     "@class": "net.menthor.ontouml.OntoUMLClass",
                     "@id": 178,
                     "stereotype": "EVENT",
-                    "abstract_": false,
-                    "derived": false,
-                    "extensional": false,
                     "name": "Participa\u00e7\u00e3o de Atleta de Linha",
                     "uniqueName": "ParticipaodeAtletadeLinha"
                 },
@@ -1563,9 +1275,6 @@
                     "@class": "net.menthor.ontouml.OntoUMLClass",
                     "@id": 179,
                     "stereotype": "EVENT",
-                    "abstract_": false,
-                    "derived": false,
-                    "extensional": false,
                     "name": "Participa\u00e7\u00e3o de Equipe de Arbitragem",
                     "uniqueName": "ParticipaodeEquipedeArbitragem"
                 },
@@ -1580,10 +1289,7 @@
                             "name": "participa\u00e7\u00e3o_de_equipe_de_arbitragem",
                             "lowerBound": 1,
                             "upperBound": 1,
-                            "dependency": false,
-                            "derived": false,
-                            "uniqueName": "participao_de_equipe_de_arbitragem3",
-                            "ordered": false
+                            "uniqueName": "participao_de_equipe_de_arbitragem3"
                         },
                         {
                             "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -1592,19 +1298,13 @@
                                 "@class": "net.menthor.ontouml.OntoUMLClass",
                                 "@id": 183,
                                 "stereotype": "EVENT",
-                                "abstract_": false,
-                                "derived": false,
-                                "extensional": false,
                                 "name": "Participa\u00e7\u00e3o de \u00c1rbrito",
                                 "uniqueName": "Participaoderbrito"
                             },
                             "name": "participa\u00e7\u00e3o_de_\u00e1rbrito",
                             "lowerBound": 4,
                             "upperBound": 4,
-                            "dependency": false,
-                            "derived": false,
-                            "uniqueName": "participao_de_rbrito2",
-                            "ordered": false
+                            "uniqueName": "participao_de_rbrito2"
                         }
                     ],
                     "stereotype": "SUBEVENTOF",
@@ -1614,9 +1314,6 @@
                     "@class": "net.menthor.ontouml.OntoUMLClass",
                     "@id": 184,
                     "stereotype": "EVENT",
-                    "abstract_": false,
-                    "derived": false,
-                    "extensional": false,
                     "name": "Participa\u00e7\u00e3o de Goleiro",
                     "uniqueName": "ParticipaodeGoleiro"
                 },
@@ -1624,9 +1321,6 @@
                     "@class": "net.menthor.ontouml.OntoUMLClass",
                     "@id": 185,
                     "stereotype": "EVENT",
-                    "abstract_": false,
-                    "derived": false,
-                    "extensional": false,
                     "name": "Participa\u00e7\u00e3o de Quarto \u00c1rbitro",
                     "uniqueName": "ParticipaodeQuartorbitro"
                 },
@@ -1634,9 +1328,6 @@
                     "@class": "net.menthor.ontouml.OntoUMLClass",
                     "@id": 186,
                     "stereotype": "EVENT",
-                    "abstract_": false,
-                    "derived": false,
-                    "extensional": false,
                     "name": "Participa\u00e7\u00e3o de \u00c1rbitro Principal",
                     "uniqueName": "ParticipaoderbitroPrincipal"
                 },
@@ -1678,9 +1369,6 @@
             "@class": "net.menthor.ontouml.OntoUMLClass",
             "@id": 192,
             "stereotype": "ROLE",
-            "abstract_": false,
-            "derived": false,
-            "extensional": false,
             "name": "Atleta",
             "uniqueName": "Atleta"
         },
@@ -1695,10 +1383,7 @@
                     "name": "atleta",
                     "lowerBound": 1,
                     "upperBound": 1,
-                    "dependency": false,
-                    "derived": false,
-                    "uniqueName": "atleta",
-                    "ordered": false
+                    "uniqueName": "atleta"
                 },
                 {
                     "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -1707,10 +1392,7 @@
                     "name": "participa\u00e7\u00e3o_individual",
                     "lowerBound": 1,
                     "upperBound": -1,
-                    "dependency": false,
-                    "derived": false,
-                    "uniqueName": "participao_individual",
-                    "ordered": false
+                    "uniqueName": "participao_individual"
                 }
             ],
             "stereotype": "PARTICIPATION",
@@ -1727,10 +1409,7 @@
                     "name": "atleta",
                     "lowerBound": 1,
                     "upperBound": 1,
-                    "dependency": false,
-                    "derived": false,
-                    "uniqueName": "atleta2",
-                    "ordered": false
+                    "uniqueName": "atleta2"
                 },
                 {
                     "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -1739,10 +1418,7 @@
                     "name": "lance_individual",
                     "lowerBound": -1,
                     "upperBound": -1,
-                    "dependency": false,
-                    "derived": false,
-                    "uniqueName": "lance_individual",
-                    "ordered": false
+                    "uniqueName": "lance_individual"
                 }
             ],
             "stereotype": "PARTICIPATION",
@@ -1759,19 +1435,13 @@
                         "@class": "net.menthor.ontouml.OntoUMLClass",
                         "@id": 201,
                         "stereotype": "COLLECTIVE",
-                        "abstract_": false,
-                        "derived": false,
-                        "extensional": false,
                         "name": "Equipe",
                         "uniqueName": "Equipe"
                     },
                     "name": "equipe",
                     "lowerBound": 1,
                     "upperBound": 1,
-                    "dependency": false,
-                    "derived": false,
-                    "uniqueName": "equipe",
-                    "ordered": false
+                    "uniqueName": "equipe"
                 },
                 {
                     "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -1780,10 +1450,7 @@
                     "name": "atleta",
                     "lowerBound": 7,
                     "upperBound": 23,
-                    "dependency": false,
-                    "derived": false,
-                    "uniqueName": "atleta3",
-                    "ordered": false
+                    "uniqueName": "atleta3"
                 }
             ],
             "stereotype": "MEMBEROF",
@@ -1797,9 +1464,6 @@
             "@class": "net.menthor.ontouml.OntoUMLClass",
             "@id": 203,
             "stereotype": "ROLE",
-            "abstract_": false,
-            "derived": false,
-            "extensional": false,
             "name": "Atleta de Linha",
             "uniqueName": "AtletadeLinha"
         },
@@ -1814,10 +1478,7 @@
                     "name": "bloqueio",
                     "lowerBound": 1,
                     "upperBound": 1,
-                    "dependency": false,
-                    "derived": false,
-                    "uniqueName": "bloqueio",
-                    "ordered": false
+                    "uniqueName": "bloqueio"
                 },
                 {
                     "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -1826,10 +1487,7 @@
                     "name": "atleta_de_linha",
                     "lowerBound": 1,
                     "upperBound": 1,
-                    "dependency": false,
-                    "derived": false,
-                    "uniqueName": "atleta_de_linha",
-                    "ordered": false
+                    "uniqueName": "atleta_de_linha"
                 }
             ],
             "stereotype": "PARTICIPATION",
@@ -1847,10 +1505,7 @@
                     "name": "equipe",
                     "lowerBound": 1,
                     "upperBound": 1,
-                    "dependency": false,
-                    "derived": false,
-                    "uniqueName": "equipe2",
-                    "ordered": false
+                    "uniqueName": "equipe2"
                 },
                 {
                     "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -1859,10 +1514,7 @@
                     "name": "participa\u00e7\u00e3o_coletiva",
                     "lowerBound": 1,
                     "upperBound": -1,
-                    "dependency": false,
-                    "derived": false,
-                    "uniqueName": "participao_coletiva",
-                    "ordered": false
+                    "uniqueName": "participao_coletiva"
                 }
             ],
             "stereotype": "PARTICIPATION",
@@ -1872,9 +1524,6 @@
             "@class": "net.menthor.ontouml.OntoUMLClass",
             "@id": 210,
             "stereotype": "COLLECTIVE",
-            "abstract_": false,
-            "derived": false,
-            "extensional": false,
             "name": "Equipe de Arbitragem",
             "uniqueName": "EquipedeArbitragem"
         },
@@ -1889,10 +1538,7 @@
                     "name": "equipe_de_arbitragem",
                     "lowerBound": 1,
                     "upperBound": 1,
-                    "dependency": false,
-                    "derived": false,
-                    "uniqueName": "equipe_de_arbitragem",
-                    "ordered": false
+                    "uniqueName": "equipe_de_arbitragem"
                 },
                 {
                     "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -1901,10 +1547,7 @@
                     "name": "participa\u00e7\u00e3o_de_equipe_de_arbitragem",
                     "lowerBound": 1,
                     "upperBound": -1,
-                    "dependency": false,
-                    "derived": false,
-                    "uniqueName": "participao_de_equipe_de_arbitragem",
-                    "ordered": false
+                    "uniqueName": "participao_de_equipe_de_arbitragem"
                 }
             ],
             "stereotype": "PARTICIPATION",
@@ -1921,10 +1564,7 @@
                     "name": "equipe_de_arbitragem",
                     "lowerBound": 1,
                     "upperBound": 1,
-                    "dependency": false,
-                    "derived": false,
-                    "uniqueName": "equipe_de_arbitragem2",
-                    "ordered": false
+                    "uniqueName": "equipe_de_arbitragem2"
                 },
                 {
                     "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -1933,19 +1573,13 @@
                         "@class": "net.menthor.ontouml.OntoUMLClass",
                         "@id": 217,
                         "stereotype": "ROLE",
-                        "abstract_": false,
-                        "derived": false,
-                        "extensional": false,
                         "name": "\u00c1rbitro",
                         "uniqueName": "rbitro"
                     },
                     "name": "\u00e1rbitro",
                     "lowerBound": 4,
                     "upperBound": 4,
-                    "dependency": false,
-                    "derived": false,
-                    "uniqueName": "rbitro2",
-                    "ordered": false
+                    "uniqueName": "rbitro2"
                 }
             ],
             "stereotype": "MEMBEROF",
@@ -1959,9 +1593,6 @@
             "@class": "net.menthor.ontouml.OntoUMLClass",
             "@id": 218,
             "stereotype": "ROLE",
-            "abstract_": false,
-            "derived": false,
-            "extensional": false,
             "name": "Goleiro",
             "uniqueName": "Goleiro"
         },
@@ -1976,10 +1607,7 @@
                     "name": "goleiro",
                     "lowerBound": 1,
                     "upperBound": 1,
-                    "dependency": false,
-                    "derived": false,
-                    "uniqueName": "goleiro",
-                    "ordered": false
+                    "uniqueName": "goleiro"
                 },
                 {
                     "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -1988,10 +1616,7 @@
                     "name": "recep\u00e7\u00e3o_irregular",
                     "lowerBound": -1,
                     "upperBound": -1,
-                    "dependency": false,
-                    "derived": false,
-                    "uniqueName": "recepo_irregular",
-                    "ordered": false
+                    "uniqueName": "recepo_irregular"
                 }
             ],
             "stereotype": "PARTICIPATION",
@@ -2008,10 +1633,7 @@
                     "name": "defesa",
                     "lowerBound": 1,
                     "upperBound": 1,
-                    "dependency": false,
-                    "derived": false,
-                    "uniqueName": "defesa",
-                    "ordered": false
+                    "uniqueName": "defesa"
                 },
                 {
                     "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -2020,10 +1642,7 @@
                     "name": "goleiro",
                     "lowerBound": 1,
                     "upperBound": 1,
-                    "dependency": false,
-                    "derived": false,
-                    "uniqueName": "goleiro2",
-                    "ordered": false
+                    "uniqueName": "goleiro2"
                 }
             ],
             "stereotype": "PARTICIPATION",
@@ -2033,9 +1652,6 @@
             "@class": "net.menthor.ontouml.OntoUMLClass",
             "@id": 225,
             "stereotype": "EVENT",
-            "abstract_": false,
-            "derived": false,
-            "extensional": false,
             "name": "Jogo",
             "uniqueName": "Jogo"
         },
@@ -2050,10 +1666,7 @@
                     "name": "jogo",
                     "lowerBound": 1,
                     "upperBound": 1,
-                    "dependency": false,
-                    "derived": false,
-                    "uniqueName": "jogo",
-                    "ordered": false
+                    "uniqueName": "jogo"
                 },
                 {
                     "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -2062,10 +1675,7 @@
                     "name": "etapa_de_disputa",
                     "lowerBound": -1,
                     "upperBound": -1,
-                    "dependency": false,
-                    "derived": false,
-                    "uniqueName": "etapa_de_disputa",
-                    "ordered": false
+                    "uniqueName": "etapa_de_disputa"
                 }
             ],
             "stereotype": "SUBEVENTOF",
@@ -2082,10 +1692,7 @@
                     "name": "jogo",
                     "lowerBound": 1,
                     "upperBound": 1,
-                    "dependency": false,
-                    "derived": false,
-                    "uniqueName": "jogo2",
-                    "ordered": false
+                    "uniqueName": "jogo2"
                 },
                 {
                     "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -2094,10 +1701,7 @@
                     "name": "participa\u00e7\u00e3o_de_equipe_de_arbitragem",
                     "lowerBound": 2,
                     "upperBound": -1,
-                    "dependency": false,
-                    "derived": false,
-                    "uniqueName": "participao_de_equipe_de_arbitragem2",
-                    "ordered": false
+                    "uniqueName": "participao_de_equipe_de_arbitragem2"
                 }
             ],
             "stereotype": "SUBEVENTOF",
@@ -2114,10 +1718,7 @@
                     "name": "jogo",
                     "lowerBound": 1,
                     "upperBound": 1,
-                    "dependency": false,
-                    "derived": false,
-                    "uniqueName": "jogo3",
-                    "ordered": false
+                    "uniqueName": "jogo3"
                 },
                 {
                     "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -2126,10 +1727,7 @@
                     "name": "participa\u00e7\u00e3o_coletiva",
                     "lowerBound": 2,
                     "upperBound": 2,
-                    "dependency": false,
-                    "derived": false,
-                    "uniqueName": "participao_coletiva2",
-                    "ordered": false
+                    "uniqueName": "participao_coletiva2"
                 }
             ],
             "stereotype": "SUBEVENTOF",
@@ -2139,9 +1737,6 @@
             "@class": "net.menthor.ontouml.OntoUMLClass",
             "@id": 235,
             "stereotype": "KIND",
-            "abstract_": false,
-            "derived": false,
-            "extensional": false,
             "name": "Pessoa",
             "uniqueName": "Pessoa"
         },
@@ -2157,10 +1752,7 @@
                     "name": "\u00e1rbitro",
                     "lowerBound": 1,
                     "upperBound": 1,
-                    "dependency": false,
-                    "derived": false,
-                    "uniqueName": "rbitro3",
-                    "ordered": false
+                    "uniqueName": "rbitro3"
                 },
                 {
                     "@class": "net.menthor.ontouml.OntoUMLEndPoint",
@@ -2169,10 +1761,7 @@
                     "name": "participa\u00e7\u00e3o_de_\u00e1rbrito",
                     "lowerBound": 1,
                     "upperBound": -1,
-                    "dependency": false,
-                    "derived": false,
-                    "uniqueName": "participao_de_rbrito",
-                    "ordered": false
+                    "uniqueName": "participao_de_rbrito"
                 }
             ],
             "stereotype": "PARTICIPATION",

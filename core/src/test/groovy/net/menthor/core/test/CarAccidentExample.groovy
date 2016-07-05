@@ -60,7 +60,7 @@ class CarAccidentExample {
 
         //create a partition between man and woman
         List genders = [man, woman]
-        m.createPartition(genders, person)
+        m.createPartition("gender", genders, person)
 
         //create phases
         MClass living = m.createClass("Living")
@@ -68,7 +68,7 @@ class CarAccidentExample {
 
         //create a partition between living and deceased
         List nature = [living, deceased]
-        m.createPartition(nature, person)
+        m.createPartition("nature", nature, person)
 
         //create roles
         MClass traveler = m.createClass("Traveler")

@@ -63,6 +63,7 @@ import java.text.Normalizer
  */
 class FromRefontoumlMapper implements EMFVisitor {
 
+    RefontoumlLog log = new RefontoumlLog()
     RefontoumlOptions options = new RefontoumlOptions()
 
     OntoUMLModel run(RefOntoUML.Package refmodel, RefontoumlOptions options){
@@ -71,41 +72,11 @@ class FromRefontoumlMapper implements EMFVisitor {
     }
 
     OntoUMLModel run(RefOntoUML.Package refmodel){
+        log.clear();
         setup(RefOntoUML.Package.class,RefOntoUML.Type.class, RefOntoUML.Class.class, RefOntoUML.DataType.class,
                 RefOntoUML.Association.class,RefOntoUML.Generalization.class, RefOntoUML.Property.class, RefOntoUML.GeneralizationSet.class)
-        return visit(refmodel)
-    }
-
-    def RefOntoUML.Package deserialize(InputStream is){
-        ResourceSet rset = new ResourceSetImpl();
-        rset.getResourceFactoryRegistry().getExtensionToFactoryMap().put("refontouml",new RefOntoUMLResourceFactoryImpl());
-        rset.getPackageRegistry().put(RefOntoUML.RefOntoUMLPackage.eNS_URI,	RefOntoUML.RefOntoUMLPackage.eINSTANCE);
-        Resource resource = rset.createResource(URI.createURI("fakeFile.refontouml"))
-        /**Load options that significantly improved the performance of loading EMF instances*/
-        Map<Object,Object> loadOptions = ((XMLResourceImpl)resource).getDefaultLoadOptions();
-        loadOptions.put(XMLResource.OPTION_USE_PARSER_POOL, new XMLParserPoolImpl());
-        loadOptions.put(XMLResource.OPTION_DEFER_IDREF_RESOLUTION, Boolean.TRUE);
-        try {
-            resource.load(is, loadOptions);
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-        return resource.getContents().get(0)
-    }
-
-    def RefOntoUML.Package deserialize(String path){
-        ResourceSet rset = new ResourceSetImpl();
-        rset.getResourceFactoryRegistry().getExtensionToFactoryMap().put("refontouml",new RefOntoUMLResourceFactoryImpl());
-        rset.getPackageRegistry().put(RefOntoUML.RefOntoUMLPackage.eNS_URI,	RefOntoUML.RefOntoUMLPackage.eINSTANCE);
-        File file = new File(path);
-        URI fileURI = URI.createFileURI(file.getAbsolutePath());
-        Resource resource = rset.createResource(fileURI);
-        /**Load options that significantly improved the performance of loading EMF instances*/
-        Map<Object,Object> loadOptions = ((XMLResourceImpl)resource).getDefaultLoadOptions();
-        loadOptions.put(XMLResource.OPTION_USE_PARSER_POOL, new XMLParserPoolImpl());
-        loadOptions.put(XMLResource.OPTION_DEFER_IDREF_RESOLUTION, Boolean.TRUE);
-        resource.load(loadOptions);
-        return resource.getContents().get(0);
+        def result = visit(refmodel)
+        return result
     }
 
     @Override
@@ -148,7 +119,10 @@ class FromRefontoumlMapper implements EMFVisitor {
             else if(refElem instanceof RefOntoUML.NonPerceivableQuality) cs = ClassStereotype.QUALITY
             else if(refElem instanceof RefOntoUML.NominalQuality) cs = ClassStereotype.QUALITY
             else{
-                if(options.assumeClassAsEvent) cs = ClassStereotype.EVENT
+                if(options.assumeClassAsEvent) {
+                    log.appendLine("Class '"+refElem.getName()+"' handled as <<event>>")
+                    cs = ClassStereotype.EVENT
+                }
             }
         }
         return cs

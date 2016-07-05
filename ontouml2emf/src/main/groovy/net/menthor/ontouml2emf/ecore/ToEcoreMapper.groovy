@@ -64,24 +64,6 @@ class ToEcoreMapper implements OntoUMLVisitor {
         return visit(ontomodel)
     }
 
-    Resource serialize (EPackage ecoremodel, String ecorepath){
-        ResourceSet ecoreResourceSet = new ResourceSetImpl()
-        URI ecoreURI = URI.createFileURI(ecorepath)
-        ecoreResourceSet.getResourceFactoryRegistry().getExtensionToFactoryMap().put("ecore", new XMLResourceFactoryImpl())
-        ecoreResourceSet.getPackageRegistry().put(EcorePackage.eNS_URI, EcorePackage.eINSTANCE)
-        // enable extended metadata
-        final ExtendedMetaData extendedMetaData = new BasicExtendedMetaData(ecoreResourceSet.getPackageRegistry())
-        ecoreResourceSet.getLoadOptions().put(XMLResource.OPTION_EXTENDED_META_DATA, extendedMetaData)
-        Resource resource = ecoreResourceSet.createResource(ecoreURI)
-        resource.getContents().add(ecoremodel)
-        try{
-            resource.save(Collections.emptyMap())
-        }catch(IOException e){
-            e.printStackTrace()
-        }
-        return resource;
-    }
-
     @Override
     Object visitModel(OntoUMLModel ontomodel) {
         def ecoreRootModel = theCoreFactory.createEPackage()

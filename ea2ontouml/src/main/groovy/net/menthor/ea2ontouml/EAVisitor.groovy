@@ -46,6 +46,7 @@ trait EAVisitor {
     Map <GPathResult, Object> primitiveMap = [:]
     Map <GPathResult, Object> typesMap = [:] //derived
     Map <GPathResult, Object> classifierMap = [:] //derived
+    Map <GPathResult, Object> diagramsMap = [:]
 
     void printResult(){
         packagesMap.keySet().each{ a -> println packagesMap.get(a) }
@@ -97,11 +98,13 @@ trait EAVisitor {
     abstract Object processEAEndPoint(GPathResult eaProp)
     abstract Object processEAAttribute(GPathResult eaAttr, GPathResult ownerType)
     abstract Object processEAPrimitive(GPathResult eaPrimitive)
+    abstract Object processEADiagram(GPathResult eaDiagram)
 
     Object visit(InputStream stream){
         def list = load(stream)
         visitEAPrimitives(list[1])
         visitEAModel(list[0])
+        visitEADiagrams(list[1])
         return model
     }
 
@@ -109,6 +112,7 @@ trait EAVisitor {
         def list = load(file)
         visitEAPrimitives(list[1])
         visitEAModel(list[0])
+        visitEADiagrams(list[1])
         return model
     }
 
@@ -160,6 +164,13 @@ trait EAVisitor {
                 def obj = processEAPrimitive(p)
                 primitiveMap.put(p, obj)
             }
+        }
+    }
+
+    void visitEADiagrams(GPathResult eaExtension){
+        eaExtension.diagrams.each{ d ->
+            def obj = processEADiagram(d)
+            diagramsMap.put(d, obj)
         }
     }
 

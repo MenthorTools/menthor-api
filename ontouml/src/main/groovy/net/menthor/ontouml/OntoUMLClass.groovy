@@ -42,10 +42,10 @@ import net.menthor.ontouml.values.ExistenceValue
 class OntoUMLClass extends MClass {
 
     protected ClassStereotype stereotype
-    protected boolean abstract_
-    protected boolean derived
+    protected Boolean abstract_
+    protected Boolean derived
     protected QualityStereotype qualityStereotype
-    protected boolean extensional
+    protected Boolean extensional
     protected ExistenceValue existenceValue
     protected ClassificationValue classificationValue
     protected OntoUMLGeneralizationSet generalizationSet
@@ -58,11 +58,11 @@ class OntoUMLClass extends MClass {
 
     QualityStereotype getQualityStereotype() { return qualityStereotype }
 
-    boolean isAbstract_(){ return abstract_ }
+    Boolean isAbstract_(){ return abstract_ }
 
-    boolean isDerived(){ return derived }
+    Boolean isDerived(){ return derived }
 
-    boolean isExtensional(){ return extensional }
+    Boolean isExtensional(){ return extensional }
 
     ExistenceValue getExistenceValue(){ return existenceValue }
 

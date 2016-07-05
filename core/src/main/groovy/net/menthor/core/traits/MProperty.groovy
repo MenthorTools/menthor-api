@@ -26,6 +26,7 @@ package net.menthor.core.traits
 import com.fasterxml.jackson.annotation.JsonIdentityInfo
 import com.fasterxml.jackson.annotation.JsonTypeInfo
 import com.fasterxml.jackson.annotation.ObjectIdGenerators
+import com.fasterxml.jackson.databind.annotation.JsonSerialize
 
 /**
  * Menthor CORE Property. Usually a association end-point or an attribute.
@@ -35,9 +36,9 @@ import com.fasterxml.jackson.annotation.ObjectIdGenerators
 @JsonIdentityInfo(generator=ObjectIdGenerators.IntSequenceGenerator.class, property="@id")
 trait MProperty implements MNamedElement {
 
-    protected boolean ordered
-    protected boolean dependency
-    protected boolean derived
+    protected Boolean ordered
+    protected Boolean dependency
+    protected Boolean derived
     protected int lowerBound
     protected int upperBound
 
@@ -45,11 +46,11 @@ trait MProperty implements MNamedElement {
     // Getters
     //=============================
 
-    boolean isOrdered(){ return ordered }
+    Boolean isOrdered(){ return ordered }
 
-    boolean isDerived(){ return derived }
+    Boolean isDerived(){ return derived }
 
-    boolean isDependency() { return dependency }
+    Boolean isDependency() { return dependency }
 
     int getLowerBound() { return lowerBound }
 

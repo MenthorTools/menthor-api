@@ -1,8 +1,4 @@
-package net.menthor.ontouml2emf.uml
-
-import net.menthor.ontouml.OntoUMLModel
-import org.eclipse.emf.ecore.resource.Resource
-import org.eclipse.uml2.uml.Package
+package net.menthor.ontouml2emf.refontouml
 
 /**
  * The MIT License (MIT)
@@ -30,23 +26,21 @@ import org.eclipse.uml2.uml.Package
 /**
  * @author John Guerson
  */
-class UmlMapper {
 
-    private ToUmlMapper tgtMapper = new ToUmlMapper()
+class RefontoumlLog {
 
-    Package toUML(OntoUMLModel m) {
-        return tgtMapper.run(m)
+    StringBuilder text = new StringBuilder()
+
+    def clear(){
+        text = new StringBuilder()
     }
 
-    Package toUML(OntoUMLModel m, boolean ignorePackages) {
-        return tgtMapper.run(m, ignorePackages)
+    def appendLine(String line){
+        text.append("[info-refontouml] "+line+"\n")
+        println line
     }
 
-    Resource serialize(Package umlmodel, String path){
-        return UmlUtil.serialize(umlmodel,path)
-    }
-
-    String asXMLString(Package umlmodel){
-        return UmlUtil.asXMLString(umlmodel)
+    def getText(){
+        return text.toString()
     }
 }

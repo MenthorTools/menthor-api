@@ -2,7 +2,6 @@
     "@class": "net.menthor.core.MPackage",
     "@id": 1,
     "name": "Car Accident",
-    "uniqueName": "CarAccident",
     "elements": [
         {
             "@class": "net.menthor.core.MClass",
@@ -52,7 +51,9 @@
                     "general": 2,
                     "specific": 6
                 }
-            ]
+            ],
+            "name": "gender",
+            "uniqueName": "gender"
         },
         8,
         9,
@@ -86,7 +87,9 @@
                     "general": 2,
                     "specific": 11
                 }
-            ]
+            ],
+            "name": "nature",
+            "uniqueName": "nature"
         },
         13,
         14,
@@ -158,21 +161,15 @@
                     "@class": "net.menthor.core.MEndPoint",
                     "@id": 26,
                     "classifier": 18,
-                    "upperBound": -1,
                     "lowerBound": 1,
-                    "derived": false,
-                    "dependency": false,
-                    "ordered": false
+                    "upperBound": -1
                 },
                 {
                     "@class": "net.menthor.core.MEndPoint",
                     "@id": 27,
                     "classifier": 4,
-                    "upperBound": 1,
                     "lowerBound": 1,
-                    "derived": false,
-                    "dependency": false,
-                    "ordered": false
+                    "upperBound": 1
                 }
             ],
             "name": "occurs",
@@ -186,21 +183,15 @@
                     "@class": "net.menthor.core.MEndPoint",
                     "@id": 29,
                     "classifier": 18,
-                    "upperBound": 1,
                     "lowerBound": 1,
-                    "derived": false,
-                    "dependency": false,
-                    "ordered": false
+                    "upperBound": 1
                 },
                 {
                     "@class": "net.menthor.core.MEndPoint",
                     "@id": 30,
                     "classifier": 16,
-                    "upperBound": -1,
                     "lowerBound": 1,
-                    "derived": false,
-                    "dependency": false,
-                    "ordered": false
+                    "upperBound": -1
                 }
             ],
             "name": "has",
@@ -214,21 +205,15 @@
                     "@class": "net.menthor.core.MEndPoint",
                     "@id": 32,
                     "classifier": 18,
-                    "upperBound": 1,
                     "lowerBound": 1,
-                    "derived": false,
-                    "dependency": false,
-                    "ordered": false
+                    "upperBound": 1
                 },
                 {
                     "@class": "net.menthor.core.MEndPoint",
                     "@id": 33,
                     "classifier": 17,
-                    "upperBound": -1,
                     "lowerBound": 1,
-                    "derived": false,
-                    "dependency": false,
-                    "ordered": false
+                    "upperBound": -1
                 }
             ],
             "name": "involves",
@@ -242,21 +227,15 @@
                     "@class": "net.menthor.core.MEndPoint",
                     "@id": 35,
                     "classifier": 20,
-                    "upperBound": 1,
                     "lowerBound": 1,
-                    "derived": false,
-                    "dependency": false,
-                    "ordered": false
+                    "upperBound": 1
                 },
                 {
                     "@class": "net.menthor.core.MEndPoint",
                     "@id": 36,
                     "classifier": 15,
-                    "upperBound": -1,
                     "lowerBound": 1,
-                    "derived": false,
-                    "dependency": false,
-                    "ordered": false
+                    "upperBound": -1
                 }
             ],
             "name": "has",
@@ -270,21 +249,15 @@
                     "@class": "net.menthor.core.MEndPoint",
                     "@id": 38,
                     "classifier": 20,
-                    "upperBound": 1,
                     "lowerBound": 1,
-                    "derived": false,
-                    "dependency": false,
-                    "ordered": false
+                    "upperBound": 1
                 },
                 {
                     "@class": "net.menthor.core.MEndPoint",
                     "@id": 39,
                     "classifier": 3,
-                    "upperBound": 1,
                     "lowerBound": 1,
-                    "derived": false,
-                    "dependency": false,
-                    "ordered": false
+                    "upperBound": 1
                 }
             ],
             "name": "made by",
@@ -298,21 +271,15 @@
                     "@class": "net.menthor.core.MEndPoint",
                     "@id": 41,
                     "classifier": 16,
-                    "upperBound": -1,
                     "lowerBound": 1,
-                    "derived": false,
-                    "dependency": false,
-                    "ordered": false
+                    "upperBound": -1
                 },
                 {
                     "@class": "net.menthor.core.MEndPoint",
                     "@id": 42,
                     "classifier": 4,
-                    "upperBound": 1,
                     "lowerBound": 1,
-                    "derived": false,
-                    "dependency": false,
-                    "ordered": false
+                    "upperBound": 1
                 }
             ],
             "name": "has been victim in",
@@ -326,24 +293,19 @@
                     "@class": "net.menthor.core.MEndPoint",
                     "@id": 44,
                     "classifier": 40,
-                    "upperBound": 1,
                     "lowerBound": 1,
-                    "derived": false,
-                    "dependency": false,
-                    "ordered": false
+                    "upperBound": 1
                 },
                 {
                     "@class": "net.menthor.core.MEndPoint",
                     "@id": 45,
                     "classifier": 18,
-                    "upperBound": 1,
                     "lowerBound": 1,
-                    "derived": false,
-                    "dependency": false,
-                    "ordered": false
+                    "upperBound": 1
                 }
             ],
             "uniqueName": "MRelationship"
         }
-    ]
+    ],
+    "uniqueName": "CarAccident"
 }

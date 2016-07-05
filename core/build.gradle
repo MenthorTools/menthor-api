@@ -6,7 +6,7 @@ buildscript {
 }
 
 group = "net.menthor"
-version = "1.0"
+version = "1.0.1"
 description = "Menthor - CORE API"
 
 apply plugin: 'groovy'
@@ -29,6 +29,13 @@ dependencies {
 
 repositories {
 	mavenCentral()
+}
+
+jar {
+	doFirst {
+		from { configurations.compile.collect { it.isDirectory() ? it : zipTree(it) } }
+	}
+	exclude 'META-INF/*.RSA', 'META-INF/*.SF','META-INF/*.DSA'
 }
 
 task wrapper(type: Wrapper) {

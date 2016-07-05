@@ -107,7 +107,6 @@ trait OntoUMLVisitor {
         runGeneralizationSets()
         runComments()
         finalizeVisit()
-        printResult()
         return model;
     }
 

@@ -39,17 +39,17 @@ import net.menthor.core.traits.MNamedElement
 @JsonIdentityInfo(generator=ObjectIdGenerators.IntSequenceGenerator.class, property="@id")
 class MGeneralizationSet implements MContainedElement, MNamedElement {
 
-    protected boolean covering
-    protected boolean disjoint
+    protected Boolean covering
+    protected Boolean disjoint
     protected List<MGeneralization> generalizations = []
 
     //=============================
     //Getters
     //=============================
 
-    boolean isCovering() { return covering }
+    Boolean isCovering() { return covering }
 
-    boolean isDisjoint() { return disjoint }
+    Boolean isDisjoint() { return disjoint }
 
     List<MGeneralization> getGeneralizations() { return generalizations }
 

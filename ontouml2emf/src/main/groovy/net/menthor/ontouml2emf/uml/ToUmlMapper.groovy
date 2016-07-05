@@ -76,21 +76,6 @@ class ToUmlMapper implements OntoUMLVisitor {
         return visit(ontomodel)
     }
 
-    def serialize(org.eclipse.uml2.uml.Package model, String path){
-        ResourceSet rset = new ResourceSetImpl()
-        rset.getResourceFactoryRegistry().getExtensionToFactoryMap().put(UMLResource.FILE_EXTENSION, UMLResource.Factory.INSTANCE)
-        rset.getPackageRegistry().put(UMLPackage.eNS_URI, UMLPackage.eINSTANCE)
-        URI fileURI = URI.createFileURI(path)
-        final Resource resource = rset.createResource(fileURI)
-        resource.getContents().add(model)
-        try{
-            resource.save(Collections.emptyMap())
-        }catch(IOException e){
-            e.printStackTrace()
-        }
-        return resource
-    }
-
     @Override
     Object visitModel(OntoUMLModel ontomodel) {
         def umlmodel = theUmlFactory.createModel()

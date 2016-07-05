@@ -7,9 +7,6 @@
             "@class": "net.menthor.ontouml.OntoUMLClass",
             "@id": 2,
             "stereotype": "KIND",
-            "abstract_": false,
-            "derived": false,
-            "extensional": false,
             "name": "Person",
             "uniqueName": "Person"
         },
@@ -17,9 +14,6 @@
             "@class": "net.menthor.ontouml.OntoUMLClass",
             "@id": 3,
             "stereotype": "KIND",
-            "abstract_": false,
-            "derived": false,
-            "extensional": false,
             "name": "Vehicle",
             "uniqueName": "Vehicle"
         },
@@ -27,9 +21,6 @@
             "@class": "net.menthor.ontouml.OntoUMLClass",
             "@id": 4,
             "stereotype": "KIND",
-            "abstract_": false,
-            "derived": false,
-            "extensional": false,
             "name": "Roadway",
             "uniqueName": "Roadway"
         },
@@ -37,9 +28,6 @@
             "@class": "net.menthor.ontouml.OntoUMLClass",
             "@id": 5,
             "stereotype": "SUBKIND",
-            "abstract_": false,
-            "derived": false,
-            "extensional": false,
             "name": "Man",
             "uniqueName": "Man"
         },
@@ -47,9 +35,6 @@
             "@class": "net.menthor.ontouml.OntoUMLClass",
             "@id": 6,
             "stereotype": "SUBKIND",
-            "abstract_": false,
-            "derived": false,
-            "extensional": false,
             "name": "Woman",
             "uniqueName": "Woman"
         },
@@ -81,9 +66,6 @@
             "@class": "net.menthor.ontouml.OntoUMLClass",
             "@id": 10,
             "stereotype": "PHASE",
-            "abstract_": false,
-            "derived": false,
-            "extensional": false,
             "name": "Living",
             "uniqueName": "Living"
         },
@@ -91,9 +73,6 @@
             "@class": "net.menthor.ontouml.OntoUMLClass",
             "@id": 11,
             "stereotype": "PHASE",
-            "abstract_": false,
-            "derived": false,
-            "extensional": false,
             "name": "Deceased",
             "uniqueName": "Deceased"
         },
@@ -125,9 +104,6 @@
             "@class": "net.menthor.ontouml.OntoUMLClass",
             "@id": 15,
             "stereotype": "ROLE",
-            "abstract_": false,
-            "derived": false,
-            "extensional": false,
             "name": "Traveler",
             "uniqueName": "Traveler"
         },
@@ -135,9 +111,6 @@
             "@class": "net.menthor.ontouml.OntoUMLClass",
             "@id": 16,
             "stereotype": "ROLE",
-            "abstract_": false,
-            "derived": false,
-            "extensional": false,
             "name": "Victim",
             "uniqueName": "Victim"
         },
@@ -145,9 +118,6 @@
             "@class": "net.menthor.ontouml.OntoUMLClass",
             "@id": 17,
             "stereotype": "ROLE",
-            "abstract_": false,
-            "derived": false,
-            "extensional": false,
             "name": "CrashedVehicle",
             "uniqueName": "CrashedVehicle"
         },
@@ -155,9 +125,6 @@
             "@class": "net.menthor.ontouml.OntoUMLClass",
             "@id": 18,
             "stereotype": "RELATOR",
-            "abstract_": false,
-            "derived": false,
-            "extensional": false,
             "name": "Traffic Accident",
             "uniqueName": "TrafficAccident"
         },
@@ -165,9 +132,6 @@
             "@class": "net.menthor.ontouml.OntoUMLClass",
             "@id": 19,
             "stereotype": "RELATOR",
-            "abstract_": false,
-            "derived": false,
-            "extensional": false,
             "name": "Rear End Collision",
             "uniqueName": "RearEndCollision"
         },
@@ -175,9 +139,6 @@
             "@class": "net.menthor.ontouml.OntoUMLClass",
             "@id": 20,
             "stereotype": "RELATOR",
-            "abstract_": false,
-            "derived": false,
-            "extensional": false,
             "name": "Travel",
             "uniqueName": "Travel"
         },
@@ -214,24 +175,19 @@
                     "@id": 26,
                     "classifier": 18,
                     "name": "traffic_accident",
-                    "derived": false,
-                    "dependency": false,
                     "lowerBound": 1,
                     "upperBound": -1,
-                    "uniqueName": "traffic_accident",
-                    "ordered": false
+                    "uniqueName": "traffic_accident"
                 },
                 {
                     "@class": "net.menthor.ontouml.OntoUMLEndPoint",
                     "@id": 27,
                     "classifier": 4,
                     "name": "roadway",
-                    "derived": false,
-                    "dependency": true,
                     "lowerBound": 1,
                     "upperBound": 1,
-                    "uniqueName": "roadway",
-                    "ordered": false
+                    "dependency": true,
+                    "uniqueName": "roadway"
                 }
             ],
             "stereotype": "MEDIATION",
@@ -248,24 +204,19 @@
                     "@id": 29,
                     "classifier": 18,
                     "name": "traffic_accident",
-                    "derived": false,
-                    "dependency": false,
                     "lowerBound": 1,
                     "upperBound": 1,
-                    "uniqueName": "traffic_accident2",
-                    "ordered": false
+                    "uniqueName": "traffic_accident2"
                 },
                 {
                     "@class": "net.menthor.ontouml.OntoUMLEndPoint",
                     "@id": 30,
                     "classifier": 16,
                     "name": "victim",
-                    "derived": false,
-                    "dependency": true,
                     "lowerBound": 1,
                     "upperBound": -1,
-                    "uniqueName": "victim",
-                    "ordered": false
+                    "dependency": true,
+                    "uniqueName": "victim"
                 }
             ],
             "stereotype": "MEDIATION",
@@ -282,24 +233,19 @@
                     "@id": 32,
                     "classifier": 18,
                     "name": "traffic_accident",
-                    "derived": false,
-                    "dependency": false,
                     "lowerBound": 1,
                     "upperBound": 1,
-                    "uniqueName": "traffic_accident3",
-                    "ordered": false
+                    "uniqueName": "traffic_accident3"
                 },
                 {
                     "@class": "net.menthor.ontouml.OntoUMLEndPoint",
                     "@id": 33,
                     "classifier": 17,
                     "name": "crashedvehicle",
-                    "derived": false,
-                    "dependency": true,
                     "lowerBound": 1,
                     "upperBound": -1,
-                    "uniqueName": "crashedvehicle",
-                    "ordered": false
+                    "dependency": true,
+                    "uniqueName": "crashedvehicle"
                 }
             ],
             "stereotype": "MEDIATION",
@@ -316,24 +262,19 @@
                     "@id": 35,
                     "classifier": 20,
                     "name": "travel",
-                    "derived": false,
-                    "dependency": false,
                     "lowerBound": 1,
                     "upperBound": 1,
-                    "uniqueName": "travel",
-                    "ordered": false
+                    "uniqueName": "travel"
                 },
                 {
                     "@class": "net.menthor.ontouml.OntoUMLEndPoint",
                     "@id": 36,
                     "classifier": 15,
                     "name": "traveler",
-                    "derived": false,
-                    "dependency": true,
                     "lowerBound": 1,
                     "upperBound": -1,
-                    "uniqueName": "traveler",
-                    "ordered": false
+                    "dependency": true,
+                    "uniqueName": "traveler"
                 }
             ],
             "stereotype": "MEDIATION",
@@ -350,24 +291,19 @@
                     "@id": 38,
                     "classifier": 20,
                     "name": "travel",
-                    "derived": false,
-                    "dependency": false,
                     "lowerBound": 1,
                     "upperBound": 1,
-                    "uniqueName": "travel2",
-                    "ordered": false
+                    "uniqueName": "travel2"
                 },
                 {
                     "@class": "net.menthor.ontouml.OntoUMLEndPoint",
                     "@id": 39,
                     "classifier": 3,
                     "name": "vehicle",
-                    "derived": false,
-                    "dependency": true,
                     "lowerBound": 1,
                     "upperBound": 1,
-                    "uniqueName": "vehicle",
-                    "ordered": false
+                    "dependency": true,
+                    "uniqueName": "vehicle"
                 }
             ],
             "stereotype": "MEDIATION",
@@ -384,24 +320,18 @@
                     "@id": 41,
                     "classifier": 16,
                     "name": "victim",
-                    "derived": false,
-                    "dependency": false,
                     "lowerBound": 1,
                     "upperBound": -1,
-                    "uniqueName": "victim2",
-                    "ordered": false
+                    "uniqueName": "victim2"
                 },
                 {
                     "@class": "net.menthor.ontouml.OntoUMLEndPoint",
                     "@id": 42,
                     "classifier": 4,
                     "name": "roadway",
-                    "derived": false,
-                    "dependency": false,
                     "lowerBound": 1,
                     "upperBound": 1,
-                    "uniqueName": "roadway2",
-                    "ordered": false
+                    "uniqueName": "roadway2"
                 }
             ],
             "stereotype": "MATERIAL",
@@ -417,24 +347,20 @@
                     "@id": 44,
                     "classifier": 40,
                     "name": "has_been_victim_in",
-                    "derived": false,
-                    "dependency": true,
                     "lowerBound": 1,
                     "upperBound": -1,
-                    "uniqueName": "has_been_victim_in",
-                    "ordered": false
+                    "dependency": true,
+                    "uniqueName": "has_been_victim_in"
                 },
                 {
                     "@class": "net.menthor.ontouml.OntoUMLEndPoint",
                     "@id": 45,
                     "classifier": 18,
                     "name": "traffic_accident",
-                    "derived": false,
-                    "dependency": true,
                     "lowerBound": 1,
                     "upperBound": -1,
-                    "uniqueName": "traffic_accident4",
-                    "ordered": false
+                    "dependency": true,
+                    "uniqueName": "traffic_accident4"
                 }
             ],
             "stereotype": "DERIVATION",

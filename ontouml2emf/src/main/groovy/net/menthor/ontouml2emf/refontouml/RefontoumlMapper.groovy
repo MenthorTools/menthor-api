@@ -34,33 +34,46 @@ class RefontoumlMapper {
     private FromRefontoumlMapper sourceMapper = new FromRefontoumlMapper()
     private ToRefontoumlMapper targetMapper = new ToRefontoumlMapper()
 
+    RefontoumlLog log = new RefontoumlLog()
+
+    String getLogText(){ log.getText() }
+
     //from
 
     OntoUMLModel fromRefOntoUML(RefOntoUML.Package refmodel){
-        return sourceMapper.run(refmodel)
+        def result = sourceMapper.run(refmodel)
+        log = sourceMapper.getLog()
+        return result
     }
+
     OntoUMLModel fromRefOntoUML(RefOntoUML.Package refmodel, RefontoumlOptions options){
-        return sourceMapper.run(refmodel, options)
+        def result = sourceMapper.run(refmodel, options)
+        log = sourceMapper.getLog()
+        return result
     }
 
     //to
 
     RefOntoUML.Package toRefOntoUML(OntoUMLModel m){
-        return targetMapper.run(m)
+        def result = targetMapper.run(m)
+        return result
     }
     RefOntoUML.Package toRefOntoUML(OntoUMLModel m, RefontoumlOptions options){
-        return targetMapper.run(m, options)
+        def result = targetMapper.run(m, options)
+        return result;
     }
 
-    //serialization
+    String asXMLString(RefOntoUML.Package model){
+        return RefontoumlUtil.asXMLString(model)
+    }
 
     void serialize(RefOntoUML.Package model, String path){
-        targetMapper.serialize(model,path)
+        RefontoumlUtil.serialize(model,path)
     }
     RefOntoUML.Package deserialize(InputStream is){
-       return sourceMapper.deserialize(is)
+       return RefontoumlUtil.deserialize(is)
     }
     RefOntoUML.Package deserialize(String path){
-        return sourceMapper.deserialize(path)
+        return RefontoumlUtil.deserialize(path)
     }
 }

@@ -25,6 +25,7 @@ package net.menthor.ontouml2emf.ecore
 
 import net.menthor.ontouml.*
 import org.eclipse.emf.ecore.*
+import org.eclipse.emf.ecore.resource.Resource
 
 /**
  * @author John Guerson
@@ -41,7 +42,11 @@ class EcoreMapper {
         return tgtMapper.run(m, ignorePackages)
     }
 
-    void serialize(EPackage ecoremodel, String path){
-        tgtMapper.serialize(ecoremodel,path)
+    Resource serialize(EPackage ecoremodel, String path){
+        return EcoreUtil.serialize(ecoremodel,path)
+    }
+
+    String asXMLString(EPackage ecoremodel){
+        return EcoreUtil.asXMLString(ecoremodel)
     }
 }

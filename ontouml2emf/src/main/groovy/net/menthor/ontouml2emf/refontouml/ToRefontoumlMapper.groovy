@@ -43,6 +43,7 @@ import org.eclipse.emf.common.util.URI
 
 import RefOntoUML.RefOntoUMLFactory
 import RefOntoUML.util.RefOntoUMLResourceFactoryImpl
+import org.eclipse.emf.ecore.xmi.XMLResource
 
 /**
  * @author John Guerson
@@ -60,21 +61,6 @@ class ToRefontoumlMapper implements OntoUMLVisitor {
 
     Object run(OntoUMLModel ontomodel) {
         return visit(ontomodel)
-    }
-
-    def serialize(RefOntoUML.Package model, String path){
-        ResourceSet rset = new ResourceSetImpl()
-        rset.getResourceFactoryRegistry().getExtensionToFactoryMap().put("refontouml",new RefOntoUMLResourceFactoryImpl())
-        rset.getPackageRegistry().put(RefOntoUML.RefOntoUMLPackage.eNS_URI,	RefOntoUML.RefOntoUMLPackage.eINSTANCE)
-        URI fileURI = URI.createFileURI(path)
-        final Resource resource = rset.createResource(fileURI)
-        resource.getContents().add(model)
-        try{
-            resource.save(Collections.emptyMap())
-        }catch(IOException e){
-            e.printStackTrace()
-        }
-        return resource
     }
 
     @Override

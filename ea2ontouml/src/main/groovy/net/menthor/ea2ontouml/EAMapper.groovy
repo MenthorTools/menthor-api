@@ -44,6 +44,8 @@ class EAMapper implements EAVisitor {
 
     EAMapper(){}
 
+    String getLogText(){ log.getText() }
+
     Object run(File file, EAOptions opt){
         this.option = opt
         run(file)
@@ -56,18 +58,25 @@ class EAMapper implements EAVisitor {
 
     Object run(InputStream stream){
         log.clear()
-        log.appendLine("Starting translation...")
         def result = visit(stream)
-        log.appendLine("Finished successfully!")
         return result
     }
 
     Object run(File file){
         log.clear()
-        log.appendLine("Starting translation...")
         def result = visit(file)
         //printResult()
-        log.appendLine("Finished successfully!")
+        return result
+    }
+
+    /** returns a map containing diagram ID vs NAME */
+    Map<String, String> getDiagrams(InputStream stream){
+        log.clear()
+        def result = [:]
+        def list = load(stream)
+        list[1].diagrams.each{ d ->
+            result.put(d.'@xmi:id'.text(), d.properties.name.text())
+        }
         return result
     }
 
@@ -270,6 +279,11 @@ class EAMapper implements EAVisitor {
         log.appendLine("Primitive ignored. Reason: There is no '"+eaPrimitive.'@name'.text()+"' primitive stereotype for matching in OntoUML")
     }
 
+    @Override
+    Object processEADiagram(GPathResult eaDiagram) {
+        return null
+    }
+
     /** End visit:  Correlates EA stereotypes & values at last */
     void endEAModelVisit(){
         EAProfileCorrelator pc = new EAProfileCorrelator(this)
@@ -283,4 +297,6 @@ class EAMapper implements EAVisitor {
         pc.setupAssociationStereotypes()
         pc.setupAssociationValues()
     }
+
+
 }

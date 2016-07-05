@@ -1,9 +1,21 @@
 package net.menthor
 
 import net.menthor.ontouml.OntoUMLSerializer
+import net.menthor.ontouml2emf.ecore.EcoreMapper
+import net.menthor.ontouml2emf.refontouml.RefontoumlMapper
+import net.menthor.ontouml2emf.uml.UmlMapper
+import org.springframework.core.io.FileSystemResource
+import org.springframework.http.HttpEntity
+import org.springframework.http.HttpHeaders
+import org.springframework.http.MediaType
 import org.springframework.web.bind.annotation.RequestMapping
 import org.springframework.web.bind.annotation.RequestMethod
 import org.springframework.web.bind.annotation.ResponseBody
+import org.springframework.web.bind.annotation.RestController
+import sun.misc.IOUtils
+
+import javax.servlet.http.HttpServletRequest
+import javax.servlet.http.HttpServletResponse
 
 /**
  * The MIT License (MIT)
@@ -31,11 +43,45 @@ import org.springframework.web.bind.annotation.ResponseBody
 /**
  * @author John Guerson
  */
+@RestController
 class DownloadAPI {
 
     @RequestMapping(value = '/api/download/json', method = RequestMethod.GET)
     public @ResponseBody def downloadJson(){
         OntoUMLSerializer s = new OntoUMLSerializer()
-        return s.toJSONString(UploadAPI.ontology)
+        return s.toFormattedJSONString(UploadAPI.ontology)
+    }
+
+    @RequestMapping(value = '/api/download/refontouml', method = RequestMethod.GET)
+    public @ResponseBody def downloadRefontouml(HttpServletResponse response){
+        RefontoumlMapper mapper = new RefontoumlMapper()
+        def refmodel = mapper.toRefOntoUML(UploadAPI.ontology)
+        byte[] documentBody = mapper.asXMLString(refmodel).getBytes();
+        HttpHeaders header = new HttpHeaders();
+        header.setContentType(new MediaType("text","xml"));
+        header.setContentLength(documentBody.length);
+        return new HttpEntity<byte[]>(documentBody, header);
+    }
+
+    @RequestMapping(value = '/api/download/ecore', method = RequestMethod.GET)
+    public @ResponseBody def downloadEcore (HttpServletResponse response){
+        EcoreMapper mapper = new EcoreMapper()
+        def ecoremodel = mapper.toEcore(UploadAPI.ontology)
+        byte[] documentBody = mapper.asXMLString(ecoremodel).getBytes();
+        HttpHeaders header = new HttpHeaders();
+        header.setContentType(new MediaType("text","xml"));
+        header.setContentLength(documentBody.length);
+        return new HttpEntity<byte[]>(documentBody, header);
+    }
+
+    @RequestMapping(value = '/api/download/uml', method = RequestMethod.GET)
+    public @ResponseBody def downloadUml (HttpServletResponse response){
+        UmlMapper mapper = new UmlMapper()
+        def umlmodel = mapper.toUML(UploadAPI.ontology)
+        byte[] documentBody = mapper.asXMLString(umlmodel).getBytes();
+        HttpHeaders header = new HttpHeaders();
+        header.setContentType(new MediaType("text","xml"));
+        header.setContentLength(documentBody.length);
+        return new HttpEntity<byte[]>(documentBody, header);
     }
 }

@@ -4,6 +4,7 @@ import net.menthor.ea2ontouml.EAMapper
 import net.menthor.ontouml.OntoUMLModel
 import net.menthor.ontouml.OntoUMLSerializer
 import net.menthor.ontouml2emf.refontouml.RefontoumlMapper
+import net.menthor.ontouml2emf.refontouml.RefontoumlOptions
 import org.springframework.web.bind.annotation.RequestMapping
 import org.springframework.web.bind.annotation.RequestMethod
 import org.springframework.web.bind.annotation.ResponseBody
@@ -53,8 +54,9 @@ class UploadAPI {
             String content = inputStream.getText()
             OntoUMLSerializer s = new OntoUMLSerializer()
             ontology = s.fromJSONString(content)
+            return ontology;
         }
-        return ontology;
+        return "[info-api] Server did not receive JSON file in the HTTP request"
     }
 
     @RequestMapping(value = '/api/upload/ea', method = RequestMethod.POST)
@@ -65,22 +67,28 @@ class UploadAPI {
             InputStream inputStream = file.getInputStream()
             EAMapper m = new EAMapper()
             ontology = m.run(inputStream)
-            return m.getLog().getText();
+            return m.getLogText();
         }
-        return ontology
+        return "[info-api] Server did not receive XML file in the HTTP request"
     }
 
     @RequestMapping(value = '/api/upload/refontouml', method = RequestMethod.POST)
     public @ResponseBody def uploadRefontouml(HttpServletRequest request){
         MultipartHttpServletRequest multipartRequest = (MultipartHttpServletRequest) request
         MultipartFile file = multipartRequest.getFile("file")
+        def ignorePackage = multipartRequest.getParameter("ignore-package").toBoolean()
+        def classesAsEvents = multipartRequest.getParameter("classes-as-events").toBoolean()
         if(file!=null) {
             InputStream inputStream = file.getInputStream()
+            def opt = new RefontoumlOptions()
+            opt.setAssumeClassAsEvent(classesAsEvents)
+            opt.setIgnorePackages(ignorePackage)
             RefontoumlMapper m = new RefontoumlMapper()
             def refmodel = m.deserialize(inputStream)
-            ontology = m.fromRefOntoUML(refmodel)
+            ontology = m.fromRefOntoUML(refmodel,opt)
+            return m.getLogText()
         }
-        return ontology
+        return "[info-api] Server did not receive RefOntoUML file in the HTTP request"
     }
  }
 

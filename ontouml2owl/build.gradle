@@ -6,7 +6,7 @@ buildscript {
 }
 
 group = "net.menthor"
-version = "1.0"
+version = "1.0.1"
 description = "Menthor - OntoUML API with OWL Support"
 
 apply plugin: 'groovy'
