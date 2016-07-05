@@ -5,5 +5,8 @@ _____________________________________________________________
 
 * IntelliJ -> Open -> /menthor-api -> OK
 * BootStarter.groovy -> Right Click -> Run
-* Generating JAR: On terminal, run task "gradle fatJar"
+* JAR: On terminal, run task "gradle fatJar" at module's folder
 * Access it at http://localhost:8080/
+
+
+
