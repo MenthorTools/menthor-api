@@ -16,26 +16,24 @@ repositories {
 	mavenCentral()
 }
 
-//create a single Jar with all dependencies
 task fatJar(type: Jar) {
-	baseName = "menthor-"+project.name
+	baseName = "menthor-"+project.name+"-all"
 	from { configurations.compile.collect { it.isDirectory() ? it : zipTree(it) } }
 	with jar
 }
 
 dependencies {
 	compile project(":core")
-    compile "org.codehaus.groovy:groovy-all:2.4.6"
+	compile "org.codehaus.groovy:groovy-all:2.4.6"
 	compile "com.fasterxml.jackson.core:jackson-core:2.6.3"
 	compile "com.fasterxml.jackson.core:jackson-databind:2.6.3"
 	compile "com.fasterxml.jackson.core:jackson-annotations:2.6.3"
 }
 
 jar {
-	doFirst {
-		from { configurations.compile.collect { it.isDirectory() ? it : zipTree(it) } }
-	}
-	exclude 'META-INF/*.RSA', 'META-INF/*.SF','META-INF/*.DSA'
+	exclude "META-INF/*.SF"
+	exclude "META-INF/*.DSA"
+	exclude "META-INF/*.RSA"
 }
 
 task wrapper(type: Wrapper) {
