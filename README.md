@@ -1,20 +1,8 @@
-# Menthor API
+### Menthor API
 
-### Command Line Terminal
-
-At C:\menthor-api> type:
-
-* **Build Project**
-  * gradle wrapper 
-  * gradlew build
-* **Generate FatJar**
-  * gradle fatJar
-* **Start Service** 
-  * gradle bootRun
-* **Access via Browser**
-  * http://localhost:8080
-
-### IntelliJ IDE
+#### Developing with IntelliJ
 
 * **Opening**: IntelliJ -> Open -> /menthor-api -> OK
-* **Start Service**: BootStarter.groovy -> Right Click -> Run 
+* **Starting service**: BootStarter.groovy -> Right Click -> Run
+* **Generating module JAR**: On terminal, run task "gradle fatJar"
+* **Accessing it with browser**: http://localhost:8080/
