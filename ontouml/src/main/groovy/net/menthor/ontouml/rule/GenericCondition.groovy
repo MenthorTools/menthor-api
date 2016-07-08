@@ -235,7 +235,7 @@ abstract class GenericCondition {
     }
 
     static boolean isMetaAttributeIfWholeIs(OntoUMLRelationship self, String relStereotypeMethod, String metaAttrMethod, boolean value, String wholeStereotypeMethod){
-        if(self."${relStereotypeMethod}"() && self.wholeClass()!=null && self.wholeClass()."${wholeStereotypeMethod}"){
+        if(self."${relStereotypeMethod}"() && self.wholeClass()!=null && self.wholeClass()."${wholeStereotypeMethod}"()){
             def result = self."${metaAttrMethod}"()==value
             return result
         }
@@ -243,7 +243,7 @@ abstract class GenericCondition {
     }
 
     static boolean isMetaAttributeIfPartIs(OntoUMLRelationship self, String relStereotypeMethod, String metaAttrMethod, boolean value, String partStereotypeMethod){
-        if(self."${relStereotypeMethod}"() && self.partClass()!=null && self.partClass()."${partStereotypeMethod}"){
+        if(self."${relStereotypeMethod}"() && self.partClass()!=null && self.partClass()."${partStereotypeMethod}"()){
             def result = self."${metaAttrMethod}"()==value
             return result
         }
