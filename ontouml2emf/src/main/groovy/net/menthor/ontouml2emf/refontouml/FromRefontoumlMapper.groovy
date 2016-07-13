@@ -258,17 +258,19 @@ class FromRefontoumlMapper implements EMFVisitor {
     @Override
     OntoUMLEndPoint visitEndPoint(Object srcEp) {
         def ep = srcEp as RefOntoUML.Property
-        OntoUMLRelationship rel = srcRelationshipsMap.get(ep.getAssociation())
+        boolean isSrc = ep.getAssociation().getMemberEnd().get(0).equals(ep) ? true : false
         MClassifier ontotype = srcClassMap.get(ep.getType())
         if(ontotype==null) ontotype = srcDataTypeMap.get(ep.getType())
         if(ontotype==null) ontotype = srcRelationshipsMap.get(ep.getType())
-        int lower = ep.getLower()
-        int upper = ep.getUpper()
-        String name = ep.getName()
-        boolean isDerived = ep.isIsDerived()
-        boolean isDependency = ep.isIsReadOnly()
-        OntoUMLEndPoint ontopoint = OntoUMLFactory.createEndPoint(rel, ontotype, lower, upper, name, isDerived, isDependency);
-        return ontopoint
+        OntoUMLRelationship rel = srcRelationshipsMap.get(ep.getAssociation())
+        OntoUMLEndPoint ontoep = isSrc ? rel.sourceEndPoint() : rel.targetEndPoint()
+        ontoep.setClassifier(ontotype)
+        ontoep.setLowerBound(ep.getLower())
+        ontoep.setUpperBound(ep.getUpper())
+        ontoep.setName(ep.getName())
+        ontoep.setDerived(ep.isIsDerived())
+        ontoep.setDependency(ep.isIsReadOnly())
+        return ontoep
     }
 
     @Override
