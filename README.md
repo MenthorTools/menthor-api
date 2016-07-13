@@ -12,8 +12,8 @@ _____________________________________________________________
 * On terminal, run task "gradle fatJar" at a particular module's folder
 
 _____________________________________________________________
-#### Tortoise SVN
-* Tutorial: http://joelabrahamsson.com/remote-branches-with-tortoisegit/
+#### Tortoise Git
+* Learn [here](http://joelabrahamsson.com/remote-branches-with-tortoisegit/) how to create your own local branch of this project to use this API in your own project
 
 
 
