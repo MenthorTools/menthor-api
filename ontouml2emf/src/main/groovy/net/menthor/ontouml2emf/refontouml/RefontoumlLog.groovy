@@ -36,7 +36,7 @@ class RefontoumlLog {
     }
 
     def appendLine(String line){
-        text.append("[info-refontouml] "+line+"\n")
+        text.append("[INFO] "+line+"\n")
         println line
     }
 

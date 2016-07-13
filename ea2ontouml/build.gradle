@@ -6,7 +6,7 @@ buildscript {
 }
 
 group = "net.menthor"
-version = "1.0"
+version = "1.0.1"
 description = "Menthor - OntoUML API with EA Support"
 
 apply plugin: 'groovy'
@@ -17,7 +17,7 @@ repositories {
 }
 
 task fatJar(type: Jar) {
-	baseName = "menthor-"+project.name+"-all"
+	baseName = "net.menthor."+project.name+"-all"
 	from { configurations.compile.collect { it.isDirectory() ? it : zipTree(it) } }
 	with jar
 }

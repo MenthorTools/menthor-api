@@ -157,13 +157,13 @@ class OntoUMLFactory {
         return enu;
     }
 
-    static OntoUMLAttribute createAttribute (MType owner, PrimitiveStereotype primitive, int lower, int upper){
+    static OntoUMLAttribute createAttribute (MType owner, String name, PrimitiveStereotype primitive, int lower, int upper){
         OntoUMLAttribute attribute = new OntoUMLAttribute()
         attribute.setStereotype(primitive)
         attribute.setOwner(owner)
         attribute.setLowerBound(lower)
         attribute.setUpperBound(upper)
-        attribute.setName("")
+        attribute.setName(name)
         owner.setAttribute(attribute)
         return attribute
     }
@@ -176,8 +176,8 @@ class OntoUMLFactory {
         return attribute;
     }
 
-    static OntoUMLAttribute createAttribute (MType owner, PrimitiveStereotype primitive){
-        OntoUMLAttribute attribute = createAttribute(owner, primitive, 1, 1, "", false, false)
+    static OntoUMLAttribute createAttribute (MType owner, String name, PrimitiveStereotype primitive){
+        OntoUMLAttribute attribute = createAttribute(owner, primitive, 1, 1, name, false, false)
         return attribute
     }
 

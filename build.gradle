@@ -26,6 +26,7 @@ dependencies{
 	compile project(":ontouml")
 	compile project(":ea2ontouml")
 	compile project(":ontouml2emf")
+	compile "org.codehaus.groovy:groovy-all:2.4.6"
 
 	//spring
 	compile("org.springframework.boot:spring-boot-starter-web")
@@ -36,6 +37,13 @@ dependencies{
 
 repositories {
 	mavenCentral()
+}
+
+
+task fatJar(type: Jar) {
+	baseName = ""+project.name+"-all"
+	from { configurations.compile.collect { it.isDirectory() ? it : zipTree(it) } }
+	with jar
 }
 
 jar {

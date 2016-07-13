@@ -17,7 +17,7 @@ repositories {
 }
 
 task fatJar(type: Jar) {
-	baseName = "menthor-"+project.name+"-all"
+	baseName = "net.menthor."+project.name+"-all"
 	from { configurations.compile.collect { it.isDirectory() ? it : zipTree(it) } }
 	with jar
 }

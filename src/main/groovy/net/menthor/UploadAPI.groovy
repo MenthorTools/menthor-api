@@ -56,7 +56,7 @@ class UploadAPI {
             ontology = s.fromJSONString(content)
             return ontology;
         }
-        return "[info-api] Server did not receive JSON file in the HTTP request"
+        return "[INFO] Server did not receive JSON file in the HTTP request"
     }
 
     @RequestMapping(value = '/api/upload/ea', method = RequestMethod.POST)
@@ -69,7 +69,7 @@ class UploadAPI {
             ontology = m.run(inputStream)
             return m.getLogText();
         }
-        return "[info-api] Server did not receive XML file in the HTTP request"
+        return "[INFO] Server did not receive XML file in the HTTP request"
     }
 
     @RequestMapping(value = '/api/upload/refontouml', method = RequestMethod.POST)
@@ -88,7 +88,7 @@ class UploadAPI {
             ontology = m.fromRefOntoUML(refmodel,opt)
             return m.getLogText()
         }
-        return "[info-api] Server did not receive RefOntoUML file in the HTTP request"
+        return "[INFO] Server did not receive RefOntoUML file in the HTTP request"
     }
  }
 

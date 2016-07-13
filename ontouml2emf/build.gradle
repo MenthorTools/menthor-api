@@ -17,13 +17,14 @@ repositories {
 }
 
 task fatJar(type: Jar) {
-	baseName = "menthor-"+project.name+"-all"
+	baseName = "net.menthor."+project.name+"-all"
 	from { configurations.compile.collect { it.isDirectory() ? it : zipTree(it) } }
 	with jar
 }
 
 dependencies {
 	compile project(":ontouml")
+	compile "org.codehaus.groovy:groovy-all:2.4.6"
 	compile fileTree(dir: 'lib', include: '*.jar')
 }
 
