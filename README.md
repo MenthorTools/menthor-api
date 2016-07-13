@@ -13,7 +13,7 @@ _____________________________________________________________
 
 _____________________________________________________________
 #### Tortoise Git
-* Learn [here](http://joelabrahamsson.com/remote-branches-with-tortoisegit/) how to create your own local branch of this project to use this API in your own project
+* Learn [here](http://joelabrahamsson.com/remote-branches-with-tortoisegit/) how to create your own local branch of this project.
 
 
 
