@@ -1,4 +1,12 @@
-package net.menthor.ea2ontouml
+package net.menthor
+
+import net.menthor.ontouml.stereotypes.ClassStereotype
+import net.menthor.ontouml.stereotypes.DataTypeStereotype
+import net.menthor.ontouml.stereotypes.RelationshipStereotype
+import org.springframework.web.bind.annotation.RequestMapping
+import org.springframework.web.bind.annotation.RequestMethod
+import org.springframework.web.bind.annotation.ResponseBody
+import org.springframework.web.bind.annotation.RestController
 
 /**
  * The MIT License (MIT)
@@ -26,20 +34,22 @@ package net.menthor.ea2ontouml
 /**
  * @author John Guerson
  */
-class EALog {
+@RestController
+class DetailsAPI {
 
-    StringBuilder text = new StringBuilder()
-
-    def clear(){
-        text = new StringBuilder()
+    @RequestMapping(value = '/api/class/stereotypes', method = RequestMethod.GET)
+    public @ResponseBody def classStereotypes(){
+        return ClassStereotype.values();
     }
 
-    def appendLine(String line){
-        text.append("[INFO] "+line+"\n")
-        println line
+    @RequestMapping(value = '/api/datatype/stereotypes', method = RequestMethod.GET)
+    public @ResponseBody def datatypeStereotypes(){
+        return DataTypeStereotype.values();
     }
 
-    def getText(){
-        return text.toString()
+    @RequestMapping(value = '/api/relationship/stereotypes', method = RequestMethod.GET)
+    public @ResponseBody def relationshipStereotypes(){
+        return RelationshipStereotype.values();
     }
+
 }

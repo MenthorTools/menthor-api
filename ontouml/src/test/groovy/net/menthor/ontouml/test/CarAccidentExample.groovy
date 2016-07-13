@@ -70,7 +70,7 @@ class CarAccidentExample {
         m.createPartition("life", nature, person)
 
         //create roles
-        OntoUMLClass traveler = m.createRole("Traveler")
+                OntoUMLClass traveler = m.createRole("Traveler")
         OntoUMLClass victim = m.createRole("Victim")
         OntoUMLClass crashedVehicle = m.createRole("CrashedVehicle")
 

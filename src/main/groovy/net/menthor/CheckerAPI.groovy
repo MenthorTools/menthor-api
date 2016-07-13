@@ -1,4 +1,10 @@
-package net.menthor.ea2ontouml
+package net.menthor
+
+import net.menthor.ontouml.checker.SyntacticalChecker
+import org.springframework.web.bind.annotation.RequestMapping
+import org.springframework.web.bind.annotation.RequestMethod
+import org.springframework.web.bind.annotation.ResponseBody
+import org.springframework.web.bind.annotation.RestController
 
 /**
  * The MIT License (MIT)
@@ -26,20 +32,13 @@ package net.menthor.ea2ontouml
 /**
  * @author John Guerson
  */
-class EALog {
 
-    StringBuilder text = new StringBuilder()
+@RestController
+class CheckerAPI {
 
-    def clear(){
-        text = new StringBuilder()
-    }
-
-    def appendLine(String line){
-        text.append("[INFO] "+line+"\n")
-        println line
-    }
-
-    def getText(){
-        return text.toString()
+    @RequestMapping(value = '/api/model/check-syntax', method = RequestMethod.GET)
+    public @ResponseBody def problems(){
+        SyntacticalChecker checker = new SyntacticalChecker();
+        return checker.execute(UploadAPI.ontology)
     }
 }

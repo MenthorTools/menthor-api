@@ -1,5 +1,12 @@
-# Menthor API
+### Menthor API
 
-See our wiki page for more details:
+_____________________________________________________________
+#### IntelliJ
 
-https://github.com/MenthorTools/menthor-api/wiki
+* IntelliJ -> Open -> /menthor-api -> OK
+* BootStarter.groovy -> Right Click -> Run
+* JAR: On terminal, run task "gradle fatJar" at module's folder
+* Access it at http://localhost:8080/
+
+
+

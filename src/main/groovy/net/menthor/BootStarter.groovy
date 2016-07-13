@@ -63,6 +63,12 @@ class BootStarter {
                 registry.addMapping("/api/tree/package-hierarchy").allowedOrigins(client_address)
                 registry.addMapping("/api/tree/type-hierarchy").allowedOrigins(client_address)
                 registry.addMapping("/api/tree/type-composition").allowedOrigins(client_address)
+
+                registry.addMapping("/api/class/stereotypes").allowedOrigins(client_address)
+                registry.addMapping("/api/datatype/stereotypes").allowedOrigins(client_address)
+                registry.addMapping("/api/relationship/stereotypes").allowedOrigins(client_address)
+
+                registry.addMapping("/api/model/check-syntax").allowedOrigins(client_address)
             }
         }
     }
