@@ -1,6 +1,6 @@
 ### Menthor API
 
-Visit our wiki pages [here](https://github.com/MenthorTools/menthor-api/wiki) to learn how to use the API.
+Visit our wiki pages [here](https://github.com/tgoprince/menthor-api/wiki) to learn how to use the API.
 _____________________________________________________________
 #### IntelliJ
 * IntelliJ -> Open -> /menthor-api -> OK
