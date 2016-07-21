@@ -1,4 +1,4 @@
-package net.menthor.ontouml.test
+package net.menthor.ontouml.rules
 
 /**
  * The MIT License (MIT)
@@ -23,21 +23,22 @@ package net.menthor.ontouml.test
  * DEALINGS IN THE SOFTWARE.
  */
 
-import net.menthor.ontouml.rules.SyntacticalChecker
-import net.menthor.ontouml.OntoUMLModel
+import net.menthor.core.traits.MElement
 
 /**
  * @author John Guerson
  */
-class CheckerTest {
+class SyntacticalError {
 
-    static void main(String[] args){
-        OntoUMLModel m = CarAccidentExample.generate()
-        m.createMode("Mode1")
+    String message
+    MElement element
 
-        def checker = new SyntacticalChecker()
-        checker.execute(m).each{ error ->
-            println error
-        }
+    SyntacticalError(MElement element, String msg){
+        this.message = msg
+        this.element = element
+    }
+
+    String toString(){
+        "Syntactical Error: "+element.toString() +" - "+message
     }
 }

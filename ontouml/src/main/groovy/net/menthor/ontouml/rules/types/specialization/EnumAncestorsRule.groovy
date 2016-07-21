@@ -1,4 +1,4 @@
-package net.menthor.ontouml.test
+package net.menthor.ontouml.rules.types.specialization
 
 /**
  * The MIT License (MIT)
@@ -23,21 +23,27 @@ package net.menthor.ontouml.test
  * DEALINGS IN THE SOFTWARE.
  */
 
-import net.menthor.ontouml.rules.SyntacticalChecker
-import net.menthor.ontouml.OntoUMLModel
+import net.menthor.ontouml.OntoUMLDataType
+import net.menthor.ontouml.rules.generic.GenericCondition
+import net.menthor.ontouml.rules.traits.SpecializationSyntacticalRule
 
 /**
  * @author John Guerson
  */
-class CheckerTest {
+class EnumAncestorsRule implements SpecializationSyntacticalRule {
 
-    static void main(String[] args){
-        OntoUMLModel m = CarAccidentExample.generate()
-        m.createMode("Mode1")
+    EnumAncestorsRule(OntoUMLDataType self){
+        this.description = 'An Enumeration can only have an Enumeration ancestor'
+        this.self = self
+    }
 
-        def checker = new SyntacticalChecker()
-        checker.execute(m).each{ error ->
-            println error
-        }
+    @Override
+    boolean condition() {
+        return GenericCondition.includesAsAncestorsOnly(self, "isEnumeration")
+    }
+
+    @Override
+    boolean quickFix(){
+        return false
     }
 }

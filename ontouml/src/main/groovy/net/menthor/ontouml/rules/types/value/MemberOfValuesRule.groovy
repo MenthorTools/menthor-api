@@ -1,5 +1,4 @@
-package net.menthor.ontouml.test
-
+package net.menthor.ontouml.rules.types.value
 /**
  * The MIT License (MIT)
  *
@@ -23,21 +22,31 @@ package net.menthor.ontouml.test
  * DEALINGS IN THE SOFTWARE.
  */
 
-import net.menthor.ontouml.rules.SyntacticalChecker
-import net.menthor.ontouml.OntoUMLModel
+import net.menthor.ontouml.OntoUMLRelationship
+import net.menthor.ontouml.rules.generic.GenericCondition
+import net.menthor.ontouml.rules.ValueSyntacticalRule
+import net.menthor.ontouml.values.ReflexivityValue
+import net.menthor.ontouml.values.TransitivityValue
 
 /**
  * @author John Guerson
  */
-class CheckerTest {
+class MemberOfValuesRule implements ValueSyntacticalRule {
 
-    static void main(String[] args){
-        OntoUMLModel m = CarAccidentExample.generate()
-        m.createMode("Mode1")
+    MemberOfValuesRule(OntoUMLRelationship self){
+        this.description = 'A MemberOf must be Non-Reflexive and Intransitive'
+        this.self = self
+    }
 
-        def checker = new SyntacticalChecker()
-        checker.execute(m).each{ error ->
-            println error
-        }
+    @Override
+    boolean condition() {
+        return GenericCondition.isValue(self, "isCausation", ReflexivityValue.NON_REFLEXIVE, null, TransitivityValue.INTRANSITIVE, null)
+    }
+
+    @Override
+    boolean quickFix(){
+        (this.self as OntoUMLRelationship).setReflexivityValue(ReflexivityValue.NON_REFLEXIVE)
+        (this.self as OntoUMLRelationship).setTransitivityValue(TransitivityValue.INTRANSITIVE)
+        return true
     }
 }

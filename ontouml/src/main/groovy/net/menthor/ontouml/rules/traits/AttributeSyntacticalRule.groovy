@@ -1,4 +1,6 @@
-package net.menthor.ontouml.test
+package net.menthor.ontouml.rules.traits
+
+import net.menthor.ontouml.rules.SyntacticalRule
 
 /**
  * The MIT License (MIT)
@@ -23,21 +25,6 @@ package net.menthor.ontouml.test
  * DEALINGS IN THE SOFTWARE.
  */
 
-import net.menthor.ontouml.rules.SyntacticalChecker
-import net.menthor.ontouml.OntoUMLModel
+trait AttributeSyntacticalRule extends SyntacticalRule{
 
-/**
- * @author John Guerson
- */
-class CheckerTest {
-
-    static void main(String[] args){
-        OntoUMLModel m = CarAccidentExample.generate()
-        m.createMode("Mode1")
-
-        def checker = new SyntacticalChecker()
-        checker.execute(m).each{ error ->
-            println error
-        }
-    }
 }

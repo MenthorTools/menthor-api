@@ -68,7 +68,13 @@ class BootStarter {
                 registry.addMapping("/api/datatype/stereotypes").allowedOrigins(client_address)
                 registry.addMapping("/api/relationship/stereotypes").allowedOrigins(client_address)
 
-                registry.addMapping("/api/model/check-syntax").allowedOrigins(client_address)
+                registry.addMapping("/api/syntactical-rules").allowedOrigins(client_address)
+                registry.addMapping("/api/specialization-rules").allowedOrigins(client_address)
+                registry.addMapping("/api/cardinality-rules").allowedOrigins(client_address)
+                registry.addMapping("/api/value-rules").allowedOrigins(client_address)
+                registry.addMapping("/api/connection-rules").allowedOrigins(client_address)
+                registry.addMapping("/api/metaattribute-rules").allowedOrigins(client_address)
+
             }
         }
     }

@@ -1,4 +1,4 @@
-package net.menthor.ontouml.test
+package net.menthor.ontouml.rules.types.specialization
 
 /**
  * The MIT License (MIT)
@@ -23,21 +23,27 @@ package net.menthor.ontouml.test
  * DEALINGS IN THE SOFTWARE.
  */
 
-import net.menthor.ontouml.rules.SyntacticalChecker
-import net.menthor.ontouml.OntoUMLModel
+import net.menthor.ontouml.OntoUMLClass
+import net.menthor.ontouml.rules.generic.GenericCondition
+import net.menthor.ontouml.rules.traits.SpecializationSyntacticalRule
 
 /**
  * @author John Guerson
  */
-class CheckerTest {
+class SubKindProviderRule implements SpecializationSyntacticalRule {
 
-    static void main(String[] args){
-        OntoUMLModel m = CarAccidentExample.generate()
-        m.createMode("Mode1")
+    SubKindProviderRule(OntoUMLClass self){
+        this.description = 'A SubKind must have exactly one identity provider ancestor. If not, it leads to conflicting (or not having an) identity criteria'
+        this.self = self
+    }
 
-        def checker = new SyntacticalChecker()
-        checker.execute(m).each{ error ->
-            println error
-        }
+    @Override
+    boolean condition() {
+        return GenericCondition.exactOne(self, "isSubKind","identityProviders")
+    }
+
+    @Override
+    boolean quickFix(){
+        return false
     }
 }

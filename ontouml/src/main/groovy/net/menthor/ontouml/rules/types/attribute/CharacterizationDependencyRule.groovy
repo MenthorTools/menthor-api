@@ -1,4 +1,4 @@
-package net.menthor.ontouml.test
+package net.menthor.ontouml.rules.types.attribute
 
 /**
  * The MIT License (MIT)
@@ -23,21 +23,32 @@ package net.menthor.ontouml.test
  * DEALINGS IN THE SOFTWARE.
  */
 
-import net.menthor.ontouml.rules.SyntacticalChecker
-import net.menthor.ontouml.OntoUMLModel
+import net.menthor.ontouml.OntoUMLRelationship
+import net.menthor.ontouml.rules.generic.GenericCondition
+import net.menthor.ontouml.rules.traits.AttributeSyntacticalRule
 
 /**
  * @author John Guerson
  */
-class CheckerTest {
+class CharacterizationDependencyRule implements AttributeSyntacticalRule {
 
-    static void main(String[] args){
-        OntoUMLModel m = CarAccidentExample.generate()
-        m.createMode("Mode1")
+    CharacterizationDependencyRule(OntoUMLRelationship self){
+        this.description = 'The characterized end (target-end) of a Characterization relationship must be set dependent.'
+        this.self = self
+    }
 
-        def checker = new SyntacticalChecker()
-        checker.execute(m).each{ error ->
-            println error
+    @Override
+    boolean condition() {
+        return GenericCondition.targetDependent(self, "isCharacterization")
+    }
+
+    @Override
+    boolean quickFix(){
+        def rel = (this.self as OntoUMLRelationship)
+        if(rel.isCharacterization()) {
+            rel.targetEndPoint().setDependency(true);
+            return true;
         }
+        return false
     }
 }

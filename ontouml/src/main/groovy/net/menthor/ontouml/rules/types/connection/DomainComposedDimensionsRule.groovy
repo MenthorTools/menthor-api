@@ -1,4 +1,4 @@
-package net.menthor.ontouml.test
+package net.menthor.ontouml.rules.types.connection
 
 /**
  * The MIT License (MIT)
@@ -23,21 +23,27 @@ package net.menthor.ontouml.test
  * DEALINGS IN THE SOFTWARE.
  */
 
-import net.menthor.ontouml.rules.SyntacticalChecker
-import net.menthor.ontouml.OntoUMLModel
+import net.menthor.ontouml.OntoUMLDataType
+import net.menthor.ontouml.rules.generic.GenericCondition
+import net.menthor.ontouml.rules.traits.ConnectionSyntacticalRule
 
 /**
  * @author John Guerson
  */
-class CheckerTest {
+class DomainComposedDimensionsRule implements ConnectionSyntacticalRule {
 
-    static void main(String[] args){
-        OntoUMLModel m = CarAccidentExample.generate()
-        m.createMode("Mode1")
+    DomainComposedDimensionsRule(OntoUMLDataType self){
+        this.description = 'A Domain must be composed by (own) at least two Dimensions'
+        this.self = self
+    }
 
-        def checker = new SyntacticalChecker()
-        checker.execute(m).each{ error ->
-            println error
-        }
+    @Override
+    boolean condition() {
+        return GenericCondition.typeComposedByAtLeastTwoElements(self,"isDomain","getDimensions", 2)
+    }
+
+    @Override
+    boolean quickFix(){
+        return false
     }
 }

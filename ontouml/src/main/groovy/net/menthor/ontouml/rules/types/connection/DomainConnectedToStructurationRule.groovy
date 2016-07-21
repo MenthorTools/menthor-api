@@ -1,4 +1,4 @@
-package net.menthor.ontouml.test
+package net.menthor.ontouml.rules.types.connection
 
 /**
  * The MIT License (MIT)
@@ -23,21 +23,28 @@ package net.menthor.ontouml.test
  * DEALINGS IN THE SOFTWARE.
  */
 
-import net.menthor.ontouml.rules.SyntacticalChecker
-import net.menthor.ontouml.OntoUMLModel
+import net.menthor.ontouml.OntoUMLDataType
+import net.menthor.ontouml.rules.generic.GenericCondition
+import net.menthor.ontouml.rules.traits.ConnectionSyntacticalRule
 
 /**
  * @author John Guerson
  */
-class CheckerTest {
+class DomainConnectedToStructurationRule implements ConnectionSyntacticalRule {
 
-    static void main(String[] args){
-        OntoUMLModel m = CarAccidentExample.generate()
-        m.createMode("Mode1")
-
-        def checker = new SyntacticalChecker()
-        checker.execute(m).each{ error ->
-            println error
-        }
+    DomainConnectedToStructurationRule(OntoUMLDataType self){
+        this.description = 'A Domain must be connected (directly or indirectly) to a Structuration'
+        this.self = self
     }
+
+    @Override
+    boolean condition() {
+        return GenericCondition.typeMustBeConnectedToRelationship(self,"isDomain","isStructuration")
+    }
+
+    @Override
+    boolean quickFix(){
+       return false
+    }
+
 }

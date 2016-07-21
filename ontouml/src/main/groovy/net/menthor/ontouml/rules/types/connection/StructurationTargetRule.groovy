@@ -1,4 +1,4 @@
-package net.menthor.ontouml.test
+package net.menthor.ontouml.rules.types.connection
 
 /**
  * The MIT License (MIT)
@@ -23,21 +23,32 @@ package net.menthor.ontouml.test
  * DEALINGS IN THE SOFTWARE.
  */
 
-import net.menthor.ontouml.rules.SyntacticalChecker
-import net.menthor.ontouml.OntoUMLModel
+import net.menthor.ontouml.OntoUMLDataType
+import net.menthor.ontouml.OntoUMLRelationship
+import net.menthor.ontouml.rules.traits.ConnectionSyntacticalRule
 
 /**
  * @author John Guerson
  */
-class CheckerTest {
+class StructurationTargetRule implements ConnectionSyntacticalRule {
 
-    static void main(String[] args){
-        OntoUMLModel m = CarAccidentExample.generate()
-        m.createMode("Mode1")
+    StructurationTargetRule(OntoUMLRelationship self){
+        this.description = 'The structurating type (target) of a Structuration must be a Domain, Dimension, or Enumeration'
+        this.self = self
+    }
 
-        def checker = new SyntacticalChecker()
-        checker.execute(m).each{ error ->
-            println error
+    @Override
+    boolean condition() {
+        def rel = self as OntoUMLRelationship
+        if(rel.isStructuration()){
+            def tgtDataType = rel.targetDataType() as OntoUMLDataType
+            return tgtDataType!=null && (tgtDataType.isStructure() || tgtDataType.isEnumeration())
         }
+        return true
+    }
+
+    @Override
+    boolean quickFix(){
+        return false
     }
 }

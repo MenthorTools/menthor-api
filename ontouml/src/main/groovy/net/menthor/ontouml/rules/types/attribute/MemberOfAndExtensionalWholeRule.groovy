@@ -1,4 +1,4 @@
-package net.menthor.ontouml.test
+package net.menthor.ontouml.rules.types.attribute
 
 /**
  * The MIT License (MIT)
@@ -23,21 +23,29 @@ package net.menthor.ontouml.test
  * DEALINGS IN THE SOFTWARE.
  */
 
-import net.menthor.ontouml.rules.SyntacticalChecker
-import net.menthor.ontouml.OntoUMLModel
+import net.menthor.ontouml.OntoUMLRelationship
+import net.menthor.ontouml.rules.traits.AttributeSyntacticalRule
 
 /**
  * @author John Guerson
  */
-class CheckerTest {
+class MemberOfAndExtensionalWholeRule implements AttributeSyntacticalRule {
 
-    static void main(String[] args){
-        OntoUMLModel m = CarAccidentExample.generate()
-        m.createMode("Mode1")
+    MemberOfAndExtensionalWholeRule(OntoUMLRelationship self){
+        this.description = 'A MemberOf relationship with essential part must imply in an extensional Collection whole (class with a collective identity))'
+        this.self = self
+    }
 
-        def checker = new SyntacticalChecker()
-        checker.execute(m).each{ error ->
-            println error
+    @Override
+    boolean condition() {
+        if(self.isMemberOf() && self.isPartEssential() && self.wholeClass()!=null){
+            return self.wholeClass().isExtensional() == true
         }
+        return true
+    }
+
+    @Override
+    boolean quickFix(){
+        return false
     }
 }

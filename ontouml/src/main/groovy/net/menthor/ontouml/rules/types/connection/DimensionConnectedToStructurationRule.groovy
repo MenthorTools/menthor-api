@@ -1,4 +1,4 @@
-package net.menthor.ontouml.test
+package net.menthor.ontouml.rules.types.connection
 
 /**
  * The MIT License (MIT)
@@ -22,22 +22,28 @@ package net.menthor.ontouml.test
  * OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
  * DEALINGS IN THE SOFTWARE.
  */
-
-import net.menthor.ontouml.rules.SyntacticalChecker
-import net.menthor.ontouml.OntoUMLModel
+import net.menthor.ontouml.OntoUMLDataType
+import net.menthor.ontouml.rules.generic.GenericCondition
+import net.menthor.ontouml.rules.traits.ConnectionSyntacticalRule
 
 /**
  * @author John Guerson
  */
-class CheckerTest {
+class DimensionConnectedToStructurationRule implements ConnectionSyntacticalRule {
 
-    static void main(String[] args){
-        OntoUMLModel m = CarAccidentExample.generate()
-        m.createMode("Mode1")
+    DimensionConnectedToStructurationRule(OntoUMLDataType self){
+        this.description = 'A Dimension must be connected (directly or indirectly) to a Structuration or be owned by a Domain'
+        this.self = self
+    }
 
-        def checker = new SyntacticalChecker()
-        checker.execute(m).each{ error ->
-            println error
-        }
+    @Override
+    boolean condition() {
+        return GenericCondition.typeMustBeConnectedToRelationship(self,"isDimension","isStructuration") ||
+               (self as OntoUMLDataType).getOwnerDomain()!=null
+    }
+
+    @Override
+    boolean quickFix(){
+       return false
     }
 }

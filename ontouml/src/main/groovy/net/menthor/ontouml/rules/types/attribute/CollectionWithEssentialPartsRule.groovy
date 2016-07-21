@@ -1,4 +1,4 @@
-package net.menthor.ontouml.test
+package net.menthor.ontouml.rules.types.attribute
 
 /**
  * The MIT License (MIT)
@@ -22,22 +22,33 @@ package net.menthor.ontouml.test
  * OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
  * DEALINGS IN THE SOFTWARE.
  */
-
-import net.menthor.ontouml.rules.SyntacticalChecker
-import net.menthor.ontouml.OntoUMLModel
+import net.menthor.ontouml.OntoUMLClass
+import net.menthor.ontouml.rules.traits.AttributeSyntacticalRule
 
 /**
  * @author John Guerson
  */
-class CheckerTest {
+class CollectionWithEssentialPartsRule implements AttributeSyntacticalRule {
 
-    static void main(String[] args){
-        OntoUMLModel m = CarAccidentExample.generate()
-        m.createMode("Mode1")
+    CollectionWithEssentialPartsRule(OntoUMLClass self){
+        this.description = 'All parts of an extensional Collection must be essential'
+        this.self = self
+    }
 
-        def checker = new SyntacticalChecker()
-        checker.execute(m).each{ error ->
-            println error
+    @Override
+    boolean condition() {
+        if(self.isCollection()) {
+            return self.allRelationships().every{ rel ->
+                if(rel.isMeronymic() && rel.wholeClass()!=null && rel.partClass()!=null && rel.wholeClass().equals(self)){
+                    rel.isPartEssential()==true
+                }
+            }
         }
+        return true
+    }
+
+    @Override
+    boolean quickFix(){
+        return false
     }
 }

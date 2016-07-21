@@ -1,5 +1,4 @@
-package net.menthor.ontouml.test
-
+package net.menthor.ontouml.rules.types.cardinality
 /**
  * The MIT License (MIT)
  *
@@ -23,21 +22,29 @@ package net.menthor.ontouml.test
  * DEALINGS IN THE SOFTWARE.
  */
 
-import net.menthor.ontouml.rules.SyntacticalChecker
-import net.menthor.ontouml.OntoUMLModel
+import net.menthor.ontouml.OntoUMLRelationship
+import net.menthor.ontouml.rules.generic.GenericCondition
+import net.menthor.ontouml.rules.traits.CardinalitySyntacticalRule
 
 /**
  * @author John Guerson
  */
-class CheckerTest {
+class MediationTargetCardinalityRule implements CardinalitySyntacticalRule {
 
-    static void main(String[] args){
-        OntoUMLModel m = CarAccidentExample.generate()
-        m.createMode("Mode1")
+    MediationTargetCardinalityRule(OntoUMLRelationship self){
+        this.description = 'The mediated end (target) of a Mediation must have minimum cardinality of 1.'
+        this.self = self
+    }
 
-        def checker = new SyntacticalChecker()
-        checker.execute(m).each{ error ->
-            println error
-        }
+    @Override
+    boolean condition() {
+        return GenericCondition.targetMultiplicity(this.self, "isMediation", 1, null)
+    }
+
+    @Override
+    boolean quickFix(){
+        def rel = (this.self as OntoUMLRelationship)
+        if(rel.isMediation()) { rel.targetEndPoint().setLowerBound(1); return true; }
+        return false
     }
 }

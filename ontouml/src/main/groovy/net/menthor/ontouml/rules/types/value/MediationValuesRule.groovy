@@ -1,4 +1,4 @@
-package net.menthor.ontouml.test
+package net.menthor.ontouml.rules.types.value
 
 /**
  * The MIT License (MIT)
@@ -23,21 +23,29 @@ package net.menthor.ontouml.test
  * DEALINGS IN THE SOFTWARE.
  */
 
-import net.menthor.ontouml.rules.SyntacticalChecker
-import net.menthor.ontouml.OntoUMLModel
+import net.menthor.ontouml.OntoUMLRelationship
+import net.menthor.ontouml.rules.generic.GenericCondition
+import net.menthor.ontouml.rules.ValueSyntacticalRule
+import net.menthor.ontouml.values.ReflexivityValue
 
 /**
  * @author John Guerson
  */
-class CheckerTest {
+class MediationValuesRule implements ValueSyntacticalRule {
 
-    static void main(String[] args){
-        OntoUMLModel m = CarAccidentExample.generate()
-        m.createMode("Mode1")
+    MediationValuesRule(OntoUMLRelationship self){
+        this.description = 'A Mediation must be Irreflexive'
+        this.self = self
+    }
 
-        def checker = new SyntacticalChecker()
-        checker.execute(m).each{ error ->
-            println error
-        }
+    @Override
+    boolean condition() {
+        return GenericCondition.isValue(self, "isMediation", ReflexivityValue.IRREFLEXIVE, null, null, null)
+    }
+
+    @Override
+    boolean quickFix(){
+        (this.self as OntoUMLRelationship).setReflexivityValue(ReflexivityValue.IRREFLEXIVE)
+        return true
     }
 }

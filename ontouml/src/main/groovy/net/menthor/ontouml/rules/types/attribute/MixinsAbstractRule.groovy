@@ -1,4 +1,4 @@
-package net.menthor.ontouml.test
+package net.menthor.ontouml.rules.types.attribute
 
 /**
  * The MIT License (MIT)
@@ -23,21 +23,34 @@ package net.menthor.ontouml.test
  * DEALINGS IN THE SOFTWARE.
  */
 
-import net.menthor.ontouml.rules.SyntacticalChecker
-import net.menthor.ontouml.OntoUMLModel
+import net.menthor.ontouml.OntoUMLClass
+import net.menthor.ontouml.rules.traits.AttributeSyntacticalRule
 
 /**
  * @author John Guerson
  */
-class CheckerTest {
+class MixinsAbstractRule implements AttributeSyntacticalRule {
 
-    static void main(String[] args){
-        OntoUMLModel m = CarAccidentExample.generate()
-        m.createMode("Mode1")
+    MixinsAbstractRule(OntoUMLClass self){
+        this.description = 'A Mixin class (Category, PhaseMixin, RoleMixin, Mixin) must always be abstract'
+        this.self = self
+    }
 
-        def checker = new SyntacticalChecker()
-        checker.execute(m).each{ error ->
-            println error
+    @Override
+    boolean condition() {
+        if(self.isMixinClass()) {
+            return self.isAbstract_()
         }
+        return true
+    }
+
+    @Override
+    boolean quickFix(){
+        def rel = (this.self as OntoUMLClass)
+        if(rel.isMixinClass()) {
+            rel.setIsAbstract(true)
+            return true
+        }
+        return false
     }
 }

@@ -1,5 +1,4 @@
-package net.menthor.ontouml.test
-
+package net.menthor.ontouml.rules.types.value
 /**
  * The MIT License (MIT)
  *
@@ -23,21 +22,31 @@ package net.menthor.ontouml.test
  * DEALINGS IN THE SOFTWARE.
  */
 
-import net.menthor.ontouml.rules.SyntacticalChecker
-import net.menthor.ontouml.OntoUMLModel
+import net.menthor.ontouml.OntoUMLRelationship
+import net.menthor.ontouml.rules.generic.GenericCondition
+import net.menthor.ontouml.rules.ValueSyntacticalRule
+import net.menthor.ontouml.values.CiclicityValue
+import net.menthor.ontouml.values.SymmetryValue
 
 /**
  * @author John Guerson
  */
-class CheckerTest {
+class MeronymicValuesRule implements ValueSyntacticalRule {
 
-    static void main(String[] args){
-        OntoUMLModel m = CarAccidentExample.generate()
-        m.createMode("Mode1")
+    MeronymicValuesRule(OntoUMLRelationship self){
+        this.description = 'A Parthood (MemberOf, ComponentOf, SubEventOf, SubCollectionOf, SubQuantityOf, Consitution) must be Anti-Symmetric and Acyclic'
+        this.self = self
+    }
 
-        def checker = new SyntacticalChecker()
-        checker.execute(m).each{ error ->
-            println error
-        }
+    @Override
+    boolean condition() {
+        return GenericCondition.isValue(self, "isMeronymic", null, SymmetryValue.ANTI_SYMMETRIC, null, CiclicityValue.ACYCLIC)
+    }
+
+    @Override
+    boolean quickFix(){
+        (this.self as OntoUMLRelationship).setSymmetryValue(SymmetryValue.ANTI_SYMMETRIC)
+        (this.self as OntoUMLRelationship).setCiclicityValue(CiclicityValue.ACYCLIC)
+        return true
     }
 }

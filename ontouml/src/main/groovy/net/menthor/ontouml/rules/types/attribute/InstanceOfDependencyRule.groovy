@@ -1,4 +1,4 @@
-package net.menthor.ontouml.test
+package net.menthor.ontouml.rules.types.attribute
 
 /**
  * The MIT License (MIT)
@@ -23,21 +23,29 @@ package net.menthor.ontouml.test
  * DEALINGS IN THE SOFTWARE.
  */
 
-import net.menthor.ontouml.rules.SyntacticalChecker
-import net.menthor.ontouml.OntoUMLModel
+import net.menthor.ontouml.OntoUMLRelationship
+import net.menthor.ontouml.rules.traits.AttributeSyntacticalRule
 
 /**
  * @author John Guerson
  */
-class CheckerTest {
+class InstanceOfDependencyRule implements AttributeSyntacticalRule {
 
-    static void main(String[] args){
-        OntoUMLModel m = CarAccidentExample.generate()
-        m.createMode("Mode1")
+    InstanceOfDependencyRule(OntoUMLRelationship self){
+        this.description = 'The highOrder end (target-end) of a InstanceOf relationship must be set dependent iff the source type is a rigid type.'
+        this.self = self
+    }
 
-        def checker = new SyntacticalChecker()
-        checker.execute(m).each{ error ->
-            println error
+    @Override
+    boolean condition() {
+        if(self.isInstanceOf() && self.sourceClass()!=null && self.sourceClass().isRigid()){
+            return self.targetEndPoint()!=null && self.targetEndPoint().isDependency()
         }
+        return true
+    }
+
+    @Override
+    boolean quickFix(){
+        return false
     }
 }

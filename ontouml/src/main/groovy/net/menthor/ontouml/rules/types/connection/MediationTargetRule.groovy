@@ -1,5 +1,4 @@
-package net.menthor.ontouml.test
-
+package net.menthor.ontouml.rules.types.connection
 /**
  * The MIT License (MIT)
  *
@@ -23,21 +22,33 @@ package net.menthor.ontouml.test
  * DEALINGS IN THE SOFTWARE.
  */
 
-import net.menthor.ontouml.rules.SyntacticalChecker
-import net.menthor.ontouml.OntoUMLModel
+import net.menthor.ontouml.OntoUMLRelationship
+import net.menthor.ontouml.OntoUMLClass
+import net.menthor.ontouml.rules.traits.ConnectionSyntacticalRule
 
 /**
  * @author John Guerson
  */
-class CheckerTest {
+class MediationTargetRule implements ConnectionSyntacticalRule {
 
-    static void main(String[] args){
-        OntoUMLModel m = CarAccidentExample.generate()
-        m.createMode("Mode1")
+    MediationTargetRule(OntoUMLRelationship self){
+        this.description = 'The mediated type (target) of a Mediation must be a Rigid Sortal (Kind, Collective Quantity, or SubKind), Category, Role or RoleMixin'
+        this.self = self
+    }
 
-        def checker = new SyntacticalChecker()
-        checker.execute(m).each{ error ->
-            println error
+    @Override
+    boolean condition() {
+        def rel = self as OntoUMLRelationship
+        if(rel.isMediation()){
+            def tgtClass = (rel.targetClass() as OntoUMLClass)
+            return tgtClass!=null && (tgtClass.isSubstanceSortalClass() || tgtClass.isSubKind() ||
+                   tgtClass.isCategory() || tgtClass.isRole() || tgtClass.isRoleMixin())
         }
+        return true
+    }
+
+    @Override
+    boolean quickFix(){
+        return false
     }
 }

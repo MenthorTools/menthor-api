@@ -1,4 +1,4 @@
-package net.menthor.ontouml.test
+package net.menthor.ontouml.rules.types.specialization
 
 /**
  * The MIT License (MIT)
@@ -23,21 +23,27 @@ package net.menthor.ontouml.test
  * DEALINGS IN THE SOFTWARE.
  */
 
-import net.menthor.ontouml.rules.SyntacticalChecker
-import net.menthor.ontouml.OntoUMLModel
+import net.menthor.ontouml.OntoUMLClass
+import net.menthor.ontouml.rules.generic.GenericCondition
+import net.menthor.ontouml.rules.traits.SpecializationSyntacticalRule
 
 /**
  * @author John Guerson
  */
-class CheckerTest {
+class MixinAncestorsRule implements SpecializationSyntacticalRule {
 
-    static void main(String[] args){
-        OntoUMLModel m = CarAccidentExample.generate()
-        m.createMode("Mode1")
+    MixinAncestorsRule(OntoUMLClass self){
+        this.description = 'A Mixin type must not have a Sortal type ancestor. Mixins are abstract choice and can only have mixins as ancestors.'
+        this.self = self
+    }
 
-        def checker = new SyntacticalChecker()
-        checker.execute(m).each{ error ->
-            println error
-        }
+    @Override
+    boolean condition() {
+        return GenericCondition.includesAsAncestorsOnly(self, "isMixinClass")
+    }
+
+    @Override
+    boolean quickFix(){
+        return false
     }
 }

@@ -1,5 +1,4 @@
-package net.menthor.ontouml.test
-
+package net.menthor.ontouml.rules.types.cardinality
 /**
  * The MIT License (MIT)
  *
@@ -23,21 +22,41 @@ package net.menthor.ontouml.test
  * DEALINGS IN THE SOFTWARE.
  */
 
-import net.menthor.ontouml.rules.SyntacticalChecker
-import net.menthor.ontouml.OntoUMLModel
+import net.menthor.ontouml.OntoUMLRelationship
+import net.menthor.ontouml.OntoUMLClass
+import net.menthor.ontouml.rules.traits.CardinalitySyntacticalRule
+import net.menthor.ontouml.stereotypes.RelationshipStereotype
 
 /**
  * @author John Guerson
  */
-class CheckerTest {
+class TruthMakerCardinalityEndsRule implements CardinalitySyntacticalRule {
 
-    static void main(String[] args){
-        OntoUMLModel m = CarAccidentExample.generate()
-        m.createMode("Mode1")
+    TruthMakerCardinalityEndsRule(OntoUMLClass self){
+        this.description = 'The sum of the minimum cardinalities of the mediated ends of a Truth Maker (element with a relator identity) must be greater or equal to 2'
+        this.self = self
+    }
 
-        def checker = new SyntacticalChecker()
-        checker.execute(m).each{ error ->
-            println error
+    @Override
+    boolean condition() {
+        def sum = 0
+        if((self as OntoUMLClass).isTruthMaker()){
+            def oppositeEndPoints = self.allOppositeEndPoints().findAll{ ep ->
+                (ep.getOwner() as OntoUMLRelationship).getStereotype() == RelationshipStereotype.MEDIATION
+            }
+            if(oppositeEndPoints.size()==0) return true
+            oppositeEndPoints.each { ep ->
+                sum += ep.getLowerBound()
+            }
+        }else{
+            return true
         }
+        if(sum>=2) return true
+        else return false
+    }
+
+    @Override
+    boolean quickFix(){
+        return false
     }
 }

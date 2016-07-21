@@ -27,7 +27,7 @@ import groovy.util.slurpersupport.GPathResult
 
 /**
  *  Visitor pattern to visit EA's xmi file
- *  Transformations should implement this trait
+ *  Transformations should implement this traits
  *
  *  @author John Guerson
  */

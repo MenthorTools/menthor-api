@@ -1,4 +1,4 @@
-package net.menthor.ontouml.test
+package net.menthor.ontouml.rules.types.specialization
 
 /**
  * The MIT License (MIT)
@@ -22,22 +22,31 @@ package net.menthor.ontouml.test
  * OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
  * DEALINGS IN THE SOFTWARE.
  */
-
-import net.menthor.ontouml.rules.SyntacticalChecker
-import net.menthor.ontouml.OntoUMLModel
+import net.menthor.ontouml.OntoUMLClass
+import net.menthor.ontouml.rules.traits.SpecializationSyntacticalRule
 
 /**
  * @author John Guerson
  */
-class CheckerTest {
+class PhasePartitionRule implements SpecializationSyntacticalRule {
 
-    static void main(String[] args){
-        OntoUMLModel m = CarAccidentExample.generate()
-        m.createMode("Mode1")
+    PhasePartitionRule(OntoUMLClass self){
+        this.description = 'A Phase must be grouped in exactly one {disjoint, complete} Generalization Set with other Phases (i.e. every phase must be in a partition with at least one more phase).'
+        this.self = self
+    }
 
-        def checker = new SyntacticalChecker()
-        checker.execute(m).each{ error ->
-            println error
+    @Override
+    boolean condition() {
+        if(self.isPhase()){
+            def gensets = self.getIsSpecificIn().collect{ g -> g.getGeneralizationSet() }
+            def value = gensets.size()==1 && gensets.get(0).isCovering() && gensets.get(0).isDisjoint() && gensets.get(0).specifics().every{ s -> (s instanceof OntoUMLClass) && (s as OntoUMLClass).isPhase() }
+            return value
         }
+        return true
+    }
+
+    @Override
+    boolean quickFix(){
+        return false
     }
 }

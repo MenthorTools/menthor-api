@@ -1,4 +1,6 @@
-package net.menthor.ontouml.test
+package net.menthor.ontouml.rules
+
+import com.fasterxml.jackson.annotation.JsonIgnore
 
 /**
  * The MIT License (MIT)
@@ -23,21 +25,26 @@ package net.menthor.ontouml.test
  * DEALINGS IN THE SOFTWARE.
  */
 
-import net.menthor.ontouml.rules.SyntacticalChecker
-import net.menthor.ontouml.OntoUMLModel
+import net.menthor.core.traits.MClassifier
 
 /**
  * @author John Guerson
  */
-class CheckerTest {
+trait SyntacticalRule {
 
-    static void main(String[] args){
-        OntoUMLModel m = CarAccidentExample.generate()
-        m.createMode("Mode1")
+    String name = this.getClass().getSimpleName()
+    boolean ruleActived=true
+    String description
 
-        def checker = new SyntacticalChecker()
-        checker.execute(m).each{ error ->
-            println error
-        }
+    @JsonIgnore
+    MClassifier self
+
+    abstract boolean condition()
+    abstract boolean quickFix()
+
+    SyntacticalError check() {
+        def itsTrue = condition()
+        if(!itsTrue) return new SyntacticalError(self, description)
+        return null
     }
 }
