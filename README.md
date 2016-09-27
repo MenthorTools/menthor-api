@@ -13,7 +13,7 @@ In order to run the API with the source code, you'll need the following tools:
 * IntelliJ with GROOVY installed
 * Git Client application (GitHub, Tortoise, Source Tree, etc)
 
-* Learn [here](http://joelabrahamsson.com/remote-branches-with-tortoisegit/) how to create your own local branch of this project using Tortoise.
+Note: Learn [here](http://joelabrahamsson.com/remote-branches-with-tortoisegit/) how to create your own local branch of this project using Tortoise.
 
 ## 4. Example
 
