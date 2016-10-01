@@ -18,6 +18,7 @@ If you're not sure how to create your remote branch from this project using Tort
 ## 4. Examples
 
 To learn how to use the API visit our wiki pages [here](https://github.com/tgoprince/menthor-api/wiki).
+If you want to build OntoUML models using the API you can start [here](Creating an OntoUML model programmatically)
 
 
 
